@@ -1,0 +1,16 @@
+{
+  "entryId": "477fe70784cb9178",
+  "sourceUrl": "https://reactbits.dev/animations/magnet",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Magnet-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/Magnet/Magnet.jsx",
+  "checkedAt": "2026-10-25T07:53:00.217Z",
+  "sha256": "d605e9f2b50c05a02116ed407da580253c4b1b9bfd89f2722509df23215dd46a",
+  "files": [
+    {
+      "path": "Magnet/Magnet.jsx",
+      "sha256": "57236b34936ff1eaa10b9b9a3c244bdb627f83b5261f6e69d376273f66b826d9",
+      "bytes": 2023
+    }
+  ]
+}

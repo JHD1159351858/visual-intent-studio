@@ -1,0 +1,21 @@
+{
+  "entryId": "2e43890744734192",
+  "sourceUrl": "https://reactbits.dev/backgrounds/light-rays",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/LightRays-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/LightRays/LightRays.jsx",
+  "checkedAt": "2026-10-25T07:53:08.561Z",
+  "sha256": "e50a5e77e2f1459711a87b75f6497603e1fa33af5584d92a7951d41a234929b8",
+  "files": [
+    {
+      "path": "LightRays.css",
+      "sha256": "99c675bf97ed23b24188df6c3aabe2524fae003167bfdac464b913b81538411e",
+      "bytes": 137
+    },
+    {
+      "path": "LightRays.jsx",
+      "sha256": "41e721f90473705cb8a94ed2475e844cf07f01540d4e1f48cfeb548940a879dd",
+      "bytes": 12238
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "entryId": "97891d41cb98ef59",
+  "sourceUrl": "https://reactbits.dev/micro/flip-card",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/FlipCard-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/FlipCard/FlipCard.jsx",
+  "checkedAt": "2026-10-25T07:53:12.894Z",
+  "sha256": "670cb3b3933c9d82ce34e857b1c377186842abf12703b52c03a3d413cd9d8303",
+  "files": [
+    {
+      "path": "FlipCard.css",
+      "sha256": "973afcc8b586f7f39c864a005f6d0c5699456d21aff1c5027e508e74fcbbb1b4",
+      "bytes": 2383
+    },
+    {
+      "path": "FlipCard.jsx",
+      "sha256": "d5430f398954b9cfc0fa04a700e9a2788450fe496900d69dcd6a4007859c7f1d",
+      "bytes": 8813
+    }
+  ]
+}

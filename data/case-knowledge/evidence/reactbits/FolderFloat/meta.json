@@ -1,0 +1,21 @@
+{
+  "entryId": "5d28bb2c5ec3cbeb",
+  "sourceUrl": "https://reactbits.dev/micro/folder-float",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/FolderFloat-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/FolderFloat/FolderFloat.jsx",
+  "checkedAt": "2026-10-25T07:53:12.914Z",
+  "sha256": "f191eded4a8d9526fce19660eb91e547035ba430955d92c356fefc23cc2c4b09",
+  "files": [
+    {
+      "path": "FolderFloat.css",
+      "sha256": "15ccf0837e41eca5a3b1d0607643ea5eefbc0bb97b0a38fe061f4c090f73477b",
+      "bytes": 5966
+    },
+    {
+      "path": "FolderFloat.jsx",
+      "sha256": "de3b0831bf2d70e2b6c1f73ff63c260cc328b1604e14d037af7f55d0df942558",
+      "bytes": 12981
+    }
+  ]
+}

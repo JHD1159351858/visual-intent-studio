@@ -1,0 +1,21 @@
+{
+  "entryId": "ad9c933f8a0f544e",
+  "sourceUrl": "https://reactbits.dev/animations/star-border",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/StarBorder-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/StarBorder/StarBorder.jsx",
+  "checkedAt": "2026-10-25T07:53:01.593Z",
+  "sha256": "f42c627fcd08026817cb97b0499b27f1ce622439c716e5b5a1e1a169fae0964d",
+  "files": [
+    {
+      "path": "StarBorder.css",
+      "sha256": "128fe0068b2d7964c28488d24465626ff34f3143a66082a6548a1a1f57c987d2",
+      "bytes": 1070
+    },
+    {
+      "path": "StarBorder.jsx",
+      "sha256": "8a82730322a9db4e1f0ceddf312a0b4bdf8a27d10b84ed4f49e93d1977d004c6",
+      "bytes": 20135
+    }
+  ]
+}

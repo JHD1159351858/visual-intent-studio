@@ -1,0 +1,21 @@
+{
+  "entryId": "f86234a5a3effbc3",
+  "sourceUrl": "https://reactbits.dev/backgrounds/molten-metal",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/MoltenMetal-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/MoltenMetal/MoltenMetal.jsx",
+  "checkedAt": "2026-10-25T07:53:07.349Z",
+  "sha256": "e30f6196c4776bf04e8ffb2bb6eacf6aa4337cb4d76fdd0d4bd2b8c4ccccf54e",
+  "files": [
+    {
+      "path": "MoltenMetal.css",
+      "sha256": "b92ad99ba02629d135dadd766a7715e93fcde179cf5f8f4e409e4543a9c3b96e",
+      "bytes": 101
+    },
+    {
+      "path": "MoltenMetal.jsx",
+      "sha256": "2e52ef9cc647e2738d33129f18ba517497d4104a3fd7f83dd8aff9cf20113ddc",
+      "bytes": 10006
+    }
+  ]
+}

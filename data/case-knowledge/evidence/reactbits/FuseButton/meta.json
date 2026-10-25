@@ -1,0 +1,21 @@
+{
+  "entryId": "114eeaec814ff8e6",
+  "sourceUrl": "https://reactbits.dev/micro/fuse-button",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/FuseButton-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/FuseButton/FuseButton.jsx",
+  "checkedAt": "2026-10-25T07:53:13.033Z",
+  "sha256": "890b58dfe0d611a251d2afdcf4b607e84625575480d1ffc33038bcc0cc8a9efc",
+  "files": [
+    {
+      "path": "FuseButton.css",
+      "sha256": "ed717d854b5730eda1b759f96602e234215f7265883b2ec91b99915e14e65b71",
+      "bytes": 4944
+    },
+    {
+      "path": "FuseButton.jsx",
+      "sha256": "2b5f79a42785cb3607b794dd2601dca5af5f942310722df8cc1fb65fe19324a8",
+      "bytes": 7766
+    }
+  ]
+}

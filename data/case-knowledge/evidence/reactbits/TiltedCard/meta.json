@@ -1,0 +1,21 @@
+{
+  "entryId": "reactbits-tilted-card",
+  "sourceUrl": "https://reactbits.dev/components/tilted-card",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/TiltedCard-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/TiltedCard/TiltedCard.jsx",
+  "checkedAt": "2026-10-25T07:52:53.645Z",
+  "sha256": "d0cf72edd1672d77356b77822071137a80f213e559860afe06994ba5e7dd664e",
+  "files": [
+    {
+      "path": "TiltedCard.css",
+      "sha256": "98f8b8156d22cfa4806953f302a4002e91f255e5d21b2971e26b2556b0eeca67",
+      "bytes": 1061
+    },
+    {
+      "path": "TiltedCard.jsx",
+      "sha256": "f0df6e4f86287c0b70b99f50bf65318536326dc91adb8cf7810caa99a5831b62",
+      "bytes": 3186
+    }
+  ]
+}

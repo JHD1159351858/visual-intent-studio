@@ -1,0 +1,21 @@
+{
+  "entryId": "60a03c81df543f6a",
+  "sourceUrl": "https://reactbits.dev/components/flex-carousel",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/FlexCarousel-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/FlexCarousel/FlexCarousel.jsx",
+  "checkedAt": "2026-10-25T07:53:02.112Z",
+  "sha256": "212d61eb955f2b6bc608403d5f06a202a01175384b4c7bd956043571772f7343",
+  "files": [
+    {
+      "path": "FlexCarousel.css",
+      "sha256": "12ae281e18501340c3c9230491f0990abb899f6841af02db07a6a6495bc27adb",
+      "bytes": 2434
+    },
+    {
+      "path": "FlexCarousel.jsx",
+      "sha256": "6ff85b48ebd647190fb5b0b6543d142a28062090ee8990c2a5a1d59178fc6706",
+      "bytes": 41656
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "entryId": "df5661b7459c5304",
+  "sourceUrl": "https://reactbits.dev/components/line-sidebar",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/LineSidebar-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/LineSidebar/LineSidebar.jsx",
+  "checkedAt": "2026-10-25T07:53:02.746Z",
+  "sha256": "9d8877a490ca089b5be70d3a1981d49ab32b7f30a61bedcd0d59e1f867324b1c",
+  "files": [
+    {
+      "path": "LineSidebar.css",
+      "sha256": "c54eb77aec1a1311c17cdf97fb69be8cc85b4e28e7749cd92e81dfe0aa3a2481",
+      "bytes": 2570
+    },
+    {
+      "path": "LineSidebar.jsx",
+      "sha256": "1c7221928201ada1ab29047066d60d5fb8fb5b5f95dc794ed68f852b8a30a423",
+      "bytes": 5334
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "entryId": "5f6db6faf42a1a39",
+  "sourceUrl": "https://reactbits.dev/components/bounce-cards",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/BounceCards-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/BounceCards/BounceCards.jsx",
+  "checkedAt": "2026-10-25T07:53:06.031Z",
+  "sha256": "a52fe79d726ce1bad01b6efa7a6e7ea0ec39547191cde2906935e20e14a1c885",
+  "files": [
+    {
+      "path": "BounceCards.css",
+      "sha256": "c10a595c3de1939ff6bdc801b6c39bd80c869b437aaab5c5c14997a0b8436b88",
+      "bytes": 986
+    },
+    {
+      "path": "BounceCards.jsx",
+      "sha256": "f49ab5cf394d9607ec2fbfa0628a31c41ff376a55059397fb72c8535d470a869",
+      "bytes": 10261
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "entryId": "679505985f285534",
+  "sourceUrl": "https://reactbits.dev/backgrounds/dither",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Dither-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Dither/Dither.jsx",
+  "checkedAt": "2026-10-25T07:53:10.678Z",
+  "sha256": "5a5b015c82e56d041c6fafd8f197ae5d33518c065fa4ef0b6906c591c830d174",
+  "files": [
+    {
+      "path": "Dither.css",
+      "sha256": "e78be0f2c3edd67e5d479d4b6f233bc04a6526275aea1cb455dcfb8aeee963d8",
+      "bytes": 198
+    },
+    {
+      "path": "Dither.jsx",
+      "sha256": "ea1457deada8dd1764a10abc3a62051a5610b3ff5f3e80bfc153dc3b41458e8a",
+      "bytes": 23318
+    }
+  ]
+}

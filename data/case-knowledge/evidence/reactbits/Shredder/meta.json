@@ -1,0 +1,21 @@
+{
+  "entryId": "97a9f5a045f281cc",
+  "sourceUrl": "https://reactbits.dev/micro/shredder",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Shredder-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/Shredder/Shredder.jsx",
+  "checkedAt": "2026-10-25T07:53:14.407Z",
+  "sha256": "786729a43024818083880911f15bcc756ea40cacb697a86851661e780067e641",
+  "files": [
+    {
+      "path": "Shredder.css",
+      "sha256": "fac84b2dfbb2ed9500cfdcfb41f6e5693c4b2c09259405ee408246a72718cecd",
+      "bytes": 1998
+    },
+    {
+      "path": "Shredder.jsx",
+      "sha256": "e6c3afd16a17da2d76867006526e8c2d839f15ad0ac1777ea9924f6f56b35303",
+      "bytes": 29067
+    }
+  ]
+}

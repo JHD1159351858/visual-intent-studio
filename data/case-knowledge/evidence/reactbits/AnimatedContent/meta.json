@@ -1,0 +1,16 @@
+{
+  "entryId": "201094c234630df1",
+  "sourceUrl": "https://reactbits.dev/animations/animated-content",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/AnimatedContent-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/AnimatedContent/AnimatedContent.jsx",
+  "checkedAt": "2026-10-25T07:52:58.597Z",
+  "sha256": "0eeadf9fa40f582a7c1b3d4982e7313243dceb8f44809b249ec7f6f4f84aee16",
+  "files": [
+    {
+      "path": "AnimatedContent/AnimatedContent.jsx",
+      "sha256": "08b0d49dbca94f5084e627f690a658ea94518006bcb55db72b3575b051ebe9e0",
+      "bytes": 2504
+    }
+  ]
+}

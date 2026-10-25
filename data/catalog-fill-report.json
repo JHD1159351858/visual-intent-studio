@@ -1,0 +1,44 @@
+{
+  "updatedAt": "2026-10-12T12:35:19.513Z",
+  "total": 353,
+  "ready": 350,
+  "pending": 3,
+  "completeMetadata": 353,
+  "duplicates": [
+    {
+      "removedId": "8872a06acaf76ed2",
+      "keptId": "e9a78de82ee90a6c",
+      "sourceUrl": "https://ui.aceternity.com/components/parallax-scroll"
+    },
+    {
+      "removedId": "82ab9dc3cb8c218b",
+      "keptId": "2e6c910c299ad581",
+      "sourceUrl": "https://ui.aceternity.com/components/signup-form"
+    },
+    {
+      "removedId": "6223bb7e77e62f3c",
+      "keptId": "04caedaf6df871a4",
+      "sourceUrl": "https://ui.aceternity.com/components/shooting-stars-and-stars-background"
+    }
+  ],
+  "pendingEntries": [
+    {
+      "id": "f1a5e9d0aaaa5a18",
+      "title": "几何波浪场",
+      "sourceUrl": "https://reactbits.dev/backgrounds/shape-waves",
+      "reason": "原站效果依赖 WebGPU；当前录制环境无法取得 GPU 适配器，未显示真实效果。资料已保留，暂不参与视频推荐。"
+    },
+    {
+      "id": "1e59166976bd4769",
+      "title": "风中金属碎片",
+      "sourceUrl": "https://reactbits.dev/backgrounds/aero-shards",
+      "reason": "原站效果依赖 WebGPU；当前录制环境无法取得 GPU 适配器，未显示真实效果。资料已保留，暂不参与视频推荐。"
+    },
+    {
+      "id": "e1992a87bad655ec",
+      "title": "火光眼瞳背景",
+      "sourceUrl": "https://reactbits.dev/backgrounds/evil-eye",
+      "reason": "官方源码已公开，但官网演示页面尚不可访问（HTTP 404）；保留实现资料，暂不参与视频推荐。"
+    }
+  ]
+}

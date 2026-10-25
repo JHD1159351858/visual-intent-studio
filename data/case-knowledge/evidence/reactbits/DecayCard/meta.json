@@ -1,0 +1,21 @@
+{
+  "entryId": "716b762175b12712",
+  "sourceUrl": "https://reactbits.dev/components/decay-card",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/DecayCard-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/DecayCard/DecayCard.jsx",
+  "checkedAt": "2026-10-25T07:53:05.552Z",
+  "sha256": "f591f1cef88d22fe2bc4a5aa44079af189bba6229f962c11b535cbf098996d53",
+  "files": [
+    {
+      "path": "DecayCard.css",
+      "sha256": "2214dd25c45194c9a5210353f77f2d71397492693bb4556501c3da6e24a4b586",
+      "bytes": 517
+    },
+    {
+      "path": "DecayCard.jsx",
+      "sha256": "511636c2e533af8bd38ec9e36e31d8189daba5a2a50190e49c38e8dcf756565f",
+      "bytes": 16491
+    }
+  ]
+}

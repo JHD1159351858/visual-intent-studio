@@ -1,0 +1,21 @@
+{
+  "entryId": "0339fea6b68d9351",
+  "sourceUrl": "https://reactbits.dev/backgrounds/lightfall",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Lightfall-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Lightfall/Lightfall.jsx",
+  "checkedAt": "2026-10-25T07:53:07.832Z",
+  "sha256": "9cdee1ae6210c22662ec62d7942fc075c52a7a47a34c65dafe524ac0b8492ba1",
+  "files": [
+    {
+      "path": "Lightfall.css",
+      "sha256": "4e8779dce36b9df8a8c510aee8ae7bbb2ef22bda32d004feb47a53c04bd0c928",
+      "bytes": 204
+    },
+    {
+      "path": "Lightfall.jsx",
+      "sha256": "f704fc0200dd78d7706714f2e1dc5e3940e7afb7abe755441e5c0e87266f9c23",
+      "bytes": 26252
+    }
+  ]
+}

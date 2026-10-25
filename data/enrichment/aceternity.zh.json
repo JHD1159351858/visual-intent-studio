@@ -1,0 +1,2871 @@
+{
+  "sourceId": "aceternity",
+  "collectedFrom": [
+    "https://ui.aceternity.com/ai-recommendations",
+    "https://60fps.design/shots/opal-border-glow-feature-highlight-interaction"
+  ],
+  "verifiedAt": "2026-10-12T07:14:34.303Z",
+  "entries": {
+    "https://ui.aceternity.com/components/grid": {
+      "title": "网格与圆点底纹",
+      "stage": "style",
+      "description": "用细线方格或均匀圆点铺成背景，可叠加从中心向外淡出的遮罩；它是背景纹理，不是内容卡片的排版结构。",
+      "aliases": [
+        "纸上的方格",
+        "小圆点背景",
+        "网格底纹"
+      ],
+      "trigger": "持续显示；原站示例没有点击或鼠标跟随动画",
+      "placements": [
+        "首屏背景",
+        "内容区底纹"
+      ],
+      "tags": [
+        "网格背景",
+        "圆点",
+        "静态纹理",
+        "淡出遮罩"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/grid-and-dot-backgrounds",
+      "verifiedAt": "2026-10-12T07:14:22.874Z",
+      "registryUrl": "https://ui.aceternity.com/registry/grid.json",
+      "resolvedSourceUrl": "https://ui.aceternity.com/components/grid-and-dot-backgrounds",
+      "implementationUrl": "https://ui.aceternity.com/components/grid-and-dot-backgrounds",
+      "issue": "结构化目录仍列出旧地址，旧文档返回 404；已核验当前官方组件页面。"
+    },
+    "https://ui.aceternity.com/components/moving-line": {
+      "title": "随滚动伸缩的竖向光线",
+      "stage": "effect",
+      "description": "长内容左侧放一根蓝色竖线，上下滚动该区域时，亮色路径随阅读位置延长或缩短，细渐变底线保持可见。官方提供源码，独立演示页目前不可用。",
+      "aliases": [
+        "旁边的进度线",
+        "随着滚动变短的线",
+        "文章左边的光线",
+        "随阅读伸缩的光线"
+      ],
+      "trigger": "区域滚动进度驱动 SVG 路径长度；不是自动循环",
+      "placements": [
+        "长文侧边",
+        "介绍流程旁"
+      ],
+      "tags": [
+        "滚动",
+        "竖线",
+        "路径长度",
+        "阅读提示"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/registry/moving-line.json",
+      "verifiedAt": "2026-10-12T07:14:22.562Z",
+      "registryUrl": "https://ui.aceternity.com/registry/moving-line.json",
+      "issue": "独立演示文档返回 404；来源改为可访问的官方 registry 源码。预览应运行源码制作并明确标为参考演示录屏。",
+      "implementationUrl": "https://ui.aceternity.com/registry/moving-line.json",
+      "resolvedSourceUrl": "https://ui.aceternity.com/registry/moving-line.json"
+    },
+    "https://ui.aceternity.com/components/sparkles": {
+      "title": "缓慢闪烁的星点",
+      "stage": "style",
+      "description": "在标题下方或整个区块铺上细小亮点，不同位置的点以不同速度明暗闪烁，形成轻盈的星尘背景。",
+      "aliases": [
+        "星星点点",
+        "闪闪的小颗粒",
+        "文字旁的星尘"
+      ],
+      "trigger": "组件显示后自动闪烁；无需点击",
+      "placements": [
+        "首屏标题附近",
+        "行动区背景"
+      ],
+      "tags": [
+        "星点",
+        "粒子",
+        "自动循环",
+        "星尘"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/sparkles",
+      "verifiedAt": "2026-10-12T07:14:22.730Z",
+      "registryUrl": "https://ui.aceternity.com/registry/sparkles.json"
+    },
+    "https://ui.aceternity.com/components/spotlight": {
+      "title": "斜照标题的柔和聚光",
+      "stage": "style",
+      "description": "深色背景上出现一束斜向柔光，亮区集中照向标题和正文；进入时光束逐渐显现，随后作为背景保留。",
+      "aliases": [
+        "舞台灯照着文字",
+        "斜着打来的光",
+        "标题旁的灯光"
+      ],
+      "trigger": "组件加载时淡入；原版不是鼠标追踪灯",
+      "placements": [
+        "首页首屏",
+        "宣传标题区"
+      ],
+      "tags": [
+        "聚光",
+        "深色",
+        "光束",
+        "入场"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/spotlight",
+      "verifiedAt": "2026-10-12T07:14:22.670Z",
+      "registryUrl": "https://ui.aceternity.com/registry/spotlight.json"
+    },
+    "https://ui.aceternity.com/components/glowing-stars": {
+      "title": "悬停点亮的星阵卡片",
+      "stage": "effect",
+      "description": "卡片顶部是规则排列的小星点，平时随机几颗亮起放大；鼠标移入时整片星阵按顺序发出蓝色光晕，移出恢复随机闪烁。",
+      "aliases": [
+        "鼠标一碰星星就亮",
+        "小星星卡片",
+        "一排排亮点"
+      ],
+      "trigger": "自动随机闪烁；鼠标移入、移出切换整片星阵状态",
+      "placements": [
+        "功能卡片",
+        "产品亮点"
+      ],
+      "tags": [
+        "星阵",
+        "悬停",
+        "发光",
+        "卡片"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/glowing-stars-effect",
+      "verifiedAt": "2026-10-12T07:14:22.963Z",
+      "registryUrl": "https://ui.aceternity.com/registry/glowing-stars.json",
+      "resolvedSourceUrl": "https://ui.aceternity.com/components/glowing-stars-effect",
+      "implementationUrl": "https://ui.aceternity.com/components/glowing-stars-effect",
+      "issue": "结构化目录仍列出旧地址，旧文档返回 404；已核验当前官方组件页面。"
+    },
+    "https://ui.aceternity.com/components/text-reveal-card": {
+      "title": "鼠标滑动揭示文字",
+      "stage": "effect",
+      "description": "鼠标在卡片内横向移动，逐步揭示另一层文字内容。",
+      "aliases": [
+        "文字揭示",
+        "擦除文字",
+        "文字遮罩",
+        "隐藏文字"
+      ],
+      "trigger": "鼠标横向滑过文字，遮罩随位置展开；移出复位",
+      "placements": [
+        "首屏标题",
+        "品牌说明"
+      ],
+      "tags": [
+        "text",
+        "reveal",
+        "hover"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/text-reveal-card",
+      "verifiedAt": "2026-10-12T07:14:22.968Z",
+      "registryUrl": "https://ui.aceternity.com/registry/text-reveal-card.json"
+    },
+    "https://ui.aceternity.com/components/animated-tooltip": {
+      "title": "跟随头像的弹性提示",
+      "stage": "effect",
+      "description": "头像上方在悬停时弹出姓名与说明，提示浮层随鼠标在头像上的位置轻微横移和倾斜，移出后收起。",
+      "aliases": [
+        "碰到头像显示名字",
+        "头像上冒出小标签",
+        "会晃的提示框"
+      ],
+      "trigger": "鼠标悬停头像；横向移动驱动提示位置与旋转",
+      "placements": [
+        "团队成员",
+        "协作者头像"
+      ],
+      "tags": [
+        "头像",
+        "提示",
+        "悬停",
+        "弹性"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/animated-tooltip",
+      "verifiedAt": "2026-10-12T07:14:23.222Z",
+      "registryUrl": "https://ui.aceternity.com/registry/animated-tooltip.json"
+    },
+    "https://ui.aceternity.com/components/following-pointer": {
+      "title": "跟随鼠标的姓名指针",
+      "stage": "effect",
+      "description": "在指定卡片内隐藏系统指针，换成带箭头和文字标签的自定义指针；它随鼠标移动，进入和离开区域时淡入淡出。",
+      "aliases": [
+        "鼠标后面跟着名字",
+        "带标签的光标",
+        "像多人协作的箭头"
+      ],
+      "trigger": "鼠标进入指定区域显示；移动跟随；移出隐藏",
+      "placements": [
+        "文章卡片",
+        "互动展示区"
+      ],
+      "tags": [
+        "自定义光标",
+        "鼠标跟随",
+        "标签",
+        "悬停"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/following-pointer",
+      "verifiedAt": "2026-10-12T07:14:23.293Z",
+      "registryUrl": "https://ui.aceternity.com/registry/following-pointer.json"
+    },
+    "https://ui.aceternity.com/components/background-beams": {
+      "title": "沿曲线路径穿梭的光束",
+      "stage": "style",
+      "description": "多条弯曲细线组成大面积背景，亮色线段沿各自路径不断穿过，中央内容保持清晰，不会改变页面排版。",
+      "aliases": [
+        "背景里有流动光线",
+        "很多弯弯的光束",
+        "科技线条背景"
+      ],
+      "trigger": "显示后各路径自动循环流动",
+      "placements": [
+        "首屏背景",
+        "订阅行动区"
+      ],
+      "tags": [
+        "曲线",
+        "光束",
+        "自动循环",
+        "背景"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/background-beams",
+      "verifiedAt": "2026-10-12T07:14:23.300Z",
+      "registryUrl": "https://ui.aceternity.com/registry/background-beams.json"
+    },
+    "https://ui.aceternity.com/components/svg-mask-effect": {
+      "title": "鼠标擦开另一层内容",
+      "stage": "effect",
+      "description": "默认显示一层文字或背景，鼠标附近的圆形遮罩揭开下方另一层内容；悬停重点内容时遮罩可以扩大，形成局部探照式揭示。",
+      "aliases": [
+        "拿手电看隐藏内容",
+        "鼠标擦开一层",
+        "圆圈里能看到另一段话"
+      ],
+      "trigger": "鼠标在区域内移动；悬停目标时扩大遮罩",
+      "placements": [
+        "品牌宣言",
+        "首屏文案"
+      ],
+      "tags": [
+        "遮罩",
+        "揭示",
+        "鼠标跟随",
+        "双层内容"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/svg-mask-effect",
+      "verifiedAt": "2026-10-12T07:14:23.385Z",
+      "registryUrl": "https://ui.aceternity.com/registry/svg-mask-effect.json"
+    },
+    "https://ui.aceternity.com/components/infinite-moving-cards": {
+      "title": "循环横移的评价卡片",
+      "stage": "structure",
+      "description": "多张评价卡片排成一行并连续横向移动，末尾无缝接回开头；可以改变移动方向和速度，悬停时暂停便于阅读。",
+      "aliases": [
+        "评价卡片一直横着走",
+        "不停滚动的好评",
+        "跑马灯卡片"
+      ],
+      "trigger": "显示后自动循环；默认鼠标悬停暂停",
+      "placements": [
+        "用户评价区",
+        "合作案例带"
+      ],
+      "tags": [
+        "评价",
+        "跑马灯",
+        "卡片列表",
+        "悬停暂停"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/infinite-moving-cards",
+      "verifiedAt": "2026-10-12T07:14:23.454Z",
+      "registryUrl": "https://ui.aceternity.com/registry/infinite-moving-cards.json"
+    },
+    "https://ui.aceternity.com/components/3d-pin": {
+      "title": "悬停立起的立体链接卡片",
+      "stage": "effect",
+      "description": "链接卡片在悬停时转成倾斜透视平面，中央出现向上延伸的发光连线、圆环与链接标签，像一枚立在地图上的图钉。",
+      "aliases": [
+        "卡片立起来",
+        "悬停冒出一根光柱",
+        "立体链接标签"
+      ],
+      "trigger": "鼠标悬停卡片展开立体图钉；移出复位",
+      "placements": [
+        "项目入口",
+        "产品链接"
+      ],
+      "tags": [
+        "三维",
+        "图钉",
+        "悬停",
+        "链接"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/3d-pin",
+      "verifiedAt": "2026-10-12T07:14:23.597Z",
+      "registryUrl": "https://ui.aceternity.com/registry/3d-pin.json"
+    },
+    "https://ui.aceternity.com/components/evervault-card": {
+      "title": "鼠标附近显露的随机字符",
+      "stage": "effect",
+      "description": "深色卡片布满随机字母与数字，鼠标附近的圆形范围显露彩色渐变和更清晰的字符，形成像加密矩阵一样的局部高光。",
+      "aliases": [
+        "密码数字背景",
+        "鼠标附近的字会亮",
+        "黑客风卡片"
+      ],
+      "trigger": "鼠标在卡片内移动，局部遮罩与渐变跟随",
+      "placements": [
+        "安全产品卡片",
+        "技术介绍"
+      ],
+      "tags": [
+        "随机字符",
+        "渐变",
+        "鼠标跟随",
+        "加密视觉"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/evervault-card",
+      "verifiedAt": "2026-10-12T07:14:23.676Z",
+      "registryUrl": "https://ui.aceternity.com/registry/evervault-card.json"
+    },
+    "https://ui.aceternity.com/components/parallax-scroll": {
+      "title": "相反方向移动的图片列",
+      "stage": "structure",
+      "description": "图片分成多列竖向画廊，滚动容器时不同列以相反方向偏移，形成多层深度；内容仍按图片网格组织。",
+      "aliases": [
+        "照片列上下错着走",
+        "滚动时两边反着动",
+        "有层次的图片墙"
+      ],
+      "trigger": "滚动图片容器，列偏移随滚动进度变化",
+      "placements": [
+        "作品集画廊",
+        "图片案例区"
+      ],
+      "tags": [
+        "图片网格",
+        "滚动视差",
+        "多列",
+        "画廊"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/parallax-scroll",
+      "verifiedAt": "2026-10-12T07:14:23.735Z",
+      "registryUrl": "https://ui.aceternity.com/registry/parallax-scroll.json"
+    },
+    "https://ui.aceternity.com/components/parallax-scroll-2": {
+      "title": "滚动向两侧散开的图片墙",
+      "stage": "structure",
+      "description": "三列图片中，中间列保持稳定，左右列在滚动时向上和向外偏移并轻微转动，像图片墙从中心向两边散开。",
+      "aliases": [
+        "照片向两边散开",
+        "滚一下图片往外飞",
+        "中间不动两边动"
+      ],
+      "trigger": "滚动容器，左右列平移和旋转随进度变化",
+      "placements": [
+        "创意画廊",
+        "作品集图片区"
+      ],
+      "tags": [
+        "图片网格",
+        "滚动",
+        "向外散开",
+        "旋转"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/parallax-scroll",
+      "verifiedAt": "2026-10-12T07:14:24.002Z",
+      "registryUrl": "https://ui.aceternity.com/registry/parallax-scroll-2.json",
+      "resolvedSourceUrl": "https://ui.aceternity.com/components/parallax-scroll",
+      "implementationUrl": "https://ui.aceternity.com/components/parallax-scroll",
+      "issue": "结构化目录仍列出旧地址，旧文档返回 404；已核验当前官方组件页面。",
+      "variant": "官方同页安装的第二变体，左右列向外平移与旋转"
+    },
+    "https://ui.aceternity.com/components/parallax-hero-images": {
+      "title": "鼠标驱动的多层首屏图片",
+      "stage": "effect",
+      "description": "多张图片以不同大小散布在标题周围，先从模糊中显现，再按各自深度响应鼠标偏移，营造悬浮的远近层次。",
+      "aliases": [
+        "鼠标一动照片跟着漂",
+        "标题周围浮着图片",
+        "有前后层次的首屏"
+      ],
+      "trigger": "图片入场显现；鼠标在首屏内移动驱动不同幅度的位移",
+      "placements": [
+        "作品集首屏",
+        "品牌展示首屏"
+      ],
+      "tags": [
+        "图片",
+        "鼠标视差",
+        "深度",
+        "首屏"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/parallax-hero-images",
+      "verifiedAt": "2026-10-12T07:14:23.817Z",
+      "registryUrl": "https://ui.aceternity.com/registry/parallax-hero-images.json"
+    },
+    "https://ui.aceternity.com/components/tracing-beam": {
+      "title": "沿文章边缘跟随的光束",
+      "stage": "effect",
+      "description": "长内容旁有一条弯折的细线路径，蓝紫色光束沿路径随阅读滚动推进，顶部圆点也随滚动状态变化。",
+      "aliases": [
+        "文章旁边跟着一束光",
+        "读到哪线就亮到哪",
+        "弯曲的阅读进度"
+      ],
+      "trigger": "页面滚动驱动路径中的渐变光束位置与长度",
+      "placements": [
+        "文章页",
+        "长篇介绍旁"
+      ],
+      "tags": [
+        "阅读进度",
+        "滚动",
+        "路径",
+        "光束"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/tracing-beam",
+      "verifiedAt": "2026-10-12T07:14:23.965Z",
+      "registryUrl": "https://ui.aceternity.com/registry/tracing-beam.json"
+    },
+    "https://ui.aceternity.com/components/container-scroll-animation": {
+      "title": "滚动扶正的屏幕展示框",
+      "stage": "effect",
+      "description": "截图或内容容器从向后倾斜的三维角度开始，向下滚动时逐渐扶正并调整大小，像产品屏幕从远处转到面前。",
+      "aliases": [
+        "滚动时屏幕转正",
+        "倾斜的界面慢慢展开",
+        "页面里的立体屏幕"
+      ],
+      "trigger": "页面滚动驱动容器旋转与缩放",
+      "placements": [
+        "产品首屏",
+        "界面展示区"
+      ],
+      "tags": [
+        "三维",
+        "滚动",
+        "屏幕",
+        "缩放"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/container-scroll-animation",
+      "verifiedAt": "2026-10-12T07:14:24.067Z",
+      "registryUrl": "https://ui.aceternity.com/registry/container-scroll-animation.json"
+    },
+    "https://ui.aceternity.com/components/text-generate-effect": {
+      "title": "逐词淡入的文案",
+      "stage": "effect",
+      "description": "一段文字按词依次从模糊、半透明状态显现，整个句子逐渐清晰，适合强调短文案的阅读节奏。",
+      "aliases": [
+        "文字一个词一个词出来",
+        "句子慢慢清晰",
+        "像生成出来的文字"
+      ],
+      "trigger": "组件挂载时依次显现；文本或参数变化可重新触发",
+      "placements": [
+        "首屏说明",
+        "品牌短文案"
+      ],
+      "tags": [
+        "文字",
+        "逐词",
+        "淡入",
+        "模糊"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/text-generate-effect",
+      "verifiedAt": "2026-10-12T07:14:24.106Z",
+      "registryUrl": "https://ui.aceternity.com/registry/text-generate-effect.json"
+    },
+    "https://ui.aceternity.com/components/meteors": {
+      "title": "斜向划过的流星光条",
+      "stage": "style",
+      "description": "容器背景中多根短亮线带着渐隐尾迹斜向划过，位置与时长错开，形成流星雨般的持续运动。",
+      "aliases": [
+        "斜着划过的小流星",
+        "背景有光条往下掉",
+        "星空里的尾巴"
+      ],
+      "trigger": "显示后自动错时循环",
+      "placements": [
+        "宣传卡片背景",
+        "评价区背景"
+      ],
+      "tags": [
+        "流星",
+        "光条",
+        "自动循环",
+        "背景"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/meteors",
+      "verifiedAt": "2026-10-12T07:14:24.242Z",
+      "registryUrl": "https://ui.aceternity.com/registry/meteors.json"
+    },
+    "https://ui.aceternity.com/components/card-stack": {
+      "title": "轮流置顶的叠放卡片",
+      "stage": "structure",
+      "description": "几张内容卡片错位叠放，前面的卡片按时间间隔换到后面，下一张上移成为焦点，适合展示多条评价或短句。",
+      "aliases": [
+        "一叠卡片轮流出来",
+        "好评一张张换",
+        "像抽牌一样切换"
+      ],
+      "trigger": "显示后按固定间隔自动轮换",
+      "placements": [
+        "用户评价区",
+        "精选引言"
+      ],
+      "tags": [
+        "堆叠",
+        "卡片",
+        "轮播",
+        "评价"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/card-stack",
+      "verifiedAt": "2026-10-12T07:14:24.386Z",
+      "registryUrl": "https://ui.aceternity.com/registry/card-stack.json"
+    },
+    "https://ui.aceternity.com/components/moving-border": {
+      "title": "绕按钮一圈的流动亮边",
+      "stage": "effect",
+      "description": "亮色光斑沿圆角按钮或容器的周边循环移动，内部文字保持稳定，利用移动边缘突出可操作目标。",
+      "aliases": [
+        "按钮边上有光在跑",
+        "一圈流动的边框",
+        "边缘不停亮一下"
+      ],
+      "trigger": "显示后沿边界自动循环；无需悬停",
+      "placements": [
+        "主要行动按钮",
+        "重点信息卡片"
+      ],
+      "tags": [
+        "流动边框",
+        "按钮",
+        "光斑",
+        "自动循环"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/moving-border",
+      "verifiedAt": "2026-10-12T07:14:24.414Z",
+      "registryUrl": "https://ui.aceternity.com/registry/moving-border.json"
+    },
+    "https://ui.aceternity.com/components/lamp": {
+      "title": "照亮标题的横向灯带",
+      "stage": "style",
+      "description": "深色背景中一条横向青色灯带向下投射柔光，进入视野时灯带变宽、亮度提高，标题随之向上淡入。",
+      "aliases": [
+        "标题上面有灯照下来",
+        "横着的一条亮灯",
+        "像舞台灯的标题"
+      ],
+      "trigger": "组件进入视口时扩展灯带与标题入场",
+      "placements": [
+        "章节标题",
+        "产品首屏"
+      ],
+      "tags": [
+        "灯带",
+        "聚光",
+        "入场",
+        "深色"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/lamp-effect",
+      "verifiedAt": "2026-10-12T07:14:24.694Z",
+      "registryUrl": "https://ui.aceternity.com/registry/lamp.json",
+      "resolvedSourceUrl": "https://ui.aceternity.com/components/lamp-effect",
+      "implementationUrl": "https://ui.aceternity.com/components/lamp-effect",
+      "issue": "结构化目录仍列出旧地址，旧文档返回 404；已核验当前官方组件页面。"
+    },
+    "https://ui.aceternity.com/components/sticky-scroll-reveal": {
+      "title": "滚动联动的粘性图文讲解",
+      "stage": "structure",
+      "description": "一侧排列分段说明，另一侧视觉区域固定在可见位置；滚动到不同说明时，展示图和背景色同步切换，突出当前章节。",
+      "aliases": [
+        "左边往下读右边图不走",
+        "滚动到哪旁边换哪张图",
+        "固定图片的介绍区"
+      ],
+      "trigger": "滚动容器，根据当前段落切换粘性区域内容",
+      "placements": [
+        "产品功能介绍",
+        "步骤讲解"
+      ],
+      "tags": [
+        "粘性布局",
+        "图文联动",
+        "滚动",
+        "章节"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/sticky-scroll-reveal",
+      "verifiedAt": "2026-10-12T07:14:24.465Z",
+      "registryUrl": "https://ui.aceternity.com/registry/sticky-scroll-reveal.json"
+    },
+    "https://ui.aceternity.com/components/floating-navbar": {
+      "title": "上滑出现的悬浮导航",
+      "stage": "structure",
+      "description": "紧凑的圆角导航浮在页面顶部附近；向下阅读时隐藏，向上滚动时重新出现，减少导航对内容的遮挡。",
+      "aliases": [
+        "往上滚导航就出来",
+        "浮着的顶部菜单",
+        "阅读时会藏起来的导航"
+      ],
+      "trigger": "页面滚动方向变化；向下隐藏，向上显示",
+      "placements": [
+        "长页顶部导航",
+        "营销页面"
+      ],
+      "tags": [
+        "导航",
+        "悬浮",
+        "滚动方向",
+        "自动隐藏"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/floating-navbar",
+      "verifiedAt": "2026-10-12T07:14:24.658Z",
+      "registryUrl": "https://ui.aceternity.com/registry/floating-navbar.json"
+    },
+    "https://ui.aceternity.com/components/navbar-menu": {
+      "title": "悬停展开的大导航菜单",
+      "stage": "structure",
+      "description": "移到导航项时，下方展开较宽的内容面板，可容纳多列链接和带缩略图的项目；切换导航项时面板尺寸平滑过渡。",
+      "aliases": [
+        "导航下面展开一大块",
+        "鼠标碰菜单出现多列",
+        "带图片的下拉导航"
+      ],
+      "trigger": "鼠标悬停导航项展开；移出导航区域关闭",
+      "placements": [
+        "网站主导航",
+        "产品分类入口"
+      ],
+      "tags": [
+        "导航",
+        "大菜单",
+        "多列",
+        "悬停"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/navbar-menu",
+      "verifiedAt": "2026-10-12T07:14:24.793Z",
+      "registryUrl": "https://ui.aceternity.com/registry/navbar-menu.json"
+    },
+    "https://ui.aceternity.com/components/tailwindcss-buttons": {
+      "title": "多种微动效按钮合集",
+      "stage": "effect",
+      "description": "同一页面展示多种按钮反馈：渐变底色、滑动文字、发光边缘、立体按压等，每个示例可以单独作为按钮样式与互动参考。",
+      "aliases": [
+        "有质感的按钮",
+        "点一下有反馈",
+        "鼠标放上去会变化的按钮"
+      ],
+      "trigger": "不同示例分别响应悬停或按压；应按选定按钮说明实现",
+      "placements": [
+        "主要按钮",
+        "表单操作",
+        "行动入口"
+      ],
+      "tags": [
+        "按钮合集",
+        "悬停",
+        "按压",
+        "微动效"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/tailwindcss-buttons",
+      "verifiedAt": "2026-10-12T07:14:24.822Z",
+      "registryUrl": "https://ui.aceternity.com/registry/tailwindcss-buttons.json"
+    },
+    "https://ui.aceternity.com/components/bento-grid": {
+      "title": "错落便当卡片网格",
+      "stage": "structure",
+      "description": "大小错落的网格卡片，用标题、说明和顶部视觉呈现功能。",
+      "aliases": [
+        "便当布局",
+        "大小卡片",
+        "错落网格",
+        "功能区"
+      ],
+      "trigger": "页面展示；悬停卡片时内容轻移",
+      "placements": [
+        "首页功能区",
+        "项目作品列表"
+      ],
+      "tags": [
+        "grid",
+        "bento",
+        "features"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/bento-grid",
+      "verifiedAt": "2026-10-12T07:14:24.912Z",
+      "registryUrl": "https://ui.aceternity.com/registry/bento-grid.json"
+    },
+    "https://ui.aceternity.com/components/card-hover-effect": {
+      "title": "在卡片之间滑动的高亮底板",
+      "stage": "effect",
+      "description": "多张信息卡片共享一个高亮背景，鼠标从一张移到另一张时，高亮底板平滑滑到当前卡片，内容本身不跳动。",
+      "aliases": [
+        "选中的卡片背景会滑过去",
+        "鼠标走到哪哪块亮",
+        "卡片间移动的高亮"
+      ],
+      "trigger": "鼠标移入各卡片；移出列表淡出高亮",
+      "placements": [
+        "功能卡片组",
+        "服务列表"
+      ],
+      "tags": [
+        "卡片",
+        "共享高亮",
+        "悬停",
+        "平滑切换"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/card-hover-effect",
+      "verifiedAt": "2026-10-12T07:14:25.025Z",
+      "registryUrl": "https://ui.aceternity.com/registry/card-hover-effect.json"
+    },
+    "https://ui.aceternity.com/components/google-gemini-effect": {
+      "title": "滚动绘出的汇聚彩色曲线",
+      "stage": "effect",
+      "description": "多条彩色弯曲路径从画面两侧朝中央汇聚，页面滚动时线路逐步被绘出，中央标题与按钮保持粘性定位。",
+      "aliases": [
+        "滚动时彩线汇到中间",
+        "像几股线连到一个点",
+        "画出来的彩色波形"
+      ],
+      "trigger": "页面滚动驱动每条 SVG 路径的显现长度",
+      "placements": [
+        "产品故事区",
+        "章节过渡"
+      ],
+      "tags": [
+        "滚动绘线",
+        "彩色曲线",
+        "汇聚",
+        "粘性"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/google-gemini-effect",
+      "verifiedAt": "2026-10-12T07:14:25.057Z",
+      "registryUrl": "https://ui.aceternity.com/registry/google-gemini-effect.json"
+    },
+    "https://ui.aceternity.com/components/gooey-input": {
+      "title": "像液滴融合的展开搜索框",
+      "stage": "effect",
+      "description": "紧凑搜索入口展开成输入框时，图标与输入区域通过黏稠的轮廓连接，搜索图标移到分离的圆形气泡内，像一滴液体分成两部分。",
+      "aliases": [
+        "搜索框像果冻展开",
+        "两个圆块黏在一起",
+        "有液体感的搜索"
+      ],
+      "trigger": "点击搜索入口展开并聚焦；空输入失去焦点时收回",
+      "placements": [
+        "顶部搜索",
+        "工具栏搜索"
+      ],
+      "tags": [
+        "搜索",
+        "黏液",
+        "形变",
+        "点击"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/gooey-input",
+      "verifiedAt": "2026-10-12T07:14:25.375Z",
+      "registryUrl": "https://ui.aceternity.com/registry/gooey-input.json"
+    },
+    "https://ui.aceternity.com/components/typewriter-effect": {
+      "title": "带闪烁光标的打字文字",
+      "stage": "effect",
+      "description": "文字按字符顺序逐个出现，末尾带一根闪烁光标；原站另提供平滑展开整句的变体。",
+      "aliases": [
+        "像人在打字",
+        "一句话慢慢敲出来",
+        "文字后面有光标"
+      ],
+      "trigger": "进入视口后开始逐字显现；光标自动闪烁",
+      "placements": [
+        "首屏标题",
+        "欢迎文案"
+      ],
+      "tags": [
+        "打字机",
+        "逐字",
+        "光标",
+        "入场"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/typewriter-effect",
+      "verifiedAt": "2026-10-12T07:14:25.378Z",
+      "registryUrl": "https://ui.aceternity.com/registry/typewriter-effect.json"
+    },
+    "https://ui.aceternity.com/components/background-boxes": {
+      "title": "悬停着色的网格背景",
+      "stage": "style",
+      "description": "全宽方格背景在鼠标经过时高亮，保留网格的空间秩序和轻量互动。",
+      "aliases": [
+        "方格背景",
+        "网格着色",
+        "棋盘",
+        "交互网格"
+      ],
+      "trigger": "鼠标经过背景方格后高亮并逐渐消退",
+      "placements": [
+        "首屏背景",
+        "专题页面"
+      ],
+      "tags": [
+        "grid",
+        "background",
+        "hover"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/background-boxes",
+      "verifiedAt": "2026-10-12T07:14:25.508Z",
+      "registryUrl": "https://ui.aceternity.com/registry/background-boxes.json"
+    },
+    "https://ui.aceternity.com/components/3d-card": {
+      "title": "悬停浮起各层内容的立体卡片",
+      "stage": "effect",
+      "description": "整张卡片随鼠标角度倾斜，标题、图片和按钮按不同深度向外浮起，形成各层内容分离的三维透视。",
+      "aliases": [
+        "卡片里的图片浮出来",
+        "鼠标一动卡片歪一下",
+        "有多层的立体卡片"
+      ],
+      "trigger": "鼠标进入与移动驱动倾斜和内容层升起；移出复位",
+      "placements": [
+        "作品卡片",
+        "商品卡片"
+      ],
+      "tags": [
+        "三维",
+        "内容分层",
+        "悬停",
+        "透视"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/3d-card-effect",
+      "verifiedAt": "2026-10-12T07:14:25.826Z",
+      "registryUrl": "https://ui.aceternity.com/registry/3d-card.json",
+      "resolvedSourceUrl": "https://ui.aceternity.com/components/3d-card-effect",
+      "implementationUrl": "https://ui.aceternity.com/components/3d-card-effect",
+      "issue": "结构化目录仍列出旧地址，旧文档返回 404；已核验当前官方组件页面。"
+    },
+    "https://ui.aceternity.com/components/images-slider": {
+      "title": "铺满区域的图片幻灯片",
+      "stage": "structure",
+      "description": "一张图片填满展示区域，前后图片通过遮罩、透明度和缩放过渡切换；可以自动轮换，也能用键盘方向键导航。",
+      "aliases": [
+        "整屏大图轮流换",
+        "能按左右键翻照片",
+        "大图幻灯片"
+      ],
+      "trigger": "定时自动轮播；键盘左右键或外部控制切换",
+      "placements": [
+        "首屏大图",
+        "活动视觉区"
+      ],
+      "tags": [
+        "图片轮播",
+        "全幅",
+        "键盘",
+        "过渡"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/images-slider",
+      "verifiedAt": "2026-10-12T07:14:25.663Z",
+      "registryUrl": "https://ui.aceternity.com/registry/images-slider.json"
+    },
+    "https://ui.aceternity.com/components/direction-aware-hover": {
+      "title": "从鼠标进入方向滑来的遮罩",
+      "stage": "effect",
+      "description": "图片卡片上的暗色遮罩和文案从鼠标进入的那一边滑进，并沿离开的方向退出，像能够感知手势方向。",
+      "aliases": [
+        "从哪边进去文字就从哪边来",
+        "会认方向的悬停",
+        "图片上滑出说明"
+      ],
+      "trigger": "鼠标进入或离开卡片，检测边缘方向",
+      "placements": [
+        "项目缩略图",
+        "图片卡片"
+      ],
+      "tags": [
+        "方向感知",
+        "悬停",
+        "遮罩",
+        "图片"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/direction-aware-hover",
+      "verifiedAt": "2026-10-12T07:14:25.845Z",
+      "registryUrl": "https://ui.aceternity.com/registry/direction-aware-hover.json"
+    },
+    "https://ui.aceternity.com/components/tabs": {
+      "title": "切换时叠放展开的标签页",
+      "stage": "structure",
+      "description": "点击顶部标签切换内容，当前标签获得活动背景；对应内容卡片从后方叠层中升到前面，未选卡片保留层次。",
+      "aliases": [
+        "点标签换下面那张卡",
+        "叠起来的选项卡",
+        "可以切内容的按钮栏"
+      ],
+      "trigger": "点击标签，活动状态与内容堆叠动画同步变化",
+      "placements": [
+        "功能介绍",
+        "产品演示区"
+      ],
+      "tags": [
+        "标签页",
+        "内容切换",
+        "堆叠",
+        "点击"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/tabs",
+      "verifiedAt": "2026-10-12T07:14:25.761Z",
+      "registryUrl": "https://ui.aceternity.com/registry/tabs.json"
+    },
+    "https://ui.aceternity.com/components/hero-parallax": {
+      "title": "滚动倾斜横移的作品首屏",
+      "stage": "structure",
+      "description": "多排产品截图铺成宽画廊，首屏起初带倾斜透视；向下滚动时整体扶正，不同排向相反水平方向移动并淡入。",
+      "aliases": [
+        "滚动时作品墙展开",
+        "好多网页截图左右错着走",
+        "倾斜的大画廊"
+      ],
+      "trigger": "页面滚动驱动画廊旋转、平移与透明度",
+      "placements": [
+        "作品展示首屏",
+        "产品案例页"
+      ],
+      "tags": [
+        "作品墙",
+        "滚动视差",
+        "多排",
+        "透视"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/hero-parallax",
+      "verifiedAt": "2026-10-12T07:14:25.874Z",
+      "registryUrl": "https://ui.aceternity.com/registry/hero-parallax.json"
+    },
+    "https://ui.aceternity.com/components/wavy-background": {
+      "title": "缓慢流动的彩色波带",
+      "stage": "style",
+      "description": "多条半透明彩色波带在背景中弯曲流动，叠加模糊后像柔和的极光或液体，前景文字保持独立。",
+      "aliases": [
+        "流动的彩色水波",
+        "像丝带一样的背景",
+        "柔和的波浪"
+      ],
+      "trigger": "显示后自动循环绘制波形",
+      "placements": [
+        "首页首屏背景",
+        "品牌页面"
+      ],
+      "tags": [
+        "波浪",
+        "彩色丝带",
+        "自动循环",
+        "背景"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/wavy-background",
+      "verifiedAt": "2026-10-12T07:14:26.143Z",
+      "registryUrl": "https://ui.aceternity.com/registry/wavy-background.json"
+    },
+    "https://ui.aceternity.com/components/background-gradient": {
+      "title": "流动渐变光晕",
+      "stage": "style",
+      "description": "为卡片或按钮添加缓慢流动的彩色渐变边缘及背景光晕。",
+      "aliases": [
+        "渐变边框",
+        "流光渐变",
+        "彩色光晕",
+        "渐变卡片"
+      ],
+      "trigger": "自动循环流动；无需点击",
+      "placements": [
+        "产品卡片",
+        "行动按钮"
+      ],
+      "tags": [
+        "gradient",
+        "background",
+        "card"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/background-gradient",
+      "verifiedAt": "2026-10-12T07:14:26.145Z",
+      "registryUrl": "https://ui.aceternity.com/registry/background-gradient.json"
+    },
+    "https://ui.aceternity.com/components/layout-grid": {
+      "title": "点击展开的作品网格",
+      "stage": "structure",
+      "description": "点击网格项目后放大展示详情，形成从浏览到聚焦的作品列表。",
+      "aliases": [
+        "点击展开",
+        "作品墙",
+        "大图查看",
+        "画廊"
+      ],
+      "trigger": "点击卡片展开；点击关闭返回网格",
+      "placements": [
+        "作品集",
+        "案例展示"
+      ],
+      "tags": [
+        "grid",
+        "gallery",
+        "click"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/layout-grid",
+      "verifiedAt": "2026-10-12T07:14:26.331Z",
+      "registryUrl": "https://ui.aceternity.com/registry/layout-grid.json"
+    },
+    "https://ui.aceternity.com/components/background-gradient-animation": {
+      "title": "移动交融的渐变色团",
+      "stage": "style",
+      "description": "多团大面积模糊渐变在背景中缓慢移动和交融，形成连续变化的色彩空间；可加入响应鼠标位置的互动色团。",
+      "aliases": [
+        "颜色慢慢混在一起",
+        "会流动的彩色背景",
+        "像彩色烟雾"
+      ],
+      "trigger": "渐变团自动运动；启用互动层时跟随鼠标",
+      "placements": [
+        "首屏背景",
+        "登录页背景"
+      ],
+      "tags": [
+        "渐变",
+        "模糊色团",
+        "自动循环",
+        "鼠标互动"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/background-gradient-animation",
+      "verifiedAt": "2026-10-12T07:14:26.336Z",
+      "registryUrl": "https://ui.aceternity.com/registry/background-gradient-animation.json"
+    },
+    "https://ui.aceternity.com/components/macbook-scroll": {
+      "title": "滚动打开的笔记本屏幕",
+      "stage": "effect",
+      "description": "笔记本外框与屏幕从折起的透视状态逐渐展开，屏幕截图在滚动时放大并转正，形成由设备展示进入界面内容的过渡。",
+      "aliases": [
+        "往下滚笔记本就打开",
+        "电脑屏幕慢慢铺开",
+        "设备变成大截图"
+      ],
+      "trigger": "页面滚动驱动屏幕旋转、缩放与位移",
+      "placements": [
+        "软件产品首屏",
+        "界面演示"
+      ],
+      "tags": [
+        "笔记本",
+        "滚动",
+        "设备展示",
+        "透视"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/macbook-scroll",
+      "verifiedAt": "2026-10-12T07:14:26.488Z",
+      "registryUrl": "https://ui.aceternity.com/registry/macbook-scroll.json"
+    },
+    "https://ui.aceternity.com/components/input": {
+      "title": "输入边缘追光的注册表单",
+      "stage": "structure",
+      "description": "圆角注册面板把姓名、邮箱、密码等带标签的字段纵向组织起来，输入框边缘的蓝色局部高光随鼠标移动，底部提供主要提交入口和其他登录方式示例；原站仅展示表单，没有真实登录流程。",
+      "aliases": [
+        "带发光输入框的注册页",
+        "鼠标碰表单边缘会亮",
+        "简洁的注册面板"
+      ],
+      "trigger": "鼠标移入、移动与移出驱动输入高光；键盘聚焦显示焦点环；提交按钮演示表单事件",
+      "placements": [
+        "注册页面",
+        "联系表单",
+        "账号入口"
+      ],
+      "tags": [
+        "注册表单",
+        "字段标签",
+        "鼠标追光",
+        "输入框"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/signup-form",
+      "verifiedAt": "2026-10-12T07:14:26.795Z",
+      "registryUrl": "https://ui.aceternity.com/registry/input.json",
+      "resolvedSourceUrl": "https://ui.aceternity.com/components/signup-form",
+      "implementationUrl": "https://ui.aceternity.com/components/signup-form",
+      "issue": "Input 与 Label 没有独立演示；已核验二者共同使用的官方 Signup Form 页面，作为一个完整注册表单案例。",
+      "variant": "官方 Signup Form 同时演示 Input 与 Label，合并为完整表单参考"
+    },
+    "https://ui.aceternity.com/components/label": {
+      "title": "输入边缘追光的注册表单",
+      "stage": "structure",
+      "description": "圆角注册面板把姓名、邮箱、密码等带标签的字段纵向组织起来，输入框边缘的蓝色局部高光随鼠标移动，底部提供主要提交入口和其他登录方式示例；原站仅展示表单，没有真实登录流程。",
+      "aliases": [
+        "带标签的注册表单",
+        "输入框上面有字段名字",
+        "简洁的注册面板"
+      ],
+      "trigger": "鼠标移入、移动与移出驱动输入高光；键盘聚焦显示焦点环；标签关联对应输入控件",
+      "placements": [
+        "注册页面",
+        "联系表单",
+        "账号入口"
+      ],
+      "tags": [
+        "注册表单",
+        "字段标签",
+        "鼠标追光",
+        "输入框"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/signup-form",
+      "verifiedAt": "2026-10-12T07:14:26.917Z",
+      "registryUrl": "https://ui.aceternity.com/registry/label.json",
+      "resolvedSourceUrl": "https://ui.aceternity.com/components/signup-form",
+      "implementationUrl": "https://ui.aceternity.com/components/signup-form",
+      "issue": "Input 与 Label 没有独立演示；已核验二者共同使用的官方 Signup Form 页面，作为一个完整注册表单案例。",
+      "variant": "官方 Signup Form 同时演示 Input 与 Label，合并为完整表单参考"
+    },
+    "https://ui.aceternity.com/components/multi-step-loader": {
+      "title": "逐项完成的步骤加载面板",
+      "stage": "effect",
+      "description": "任务处理中显示多行步骤，当前步骤与已完成步骤使用不同透明度和勾选状态，进度按时间推进，形成明确的处理过程。",
+      "aliases": [
+        "加载时告诉我做到哪一步",
+        "一项一项打勾",
+        "有步骤的等待界面"
+      ],
+      "trigger": "开启加载状态后按设定时间推进；关闭时收起",
+      "placements": [
+        "长任务等待页",
+        "内容生成流程"
+      ],
+      "tags": [
+        "加载",
+        "步骤",
+        "完成勾选",
+        "进度"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/multi-step-loader",
+      "verifiedAt": "2026-10-12T07:14:26.758Z",
+      "registryUrl": "https://ui.aceternity.com/registry/multi-step-loader.json"
+    },
+    "https://ui.aceternity.com/components/globe": {
+      "title": "带飞行弧线的旋转地球",
+      "stage": "effect",
+      "description": "立体地球表面叠加从地点间升起的弧线、点和扩散圆环，缓慢旋转展示全球连接；用户可拖动查看角度。",
+      "aliases": [
+        "地球上有线飞来飞去",
+        "全球连接的球",
+        "能转的地球"
+      ],
+      "trigger": "显示后自动旋转与弧线动画；可通过指针拖动旋转",
+      "placements": [
+        "全球业务介绍",
+        "分布网络展示"
+      ],
+      "tags": [
+        "地球",
+        "弧线",
+        "全球连接",
+        "三维"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/github-globe",
+      "verifiedAt": "2026-10-12T07:14:27.064Z",
+      "registryUrl": "https://ui.aceternity.com/registry/globe.json",
+      "resolvedSourceUrl": "https://ui.aceternity.com/components/github-globe",
+      "implementationUrl": "https://ui.aceternity.com/components/github-globe",
+      "issue": "结构化目录仍列出旧地址，旧文档返回 404；已核验当前官方组件页面。"
+    },
+    "https://ui.aceternity.com/components/aurora-background": {
+      "title": "柔和漂移的极光底色",
+      "stage": "style",
+      "description": "大面积半透明渐变亮带缓慢漂移，通过模糊和遮罩形成类似北极光的柔和背景，适合让浅色或深色内容区具有空气感。",
+      "aliases": [
+        "北极光一样的背景",
+        "轻轻流动的彩色光",
+        "淡淡的极光"
+      ],
+      "trigger": "显示后背景位置自动循环移动",
+      "placements": [
+        "首屏底色",
+        "品牌内容区"
+      ],
+      "tags": [
+        "极光",
+        "渐变",
+        "柔光",
+        "自动循环"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/aurora-background",
+      "verifiedAt": "2026-10-12T07:14:26.942Z",
+      "registryUrl": "https://ui.aceternity.com/registry/aurora-background.json"
+    },
+    "https://ui.aceternity.com/components/canvas-reveal-effect": {
+      "title": "悬停从中心扩散的点阵",
+      "stage": "effect",
+      "description": "深色卡片平时简洁，悬停后彩色点阵从中心向四周扩散显现，标题与图标同步变化，移出后恢复原始状态。",
+      "aliases": [
+        "鼠标碰到卡片点点就散开",
+        "从中间展开的点阵",
+        "隐藏背景被点亮"
+      ],
+      "trigger": "鼠标悬停卡片开启点阵揭示；移出收起",
+      "placements": [
+        "功能卡片",
+        "团队卡片"
+      ],
+      "tags": [
+        "点阵",
+        "悬停",
+        "扩散",
+        "揭示"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/canvas-reveal-effect",
+      "verifiedAt": "2026-10-12T07:14:27.355Z",
+      "registryUrl": "https://ui.aceternity.com/registry/canvas-reveal-effect.json"
+    },
+    "https://ui.aceternity.com/components/hover-border-gradient": {
+      "title": "悬停扩展的渐变亮边",
+      "stage": "effect",
+      "description": "按钮边缘的局部渐变亮区沿边界缓慢转动，悬停时亮区扩大为覆盖整个边缘的光晕，强调按钮可操作性。",
+      "aliases": [
+        "碰到按钮一圈都亮了",
+        "渐变边框变亮",
+        "边缘有光的按钮"
+      ],
+      "trigger": "自动边缘渐变变化；鼠标悬停扩大高光",
+      "placements": [
+        "行动按钮",
+        "胶囊标签"
+      ],
+      "tags": [
+        "渐变边框",
+        "悬停",
+        "按钮",
+        "光晕"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/hover-border-gradient",
+      "verifiedAt": "2026-10-12T07:14:27.315Z",
+      "registryUrl": "https://ui.aceternity.com/registry/hover-border-gradient.json"
+    },
+    "https://ui.aceternity.com/components/hero-highlight": {
+      "title": "带荧光笔重点句的点阵首屏",
+      "stage": "style",
+      "description": "标题放在浅点阵背景前，悬停时背景点阵改变密度或颜色；重点词句下方铺开彩色渐变高亮，像荧光笔划过。",
+      "aliases": [
+        "标题重点句画了一道荧光",
+        "点点背景的标题",
+        "像用彩色笔标重点"
+      ],
+      "trigger": "悬停切换背景点阵；高亮组件显示时横向展开",
+      "placements": [
+        "首页首屏标题",
+        "重点文案"
+      ],
+      "tags": [
+        "文字高亮",
+        "点阵",
+        "渐变",
+        "悬停"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/hero-highlight",
+      "verifiedAt": "2026-10-12T07:14:27.404Z",
+      "registryUrl": "https://ui.aceternity.com/registry/hero-highlight.json"
+    },
+    "https://ui.aceternity.com/components/vortex": {
+      "title": "汇成旋涡的发光粒子",
+      "stage": "style",
+      "description": "大量发光粒子沿弯曲轨迹流动，叠成有深度的彩色旋涡，背景持续运动，前景内容不跟着旋转。",
+      "aliases": [
+        "背景像个星光旋涡",
+        "粒子绕着转",
+        "彩色光点流起来"
+      ],
+      "trigger": "显示后自动绘制粒子轨迹",
+      "placements": [
+        "行动区背景",
+        "创意首屏"
+      ],
+      "tags": [
+        "旋涡",
+        "粒子",
+        "自动循环",
+        "背景"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/vortex",
+      "verifiedAt": "2026-10-12T07:14:27.475Z",
+      "registryUrl": "https://ui.aceternity.com/registry/vortex.json"
+    },
+    "https://ui.aceternity.com/components/wobble-card": {
+      "title": "跟着鼠标轻晃的内容卡片",
+      "stage": "effect",
+      "description": "鼠标进入后整张卡片轻微向指针方向平移和缩放，内部内容产生反向位移，形成柔软的晃动与深度感。",
+      "aliases": [
+        "卡片轻轻晃一下",
+        "鼠标挪动卡片会跟着偏",
+        "有点弹性的卡片"
+      ],
+      "trigger": "鼠标在卡片内移动；移出平滑复位",
+      "placements": [
+        "功能卡片",
+        "产品展示卡片"
+      ],
+      "tags": [
+        "晃动",
+        "鼠标跟随",
+        "平移",
+        "缩放"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/wobble-card",
+      "verifiedAt": "2026-10-12T07:14:27.526Z",
+      "registryUrl": "https://ui.aceternity.com/registry/wobble-card.json"
+    },
+    "https://ui.aceternity.com/components/placeholders-and-vanish-input": {
+      "title": "提交时碎成粒子的输入文字",
+      "stage": "effect",
+      "description": "输入框的提示语自动轮换；输入并提交后，当前文字被采样成小点，逐渐向外散开消失，再恢复可输入状态。",
+      "aliases": [
+        "提交后字碎掉了",
+        "输入内容变成小粒子",
+        "轮流提示我写什么"
+      ],
+      "trigger": "提示语定时轮换；按回车或点击提交触发消散",
+      "placements": [
+        "搜索输入",
+        "问题提交",
+        "创意工具入口"
+      ],
+      "tags": [
+        "输入框",
+        "提交",
+        "粒子消散",
+        "占位提示"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/placeholders-and-vanish-input",
+      "verifiedAt": "2026-10-12T07:14:27.715Z",
+      "registryUrl": "https://ui.aceternity.com/registry/placeholders-and-vanish-input.json"
+    },
+    "https://ui.aceternity.com/components/flip-words": {
+      "title": "在句子里轮换的关键词",
+      "stage": "effect",
+      "description": "句子中的一个词按时间间隔替换，旧词分散淡出，新词逐字浮入，其余句子保持稳定。",
+      "aliases": [
+        "一句话里有个词不停换",
+        "标题词语翻来翻去",
+        "轮流出现关键词"
+      ],
+      "trigger": "显示后按间隔自动轮换关键词",
+      "placements": [
+        "首屏标题",
+        "卖点短句"
+      ],
+      "tags": [
+        "文字轮换",
+        "逐字",
+        "关键词",
+        "自动循环"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/flip-words",
+      "verifiedAt": "2026-10-12T07:14:27.792Z",
+      "registryUrl": "https://ui.aceternity.com/registry/flip-words.json"
+    },
+    "https://ui.aceternity.com/components/link-preview": {
+      "title": "悬停网页链接的小预览",
+      "stage": "effect",
+      "description": "普通文字链接在悬停或聚焦时弹出目标网页的缩略图浮层，浮层有入场缩放并轻微跟随鼠标；可使用自定义预览图。",
+      "aliases": [
+        "鼠标碰链接能看到网页小图",
+        "不点开先预览网址",
+        "链接上冒出截图"
+      ],
+      "trigger": "悬停或键盘聚焦链接显示；移开关闭",
+      "placements": [
+        "文章正文链接",
+        "资源推荐"
+      ],
+      "tags": [
+        "链接",
+        "缩略图",
+        "提示浮层",
+        "悬停"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/link-preview",
+      "verifiedAt": "2026-10-12T07:14:27.794Z",
+      "registryUrl": "https://ui.aceternity.com/registry/link-preview.json"
+    },
+    "https://ui.aceternity.com/components/glare-card": {
+      "title": "随角度移动的全息反光卡片",
+      "stage": "effect",
+      "description": "卡片随鼠标位置倾斜，表面叠加彩色条纹与亮面反射，反光位置一起移动，类似覆有全息膜的收藏卡。",
+      "aliases": [
+        "像镭射卡一样反光",
+        "卡片表面有彩虹",
+        "随鼠标转的亮面"
+      ],
+      "trigger": "鼠标在卡片上移动改变透视与反光；移出复位",
+      "placements": [
+        "创意卡片",
+        "会员展示",
+        "作品封面"
+      ],
+      "tags": [
+        "反光",
+        "全息",
+        "三维",
+        "悬停"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/glare-card",
+      "verifiedAt": "2026-10-12T07:14:27.853Z",
+      "registryUrl": "https://ui.aceternity.com/registry/glare-card.json"
+    },
+    "https://ui.aceternity.com/components/animated-modal": {
+      "title": "带景深过渡的弹窗",
+      "stage": "effect",
+      "description": "点击入口后，背景被半透明遮罩覆盖，内容弹窗以缩放、位移和模糊过渡进入；点击关闭按钮或外部区域可退出。",
+      "aliases": [
+        "弹窗柔和地弹出来",
+        "带模糊背景的对话框",
+        "打开详情的浮层"
+      ],
+      "trigger": "点击入口打开；点击关闭或外部区域关闭",
+      "placements": [
+        "详情弹窗",
+        "确认操作",
+        "预约表单"
+      ],
+      "tags": [
+        "弹窗",
+        "遮罩",
+        "入场",
+        "点击"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/animated-modal",
+      "verifiedAt": "2026-10-12T07:14:27.973Z",
+      "registryUrl": "https://ui.aceternity.com/registry/animated-modal.json"
+    },
+    "https://ui.aceternity.com/components/sidebar": {
+      "title": "悬停展开的侧边导航",
+      "stage": "structure",
+      "description": "侧栏默认保持紧凑，鼠标移入后展开导航标签，适合多页面工作台。",
+      "aliases": [
+        "侧边栏",
+        "侧栏导航",
+        "收起展开",
+        "工作台"
+      ],
+      "trigger": "鼠标移入侧栏展开，移出收起",
+      "placements": [
+        "仪表盘导航",
+        "管理后台"
+      ],
+      "tags": [
+        "sidebar",
+        "navigation",
+        "dashboard"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/sidebar",
+      "verifiedAt": "2026-10-12T07:14:28.122Z",
+      "registryUrl": "https://ui.aceternity.com/registry/sidebar.json"
+    },
+    "https://ui.aceternity.com/components/apple-cards-carousel": {
+      "title": "点击展开详情的大卡片轮播",
+      "stage": "structure",
+      "description": "横向排列大尺寸图片卡片，用箭头浏览更多项目；点击某张卡片后展开为覆盖页面的详情层，保留封面与标题。",
+      "aliases": [
+        "像苹果网站那种大卡片",
+        "左右翻卡片再点开",
+        "大图卡片介绍"
+      ],
+      "trigger": "点击箭头或横向滚动浏览；点击卡片展开；关闭回列表",
+      "placements": [
+        "产品功能区",
+        "故事与案例"
+      ],
+      "tags": [
+        "卡片轮播",
+        "详情展开",
+        "大图",
+        "横向"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/apple-cards-carousel",
+      "verifiedAt": "2026-10-12T07:14:28.261Z",
+      "registryUrl": "https://ui.aceternity.com/registry/apple-cards-carousel.json"
+    },
+    "https://ui.aceternity.com/components/shooting-stars": {
+      "title": "斜穿星空的长尾流星",
+      "stage": "style",
+      "description": "深色星空上偶尔出现亮头与细长尾迹，沿斜向穿过画面；它和背景中缓慢闪烁的静态星点分别构成两层效果。",
+      "aliases": [
+        "一颗星拖着尾巴划过",
+        "偶尔有流星的夜空",
+        "长尾星星"
+      ],
+      "trigger": "显示后在随机间隔自动生成流星",
+      "placements": [
+        "首屏背景",
+        "夜空主题页"
+      ],
+      "tags": [
+        "流星",
+        "尾迹",
+        "星空",
+        "自动循环"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/shooting-stars-and-stars-background",
+      "verifiedAt": "2026-10-12T07:14:28.552Z",
+      "registryUrl": "https://ui.aceternity.com/registry/shooting-stars.json",
+      "resolvedSourceUrl": "https://ui.aceternity.com/components/shooting-stars-and-stars-background",
+      "implementationUrl": "https://ui.aceternity.com/components/shooting-stars-and-stars-background",
+      "issue": "结构化目录仍列出旧地址，旧文档返回 404；已核验当前官方组件页面。",
+      "variant": "同页的流星动画层"
+    },
+    "https://ui.aceternity.com/components/stars-background": {
+      "title": "疏密可调的闪烁星空",
+      "stage": "style",
+      "description": "深色区域内散布不同大小与亮度的星点，部分星点轻微明暗变化，形成安静的夜空；可和独立流星层组合。",
+      "aliases": [
+        "静静闪着的满天星",
+        "黑色底上的小星星",
+        "夜空背景"
+      ],
+      "trigger": "显示后自动绘制星点；启用闪烁时亮度循环变化",
+      "placements": [
+        "首屏背景",
+        "夜空主题页"
+      ],
+      "tags": [
+        "星空",
+        "星点",
+        "闪烁",
+        "背景"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/shooting-stars-and-stars-background",
+      "verifiedAt": "2026-10-12T07:14:28.644Z",
+      "registryUrl": "https://ui.aceternity.com/registry/stars-background.json",
+      "resolvedSourceUrl": "https://ui.aceternity.com/components/shooting-stars-and-stars-background",
+      "implementationUrl": "https://ui.aceternity.com/components/shooting-stars-and-stars-background",
+      "issue": "结构化目录仍列出旧地址，旧文档返回 404；已核验当前官方组件页面。",
+      "variant": "同页的基础星空层"
+    },
+    "https://ui.aceternity.com/components/compare": {
+      "title": "可拖动的前后图片对比",
+      "stage": "effect",
+      "description": "两张图片叠在同一框内，一条分界线控制各自可见区域；拖动或移动指针可以擦开另一张图，比较前后差异。",
+      "aliases": [
+        "拉一条线看前后对比",
+        "左右擦开两张图",
+        "改造前后的滑杆"
+      ],
+      "trigger": "根据配置拖动分界或悬停移动；支持自动来回展示",
+      "placements": [
+        "前后效果对比",
+        "修图展示",
+        "产品演示"
+      ],
+      "tags": [
+        "图片对比",
+        "拖动",
+        "分界线",
+        "揭示"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/compare",
+      "verifiedAt": "2026-10-12T07:14:28.441Z",
+      "registryUrl": "https://ui.aceternity.com/registry/compare.json"
+    },
+    "https://ui.aceternity.com/components/card-spotlight": {
+      "title": "鼠标位置决定的卡片聚光",
+      "stage": "effect",
+      "description": "卡片内出现圆形柔光，高光位置跟随指针；星点或颜色只在光照范围内清晰显现，其他区域保持较暗。",
+      "aliases": [
+        "鼠标照到哪哪块亮",
+        "卡片里面有手电光",
+        "圆形亮斑跟着走"
+      ],
+      "trigger": "鼠标移入并在卡片中移动；移出淡出",
+      "placements": [
+        "服务卡片",
+        "重点功能卡片"
+      ],
+      "tags": [
+        "聚光",
+        "鼠标跟随",
+        "径向渐变",
+        "卡片"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/card-spotlight",
+      "verifiedAt": "2026-10-12T07:14:28.649Z",
+      "registryUrl": "https://ui.aceternity.com/registry/card-spotlight.json"
+    },
+    "https://ui.aceternity.com/components/cover": {
+      "title": "悬停加速的光速文字框",
+      "stage": "effect",
+      "description": "重点词句被框在深色容器里，星点与光束在周围流动；悬停后光束加快，形成像穿越星空的速度感。",
+      "aliases": [
+        "文字旁边像在光速飞行",
+        "鼠标碰标题就加速",
+        "给几个字套个发光框"
+      ],
+      "trigger": "平时光束自动运动；鼠标悬停切换到快速状态",
+      "placements": [
+        "首屏关键词",
+        "速度或性能卖点"
+      ],
+      "tags": [
+        "光束",
+        "星点",
+        "悬停",
+        "文字容器"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/container-cover",
+      "verifiedAt": "2026-10-12T07:14:29.111Z",
+      "registryUrl": "https://ui.aceternity.com/registry/cover.json",
+      "resolvedSourceUrl": "https://ui.aceternity.com/components/container-cover",
+      "implementationUrl": "https://ui.aceternity.com/components/container-cover",
+      "issue": "结构化目录仍列出旧地址，旧文档返回 404；已核验当前官方组件页面。"
+    },
+    "https://ui.aceternity.com/components/file-upload": {
+      "title": "带轻微立体反馈的上传区",
+      "stage": "effect",
+      "description": "虚线或点阵上传区域支持点击选文件和拖入文件；悬停时中央文件图标抬起，选中文件后出现文件名、类型与大小卡片。",
+      "aliases": [
+        "把文件拖进去的框",
+        "上传后变成文件卡片",
+        "能点也能拖的上传区"
+      ],
+      "trigger": "点击选择或拖放文件；悬停展示图标反馈",
+      "placements": [
+        "文件提交表单",
+        "素材导入"
+      ],
+      "tags": [
+        "上传",
+        "拖放",
+        "文件信息",
+        "表单"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/file-upload",
+      "verifiedAt": "2026-10-12T07:14:28.932Z",
+      "registryUrl": "https://ui.aceternity.com/registry/file-upload.json"
+    },
+    "https://ui.aceternity.com/components/floating-dock": {
+      "title": "鼠标经过时放大的图标导航",
+      "stage": "structure",
+      "description": "一排图标置于圆角底座中，鼠标靠近时当前位置和邻近图标逐渐放大，并显示对应名称，类似桌面系统的 Dock。",
+      "aliases": [
+        "像苹果电脑底部那排图标",
+        "鼠标经过图标会变大",
+        "悬浮图标菜单"
+      ],
+      "trigger": "鼠标在图标栏上移动驱动邻近图标大小；悬停提示名称",
+      "placements": [
+        "工具导航",
+        "作品集快捷入口"
+      ],
+      "tags": [
+        "图标导航",
+        "放大",
+        "悬浮",
+        "工具栏"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/floating-dock",
+      "verifiedAt": "2026-10-12T07:14:29.117Z",
+      "registryUrl": "https://ui.aceternity.com/registry/floating-dock.json"
+    },
+    "https://ui.aceternity.com/components/focus-cards": {
+      "title": "悬停聚焦其余模糊的图片组",
+      "stage": "effect",
+      "description": "多张图片卡片并排展示，鼠标停在一张上时它保持清晰，其余卡片变模糊并稍微缩小，当前卡片标题浮现。",
+      "aliases": [
+        "看哪张其他就模糊",
+        "照片墙突出一张",
+        "鼠标碰到的图最清楚"
+      ],
+      "trigger": "悬停某卡片开启聚焦；移出卡片组恢复",
+      "placements": [
+        "作品图片墙",
+        "目的地展示"
+      ],
+      "tags": [
+        "图片组",
+        "聚焦",
+        "模糊",
+        "悬停"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/focus-cards",
+      "verifiedAt": "2026-10-12T07:14:29.122Z",
+      "registryUrl": "https://ui.aceternity.com/registry/focus-cards.json"
+    },
+    "https://ui.aceternity.com/components/background-beams-with-collision": {
+      "title": "落到边缘后散开的光束",
+      "stage": "style",
+      "description": "多根竖向亮条从上方落下，碰到容器底部时短暂炸开成小粒子，再继续出现新的光束。",
+      "aliases": [
+        "光条掉下来碰到底会炸开",
+        "背景像有小火花",
+        "撞到边上的流光"
+      ],
+      "trigger": "显示后自动下落循环；撞到预设底部区域产生粒子",
+      "placements": [
+        "首屏背景",
+        "动态展示区"
+      ],
+      "tags": [
+        "落光",
+        "碰撞",
+        "粒子",
+        "自动循环"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/background-beams-with-collision",
+      "verifiedAt": "2026-10-12T07:14:29.120Z",
+      "registryUrl": "https://ui.aceternity.com/registry/background-beams-with-collision.json"
+    },
+    "https://ui.aceternity.com/components/timeline": {
+      "title": "滚动跟随的时间线",
+      "stage": "structure",
+      "description": "按时间组织内容，带粘性阶段标题和随滚动延伸的进度光束。",
+      "aliases": [
+        "时间轴",
+        "历程",
+        "发展历史",
+        "阶段进度"
+      ],
+      "trigger": "页面向下滚动，进度线延伸，阶段标题粘性定位",
+      "placements": [
+        "关于页面",
+        "项目历程"
+      ],
+      "tags": [
+        "timeline",
+        "scroll",
+        "content"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/timeline",
+      "verifiedAt": "2026-10-12T07:14:29.533Z",
+      "registryUrl": "https://ui.aceternity.com/registry/timeline.json"
+    },
+    "https://ui.aceternity.com/components/text-hover-effect": {
+      "title": "鼠标扫过的渐变空心大字",
+      "stage": "effect",
+      "description": "大字以细线轮廓显示，鼠标附近的圆形范围揭露彩色渐变线条，文字轮廓也有描绘入场，形成局部亮起的空心字。",
+      "aliases": [
+        "鼠标扫过字边会亮",
+        "彩色描边的大字",
+        "空心字被光照亮"
+      ],
+      "trigger": "鼠标在文字区移动改变渐变遮罩位置",
+      "placements": [
+        "页脚品牌字",
+        "大标题"
+      ],
+      "tags": [
+        "空心文字",
+        "渐变",
+        "鼠标跟随",
+        "描边"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/text-hover-effect",
+      "verifiedAt": "2026-10-12T07:14:29.978Z",
+      "registryUrl": "https://ui.aceternity.com/registry/text-hover-effect.json"
+    },
+    "https://ui.aceternity.com/components/lens": {
+      "title": "跟随鼠标的局部放大镜",
+      "stage": "effect",
+      "description": "在图片或其他内容上移动时出现一个放大区域，区域内显示更大尺度的同一内容，帮助查看局部细节；移出后恢复正常画面。",
+      "aliases": [
+        "鼠标放上去能放大一点",
+        "图片上的放大镜",
+        "看商品细节的圆窗"
+      ],
+      "trigger": "悬停并移动指针控制镜头位置；移出关闭",
+      "placements": [
+        "商品图片",
+        "设计细节",
+        "截图展示"
+      ],
+      "tags": [
+        "放大镜",
+        "图片细节",
+        "悬停",
+        "鼠标跟随"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/lens",
+      "verifiedAt": "2026-10-12T07:14:29.843Z",
+      "registryUrl": "https://ui.aceternity.com/registry/lens.json"
+    },
+    "https://ui.aceternity.com/components/background-lines": {
+      "title": "从中间伸展的彩色波形线",
+      "stage": "style",
+      "description": "多条不同颜色的弧线以中部为中心向两侧展开，细线逐段被绘制并循环变化，给标题后方增加有节奏的波形背景。",
+      "aliases": [
+        "彩色线条从中间长出来",
+        "标题背后的波形",
+        "很多细细的彩线"
+      ],
+      "trigger": "显示后路径长度按错开的时间自动变化",
+      "placements": [
+        "首屏背景",
+        "标题区"
+      ],
+      "tags": [
+        "彩色线条",
+        "波形",
+        "自动循环",
+        "背景"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/background-lines",
+      "verifiedAt": "2026-10-12T07:14:29.543Z",
+      "registryUrl": "https://ui.aceternity.com/registry/background-lines.json"
+    },
+    "https://ui.aceternity.com/components/animated-testimonials": {
+      "title": "图片与评价联动的轮播",
+      "stage": "structure",
+      "description": "评价文字与人物图片并列，图片像一叠略微旋转的照片；切换时新照片升到前方，姓名、职位与引言一起更新。",
+      "aliases": [
+        "左边照片右边好评",
+        "照片堆轮流切换",
+        "人物评价轮播"
+      ],
+      "trigger": "点击前后按钮切换；启用自动播放后定时轮换",
+      "placements": [
+        "用户评价区",
+        "团队故事"
+      ],
+      "tags": [
+        "评价",
+        "人物",
+        "轮播",
+        "照片堆"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/animated-testimonials",
+      "verifiedAt": "2026-10-12T07:14:29.980Z",
+      "registryUrl": "https://ui.aceternity.com/registry/animated-testimonials.json"
+    },
+    "https://ui.aceternity.com/components/world-map": {
+      "title": "点阵地图上的连线动画",
+      "stage": "effect",
+      "description": "世界地图以细小点阵呈现，不同地点之间用弧形线路连接，线路逐段被绘制，端点带轻微扩散圆环。",
+      "aliases": [
+        "世界地图上画出连接线",
+        "城市之间有光连起来",
+        "点点组成的地图"
+      ],
+      "trigger": "组件显示时自动绘制线路与端点波纹",
+      "placements": [
+        "全球业务区",
+        "分布团队说明"
+      ],
+      "tags": [
+        "世界地图",
+        "连接线",
+        "地点",
+        "自动绘制"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/world-map",
+      "verifiedAt": "2026-10-12T07:14:30.298Z",
+      "registryUrl": "https://ui.aceternity.com/registry/world-map.json"
+    },
+    "https://ui.aceternity.com/components/code-block": {
+      "title": "带行号与复制按钮的代码展示",
+      "stage": "structure",
+      "description": "代码按语法高亮，并可显示行号、文件名与语言标签；长代码在容器中滚动，指定行可以高亮，按钮用于复制内容。",
+      "aliases": [
+        "像编辑器一样显示代码",
+        "代码旁边有行号",
+        "能复制的小代码窗"
+      ],
+      "trigger": "持续展示；点击复制按钮；长内容滚动查看",
+      "placements": [
+        "技术文档",
+        "开发工具介绍"
+      ],
+      "tags": [
+        "代码",
+        "语法高亮",
+        "复制",
+        "行号"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/code-block",
+      "verifiedAt": "2026-10-12T07:14:30.376Z",
+      "registryUrl": "https://ui.aceternity.com/registry/code-block.json"
+    },
+    "https://ui.aceternity.com/components/carousel": {
+      "title": "带箭头与指针微动效的轮播",
+      "stage": "structure",
+      "description": "多个大图卡片横向排列，通过左右箭头或点击邻近卡片切换；活动卡片的图片随鼠标轻微位移，非活动卡片变暗并倾斜。",
+      "aliases": [
+        "左右切图片的展示框",
+        "能翻页的卡片",
+        "图片稍微跟鼠标动"
+      ],
+      "trigger": "点击前后箭头或卡片切换；鼠标在活动项内移动驱动图片位移",
+      "placements": [
+        "作品展示",
+        "功能截图"
+      ],
+      "tags": [
+        "轮播",
+        "箭头",
+        "图片",
+        "指针反馈"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/carousel",
+      "verifiedAt": "2026-10-12T07:14:31.103Z",
+      "registryUrl": "https://ui.aceternity.com/registry/carousel.json"
+    },
+    "https://ui.aceternity.com/components/colourful-text": {
+      "title": "每个字轮流变色的标题",
+      "stage": "effect",
+      "description": "同一行文字中的各字符使用不同颜色，按时间间隔改变配色、透明度、模糊和轻微位移，让标题带有活泼的闪动节奏。",
+      "aliases": [
+        "每个字颜色都不一样",
+        "文字会变彩色",
+        "跳动的彩色标题"
+      ],
+      "trigger": "显示后按间隔自动改变字符样式",
+      "placements": [
+        "活动标题",
+        "创意首屏"
+      ],
+      "tags": [
+        "彩色文字",
+        "字符",
+        "自动循环",
+        "活泼"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/colourful-text",
+      "verifiedAt": "2026-10-12T07:14:30.630Z",
+      "registryUrl": "https://ui.aceternity.com/registry/colourful-text.json"
+    },
+    "https://ui.aceternity.com/components/squiggly-text": {
+      "title": "轮廓像水波般抖动的文字",
+      "stage": "effect",
+      "description": "文字通过噪声位移滤镜轻微扭曲，笔画边缘不断起伏，形成像手绘波浪或胶状文字一样的抖动轮廓。",
+      "aliases": [
+        "字边缘在扭来扭去",
+        "像果冻一样的字",
+        "波浪抖动文字"
+      ],
+      "trigger": "显示后滤镜参数自动变化",
+      "placements": [
+        "创意标题",
+        "活动海报式页面"
+      ],
+      "tags": [
+        "文字扭曲",
+        "波浪",
+        "滤镜",
+        "自动循环"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/squiggly-text",
+      "verifiedAt": "2026-10-12T07:14:30.945Z",
+      "registryUrl": "https://ui.aceternity.com/registry/squiggly-text.json"
+    },
+    "https://ui.aceternity.com/components/magnetic-button": {
+      "title": "被鼠标轻轻吸引的按钮",
+      "stage": "effect",
+      "description": "指针进入按钮附近时，按钮向鼠标方向小幅漂移，文字可以产生次级移动；离开后用弹性动画回到中心。",
+      "aliases": [
+        "按钮像磁铁一样跟着鼠标",
+        "会被吸过去的按钮",
+        "有弹性的按钮"
+      ],
+      "trigger": "鼠标在按钮区域内移动；移出弹性复位",
+      "placements": [
+        "主要行动按钮",
+        "作品集入口"
+      ],
+      "tags": [
+        "磁吸",
+        "按钮",
+        "鼠标跟随",
+        "弹性"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/magnetic-button",
+      "verifiedAt": "2026-10-12T07:14:30.850Z",
+      "registryUrl": "https://ui.aceternity.com/registry/magnetic-button.json"
+    },
+    "https://ui.aceternity.com/components/notch": {
+      "title": "顶端或底端的胶囊导航岛",
+      "stage": "structure",
+      "description": "紧凑圆角导航岛固定在屏幕顶部或底部，多个入口共用同一容器；点击入口展开选项面板并切换活动状态。",
+      "aliases": [
+        "像灵动岛那样的菜单",
+        "浮在顶部的小胶囊",
+        "可展开的导航岛"
+      ],
+      "trigger": "点击项目打开选项；选择后切换活动项；外部点击或 Escape 收起",
+      "placements": [
+        "快捷导航",
+        "页面工具入口"
+      ],
+      "tags": [
+        "胶囊导航",
+        "悬浮",
+        "活动状态",
+        "点击"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/notch",
+      "verifiedAt": "2026-10-12T07:14:30.879Z",
+      "registryUrl": "https://ui.aceternity.com/registry/notch.json"
+    },
+    "https://ui.aceternity.com/components/spotlight-new": {
+      "title": "左右缓慢扫动的双侧聚光",
+      "stage": "style",
+      "description": "左右两组柔和长光束照向首屏中央，光束以不同位置和角度缓慢移动，形成左右呼应的舞台光照。",
+      "aliases": [
+        "两边打过来的光",
+        "背景有左右扫动的灯",
+        "双侧聚光首屏"
+      ],
+      "trigger": "显示后按设定时长自动往复移动",
+      "placements": [
+        "首页首屏",
+        "营销标题"
+      ],
+      "tags": [
+        "聚光",
+        "双侧",
+        "柔光",
+        "自动循环"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/spotlight-new",
+      "verifiedAt": "2026-10-12T07:14:31.012Z",
+      "registryUrl": "https://ui.aceternity.com/registry/spotlight-new.json"
+    },
+    "https://ui.aceternity.com/components/glowing-effect": {
+      "title": "沿边框追踪的发光",
+      "stage": "effect",
+      "description": "彩色边缘光根据鼠标相对卡片的位置改变方向，强调容器边界。",
+      "aliases": [
+        "发光边框",
+        "追踪边缘",
+        "边框流光",
+        "光线跟随"
+      ],
+      "trigger": "鼠标靠近或经过卡片边缘，光晕随角度移动",
+      "placements": [
+        "功能卡片",
+        "卡片网格"
+      ],
+      "tags": [
+        "glow",
+        "border",
+        "pointer"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/glowing-effect",
+      "verifiedAt": "2026-10-12T07:14:31.260Z",
+      "registryUrl": "https://ui.aceternity.com/registry/glowing-effect.json"
+    },
+    "https://ui.aceternity.com/components/3d-marquee": {
+      "title": "立体倾斜的图片跑马墙",
+      "stage": "style",
+      "description": "多列图片组成倾斜的三维平面，图片列持续上下移动，并有悬停边界反馈，适合作为有层次的大面积视觉背景。",
+      "aliases": [
+        "斜着的照片墙不停滚动",
+        "像立起来的图片传送带",
+        "有深度的图片背景"
+      ],
+      "trigger": "显示后各列自动往复移动；悬停单图可增强边界反馈",
+      "placements": [
+        "首屏视觉背景",
+        "品牌图片墙"
+      ],
+      "tags": [
+        "图片墙",
+        "三维",
+        "跑马灯",
+        "自动循环"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/3d-marquee",
+      "verifiedAt": "2026-10-12T07:14:31.327Z",
+      "registryUrl": "https://ui.aceternity.com/registry/3d-marquee.json"
+    },
+    "https://ui.aceternity.com/components/container-text-flip": {
+      "title": "宽度随词语变化的翻词框",
+      "stage": "effect",
+      "description": "一个带边框的词语容器按间隔翻换内容，旧词退出、新词进入，容器宽度同步适应新词长度，旁边句子保持衔接。",
+      "aliases": [
+        "小框里的词一直换",
+        "标题词语翻一下",
+        "框会跟着文字变宽"
+      ],
+      "trigger": "显示后按设定间隔轮换词语",
+      "placements": [
+        "首屏标题",
+        "卖点短句"
+      ],
+      "tags": [
+        "翻词",
+        "自适应宽度",
+        "边框",
+        "自动循环"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/container-text-flip",
+      "verifiedAt": "2026-10-12T07:14:31.350Z",
+      "registryUrl": "https://ui.aceternity.com/registry/container-text-flip.json"
+    },
+    "https://ui.aceternity.com/components/resizable-navbar": {
+      "title": "滚动收窄的响应式导航",
+      "stage": "structure",
+      "description": "导航开始时横跨较宽区域，页面向下滚动后缩成居中的圆角浮条并增加背景；小屏时替换成可展开的移动菜单。",
+      "aliases": [
+        "滚一下导航缩成小条",
+        "宽导航变成悬浮胶囊",
+        "顶部菜单随滚动变窄"
+      ],
+      "trigger": "页面滚动超过阈值改变宽度；点击小屏菜单开关",
+      "placements": [
+        "营销页面主导航",
+        "长页导航"
+      ],
+      "tags": [
+        "导航",
+        "滚动",
+        "收窄",
+        "响应式"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/resizable-navbar",
+      "verifiedAt": "2026-10-12T07:14:31.421Z",
+      "registryUrl": "https://ui.aceternity.com/registry/resizable-navbar.json"
+    },
+    "https://ui.aceternity.com/components/draggable-card": {
+      "title": "可拖拽抛放的倾斜卡片",
+      "stage": "effect",
+      "description": "卡片可以按住拖动，移动时结合倾斜、阴影和缩放形成抓取感；拖到边界外时通过弹性约束拉回可用区域。",
+      "aliases": [
+        "卡片能拿起来拖",
+        "像桌上移动一张照片",
+        "松手会弹回的卡片"
+      ],
+      "trigger": "按住拖拽卡片；移动产生倾斜；松手执行约束与复位",
+      "placements": [
+        "创意照片区",
+        "交互作品展示"
+      ],
+      "tags": [
+        "拖拽",
+        "卡片",
+        "倾斜",
+        "弹性边界"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/draggable-card",
+      "verifiedAt": "2026-10-12T07:14:31.491Z",
+      "registryUrl": "https://ui.aceternity.com/registry/draggable-card.json"
+    },
+    "https://ui.aceternity.com/components/sticky-banner": {
+      "title": "滚动区域顶部的粘性公告条",
+      "stage": "structure",
+      "description": "带消息和链接的公告条粘在演示滚动区域顶部，阅读内容时保持可见，点击关闭按钮后收起。原站当前示例未开启滚动隐藏。",
+      "aliases": [
+        "顶部跟着阅读的公告",
+        "滚动时通知保持在顶部",
+        "顶部通知横条"
+      ],
+      "trigger": "演示区域内滚动时保持粘性定位；点击关闭按钮收起",
+      "placements": [
+        "活动公告",
+        "更新通知"
+      ],
+      "tags": [
+        "公告条",
+        "顶部",
+        "滚动",
+        "关闭"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/sticky-banner",
+      "verifiedAt": "2026-10-12T09:21:34.556Z",
+      "registryUrl": "https://ui.aceternity.com/registry/sticky-banner.json"
+    },
+    "https://ui.aceternity.com/components/pointer-highlight": {
+      "title": "进入视野后框出的重点词",
+      "stage": "effect",
+      "description": "重点文字在进入视口时被彩色矩形边框或背景标出，一个小箭头指针移到边缘，像有人刚用鼠标圈出关键内容。",
+      "aliases": [
+        "重点词被鼠标框起来",
+        "文字旁边出现一个箭头",
+        "像有人圈了重点"
+      ],
+      "trigger": "组件进入视口时播放边框与指针入场",
+      "placements": [
+        "首屏重点词",
+        "说明文案"
+      ],
+      "tags": [
+        "文字高亮",
+        "指针",
+        "入场",
+        "边框"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/pointer-highlight",
+      "verifiedAt": "2026-10-12T07:14:31.754Z",
+      "registryUrl": "https://ui.aceternity.com/registry/pointer-highlight.json"
+    },
+    "https://ui.aceternity.com/components/stateful-button": {
+      "title": "显示处理中与成功的按钮",
+      "stage": "effect",
+      "description": "点击后按钮从普通文字变为加载旋转图标，异步操作成功后显示勾选状态并短暂强调，再恢复原始内容。",
+      "aliases": [
+        "按钮能告诉我正在处理",
+        "点完变打勾",
+        "提交后有成功反馈"
+      ],
+      "trigger": "点击开始；等待传入操作完成后切换成功状态",
+      "placements": [
+        "提交表单",
+        "保存操作",
+        "付款行动"
+      ],
+      "tags": [
+        "按钮状态",
+        "加载",
+        "成功",
+        "异步"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/stateful-button",
+      "verifiedAt": "2026-10-12T07:14:31.758Z",
+      "registryUrl": "https://ui.aceternity.com/registry/stateful-button.json"
+    },
+    "https://ui.aceternity.com/components/loader": {
+      "title": "轻量循环加载动画合集",
+      "stage": "effect",
+      "description": "多种小尺寸等待指示器以圆点、线条或图形旋转和明暗变化表示正在处理，可用于按钮内或整页等待区域。",
+      "aliases": [
+        "简单的转圈等待",
+        "加载中的小动画",
+        "别太花的等待提示"
+      ],
+      "trigger": "显示加载组件后自动循环；任务结束时由应用移除",
+      "placements": [
+        "按钮等待状态",
+        "页面加载",
+        "内容占位"
+      ],
+      "tags": [
+        "加载",
+        "等待",
+        "循环",
+        "微动效"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/loader",
+      "verifiedAt": "2026-10-12T07:14:31.816Z",
+      "registryUrl": "https://ui.aceternity.com/registry/loader.json"
+    },
+    "https://ui.aceternity.com/components/image-generation-loader": {
+      "title": "扫描画面的生成进度动画",
+      "stage": "effect",
+      "description": "图片生成区域中一条扫描带扫过画面，局部像素网格、文字遮罩和进度叠层随扫描显现，表现图像正在被构建。",
+      "aliases": [
+        "像扫描仪一样生成图片",
+        "图片一点点被扫出来",
+        "有像素格的生成等待"
+      ],
+      "trigger": "组件显示后按设定时长自动扫描；它是视觉加载演示，不代表真实生成进度",
+      "placements": [
+        "图片生成工具",
+        "视觉内容等待区"
+      ],
+      "tags": [
+        "图片生成",
+        "扫描",
+        "像素",
+        "加载"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/image-generation-loader",
+      "verifiedAt": "2026-10-12T07:14:31.883Z",
+      "registryUrl": "https://ui.aceternity.com/registry/image-generation-loader.json"
+    },
+    "https://ui.aceternity.com/components/comet-card": {
+      "title": "随鼠标倾斜的厚度透视卡片",
+      "stage": "effect",
+      "description": "卡片在悬停时放大并按指针位置产生透视旋转，叠加随角度移动的柔和高光，使平面内容像一块有深度的实体。",
+      "aliases": [
+        "卡片像有厚度一样转",
+        "鼠标控制立体卡片",
+        "轻轻转动的界面卡"
+      ],
+      "trigger": "鼠标移入与移动驱动旋转和高光；移出复位",
+      "placements": [
+        "产品卡片",
+        "人物与作品卡"
+      ],
+      "tags": [
+        "三维",
+        "透视",
+        "倾斜",
+        "悬停"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/comet-card",
+      "verifiedAt": "2026-10-12T07:14:32.333Z",
+      "registryUrl": "https://ui.aceternity.com/registry/comet-card.json"
+    },
+    "https://ui.aceternity.com/components/background-ripple-effect": {
+      "title": "点击后扩散的方格波纹",
+      "stage": "style",
+      "description": "大面积方格背景默认较暗，点击某格后，亮度波从点击位置向周围格子逐层传递，形成规则网格上的涟漪。",
+      "aliases": [
+        "点背景就一圈圈亮起来",
+        "方格里的水波",
+        "从点击处散开的网格"
+      ],
+      "trigger": "点击背景单元格产生一轮扩散",
+      "placements": [
+        "首屏背景",
+        "互动活动页"
+      ],
+      "tags": [
+        "网格背景",
+        "点击",
+        "波纹",
+        "扩散"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/background-ripple-effect",
+      "verifiedAt": "2026-10-12T07:14:32.207Z",
+      "registryUrl": "https://ui.aceternity.com/registry/background-ripple-effect.json"
+    },
+    "https://ui.aceternity.com/components/pixelated-canvas": {
+      "title": "鼠标拨动的像素化图片",
+      "stage": "effect",
+      "description": "图片被分解为规则像素小块，指针经过时附近像素按方向产生错位和扰动，移开后逐步恢复原图结构。",
+      "aliases": [
+        "图片变成小方块还能动",
+        "鼠标搅乱像素",
+        "像素照片被拨开"
+      ],
+      "trigger": "鼠标在画布内移动，局部像素受扰动并回弹",
+      "placements": [
+        "创意封面",
+        "作品图片"
+      ],
+      "tags": [
+        "像素",
+        "图像扰动",
+        "鼠标",
+        "画布"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/pixelated-canvas",
+      "verifiedAt": "2026-10-12T07:14:32.183Z",
+      "registryUrl": "https://ui.aceternity.com/registry/pixelated-canvas.json"
+    },
+    "https://ui.aceternity.com/components/canvas-text": {
+      "title": "文字内部流动的彩色曲线",
+      "stage": "effect",
+      "description": "彩色弯曲线条在画布中持续运动，但只显示在文字轮廓内部，形成以字形为窗口的动态多彩填充。",
+      "aliases": [
+        "字里面有彩线在流动",
+        "文字是会动的彩色窗口",
+        "彩虹线条组成的标题"
+      ],
+      "trigger": "显示后自动绘制曲线；字形作为固定裁切区域",
+      "placements": [
+        "大标题",
+        "创意品牌字"
+      ],
+      "tags": [
+        "文字填充",
+        "画布",
+        "曲线",
+        "自动循环"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/canvas-text",
+      "verifiedAt": "2026-10-12T07:14:32.280Z",
+      "registryUrl": "https://ui.aceternity.com/registry/canvas-text.json"
+    },
+    "https://ui.aceternity.com/components/layout-text-flip": {
+      "title": "换词时带动整句重排",
+      "stage": "effect",
+      "description": "句子中的轮换词按时间间隔翻换，词宽变化时周围文字位置一起平滑移动，让整句话顺畅适应新的内容长度。",
+      "aliases": [
+        "换一个词整句也跟着挪",
+        "标题会自动改词",
+        "不一样长的词平滑切换"
+      ],
+      "trigger": "显示后定时更新轮换词；布局同步过渡",
+      "placements": [
+        "首页标题",
+        "产品价值短句"
+      ],
+      "tags": [
+        "换词",
+        "布局动画",
+        "句子",
+        "自动循环"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/layout-text-flip",
+      "verifiedAt": "2026-10-12T07:14:32.305Z",
+      "registryUrl": "https://ui.aceternity.com/registry/layout-text-flip.json"
+    },
+    "https://ui.aceternity.com/components/dotted-glow-background": {
+      "title": "明暗呼吸的发光点阵",
+      "stage": "style",
+      "description": "等距小点铺满区域，不同位置的点独立改变亮度和光晕，边缘可通过渐变遮罩淡出，像安静呼吸的电子点阵。",
+      "aliases": [
+        "背景小点在呼吸",
+        "规则排列的发光点",
+        "柔和的点点灯光"
+      ],
+      "trigger": "显示后按不同延迟自动改变透明度与发光",
+      "placements": [
+        "首屏背景",
+        "信息卡片底纹"
+      ],
+      "tags": [
+        "点阵",
+        "发光",
+        "呼吸",
+        "自动循环"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/dotted-glow-background",
+      "verifiedAt": "2026-10-12T07:14:32.592Z",
+      "registryUrl": "https://ui.aceternity.com/registry/dotted-glow-background.json"
+    },
+    "https://ui.aceternity.com/components/tooltip-card": {
+      "title": "跟随指针的内容提示卡",
+      "stage": "effect",
+      "description": "在指定文字或区域上悬停后，弹出可容纳图片和多行说明的提示卡；浮层随指针轻微移动，离开后收起。",
+      "aliases": [
+        "鼠标碰到文字出现一张卡",
+        "提示框里还能放图片",
+        "跟着走的小介绍卡"
+      ],
+      "trigger": "鼠标悬停触发区打开；移动更新浮层位置；离开关闭",
+      "placements": [
+        "术语解释",
+        "链接预览",
+        "人物说明"
+      ],
+      "tags": [
+        "提示卡",
+        "鼠标跟随",
+        "悬停",
+        "内容预览"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/tooltip-card",
+      "verifiedAt": "2026-10-12T07:14:32.689Z",
+      "registryUrl": "https://ui.aceternity.com/registry/tooltip-card.json"
+    },
+    "https://ui.aceternity.com/components/encrypted-text": {
+      "title": "从随机符号解码成真实文字",
+      "stage": "effect",
+      "description": "文字最初由不断变化的随机字母和符号占位，进入视野后从左到右逐字固定为真实内容，未揭示部分继续闪动。",
+      "aliases": [
+        "乱码慢慢变成一句话",
+        "像密码破解出来的文字",
+        "字一个一个解码"
+      ],
+      "trigger": "首次进入视口开始解码；文本变化可重新生成",
+      "placements": [
+        "技术产品标题",
+        "安全品牌文案"
+      ],
+      "tags": [
+        "解码",
+        "乱码",
+        "逐字",
+        "入场"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/encrypted-text",
+      "verifiedAt": "2026-10-12T07:14:32.683Z",
+      "registryUrl": "https://ui.aceternity.com/registry/encrypted-text.json"
+    },
+    "https://ui.aceternity.com/components/noise-background": {
+      "title": "带细颗粒的流动渐变",
+      "stage": "style",
+      "description": "多团渐变缓慢漂移，表面覆盖细小噪点纹理，让大面积颜色具有胶片般的颗粒感；可调色彩、速度与噪点强度。",
+      "aliases": [
+        "渐变上有细细的颗粒",
+        "像胶片的彩色背景",
+        "磨砂的流动颜色"
+      ],
+      "trigger": "显示后渐变自动运动，噪点层持续覆盖",
+      "placements": [
+        "首屏背景",
+        "品牌视觉区"
+      ],
+      "tags": [
+        "噪点",
+        "颗粒",
+        "渐变",
+        "自动循环"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/noise-background",
+      "verifiedAt": "2026-10-12T07:14:32.708Z",
+      "registryUrl": "https://ui.aceternity.com/registry/noise-background.json"
+    },
+    "https://ui.aceternity.com/components/dither-shader": {
+      "title": "复古点阵抖色图片",
+      "stage": "style",
+      "description": "图片的明暗和色彩被转换为规则点阵或颗粒块，保留整体轮廓但呈现复古低色阶视觉；可实时调整像素尺度和色彩参数。",
+      "aliases": [
+        "照片像老电脑点阵",
+        "复古颗粒图片",
+        "图片变成黑白小点"
+      ],
+      "trigger": "图像加载后着色器持续渲染；参数变化实时更新",
+      "placements": [
+        "复古作品封面",
+        "品牌视觉图"
+      ],
+      "tags": [
+        "抖色",
+        "点阵",
+        "复古",
+        "图像处理"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/dither-shader",
+      "verifiedAt": "2026-10-12T07:14:32.923Z",
+      "registryUrl": "https://ui.aceternity.com/registry/dither-shader.json"
+    },
+    "https://ui.aceternity.com/components/cloud-shader": {
+      "title": "缓慢漂移的柔软云层",
+      "stage": "style",
+      "description": "背景实时生成多层柔软云团，随时间横向漂移，云的大小、密度、速度和天空颜色可调整，营造安静的天空空间。",
+      "aliases": [
+        "背景像云慢慢飘",
+        "柔软的天空云层",
+        "淡淡的云海"
+      ],
+      "trigger": "显示后按时间持续渲染漂移云层",
+      "placements": [
+        "首屏背景",
+        "旅行主题页"
+      ],
+      "tags": [
+        "云层",
+        "天空",
+        "着色器",
+        "自动循环"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/cloud-shader",
+      "verifiedAt": "2026-10-12T07:14:33.129Z",
+      "registryUrl": "https://ui.aceternity.com/registry/cloud-shader.json"
+    },
+    "https://ui.aceternity.com/components/chromatic-image": {
+      "title": "随鼠标分色扭动的图片",
+      "stage": "effect",
+      "description": "图片响应指针时产生红绿蓝颜色分离、局部位移和轻微倾斜，边缘像出现彩色重影，移开后恢复清晰。",
+      "aliases": [
+        "图片边上出现彩色重影",
+        "鼠标一动照片扭一下",
+        "照片有色散效果"
+      ],
+      "trigger": "指针在图片内移动驱动颜色分离与位移；离开回归",
+      "placements": [
+        "作品图片",
+        "创意封面"
+      ],
+      "tags": [
+        "色散",
+        "图像位移",
+        "鼠标",
+        "倾斜"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/chromatic-image",
+      "verifiedAt": "2026-10-12T07:14:33.278Z",
+      "registryUrl": "https://ui.aceternity.com/registry/chromatic-image.json"
+    },
+    "https://ui.aceternity.com/components/webcam-pixel-grid": {
+      "title": "把摄像头画面变成像素格",
+      "stage": "effect",
+      "description": "在用户允许摄像头后，把实时视频采样成规则的小色块，保留人物或环境的动态轮廓；拒绝权限时显示提示状态。",
+      "aliases": [
+        "摄像头画面变成小方块",
+        "实时像素自拍",
+        "跟着我动的像素墙"
+      ],
+      "trigger": "用户授予摄像头权限后持续采样；权限失败展示提示",
+      "placements": [
+        "互动体验页",
+        "像素艺术展示"
+      ],
+      "tags": [
+        "摄像头",
+        "实时",
+        "像素",
+        "权限"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/webcam-pixel-grid",
+      "verifiedAt": "2026-10-12T07:14:33.294Z",
+      "registryUrl": "https://ui.aceternity.com/registry/webcam-pixel-grid.json"
+    },
+    "https://ui.aceternity.com/components/images-badge": {
+      "title": "悬停展开照片的文件夹徽章",
+      "stage": "effect",
+      "description": "紧凑徽章上露出少量图片边缘，悬停时照片向上抬起并以不同角度扇形散开，文件夹前盖同时向下倾斜。",
+      "aliases": [
+        "小文件夹里照片散开",
+        "鼠标碰标签冒出几张图",
+        "一叠小图展开"
+      ],
+      "trigger": "鼠标进入徽章展开图片扇面；离开回收",
+      "placements": [
+        "作品入口",
+        "相册标签",
+        "素材集合"
+      ],
+      "tags": [
+        "图片徽章",
+        "扇形",
+        "悬停",
+        "文件夹"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/images-badge",
+      "verifiedAt": "2026-10-12T07:14:33.133Z",
+      "registryUrl": "https://ui.aceternity.com/registry/images-badge.json"
+    },
+    "https://ui.aceternity.com/components/keyboard": {
+      "title": "能按出声音的机械键盘",
+      "stage": "effect",
+      "description": "模拟桌面键盘的圆角按键、分区和金属底座，按下时键帽压低并高亮；配置音频后可播放机械键敲击声。",
+      "aliases": [
+        "网页上能按的键盘",
+        "按键会下沉",
+        "有敲击声的键盘图"
+      ],
+      "trigger": "指针点击按键或键盘输入触发按压；音频依配置播放",
+      "placements": [
+        "开发者首页",
+        "键盘产品演示"
+      ],
+      "tags": [
+        "键盘",
+        "按压",
+        "声音",
+        "拟物"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/keyboard",
+      "verifiedAt": "2026-10-12T07:14:33.529Z",
+      "registryUrl": "https://ui.aceternity.com/registry/keyboard.json"
+    },
+    "https://ui.aceternity.com/components/terminal": {
+      "title": "逐字输出的终端窗口",
+      "stage": "effect",
+      "description": "圆角终端窗口带标题栏和控制圆点，命令与结果按打字节奏逐行显现，支持 Bash 语法高亮及可选音效。",
+      "aliases": [
+        "像命令行一样一行行输出",
+        "会自己敲字的终端",
+        "黑色代码小窗口"
+      ],
+      "trigger": "进入视口后播放逐字与逐行输出序列；光标持续闪烁",
+      "placements": [
+        "开发工具首屏",
+        "安装演示"
+      ],
+      "tags": [
+        "终端",
+        "打字",
+        "命令行",
+        "语法高亮"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/terminal",
+      "verifiedAt": "2026-10-12T07:14:33.784Z",
+      "registryUrl": "https://ui.aceternity.com/registry/terminal.json"
+    },
+    "https://ui.aceternity.com/components/3d-globe": {
+      "title": "带人物地点标记的三维地球",
+      "stage": "effect",
+      "description": "立体地球表面添加地点标记、头像和连接提示，用户可以旋转查看不同区域；悬停标记显示对应信息，点击可执行外部动作。",
+      "aliases": [
+        "地球上标着团队头像",
+        "能看不同城市的球",
+        "全球成员的小地球"
+      ],
+      "trigger": "地球自动或拖动旋转；悬停与点击地点标记触发反馈",
+      "placements": [
+        "全球团队介绍",
+        "地点分布"
+      ],
+      "tags": [
+        "三维地球",
+        "地点",
+        "头像",
+        "提示"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/3d-globe",
+      "verifiedAt": "2026-10-12T07:14:33.625Z",
+      "registryUrl": "https://ui.aceternity.com/registry/3d-globe.json"
+    },
+    "https://ui.aceternity.com/components/ascii-art": {
+      "title": "用字符拼出的图片",
+      "stage": "style",
+      "description": "根据图片明暗把像素替换为不同密度的字母或符号，形成可辨识的字符画；可选逐步显现动画并调节字符集与颜色。",
+      "aliases": [
+        "照片由字母拼成",
+        "像终端字符画",
+        "用小符号画出来的图"
+      ],
+      "trigger": "图像加载后转换；启用动画时进入视口可逐步显现",
+      "placements": [
+        "创意头像",
+        "技术品牌视觉"
+      ],
+      "tags": [
+        "字符画",
+        "图像转换",
+        "复古",
+        "入场"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/ascii-art",
+      "verifiedAt": "2026-10-12T07:14:33.952Z",
+      "registryUrl": "https://ui.aceternity.com/registry/ascii-art.json"
+    },
+    "https://ui.aceternity.com/components/scales": {
+      "title": "重复斜线与条纹底纹",
+      "stage": "style",
+      "description": "细小斜线、横线或竖线按规则重复排列，可放在内容下方并用遮罩淡出，形成轻量的机械刻度或网纹感。",
+      "aliases": [
+        "背景是一条条细线",
+        "斜着的条纹纸",
+        "像刻度的底纹"
+      ],
+      "trigger": "持续显示；参数控制方向、间距与颜色",
+      "placements": [
+        "内容底纹",
+        "图片背景",
+        "卡片背景"
+      ],
+      "tags": [
+        "条纹",
+        "刻度",
+        "静态纹理",
+        "背景"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/scales",
+      "verifiedAt": "2026-10-12T07:14:33.782Z",
+      "registryUrl": "https://ui.aceternity.com/registry/scales.json"
+    },
+    "https://ui.aceternity.com/components/text-flipping-board": {
+      "title": "逐格翻页的机械文字板",
+      "stage": "effect",
+      "description": "文字分成整齐字符格，每格上下半片依次翻转到目标字符，像车站时刻表或机械公告板，文本变化时重新逐格翻动。",
+      "aliases": [
+        "火车站那种翻字牌",
+        "一个格一个格翻的字",
+        "机械公告牌"
+      ],
+      "trigger": "初始文字和后续文本更新触发字符格逐步翻转",
+      "placements": [
+        "公告展示",
+        "产品标题",
+        "信息屏"
+      ],
+      "tags": [
+        "翻页字符",
+        "机械",
+        "分格",
+        "文字更新"
+      ],
+      "evidenceUrl": "https://ui.aceternity.com/components/text-flipping-board",
+      "verifiedAt": "2026-10-12T07:14:34.062Z",
+      "registryUrl": "https://ui.aceternity.com/registry/text-flipping-board.json"
+    },
+    "https://60fps.design/shots/opal-border-glow-feature-highlight-interaction": {
+      "title": "绕卡片流动的霓虹亮边",
+      "stage": "effect",
+      "description": "深色功能卡片的圆角边缘有青色、白色与黄绿色高光，沿四周平滑循环扫过；持续的柔光突出上方重点卡片，周围列表保持安静。",
+      "aliases": [
+        "卡片边缘有光绕着跑",
+        "一圈流动的霓虹边",
+        "重要卡片自己发亮"
+      ],
+      "trigger": "卡片显示后持续自动循环；原案例不依赖鼠标悬停",
+      "placements": [
+        "重点功能卡片",
+        "移动端亮点介绍"
+      ],
+      "tags": [
+        "霓虹边框",
+        "渐变",
+        "自动循环",
+        "移动端",
+        "Opal"
+      ],
+      "evidenceUrl": "https://60fps.design/shots/opal-border-glow-feature-highlight-interaction",
+      "verifiedAt": "2026-10-12T07:14:34.296Z",
+      "implementationUrl": null,
+      "issue": "来源提供 Opal iOS 实录与行为拆解，没有提供该产品的实现源码。"
+    }
+  },
+  "issues": [
+    {
+      "sourceUrl": "https://ui.aceternity.com/components/grid",
+      "resolvedSourceUrl": "https://ui.aceternity.com/components/grid-and-dot-backgrounds",
+      "registryUrl": "https://ui.aceternity.com/registry/grid.json",
+      "code": "STALE_DIRECTORY_URL",
+      "description": "结构化目录仍列出旧地址，旧文档返回 404；已核验当前官方组件页面。"
+    },
+    {
+      "sourceUrl": "https://ui.aceternity.com/components/moving-line",
+      "resolvedSourceUrl": "https://ui.aceternity.com/registry/moving-line.json",
+      "registryUrl": "https://ui.aceternity.com/registry/moving-line.json",
+      "code": "NO_STANDALONE_DEMO",
+      "description": "独立演示文档返回 404；来源改为可访问的官方 registry 源码。预览应运行源码制作并明确标为参考演示录屏。"
+    },
+    {
+      "sourceUrl": "https://ui.aceternity.com/components/glowing-stars",
+      "resolvedSourceUrl": "https://ui.aceternity.com/components/glowing-stars-effect",
+      "registryUrl": "https://ui.aceternity.com/registry/glowing-stars.json",
+      "code": "STALE_DIRECTORY_URL",
+      "description": "结构化目录仍列出旧地址，旧文档返回 404；已核验当前官方组件页面。"
+    },
+    {
+      "sourceUrl": "https://ui.aceternity.com/components/parallax-scroll-2",
+      "resolvedSourceUrl": "https://ui.aceternity.com/components/parallax-scroll",
+      "registryUrl": "https://ui.aceternity.com/registry/parallax-scroll-2.json",
+      "code": "STALE_DIRECTORY_URL",
+      "description": "结构化目录仍列出旧地址，旧文档返回 404；已核验当前官方组件页面。"
+    },
+    {
+      "sourceUrl": "https://ui.aceternity.com/components/lamp",
+      "resolvedSourceUrl": "https://ui.aceternity.com/components/lamp-effect",
+      "registryUrl": "https://ui.aceternity.com/registry/lamp.json",
+      "code": "STALE_DIRECTORY_URL",
+      "description": "结构化目录仍列出旧地址，旧文档返回 404；已核验当前官方组件页面。"
+    },
+    {
+      "sourceUrl": "https://ui.aceternity.com/components/3d-card",
+      "resolvedSourceUrl": "https://ui.aceternity.com/components/3d-card-effect",
+      "registryUrl": "https://ui.aceternity.com/registry/3d-card.json",
+      "code": "STALE_DIRECTORY_URL",
+      "description": "结构化目录仍列出旧地址，旧文档返回 404；已核验当前官方组件页面。"
+    },
+    {
+      "sourceUrl": "https://ui.aceternity.com/components/input",
+      "resolvedSourceUrl": "https://ui.aceternity.com/components/signup-form",
+      "registryUrl": "https://ui.aceternity.com/registry/input.json",
+      "code": "STALE_DIRECTORY_URL",
+      "description": "Input 与 Label 没有独立演示；已核验二者共同使用的官方 Signup Form 页面，作为一个完整注册表单案例。"
+    },
+    {
+      "sourceUrl": "https://ui.aceternity.com/components/label",
+      "resolvedSourceUrl": "https://ui.aceternity.com/components/signup-form",
+      "registryUrl": "https://ui.aceternity.com/registry/label.json",
+      "code": "STALE_DIRECTORY_URL",
+      "description": "Input 与 Label 没有独立演示；已核验二者共同使用的官方 Signup Form 页面，作为一个完整注册表单案例。"
+    },
+    {
+      "sourceUrl": "https://ui.aceternity.com/components/globe",
+      "resolvedSourceUrl": "https://ui.aceternity.com/components/github-globe",
+      "registryUrl": "https://ui.aceternity.com/registry/globe.json",
+      "code": "STALE_DIRECTORY_URL",
+      "description": "结构化目录仍列出旧地址，旧文档返回 404；已核验当前官方组件页面。"
+    },
+    {
+      "sourceUrl": "https://ui.aceternity.com/components/shooting-stars",
+      "resolvedSourceUrl": "https://ui.aceternity.com/components/shooting-stars-and-stars-background",
+      "registryUrl": "https://ui.aceternity.com/registry/shooting-stars.json",
+      "code": "STALE_DIRECTORY_URL",
+      "description": "结构化目录仍列出旧地址，旧文档返回 404；已核验当前官方组件页面。"
+    },
+    {
+      "sourceUrl": "https://ui.aceternity.com/components/stars-background",
+      "resolvedSourceUrl": "https://ui.aceternity.com/components/shooting-stars-and-stars-background",
+      "registryUrl": "https://ui.aceternity.com/registry/stars-background.json",
+      "code": "STALE_DIRECTORY_URL",
+      "description": "结构化目录仍列出旧地址，旧文档返回 404；已核验当前官方组件页面。"
+    },
+    {
+      "sourceUrl": "https://ui.aceternity.com/components/cover",
+      "resolvedSourceUrl": "https://ui.aceternity.com/components/container-cover",
+      "registryUrl": "https://ui.aceternity.com/registry/cover.json",
+      "code": "STALE_DIRECTORY_URL",
+      "description": "结构化目录仍列出旧地址，旧文档返回 404；已核验当前官方组件页面。"
+    },
+    {
+      "sourceUrl": "https://60fps.design/shots/opal-border-glow-feature-highlight-interaction",
+      "code": "NO_SOURCE_CODE",
+      "description": "来源提供 Opal iOS 实录与行为拆解，没有提供该产品的实现源码。"
+    }
+  ]
+}

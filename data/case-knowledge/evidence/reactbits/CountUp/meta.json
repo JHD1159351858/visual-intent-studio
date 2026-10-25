@@ -1,0 +1,16 @@
+{
+  "entryId": "c4f971c297eee7bd",
+  "sourceUrl": "https://reactbits.dev/text-animations/count-up",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/CountUp-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/CountUp/CountUp.jsx",
+  "checkedAt": "2026-10-25T07:52:57.420Z",
+  "sha256": "b8e4bae40090bc34f1a22db1af7fe9d55d87263859469093212ee61e7c263691",
+  "files": [
+    {
+      "path": "CountUp/CountUp.jsx",
+      "sha256": "b02541a7a04d8872fb250fe760d2df44799270a24a494ad8d4ba259d98c984e9",
+      "bytes": 2560
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "entryId": "b51af7fe12edb082",
+  "sourceUrl": "https://reactbits.dev/micro/rubber-segment",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/RubberSegment-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/RubberSegment/RubberSegment.jsx",
+  "checkedAt": "2026-10-25T07:53:14.088Z",
+  "sha256": "dd938ada85600efc4584cba1f9b6dc15fd645dfc5d4fe134c1f53ed1fcf1049a",
+  "files": [
+    {
+      "path": "RubberSegment.css",
+      "sha256": "8e27a0daf7c64dc09939020db11d0461b03368763bceaaa60b88accad1b06cb4",
+      "bytes": 2545
+    },
+    {
+      "path": "RubberSegment.jsx",
+      "sha256": "35489f6c3c59dae1cd98d82c11e69f3ecee3cfb831bec70278365d07caac0bcf",
+      "bytes": 11297
+    }
+  ]
+}

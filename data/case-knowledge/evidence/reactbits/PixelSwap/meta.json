@@ -1,0 +1,21 @@
+{
+  "entryId": "39c910c7a3134b14",
+  "sourceUrl": "https://reactbits.dev/animations/pixel-swap",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/PixelSwap-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/PixelSwap/PixelSwap.jsx",
+  "checkedAt": "2026-10-25T07:52:58.442Z",
+  "sha256": "53074245d9dc189f7bf0a9ea37b1f9f2bea326ee105d114724a9dc7c49afc143",
+  "files": [
+    {
+      "path": "PixelSwap.css",
+      "sha256": "9f18666f6660fc5e327c36777444466f4c8e8cca2dba86d1638c8408a17867d4",
+      "bytes": 516
+    },
+    {
+      "path": "PixelSwap.jsx",
+      "sha256": "fcd6952b3aadc3863e3a7b94947feff767d1f6b21fa4838df1cf6e3d7f466677",
+      "bytes": 12371
+    }
+  ]
+}

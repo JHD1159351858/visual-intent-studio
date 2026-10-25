@@ -1,0 +1,1188 @@
+{
+  "sourceId": "60fps",
+  "collectedFrom": "https://60fps.design/sitemap.xml",
+  "verifiedAt": "2026-10-12T08:09:58.506Z",
+  "method": "发现公开站点地图中的具体案例，读取与标题一致的 VideoObject、可见行为说明并核查视频 HEAD 响应；中文逐条整理。",
+  "entries": {
+    "https://60fps.design/shots/airbnb-tactile-tab-button-interaction": {
+      "name": "Airbnb Tactile Tab Button Interaction",
+      "title": "按下有弹性的分类胶囊",
+      "stage": "structure",
+      "description": "横向分类胶囊在点击时轻微压缩，选中底色平滑移到新项目；下方先显示内容骨架，再交叉淡入对应列表，分类与内容切换形成一个连续动作。",
+      "aliases": [
+        "分类按钮像真的按下去",
+        "点标签下面的内容跟着换",
+        "软软的胶囊菜单"
+      ],
+      "trigger": "点击分类标签，先显示按压反馈，再切换选中状态和下方内容",
+      "placements": [
+        "移动端分类导航",
+        "信息流顶部"
+      ],
+      "tags": [
+        "分类标签",
+        "弹性按压",
+        "内容切换",
+        "骨架屏",
+        "Airbnb"
+      ],
+      "sourceUrl": "https://60fps.design/shots/airbnb-tactile-tab-button-interaction",
+      "implementationUrl": null,
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/6a796336a219b0caeb69c119/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/6a796336a219b0caeb69c119/thumbnail-1-0.png?width=800",
+      "evidenceUrl": "https://60fps.design/shots/airbnb-tactile-tab-button-interaction",
+      "verifiedAt": "2026-10-12T08:09:49.927Z",
+      "evidence": {
+        "url": "https://60fps.design/shots/airbnb-tactile-tab-button-interaction",
+        "sitemapUrl": "https://60fps.design/sitemap.xml",
+        "pageStatus": 200,
+        "pageSha256": "8eab7dd68fca0b16e82b145adf392db287fe7b366187a89d89d901b385693e05",
+        "primaryVideoName": "Airbnb Tactile Tab Button Interaction",
+        "originalDescription": "Tapping through horizontal category tabs triggers an elastic scale-down depression effect on the selected pill button. The selected highlight shifts smoothly between tabs while placeholder skeleton cards load and crossfade into the corresponding feed content below.",
+        "videoResponse": {
+          "status": 200,
+          "contentType": "video/mp4",
+          "contentLength": "1285999"
+        }
+      },
+      "issue": "来源为真实产品视频与行为说明，未提供产品实现源码；视频地址已核查响应，仍需播放验证后加入推荐。"
+    },
+    "https://60fps.design/shots/apple-music-player-controls-collapse-interaction": {
+      "name": "Apple Music Player Controls Collapse Interaction",
+      "title": "下拉收起的全屏播放器",
+      "stage": "effect",
+      "description": "向下拖动播放器面板时，它紧跟手势下移，背后的页面逐渐放大并解除遮罩；拖过阈值松手后，面板带弹性减速退出，回到主页面。",
+      "aliases": [
+        "全屏面板可以往下拉走",
+        "拖一下播放器就收起来",
+        "弹窗跟着手势滑下去"
+      ],
+      "trigger": "向下拖拽全屏面板；松手超过阈值后关闭",
+      "placements": [
+        "移动端播放器",
+        "可下拉关闭的详情面板"
+      ],
+      "tags": [
+        "下拉关闭",
+        "面板",
+        "手势跟随",
+        "背景缩放",
+        "Apple Music"
+      ],
+      "sourceUrl": "https://60fps.design/shots/apple-music-player-controls-collapse-interaction",
+      "implementationUrl": null,
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/69f8cff3c3d879bf57303c5b/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/69f8cff3c3d879bf57303c5b/thumbnail-1-0.png?width=800",
+      "evidenceUrl": "https://60fps.design/shots/apple-music-player-controls-collapse-interaction",
+      "verifiedAt": "2026-10-12T08:09:50.126Z",
+      "evidence": {
+        "url": "https://60fps.design/shots/apple-music-player-controls-collapse-interaction",
+        "sitemapUrl": "https://60fps.design/sitemap.xml",
+        "pageStatus": 200,
+        "pageSha256": "1d05a3dfd190a16483b998f7d86e52fbf1bb8420adf84261bc7a30d164d90632",
+        "primaryVideoName": "Apple Music Player Controls Collapse Interaction",
+        "originalDescription": "This interaction demonstrates the fluid dismissal of the full-screen music player queue. The user initiates a downward drag on the player sheet. The entire modal panel slides down smoothly, tracking the gesture with high responsiveness. As the panel moves downward, the background content behind it scales up slightly and loses its dimming overlay, creating a seamless spatial transition. If released past the threshold, the sheet snaps off-screen with a natural spring-loaded deceleration, returning the user to the main library view.",
+        "videoResponse": {
+          "status": 200,
+          "contentType": "video/mp4",
+          "contentLength": "1037522"
+        }
+      },
+      "issue": "来源为真实产品视频与行为说明，未提供产品实现源码；视频地址已核查响应，仍需播放验证后加入推荐。"
+    },
+    "https://60fps.design/shots/airbnb-photo-pop-and-slide-animation": {
+      "name": "Airbnb Photo Pop and Slide Animation",
+      "title": "弹起后退到队尾的照片堆",
+      "stage": "structure",
+      "description": "操作照片堆时，最上面的照片先放大、旋转并向上滑出，再退到叠层后方；余下照片向前补位，形成可以循环浏览的有厚度相册。",
+      "aliases": [
+        "照片像抽牌一样翻到后面",
+        "一叠照片轮流出来",
+        "会弹起来的照片堆"
+      ],
+      "trigger": "操作照片堆触发顶部卡片换位，其余卡片同步前移",
+      "placements": [
+        "照片画廊",
+        "目的地介绍",
+        "作品卡片堆"
+      ],
+      "tags": [
+        "照片堆",
+        "叠层",
+        "旋转",
+        "循环浏览",
+        "Airbnb"
+      ],
+      "sourceUrl": "https://60fps.design/shots/airbnb-photo-pop-and-slide-animation",
+      "implementationUrl": null,
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/6980cddd282b61e5db5afe6d/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/6980cddd282b61e5db5afe6d/thumbnail-1-0.png?width=800",
+      "evidenceUrl": "https://60fps.design/shots/airbnb-photo-pop-and-slide-animation",
+      "verifiedAt": "2026-10-12T08:09:50.202Z",
+      "evidence": {
+        "url": "https://60fps.design/shots/airbnb-photo-pop-and-slide-animation",
+        "sitemapUrl": "https://60fps.design/sitemap.xml",
+        "pageStatus": 200,
+        "pageSha256": "0f275b335b3fd63534892200fafe71b11599d76b58cee3e8ace168c34b4a1984",
+        "primaryVideoName": "Airbnb Photo Pop and Slide Animation",
+        "originalDescription": "Interacting with the photo stack triggers the top image card to scale up, rotate, and slide upward before tucking behind the deck. The remaining cards scale up and shift forward, creating a tactile looping gallery.",
+        "videoResponse": {
+          "status": 200,
+          "contentType": "video/mp4",
+          "contentLength": "152359"
+        }
+      },
+      "issue": "来源为真实产品视频与行为说明，未提供产品实现源码；视频地址已核查响应，仍需播放验证后加入推荐。"
+    },
+    "https://60fps.design/shots/airbnb-add-guests-in-sheet-interaction": {
+      "name": "Airbnb Add Guests in Sheet Interaction",
+      "title": "人数增加时弹出的小人物",
+      "stage": "effect",
+      "description": "底部人数面板点击加号时，数字更新并有新人物从底部弹入横向队列，原人物向左让位保持居中；原案例增加到16人以上会出现羊驼彩蛋。",
+      "aliases": [
+        "人数加一个就多一个小人",
+        "加号旁边有可爱人物",
+        "数字和插画一起变化"
+      ],
+      "trigger": "点击人数加号逐个新增人物；原案例16+触发彩蛋",
+      "placements": [
+        "预约人数选择",
+        "多人活动表单"
+      ],
+      "tags": [
+        "计数器",
+        "人物插画",
+        "弹性",
+        "彩蛋",
+        "Airbnb"
+      ],
+      "sourceUrl": "https://60fps.design/shots/airbnb-add-guests-in-sheet-interaction",
+      "implementationUrl": null,
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/6980cbdb5ff8d4ab5d59e3e9/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/6980cbdb5ff8d4ab5d59e3e9/thumbnail-1-0.png?width=800",
+      "evidenceUrl": "https://60fps.design/shots/airbnb-add-guests-in-sheet-interaction",
+      "verifiedAt": "2026-10-12T08:09:50.367Z",
+      "evidence": {
+        "url": "https://60fps.design/shots/airbnb-add-guests-in-sheet-interaction",
+        "sitemapUrl": "https://60fps.design/sitemap.xml",
+        "pageStatus": 200,
+        "pageSha256": "ec24043aec389a009a42c69695bf1e5e30499f8a5fa932c6693e91673dd836c9",
+        "primaryVideoName": "Airbnb Add Guests in Sheet Interaction",
+        "originalDescription": "This interaction features a guest selection counter inside an Airbnb bottom sheet. As the user taps the plus button, the counter text updates and new illustrated characters pop into a horizontal lineup. The characters animate in with a bouncy spring physics effect, scaling up from the ground. As the line grows, the existing characters shift left to keep the group centered. When the counter reaches '16+', a surprise llama character springs into the end of the line, creating a delightful easter egg.",
+        "videoResponse": {
+          "status": 200,
+          "contentType": "video/mp4",
+          "contentLength": "298467"
+        }
+      },
+      "issue": "来源为真实产品视频与行为说明，未提供产品实现源码；视频地址已核查响应，仍需播放验证后加入推荐。"
+    },
+    "https://60fps.design/shots/linear-issue-actions-popup-interaction": {
+      "name": "Linear Issue Actions Popup Interaction",
+      "title": "键盘与选项面板顺滑接替",
+      "stage": "effect",
+      "description": "创建任务时点击优先级、团队或标签，系统键盘向下退出，选项面板从底部接替上来；选择或关闭后，选项面板退下，键盘回到原处。",
+      "aliases": [
+        "选选项时键盘变成菜单",
+        "底部面板接替键盘",
+        "表单操作不突然跳一下"
+      ],
+      "trigger": "点击元数据按钮切换键盘与选项面板；选择或关闭后返回输入",
+      "placements": [
+        "移动端任务创建",
+        "带辅助选项的输入表单"
+      ],
+      "tags": [
+        "键盘",
+        "底部面板",
+        "连续过渡",
+        "选项",
+        "Linear"
+      ],
+      "sourceUrl": "https://60fps.design/shots/linear-issue-actions-popup-interaction",
+      "implementationUrl": null,
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68f09d36befe20b134bc6989/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68f09d36befe20b134bc6989/thumbnail-1-0.png?width=800",
+      "evidenceUrl": "https://60fps.design/shots/linear-issue-actions-popup-interaction",
+      "verifiedAt": "2026-10-12T08:09:51.220Z",
+      "evidence": {
+        "url": "https://60fps.design/shots/linear-issue-actions-popup-interaction",
+        "sitemapUrl": "https://60fps.design/sitemap.xml",
+        "pageStatus": 200,
+        "pageSha256": "26f31ca45ae2b87bfdc059b51d2079a506566a688f6fdc7fdd923d230a6c470c",
+        "primaryVideoName": "Linear Issue Actions Popup Interaction",
+        "originalDescription": "In the Linear mobile app, tapping on issue metadata buttons (like Priority, Team, or Labels) smoothly transitions the interface from the system keyboard to a custom bottom-sheet picker. The keyboard slides down out of view as the bottom sheet slides up from the bottom edge of the screen. When a selection is made or the sheet is dismissed, the bottom sheet slides down and the keyboard slides back up, maintaining a consistent, fluid rhythm without jarring layout jumps.",
+        "videoResponse": {
+          "status": 200,
+          "contentType": "video/mp4",
+          "contentLength": "1198026"
+        }
+      },
+      "issue": "来源为真实产品视频与行为说明，未提供产品实现源码；视频地址已核查响应，仍需播放验证后加入推荐。"
+    },
+    "https://60fps.design/shots/revolut-revpoints-circular-slider-interaction": {
+      "name": "Revolut RevPoints Circular Slider Interaction",
+      "title": "沿圆环拖动的数值选择器",
+      "stage": "effect",
+      "description": "拖动圆环上的滑块时，弧形进度跟着绘出，中央倍数在吸附到整数时弹跳；原案例达到最大值后，圆心由蓝色扩散填满并出现徽章，下方数值同步更新。",
+      "aliases": [
+        "绕一圈选数字",
+        "圆形滑杆中间数字会弹",
+        "选到最大圆圈就填满"
+      ],
+      "trigger": "沿圆形轨道拖动滑块；整数吸附和最大值触发对应反馈",
+      "placements": [
+        "数值调节",
+        "额度或倍率选择"
+      ],
+      "tags": [
+        "圆环滑块",
+        "数值",
+        "吸附",
+        "填充",
+        "Revolut"
+      ],
+      "sourceUrl": "https://60fps.design/shots/revolut-revpoints-circular-slider-interaction",
+      "implementationUrl": null,
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68e7d71f01fefe1a9ab1766e/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68e7d71f01fefe1a9ab1766e/thumbnail-1-0.png?width=800",
+      "evidenceUrl": "https://60fps.design/shots/revolut-revpoints-circular-slider-interaction",
+      "verifiedAt": "2026-10-12T08:09:51.384Z",
+      "evidence": {
+        "url": "https://60fps.design/shots/revolut-revpoints-circular-slider-interaction",
+        "sitemapUrl": "https://60fps.design/sitemap.xml",
+        "pageStatus": 200,
+        "pageSha256": "afefa1044a3108665fc0b500b2d12093265722a1976780136d308ecbc9c5eb67",
+        "primaryVideoName": "Revolut RevPoints Circular Slider Interaction",
+        "originalDescription": "This interaction features a circular slider used to select a spare change multiplier. As the user drags the slider thumb, the progress arc draws dynamically, and the central multiplier text scales up and down with a springy bounce upon snapping to each integer. When reaching the maximum multiplier (x10), the entire inner circle fills with solid blue in a smooth expansion, and a small badge appears at the top. Simultaneously, the breakdown values below update in real-time, and the primary action button transitions between active and inactive states.",
+        "videoResponse": {
+          "status": 200,
+          "contentType": "video/mp4",
+          "contentLength": "679003"
+        }
+      },
+      "issue": "来源为真实产品视频与行为说明，未提供产品实现源码；视频地址已核查响应，仍需播放验证后加入推荐。"
+    },
+    "https://60fps.design/shots/perplexity-model-selection-sheet-morph-interaction": {
+      "name": "Perplexity Model Selection Sheet Morph Interaction",
+      "title": "展开后变高的嵌套选项面板",
+      "stage": "effect",
+      "description": "先从底部打开模式选择面板并模糊背景，再点击模型入口时，同一面板伸高显示逐项淡入的模型列表；选好后面板缩回原高度并更新结果。",
+      "aliases": [
+        "菜单里点一下又展开一层",
+        "底部弹窗会自己变高",
+        "在同一块面板里选模型"
+      ],
+      "trigger": "点击模式入口打开；点击模型入口扩展；选择后缩回",
+      "placements": [
+        "模型选择",
+        "移动端设置",
+        "多级选项"
+      ],
+      "tags": [
+        "面板形变",
+        "嵌套选择",
+        "高度动画",
+        "背景模糊",
+        "Perplexity"
+      ],
+      "sourceUrl": "https://60fps.design/shots/perplexity-model-selection-sheet-morph-interaction",
+      "implementationUrl": null,
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68d129e343b21a129d1531e6/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68d129e343b21a129d1531e6/thumbnail-1-0.png?width=800",
+      "evidenceUrl": "https://60fps.design/shots/perplexity-model-selection-sheet-morph-interaction",
+      "verifiedAt": "2026-10-12T08:09:51.481Z",
+      "evidence": {
+        "url": "https://60fps.design/shots/perplexity-model-selection-sheet-morph-interaction",
+        "sitemapUrl": "https://60fps.design/sitemap.xml",
+        "pageStatus": 200,
+        "pageSha256": "5ef43d70546a27e04125ee7f6cd927b1acef6883bb738a8d6d75b7ca760a5e2d",
+        "primaryVideoName": "Perplexity Model Selection Sheet Morph Interaction",
+        "originalDescription": "The interaction begins with a tap on the mode selector icon, which slides up a 'Choose a mode' bottom sheet while blurring the background. Tapping the model dropdown within this sheet triggers a fluid container transform (morph) where the bottom sheet dynamically expands in height to reveal the 'Models' selection list. The list items fade and stagger in with a subtle spring. Selecting a model morphs the sheet back down to its original height, updating the selected option. Additionally, toggling 'Incognito mode' dismisses the sheet and morphs the input field style with a sliding toast indicator.",
+        "videoResponse": {
+          "status": 200,
+          "contentType": "video/mp4",
+          "contentLength": "2114513"
+        }
+      },
+      "issue": "来源为真实产品视频与行为说明，未提供产品实现源码；视频地址已核查响应，仍需播放验证后加入推荐。"
+    },
+    "https://60fps.design/shots/google-todo-check-interaction": {
+      "name": "Google Todo Check Interaction",
+      "title": "完成后统一庆祝的任务清单",
+      "stage": "structure",
+      "description": "任务清单中的未完成项显示转圈，完成时圆形等待图标弹性变为勾选；所有项结束后，顶部插画活动起来，标题更新，主要行动按钮从底部滑入。",
+      "aliases": [
+        "清单一项项打勾",
+        "全部做好后出现继续按钮",
+        "完成后标题也跟着变"
+      ],
+      "trigger": "任务状态从处理中变为完成；全部完成触发整体收尾反馈",
+      "placements": [
+        "新手引导",
+        "设置检查清单",
+        "准备任务页"
+      ],
+      "tags": [
+        "任务清单",
+        "状态切换",
+        "勾选",
+        "完成反馈",
+        "Google"
+      ],
+      "sourceUrl": "https://60fps.design/shots/google-todo-check-interaction",
+      "implementationUrl": null,
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68a5f9df0a8c57042d46d10a/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68a5f9df0a8c57042d46d10a/thumbnail-1-0.png?width=800",
+      "evidenceUrl": "https://60fps.design/shots/google-todo-check-interaction",
+      "verifiedAt": "2026-10-12T08:09:51.657Z",
+      "evidence": {
+        "url": "https://60fps.design/shots/google-todo-check-interaction",
+        "sitemapUrl": "https://60fps.design/sitemap.xml",
+        "pageStatus": 200,
+        "pageSha256": "91136e70c30135f87b4db7112cda7db043b700527afbf2e5dc4aad1fd739a245",
+        "primaryVideoName": "Google Todo Check Interaction",
+        "originalDescription": "This onboarding flow features a checklist where pending tasks display a circular loading spinner. Once a task is completed, the spinner smoothly morphs into a checked icon with a springy bounce. When all tasks are finished, the header illustration playfully animates, the title updates to 'You're all set', and a primary action button slides up from the bottom.",
+        "videoResponse": {
+          "status": 200,
+          "contentType": "video/mp4",
+          "contentLength": "1332470"
+        }
+      },
+      "issue": "来源为真实产品视频与行为说明，未提供产品实现源码；视频地址已核查响应，仍需播放验证后加入推荐。"
+    },
+    "https://60fps.design/shots/google-ai-mode-search-morph-interaction": {
+      "name": "Google AI Mode Search Morph Interaction",
+      "title": "从搜索条铺开的全屏界面",
+      "stage": "effect",
+      "description": "点击搜索条里的AI入口后，紧凑输入条形变扩展为全屏搜索界面，背景转暗，建议胶囊和键盘滑入；退出时界面缩回原搜索条。",
+      "aliases": [
+        "小搜索框点开变成整个页面",
+        "搜索条展开成全屏",
+        "打开搜索还能缩回原位"
+      ],
+      "trigger": "点击搜索条中的入口展开；返回操作逆向收回",
+      "placements": [
+        "移动端搜索",
+        "AI工具入口"
+      ],
+      "tags": [
+        "搜索",
+        "容器形变",
+        "全屏",
+        "建议项",
+        "Google"
+      ],
+      "sourceUrl": "https://60fps.design/shots/google-ai-mode-search-morph-interaction",
+      "implementationUrl": null,
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68a5f9b1cd4a3cfd549a7d4e/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68a5f9b1cd4a3cfd549a7d4e/thumbnail-1-0.png?width=800",
+      "evidenceUrl": "https://60fps.design/shots/google-ai-mode-search-morph-interaction",
+      "verifiedAt": "2026-10-12T08:09:52.486Z",
+      "evidence": {
+        "url": "https://60fps.design/shots/google-ai-mode-search-morph-interaction",
+        "sitemapUrl": "https://60fps.design/sitemap.xml",
+        "pageStatus": 200,
+        "pageSha256": "41210d70dcafe2500da99147873c52aeacd1faf35346df4f071799c85724aaac",
+        "primaryVideoName": "Google AI Mode Search Morph Interaction",
+        "originalDescription": "Tapping the AI icon morphs the search bar into a full-screen AI Mode interface. The background fades to dark while suggestion chips and the keyboard slide into place. Reversing the action shrinks the interface back into the search bar.",
+        "videoResponse": {
+          "status": 200,
+          "contentType": "video/mp4",
+          "contentLength": "1227750"
+        }
+      },
+      "issue": "来源为真实产品视频与行为说明，未提供产品实现源码；视频地址已核查响应，仍需播放验证后加入推荐。"
+    },
+    "https://60fps.design/shots/google-photos-logo-spin-to-backup-loader-animation": {
+      "name": "Google Photos Logo Spin to Backup Loader Animation",
+      "title": "展开进度卡并推开内容的状态栏",
+      "stage": "effect",
+      "description": "顶部备份状态行点击后向下展开成详细卡片，露出圆形进度、剩余时间和说明；下面的内容随面板扩展平滑下移，而不是被突然遮住。",
+      "aliases": [
+        "点一下状态栏展开进度",
+        "小提示变成一张卡",
+        "展开时下面内容一起往下走"
+      ],
+      "trigger": "点击顶部备份状态入口展开进度卡",
+      "placements": [
+        "上传状态",
+        "同步进度",
+        "顶部任务状态"
+      ],
+      "tags": [
+        "状态栏",
+        "进度卡",
+        "布局推移",
+        "展开",
+        "Google Photos"
+      ],
+      "sourceUrl": "https://60fps.design/shots/google-photos-logo-spin-to-backup-loader-animation",
+      "implementationUrl": null,
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68749fb114683753e674153e/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68749fb114683753e674153e/thumbnail-1-0.png?width=800",
+      "evidenceUrl": "https://60fps.design/shots/google-photos-logo-spin-to-backup-loader-animation",
+      "verifiedAt": "2026-10-12T08:09:52.638Z",
+      "evidence": {
+        "url": "https://60fps.design/shots/google-photos-logo-spin-to-backup-loader-animation",
+        "sitemapUrl": "https://60fps.design/sitemap.xml",
+        "pageStatus": 200,
+        "pageSha256": "77095cc4cb26616997b9ceb7ecc4d074f78c64fe1744157c3aeceb50a22bb28d",
+        "primaryVideoName": "Google Photos Logo Spin to Backup Loader Animation",
+        "originalDescription": "The interaction begins with a subtle backup status indicator appearing in the top-left of the header. Upon tapping, this status line expands downwards into a detailed backup card. The card reveals a circular progress loader, time remaining, and helper text. This expansion smoothly pushes the main content ('Today' section) downwards using a springy, fluid motion, ensuring the layout adjusts naturally without abrupt jumps.",
+        "videoResponse": {
+          "status": 200,
+          "contentType": "video/mp4",
+          "contentLength": "281038"
+        }
+      },
+      "issue": "来源为真实产品视频与行为说明，未提供产品实现源码；视频地址已核查响应，仍需播放验证后加入推荐。"
+    },
+    "https://60fps.design/shots/notion-ai-sheet-intro-action-trail-transition": {
+      "name": "Notion AI Sheet Intro Action Trail Transition",
+      "title": "竖向流动的能力介绍清单",
+      "stage": "structure",
+      "description": "引导底部面板中多条能力胶囊持续向上滚动，左侧角色插画保持固定，底部行动按钮始终可见；用流动清单展示工具能完成的不同任务。",
+      "aliases": [
+        "功能一条条往上走",
+        "滚动展示它能做什么",
+        "小胶囊列表像字幕一样动"
+      ],
+      "trigger": "打开引导面板后能力胶囊自动持续向上移动",
+      "placements": [
+        "工具能力引导",
+        "移动端入门面板"
+      ],
+      "tags": [
+        "能力列表",
+        "竖向跑马灯",
+        "引导",
+        "固定行动按钮",
+        "Notion"
+      ],
+      "sourceUrl": "https://60fps.design/shots/notion-ai-sheet-intro-action-trail-transition",
+      "implementationUrl": null,
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/682dd23dd7ce6c42e74b495e/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/682dd23dd7ce6c42e74b495e/thumbnail-1-0.png?width=800",
+      "evidenceUrl": "https://60fps.design/shots/notion-ai-sheet-intro-action-trail-transition",
+      "verifiedAt": "2026-10-12T08:09:52.777Z",
+      "evidence": {
+        "url": "https://60fps.design/shots/notion-ai-sheet-intro-action-trail-transition",
+        "sitemapUrl": "https://60fps.design/sitemap.xml",
+        "pageStatus": 200,
+        "pageSha256": "41dcb67c5165e685e721fd01c07952291bfbb8f54a7eddd2a88895dc1338c3c9",
+        "primaryVideoName": "Notion AI Sheet Intro Action Trail Transition",
+        "originalDescription": "An onboarding bottom sheet introduces Notion AI with a continuous, vertically scrolling list of action pills. The list moves upward at a constant, gentle pace, showcasing various capabilities like 'Find in Google Drive', 'Ask a question', and 'Brainstorm ideas'. On the left, a friendly pencil mascot remains static, while the bottom of the sheet features a prominent 'Try it' call-to-action button.",
+        "videoResponse": {
+          "status": 200,
+          "contentType": "video/mp4",
+          "contentLength": "1639789"
+        }
+      },
+      "issue": "来源为真实产品视频与行为说明，未提供产品实现源码；视频地址已核查响应，仍需播放验证后加入推荐。"
+    },
+    "https://60fps.design/shots/airbnb-identity-verification-card-flip-scan-interaction": {
+      "name": "Airbnb Identity Verification Card Flip Scan Interaction",
+      "title": "随设备倾斜反光的身份卡",
+      "stage": "effect",
+      "description": "点击人物页的认证徽章后进入立体身份卡，卡片随手机倾斜旋转，表面全息光泽显露安全水印；返回时卡片顺滑收回个人页里的原位置。",
+      "aliases": [
+        "手机晃一下卡片就反光",
+        "像真的防伪证件",
+        "身份卡能立体转动"
+      ],
+      "trigger": "点击徽章展开；设备陀螺仪倾斜控制卡片角度；返回收起",
+      "placements": [
+        "移动端认证展示",
+        "数字会员卡"
+      ],
+      "tags": [
+        "身份卡",
+        "陀螺仪",
+        "全息反光",
+        "展开",
+        "Airbnb"
+      ],
+      "sourceUrl": "https://60fps.design/shots/airbnb-identity-verification-card-flip-scan-interaction",
+      "implementationUrl": null,
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/682abfe4482c4f1c2fce56cd/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/682abfe4482c4f1c2fce56cd/thumbnail-1-0.png?width=800",
+      "evidenceUrl": "https://60fps.design/shots/airbnb-identity-verification-card-flip-scan-interaction",
+      "verifiedAt": "2026-10-12T08:09:52.921Z",
+      "evidence": {
+        "url": "https://60fps.design/shots/airbnb-identity-verification-card-flip-scan-interaction",
+        "sitemapUrl": "https://60fps.design/sitemap.xml",
+        "pageStatus": 200,
+        "pageSha256": "20670d16d6871f274de516c4a1c996551cad8e24cb431027a9fca29d01108831",
+        "primaryVideoName": "Airbnb Identity Verification Card Flip Scan Interaction",
+        "originalDescription": "When a user taps the identity verification badge on a host profile, it opens a detailed view featuring a premium 3D card. The card responds to device tilt (gyroscope) with a realistic 3D rotation and a shimmering holographic overlay that reveals security watermarks and Airbnb logos. Tapping back smoothly transitions the card back into its inline profile state.",
+        "videoResponse": {
+          "status": 200,
+          "contentType": "video/mp4",
+          "contentLength": "1907181"
+        }
+      },
+      "issue": "来源为真实产品视频与行为说明，未提供产品实现源码；视频地址已核查响应，仍需播放验证后加入推荐。"
+    },
+    "https://60fps.design/shots/github-badges-showcase-interaction": {
+      "name": "GitHub Badges Showcase Interaction",
+      "title": "背景跟随徽章换色的展示轮播",
+      "stage": "structure",
+      "description": "徽章在弹层中横向轮播，滑动时立体图形轻微绕竖轴旋转并吸附到中央；背景颜色跟随当前徽章交融变化，文字淡入更新，关闭时弹层缩小退出。",
+      "aliases": [
+        "徽章左右滑还能换背景",
+        "成就像立体卡片一样展示",
+        "每张卡配自己的底色"
+      ],
+      "trigger": "横向滑动切换徽章；点击关闭缩小退出",
+      "placements": [
+        "成就展示",
+        "个人档案徽章",
+        "收藏轮播"
+      ],
+      "tags": [
+        "徽章",
+        "轮播",
+        "背景变色",
+        "三维",
+        "GitHub"
+      ],
+      "sourceUrl": "https://60fps.design/shots/github-badges-showcase-interaction",
+      "implementationUrl": null,
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/67b4cb648f8d12020de77ef8/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/67b4cb648f8d12020de77ef8/thumbnail-1-0.png?width=800",
+      "evidenceUrl": "https://60fps.design/shots/github-badges-showcase-interaction",
+      "verifiedAt": "2026-10-12T08:09:53.751Z",
+      "evidence": {
+        "url": "https://60fps.design/shots/github-badges-showcase-interaction",
+        "sitemapUrl": "https://60fps.design/sitemap.xml",
+        "pageStatus": 200,
+        "pageSha256": "50a3379e2a087be66d39044082eabf1dd472f58175222fd0d7ac5ca5810b2671",
+        "primaryVideoName": "GitHub Badges Showcase Interaction",
+        "originalDescription": "This interaction showcases GitHub profile badges in a modal carousel. Swiping horizontally transitions between different earned badges, smoothly morphing the modal's background color to match the theme of the active badge. Each badge features a rich 3D illustration that subtly rotates on its Y-axis during the drag gesture, adding physical depth. The transition uses spring physics to snap cards into place, accompanied by a fading text transition for the badge details. Tapping the close button gracefully scales down and fades out the modal to return to the profile screen.",
+        "videoResponse": {
+          "status": 200,
+          "contentType": "video/mp4",
+          "contentLength": "3268865"
+        }
+      },
+      "issue": "来源为真实产品视频与行为说明，未提供产品实现源码；视频地址已核查响应，仍需播放验证后加入推荐。"
+    },
+    "https://60fps.design/shots/revolut-graph-glow-drag-interaction": {
+      "name": "Revolut Graph Glow Drag Interaction",
+      "title": "拖动图表时跟随发光的数据点",
+      "stage": "effect",
+      "description": "拖动折线图时，竖向指示线与发光点沿曲线跟随，价格和时间实时更新；选到上涨或下跌位置时颜色分别转绿或转红，切换时间范围时曲线平滑变形。",
+      "aliases": [
+        "手指划到哪里就显示那里的值",
+        "图表上有一个会亮的点",
+        "曲线数字跟着拖动变化"
+      ],
+      "trigger": "在折线图上横向拖动查看数据；点击时间范围切换曲线",
+      "placements": [
+        "趋势图表",
+        "数据探索",
+        "分析面板"
+      ],
+      "tags": [
+        "图表拖动",
+        "发光点",
+        "数值更新",
+        "曲线形变",
+        "Revolut"
+      ],
+      "sourceUrl": "https://60fps.design/shots/revolut-graph-glow-drag-interaction",
+      "implementationUrl": null,
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/67a97da9cff8b1323a5799f2/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/67a97da9cff8b1323a5799f2/thumbnail-1-0.png?width=800",
+      "evidenceUrl": "https://60fps.design/shots/revolut-graph-glow-drag-interaction",
+      "verifiedAt": "2026-10-12T08:09:53.998Z",
+      "evidence": {
+        "url": "https://60fps.design/shots/revolut-graph-glow-drag-interaction",
+        "sitemapUrl": "https://60fps.design/sitemap.xml",
+        "pageStatus": 200,
+        "pageSha256": "4bb2a3c025cb607af0ad3ae269349f7b1834b011995cc1e4797bb0551f863579",
+        "primaryVideoName": "Revolut Graph Glow Drag Interaction",
+        "originalDescription": "This interaction showcases a premium data-exploration experience on a financial chart. As the user drags their finger across the line graph, a vertical indicator line and a glowing intersection dot track the movement. The dot glides smoothly along the graph's path, casting a soft radial glow. Simultaneously, the main price text acts as a rapid counter, updating instantly alongside the timestamp. The visual theme dynamically shifts: when the selected data point represents a positive gain, the glow and text accent green; when it dips into a loss, they seamlessly transition to red. Switching between timeframes morphs the graph line smoothly with a springy transition.",
+        "videoResponse": {
+          "status": 200,
+          "contentType": "video/mp4",
+          "contentLength": "1214349"
+        }
+      },
+      "issue": "来源为真实产品视频与行为说明，未提供产品实现源码；视频地址已核查响应，仍需播放验证后加入推荐。"
+    },
+    "https://60fps.design/shots/revolut-3d-card-rotate-interaction": {
+      "name": "Revolut 3D Card Rotate Interaction",
+      "title": "可翻面换色的立体产品卡",
+      "stage": "effect",
+      "description": "横向滑动切换不同卡片，卡片带透视深度过渡；点击后完整翻到背面，点下方色点可平滑更换卡面颜色，金属反射随角度变化。",
+      "aliases": [
+        "卡片能翻到背面",
+        "可以选颜色的立体卡",
+        "像真产品一样有金属反光"
+      ],
+      "trigger": "横向滑动切换卡片；点击翻面；点色点更换外观",
+      "placements": [
+        "产品款式展示",
+        "数字卡片选择"
+      ],
+      "tags": [
+        "卡片翻面",
+        "换色",
+        "金属反光",
+        "三维",
+        "Revolut"
+      ],
+      "sourceUrl": "https://60fps.design/shots/revolut-3d-card-rotate-interaction",
+      "implementationUrl": null,
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/67a97da9e5458a0349339588/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/67a97da9e5458a0349339588/thumbnail-1-0.png?width=800",
+      "evidenceUrl": "https://60fps.design/shots/revolut-3d-card-rotate-interaction",
+      "verifiedAt": "2026-10-12T08:09:54.031Z",
+      "evidence": {
+        "url": "https://60fps.design/shots/revolut-3d-card-rotate-interaction",
+        "sitemapUrl": "https://60fps.design/sitemap.xml",
+        "pageStatus": 200,
+        "pageSha256": "1b95aa4ba5a7092e8a8813ee66d68b955698ab1c2ba52809b1ad5346c8fc6ed2",
+        "primaryVideoName": "Revolut 3D Card Rotate Interaction",
+        "originalDescription": "This interaction showcases Revolut's premium card tiers. Users can swipe horizontally to cycle through different card types (Standard, Plus, Premium, Metal, Ultra). Swiping transitions the cards with a smooth 3D perspective shift and depth. Tapping a card triggers a full 3D flip animation to show the card's reverse side. For cards with multiple colorways, a color picker appears below; tapping a color dot smoothly updates the card's texture and color. Dynamic lighting and metallic reflections respond to the card's orientation, creating a highly tactile, skeuomorphic feel.",
+        "videoResponse": {
+          "status": 200,
+          "contentType": "video/mp4",
+          "contentLength": "1586149"
+        }
+      },
+      "issue": "来源为真实产品视频与行为说明，未提供产品实现源码；视频地址已核查响应，仍需播放验证后加入推荐。"
+    },
+    "https://60fps.design/shots/apple-music-emoji-reaction-interaction": {
+      "name": "Apple Music Emoji Reaction Interaction",
+      "title": "选择后向上飘散的表情回应",
+      "stage": "effect",
+      "description": "点回应入口后，一排表情弹性放大出现；选择某个表情，菜单收起，同时多枚同类表情向上漂浮、缩小并淡出，形成轻量的回应庆祝。",
+      "aliases": [
+        "点喜欢会飘出表情",
+        "选个表情后它往上飞",
+        "表情菜单弹出来"
+      ],
+      "trigger": "点击回应入口打开；选择表情触发上浮粒子并关闭菜单",
+      "placements": [
+        "内容回应",
+        "评论互动",
+        "播放器回应"
+      ],
+      "tags": [
+        "表情",
+        "回应",
+        "粒子",
+        "弹性菜单",
+        "Apple Music"
+      ],
+      "sourceUrl": "https://60fps.design/shots/apple-music-emoji-reaction-interaction",
+      "implementationUrl": null,
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/678e32a4961c534fdba8e981/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/678e32a4961c534fdba8e981/thumbnail-1-0.png?width=800",
+      "evidenceUrl": "https://60fps.design/shots/apple-music-emoji-reaction-interaction",
+      "verifiedAt": "2026-10-12T08:09:54.233Z",
+      "evidence": {
+        "url": "https://60fps.design/shots/apple-music-emoji-reaction-interaction",
+        "sitemapUrl": "https://60fps.design/sitemap.xml",
+        "pageStatus": 200,
+        "pageSha256": "69bb6f1b3e10385fdff679ca1844129ff55d19cf6773fcba8fddfc1ce3f06235",
+        "primaryVideoName": "Apple Music Emoji Reaction Interaction",
+        "originalDescription": "In this music player interface, tapping the reaction button reveals a horizontal emoji picker that scales up with a springy bounce. Selecting an emoji immediately dismisses the picker and spawns a stream of floating, drifting emoji particles that rise upwards, scaling down and fading out into the background. The interaction is highly tactile, combining spring physics on the menu with playful particle physics on the reaction itself.",
+        "videoResponse": {
+          "status": 200,
+          "contentType": "video/mp4",
+          "contentLength": "977023"
+        }
+      },
+      "issue": "来源为真实产品视频与行为说明，未提供产品实现源码；视频地址已核查响应，仍需播放验证后加入推荐。"
+    },
+    "https://60fps.design/shots/google-chrome-drag-tab-to-pin-interaction": {
+      "name": "Google Chrome Drag Tab to Pin Interaction",
+      "title": "拖进目标区后自动置顶的卡片",
+      "stage": "effect",
+      "description": "拖动普通标签卡到下方指定区域时，卡片缩小，目标区变蓝并显示预览；松手后卡片飞到顶部固定行，原网格中的其他项平滑补齐空位。",
+      "aliases": [
+        "把卡片拖进去就置顶",
+        "拖到亮起来的框里固定",
+        "置顶后其他卡片自动让位"
+      ],
+      "trigger": "拖拽卡片进入置顶目标区域；松手完成固定",
+      "placements": [
+        "卡片收藏",
+        "固定快捷入口",
+        "标签管理"
+      ],
+      "tags": [
+        "拖放",
+        "目标高亮",
+        "置顶",
+        "网格补位",
+        "Google Chrome"
+      ],
+      "sourceUrl": "https://60fps.design/shots/google-chrome-drag-tab-to-pin-interaction",
+      "implementationUrl": null,
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/675676b463a84726545b805b/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/675676b463a84726545b805b/thumbnail-1-0.png?width=800",
+      "evidenceUrl": "https://60fps.design/shots/google-chrome-drag-tab-to-pin-interaction",
+      "verifiedAt": "2026-10-12T08:09:55.035Z",
+      "evidence": {
+        "url": "https://60fps.design/shots/google-chrome-drag-tab-to-pin-interaction",
+        "sitemapUrl": "https://60fps.design/sitemap.xml",
+        "pageStatus": 200,
+        "pageSha256": "663177bdf459e06fde22753199887849a2b17bd3354046ade52b4c9f710df3f1",
+        "primaryVideoName": "Google Chrome Drag Tab to Pin Interaction",
+        "originalDescription": "In Google Chrome's tab switcher, users can drag any regular tab card down toward a dedicated 'Drag tab here to pin it' target area at the bottom of the screen. As the card is dragged, it scales down. Upon entering the target area, the zone morphs into a blue active state containing the tab preview. When released, the tab smoothly animates and scales up to join the pinned tabs row at the top of the grid, while the remaining regular tabs fluidly slide to rearrange and fill the vacant space.",
+        "videoResponse": {
+          "status": 200,
+          "contentType": "video/mp4",
+          "contentLength": "600680"
+        }
+      },
+      "issue": "来源为真实产品视频与行为说明，未提供产品实现源码；视频地址已核查响应，仍需播放验证后加入推荐。"
+    },
+    "https://60fps.design/shots/google-chrome-drag-tabs-to-arrange-interaction": {
+      "name": "Google Chrome Drag Tabs to Arrange Interaction",
+      "title": "拖动时实时让位的卡片网格",
+      "stage": "effect",
+      "description": "长按卡片后它略微抬起并出现阴影，拖过其他卡片时，周围项目即时滑动预览新位置；松手后被拖卡片带轻微弹性吸附到目标格。",
+      "aliases": [
+        "拖卡片时其他卡片自己让开",
+        "能重新排照片顺序",
+        "卡片松手吸到格子里"
+      ],
+      "trigger": "长按并拖拽卡片；松手完成排序",
+      "placements": [
+        "卡片排序",
+        "相册管理",
+        "可定制网格"
+      ],
+      "tags": [
+        "拖拽排序",
+        "让位",
+        "阴影",
+        "弹性吸附",
+        "Google Chrome"
+      ],
+      "sourceUrl": "https://60fps.design/shots/google-chrome-drag-tabs-to-arrange-interaction",
+      "implementationUrl": null,
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/675676b45222d1a7afd8ba8b/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/675676b45222d1a7afd8ba8b/thumbnail-1-0.png?width=800",
+      "evidenceUrl": "https://60fps.design/shots/google-chrome-drag-tabs-to-arrange-interaction",
+      "verifiedAt": "2026-10-12T08:09:55.360Z",
+      "evidence": {
+        "url": "https://60fps.design/shots/google-chrome-drag-tabs-to-arrange-interaction",
+        "sitemapUrl": "https://60fps.design/sitemap.xml",
+        "pageStatus": 200,
+        "pageSha256": "97aac7f761a329e595a133a49eb8ba57fff35cb6eff0829d990ed176fabcfd95",
+        "primaryVideoName": "Google Chrome Drag Tabs to Arrange Interaction",
+        "originalDescription": "In Google Chrome's tab switcher, users can long-press and drag a tab card to rearrange its position within the grid. Upon holding, the selected tab lifts up with a subtle scale and shadow effect to indicate it is active. As it is dragged across the screen, the surrounding tabs dynamically slide and shift to preview their new positions. When the tab is released, it snaps smoothly into place with a subtle spring-like settling motion.",
+        "videoResponse": {
+          "status": 200,
+          "contentType": "video/mp4",
+          "contentLength": "1402079"
+        }
+      },
+      "issue": "来源为真实产品视频与行为说明，未提供产品实现源码；视频地址已核查响应，仍需播放验证后加入推荐。"
+    },
+    "https://60fps.design/shots/google-chrome-tabs-switch-scale-interaction": {
+      "name": "Google Chrome Tabs Switch Scale Interaction",
+      "title": "整页缩回标签卡的空间过渡",
+      "stage": "effect",
+      "description": "打开标签切换时，当前整个页面平滑缩小并收进底部对应的标签胶囊，背景转暗，其他标签进入队列，清楚展示原页面在列表中的位置。",
+      "aliases": [
+        "整个页面缩成一张小卡",
+        "切换页签还能看见原页面去哪了",
+        "页面收进底部标签"
+      ],
+      "trigger": "点击标签切换入口，当前页缩入对应卡片",
+      "placements": [
+        "多页工作台",
+        "标签切换",
+        "移动端页面管理"
+      ],
+      "tags": [
+        "空间缩放",
+        "标签页",
+        "上下文",
+        "页面过渡",
+        "Google Chrome"
+      ],
+      "sourceUrl": "https://60fps.design/shots/google-chrome-tabs-switch-scale-interaction",
+      "implementationUrl": null,
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/675676b35222d1a7afd8ba80/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/675676b35222d1a7afd8ba80/thumbnail-1-0.png?width=800",
+      "evidenceUrl": "https://60fps.design/shots/google-chrome-tabs-switch-scale-interaction",
+      "verifiedAt": "2026-10-12T08:09:55.465Z",
+      "evidence": {
+        "url": "https://60fps.design/shots/google-chrome-tabs-switch-scale-interaction",
+        "sitemapUrl": "https://60fps.design/sitemap.xml",
+        "pageStatus": 200,
+        "pageSha256": "4751cca9d08ae6dc9c23cc7a26283f5ee525ee9d4b68cb7044b321e9b6f10947",
+        "primaryVideoName": "Google Chrome Tabs Switch Scale Interaction",
+        "originalDescription": "When the user taps the tab switcher button, the active web page smoothly shrinks and scales down, morphing directly into its corresponding tab pill in the bottom carousel. The background transitions to a dark grey, and the surrounding tab pills animate into place. This spatial zoom effect maintains context, clearly showing where the page goes and how it relates to the other open tabs.",
+        "videoResponse": {
+          "status": 200,
+          "contentType": "video/mp4",
+          "contentLength": "1011432"
+        }
+      },
+      "issue": "来源为真实产品视频与行为说明，未提供产品实现源码；视频地址已核查响应，仍需播放验证后加入推荐。"
+    },
+    "https://60fps.design/shots/google-docs-value-prop-full-screen-color-transition": {
+      "name": "Google Docs Value Prop Full Screen Color Transition",
+      "title": "每一步都会交融换底色的引导页",
+      "stage": "style",
+      "description": "分步介绍切换时，整屏背景平滑从一种鲜明色彩交融到另一种，插画和文案横向滑动并带轻微视差，使不同步骤形成一致的视觉节奏。",
+      "aliases": [
+        "下一页整个背景换颜色",
+        "介绍页一屏一个颜色",
+        "插画跟着换页滑动"
+      ],
+      "trigger": "切换新手引导步骤时同步改变背景色、插画和文案",
+      "placements": [
+        "新手引导",
+        "产品价值介绍",
+        "移动端入门"
+      ],
+      "tags": [
+        "全屏色彩",
+        "背景过渡",
+        "横向滑动",
+        "视差",
+        "Google Docs"
+      ],
+      "sourceUrl": "https://60fps.design/shots/google-docs-value-prop-full-screen-color-transition",
+      "implementationUrl": null,
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/6745f92a080b60408ca18bf7/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/6745f92a080b60408ca18bf7/thumbnail-1-0.png?width=800",
+      "evidenceUrl": "https://60fps.design/shots/google-docs-value-prop-full-screen-color-transition",
+      "verifiedAt": "2026-10-12T08:09:55.844Z",
+      "evidence": {
+        "url": "https://60fps.design/shots/google-docs-value-prop-full-screen-color-transition",
+        "sitemapUrl": "https://60fps.design/sitemap.xml",
+        "pageStatus": 200,
+        "pageSha256": "8daa44743b9c861fe388ade4d9e5b0b85d7059a7bd005cc6f432f5d0ba40a07e",
+        "primaryVideoName": "Google Docs Value Prop Full Screen Color Transition",
+        "originalDescription": "A multi-step onboarding carousel where each slide transition triggers a full-screen background color change. As the user navigates through the value propositions, the vibrant background color smoothly crossfades to a new hue (blue to green, green to teal, teal to orange). Simultaneously, the custom illustrations and descriptive text slide horizontally with a subtle parallax effect, creating a cohesive, immersive, and playful introduction to the app.",
+        "videoResponse": {
+          "status": 200,
+          "contentType": "video/mp4",
+          "contentLength": "413945"
+        }
+      },
+      "issue": "来源为真实产品视频与行为说明，未提供产品实现源码；视频地址已核查响应，仍需播放验证后加入推荐。"
+    },
+    "https://60fps.design/shots/spotify-podcast-card-preview-sound-wave-animation": {
+      "name": "Spotify Podcast Card Preview Sound Wave Animation",
+      "title": "展开后出现声波与字幕的预览卡",
+      "stage": "effect",
+      "description": "点击播客预览后，卡片向下扩展，封面成为背景，圆形声波随播放脉冲变化；底部字幕与音频同步上移淡入，让音频预览同时可看和可读。",
+      "aliases": [
+        "音频卡点开有声波和字幕",
+        "播客预览会变高",
+        "封面上有跟着声音动的圆环"
+      ],
+      "trigger": "点击预览按钮展开；播放中声波与字幕联动",
+      "placements": [
+        "音频内容预览",
+        "播客列表",
+        "媒体卡片"
+      ],
+      "tags": [
+        "音频预览",
+        "圆形声波",
+        "字幕",
+        "卡片展开",
+        "Spotify"
+      ],
+      "sourceUrl": "https://60fps.design/shots/spotify-podcast-card-preview-sound-wave-animation",
+      "implementationUrl": null,
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/673b2a5f630fc3cfdf99d604/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/673b2a5f630fc3cfdf99d604/thumbnail-1-0.png?width=800",
+      "evidenceUrl": "https://60fps.design/shots/spotify-podcast-card-preview-sound-wave-animation",
+      "verifiedAt": "2026-10-12T08:09:56.279Z",
+      "evidence": {
+        "url": "https://60fps.design/shots/spotify-podcast-card-preview-sound-wave-animation",
+        "sitemapUrl": "https://60fps.design/sitemap.xml",
+        "pageStatus": 200,
+        "pageSha256": "aa6d86c256f3a26cabf5a5051b6006e2aac17ea95b46e51c4e785b3aba4d2761",
+        "primaryVideoName": "Spotify Podcast Card Preview Sound Wave Animation",
+        "originalDescription": "When the user taps the preview episode button on a podcast card, the card expands vertically. The podcast cover art becomes the background for a dynamic, circular sound wave visualizer that pulses in real-time. Simultaneously, synchronized text captions fade and slide up at the bottom of the card, providing a visual and textual preview of the audio content.",
+        "videoResponse": {
+          "status": 200,
+          "contentType": "video/mp4",
+          "contentLength": "1394937"
+        }
+      },
+      "issue": "来源为真实产品视频与行为说明，未提供产品实现源码；视频地址已核查响应，仍需播放验证后加入推荐。"
+    },
+    "https://60fps.design/shots/airbnb-price-toggle-interaction": {
+      "name": "Airbnb Price Toggle Interaction",
+      "title": "滑到位后出现勾选的开关",
+      "stage": "effect",
+      "description": "点击开关时，背景由浅灰变成深色，白色滑块滑到右侧；滑块落定时内部勾选轻微放大淡入，反向点击会同时收起勾选并滑回。",
+      "aliases": [
+        "开关打开后里面出现一个勾",
+        "有点弹性的开关",
+        "按钮滑过去颜色也变"
+      ],
+      "trigger": "点击开关切换状态；勾选在开启位置落定后出现",
+      "placements": [
+        "设置选项",
+        "价格筛选",
+        "偏好表单"
+      ],
+      "tags": [
+        "开关",
+        "勾选",
+        "背景变色",
+        "弹性",
+        "Airbnb"
+      ],
+      "sourceUrl": "https://60fps.design/shots/airbnb-price-toggle-interaction",
+      "implementationUrl": null,
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/672f62acfbe814b25213daac/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/672f62acfbe814b25213daac/thumbnail-1-0.png?width=800",
+      "evidenceUrl": "https://60fps.design/shots/airbnb-price-toggle-interaction",
+      "verifiedAt": "2026-10-12T08:09:56.634Z",
+      "evidence": {
+        "url": "https://60fps.design/shots/airbnb-price-toggle-interaction",
+        "sitemapUrl": "https://60fps.design/sitemap.xml",
+        "pageStatus": 200,
+        "pageSha256": "377d465307490d353c8fe3b411696012304b78bb785871062e5aa26140c11d4b",
+        "primaryVideoName": "Airbnb Price Toggle Interaction",
+        "originalDescription": "This interaction showcases Airbnb's custom toggle switch design. When tapped, the toggle's background smoothly transitions from a light grey to a dark charcoal color, while the circular white thumb slides to the right. As the thumb settles, a subtle checkmark icon fades and scales into view inside it. Tapping it again reverses the animation, sliding the thumb back to the left and fading out the checkmark, returning the background to light grey. The motion uses a responsive spring easing that makes the switch feel tactile and premium.",
+        "videoResponse": {
+          "status": 200,
+          "contentType": "video/mp4",
+          "contentLength": "2611927"
+        }
+      },
+      "issue": "来源为真实产品视频与行为说明，未提供产品实现源码；视频地址已核查响应，仍需播放验证后加入推荐。"
+    },
+    "https://60fps.design/shots/spotify-speed-slider-interaction": {
+      "name": "Spotify Speed Slider Interaction",
+      "title": "滑动标尺来选数值的底部面板",
+      "stage": "effect",
+      "description": "速度面板从底部展开，水平拖动时标尺刻度滑过固定位置，中央读数实时更新并转为强调色；点快捷数值时，标尺快速滑到对应刻度。",
+      "aliases": [
+        "像尺子一样滑着选速度",
+        "滑动刻度中间数字会变",
+        "能点快捷值的滑杆"
+      ],
+      "trigger": "点击速度入口打开；水平拖动标尺或点击快捷数值",
+      "placements": [
+        "播放速度设置",
+        "精细数值调节",
+        "移动端设置"
+      ],
+      "tags": [
+        "标尺",
+        "数值滑动",
+        "快捷选择",
+        "底部面板",
+        "Spotify"
+      ],
+      "sourceUrl": "https://60fps.design/shots/spotify-speed-slider-interaction",
+      "implementationUrl": null,
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/670e554f18e315822e1d8ef8/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/670e554f18e315822e1d8ef8/thumbnail-1-0.png?width=800",
+      "evidenceUrl": "https://60fps.design/shots/spotify-speed-slider-interaction",
+      "verifiedAt": "2026-10-12T08:09:56.710Z",
+      "evidence": {
+        "url": "https://60fps.design/shots/spotify-speed-slider-interaction",
+        "sitemapUrl": "https://60fps.design/sitemap.xml",
+        "pageStatus": 200,
+        "pageSha256": "7df318f229c56c4346a254d32ecbc063a1af943a70838c32b5b9d8ceb5605e4b",
+        "primaryVideoName": "Spotify Speed Slider Interaction",
+        "originalDescription": "When the user taps the playback speed button, a bottom sheet slides up to reveal a custom ruler-style speed slider. Dragging horizontally scrubs through speed increments with the ruler ticks sliding dynamically, while the main speed readout updates in real-time, changing to Spotify's signature green when modified. Quick-select buttons at the bottom allow the user to instantly snap to common speeds, triggering a swift horizontal slide of the ruler to the new position. Dismissing the menu slides the bottom sheet back down.",
+        "videoResponse": {
+          "status": 200,
+          "contentType": "video/mp4",
+          "contentLength": "2659224"
+        }
+      },
+      "issue": "来源为真实产品视频与行为说明，未提供产品实现源码；视频地址已核查响应，仍需播放验证后加入推荐。"
+    },
+    "https://60fps.design/shots/netflix-rate-interaction": {
+      "name": "Netflix Rate Interaction",
+      "title": "按顺序弹出的三档评价菜单",
+      "stage": "effect",
+      "description": "点击推荐按钮后，深色评价菜单在按钮上方放大淡入，三档拇指选项错开时间弹性出现；周围背景略暗，让注意力集中到评价选择。",
+      "aliases": [
+        "评价按钮上面弹出几个手势",
+        "不喜欢喜欢很喜欢三个选项",
+        "一个个弹出的评分菜单"
+      ],
+      "trigger": "点击评价入口打开菜单，选项依次入场",
+      "placements": [
+        "内容评价",
+        "推荐反馈",
+        "视频详情"
+      ],
+      "tags": [
+        "评价",
+        "浮层",
+        "逐项入场",
+        "弹性",
+        "Netflix"
+      ],
+      "sourceUrl": "https://60fps.design/shots/netflix-rate-interaction",
+      "implementationUrl": null,
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/66b4bb3c371d29849d7bcc47/download.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/66b4bb3c371d29849d7bcc47/thumbnail-1-0.png?width=800",
+      "evidenceUrl": "https://60fps.design/shots/netflix-rate-interaction",
+      "verifiedAt": "2026-10-12T08:09:57.076Z",
+      "evidence": {
+        "url": "https://60fps.design/shots/netflix-rate-interaction",
+        "sitemapUrl": "https://60fps.design/sitemap.xml",
+        "pageStatus": 200,
+        "pageSha256": "329d631b8cd8549254d03cfaa8a3aaed679ba92f2d76023399984e9564aed95a",
+        "primaryVideoName": "Netflix Rate Interaction",
+        "originalDescription": "When the user taps the 'Recommend' button, a dark popover menu scales up and fades in directly above the trigger. The three rating options ('Not for me', 'I like this', and 'Love this!') animate in with a subtle stagger, scaling up with a springy overshoot. The background behind the popover dims slightly to focus the user's attention on the rating choice.",
+        "videoResponse": {
+          "status": 200,
+          "contentType": "video/mp4",
+          "contentLength": "796313"
+        }
+      },
+      "issue": "来源为真实产品视频与行为说明，未提供产品实现源码；视频地址已核查响应，仍需播放验证后加入推荐。"
+    },
+    "https://60fps.design/shots/apple-music-play-pause-interaction": {
+      "name": "Apple Music Play Pause Interaction",
+      "title": "播放状态改变时升降的封面",
+      "stage": "effect",
+      "description": "点击播放后封面放大、阴影扩散，像从背景中浮起；暂停后封面缩小、阴影收紧，播放与暂停图标也同步产生有弹性的变化。",
+      "aliases": [
+        "播放时封面浮起来",
+        "暂停时图片缩一下",
+        "播放图标软软地切换"
+      ],
+      "trigger": "点击播放或暂停按钮，封面、阴影与图标一起切换",
+      "placements": [
+        "播放器",
+        "音频卡片",
+        "媒体控制区"
+      ],
+      "tags": [
+        "播放暂停",
+        "封面缩放",
+        "阴影",
+        "图标切换",
+        "Apple Music"
+      ],
+      "sourceUrl": "https://60fps.design/shots/apple-music-play-pause-interaction",
+      "implementationUrl": null,
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/66b4bced371d29849d7bd85d/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/66b4bced371d29849d7bd85d/thumbnail-1-0.png?width=800",
+      "evidenceUrl": "https://60fps.design/shots/apple-music-play-pause-interaction",
+      "verifiedAt": "2026-10-12T08:09:57.568Z",
+      "evidence": {
+        "url": "https://60fps.design/shots/apple-music-play-pause-interaction",
+        "sitemapUrl": "https://60fps.design/sitemap.xml",
+        "pageStatus": 200,
+        "pageSha256": "f975895bc57538d83d6a9845b2b9813c49adf0c24dee56ca707ffd77d4e7539a",
+        "primaryVideoName": "Apple Music Play Pause Interaction",
+        "originalDescription": "When the user taps the play/pause button, the interface responds with highly tactile feedback. Pausing the music causes the album artwork to scale down and its shadow to contract, visually grounding the card. Resuming playback scales the artwork up and expands its shadow, making it appear to float. Simultaneously, the play and pause icons transition using a springy, morph-like scale effect that feels elastic and responsive.",
+        "videoResponse": {
+          "status": 200,
+          "contentType": "video/mp4",
+          "contentLength": "519998"
+        }
+      },
+      "issue": "来源为真实产品视频与行为说明，未提供产品实现源码；视频地址已核查响应，仍需播放验证后加入推荐。"
+    },
+    "https://60fps.design/shots/apple-music-lyrics-interaction": {
+      "name": "Apple Music Lyrics Interaction",
+      "title": "中心歌词清晰其余淡出的阅读视图",
+      "stage": "effect",
+      "description": "点击歌词入口，封面缩小移到左上，歌词向上淡入；滚动歌词时，中间当前行放大变亮，其他行变暗、变小并模糊，封面色彩构成流动背景。",
+      "aliases": [
+        "读到哪行哪行最清楚",
+        "歌词其他行模糊一点",
+        "封面缩到角落展开文字"
+      ],
+      "trigger": "点击歌词入口切换视图；滚动改变当前聚焦行",
+      "placements": [
+        "歌词阅读",
+        "逐行稿件",
+        "引导式文字阅读"
+      ],
+      "tags": [
+        "歌词",
+        "文字聚焦",
+        "滚动",
+        "模糊背景",
+        "Apple Music"
+      ],
+      "sourceUrl": "https://60fps.design/shots/apple-music-lyrics-interaction",
+      "implementationUrl": null,
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/66b4bcec371d29849d7bd83f/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/66b4bcec371d29849d7bd83f/thumbnail-1-0.png?width=800",
+      "evidenceUrl": "https://60fps.design/shots/apple-music-lyrics-interaction",
+      "verifiedAt": "2026-10-12T08:09:57.875Z",
+      "evidence": {
+        "url": "https://60fps.design/shots/apple-music-lyrics-interaction",
+        "sitemapUrl": "https://60fps.design/sitemap.xml",
+        "pageStatus": 200,
+        "pageSha256": "ce45094d725f47aefd422f61d5372154c67aeaa0289b27dcfcec7910f1ad13e0",
+        "primaryVideoName": "Apple Music Lyrics Interaction",
+        "originalDescription": "Tapping the lyrics button smoothly transitions the player interface. The album artwork shrinks and slides to the top-left header, while the lyrics fade and slide up into view. When scrolling through the lyrics, the text lines dynamically scale up and brighten to full white when centered (focused), while non-focused lines scale down, dim, and blur. The background features a rich, animated blur derived from the album art.",
+        "videoResponse": {
+          "status": 200,
+          "contentType": "video/mp4",
+          "contentLength": "1996459"
+        }
+      },
+      "issue": "来源为真实产品视频与行为说明，未提供产品实现源码；视频地址已核查响应，仍需播放验证后加入推荐。"
+    },
+    "https://60fps.design/shots/vercel-preview-feature-interaction": {
+      "name": "Vercel Preview Feature Interaction",
+      "title": "自动轮流聚焦的功能徽章",
+      "stage": "effect",
+      "description": "多个彩色功能徽章围绕中央工具条，动画依次让一个徽章保持清晰与完整亮度，其余徽章模糊变暗，用焦点轮换逐个介绍复杂界面的能力。",
+      "aliases": [
+        "功能图标轮流亮起来",
+        "一次只突出一个卖点",
+        "其他小卡片模糊下去"
+      ],
+      "trigger": "展示区自动循环切换聚焦徽章；不是鼠标悬停触发",
+      "placements": [
+        "产品功能展示",
+        "工具能力介绍",
+        "首屏演示"
+      ],
+      "tags": [
+        "功能徽章",
+        "自动聚焦",
+        "模糊",
+        "循环",
+        "Vercel"
+      ],
+      "sourceUrl": "https://60fps.design/shots/vercel-preview-feature-interaction",
+      "implementationUrl": null,
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/66b4bb7e61d73e2622b34a32/download.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/66b4bb7e61d73e2622b34a32/thumbnail-1-0.png?width=800",
+      "evidenceUrl": "https://60fps.design/shots/vercel-preview-feature-interaction",
+      "verifiedAt": "2026-10-12T08:09:57.997Z",
+      "evidence": {
+        "url": "https://60fps.design/shots/vercel-preview-feature-interaction",
+        "sitemapUrl": "https://60fps.design/sitemap.xml",
+        "pageStatus": 200,
+        "pageSha256": "475184dad9c676b1114e70d50dfd16a4f2ac14786fb1fb8be789d0ec852ad514",
+        "primaryVideoName": "Vercel Preview Feature Interaction",
+        "originalDescription": "This interaction demonstrates a feature showcase where multiple colorful badges (representing Vercel preview features like Comments, CMS Drafts, Accessibility, and Share) surround a central toolbar. The animation cycles through each badge, blurring and dimming the inactive ones while keeping a single badge sharp and fully opaque. This selective focus sequence guides the viewer's eye to each feature individually, creating a clean and premium presentation of a complex UI.",
+        "videoResponse": {
+          "status": 200,
+          "contentType": "video/mp4",
+          "contentLength": "766865"
+        }
+      },
+      "issue": "来源为真实产品视频与行为说明，未提供产品实现源码；视频地址已核查响应，仍需播放验证后加入推荐。"
+    }
+  },
+  "issues": []
+}

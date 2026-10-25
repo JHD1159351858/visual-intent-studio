@@ -1,0 +1,21 @@
+{
+  "entryId": "reactbits-glass-surface",
+  "sourceUrl": "https://reactbits.dev/components/glass-surface",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/GlassSurface-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/GlassSurface/GlassSurface.jsx",
+  "checkedAt": "2026-10-25T07:52:53.547Z",
+  "sha256": "dd4768a34758469aa4d4d3c46f69ce03693de6822541f6d6b38c52a2c634dce3",
+  "files": [
+    {
+      "path": "GlassSurface.css",
+      "sha256": "90cfc3ad54ad7aa92bb2b700696e2d9f2d8704162ba1b94ebf0b6f8dcecc4e61",
+      "bytes": 5251
+    },
+    {
+      "path": "GlassSurface.jsx",
+      "sha256": "d435562be2930a98270e3ff5881402a301f84813b06f0603ed353af12a9c96b3",
+      "bytes": 28528
+    }
+  ]
+}

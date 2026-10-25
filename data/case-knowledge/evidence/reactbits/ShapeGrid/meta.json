@@ -1,0 +1,21 @@
+{
+  "entryId": "7db027773c30b3f2",
+  "sourceUrl": "https://reactbits.dev/backgrounds/shape-grid",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/ShapeGrid-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/ShapeGrid/ShapeGrid.jsx",
+  "checkedAt": "2026-10-25T07:53:11.897Z",
+  "sha256": "af127e52370d59e44f8fafb762927e66f7b7ec6815f52c9e1c63190edba8911f",
+  "files": [
+    {
+      "path": "ShapeGrid.css",
+      "sha256": "3f527451dd507a20f6afb6d7662f7edbdeff882a1a82027aa4dfe2f3cfe73a88",
+      "bytes": 199
+    },
+    {
+      "path": "ShapeGrid.jsx",
+      "sha256": "e947c2bd0a1b7e631079019e8b5305d449e7746d3dfa58a4e7a21285ae37a00f",
+      "bytes": 25064
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "entryId": "c3183d21c9a5e468",
+  "sourceUrl": "https://reactbits.dev/backgrounds/line-waves",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/LineWaves-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/LineWaves/LineWaves.jsx",
+  "checkedAt": "2026-10-25T07:53:08.955Z",
+  "sha256": "72a1793e7c0ff2ac6c2ea1b279f64f5f72be65e0e6460768e84dc838aa6c1540",
+  "files": [
+    {
+      "path": "LineWaves.css",
+      "sha256": "c0ffea6715a2f4965e5a1cc60bd14971e5a8fb93a87bc950ec1450d1cfbe788c",
+      "bytes": 56
+    },
+    {
+      "path": "LineWaves.jsx",
+      "sha256": "a440429a72e20b1330e07f61875d3658fa3ea4172f0dd1e097f96701d2aabf44",
+      "bytes": 8570
+    }
+  ]
+}

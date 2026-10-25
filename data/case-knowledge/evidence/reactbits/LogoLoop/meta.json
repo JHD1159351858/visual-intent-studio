@@ -1,0 +1,21 @@
+{
+  "entryId": "8a276d77a70bc6b8",
+  "sourceUrl": "https://reactbits.dev/animations/logo-loop",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/LogoLoop-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/LogoLoop/LogoLoop.jsx",
+  "checkedAt": "2026-10-25T07:52:59.723Z",
+  "sha256": "3a2b576d3acb03db913df94ea73a63651e22d767eb52b7bed31df829b814d2d6",
+  "files": [
+    {
+      "path": "LogoLoop.css",
+      "sha256": "3082fe5b5e262894e7e12ee50ab083c7161ed6c347eb90db1ff644724fa987bf",
+      "bytes": 3530
+    },
+    {
+      "path": "LogoLoop.jsx",
+      "sha256": "049e624da83cd46c127ce6b3f775f5eb5d8f1943e6814a56ea078ab83b6965e8",
+      "bytes": 10525
+    }
+  ]
+}

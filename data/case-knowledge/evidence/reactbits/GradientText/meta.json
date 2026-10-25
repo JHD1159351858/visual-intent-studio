@@ -1,0 +1,21 @@
+{
+  "entryId": "e70bb8efb1b8783a",
+  "sourceUrl": "https://reactbits.dev/text-animations/gradient-text",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/GradientText-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/GradientText/GradientText.jsx",
+  "checkedAt": "2026-10-25T07:52:55.495Z",
+  "sha256": "e8b62fe80b4a2f964b9875cdaa65d3f4caf37583cd8aac53600a172d6e9d1be2",
+  "files": [
+    {
+      "path": "GradientText.css",
+      "sha256": "9ff55e744f20f542c810577403c3fd3d1baba0210e4ab1fa5fa0bb1e28fb0c89",
+      "bytes": 1237
+    },
+    {
+      "path": "GradientText.jsx",
+      "sha256": "a4bf9d9a86e153239aabe4cbb3ed4566b72ad150a3e24c956866deb83e351f3f",
+      "bytes": 6750
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "entryId": "e1bb796507083e78",
+  "sourceUrl": "https://reactbits.dev/text-animations/tech-text",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/TechText-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/TechText/TechText.jsx",
+  "checkedAt": "2026-10-25T07:52:53.593Z",
+  "sha256": "9aa210e563ebedf5bead3500a4a1595eb763a603d8b7695d526248512ac0b055",
+  "files": [
+    {
+      "path": "TechText.css",
+      "sha256": "e71acfbf0f418e78ae3f37499ec36e4e2ca43009b5ba6dc6ac5663fb9d1dc5a8",
+      "bytes": 184
+    },
+    {
+      "path": "TechText.jsx",
+      "sha256": "75232ca0c6b8cc4d6d910b4921d810b7e782400b826a3707805cb2f9a6921c11",
+      "bytes": 23093
+    }
+  ]
+}

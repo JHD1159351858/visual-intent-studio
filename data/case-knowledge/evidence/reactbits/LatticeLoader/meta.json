@@ -1,0 +1,21 @@
+{
+  "entryId": "d3f3b48b177d5848",
+  "sourceUrl": "https://reactbits.dev/micro/lattice-loader",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/LatticeLoader-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/LatticeLoader/LatticeLoader.jsx",
+  "checkedAt": "2026-10-25T07:53:13.418Z",
+  "sha256": "8782cd8cf47641c1768b4dc93213a80e4549053cecb47a4cd71393058d4d0faf",
+  "files": [
+    {
+      "path": "LatticeLoader.css",
+      "sha256": "db8d5628298fff6d02b44bb4d31a455578ceece2dfa84769bc8a26e416af5790",
+      "bytes": 4552
+    },
+    {
+      "path": "LatticeLoader.jsx",
+      "sha256": "db7cca7b929adf93e33bd9636a077e3b755d9142fd8a1beab5bc90855fc0272d",
+      "bytes": 6075
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "entryId": "6aea3542080203f6",
+  "sourceUrl": "https://reactbits.dev/text-animations/scrambled-text",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/ScrambledText-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/ScrambledText/ScrambledText.jsx",
+  "checkedAt": "2026-10-25T07:52:56.379Z",
+  "sha256": "02348c3b02d72bd248908b5b3997694502295b689ae4542f0cb1ecf88fc43bfe",
+  "files": [
+    {
+      "path": "ScrambledText.css",
+      "sha256": "72193d2c501a79788362c549dbbd2918f288de490ff9fd231f4fcc307fea028d",
+      "bytes": 191
+    },
+    {
+      "path": "ScrambledText.jsx",
+      "sha256": "2d60c75fa9db3f95ef792d5f881dd63e6cb438f53157973a4ca189f7239a2756",
+      "bytes": 1894
+    }
+  ]
+}

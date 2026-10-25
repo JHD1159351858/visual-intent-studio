@@ -1,0 +1,123 @@
+整页范例 ID：chat-assistant
+名称：枝语聊天助手
+口语别名：聊天、聊天助手、对话、AI助手、会话
+实现「枝语聊天助手」，用途：聊天助手与连续会话。松柏绿侧栏与宽松会话区，支持连续提问、工作方式切换、停止回复和保留问题重试。独立原生页面，使用本地规则演示。
+功能：本地回复与连续会话、示例提问、三种工作方式、停止与新建对话、空、加载、结果和可重试错误状态、390px手机布局与减少动态效果。分区：chat-navigation：会话导航，品牌、当前会话和新建对话入口；chat-introduction：开始对话，说明任务与本地演示范围；chat-conversation：会话工作区，消息、加载、错误和输入操作；chat-suggestions：示例问题，点击后立即运行可理解的任务；chat-status：演示说明，能力边界和失败状态入口。
+设计参数：颜色 {"background":"#edf3ef","surface":"#ffffff","text":"#203b32","muted":"#64786e","accent":"#246b50","border":"#d6e3db"}；字体 {"display":"Georgia, SimSun, serif","body":"Segoe UI, Microsoft YaHei, sans-serif","utility":"Segoe UI, Microsoft YaHei, sans-serif"}；间距 8/12/20/24/32/52px；圆角 20px。
+实际交互：连续提问：输入内容后点击发送或按Enter → 显示用户消息、加载提示和对应工作方式的本地演示回复；停止与重开：加载时点击停止，或点击新建对话 → 取消待完成回复，或清空会话回到引导状态；错误恢复：演示失败状态后点击重试回复 → 保留原问题并重新完成回复。
+组合与保留：使用侧栏与会话输入作为主要结构，手机把侧栏改为顶部导航；显式点击新建，不依赖悬停。；工作区采用实色浅色表面，松柏绿只用于导航与主要行动；不要叠加霓虹背景或大面积渐变。；可搭配折叠说明和加载组件；全页最多一个加载脉冲，减少动态效果时静止显示。；引用案例只提供结构与交互方向，页面为独立原生适配，不宣称集成来源组件源码。。保持 surface、border、outer-glow 各层范围；只修改明确指定对象，保留其余功能与材质。
+参考来源：aceternity-sidebar https://ui.aceternity.com/components/sidebar（依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；只改变本地选中状态和示例标题，尚未接入路由、账户或真实页面。）；d7d0a0a0e895db95 https://reactbits.dev/components/accordion-gallery（依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；参考Accordion Gallery的逐项展开方向，适配为文字折叠；不复刻原来源的图片画廊动画。；允许同时展开多个条目，不提供单项互斥状态。）；3eb6952087f35f75 https://ui.aceternity.com/components/multi-step-loader（依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；进度由本地计时器模拟，不代表上传、AI分析或后台任务的真实进度。）
+这是本项目整理的原生 HTML/CSS/经典 JavaScript 适配示例，非原组件源码；无外部依赖。结果须标为演示，不声称已调用真实智能体或已完成浏览器验收。
+真实参考条目：aceternity-sidebar https://ui.aceternity.com/components/sidebar；e3aaeefc863b70e7 https://reactbits.dev/micro/prompt-bar；187e7f7bde53d65c https://reactbits.dev/micro/thought-line；37d8f3e7fef3f4a4 https://reactbits.dev/micro/call-chip
+原生组件适配：sidebar、accordion、step-loader
+完整页面代码：design-library/pages/chat-assistant.html
+本地预览：design-library/previews/page-chat-assistant.png
+资料由本地导出，未自动上传或绑定到 Coze。完整代码在项目资产文件中；本地路径云端不能直接访问。原生适配示例非原作者组件源码，预览、浏览器验收与真实服务调用须分别核验。
+
+---CASE---
+
+整页范例 ID：knowledge-qa
+名称：知页知识问答
+口语别名：知识问答、知识库、引用来源、问答、检索
+实现「知页知识问答」，用途：带来源引用的知识检索问答。海军蓝证据阅读台，以资料书架、答案和来源段落构成检索闭环。支持关键词检索、引用弹窗、无结果指引和失败重读。
+功能：检索3份固定本地资料、答案与编号引用、打开来源原文、资料书架折叠浏览、空、加载、结果和恢复错误状态、手机纵向阅读与减少动态效果。分区：knowledge-header：品牌与范围，提示本地知识演示；knowledge-library：资料书架，查看三份资料的主题与范围；knowledge-introduction：提问引导，说明具体问题与证据阅读方式；knowledge-answer：答案与依据，显示检索结果及可打开的原文来源；knowledge-status：检索状态，本地检索边界与失败恢复入口。
+设计参数：颜色 {"background":"#f0f4f8","surface":"#ffffff","text":"#18314f","muted":"#60748b","accent":"#2c69a2","border":"#d6e1eb"}；字体 {"display":"Georgia, SimSun, serif","body":"Segoe UI, Microsoft YaHei, sans-serif","utility":"Segoe UI, Microsoft YaHei, sans-serif"}；间距 8/12/18/24/30/40px；圆角 14px。
+实际交互：带引用检索：输入问题并点击查找答案 → 本地资料命中后显示摘要、编号引用与来源按钮；无命中时给出下一步；核查来源：点击引用编号或资料名称 → 弹窗显示真实的页面内资料原文和段落标题；重读资料：演示资料读取失败后点击重新读取 → 保留问题并重新显示可核查答案。
+组合与保留：将资料书架、答案和来源三者置于同一阅读路径；手机把书架放到答案之后。；可搭配折叠资料和来源弹窗；引用入口必须支持点击与键盘，不能只在悬停时出现。；保持白色内容表面、深蓝文字和低饱和背景；避免使用动态文字或透明表面降低长文本可读性。；全页只保留一个加载旋转，减少动态效果时停用；来源弹窗使用原生关闭与Esc操作。；参考目录提供交互方向，原生检索仅使用页面内演示材料，不代表已连接外部知识库。。保持 surface、border、outer-glow 各层范围；只修改明确指定对象，保留其余功能与材质。
+参考来源：d7d0a0a0e895db95 https://reactbits.dev/components/accordion-gallery（依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；参考Accordion Gallery的逐项展开方向，适配为文字折叠；不复刻原来源的图片画廊动画。；允许同时展开多个条目，不提供单项互斥状态。）；f6b5fb5e2cf9261b https://ui.aceternity.com/components/animated-modal（依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；依赖支持HTML dialog的现代浏览器；只有展示与关闭功能，不模拟数据提交。）；3eb6952087f35f75 https://ui.aceternity.com/components/multi-step-loader（依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；进度由本地计时器模拟，不代表上传、AI分析或后台任务的真实进度。）
+这是本项目整理的原生 HTML/CSS/经典 JavaScript 适配示例，非原组件源码；无外部依赖。结果须标为演示，不声称已调用真实智能体或已完成浏览器验收。
+真实参考条目：187e7f7bde53d65c https://reactbits.dev/micro/thought-line；f6b5fb5e2cf9261b https://ui.aceternity.com/components/animated-modal；e3aaeefc863b70e7 https://reactbits.dev/micro/prompt-bar；37d8f3e7fef3f4a4 https://reactbits.dev/micro/call-chip
+原生组件适配：accordion、modal、step-loader
+完整页面代码：design-library/pages/knowledge-qa.html
+本地预览：design-library/previews/page-knowledge-qa.png
+资料由本地导出，未自动上传或绑定到 Coze。完整代码在项目资产文件中；本地路径云端不能直接访问。原生适配示例非原作者组件源码，预览、浏览器验收与真实服务调用须分别核验。
+
+---CASE---
+
+整页范例 ID：writing-tools
+名称：稿笺写作工具
+口语别名：写作、写作工具、文案、润色、改写
+实现「稿笺写作工具」，用途：原文与改写稿对照的写作工作台。淡黄纸张、细行距和编辑红构成双稿对照桌面。支持本地润色、精简、结构整理，保留原文并可采用修改稿或导出。
+功能：三种本地文字处理方式、读者语气设置、原文与修改稿字数、采用修改稿继续编辑、导出纯文本、空、加载、结果和保留原文重试。分区：writing-introduction：修改主张，说明保留原意与对照编辑；writing-controls：修改设置，切换处理方式与读者语气；writing-original：原文纸张，输入、字数统计和示例材料；writing-result：修改稿纸张，查看、采用和导出修改结果；writing-status：修改说明，本地规则、能力边界和失败入口。
+设计参数：颜色 {"background":"#f8f2d9","surface":"#fffef7","text":"#33372d","muted":"#7c7c68","accent":"#aa4937","border":"#ddd9bb"}；字体 {"display":"Georgia, SimSun, serif","body":"Segoe UI, Microsoft YaHei, sans-serif","utility":"Segoe UI, Microsoft YaHei, sans-serif"}；间距 6/12/18/24/30/38px；圆角 12px。
+实际交互：修改草稿：输入原文、选择修改方式后点击开始修改 → 本地文字规则生成可读的精简稿、润色稿或结构提纲；继续编辑：点击采用修改稿 → 结果回填原文并更新字数，可以继续修改；导出与恢复：点击导出，或失败后重新修改 → 下载真实文字文件，或保留原文重新完成处理。
+组合与保留：采用两张纸的并排对照；手机纵向排列，原文始终位于修改稿之前。；标签切换只改变修改方式，不能清空原文；按钮与标签至少保留触屏可点击的内边距。；编辑红只用于修改标记与主要行动，纸张行线保持低对比；避免玻璃、霓虹边框与粒子文字。；可搭配标签页、折叠规则和加载组件；最多一个下划线加载动效，减少动态效果时显示静态状态。；本地规则适合演示流程，引用案例只提供结构方向，不宣称原组件源码或真实AI写作能力。。保持 surface、border、outer-glow 各层范围；只修改明确指定对象，保留其余功能与材质。
+参考来源：375fac205c71b6c9 https://ui.aceternity.com/components/tabs（依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；标签面板为本地静态内容；不包含来源组件的拖拽排序或三维卡片运动。）；d7d0a0a0e895db95 https://reactbits.dev/components/accordion-gallery（依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；参考Accordion Gallery的逐项展开方向，适配为文字折叠；不复刻原来源的图片画廊动画。；允许同时展开多个条目，不提供单项互斥状态。）；3eb6952087f35f75 https://ui.aceternity.com/components/multi-step-loader（依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；进度由本地计时器模拟，不代表上传、AI分析或后台任务的真实进度。）
+这是本项目整理的原生 HTML/CSS/经典 JavaScript 适配示例，非原组件源码；无外部依赖。结果须标为演示，不声称已调用真实智能体或已完成浏览器验收。
+真实参考条目：375fac205c71b6c9 https://ui.aceternity.com/components/tabs；187e7f7bde53d65c https://reactbits.dev/micro/thought-line；e3aaeefc863b70e7 https://reactbits.dev/micro/prompt-bar；a6833a77c4f5b849 https://reactbits.dev/micro/refine-frame
+原生组件适配：tabs、accordion、step-loader
+完整页面代码：design-library/pages/writing-tools.html
+本地预览：design-library/previews/page-writing-tools.png
+资料由本地导出，未自动上传或绑定到 Coze。完整代码在项目资产文件中；本地路径云端不能直接访问。原生适配示例非原作者组件源码，预览、浏览器验收与真实服务调用须分别核验。
+
+---CASE---
+
+整页范例 ID：data-analysis
+名称：数镜数据分析
+口语别名：数据分析、仪表盘、数据看板、图表、筛选
+实现「数镜数据分析」，用途：筛选课程演示数据并联动图表的分析仪表盘。浅灰蓝分析台，课程筛选联动人数、完成率、条形图和原始记录。条形可点击查看口径，当前范围可导出CSV。
+功能：课程分类与最低完成率筛选、三项联动指标、可点击条形图、原始记录详情、导出当前范围CSV、初始空、加载、无结果、结果和重读错误。分区：analysis-navigation：分析导航，工作台与演示数据范围；analysis-filters：筛选条件，分类、阈值和重置操作；analysis-metrics：核心指标，当前范围的课程、人数和完成率；analysis-chart：完成率图表，可点击查看课程原始记录；analysis-insights：读数笔记，解释当前范围和统计口径；analysis-records：原始记录，核查表格和导出当前范围。
+设计参数：颜色 {"background":"#eaf0f5","surface":"#ffffff","text":"#233344","muted":"#65788b","accent":"#176ea1","border":"#d3dfe8"}；字体 {"display":"Segoe UI, Microsoft YaHei, sans-serif","body":"Segoe UI, Microsoft YaHei, sans-serif","utility":"Segoe UI, Microsoft YaHei, sans-serif"}；间距 8/12/18/22/24/40px；圆角 14px。
+实际交互：联动筛选：选择分类、填写阈值并点击应用筛选 → 指标、图表、笔记和表格同步根据6条本地记录重新计算；核查课程：点击图表条形或课程名称 → 弹窗显示同一条记录的分类、人数和统计口径；导出与重读：点击导出当前CSV，或失败后重新读取 → 下载筛选后的真实CSV，或保留条件恢复结果。
+组合与保留：筛选条件置于指标之前；必须共享一份筛选结果，避免图表和表格使用不同统计范围。；采用稳定的蓝色条形与数字字面值；不把计数动画、3D图表或背景粒子叠加到分析台。；可搭配窄侧栏、详情弹窗和加载组件；图表点击与表格按钮提供同等触屏入口。；只有条形宽度过渡与一个加载扫描，减少动态效果时停用；小屏表格在内部滚动，页面不横向溢出。；参考图表案例只启发查看记录的交互，未复制来源动态图表源码；样本为本地课程演示数据。。保持 surface、border、outer-glow 各层范围；只修改明确指定对象，保留其余功能与材质。
+参考来源：aceternity-sidebar https://ui.aceternity.com/components/sidebar（依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；只改变本地选中状态和示例标题，尚未接入路由、账户或真实页面。）；f6b5fb5e2cf9261b https://ui.aceternity.com/components/animated-modal（依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；依赖支持HTML dialog的现代浏览器；只有展示与关闭功能，不模拟数据提交。）；3eb6952087f35f75 https://ui.aceternity.com/components/multi-step-loader（依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；进度由本地计时器模拟，不代表上传、AI分析或后台任务的真实进度。）
+这是本项目整理的原生 HTML/CSS/经典 JavaScript 适配示例，非原组件源码；无外部依赖。结果须标为演示，不声称已调用真实智能体或已完成浏览器验收。
+真实参考条目：aceternity-sidebar https://ui.aceternity.com/components/sidebar；f6b5fb5e2cf9261b https://ui.aceternity.com/components/animated-modal；f0d39e6511b80f02 https://60fps.design/shots/revolut-graph-glow-drag-interaction；d7999f6a0d76dfe0 https://60fps.design/shots/google-photos-logo-spin-to-backup-loader-animation
+原生组件适配：sidebar、modal、step-loader
+完整页面代码：design-library/pages/data-analysis.html
+本地预览：design-library/previews/page-data-analysis.png
+资料由本地导出，未自动上传或绑定到 Coze。完整代码在项目资产文件中；本地路径云端不能直接访问。原生适配示例非原作者组件源码，预览、浏览器验收与真实服务调用须分别核验。
+
+---CASE---
+
+整页范例 ID：report-builder
+名称：报告工坊
+口语别名：报告、报告生成、分步生成、工作流、汇报
+实现「报告工坊」，用途：通过分步输入与内容选择生成可导出的报告。蓝灰分步工作台与纸质草稿预览，先输入材料，再选择章节，最后生成与导出。生成保留事实边界并支持返回修改。
+功能：三步输入与校验、章节选择、完整报告预览、返回修改与重新生成、Markdown导出、空、加载、结果与生成失败重试。分区：report-introduction：生成引导，说明从已有材料组织草稿；report-builder：报告步骤，三步输入、章节选择和生成操作；step-one：明确内容，报告标题、对象、材料与校验；step-two：选择章节，按需要选取证据、行动与待确认事项；report-preview：报告预览，显示可核查的草稿与事实边界；report-status：生成状态，演示说明与恢复错误入口。
+设计参数：颜色 {"background":"#e8edf2","surface":"#ffffff","text":"#243e56","muted":"#708397","accent":"#3478ac","border":"#cad8e4"}；字体 {"display":"Segoe UI, Microsoft YaHei, sans-serif","body":"Segoe UI, Microsoft YaHei, sans-serif","document":"SimSun, Georgia, serif"}；间距 8/12/18/24/26/38px；圆角 16px。
+实际交互：分步组织：填写内容并依次点击下一步 → 输入校验后进入章节选择与生成，步骤有当前/已完成状态；生成报告：选择章节后点击生成报告草稿 → 本地模板根据输入材料生成完整草稿并提供Markdown导出；修改与恢复：返回上一步，或失败后重新生成 → 保留输入和章节设置，可修改后重新生成。
+组合与保留：步骤编号必须表示真实先后流程；先校验标题和材料，再进入章节选择，保留返回操作。；生成台与草稿纸采用不同字体角色，草稿保持实色背景；避免边框追光和动态背景干扰审阅。；可搭配步骤时间线、折叠说明与生成进度；最多一个加载脉冲组，减少动态效果时全部静止。；手机先操作步骤再阅读预览，所有章节采用显式勾选；流程不依赖拖动或悬停。；本地模板只组织已有材料，未实现AI事实核验；引用原案例仅提供结构方向，不宣称源码集成。。保持 surface、border、outer-glow 各层范围；只修改明确指定对象，保留其余功能与材质。
+参考来源：d7d0a0a0e895db95 https://reactbits.dev/components/accordion-gallery（依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；参考Accordion Gallery的逐项展开方向，适配为文字折叠；不复刻原来源的图片画廊动画。；允许同时展开多个条目，不提供单项互斥状态。）；3eb6952087f35f75 https://ui.aceternity.com/components/multi-step-loader（依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；进度由本地计时器模拟，不代表上传、AI分析或后台任务的真实进度。）；aceternity-timeline https://ui.aceternity.com/components/timeline（依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；只表达静态先后步骤，不包含来源组件的滚动进度追踪、粘性年份或远程数据。）
+这是本项目整理的原生 HTML/CSS/经典 JavaScript 适配示例，非原组件源码；无外部依赖。结果须标为演示，不声称已调用真实智能体或已完成浏览器验收。
+真实参考条目：aceternity-timeline https://ui.aceternity.com/components/timeline；187e7f7bde53d65c https://reactbits.dev/micro/thought-line；a6833a77c4f5b849 https://reactbits.dev/micro/refine-frame；d7999f6a0d76dfe0 https://60fps.design/shots/google-photos-logo-spin-to-backup-loader-animation
+原生组件适配：timeline、accordion、step-loader
+完整页面代码：design-library/pages/report-builder.html
+本地预览：design-library/previews/page-report-builder.png
+资料由本地导出，未自动上传或绑定到 Coze。完整代码在项目资产文件中；本地路径云端不能直接访问。原生适配示例非原作者组件源码，预览、浏览器验收与真实服务调用须分别核验。
+
+---CASE---
+
+整页范例 ID：agent-portal
+名称：启航智能体门户
+口语别名：智能体门户、门户、工具导航、智能体广场、搜索分类
+实现「启航智能体门户」，用途：按分类和关键词搜索智能体并体验本地任务。湖蓝搜索入口与不对称工具目录，按关键词和分类寻找助手。每个入口可打开任务弹窗并运行对应的本地流程。
+功能：六个用途明确的工具入口、关键词与分类组合搜索、工具任务弹窗、可执行本地任务、空、加载、结果和目录读取失败恢复、触屏搜索与手机卡片列表。分区：portal-header：门户品牌，品牌与任务定位；portal-introduction：搜索入口，通过任务关键词查找工具；portal-directory：工具目录，六个智能体用途与体验入口；portal-categories：分类筛选，按学习、创作、办公和分析筛选；portal-status：门户状态，本地演示边界与失败重读。
+设计参数：颜色 {"background":"#eef6f6","surface":"#ffffff","text":"#183f4b","muted":"#648089","accent":"#207f8f","border":"#c8e1e3"}；字体 {"display":"Georgia, SimSun, serif","body":"Segoe UI, Microsoft YaHei, sans-serif","utility":"Segoe UI, Microsoft YaHei, sans-serif"}；间距 8/12/18/24/28/42px；圆角 18px。
+实际交互：搜索与分类：输入任务关键词并搜索，或点击分类 → 目录按两个条件过滤，显示结果数量与无结果恢复入口；体验任务：打开工具并输入任务，再运行本地演示 → 对应工具生成文字精简、学习计划、提纲或本地数据读数；恢复目录：演示目录读取失败后点击重新读取 → 保留关键词与分类并恢复工具列表。
+组合与保留：搜索是主要入口，分类是第二层筛选；工具卡片明确用途与运行入口，不展示无依据的用户数或评分。；可搭配便当网格、任务弹窗与加载组件；不把展开卡片和弹窗同时用于同一工具详情。；罗盘线图是唯一主视觉，目录保持实色表面；不叠加流动渐变、粒子背景和霓虹边框。；最多一个加载脉冲，减少动态效果时静止；所有工具按钮始终可见，手机改为单列卡片。；每个工具使用本地确定性逻辑，引用案例只提供布局方向，不宣称实际智能体服务或源码集成。。保持 surface、border、outer-glow 各层范围；只修改明确指定对象，保留其余功能与材质。
+参考来源：aceternity-bento-grid https://ui.aceternity.com/components/bento-grid（依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；仅提供网格与悬停反馈，不包含来源组件的图像、图标库或React属性。；卡片使用tabindex展示键盘焦点；接入业务时将真正的入口改为链接或按钮。）；f6b5fb5e2cf9261b https://ui.aceternity.com/components/animated-modal（依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；依赖支持HTML dialog的现代浏览器；只有展示与关闭功能，不模拟数据提交。）；3eb6952087f35f75 https://ui.aceternity.com/components/multi-step-loader（依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；进度由本地计时器模拟，不代表上传、AI分析或后台任务的真实进度。）
+这是本项目整理的原生 HTML/CSS/经典 JavaScript 适配示例，非原组件源码；无外部依赖。结果须标为演示，不声称已调用真实智能体或已完成浏览器验收。
+真实参考条目：aceternity-bento-grid https://ui.aceternity.com/components/bento-grid；f6b5fb5e2cf9261b https://ui.aceternity.com/components/animated-modal；acbbbd63d54c2f9b https://60fps.design/shots/airbnb-tactile-tab-button-interaction；e3aaeefc863b70e7 https://reactbits.dev/micro/prompt-bar；5e5b3722d2eb3996 https://60fps.design/shots/notion-ai-sheet-intro-action-trail-transition
+原生组件适配：bento-grid、modal、step-loader
+完整页面代码：design-library/pages/agent-portal.html
+本地预览：design-library/previews/page-agent-portal.png
+资料由本地导出，未自动上传或绑定到 Coze。完整代码在项目资产文件中；本地路径云端不能直接访问。原生适配示例非原作者组件源码，预览、浏览器验收与真实服务调用须分别核验。
+
+---CASE---
+
+整页范例 ID：knowledge-motion
+名称：知页强动效知识空间
+口语别名：强动效知识问答、课程资料强动效、动态课程资料台
+实现「知页强动效知识空间」，用途：带来源引用的强动效课程知识检索问答。深海极光与响应点阵中，三本立体课程书持续浮动；轮换标题、磁吸提问和卡片倾斜构成可操作的课程资料探索台。
+功能：持续极光与鼠标响应点阵、立体课程书卡与轮换标题、磁吸提问与课程卡片倾斜、3份本地资料问答与原文引用、提问历史与刷新恢复、动效暂停与手机布局。分区：knowledge-header：品牌与动效控制，历史入口和暂停动效；knowledge-hero：提问入口，动态标题与稳定的课程提问表单；motion-book-stage：课程空间舞台，持续浮动的三本课程书与轨道展示；knowledge-courses：课程资料入口，课程卡片、章节展开与问题示例；knowledge-answer：回答与出处，本地资料答案和可核对的原文。
+设计参数：颜色 {"background":"#061b2d","surface":"#0c2c43","text":"#eaf7ff","muted":"#8fabbc","accent":"#67e7f1","secondary":"#8defc5"}；字体 {"display":"Arial, Microsoft YaHei, sans-serif","body":"Segoe UI, Microsoft YaHei, sans-serif","utility":"Segoe UI, sans-serif"}；间距 8/12/16/24/32/48/72px；圆角 22px。
+实际交互：持续主视觉：打开页面 → 极光、点阵、三本立体课程书和轮换标题持续运动，提问与正文保持稳定；课程资料问答：选择范围并输入问题，或点击示例及章节 → 检索三份页面内演示资料，给出答案、来源引用与未命中引导；核对原文：点击回答中的来源入口 → 打开可关闭的来源原文对话框；历史与新问题：打开提问记录并选择历史，或开始新问题 → 恢复问题和检索范围，或清空当前输入；真实已查历史在浏览器中保留；暂停与恢复：点击暂停动效或系统减少动态变化 → 停止CSS动画与Canvas重绘，保留静态视觉与全部功能。
+组合与保留：用于用户明确要求动效特别强的知识问答场景，不作为所有学习页面的默认模板。；极光与点阵属于page-background，课程书空间运动属于展示content，移动亮边仅属于提问卡border；输入和长篇答案保持稳定。；首次打开3秒内必须能观察到背景和课程书持续运动；微弱悬停与一次淡入不能替代主视觉。；标题轮换只应用于宣传标题，课程内容与回答正文不轮换；课程倾斜和磁吸限制在鼠标精细指针。；暂停、系统减少动态和页面不可见时停止持续动画与Canvas帧；手机保留空间主视觉并降低绘制负担。；全部为依据真实来源行为写成的本地原生适配，空间书册和轨道是自主组合，不宣称安装原组件源码；数据仅为3份本地课程演示材料。。保持 surface、border、outer-glow 各层范围；只修改明确指定对象，保留其余功能与材质。
+参考来源：4cd98644135d8a31 https://ui.aceternity.com/components/moving-border（依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；适配为渐变沿边缘平移，不复刻来源组件的SVG路径匀速绕行。；持续动画适合少量重点卡片，不建议每张列表卡都启用。）
+这是本项目整理的原生 HTML/CSS/经典 JavaScript 适配示例，非原组件源码；无外部依赖。结果须标为演示，不声称已调用真实智能体或已完成浏览器验收。
+真实参考条目：1a605e0e28035a21 https://ui.aceternity.com/components/aurora-background；reactbits-dot-grid https://reactbits.dev/backgrounds/dot-grid；reactbits-tilted-card https://reactbits.dev/components/tilted-card；4cd98644135d8a31 https://ui.aceternity.com/components/moving-border；477fe70784cb9178 https://reactbits.dev/animations/magnet；3d3570a2bfd1cf99 https://reactbits.dev/text-animations/rotating-text
+原生组件适配：moving-border
+完整页面代码：design-library/pages/knowledge-motion.html
+本地预览：design-library/previews/page-knowledge-motion.png
+资料由本地导出，未自动上传或绑定到 Coze。完整代码在项目资产文件中；本地路径云端不能直接访问。原生适配示例非原作者组件源码，预览、浏览器验收与真实服务调用须分别核验。

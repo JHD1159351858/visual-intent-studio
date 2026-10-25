@@ -1,0 +1,21 @@
+{
+  "entryId": "5a3616248414fadb",
+  "sourceUrl": "https://reactbits.dev/micro/jelly-radio",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/JellyRadio-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/JellyRadio/JellyRadio.jsx",
+  "checkedAt": "2026-10-25T07:53:13.341Z",
+  "sha256": "2c677235bd9611d52b49859e59ff330ee4fbcf84f1441cd207e1db52580f087c",
+  "files": [
+    {
+      "path": "JellyRadio.css",
+      "sha256": "3412e68536d0107fbae6f858a0582afd733e9cea3066d38b0c86619b19ae08e0",
+      "bytes": 2201
+    },
+    {
+      "path": "JellyRadio.jsx",
+      "sha256": "cbbca5b7a156d3095361c274f881d4557450be6dfddc38a22dbd384214d416ca",
+      "bytes": 6843
+    }
+  ]
+}

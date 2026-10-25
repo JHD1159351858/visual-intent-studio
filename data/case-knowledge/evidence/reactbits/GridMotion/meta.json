@@ -1,0 +1,21 @@
+{
+  "entryId": "f54537d48d15cbc5",
+  "sourceUrl": "https://reactbits.dev/backgrounds/grid-motion",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/GridMotion-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/GridMotion/GridMotion.jsx",
+  "checkedAt": "2026-10-25T07:53:11.854Z",
+  "sha256": "bc3369a2ad04823e30e8d413e9ddeb63f76f2eefb2cc50244c7b2cf331711de7",
+  "files": [
+    {
+      "path": "GridMotion.css",
+      "sha256": "afd25e368ac6fd0962be193928275cef9016c4cd24a083bf37b025d9514a1b3b",
+      "bytes": 1194
+    },
+    {
+      "path": "GridMotion.jsx",
+      "sha256": "45b4bac0b31bdeee273f3e51e6e5d214c901fd38b22eac549a7ae4a0355e2ed7",
+      "bytes": 12478
+    }
+  ]
+}

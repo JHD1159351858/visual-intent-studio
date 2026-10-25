@@ -1,0 +1,21 @@
+{
+  "entryId": "e5e7c867913b19cb",
+  "sourceUrl": "https://reactbits.dev/components/card-swap",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/CardSwap-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/CardSwap/CardSwap.jsx",
+  "checkedAt": "2026-10-25T07:53:05.262Z",
+  "sha256": "4a4ecdff39ca09aecddbc40d063ef6c35a5128e206648ac9818cdf53815d3ce6",
+  "files": [
+    {
+      "path": "CardSwap.css",
+      "sha256": "2331e82e8e190b693c2560cbefdc53896036a85dbcae6ba6c3aab3f5f989101e",
+      "bytes": 2959
+    },
+    {
+      "path": "CardSwap.jsx",
+      "sha256": "5982ba00efb0dbe54d778e7b31cb7ef9f781eb73fef3eda66bd54fa98839cb6b",
+      "bytes": 26568
+    }
+  ]
+}

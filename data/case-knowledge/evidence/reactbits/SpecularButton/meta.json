@@ -1,0 +1,21 @@
+{
+  "entryId": "f5516684852f347f",
+  "sourceUrl": "https://reactbits.dev/components/specular-button",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/SpecularButton-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/SpecularButton/SpecularButton.jsx",
+  "checkedAt": "2026-10-25T07:53:02.625Z",
+  "sha256": "293bc04dc3cf2ceef738fd2175e65282d5fbb08d5ebe0375ede470a1b9d01acd",
+  "files": [
+    {
+      "path": "SpecularButton.css",
+      "sha256": "af7cad9998bd6102a21fd05da11890ca05c061f9d5e6c96f540fb744684442a9",
+      "bytes": 1661
+    },
+    {
+      "path": "SpecularButton.jsx",
+      "sha256": "943e8535a527563577d07da8f21b680bc70a1866a75d14bbbd396fb92d95cfa6",
+      "bytes": 15292
+    }
+  ]
+}

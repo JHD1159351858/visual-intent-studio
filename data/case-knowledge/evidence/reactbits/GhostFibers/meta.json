@@ -1,0 +1,21 @@
+{
+  "entryId": "f4f35306c9faad95",
+  "sourceUrl": "https://reactbits.dev/backgrounds/ghost-fibers",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/GhostFibers-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/GhostFibers/GhostFibers.jsx",
+  "checkedAt": "2026-10-25T07:53:06.500Z",
+  "sha256": "ef7748a3eaad19e3fa2df0aa92f5fe2486809a15efd73b7b157eded808720dd3",
+  "files": [
+    {
+      "path": "GhostFibers.css",
+      "sha256": "7df10fe8eeaa2554b8b4f99ab776ff0ba2e6825fe048631939d0cff52015931d",
+      "bytes": 210
+    },
+    {
+      "path": "GhostFibers.jsx",
+      "sha256": "8817f92ca1ee20255eb66a84ded79cb3fcf3982ac6a8eeca75a6c78ac3fe33e1",
+      "bytes": 15716
+    }
+  ]
+}

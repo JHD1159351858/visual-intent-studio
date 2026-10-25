@@ -1,0 +1,16 @@
+{
+  "entryId": "d6e751bd72c36181",
+  "sourceUrl": "https://reactbits.dev/components/model-viewer",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/ModelViewer-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/ModelViewer/ModelViewer.jsx",
+  "checkedAt": "2026-10-25T07:53:04.576Z",
+  "sha256": "45905846fe71e6193f445c8982e9bf8509790b7d623b0e0df518e41ac0878681",
+  "files": [
+    {
+      "path": "ModelViewer/ModelViewer.jsx",
+      "sha256": "4d530279cd02a78ecf390969fccfd937795b2c6c57fc313a13117ec05d343435",
+      "bytes": 15840
+    }
+  ]
+}

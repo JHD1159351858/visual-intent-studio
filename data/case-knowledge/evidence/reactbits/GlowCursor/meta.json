@@ -1,0 +1,21 @@
+{
+  "entryId": "384faf733c55151d",
+  "sourceUrl": "https://reactbits.dev/animations/glow-cursor",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/GlowCursor-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/GlowCursor/GlowCursor.jsx",
+  "checkedAt": "2026-10-25T07:52:58.076Z",
+  "sha256": "f8f19bea58491305a4d88782d7085bea05df41f0e2ddd7da132fbaad5e827c8a",
+  "files": [
+    {
+      "path": "GlowCursor.css",
+      "sha256": "02bec034b47fd7f43d20f74845fb24c332a4353a48d44e9150ad0759327e5654",
+      "bytes": 338
+    },
+    {
+      "path": "GlowCursor.jsx",
+      "sha256": "86b871a594e5d1d88ade1c917b173a4967dd1082e50fc8e9221debd4b193bfe7",
+      "bytes": 32121
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "entryId": "17fa4426bd6915c5",
+  "sourceUrl": "https://reactbits.dev/backgrounds/iridescence",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Iridescence-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Iridescence/Iridescence.jsx",
+  "checkedAt": "2026-10-25T07:53:11.433Z",
+  "sha256": "09b1c49d2bf4c70bd5c73950ac2230af79d804708c8f0ece53e113766fb69cf6",
+  "files": [
+    {
+      "path": "Iridescence.css",
+      "sha256": "2523bf36cf4cf85379cd2a6972213ef293141ef4ef1ffe1a2808584bed63661b",
+      "bytes": 208
+    },
+    {
+      "path": "Iridescence.jsx",
+      "sha256": "8c770b8d16b64a5dfb1b5bf01911ec786bc447a6160e2926e07541ba4906795b",
+      "bytes": 17448
+    }
+  ]
+}

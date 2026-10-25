@@ -1,0 +1,21 @@
+{
+  "entryId": "6d800efa8749c949",
+  "sourceUrl": "https://reactbits.dev/micro/dodge-field",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/DodgeField-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/DodgeField/DodgeField.jsx",
+  "checkedAt": "2026-10-25T07:53:12.765Z",
+  "sha256": "c8e5a1a5fcc7bd75423e9329532ffc02204c4f7dc7aaf6573f1cf51953d2f2a8",
+  "files": [
+    {
+      "path": "DodgeField.css",
+      "sha256": "f9f8cec9d8db906694593c0891edd21e69b913abb4b67a2e49da2e513e4670be",
+      "bytes": 2257
+    },
+    {
+      "path": "DodgeField.jsx",
+      "sha256": "54c0bfc567caaa10a4822c9b082526300dd248f85781e393c10c1d20bd95c041",
+      "bytes": 7700
+    }
+  ]
+}

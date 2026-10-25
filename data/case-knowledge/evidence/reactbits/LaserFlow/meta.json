@@ -1,0 +1,21 @@
+{
+  "entryId": "2c9fbcb73a94e2e1",
+  "sourceUrl": "https://reactbits.dev/animations/laser-flow",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/LaserFlow-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/LaserFlow/LaserFlow.jsx",
+  "checkedAt": "2026-10-25T07:52:59.708Z",
+  "sha256": "f628c8472ba95633980db1b55c54a6106525477040e7b8e81473763d7414c2bf",
+  "files": [
+    {
+      "path": "LaserFlow.css",
+      "sha256": "64de9862c5c670638c42c08d0284d1314cc25d2f342ff54769fac8013fa7a808",
+      "bytes": 210
+    },
+    {
+      "path": "LaserFlow.jsx",
+      "sha256": "667c00ca56cc7e25053e6a21acbe5bb054e8e6cf8549263f83abb0063db24ed3",
+      "bytes": 33762
+    }
+  ]
+}

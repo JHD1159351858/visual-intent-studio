@@ -1,0 +1,21 @@
+{
+  "entryId": "47e6f214558b4616",
+  "sourceUrl": "https://reactbits.dev/micro/glide-select",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/GlideSelect-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/GlideSelect/GlideSelect.jsx",
+  "checkedAt": "2026-10-25T07:53:13.421Z",
+  "sha256": "bd75bdee568d85c11e1e1825fe0584c8339c1e5994c16a93f288f7b43c30d739",
+  "files": [
+    {
+      "path": "GlideSelect.css",
+      "sha256": "2004ce25349676b1cb056a2169a6b1fc833b4cde3effd1302a0a4b1edb3aaebc",
+      "bytes": 5015
+    },
+    {
+      "path": "GlideSelect.jsx",
+      "sha256": "49124e97385df3d046c7338753d6239e79da899a01f3a4eeeb84e06e1cee1d98",
+      "bytes": 10695
+    }
+  ]
+}

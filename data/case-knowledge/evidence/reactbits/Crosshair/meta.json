@@ -1,0 +1,16 @@
+{
+  "entryId": "5a03391fe96ea170",
+  "sourceUrl": "https://reactbits.dev/animations/crosshair",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Crosshair-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/Crosshair/Crosshair.jsx",
+  "checkedAt": "2026-10-25T07:53:01.128Z",
+  "sha256": "bd817f8916a20f595bf77d746e1329dd0a636df5370755376c242b01c6b990d8",
+  "files": [
+    {
+      "path": "Crosshair/Crosshair.jsx",
+      "sha256": "0cbb2d51a5bc2bcc53c421b9f7e13bfab275218d7ec3d691fb43a626c84e7415",
+      "bytes": 14535
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "entryId": "de3ea3e464ac7f24",
+  "sourceUrl": "https://reactbits.dev/animations/ripple-distortion",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/RippleDistortion-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/RippleDistortion/RippleDistortion.jsx",
+  "checkedAt": "2026-10-25T07:52:57.684Z",
+  "sha256": "4bcb89c411a9a83748e8a2f91e61ce7419fdee434adb8a87f0da8636b127a98c",
+  "files": [
+    {
+      "path": "RippleDistortion.css",
+      "sha256": "3a7ecc6d99d604a7ee29f8a6ff3f84aece179a5cdc85d981b81179532170c852",
+      "bytes": 196
+    },
+    {
+      "path": "RippleDistortion.jsx",
+      "sha256": "d4dfc4f541df1ac0911edfbe9659c2930102f1b90113b125aaea90344b58bf08",
+      "bytes": 13068
+    }
+  ]
+}

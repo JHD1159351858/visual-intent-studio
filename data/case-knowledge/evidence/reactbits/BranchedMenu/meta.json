@@ -1,0 +1,21 @@
+{
+  "entryId": "8c066244db53ce5a",
+  "sourceUrl": "https://reactbits.dev/micro/branched-menu",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/BranchedMenu-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/BranchedMenu/BranchedMenu.jsx",
+  "checkedAt": "2026-10-25T07:53:12.374Z",
+  "sha256": "996589b42ccc8d490a415637affaafb3060683730a299403a627860cf5b37ca2",
+  "files": [
+    {
+      "path": "BranchedMenu.css",
+      "sha256": "9f483b0c5395623b8d7faf47978d34bf826b8cf1caf8ba4406d42a53ae8e6f83",
+      "bytes": 3676
+    },
+    {
+      "path": "BranchedMenu.jsx",
+      "sha256": "ef27b050487d41091324874f16ab253567215756fc9b8260e8d934de381385e3",
+      "bytes": 7496
+    }
+  ]
+}

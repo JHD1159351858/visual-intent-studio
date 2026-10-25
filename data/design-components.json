@@ -1,0 +1,634 @@
+[
+  {
+    "id": "bento-grid",
+    "title": "错落功能网格",
+    "entryId": "aceternity-bento-grid",
+    "sourceUrl": "https://ui.aceternity.com/components/bento-grid",
+    "description": "用大小有别的卡片组织功能，窄屏自然转为单列。",
+    "layer": "layout",
+    "parameters": {
+      "gap": "CSS gap，建议12–24px",
+      "columns": "桌面grid-template-columns，建议2–4列；手机固定1列"
+    },
+    "compatibleWith": [
+      "glass-surface",
+      "gradient-border",
+      "spotlight-card",
+      "count-up"
+    ],
+    "conflicts": [],
+    "mobileBehavior": "容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。",
+    "reducedMotion": "系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。",
+    "limitations": [
+      "依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。",
+      "仅提供网格与悬停反馈，不包含来源组件的图像、图标库或React属性。",
+      "卡片使用tabindex展示键盘焦点；接入业务时将真正的入口改为链接或按钮。"
+    ],
+    "code": {
+      "html": "<section class=\"vi-bento-grid\" aria-label=\"学习工作台功能\">\n  <article class=\"vi-bento-grid-wide\" tabindex=\"0\"><span class=\"vi-bento-grid-tag\">课程空间</span><h2>把学习安排在一起</h2><p>查看课程、整理资料，再回到下一项练习。</p><div class=\"vi-bento-grid-diagram\" aria-hidden=\"true\"><span>课程</span><span>资料</span><span>练习</span></div></article>\n  <article tabindex=\"0\"><span class=\"vi-bento-grid-symbol\" aria-hidden=\"true\">◈</span><h3>资料归档</h3><p>按课程整理学习资料。</p></article>\n  <article tabindex=\"0\"><span class=\"vi-bento-grid-symbol\" aria-hidden=\"true\">↗</span><h3>学习进度</h3><p>让每一步都清楚可见。</p></article>\n  <article class=\"vi-bento-grid-wide\" tabindex=\"0\"><span class=\"vi-bento-grid-tag\">今日重点</span><h3>先完成一件小事</h3><p>这里展示课程入口；未连接真实课程数据。</p></article>\n</section>",
+      "css": ".vi-bento-grid,.vi-bento-grid *{box-sizing:border-box}.vi-bento-grid{font-family:\"Segoe UI\",\"Microsoft YaHei\",sans-serif;color:#eaf5fc;line-height:1.6;min-width:0;width:min(100%,720px)}.vi-bento-grid h2,.vi-bento-grid h3,.vi-bento-grid p{margin:0}.vi-bento-grid h2{font-size:clamp(22px,4vw,30px);line-height:1.3;letter-spacing:-.03em}.vi-bento-grid h3{font-size:18px;line-height:1.4}.vi-bento-grid p{color:#b8d2e3;font-size:15px}.vi-bento-grid button,.vi-bento-grid summary,.vi-bento-grid input{font:inherit}.vi-bento-grid button{cursor:pointer;border:1px solid #426981;color:#eaf5fc;background:#193e55;border-radius:10px;padding:10px 16px;min-height:44px}.vi-bento-grid button:hover{background:#245771}.vi-bento-grid button:focus-visible,.vi-bento-grid summary:focus-visible,.vi-bento-grid input:focus-visible,.vi-bento-grid a:focus-visible{outline:3px solid #65dec6;outline-offset:4px}.vi-bento-grid [hidden]{display:none!important}.vi-bento-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.vi-bento-grid article{padding:24px;background:#15374c;border:1px solid #355b70;border-radius:18px;transition:transform .2s ease,background .2s ease;min-width:0}.vi-bento-grid article:hover,.vi-bento-grid article:focus-visible{transform:translateY(-4px);background:#1d465d}.vi-bento-grid article:focus-visible{outline:3px solid #65dec6;outline-offset:3px}.vi-bento-grid-wide{grid-column:span 2}.vi-bento-grid-tag{display:block;font-size:12px;letter-spacing:.08em;color:#65dec6;margin-bottom:18px}.vi-bento-grid p{margin-top:12px}.vi-bento-grid-symbol{display:block;color:#65dec6;font-size:40px;margin-bottom:25px}.vi-bento-grid-diagram{display:flex;gap:10px;margin-top:26px;flex-wrap:wrap}.vi-bento-grid-diagram span{padding:8px 14px;border-radius:8px;background:#204f65;font-size:13px}@media(max-width:600px){.vi-bento-grid{grid-template-columns:1fr}.vi-bento-grid-wide{grid-column:auto}.vi-bento-grid article{padding:22px}.vi-bento-grid-symbol{margin-bottom:12px}}@media(prefers-reduced-motion:reduce){.vi-bento-grid,.vi-bento-grid *,.vi-bento-grid::before,.vi-bento-grid::after,.vi-bento-grid *::before,.vi-bento-grid *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}",
+      "js": ""
+    },
+    "htmlPath": "design-library/components/bento-grid.html",
+    "posterPath": "design-library/previews/component-bento-grid.png"
+  },
+  {
+    "id": "sidebar",
+    "title": "可折叠侧栏",
+    "entryId": "aceternity-sidebar",
+    "sourceUrl": "https://ui.aceternity.com/components/sidebar",
+    "description": "展开或收起导航，并保留当前页面的清晰标识。",
+    "layer": "layout",
+    "parameters": {
+      "width": "桌面展开侧栏220px，建议180–260px"
+    },
+    "compatibleWith": [
+      "tabs",
+      "bento-grid",
+      "timeline"
+    ],
+    "conflicts": [],
+    "mobileBehavior": "600px以下改为顶部三项导航，切换导航按钮可收起菜单；不占用侧边宽度。",
+    "reducedMotion": "系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。",
+    "limitations": [
+      "依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。",
+      "只改变本地选中状态和示例标题，尚未接入路由、账户或真实页面。"
+    ],
+    "code": {
+      "html": "<section class=\"vi-sidebar\" data-collapsed=\"false\">\n  <aside class=\"vi-sidebar-nav\" aria-label=\"工作台导航\"><div class=\"vi-sidebar-brand\"><span>学习空间</span><button type=\"button\" aria-label=\"切换导航\" aria-expanded=\"true\">☰</button></div><nav><button type=\"button\" aria-current=\"page\" data-page=\"课程\"><span aria-hidden=\"true\">▦</span><span class=\"vi-sidebar-label\">课程</span></button><button type=\"button\" data-page=\"资料库\"><span aria-hidden=\"true\">▤</span><span class=\"vi-sidebar-label\">资料库</span></button><button type=\"button\" data-page=\"学习记录\"><span aria-hidden=\"true\">◷</span><span class=\"vi-sidebar-label\">学习记录</span></button></nav></aside>\n  <div class=\"vi-sidebar-content\"><span class=\"vi-sidebar-note\">导航演示</span><h2>课程</h2><p aria-live=\"polite\">已选择课程。内容切换仅为本地演示。</p><div class=\"vi-sidebar-placeholder\" aria-hidden=\"true\"><span></span><span></span><span></span></div></div>\n</section>",
+      "css": ".vi-sidebar,.vi-sidebar *{box-sizing:border-box}.vi-sidebar{font-family:\"Segoe UI\",\"Microsoft YaHei\",sans-serif;color:#eaf5fc;line-height:1.6;min-width:0;width:min(100%,720px)}.vi-sidebar h2,.vi-sidebar h3,.vi-sidebar p{margin:0}.vi-sidebar h2{font-size:clamp(22px,4vw,30px);line-height:1.3;letter-spacing:-.03em}.vi-sidebar h3{font-size:18px;line-height:1.4}.vi-sidebar p{color:#b8d2e3;font-size:15px}.vi-sidebar button,.vi-sidebar summary,.vi-sidebar input{font:inherit}.vi-sidebar button{cursor:pointer;border:1px solid #426981;color:#eaf5fc;background:#193e55;border-radius:10px;padding:10px 16px;min-height:44px}.vi-sidebar button:hover{background:#245771}.vi-sidebar button:focus-visible,.vi-sidebar summary:focus-visible,.vi-sidebar input:focus-visible,.vi-sidebar a:focus-visible{outline:3px solid #65dec6;outline-offset:4px}.vi-sidebar [hidden]{display:none!important}.vi-sidebar{display:grid;grid-template-columns:220px minmax(0,1fr);border:1px solid #355b70;border-radius:18px;background:#123248;overflow:hidden;min-height:350px}.vi-sidebar-nav{padding:20px;background:#183d53;border-right:1px solid #355b70;min-width:0}.vi-sidebar-brand{display:flex;align-items:center;justify-content:space-between;gap:10px;font-weight:700;margin-bottom:28px}.vi-sidebar-brand button{padding:8px;min-width:44px}.vi-sidebar nav{display:grid;gap:8px}.vi-sidebar nav button{display:flex;gap:12px;align-items:center;text-align:left;white-space:nowrap;background:transparent;border-color:transparent}.vi-sidebar nav button[aria-current=\"page\"]{background:#24616b;color:#abffeb}.vi-sidebar nav button span:first-child{font-size:22px;min-width:24px}.vi-sidebar-content{padding:36px 28px;min-width:0}.vi-sidebar-note{color:#65dec6;font-size:12px;display:block;margin-bottom:20px}.vi-sidebar-content p{margin-top:14px}.vi-sidebar-placeholder{display:grid;gap:12px;margin-top:30px}.vi-sidebar-placeholder span{display:block;height:16px;border-radius:6px;background:#20485c}.vi-sidebar-placeholder span:nth-child(2){width:75%}.vi-sidebar[data-collapsed=\"true\"]{grid-template-columns:85px minmax(0,1fr)}.vi-sidebar[data-collapsed=\"true\"] .vi-sidebar-brand>span,.vi-sidebar[data-collapsed=\"true\"] .vi-sidebar-label{display:none}.vi-sidebar[data-collapsed=\"true\"] .vi-sidebar-nav{padding:20px 12px}.vi-sidebar[data-collapsed=\"true\"] nav button{padding:9px}.vi-sidebar[data-collapsed=\"true\"] .vi-sidebar-brand{justify-content:center}@media(max-width:600px){.vi-sidebar,.vi-sidebar[data-collapsed=\"true\"]{grid-template-columns:1fr}.vi-sidebar-nav{border-right:0;border-bottom:1px solid #355b70;padding:16px}.vi-sidebar-brand{margin-bottom:14px}.vi-sidebar nav{grid-template-columns:repeat(3,minmax(0,1fr));gap:4px}.vi-sidebar nav button{justify-content:center;padding:8px 4px;gap:4px;font-size:13px;white-space:normal}.vi-sidebar nav button span:first-child{display:none}.vi-sidebar[data-collapsed=\"true\"] nav{display:none}.vi-sidebar[data-collapsed=\"true\"] .vi-sidebar-brand>span{display:block}.vi-sidebar[data-collapsed=\"true\"] .vi-sidebar-brand{justify-content:space-between}.vi-sidebar-content{padding:28px 22px}}@media(prefers-reduced-motion:reduce){.vi-sidebar,.vi-sidebar *,.vi-sidebar::before,.vi-sidebar::after,.vi-sidebar *::before,.vi-sidebar *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}",
+      "js": "document.querySelectorAll('.vi-sidebar').forEach(root=>{const toggle=root.querySelector('[aria-label=\"切换导航\"]');toggle.addEventListener('click',()=>{const collapsed=root.dataset.collapsed!=='true';root.dataset.collapsed=String(collapsed);toggle.setAttribute('aria-expanded',String(!collapsed))});root.querySelectorAll('[data-page]').forEach(button=>{button.setAttribute('aria-label',button.dataset.page);button.addEventListener('click',()=>{root.querySelectorAll('[data-page]').forEach(item=>item.removeAttribute('aria-current'));button.setAttribute('aria-current','page');root.querySelector('h2').textContent=button.dataset.page;root.querySelector('[aria-live]').textContent='已选择'+button.dataset.page+'。内容切换仅为本地演示。'})})});"
+    },
+    "htmlPath": "design-library/components/sidebar.html",
+    "posterPath": "design-library/previews/component-sidebar.png"
+  },
+  {
+    "id": "tabs",
+    "title": "可键盘切换的标签页",
+    "entryId": "375fac205c71b6c9",
+    "sourceUrl": "https://ui.aceternity.com/components/tabs",
+    "description": "点击或使用左右方向键切换内容，选中状态与面板同步。",
+    "layer": "content",
+    "parameters": {
+      "initialTab": "默认第一项；JS select索引范围0–标签数量减1"
+    },
+    "compatibleWith": [
+      "sidebar",
+      "glass-surface",
+      "gradient-border"
+    ],
+    "conflicts": [],
+    "mobileBehavior": "容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。",
+    "reducedMotion": "系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。",
+    "limitations": [
+      "依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。",
+      "标签面板为本地静态内容；不包含来源组件的拖拽排序或三维卡片运动。"
+    ],
+    "code": {
+      "html": "<section class=\"vi-tabs\"><div class=\"vi-tabs-list\" role=\"tablist\" aria-label=\"项目资料\"><button type=\"button\" role=\"tab\" aria-selected=\"true\" tabindex=\"0\">概览</button><button type=\"button\" role=\"tab\" aria-selected=\"false\" tabindex=\"-1\">素材</button><button type=\"button\" role=\"tab\" aria-selected=\"false\" tabindex=\"-1\">说明</button></div><section class=\"vi-tabs-panel\" role=\"tabpanel\" tabindex=\"0\"><span>项目概览</span><h2>学习空间</h2><p>把课程入口与最近使用的资料放在同一个工作台。</p></section><section class=\"vi-tabs-panel\" role=\"tabpanel\" tabindex=\"0\" hidden><span>素材整理</span><h2>所需素材</h2><p>收集课程封面、说明文字与资料文件，按课程归档。</p></section><section class=\"vi-tabs-panel\" role=\"tabpanel\" tabindex=\"0\" hidden><span>使用说明</span><h2>切换标签即可浏览</h2><p>支持左右方向键，以及Home和End键。此处为静态内容演示。</p></section></section>",
+      "css": ".vi-tabs,.vi-tabs *{box-sizing:border-box}.vi-tabs{font-family:\"Segoe UI\",\"Microsoft YaHei\",sans-serif;color:#eaf5fc;line-height:1.6;min-width:0;width:min(100%,720px)}.vi-tabs h2,.vi-tabs h3,.vi-tabs p{margin:0}.vi-tabs h2{font-size:clamp(22px,4vw,30px);line-height:1.3;letter-spacing:-.03em}.vi-tabs h3{font-size:18px;line-height:1.4}.vi-tabs p{color:#b8d2e3;font-size:15px}.vi-tabs button,.vi-tabs summary,.vi-tabs input{font:inherit}.vi-tabs button{cursor:pointer;border:1px solid #426981;color:#eaf5fc;background:#193e55;border-radius:10px;padding:10px 16px;min-height:44px}.vi-tabs button:hover{background:#245771}.vi-tabs button:focus-visible,.vi-tabs summary:focus-visible,.vi-tabs input:focus-visible,.vi-tabs a:focus-visible{outline:3px solid #65dec6;outline-offset:4px}.vi-tabs [hidden]{display:none!important}.vi-tabs{border:1px solid #355b70;border-radius:18px;padding:12px;background:#15374c}.vi-tabs-list{display:flex;gap:6px;padding:6px;background:#0b283a;border-radius:12px}.vi-tabs-list button{flex:1;border:0;background:transparent}.vi-tabs-list button[aria-selected=\"true\"]{background:#2b626d;color:#bbffee}.vi-tabs-panel{padding:36px 24px;min-height:235px}.vi-tabs-panel>span{display:block;color:#65dec6;font-size:12px;margin-bottom:18px}.vi-tabs-panel p{margin-top:16px;max-width:48ch}.vi-tabs-panel:focus-visible{outline:2px solid #65dec6;border-radius:12px}@media(max-width:600px){.vi-tabs-panel{padding:28px 14px}.vi-tabs-list button{padding:8px 6px}}@media(prefers-reduced-motion:reduce){.vi-tabs,.vi-tabs *,.vi-tabs::before,.vi-tabs::after,.vi-tabs *::before,.vi-tabs *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}",
+      "js": "document.querySelectorAll('.vi-tabs').forEach((root,instance)=>{const tabs=[...root.querySelectorAll('[role=\"tab\"]')],panels=[...root.querySelectorAll('[role=\"tabpanel\"]')];tabs.forEach((tab,index)=>{tab.id='vi-tabs-'+instance+'-tab-'+index;panels[index].id='vi-tabs-'+instance+'-panel-'+index;tab.setAttribute('aria-controls',panels[index].id);panels[index].setAttribute('aria-labelledby',tab.id)});const select=(index,focus=false)=>{tabs.forEach((tab,i)=>{tab.setAttribute('aria-selected',String(i===index));tab.tabIndex=i===index?0:-1;panels[i].hidden=i!==index});if(focus)tabs[index].focus()};tabs.forEach((tab,index)=>{tab.addEventListener('click',()=>select(index));tab.addEventListener('keydown',event=>{let next=index;if(event.key==='ArrowRight')next=(index+1)%tabs.length;else if(event.key==='ArrowLeft')next=(index+tabs.length-1)%tabs.length;else if(event.key==='Home')next=0;else if(event.key==='End')next=tabs.length-1;else return;event.preventDefault();select(next,true)})})});"
+    },
+    "htmlPath": "design-library/components/tabs.html",
+    "posterPath": "design-library/previews/component-tabs.png"
+  },
+  {
+    "id": "accordion",
+    "title": "原生折叠内容",
+    "entryId": "d7d0a0a0e895db95",
+    "sourceUrl": "https://reactbits.dev/components/accordion-gallery",
+    "description": "使用details与summary展示逐项展开的信息，无需JavaScript。",
+    "layer": "content",
+    "parameters": {
+      "open": "在需要默认展开的details元素上设置open属性"
+    },
+    "compatibleWith": [
+      "sidebar",
+      "glass-surface",
+      "gradient-border"
+    ],
+    "conflicts": [],
+    "mobileBehavior": "容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。",
+    "reducedMotion": "系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。",
+    "limitations": [
+      "依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。",
+      "参考Accordion Gallery的逐项展开方向，适配为文字折叠；不复刻原来源的图片画廊动画。",
+      "允许同时展开多个条目，不提供单项互斥状态。"
+    ],
+    "code": {
+      "html": "<section class=\"vi-accordion\" aria-label=\"课程常见问题\"><h2>开始之前</h2><p class=\"vi-accordion-intro\">展开一项，查看对应说明。</p><details open><summary>如何安排学习？</summary><div><p>先阅读课程介绍，再选择一节适合当前进度的课程。</p></div></details><details><summary>资料可以离线使用吗？</summary><div><p>这里演示折叠内容。实际下载与使用规则由课程平台提供。</p></div></details><details><summary>在哪里查看学习记录？</summary><div><p>在工作台进入学习记录。此组件仅提供静态说明。</p></div></details></section>",
+      "css": ".vi-accordion,.vi-accordion *{box-sizing:border-box}.vi-accordion{font-family:\"Segoe UI\",\"Microsoft YaHei\",sans-serif;color:#eaf5fc;line-height:1.6;min-width:0;width:min(100%,720px)}.vi-accordion h2,.vi-accordion h3,.vi-accordion p{margin:0}.vi-accordion h2{font-size:clamp(22px,4vw,30px);line-height:1.3;letter-spacing:-.03em}.vi-accordion h3{font-size:18px;line-height:1.4}.vi-accordion p{color:#b8d2e3;font-size:15px}.vi-accordion button,.vi-accordion summary,.vi-accordion input{font:inherit}.vi-accordion button{cursor:pointer;border:1px solid #426981;color:#eaf5fc;background:#193e55;border-radius:10px;padding:10px 16px;min-height:44px}.vi-accordion button:hover{background:#245771}.vi-accordion button:focus-visible,.vi-accordion summary:focus-visible,.vi-accordion input:focus-visible,.vi-accordion a:focus-visible{outline:3px solid #65dec6;outline-offset:4px}.vi-accordion [hidden]{display:none!important}.vi-accordion{background:#15374c;border:1px solid #355b70;padding:28px;border-radius:18px}.vi-accordion-intro{margin:10px 0 24px!important}.vi-accordion details{border-top:1px solid #355b70}.vi-accordion summary{position:relative;cursor:pointer;list-style:none;padding:18px 30px 18px 0;min-height:56px;font-weight:600}.vi-accordion summary::-webkit-details-marker{display:none}.vi-accordion summary::after{content:'+';position:absolute;right:4px;top:13px;font-size:26px;color:#65dec6}.vi-accordion details[open] summary::after{content:'−'}.vi-accordion details>div{padding:0 26px 22px 0}@media(max-width:600px){.vi-accordion{padding:22px}.vi-accordion summary{font-size:15px}}@media(prefers-reduced-motion:reduce){.vi-accordion,.vi-accordion *,.vi-accordion::before,.vi-accordion::after,.vi-accordion *::before,.vi-accordion *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}",
+      "js": ""
+    },
+    "htmlPath": "design-library/components/accordion.html",
+    "posterPath": "design-library/previews/component-accordion.png"
+  },
+  {
+    "id": "modal",
+    "title": "原生说明弹窗",
+    "entryId": "f6b5fb5e2cf9261b",
+    "sourceUrl": "https://ui.aceternity.com/components/animated-modal",
+    "description": "使用dialog实现打开、关闭、Escape退出与焦点返回。",
+    "layer": "content",
+    "parameters": {
+      "width": "弹窗最大宽度560px，建议360–720px；手机保留左右18px"
+    },
+    "compatibleWith": [
+      "sidebar",
+      "bento-grid",
+      "expandable-card"
+    ],
+    "conflicts": [],
+    "mobileBehavior": "容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。",
+    "reducedMotion": "系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。",
+    "limitations": [
+      "依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。",
+      "依赖支持HTML dialog的现代浏览器；只有展示与关闭功能，不模拟数据提交。"
+    ],
+    "code": {
+      "html": "<section class=\"vi-modal\"><span class=\"vi-modal-label\">项目说明</span><h2>把细节留在需要的时候</h2><p>点击按钮查看说明；弹窗支持键盘退出。</p><button type=\"button\" data-open>查看项目说明</button><dialog class=\"vi-modal-dialog\" aria-label=\"项目说明\"><div class=\"vi-modal-heading\"><h2>学习空间说明</h2><button type=\"button\" data-close aria-label=\"关闭说明\">×</button></div><p>这个示例展示原生弹窗的交互。正文可以替换为项目介绍或操作提示。</p><p class=\"vi-modal-hint\">本地演示 · 未接入保存或提交功能</p><button type=\"button\" data-close>我知道了</button></dialog></section>",
+      "css": ".vi-modal,.vi-modal *{box-sizing:border-box}.vi-modal{font-family:\"Segoe UI\",\"Microsoft YaHei\",sans-serif;color:#eaf5fc;line-height:1.6;min-width:0;width:min(100%,720px)}.vi-modal h2,.vi-modal h3,.vi-modal p{margin:0}.vi-modal h2{font-size:clamp(22px,4vw,30px);line-height:1.3;letter-spacing:-.03em}.vi-modal h3{font-size:18px;line-height:1.4}.vi-modal p{color:#b8d2e3;font-size:15px}.vi-modal button,.vi-modal summary,.vi-modal input{font:inherit}.vi-modal button{cursor:pointer;border:1px solid #426981;color:#eaf5fc;background:#193e55;border-radius:10px;padding:10px 16px;min-height:44px}.vi-modal button:hover{background:#245771}.vi-modal button:focus-visible,.vi-modal summary:focus-visible,.vi-modal input:focus-visible,.vi-modal a:focus-visible{outline:3px solid #65dec6;outline-offset:4px}.vi-modal [hidden]{display:none!important}.vi-modal{padding:34px;border:1px solid #355b70;border-radius:18px;background:#15374c}.vi-modal-label{display:block;color:#65dec6;font-size:12px;margin-bottom:22px}.vi-modal>p{margin:16px 0 24px}.vi-modal-dialog{width:min(560px,calc(100vw - 36px));max-height:calc(100dvh - 40px);overflow:auto;border:1px solid #5b8b9a;border-radius:20px;padding:30px;color:#eaf5fc;background:#173b51;box-shadow:0 24px 80px #0008;animation:vi-modal-enter .18s ease-out}.vi-modal-dialog::backdrop{background:#061b2bd9;backdrop-filter:blur(5px)}.vi-modal-heading{display:flex;justify-content:space-between;align-items:start;gap:20px;margin-bottom:20px}.vi-modal-heading button{padding:3px 12px;font-size:28px;flex-shrink:0}.vi-modal-dialog p{margin-bottom:18px}.vi-modal-hint{font-size:12px!important;color:#65dec6!important}@keyframes vi-modal-enter{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}@media(max-width:600px){.vi-modal{padding:24px}.vi-modal-dialog{padding:22px}.vi-modal-dialog h2{font-size:22px}}@media(prefers-reduced-motion:reduce){.vi-modal,.vi-modal *,.vi-modal::before,.vi-modal::after,.vi-modal *::before,.vi-modal *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}",
+      "js": "document.querySelectorAll('.vi-modal').forEach(root=>{const dialog=root.querySelector('dialog'),open=root.querySelector('[data-open]');open.addEventListener('click',()=>dialog.showModal());root.querySelectorAll('[data-close]').forEach(button=>button.addEventListener('click',()=>dialog.close()));dialog.addEventListener('click',event=>{if(event.target===dialog){const rect=dialog.getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)dialog.close()}});dialog.addEventListener('close',()=>open.focus())});"
+    },
+    "htmlPath": "design-library/components/modal.html",
+    "posterPath": "design-library/previews/component-modal.png"
+  },
+  {
+    "id": "tooltip",
+    "title": "点击与悬停提示",
+    "entryId": "aca0c12575e64a6a",
+    "sourceUrl": "https://ui.aceternity.com/components/animated-tooltip",
+    "description": "鼠标、键盘焦点和触屏点击均可查看一条补充说明。",
+    "layer": "content",
+    "parameters": {
+      "text": "提示正文建议不超过两行，不放必须操作的内容"
+    },
+    "compatibleWith": [
+      "tabs",
+      "sidebar",
+      "file-picker"
+    ],
+    "conflicts": [],
+    "mobileBehavior": "触屏点击按钮固定显示提示，再点一次或失去焦点关闭；提示宽度受视口约束。",
+    "reducedMotion": "系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。",
+    "limitations": [
+      "依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。",
+      "简化为无头像、无弹簧运动的文本提示；提示内不放链接或表单。"
+    ],
+    "code": {
+      "html": "<section class=\"vi-tooltip\"><h2>一条恰好够用的提示</h2><p>用鼠标、键盘或点击查看保存说明。</p><div class=\"vi-tooltip-anchor\"><button type=\"button\" aria-label=\"查看保存说明\" aria-expanded=\"false\">保存说明 <span aria-hidden=\"true\">ⓘ</span></button><span class=\"vi-tooltip-bubble\" role=\"tooltip\" hidden>本地演示：保存功能需要接入业务接口。</span></div></section>",
+      "css": ".vi-tooltip,.vi-tooltip *{box-sizing:border-box}.vi-tooltip{font-family:\"Segoe UI\",\"Microsoft YaHei\",sans-serif;color:#eaf5fc;line-height:1.6;min-width:0;width:min(100%,720px)}.vi-tooltip h2,.vi-tooltip h3,.vi-tooltip p{margin:0}.vi-tooltip h2{font-size:clamp(22px,4vw,30px);line-height:1.3;letter-spacing:-.03em}.vi-tooltip h3{font-size:18px;line-height:1.4}.vi-tooltip p{color:#b8d2e3;font-size:15px}.vi-tooltip button,.vi-tooltip summary,.vi-tooltip input{font:inherit}.vi-tooltip button{cursor:pointer;border:1px solid #426981;color:#eaf5fc;background:#193e55;border-radius:10px;padding:10px 16px;min-height:44px}.vi-tooltip button:hover{background:#245771}.vi-tooltip button:focus-visible,.vi-tooltip summary:focus-visible,.vi-tooltip input:focus-visible,.vi-tooltip a:focus-visible{outline:3px solid #65dec6;outline-offset:4px}.vi-tooltip [hidden]{display:none!important}.vi-tooltip{padding:34px;background:#15374c;border:1px solid #355b70;border-radius:18px}.vi-tooltip>p{margin:16px 0 30px}.vi-tooltip-anchor{position:relative;display:inline-block;padding-top:58px;max-width:100%}.vi-tooltip-bubble{position:absolute;bottom:calc(100% - 48px);left:0;width:min(280px,calc(100vw - 90px));padding:12px 16px;border-radius:10px;background:#d8f8ee;color:#153e46;font-size:13px;box-shadow:0 8px 20px #001b3440;animation:vi-tooltip-enter .16s ease}.vi-tooltip-bubble::after{content:'';position:absolute;bottom:-6px;left:24px;width:12px;height:12px;background:#d8f8ee;transform:rotate(45deg)}@keyframes vi-tooltip-enter{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}@media(max-width:600px){.vi-tooltip{padding:24px}.vi-tooltip-anchor{padding-top:80px}.vi-tooltip-bubble{bottom:calc(100% - 70px)}}@media(prefers-reduced-motion:reduce){.vi-tooltip,.vi-tooltip *,.vi-tooltip::before,.vi-tooltip::after,.vi-tooltip *::before,.vi-tooltip *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}",
+      "js": "document.querySelectorAll('.vi-tooltip').forEach((root,index)=>{const anchor=root.querySelector('.vi-tooltip-anchor'),button=root.querySelector('button'),tooltip=root.querySelector('[role=\"tooltip\"]');tooltip.id='vi-tooltip-note-'+index;button.setAttribute('aria-describedby',tooltip.id);let pinned=false;const show=open=>{tooltip.hidden=!open;button.setAttribute('aria-expanded',String(open))};anchor.addEventListener('pointerenter',event=>{if(event.pointerType!=='touch')show(true)});anchor.addEventListener('pointerleave',()=>{if(!pinned&&document.activeElement!==button)show(false)});button.addEventListener('focus',()=>show(true));button.addEventListener('blur',()=>{pinned=false;show(false)});button.addEventListener('click',()=>{pinned=!pinned;show(pinned)});button.addEventListener('keydown',event=>{if(event.key==='Escape'){pinned=false;show(false)}})});"
+    },
+    "htmlPath": "design-library/components/tooltip.html",
+    "posterPath": "design-library/previews/component-tooltip.png"
+  },
+  {
+    "id": "card-stack",
+    "title": "手动切换卡片叠放",
+    "entryId": "68d69ca0726b91bd",
+    "sourceUrl": "https://ui.aceternity.com/components/card-stack",
+    "description": "三张内容卡片叠放，点击下一张切换顺序；不自动轮播。",
+    "layer": "content",
+    "parameters": {
+      "offset": "叠放偏移12px，建议8–16px"
+    },
+    "compatibleWith": [
+      "glass-surface",
+      "gradient-border"
+    ],
+    "conflicts": [],
+    "mobileBehavior": "容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。",
+    "reducedMotion": "系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。",
+    "limitations": [
+      "依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。",
+      "叠放卡片只承载静态内容，不放会被遮住的输入框或可聚焦链接。",
+      "采用手动切换，不包含原来源自动轮播与Framer Motion。"
+    ],
+    "code": {
+      "html": "<section class=\"vi-card-stack\" data-index=\"0\"><div class=\"vi-card-stack-deck\"><article style=\"--depth:0\"><span>先找到入口</span><h2>课程有了清楚的位置</h2><p>把常用课程放在最前面。</p></article><article style=\"--depth:1\" aria-hidden=\"true\"><span>再整理资料</span><h2>需要的时候找得到</h2><p>把相关材料放到同一处。</p></article><article style=\"--depth:2\" aria-hidden=\"true\"><span>最后回到练习</span><h2>继续刚才的学习</h2><p>每次只专注一个小步骤。</p></article></div><div class=\"vi-card-stack-controls\"><span aria-live=\"polite\">第1张，共3张</span><button type=\"button\">下一张</button></div></section>",
+      "css": ".vi-card-stack,.vi-card-stack *{box-sizing:border-box}.vi-card-stack{font-family:\"Segoe UI\",\"Microsoft YaHei\",sans-serif;color:#eaf5fc;line-height:1.6;min-width:0;width:min(100%,720px)}.vi-card-stack h2,.vi-card-stack h3,.vi-card-stack p{margin:0}.vi-card-stack h2{font-size:clamp(22px,4vw,30px);line-height:1.3;letter-spacing:-.03em}.vi-card-stack h3{font-size:18px;line-height:1.4}.vi-card-stack p{color:#b8d2e3;font-size:15px}.vi-card-stack button,.vi-card-stack summary,.vi-card-stack input{font:inherit}.vi-card-stack button{cursor:pointer;border:1px solid #426981;color:#eaf5fc;background:#193e55;border-radius:10px;padding:10px 16px;min-height:44px}.vi-card-stack button:hover{background:#245771}.vi-card-stack button:focus-visible,.vi-card-stack summary:focus-visible,.vi-card-stack input:focus-visible,.vi-card-stack a:focus-visible{outline:3px solid #65dec6;outline-offset:4px}.vi-card-stack [hidden]{display:none!important}.vi-card-stack{padding:24px 14px;width:min(100%,640px)}.vi-card-stack-deck{position:relative;height:270px;margin-top:28px}.vi-card-stack-deck article{position:absolute;inset:0;padding:36px;border-radius:20px;border:1px solid #5d8496;background:#184357;transform:translateY(calc(var(--depth)*-12px)) scale(calc(1 - var(--depth)*.035));transform-origin:top;z-index:calc(3 - var(--depth));transition:transform .35s ease,opacity .35s ease;opacity:calc(1 - var(--depth)*.2)}.vi-card-stack-deck article>span{display:block;margin-bottom:24px;color:#65dec6;font-size:13px}.vi-card-stack-deck article p{margin-top:18px}.vi-card-stack-controls{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:24px}.vi-card-stack-controls>span{font-size:13px;color:#b8d2e3}@media(max-width:600px){.vi-card-stack{padding:24px 7px}.vi-card-stack-deck{height:295px}.vi-card-stack-deck article{padding:28px}}@media(prefers-reduced-motion:reduce){.vi-card-stack,.vi-card-stack *,.vi-card-stack::before,.vi-card-stack::after,.vi-card-stack *::before,.vi-card-stack *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}",
+      "js": "document.querySelectorAll('.vi-card-stack').forEach(root=>{const cards=[...root.querySelectorAll('article')];let active=0;root.querySelector('button').addEventListener('click',()=>{active=(active+1)%cards.length;root.dataset.index=String(active);cards.forEach((card,index)=>{const depth=(index-active+cards.length)%cards.length;card.style.setProperty('--depth',depth);card.setAttribute('aria-hidden',String(depth!==0))});root.querySelector('[aria-live]').textContent='第'+(active+1)+'张，共'+cards.length+'张'})});"
+    },
+    "htmlPath": "design-library/components/card-stack.html",
+    "posterPath": "design-library/previews/component-card-stack.png"
+  },
+  {
+    "id": "carousel",
+    "title": "触屏滚动轮播",
+    "entryId": "d6aab57f1b6232f6",
+    "sourceUrl": "https://ui.aceternity.com/components/carousel",
+    "description": "原生横向滚动与吸附，左右按钮和触屏滑动都可切换。",
+    "layer": "content",
+    "parameters": {
+      "cardWidth": "桌面卡片66%，手机86%；建议60–90%"
+    },
+    "compatibleWith": [
+      "glass-surface",
+      "gradient-border"
+    ],
+    "conflicts": [],
+    "mobileBehavior": "使用原生横向滑动和scroll-snap，保留按钮操作；滚动发生在列表内部，页面不横向溢出。",
+    "reducedMotion": "系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。",
+    "limitations": [
+      "依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。",
+      "不含原来源的图片资源、循环轮播或卡片放大弹窗。"
+    ],
+    "code": {
+      "html": "<section class=\"vi-carousel\" aria-label=\"课程浏览\"><div class=\"vi-carousel-heading\"><h2>按自己的节奏浏览</h2><div><button type=\"button\" aria-label=\"上一项\">←</button><button type=\"button\" aria-label=\"下一项\">→</button></div></div><div class=\"vi-carousel-track\" tabindex=\"0\" aria-label=\"横向课程列表\"><article><span class=\"vi-carousel-art vi-carousel-art-one\" aria-hidden=\"true\">波</span><h3>从一个问题开始</h3><p>找到课程的第一个入口。</p></article><article><span class=\"vi-carousel-art vi-carousel-art-two\" aria-hidden=\"true\">线</span><h3>看见知识的联系</h3><p>用清楚的结构整理内容。</p></article><article><span class=\"vi-carousel-art vi-carousel-art-three\" aria-hidden=\"true\">点</span><h3>把想法变成练习</h3><p>用一个小任务完成验证。</p></article></div><p class=\"vi-carousel-note\">静态课程示例 · 可左右滑动</p></section>",
+      "css": ".vi-carousel,.vi-carousel *{box-sizing:border-box}.vi-carousel{font-family:\"Segoe UI\",\"Microsoft YaHei\",sans-serif;color:#eaf5fc;line-height:1.6;min-width:0;width:min(100%,720px)}.vi-carousel h2,.vi-carousel h3,.vi-carousel p{margin:0}.vi-carousel h2{font-size:clamp(22px,4vw,30px);line-height:1.3;letter-spacing:-.03em}.vi-carousel h3{font-size:18px;line-height:1.4}.vi-carousel p{color:#b8d2e3;font-size:15px}.vi-carousel button,.vi-carousel summary,.vi-carousel input{font:inherit}.vi-carousel button{cursor:pointer;border:1px solid #426981;color:#eaf5fc;background:#193e55;border-radius:10px;padding:10px 16px;min-height:44px}.vi-carousel button:hover{background:#245771}.vi-carousel button:focus-visible,.vi-carousel summary:focus-visible,.vi-carousel input:focus-visible,.vi-carousel a:focus-visible{outline:3px solid #65dec6;outline-offset:4px}.vi-carousel [hidden]{display:none!important}.vi-carousel-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:24px}.vi-carousel-heading>div{display:flex;gap:8px;flex-shrink:0}.vi-carousel-heading button{padding:7px 12px;min-width:44px}.vi-carousel-track{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:3px 3px 18px;scrollbar-color:#578ea1 #14374c}.vi-carousel-track article{flex:0 0 66%;background:#15374c;border:1px solid #355b70;border-radius:18px;padding:20px;scroll-snap-align:start;min-width:0}.vi-carousel-art{height:155px;display:grid;place-items:center;border-radius:12px;margin-bottom:22px;font-size:72px;font-weight:300;color:#a6fce4}.vi-carousel-art-one{background:linear-gradient(135deg,#2a686f,#1c4c65)}.vi-carousel-art-two{background:linear-gradient(135deg,#2b5d7e,#204761)}.vi-carousel-art-three{background:linear-gradient(135deg,#386565,#214657)}.vi-carousel-track p{margin-top:12px}.vi-carousel-note{font-size:12px!important;margin-top:10px!important}@media(max-width:600px){.vi-carousel-heading{align-items:start}.vi-carousel-heading h2{font-size:23px}.vi-carousel-track article{flex-basis:86%;padding:18px}.vi-carousel-art{height:145px}}@media(prefers-reduced-motion:reduce){.vi-carousel,.vi-carousel *,.vi-carousel::before,.vi-carousel::after,.vi-carousel *::before,.vi-carousel *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}",
+      "js": "document.querySelectorAll('.vi-carousel').forEach(root=>{const track=root.querySelector('.vi-carousel-track');const step=()=>track.querySelector('article').getBoundingClientRect().width+parseFloat(getComputedStyle(track).gap);const move=direction=>track.scrollBy({left:direction*step(),behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});root.querySelector('[aria-label=\"上一项\"]').addEventListener('click',()=>move(-1));root.querySelector('[aria-label=\"下一项\"]').addEventListener('click',()=>move(1));track.addEventListener('keydown',event=>{if(event.key==='ArrowRight'||event.key==='ArrowLeft'){event.preventDefault();move(event.key==='ArrowRight'?1:-1)}})});"
+    },
+    "htmlPath": "design-library/components/carousel.html",
+    "posterPath": "design-library/previews/component-carousel.png"
+  },
+  {
+    "id": "floating-navbar",
+    "title": "悬浮样式导航",
+    "entryId": "e1e4b5ef827d0ebd",
+    "sourceUrl": "https://ui.aceternity.com/components/floating-navbar",
+    "description": "胶囊导航标记当前栏目；选择栏目后更新本地演示标题。",
+    "layer": "layout",
+    "parameters": {
+      "top": "sticky顶部间距12px，建议8–24px"
+    },
+    "compatibleWith": [
+      "bento-grid",
+      "timeline",
+      "scroll-reveal"
+    ],
+    "conflicts": [],
+    "mobileBehavior": "容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。",
+    "reducedMotion": "系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。",
+    "limitations": [
+      "依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。",
+      "仅提供sticky胶囊导航外观与本地选中状态，不包含按滚动方向自动隐藏，也不接入页面路由。",
+      "祖先容器设置overflow会影响sticky定位。"
+    ],
+    "code": {
+      "html": "<section class=\"vi-floating-navbar\"><nav aria-label=\"栏目导航\"><button type=\"button\" aria-current=\"page\">概览</button><button type=\"button\">课程</button><button type=\"button\">资料</button><button type=\"button\">记录</button></nav><div class=\"vi-floating-navbar-content\"><span>学习空间</span><h2>概览</h2><p aria-live=\"polite\">当前栏目：概览。本地导航演示。</p></div></section>",
+      "css": ".vi-floating-navbar,.vi-floating-navbar *{box-sizing:border-box}.vi-floating-navbar{font-family:\"Segoe UI\",\"Microsoft YaHei\",sans-serif;color:#eaf5fc;line-height:1.6;min-width:0;width:min(100%,720px)}.vi-floating-navbar h2,.vi-floating-navbar h3,.vi-floating-navbar p{margin:0}.vi-floating-navbar h2{font-size:clamp(22px,4vw,30px);line-height:1.3;letter-spacing:-.03em}.vi-floating-navbar h3{font-size:18px;line-height:1.4}.vi-floating-navbar p{color:#b8d2e3;font-size:15px}.vi-floating-navbar button,.vi-floating-navbar summary,.vi-floating-navbar input{font:inherit}.vi-floating-navbar button{cursor:pointer;border:1px solid #426981;color:#eaf5fc;background:#193e55;border-radius:10px;padding:10px 16px;min-height:44px}.vi-floating-navbar button:hover{background:#245771}.vi-floating-navbar button:focus-visible,.vi-floating-navbar summary:focus-visible,.vi-floating-navbar input:focus-visible,.vi-floating-navbar a:focus-visible{outline:3px solid #65dec6;outline-offset:4px}.vi-floating-navbar [hidden]{display:none!important}.vi-floating-navbar{padding:24px 12px}.vi-floating-navbar nav{display:flex;width:max-content;max-width:100%;margin:0 auto;gap:5px;padding:8px;background:#1b4257e8;border:1px solid #50788a;border-radius:999px;box-shadow:0 14px 40px #00142366;backdrop-filter:blur(12px);position:sticky;top:12px;z-index:2}.vi-floating-navbar nav button{background:transparent;border:0;border-radius:999px;font-size:14px;padding:8px 18px}.vi-floating-navbar nav button[aria-current=\"page\"]{background:#366a73;color:#baffec}.vi-floating-navbar-content{margin-top:36px;padding:36px;border-radius:22px;border:1px solid #355b70;background:#15374c;min-height:270px}.vi-floating-navbar-content>span{display:block;font-size:12px;color:#65dec6;margin-bottom:26px}.vi-floating-navbar-content p{margin-top:16px}@media(max-width:600px){.vi-floating-navbar{padding:12px 0}.vi-floating-navbar nav{width:100%;gap:0;padding:6px}.vi-floating-navbar nav button{flex:1;padding:8px 7px;font-size:13px}.vi-floating-navbar-content{padding:28px 22px}}@media(prefers-reduced-motion:reduce){.vi-floating-navbar,.vi-floating-navbar *,.vi-floating-navbar::before,.vi-floating-navbar::after,.vi-floating-navbar *::before,.vi-floating-navbar *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}",
+      "js": "document.querySelectorAll('.vi-floating-navbar').forEach(root=>root.querySelectorAll('nav button').forEach(button=>button.addEventListener('click',()=>{root.querySelectorAll('nav button').forEach(item=>item.removeAttribute('aria-current'));button.setAttribute('aria-current','page');root.querySelector('h2').textContent=button.textContent;root.querySelector('[aria-live]').textContent='当前栏目：'+button.textContent+'。本地导航演示。'})));"
+    },
+    "htmlPath": "design-library/components/floating-navbar.html",
+    "posterPath": "design-library/previews/component-floating-navbar.png"
+  },
+  {
+    "id": "step-loader",
+    "title": "分步进度演示",
+    "entryId": "3eb6952087f35f75",
+    "sourceUrl": "https://ui.aceternity.com/components/multi-step-loader",
+    "description": "逐项展示处理进度，明确提示示例不执行真实业务。",
+    "layer": "content",
+    "parameters": {
+      "delay": "每步演示延迟450ms，建议200–1000ms；减少动态模式为0"
+    },
+    "compatibleWith": [
+      "modal",
+      "file-picker",
+      "tabs"
+    ],
+    "conflicts": [],
+    "mobileBehavior": "容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。",
+    "reducedMotion": "关闭CSS运动，并将每个模拟步骤等待设为0；进度直接完成。",
+    "limitations": [
+      "依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。",
+      "进度由本地计时器模拟，不代表上传、AI分析或后台任务的真实进度。"
+    ],
+    "code": {
+      "html": "<section class=\"vi-step-loader\"><span class=\"vi-step-loader-tag\">进度演示</span><h2>让每个步骤都可见</h2><p>下方模拟资料准备过程，不执行上传或分析。</p><ol><li>整理资料</li><li>检查格式</li><li>准备预览</li></ol><progress max=\"100\" value=\"0\" aria-label=\"演示处理进度\">0%</progress><div class=\"vi-step-loader-controls\"><span aria-live=\"polite\">等待运行演示</span><button type=\"button\">运行演示</button></div></section>",
+      "css": ".vi-step-loader,.vi-step-loader *{box-sizing:border-box}.vi-step-loader{font-family:\"Segoe UI\",\"Microsoft YaHei\",sans-serif;color:#eaf5fc;line-height:1.6;min-width:0;width:min(100%,720px)}.vi-step-loader h2,.vi-step-loader h3,.vi-step-loader p{margin:0}.vi-step-loader h2{font-size:clamp(22px,4vw,30px);line-height:1.3;letter-spacing:-.03em}.vi-step-loader h3{font-size:18px;line-height:1.4}.vi-step-loader p{color:#b8d2e3;font-size:15px}.vi-step-loader button,.vi-step-loader summary,.vi-step-loader input{font:inherit}.vi-step-loader button{cursor:pointer;border:1px solid #426981;color:#eaf5fc;background:#193e55;border-radius:10px;padding:10px 16px;min-height:44px}.vi-step-loader button:hover{background:#245771}.vi-step-loader button:focus-visible,.vi-step-loader summary:focus-visible,.vi-step-loader input:focus-visible,.vi-step-loader a:focus-visible{outline:3px solid #65dec6;outline-offset:4px}.vi-step-loader [hidden]{display:none!important}.vi-step-loader{padding:32px;background:#15374c;border:1px solid #355b70;border-radius:18px}.vi-step-loader-tag{display:block;color:#65dec6;font-size:12px;margin-bottom:20px}.vi-step-loader>p{margin-top:16px}.vi-step-loader ol{list-style:none;padding:0;display:grid;gap:10px;margin:28px 0}.vi-step-loader li{padding:12px 16px;border:1px solid #355b70;border-radius:10px;color:#a9c5d5;display:flex;align-items:center;gap:12px}.vi-step-loader li::before{content:'○';color:#6f9daf}.vi-step-loader li[data-done=\"true\"]{color:#baffec;background:#1d5059}.vi-step-loader li[data-done=\"true\"]::before{content:'✓';color:#65dec6}.vi-step-loader progress{width:100%;height:9px;border:0;border-radius:8px;accent-color:#65dec6;background:#244b5f;overflow:hidden}.vi-step-loader progress::-webkit-progress-bar{background:#244b5f;border-radius:8px}.vi-step-loader progress::-webkit-progress-value{background:#65dec6;border-radius:8px}.vi-step-loader progress::-moz-progress-bar{background:#65dec6}.vi-step-loader-controls{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:22px}.vi-step-loader-controls>span{font-size:13px;color:#b8d2e3}@media(max-width:600px){.vi-step-loader{padding:24px}.vi-step-loader-controls{align-items:start;flex-direction:column}.vi-step-loader-controls button{width:100%}}@media(prefers-reduced-motion:reduce){.vi-step-loader,.vi-step-loader *,.vi-step-loader::before,.vi-step-loader::after,.vi-step-loader *::before,.vi-step-loader *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}",
+      "js": "document.querySelectorAll('.vi-step-loader').forEach(root=>{const button=root.querySelector('button'),progress=root.querySelector('progress'),steps=[...root.querySelectorAll('li')],status=root.querySelector('[aria-live]');button.addEventListener('click',async()=>{button.disabled=true;progress.value=0;steps.forEach(step=>delete step.dataset.done);status.textContent='演示处理中';for(let index=0;index<steps.length;index++){await new Promise(resolve=>setTimeout(resolve,matchMedia('(prefers-reduced-motion: reduce)').matches?0:450));steps[index].dataset.done='true';progress.value=Math.round((index+1)/steps.length*100)}status.textContent='演示完成 · 未执行真实业务';button.disabled=false})});"
+    },
+    "htmlPath": "design-library/components/step-loader.html",
+    "posterPath": "design-library/previews/component-step-loader.png"
+  },
+  {
+    "id": "file-picker",
+    "title": "本地文件选择",
+    "entryId": "5c2c6c0babb93485",
+    "sourceUrl": "https://ui.aceternity.com/components/file-upload",
+    "description": "选择或拖入文件，显示名称与大小；文件始终留在本地。",
+    "layer": "content",
+    "parameters": {
+      "accept": "按业务需要在input上添加accept；它只提示文件类型，不能代替服务端校验"
+    },
+    "compatibleWith": [
+      "step-loader",
+      "modal",
+      "tabs"
+    ],
+    "conflicts": [],
+    "mobileBehavior": "触屏点击整个虚线区域调用系统文件选择器；拖放只是桌面的补充操作。",
+    "reducedMotion": "系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。",
+    "limitations": [
+      "依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。",
+      "只展示第一个文件的名称和大小；不读取正文、不上传、不持久保存。",
+      "拖入文件用于本地展示，若接入上传流程，应在drop处理器中将File传给业务函数。"
+    ],
+    "code": {
+      "html": "<section class=\"vi-file-picker\"><h2>先选好一份资料</h2><p>只读取文件名与大小，不上传文件。</p><label class=\"vi-file-picker-zone\"><span aria-hidden=\"true\">↑</span><strong>选择文件，或拖到这里</strong><small>本地演示 · 不发送到服务器</small><input type=\"file\" aria-label=\"选择本地文件\"></label><p class=\"vi-file-picker-status\" aria-live=\"polite\">尚未选择文件</p></section>",
+      "css": ".vi-file-picker,.vi-file-picker *{box-sizing:border-box}.vi-file-picker{font-family:\"Segoe UI\",\"Microsoft YaHei\",sans-serif;color:#eaf5fc;line-height:1.6;min-width:0;width:min(100%,720px)}.vi-file-picker h2,.vi-file-picker h3,.vi-file-picker p{margin:0}.vi-file-picker h2{font-size:clamp(22px,4vw,30px);line-height:1.3;letter-spacing:-.03em}.vi-file-picker h3{font-size:18px;line-height:1.4}.vi-file-picker p{color:#b8d2e3;font-size:15px}.vi-file-picker button,.vi-file-picker summary,.vi-file-picker input{font:inherit}.vi-file-picker button{cursor:pointer;border:1px solid #426981;color:#eaf5fc;background:#193e55;border-radius:10px;padding:10px 16px;min-height:44px}.vi-file-picker button:hover{background:#245771}.vi-file-picker button:focus-visible,.vi-file-picker summary:focus-visible,.vi-file-picker input:focus-visible,.vi-file-picker a:focus-visible{outline:3px solid #65dec6;outline-offset:4px}.vi-file-picker [hidden]{display:none!important}.vi-file-picker{padding:32px;border-radius:18px;border:1px solid #355b70;background:#15374c}.vi-file-picker>p{margin-top:14px}.vi-file-picker-zone{position:relative;display:grid;place-items:center;text-align:center;gap:12px;margin-top:28px;padding:32px 18px;border:1px dashed #6593a5;border-radius:14px;background:#123a4f;cursor:pointer;min-height:220px}.vi-file-picker-zone>span{display:grid;place-items:center;width:56px;height:56px;border-radius:14px;background:#2b6069;color:#abffec;font-size:32px}.vi-file-picker-zone strong{font-size:16px}.vi-file-picker-zone small{color:#a9c5d5;font-size:12px}.vi-file-picker-zone input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}.vi-file-picker-zone:focus-within{outline:3px solid #65dec6;outline-offset:4px}.vi-file-picker-zone[data-drag=\"true\"]{background:#28606a;border-color:#abffec}.vi-file-picker-status{overflow-wrap:anywhere;font-size:13px!important}@media(max-width:600px){.vi-file-picker{padding:24px}.vi-file-picker-zone{padding:26px 14px;min-height:210px}}@media(prefers-reduced-motion:reduce){.vi-file-picker,.vi-file-picker *,.vi-file-picker::before,.vi-file-picker::after,.vi-file-picker *::before,.vi-file-picker *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}",
+      "js": "document.querySelectorAll('.vi-file-picker').forEach(root=>{const input=root.querySelector('input'),zone=root.querySelector('label'),status=root.querySelector('[aria-live]');const show=file=>{status.textContent=file?'已选择：'+file.name+' · '+(file.size<1024?file.size+' B':(file.size/1024).toFixed(1)+' KB')+' · 未上传':'尚未选择文件'};input.addEventListener('change',()=>show(input.files[0]));zone.addEventListener('dragover',event=>{event.preventDefault();zone.dataset.drag='true'});zone.addEventListener('dragleave',()=>delete zone.dataset.drag);zone.addEventListener('drop',event=>{event.preventDefault();delete zone.dataset.drag;show(event.dataTransfer.files[0])})});"
+    },
+    "htmlPath": "design-library/components/file-picker.html",
+    "posterPath": "design-library/previews/component-file-picker.png"
+  },
+  {
+    "id": "scroll-reveal",
+    "title": "进入视口显现",
+    "entryId": "59b6d2fad7438493",
+    "sourceUrl": "https://reactbits.dev/text-animations/scroll-reveal",
+    "description": "内容进入视口时轻移显现，没有脚本时仍保持可读。",
+    "layer": "text",
+    "parameters": {
+      "threshold": "IntersectionObserver阈值0.15，建议0.05–0.3",
+      "distance": "位移24px，建议8–32px"
+    },
+    "compatibleWith": [
+      "bento-grid",
+      "timeline",
+      "glass-surface"
+    ],
+    "conflicts": [],
+    "mobileBehavior": "容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。",
+    "reducedMotion": "系统减少动态模式下立即可见；偏好在运行中变更也会立即显示内容。",
+    "limitations": [
+      "依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。",
+      "适配为整个内容块的一次显现，不复刻原来源按词滚动渐变，也不让内容持续闪烁。"
+    ],
+    "code": {
+      "html": "<section class=\"vi-scroll-reveal\"><span>从这里继续</span><h2>每次向前一点，<br>也能看见完整的路径。</h2><p>整理一个问题，读完一份资料，再完成一次练习。把学习留在可以继续的位置。</p><div class=\"vi-scroll-reveal-line\" aria-hidden=\"true\"></div></section>",
+      "css": ".vi-scroll-reveal,.vi-scroll-reveal *{box-sizing:border-box}.vi-scroll-reveal{font-family:\"Segoe UI\",\"Microsoft YaHei\",sans-serif;color:#eaf5fc;line-height:1.6;min-width:0;width:min(100%,720px)}.vi-scroll-reveal h2,.vi-scroll-reveal h3,.vi-scroll-reveal p{margin:0}.vi-scroll-reveal h2{font-size:clamp(22px,4vw,30px);line-height:1.3;letter-spacing:-.03em}.vi-scroll-reveal h3{font-size:18px;line-height:1.4}.vi-scroll-reveal p{color:#b8d2e3;font-size:15px}.vi-scroll-reveal button,.vi-scroll-reveal summary,.vi-scroll-reveal input{font:inherit}.vi-scroll-reveal button{cursor:pointer;border:1px solid #426981;color:#eaf5fc;background:#193e55;border-radius:10px;padding:10px 16px;min-height:44px}.vi-scroll-reveal button:hover{background:#245771}.vi-scroll-reveal button:focus-visible,.vi-scroll-reveal summary:focus-visible,.vi-scroll-reveal input:focus-visible,.vi-scroll-reveal a:focus-visible{outline:3px solid #65dec6;outline-offset:4px}.vi-scroll-reveal [hidden]{display:none!important}.vi-scroll-reveal{padding:42px 34px;background:#15374c;border:1px solid #355b70;border-radius:18px;transition:opacity .65s ease,transform .65s ease}.vi-scroll-reveal[data-visible=\"false\"]{opacity:0;transform:translateY(24px)}.vi-scroll-reveal>span{display:block;color:#65dec6;font-size:13px;margin-bottom:28px}.vi-scroll-reveal h2{font-size:clamp(26px,5vw,38px);line-height:1.5}.vi-scroll-reveal p{margin-top:26px;max-width:48ch}.vi-scroll-reveal-line{height:3px;width:72px;background:#65dec6;margin-top:34px;border-radius:3px}@media(max-width:600px){.vi-scroll-reveal{padding:32px 24px}}@media(prefers-reduced-motion:reduce){.vi-scroll-reveal,.vi-scroll-reveal *,.vi-scroll-reveal::before,.vi-scroll-reveal::after,.vi-scroll-reveal *::before,.vi-scroll-reveal *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}",
+      "js": "document.querySelectorAll('.vi-scroll-reveal').forEach(root=>{const preference=matchMedia('(prefers-reduced-motion: reduce)');if(preference.matches||!('IntersectionObserver'in window)){root.dataset.visible='true';return}root.dataset.visible='false';const observer=new IntersectionObserver(entries=>{if(entries.some(entry=>entry.isIntersecting)){root.dataset.visible='true';observer.disconnect()}},{threshold:.15});observer.observe(root);preference.addEventListener('change',event=>{if(event.matches){root.dataset.visible='true';observer.disconnect()}},{once:true})});"
+    },
+    "htmlPath": "design-library/components/scroll-reveal.html",
+    "posterPath": "design-library/previews/component-scroll-reveal.png"
+  },
+  {
+    "id": "text-reveal",
+    "title": "点击文字显现",
+    "entryId": "aceternity-text-reveal-card",
+    "sourceUrl": "https://ui.aceternity.com/components/text-reveal-card",
+    "description": "点击按钮切换一段完整文字，触屏和键盘不依赖悬停。",
+    "layer": "text",
+    "parameters": {
+      "duration": "clip-path过渡650ms，建议300–900ms"
+    },
+    "compatibleWith": [
+      "glass-surface",
+      "gradient-border",
+      "bento-grid"
+    ],
+    "conflicts": [],
+    "mobileBehavior": "容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。",
+    "reducedMotion": "系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。",
+    "limitations": [
+      "依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。",
+      "使用点击控制整段显现，不含来源组件的鼠标跟踪擦除或画布效果。",
+      "示例正文长度相近；长正文需要增加显现区域的高度以容纳换行。"
+    ],
+    "code": {
+      "html": "<section class=\"vi-text-reveal\" data-revealed=\"false\"><span class=\"vi-text-reveal-label\">一句话，逐渐清楚</span><div class=\"vi-text-reveal-stage\"><p class=\"vi-text-reveal-base\" aria-hidden=\"true\">把想法留在纸上</p><p class=\"vi-text-reveal-message\">把想法变成下一步</p></div><p class=\"vi-text-reveal-note\">点击后查看完整文字。此处只演示文字显现。</p><button type=\"button\" aria-expanded=\"false\">显现文字</button></section>",
+      "css": ".vi-text-reveal,.vi-text-reveal *{box-sizing:border-box}.vi-text-reveal{font-family:\"Segoe UI\",\"Microsoft YaHei\",sans-serif;color:#eaf5fc;line-height:1.6;min-width:0;width:min(100%,720px)}.vi-text-reveal h2,.vi-text-reveal h3,.vi-text-reveal p{margin:0}.vi-text-reveal h2{font-size:clamp(22px,4vw,30px);line-height:1.3;letter-spacing:-.03em}.vi-text-reveal h3{font-size:18px;line-height:1.4}.vi-text-reveal p{color:#b8d2e3;font-size:15px}.vi-text-reveal button,.vi-text-reveal summary,.vi-text-reveal input{font:inherit}.vi-text-reveal button{cursor:pointer;border:1px solid #426981;color:#eaf5fc;background:#193e55;border-radius:10px;padding:10px 16px;min-height:44px}.vi-text-reveal button:hover{background:#245771}.vi-text-reveal button:focus-visible,.vi-text-reveal summary:focus-visible,.vi-text-reveal input:focus-visible,.vi-text-reveal a:focus-visible{outline:3px solid #65dec6;outline-offset:4px}.vi-text-reveal [hidden]{display:none!important}.vi-text-reveal{padding:36px;background:#15374c;border:1px solid #355b70;border-radius:18px}.vi-text-reveal-label{display:block;color:#65dec6;font-size:12px;margin-bottom:24px}.vi-text-reveal-stage{position:relative;padding:30px 0;overflow:hidden}.vi-text-reveal-stage p{font-size:clamp(22px,4vw,32px);font-weight:650;color:#eaf5fc;line-height:1.6}.vi-text-reveal-message{position:absolute;inset:30px 0 auto;color:#b8ffe9!important;clip-path:inset(0 100% 0 0);transition:clip-path .65s ease}.vi-text-reveal-base{transition:opacity .5s ease}.vi-text-reveal[data-revealed=\"true\"] .vi-text-reveal-message{clip-path:inset(0)}.vi-text-reveal[data-revealed=\"true\"] .vi-text-reveal-base{opacity:0}.vi-text-reveal-note{margin-bottom:24px!important;font-size:13px!important}@media(max-width:600px){.vi-text-reveal{padding:28px 22px}.vi-text-reveal-stage p{font-size:23px}}@media(prefers-reduced-motion:reduce){.vi-text-reveal,.vi-text-reveal *,.vi-text-reveal::before,.vi-text-reveal::after,.vi-text-reveal *::before,.vi-text-reveal *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}",
+      "js": "document.querySelectorAll('.vi-text-reveal').forEach(root=>{const button=root.querySelector('button'),message=root.querySelector('.vi-text-reveal-message');message.setAttribute('aria-hidden','true');button.addEventListener('click',()=>{const revealed=root.dataset.revealed!=='true';root.dataset.revealed=String(revealed);button.setAttribute('aria-expanded',String(revealed));button.textContent=revealed?'收起文字':'显现文字';message.setAttribute('aria-hidden',String(!revealed))})});"
+    },
+    "htmlPath": "design-library/components/text-reveal.html",
+    "posterPath": "design-library/previews/component-text-reveal.png"
+  },
+  {
+    "id": "count-up",
+    "title": "可重播计数",
+    "entryId": "c4f971c297eee7bd",
+    "sourceUrl": "https://reactbits.dev/text-animations/count-up",
+    "description": "数字在短时间内递增到目标值，减少动态模式直接显示最终结果。",
+    "layer": "text",
+    "parameters": {
+      "target": "JS target为最终值；建议0–999999整数",
+      "duration": "JS duration毫秒，建议600–1800ms"
+    },
+    "compatibleWith": [
+      "bento-grid",
+      "glass-surface",
+      "gradient-border"
+    ],
+    "conflicts": [],
+    "mobileBehavior": "容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。",
+    "reducedMotion": "减少动态模式重播时立即显示目标值；运行中变更偏好会取消动画并显示最终值。",
+    "limitations": [
+      "依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。",
+      "只支持非负整数；数字是静态演示参数，不代表真实统计。"
+    ],
+    "code": {
+      "html": "<section class=\"vi-count-up\"><span class=\"vi-count-up-label\">数字动画示例</span><p class=\"vi-count-up-number\" aria-label=\"示例目标数值128\"><span class=\"vi-count-up-value\" aria-hidden=\"true\">128</span><span class=\"vi-count-up-unit\">份</span></p><h2>让变化清楚可见</h2><p>128为演示数值，未连接真实学习数据。</p><button type=\"button\">重播计数</button></section>",
+      "css": ".vi-count-up,.vi-count-up *{box-sizing:border-box}.vi-count-up{font-family:\"Segoe UI\",\"Microsoft YaHei\",sans-serif;color:#eaf5fc;line-height:1.6;min-width:0;width:min(100%,720px)}.vi-count-up h2,.vi-count-up h3,.vi-count-up p{margin:0}.vi-count-up h2{font-size:clamp(22px,4vw,30px);line-height:1.3;letter-spacing:-.03em}.vi-count-up h3{font-size:18px;line-height:1.4}.vi-count-up p{color:#b8d2e3;font-size:15px}.vi-count-up button,.vi-count-up summary,.vi-count-up input{font:inherit}.vi-count-up button{cursor:pointer;border:1px solid #426981;color:#eaf5fc;background:#193e55;border-radius:10px;padding:10px 16px;min-height:44px}.vi-count-up button:hover{background:#245771}.vi-count-up button:focus-visible,.vi-count-up summary:focus-visible,.vi-count-up input:focus-visible,.vi-count-up a:focus-visible{outline:3px solid #65dec6;outline-offset:4px}.vi-count-up [hidden]{display:none!important}.vi-count-up{padding:38px;background:#15374c;border:1px solid #355b70;border-radius:18px}.vi-count-up-label{display:block;color:#65dec6;font-size:12px;margin-bottom:22px}.vi-count-up-number{display:flex;align-items:baseline;gap:12px;margin-bottom:22px!important;color:#b8ffea!important}.vi-count-up-value{font-size:clamp(68px,13vw,112px);font-weight:650;line-height:1.1;letter-spacing:-.05em;font-variant-numeric:tabular-nums}.vi-count-up-unit{font-size:19px;color:#a2c6d5}.vi-count-up h2{font-size:25px}.vi-count-up h2+p{margin:12px 0 26px}@media(max-width:600px){.vi-count-up{padding:28px}}@media(prefers-reduced-motion:reduce){.vi-count-up,.vi-count-up *,.vi-count-up::before,.vi-count-up::after,.vi-count-up *::before,.vi-count-up *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}",
+      "js": "document.querySelectorAll('.vi-count-up').forEach(root=>{const output=root.querySelector('.vi-count-up-value'),button=root.querySelector('button'),preference=matchMedia('(prefers-reduced-motion: reduce)');const target=128,duration=1000;let frame=0;const finish=()=>{cancelAnimationFrame(frame);output.textContent=String(target)};const run=()=>{cancelAnimationFrame(frame);if(preference.matches){finish();return}const start=performance.now();output.textContent='0';const tick=now=>{const t=Math.min((now-start)/duration,1);output.textContent=String(Math.round(target*(1-Math.pow(1-t,3))));if(t<1)frame=requestAnimationFrame(tick)};frame=requestAnimationFrame(tick)};button.addEventListener('click',run);preference.addEventListener('change',event=>{if(event.matches)finish()})});"
+    },
+    "htmlPath": "design-library/components/count-up.html",
+    "posterPath": "design-library/previews/component-count-up.png"
+  },
+  {
+    "id": "spotlight-card",
+    "title": "局部柔和光斑",
+    "entryId": "reactbits-spotlight-card",
+    "sourceUrl": "https://reactbits.dev/components/spotlight-card",
+    "description": "光斑跟随鼠标；触屏按钮可固定显示居中光斑。",
+    "layer": "surface",
+    "parameters": {
+      "--vi-spot-size": "光斑半径，建议180–420px",
+      "opacity": "光斑颜色透明度建议8%–20%"
+    },
+    "compatibleWith": [
+      "bento-grid",
+      "tabs",
+      "count-up"
+    ],
+    "conflicts": [
+      "同一元素不要叠加gradient-border或moving-border：它们也使用::before；可将边框放在外层。"
+    ],
+    "mobileBehavior": "容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。",
+    "reducedMotion": "减少动态模式关闭跟随移动与过渡，光斑固定在中心，按钮切换仍有效。",
+    "limitations": [
+      "依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。",
+      "使用单层CSS径向渐变，不含来源React组件的属性系统；光斑位于surface内部。"
+    ],
+    "code": {
+      "html": "<article class=\"vi-spotlight-card\" data-spotlight=\"false\"><span class=\"vi-spotlight-card-label\">聚焦当前内容</span><h2>让注意力停留在这里</h2><p>移动鼠标查看柔和光斑，触屏点击按钮切换。</p><button type=\"button\" aria-pressed=\"false\">切换光斑</button></article>",
+      "css": ".vi-spotlight-card,.vi-spotlight-card *{box-sizing:border-box}.vi-spotlight-card{font-family:\"Segoe UI\",\"Microsoft YaHei\",sans-serif;color:#eaf5fc;line-height:1.6;min-width:0;width:min(100%,720px)}.vi-spotlight-card h2,.vi-spotlight-card h3,.vi-spotlight-card p{margin:0}.vi-spotlight-card h2{font-size:clamp(22px,4vw,30px);line-height:1.3;letter-spacing:-.03em}.vi-spotlight-card h3{font-size:18px;line-height:1.4}.vi-spotlight-card p{color:#b8d2e3;font-size:15px}.vi-spotlight-card button,.vi-spotlight-card summary,.vi-spotlight-card input{font:inherit}.vi-spotlight-card button{cursor:pointer;border:1px solid #426981;color:#eaf5fc;background:#193e55;border-radius:10px;padding:10px 16px;min-height:44px}.vi-spotlight-card button:hover{background:#245771}.vi-spotlight-card button:focus-visible,.vi-spotlight-card summary:focus-visible,.vi-spotlight-card input:focus-visible,.vi-spotlight-card a:focus-visible{outline:3px solid #65dec6;outline-offset:4px}.vi-spotlight-card [hidden]{display:none!important}.vi-spotlight-card{position:relative;isolation:isolate;padding:40px;background:#15374c;border:1px solid #355b70;border-radius:20px;overflow:hidden;--vi-spot-x:50%;--vi-spot-y:50%;--vi-spot-size:340px}.vi-spotlight-card::before{content:'';position:absolute;inset:0;z-index:-1;background:radial-gradient(circle var(--vi-spot-size) at var(--vi-spot-x) var(--vi-spot-y),#5df5ca30,transparent 65%);opacity:0;transition:opacity .3s ease;pointer-events:none}.vi-spotlight-card[data-spotlight=\"true\"]::before,.vi-spotlight-card:focus-within::before{opacity:1}.vi-spotlight-card-label{display:block;font-size:12px;color:#65dec6;margin-bottom:28px}.vi-spotlight-card p{max-width:40ch;margin:20px 0 28px}@media(max-width:600px){.vi-spotlight-card{padding:30px 24px;--vi-spot-size:240px}}@media(prefers-reduced-motion:reduce){.vi-spotlight-card::before{background:radial-gradient(circle 260px at 50% 50%,#5df5ca26,transparent 65%)}}@media(prefers-reduced-motion:reduce){.vi-spotlight-card,.vi-spotlight-card *,.vi-spotlight-card::before,.vi-spotlight-card::after,.vi-spotlight-card *::before,.vi-spotlight-card *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}",
+      "js": "document.querySelectorAll('.vi-spotlight-card').forEach(root=>{const button=root.querySelector('button'),preference=matchMedia('(prefers-reduced-motion: reduce)');let pinned=false;root.addEventListener('pointermove',event=>{if(event.pointerType==='touch'||preference.matches)return;const rect=root.getBoundingClientRect();root.style.setProperty('--vi-spot-x',event.clientX-rect.left+'px');root.style.setProperty('--vi-spot-y',event.clientY-rect.top+'px');root.dataset.spotlight='true'});root.addEventListener('pointerleave',()=>root.dataset.spotlight=String(pinned));button.addEventListener('click',()=>{pinned=!pinned;root.style.setProperty('--vi-spot-x','50%');root.style.setProperty('--vi-spot-y','50%');root.dataset.spotlight=String(pinned);button.setAttribute('aria-pressed',String(pinned))})});"
+    },
+    "htmlPath": "design-library/components/spotlight-card.html",
+    "posterPath": "design-library/previews/component-spotlight-card.png"
+  },
+  {
+    "id": "glass-surface",
+    "title": "独立玻璃表面",
+    "entryId": "reactbits-glass-surface",
+    "sourceUrl": "https://reactbits.dev/components/glass-surface",
+    "description": "半透明内层与背景模糊可单独使用，也可组合外缘渐变。",
+    "layer": "surface",
+    "parameters": {
+      "--vi-glass-blur": "背景模糊默认18px，建议8–24px",
+      "alpha": "rgba背景透明度0.42，建议0.25–0.65"
+    },
+    "compatibleWith": [
+      "gradient-border",
+      "moving-border",
+      "bento-grid",
+      "expandable-card"
+    ],
+    "conflicts": [
+      "同一surface不要设置不透明background或整面渐变，否则背景透射效果消失。",
+      "不与spotlight-card同时放在同一元素；光斑应放在独立内层。"
+    ],
+    "mobileBehavior": "容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。",
+    "reducedMotion": "系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。",
+    "limitations": [
+      "依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。",
+      "采用CSS backdrop-filter基础玻璃，不包含来源组件的SVG折射、位移滤镜或光学真实感。",
+      "需要背景内容才能看出模糊；纯色背景的效果较弱。",
+      "与gradient-border组合时，在同一节点添加两组类；边框只由掏空伪元素绘制。"
+    ],
+    "code": {
+      "html": "<article class=\"vi-glass-surface\"><span class=\"vi-glass-surface-label\">半透明表面</span><h2>内容安静地浮在背景上</h2><p>内层保持半透明，背景模糊与边缘效果可以分别调整。</p><div class=\"vi-glass-surface-chips\"><span>课程安排</span><span>资料归档</span><span>继续学习</span></div></article>",
+      "css": ".vi-glass-surface,.vi-glass-surface *{box-sizing:border-box}.vi-glass-surface{font-family:\"Segoe UI\",\"Microsoft YaHei\",sans-serif;color:#eaf5fc;line-height:1.6;min-width:0;width:min(100%,720px)}.vi-glass-surface h2,.vi-glass-surface h3,.vi-glass-surface p{margin:0}.vi-glass-surface h2{font-size:clamp(22px,4vw,30px);line-height:1.3;letter-spacing:-.03em}.vi-glass-surface h3{font-size:18px;line-height:1.4}.vi-glass-surface p{color:#b8d2e3;font-size:15px}.vi-glass-surface button,.vi-glass-surface summary,.vi-glass-surface input{font:inherit}.vi-glass-surface button{cursor:pointer;border:1px solid #426981;color:#eaf5fc;background:#193e55;border-radius:10px;padding:10px 16px;min-height:44px}.vi-glass-surface button:hover{background:#245771}.vi-glass-surface button:focus-visible,.vi-glass-surface summary:focus-visible,.vi-glass-surface input:focus-visible,.vi-glass-surface a:focus-visible{outline:3px solid #65dec6;outline-offset:4px}.vi-glass-surface [hidden]{display:none!important}.vi-glass-surface{position:relative;isolation:isolate;border-radius:22px;padding:40px;border:1px solid #c9f2ff42;background:rgba(34,77,98,.42);background-image:none;backdrop-filter:blur(var(--vi-glass-blur,18px)) saturate(125%);-webkit-backdrop-filter:blur(var(--vi-glass-blur,18px)) saturate(125%);box-shadow:0 14px 42px #03182730}.vi-glass-surface-label{display:block;color:#9dffe5;font-size:12px;margin-bottom:28px}.vi-glass-surface p{color:#d1e7ee;margin-top:20px;max-width:42ch}.vi-glass-surface-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}.vi-glass-surface-chips span{padding:8px 14px;border:1px solid #c9f2ff40;background:#d4f5ff0b;border-radius:999px;color:#d6f5f4;font-size:13px}@supports not(backdrop-filter:blur(1px)){.vi-glass-surface{background:rgba(24,61,81,.94)}}@media(max-width:600px){.vi-glass-surface{padding:30px 24px;--vi-glass-blur:12px}}@media(prefers-reduced-motion:reduce){.vi-glass-surface,.vi-glass-surface *,.vi-glass-surface::before,.vi-glass-surface::after,.vi-glass-surface *::before,.vi-glass-surface *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}",
+      "js": ""
+    },
+    "htmlPath": "design-library/components/glass-surface.html",
+    "posterPath": "design-library/previews/component-glass-surface.png"
+  },
+  {
+    "id": "gradient-border",
+    "title": "独立渐变边框",
+    "entryId": "1308b95cc6b190d9",
+    "sourceUrl": "https://ui.aceternity.com/components/hover-border-gradient",
+    "description": "用掏空伪元素只绘制边缘，保持内容表面颜色与透明度。",
+    "layer": "border",
+    "parameters": {
+      "--vi-border-width": "边框宽度默认2px，建议1–4px",
+      "--vi-border-color-a": "渐变起点色，建议与surface保持足够区分",
+      "--vi-border-color-b": "渐变终点色，可替换为品牌辅色"
+    },
+    "compatibleWith": [
+      "glass-surface",
+      "bento-grid",
+      "expandable-card",
+      "count-up",
+      "tabs"
+    ],
+    "conflicts": [
+      "同一元素不要与moving-border或spotlight-card共用：它们都占用::before。",
+      "不要用整面background-image实现边框，否则会覆盖玻璃surface。"
+    ],
+    "mobileBehavior": "容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。",
+    "reducedMotion": "系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。",
+    "limitations": [
+      "依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。",
+      "需要支持CSS mask-composite的现代浏览器；不使用来源组件的旋转追光算法。",
+      "片段不设置surface背景，可与glass-surface类直接叠加。"
+    ],
+    "code": {
+      "html": "<article class=\"vi-gradient-border\"><span class=\"vi-gradient-border-label\">只给边缘一点色彩</span><h2>内层由你决定</h2><p>这个渐变只出现在边缘；可以叠加在玻璃表面上。</p><div class=\"vi-gradient-border-sample\">内容区域保持透明</div></article>",
+      "css": ".vi-gradient-border,.vi-gradient-border *{box-sizing:border-box}.vi-gradient-border{font-family:\"Segoe UI\",\"Microsoft YaHei\",sans-serif;color:#eaf5fc;line-height:1.6;min-width:0;width:min(100%,720px)}.vi-gradient-border h2,.vi-gradient-border h3,.vi-gradient-border p{margin:0}.vi-gradient-border h2{font-size:clamp(22px,4vw,30px);line-height:1.3;letter-spacing:-.03em}.vi-gradient-border h3{font-size:18px;line-height:1.4}.vi-gradient-border p{color:#b8d2e3;font-size:15px}.vi-gradient-border button,.vi-gradient-border summary,.vi-gradient-border input{font:inherit}.vi-gradient-border button{cursor:pointer;border:1px solid #426981;color:#eaf5fc;background:#193e55;border-radius:10px;padding:10px 16px;min-height:44px}.vi-gradient-border button:hover{background:#245771}.vi-gradient-border button:focus-visible,.vi-gradient-border summary:focus-visible,.vi-gradient-border input:focus-visible,.vi-gradient-border a:focus-visible{outline:3px solid #65dec6;outline-offset:4px}.vi-gradient-border [hidden]{display:none!important}.vi-gradient-border{position:relative;isolation:isolate;border-radius:22px;padding:40px;--vi-border-width:2px;--vi-border-color-a:#73e7ce;--vi-border-color-b:#72b7ec}.vi-gradient-border::before{content:'';position:absolute;inset:0;border-radius:inherit;padding:var(--vi-border-width);background:linear-gradient(130deg,var(--vi-border-color-a),#467c9b 42%,var(--vi-border-color-b));-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;z-index:0;opacity:.7;transition:opacity .2s ease}.vi-gradient-border:hover::before,.vi-gradient-border:focus-within::before{opacity:1}.vi-gradient-border>*{position:relative;z-index:1}.vi-gradient-border-label{display:block;color:#9dffe5;font-size:12px;margin-bottom:28px}.vi-gradient-border p{margin-top:20px;max-width:42ch}.vi-gradient-border-sample{margin-top:28px;padding-top:22px;border-top:1px solid #557488;font-size:13px;color:#b7d1df}@media(max-width:600px){.vi-gradient-border{padding:30px 24px}}@media(prefers-reduced-motion:reduce){.vi-gradient-border,.vi-gradient-border *,.vi-gradient-border::before,.vi-gradient-border::after,.vi-gradient-border *::before,.vi-gradient-border *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}",
+      "js": ""
+    },
+    "htmlPath": "design-library/components/gradient-border.html",
+    "posterPath": "design-library/previews/component-gradient-border.png"
+  },
+  {
+    "id": "moving-border",
+    "title": "边缘移动高光",
+    "entryId": "4cd98644135d8a31",
+    "sourceUrl": "https://ui.aceternity.com/components/moving-border",
+    "description": "高光沿掏空边缘移动，内部表面保持独立。",
+    "layer": "border",
+    "parameters": {
+      "--vi-moving-border-width": "边框宽度2px，建议1–4px",
+      "--vi-moving-border-speed": "高光周期4s，建议3–10s"
+    },
+    "compatibleWith": [
+      "glass-surface",
+      "bento-grid",
+      "expandable-card"
+    ],
+    "conflicts": [
+      "同一元素不要与gradient-border或spotlight-card共用：它们都占用::before。"
+    ],
+    "mobileBehavior": "容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。",
+    "reducedMotion": "系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。",
+    "limitations": [
+      "依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。",
+      "适配为渐变沿边缘平移，不复刻来源组件的SVG路径匀速绕行。",
+      "持续动画适合少量重点卡片，不建议每张列表卡都启用。"
+    ],
+    "code": {
+      "html": "<article class=\"vi-moving-border\"><span class=\"vi-moving-border-label\">边缘上的轻微运动</span><h2>高光经过，内容留下</h2><p>持续运动仅位于边框，减少动态模式下保持静态。</p><span class=\"vi-moving-border-note\">可与玻璃表面组合</span></article>",
+      "css": ".vi-moving-border,.vi-moving-border *{box-sizing:border-box}.vi-moving-border{font-family:\"Segoe UI\",\"Microsoft YaHei\",sans-serif;color:#eaf5fc;line-height:1.6;min-width:0;width:min(100%,720px)}.vi-moving-border h2,.vi-moving-border h3,.vi-moving-border p{margin:0}.vi-moving-border h2{font-size:clamp(22px,4vw,30px);line-height:1.3;letter-spacing:-.03em}.vi-moving-border h3{font-size:18px;line-height:1.4}.vi-moving-border p{color:#b8d2e3;font-size:15px}.vi-moving-border button,.vi-moving-border summary,.vi-moving-border input{font:inherit}.vi-moving-border button{cursor:pointer;border:1px solid #426981;color:#eaf5fc;background:#193e55;border-radius:10px;padding:10px 16px;min-height:44px}.vi-moving-border button:hover{background:#245771}.vi-moving-border button:focus-visible,.vi-moving-border summary:focus-visible,.vi-moving-border input:focus-visible,.vi-moving-border a:focus-visible{outline:3px solid #65dec6;outline-offset:4px}.vi-moving-border [hidden]{display:none!important}.vi-moving-border{position:relative;isolation:isolate;border-radius:22px;padding:40px;--vi-moving-border-width:2px;--vi-moving-border-speed:4s}.vi-moving-border::before{content:'';position:absolute;inset:0;border-radius:inherit;padding:var(--vi-moving-border-width);background:linear-gradient(105deg,#3b637d 15%,#9bffe5 28%,#639ed4 38%,#3b637d 48%,#3b637d 65%,#9bffe5 78%,#639ed4 88%,#3b637d);background-size:200% 100%;-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;animation:vi-moving-border-flow var(--vi-moving-border-speed) linear infinite;z-index:0}.vi-moving-border>*{position:relative;z-index:1}.vi-moving-border-label{display:block;color:#9dffe5;font-size:12px;margin-bottom:28px}.vi-moving-border p{margin-top:20px;max-width:42ch}.vi-moving-border-note{display:inline-block;margin-top:30px;padding:8px 14px;border:1px solid #476d7f;border-radius:999px;font-size:12px;color:#c1e4e3}@keyframes vi-moving-border-flow{from{background-position:0 50%}to{background-position:200% 50%}}@media(max-width:600px){.vi-moving-border{padding:30px 24px}}@media(prefers-reduced-motion:reduce){.vi-moving-border,.vi-moving-border *,.vi-moving-border::before,.vi-moving-border::after,.vi-moving-border *::before,.vi-moving-border *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}",
+      "js": ""
+    },
+    "htmlPath": "design-library/components/moving-border.html",
+    "posterPath": "design-library/previews/component-moving-border.png"
+  },
+  {
+    "id": "expandable-card",
+    "title": "就地展开卡片",
+    "entryId": "aceternity-layout-grid",
+    "sourceUrl": "https://ui.aceternity.com/components/layout-grid",
+    "description": "在卡片内展开项目说明，保持列表位置和用户上下文。",
+    "layer": "content",
+    "parameters": {
+      "artWidth": "桌面视觉区域220px，建议160–260px；手机单独一行"
+    },
+    "compatibleWith": [
+      "glass-surface",
+      "gradient-border",
+      "moving-border",
+      "bento-grid"
+    ],
+    "conflicts": [],
+    "mobileBehavior": "容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。",
+    "reducedMotion": "系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。",
+    "limitations": [
+      "依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。",
+      "参考Layout Grid的点击聚焦方向，适配为就地展开；不包含全屏网格变形、共享元素过渡或图片查看器。"
+    ],
+    "code": {
+      "html": "<article class=\"vi-expandable-card\"><div class=\"vi-expandable-card-art\" aria-hidden=\"true\"><span>学</span><i></i></div><div class=\"vi-expandable-card-content\"><span class=\"vi-expandable-card-label\">课程项目</span><h2>让下一步更明确</h2><p>用一张卡片保存项目入口与简要说明。</p><button type=\"button\" aria-expanded=\"false\">展开项目</button><section class=\"vi-expandable-card-details\" data-details hidden><h3>项目说明</h3><p>这是一个就地展开的本地示例。展开区域可用于补充介绍、使用步骤或素材说明。</p><p>当前未连接真实项目数据，也不执行打开课程或提交操作。</p></section></div></article>",
+      "css": ".vi-expandable-card,.vi-expandable-card *{box-sizing:border-box}.vi-expandable-card{font-family:\"Segoe UI\",\"Microsoft YaHei\",sans-serif;color:#eaf5fc;line-height:1.6;min-width:0;width:min(100%,720px)}.vi-expandable-card h2,.vi-expandable-card h3,.vi-expandable-card p{margin:0}.vi-expandable-card h2{font-size:clamp(22px,4vw,30px);line-height:1.3;letter-spacing:-.03em}.vi-expandable-card h3{font-size:18px;line-height:1.4}.vi-expandable-card p{color:#b8d2e3;font-size:15px}.vi-expandable-card button,.vi-expandable-card summary,.vi-expandable-card input{font:inherit}.vi-expandable-card button{cursor:pointer;border:1px solid #426981;color:#eaf5fc;background:#193e55;border-radius:10px;padding:10px 16px;min-height:44px}.vi-expandable-card button:hover{background:#245771}.vi-expandable-card button:focus-visible,.vi-expandable-card summary:focus-visible,.vi-expandable-card input:focus-visible,.vi-expandable-card a:focus-visible{outline:3px solid #65dec6;outline-offset:4px}.vi-expandable-card [hidden]{display:none!important}.vi-expandable-card{display:grid;grid-template-columns:220px minmax(0,1fr);border:1px solid #355b70;border-radius:20px;background:#15374c;overflow:hidden}.vi-expandable-card-art{position:relative;display:grid;place-items:center;background:linear-gradient(145deg,#2d7176,#174360);overflow:hidden;min-height:320px}.vi-expandable-card-art>span{font-size:100px;color:#adffe5;font-weight:300;z-index:1}.vi-expandable-card-art i{position:absolute;width:180px;height:180px;border:1px solid #80ead488;border-radius:50%;transform:rotate(-20deg) scaleX(.5)}.vi-expandable-card-content{padding:32px;min-width:0}.vi-expandable-card-label{display:block;color:#65dec6;font-size:12px;margin-bottom:18px}.vi-expandable-card-content>p{margin:16px 0 22px}.vi-expandable-card-details{margin-top:24px;padding-top:22px;border-top:1px solid #355b70;animation:vi-expandable-card-enter .25s ease}.vi-expandable-card-details p{margin-top:12px;font-size:14px}@keyframes vi-expandable-card-enter{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}@media(max-width:600px){.vi-expandable-card{grid-template-columns:1fr}.vi-expandable-card-art{min-height:155px}.vi-expandable-card-art>span{font-size:68px}.vi-expandable-card-content{padding:26px 22px}}@media(prefers-reduced-motion:reduce){.vi-expandable-card,.vi-expandable-card *,.vi-expandable-card::before,.vi-expandable-card::after,.vi-expandable-card *::before,.vi-expandable-card *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}",
+      "js": "document.querySelectorAll('.vi-expandable-card').forEach((root,index)=>{const button=root.querySelector('button'),details=root.querySelector('[data-details]');details.id='vi-expandable-card-details-'+index;button.setAttribute('aria-controls',details.id);button.addEventListener('click',()=>{const expanded=button.getAttribute('aria-expanded')!=='true';button.setAttribute('aria-expanded',String(expanded));button.textContent=expanded?'收起项目':'展开项目';details.hidden=!expanded})});"
+    },
+    "htmlPath": "design-library/components/expandable-card.html",
+    "posterPath": "design-library/previews/component-expandable-card.png"
+  },
+  {
+    "id": "timeline",
+    "title": "简洁步骤时间线",
+    "entryId": "aceternity-timeline",
+    "sourceUrl": "https://ui.aceternity.com/components/timeline",
+    "description": "使用有序列表表达真实先后顺序，手机保持清晰的一列。",
+    "layer": "content",
+    "parameters": {
+      "gap": "步骤间距30px，建议24–48px"
+    },
+    "compatibleWith": [
+      "sidebar",
+      "scroll-reveal",
+      "glass-surface",
+      "bento-grid"
+    ],
+    "conflicts": [],
+    "mobileBehavior": "容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。",
+    "reducedMotion": "系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。",
+    "limitations": [
+      "依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。",
+      "只表达静态先后步骤，不包含来源组件的滚动进度追踪、粘性年份或远程数据。"
+    ],
+    "code": {
+      "html": "<section class=\"vi-timeline\" aria-label=\"项目准备步骤\"><h2>从资料到预览</h2><p class=\"vi-timeline-intro\">静态步骤示例，按顺序准备项目。</p><ol><li><span class=\"vi-timeline-marker\" aria-hidden=\"true\">1</span><div><span class=\"vi-timeline-time\">第一步</span><h3>整理现有资料</h3><p>确认需要的文字、课程封面与说明文件。</p></div></li><li><span class=\"vi-timeline-marker\" aria-hidden=\"true\">2</span><div><span class=\"vi-timeline-time\">第二步</span><h3>选择合适的结构</h3><p>按内容关系选择网格、列表或时间线。</p></div></li><li><span class=\"vi-timeline-marker\" aria-hidden=\"true\">3</span><div><span class=\"vi-timeline-time\">第三步</span><h3>查看并验证预览</h3><p>检查手机布局和关键操作，再接入业务数据。</p></div></li></ol></section>",
+      "css": ".vi-timeline,.vi-timeline *{box-sizing:border-box}.vi-timeline{font-family:\"Segoe UI\",\"Microsoft YaHei\",sans-serif;color:#eaf5fc;line-height:1.6;min-width:0;width:min(100%,720px)}.vi-timeline h2,.vi-timeline h3,.vi-timeline p{margin:0}.vi-timeline h2{font-size:clamp(22px,4vw,30px);line-height:1.3;letter-spacing:-.03em}.vi-timeline h3{font-size:18px;line-height:1.4}.vi-timeline p{color:#b8d2e3;font-size:15px}.vi-timeline button,.vi-timeline summary,.vi-timeline input{font:inherit}.vi-timeline button{cursor:pointer;border:1px solid #426981;color:#eaf5fc;background:#193e55;border-radius:10px;padding:10px 16px;min-height:44px}.vi-timeline button:hover{background:#245771}.vi-timeline button:focus-visible,.vi-timeline summary:focus-visible,.vi-timeline input:focus-visible,.vi-timeline a:focus-visible{outline:3px solid #65dec6;outline-offset:4px}.vi-timeline [hidden]{display:none!important}.vi-timeline{padding:34px;background:#15374c;border:1px solid #355b70;border-radius:18px}.vi-timeline-intro{margin:14px 0 30px!important}.vi-timeline ol{list-style:none;margin:0;padding:0}.vi-timeline li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:22px;position:relative;padding-bottom:30px}.vi-timeline li:last-child{padding-bottom:0}.vi-timeline li:not(:last-child)::after{content:'';position:absolute;left:21px;top:44px;bottom:0;width:2px;background:#3f7384}.vi-timeline-marker{display:grid;place-items:center;width:44px;height:44px;background:#285963;border:1px solid #73b7b7;border-radius:50%;color:#baffed;font-size:14px}.vi-timeline-time{display:block;font-size:12px;color:#65dec6;margin-bottom:5px}.vi-timeline li p{margin-top:10px;font-size:14px}@media(max-width:600px){.vi-timeline{padding:26px 22px}.vi-timeline li{gap:16px;grid-template-columns:38px minmax(0,1fr)}.vi-timeline-marker{width:38px;height:38px}.vi-timeline li:not(:last-child)::after{left:18px;top:38px}}@media(prefers-reduced-motion:reduce){.vi-timeline,.vi-timeline *,.vi-timeline::before,.vi-timeline::after,.vi-timeline *::before,.vi-timeline *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}",
+      "js": ""
+    },
+    "htmlPath": "design-library/components/timeline.html",
+    "posterPath": "design-library/previews/component-timeline.png"
+  }
+]

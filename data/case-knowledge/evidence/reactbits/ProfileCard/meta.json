@@ -1,0 +1,21 @@
+{
+  "entryId": "356c34ccaf53edf1",
+  "sourceUrl": "https://reactbits.dev/components/profile-card",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/ProfileCard-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/ProfileCard/ProfileCard.jsx",
+  "checkedAt": "2026-10-25T07:53:04.592Z",
+  "sha256": "a2cd4728e455f68a6a19fe337684999c614f0a93ffcfa8be356104a583d35273",
+  "files": [
+    {
+      "path": "ProfileCard.css",
+      "sha256": "94db24aa7374663aab27abac8983d5a1905c74b4d7ae10616e1b7ae0fcde9bc9",
+      "bytes": 8471
+    },
+    {
+      "path": "ProfileCard.jsx",
+      "sha256": "868467668f738b5652ecd47be924d47384715b42e917a59e0000bf8c4a98d7f2",
+      "bytes": 13157
+    }
+  ]
+}

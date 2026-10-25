@@ -1,0 +1,21 @@
+{
+  "entryId": "c192c5b4ab1389f2",
+  "sourceUrl": "https://reactbits.dev/backgrounds/plasma-wave",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/PlasmaWave-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/PlasmaWave/PlasmaWave.jsx",
+  "checkedAt": "2026-10-25T07:53:09.478Z",
+  "sha256": "f4f7f3c351195ffdef11b5ff81a03f5d5e01e6acea7422e64b2fd75c55f19b59",
+  "files": [
+    {
+      "path": "PlasmaWave.css",
+      "sha256": "deb47dca58611d25d752c6e15f5c863597b3dd3614fc4edd3a357076693bf0f9",
+      "bytes": 208
+    },
+    {
+      "path": "PlasmaWave.jsx",
+      "sha256": "c13309f02839d4578afb1663aca27281d86769d4875e6a6119311bce4d121b9e",
+      "bytes": 22627
+    }
+  ]
+}

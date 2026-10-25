@@ -1,0 +1,21 @@
+{
+  "entryId": "a84dfef1365dc129",
+  "sourceUrl": "https://reactbits.dev/backgrounds/dark-veil",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/DarkVeil-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/DarkVeil/DarkVeil.jsx",
+  "checkedAt": "2026-10-25T07:53:07.976Z",
+  "sha256": "a446eee388f7c0a5ff83b313e99fa4300fa72d33dfd13594f328bb82b7d73733",
+  "files": [
+    {
+      "path": "DarkVeil.css",
+      "sha256": "222eb48619680a858be5b6553d451a7630cd12b65e98bc24a025fc367df6d769",
+      "bytes": 204
+    },
+    {
+      "path": "DarkVeil.jsx",
+      "sha256": "7b3c0152d4bf406e1b5f58e39607b343662fb37c7630f230a8d837889092b82d",
+      "bytes": 26398
+    }
+  ]
+}

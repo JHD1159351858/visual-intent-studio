@@ -1,0 +1,16 @@
+{
+  "entryId": "8877752f1de65291",
+  "sourceUrl": "https://reactbits.dev/text-animations/fuzzy-text",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/FuzzyText-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/FuzzyText/FuzzyText.jsx",
+  "checkedAt": "2026-10-25T07:52:55.472Z",
+  "sha256": "2133e682f3539c628b461d17f8aaef2c613c59c49e927f587a7e252044a0ab25",
+  "files": [
+    {
+      "path": "FuzzyText/FuzzyText.jsx",
+      "sha256": "c3187a149fcfc88f4c2481f9b7dbb2a47645abc0962aa56a50963a15ccc35f86",
+      "bytes": 11166
+    }
+  ]
+}

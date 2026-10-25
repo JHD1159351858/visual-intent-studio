@@ -1,0 +1,16 @@
+{
+  "entryId": "d93c32ef8d8c64d7",
+  "sourceUrl": "https://reactbits.dev/backgrounds/antigravity",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Antigravity-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/Antigravity/Antigravity.jsx",
+  "checkedAt": "2026-10-25T07:52:59.292Z",
+  "sha256": "d419244922aba03d950f57be24ad86cec8c86dbd6734bb6f318587b049179bbe",
+  "files": [
+    {
+      "path": "Antigravity/Antigravity.jsx",
+      "sha256": "eb6d1f1c289e57278a3508b21002f8d4f9b5854eaeab6da23e4ff393db8abf6f",
+      "bytes": 5587
+    }
+  ]
+}

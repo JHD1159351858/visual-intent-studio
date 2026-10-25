@@ -1,0 +1,21 @@
+{
+  "entryId": "01d55334d91cbac4",
+  "sourceUrl": "https://reactbits.dev/micro/warm-tooltip",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/WarmTooltip-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/WarmTooltip/WarmTooltip.jsx",
+  "checkedAt": "2026-10-25T07:53:15.730Z",
+  "sha256": "6e18db0ad81ff4154f4c33e7886c4bd5b8c7c419b0fc54deb463c268aa8b6050",
+  "files": [
+    {
+      "path": "WarmTooltip.css",
+      "sha256": "241941731b1a83626caa3df16bb535e55ece65591154d5eac4ea9c5e3e940386",
+      "bytes": 3398
+    },
+    {
+      "path": "WarmTooltip.jsx",
+      "sha256": "bec4e1fa39b681da5b4e88bde945f374bb87fe734ef745ab44ca82f8ac1bdcba",
+      "bytes": 17609
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "entryId": "f9e52b85f5bfc88a",
+  "sourceUrl": "https://reactbits.dev/backgrounds/particles",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Particles-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Particles/Particles.jsx",
+  "checkedAt": "2026-10-25T07:53:09.544Z",
+  "sha256": "580a03c3cb3fdd30bde8e0112709b4f51345c378da7e9121679c768c6b61c8fc",
+  "files": [
+    {
+      "path": "Particles.css",
+      "sha256": "13108261d7541ade64a60fb850f901a80cc81329b98d1b6c07b5861dc8fa2401",
+      "bytes": 204
+    },
+    {
+      "path": "Particles.jsx",
+      "sha256": "e7854d178e283b25fb537b6ba0c75f0f935665e7cf7c98ee3f98f79dc4428ef5",
+      "bytes": 31728
+    }
+  ]
+}

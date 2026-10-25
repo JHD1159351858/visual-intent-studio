@@ -1,0 +1,21 @@
+{
+  "entryId": "321f1184c636898d",
+  "sourceUrl": "https://reactbits.dev/components/dome-gallery",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/DomeGallery-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/DomeGallery/DomeGallery.jsx",
+  "checkedAt": "2026-10-25T07:53:04.083Z",
+  "sha256": "27c4362e7092f208f854c2ee667ee12f11788f345389d9dd893e2c2fc48fe8d6",
+  "files": [
+    {
+      "path": "DomeGallery.css",
+      "sha256": "0cc558088e3fb03315e5c3c0c28098b189f904a723c8ff5624f7d7b70b7e1321",
+      "bytes": 4152
+    },
+    {
+      "path": "DomeGallery.jsx",
+      "sha256": "c4a75dc75cdfa47fdbf2943c3b7d00e8eb7a8695fbbaa3819699c7e35a16a5fc",
+      "bytes": 24888
+    }
+  ]
+}

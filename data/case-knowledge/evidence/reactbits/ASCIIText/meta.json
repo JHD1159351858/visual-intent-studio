@@ -1,0 +1,16 @@
+{
+  "entryId": "8b719de8172ed16c",
+  "sourceUrl": "https://reactbits.dev/text-animations/ascii-text",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/ASCIIText-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/ASCIIText/ASCIIText.jsx",
+  "checkedAt": "2026-10-25T07:52:56.367Z",
+  "sha256": "7a60555bf2894ebc465b9f9bb86f1e4af74076d21ca8e38e945b45cb3e0a5056",
+  "files": [
+    {
+      "path": "ASCIIText/ASCIIText.jsx",
+      "sha256": "540508ffc96917d45a4df976caa9aa52bf03372fb77284cddbeeb8d844b94fb7",
+      "bytes": 19812
+    }
+  ]
+}

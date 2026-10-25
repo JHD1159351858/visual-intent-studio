@@ -1,0 +1,21 @@
+{
+  "entryId": "612ce5b16d2f0edf",
+  "sourceUrl": "https://reactbits.dev/components/pixel-card",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/PixelCard-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/PixelCard/PixelCard.jsx",
+  "checkedAt": "2026-10-25T07:53:05.081Z",
+  "sha256": "fa027f6e46d95160ac27c078f530c53d2c40c2e1b6cabd93f323a5422cdc428a",
+  "files": [
+    {
+      "path": "PixelCard.css",
+      "sha256": "aa76b07b6bf13f74443b28afb18242261e6ad07559f8a7e3110fb2fe794bf5a5",
+      "bytes": 1829
+    },
+    {
+      "path": "PixelCard.jsx",
+      "sha256": "e442796748a563c792eff90a8bf2b816ea99726877e7c31ba6a086ab7547ee00",
+      "bytes": 20041
+    }
+  ]
+}

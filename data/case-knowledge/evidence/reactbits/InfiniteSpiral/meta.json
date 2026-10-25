@@ -1,0 +1,21 @@
+{
+  "entryId": "1e1931c26a201a92",
+  "sourceUrl": "https://reactbits.dev/components/infinite-spiral",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/InfiniteSpiral-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/InfiniteSpiral/InfiniteSpiral.jsx",
+  "checkedAt": "2026-10-25T07:53:02.160Z",
+  "sha256": "f4602c833525ad049bff29f07cc3c866dbb77cd329b9ece68b5e0603481adaba",
+  "files": [
+    {
+      "path": "InfiniteSpiral.css",
+      "sha256": "3941a7cb3f9cb8024a968cc427d8be780dc0d57c6341cabe7eb97b19d334030b",
+      "bytes": 1006
+    },
+    {
+      "path": "InfiniteSpiral.jsx",
+      "sha256": "f663ffee5c5c8977db400c2d83b53cafbd90ef1d6c981a47b3bce6bce15a29cc",
+      "bytes": 9616
+    }
+  ]
+}

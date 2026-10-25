@@ -1,0 +1,21 @@
+{
+  "entryId": "79251d5621b2156c",
+  "sourceUrl": "https://reactbits.dev/text-animations/depth-text",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/DepthText-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/DepthText/DepthText.jsx",
+  "checkedAt": "2026-10-25T07:52:54.484Z",
+  "sha256": "9e8b33f2e2064b8a2640dbd23ac117090bfb55e076a2761579b8390aed72b462",
+  "files": [
+    {
+      "path": "DepthText.css",
+      "sha256": "9fa304ab16d3eb57f88709b7ff73ba43864bac1cf37d7a43a298a761807379b2",
+      "bytes": 1255
+    },
+    {
+      "path": "DepthText.jsx",
+      "sha256": "76260b35066240cc44e91868bcb6d7f048e8d96b042cb0c67e035a2dd8f50a67",
+      "bytes": 5673
+    }
+  ]
+}

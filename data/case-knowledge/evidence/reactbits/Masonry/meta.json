@@ -1,0 +1,21 @@
+{
+  "entryId": "0359369419ce0f38",
+  "sourceUrl": "https://reactbits.dev/components/masonry",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Masonry-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/Masonry/Masonry.jsx",
+  "checkedAt": "2026-10-25T07:53:04.035Z",
+  "sha256": "4303f0bef7ace732d39840c666cac73c686be770b5f128a801aba0172d8a741b",
+  "files": [
+    {
+      "path": "Masonry.css",
+      "sha256": "36e677d7683bc2c2458abafc269da8fa8bf441bfcffcc4bf69bf2949fbdc5804",
+      "bytes": 504
+    },
+    {
+      "path": "Masonry.jsx",
+      "sha256": "973ccde5ecd8981d7e7f0e29945a4f101cb29619d0f8b9dca23df0d581c8eafa",
+      "bytes": 6829
+    }
+  ]
+}

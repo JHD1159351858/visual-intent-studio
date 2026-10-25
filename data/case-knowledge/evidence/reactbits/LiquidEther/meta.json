@@ -1,0 +1,21 @@
+{
+  "entryId": "08ea2449be06f172",
+  "sourceUrl": "https://reactbits.dev/backgrounds/liquid-ether",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/LiquidEther-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/LiquidEther/LiquidEther.jsx",
+  "checkedAt": "2026-10-25T07:53:07.876Z",
+  "sha256": "fe6df3cd72cc4e0fd39e009870710f8ef71b715a50ac636743df1492f82eb247",
+  "files": [
+    {
+      "path": "LiquidEther.css",
+      "sha256": "c437ec9365c14e6df7b53051cf720e01c4edd10fcdcea0b2f254a7b8584046f2",
+      "bytes": 123
+    },
+    {
+      "path": "LiquidEther.jsx",
+      "sha256": "c0143f6b858c49024c36bc8cc5c7881ec5ce7b3541c63d461f382a2256e1b0c0",
+      "bytes": 38037
+    }
+  ]
+}

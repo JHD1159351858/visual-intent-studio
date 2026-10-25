@@ -1,0 +1,134 @@
+[
+  {
+    "id": "aceternity-bento-grid",
+    "sourceUrl": "https://ui.aceternity.com/components/bento-grid",
+    "implementationUrl": "https://ui.aceternity.com/registry/bento-grid.json",
+    "fetchedCodeUrl": "https://ui.aceternity.com/registry/bento-grid.json",
+    "httpStatus": 200,
+    "fetchedAt": "2026-10-12T03:52:14.021Z",
+    "sha256": "9d988ea63b4209b65e386aa26dba37005d67667e122184c8905b6d31eda32482",
+    "bytes": 1728,
+    "copiedIntoDemo": false
+  },
+  {
+    "id": "aceternity-layout-grid",
+    "sourceUrl": "https://ui.aceternity.com/components/layout-grid",
+    "implementationUrl": "https://ui.aceternity.com/registry/layout-grid.json",
+    "fetchedCodeUrl": "https://ui.aceternity.com/registry/layout-grid.json",
+    "httpStatus": 200,
+    "fetchedAt": "2026-10-12T03:52:14.209Z",
+    "sha256": "234bfebc536af7cc6725cdb7c6ffa7270171c06a34c7ee0941ecbb2c58c2f6dc",
+    "bytes": 3638,
+    "copiedIntoDemo": false
+  },
+  {
+    "id": "aceternity-sidebar",
+    "sourceUrl": "https://ui.aceternity.com/components/sidebar",
+    "implementationUrl": "https://ui.aceternity.com/registry/sidebar.json",
+    "fetchedCodeUrl": "https://ui.aceternity.com/registry/sidebar.json",
+    "httpStatus": 200,
+    "fetchedAt": "2026-10-12T03:52:14.383Z",
+    "sha256": "df9cbde825e234d19b781c9595c63037decd86714a28ce7a2e3eb6403146877b",
+    "bytes": 5308,
+    "copiedIntoDemo": false
+  },
+  {
+    "id": "aceternity-timeline",
+    "sourceUrl": "https://ui.aceternity.com/components/timeline",
+    "implementationUrl": "https://ui.aceternity.com/registry/timeline.json",
+    "fetchedCodeUrl": "https://ui.aceternity.com/registry/timeline.json",
+    "httpStatus": 200,
+    "fetchedAt": "2026-10-12T03:52:14.737Z",
+    "sha256": "32ec3327b9057d7f5dc75488d92a5cd1f233581437d58d55555ad260b771a9e0",
+    "bytes": 3816,
+    "copiedIntoDemo": false
+  },
+  {
+    "id": "reactbits-glass-surface",
+    "sourceUrl": "https://reactbits.dev/components/glass-surface",
+    "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/main/src/content/Components/GlassSurface/GlassSurface.jsx",
+    "fetchedCodeUrl": "https://raw.githubusercontent.com/DavidHDev/react-bits/main/src/content/Components/GlassSurface/GlassSurface.jsx",
+    "httpStatus": 200,
+    "fetchedAt": "2026-10-12T03:52:15.098Z",
+    "sha256": "d435562be2930a98270e3ff5881402a301f84813b06f0603ed353af12a9c96b3",
+    "bytes": 28528,
+    "copiedIntoDemo": false
+  },
+  {
+    "id": "reactbits-dot-grid",
+    "sourceUrl": "https://reactbits.dev/backgrounds/dot-grid",
+    "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/main/src/content/Backgrounds/DotGrid/DotGrid.jsx",
+    "fetchedCodeUrl": "https://raw.githubusercontent.com/DavidHDev/react-bits/main/src/content/Backgrounds/DotGrid/DotGrid.jsx",
+    "httpStatus": 200,
+    "fetchedAt": "2026-10-12T03:52:15.273Z",
+    "sha256": "66f50ebc070bb3d02eb46b8b1b58334c3ce513da160d97e6a8a96fbf9ad3909f",
+    "bytes": 21999,
+    "copiedIntoDemo": false
+  },
+  {
+    "id": "aceternity-background-gradient",
+    "sourceUrl": "https://ui.aceternity.com/components/background-gradient",
+    "implementationUrl": "https://ui.aceternity.com/registry/background-gradient.json",
+    "fetchedCodeUrl": "https://ui.aceternity.com/registry/background-gradient.json",
+    "httpStatus": 200,
+    "fetchedAt": "2026-10-12T03:52:15.444Z",
+    "sha256": "43899f7deb2c4fee2dea817c0a2c0e11b56ddba659f172fbe1bb79498bc7fe9a",
+    "bytes": 2931,
+    "copiedIntoDemo": false
+  },
+  {
+    "id": "aceternity-background-boxes",
+    "sourceUrl": "https://ui.aceternity.com/components/background-boxes",
+    "implementationUrl": "https://ui.aceternity.com/registry/background-boxes.json",
+    "fetchedCodeUrl": "https://ui.aceternity.com/registry/background-boxes.json",
+    "httpStatus": 200,
+    "fetchedAt": "2026-10-12T03:52:15.609Z",
+    "sha256": "8de360b241e03c977853dec28672d37de88cc7ed2fb28112a9964d78ed35d7c5",
+    "bytes": 2677,
+    "copiedIntoDemo": false
+  },
+  {
+    "id": "reactbits-spotlight-card",
+    "sourceUrl": "https://reactbits.dev/components/spotlight-card",
+    "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/main/src/content/Components/SpotlightCard/SpotlightCard.jsx",
+    "fetchedCodeUrl": "https://raw.githubusercontent.com/DavidHDev/react-bits/main/src/content/Components/SpotlightCard/SpotlightCard.jsx",
+    "httpStatus": 200,
+    "fetchedAt": "2026-10-12T03:52:15.776Z",
+    "sha256": "e0b91ba07c173c98b87b44ec451d0243fe0a3edc67864e2779ad8507d455af67",
+    "bytes": 10294,
+    "copiedIntoDemo": false
+  },
+  {
+    "id": "reactbits-tilted-card",
+    "sourceUrl": "https://reactbits.dev/components/tilted-card",
+    "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/main/src/content/Components/TiltedCard/TiltedCard.jsx",
+    "fetchedCodeUrl": "https://raw.githubusercontent.com/DavidHDev/react-bits/main/src/content/Components/TiltedCard/TiltedCard.jsx",
+    "httpStatus": 200,
+    "fetchedAt": "2026-10-12T03:52:15.935Z",
+    "sha256": "f0df6e4f86287c0b70b99f50bf65318536326dc91adb8cf7810caa99a5831b62",
+    "bytes": 3186,
+    "copiedIntoDemo": false
+  },
+  {
+    "id": "aceternity-glowing-effect",
+    "sourceUrl": "https://ui.aceternity.com/components/glowing-effect",
+    "implementationUrl": "https://ui.aceternity.com/registry/glowing-effect.json",
+    "fetchedCodeUrl": "https://ui.aceternity.com/registry/glowing-effect.json",
+    "httpStatus": 200,
+    "fetchedAt": "2026-10-12T03:52:16.106Z",
+    "sha256": "8a13db18779c78f624a7b00c06af807ba668ac9f2383dcb969a1a3211bea1886",
+    "bytes": 7196,
+    "copiedIntoDemo": false
+  },
+  {
+    "id": "aceternity-text-reveal-card",
+    "sourceUrl": "https://ui.aceternity.com/components/text-reveal-card",
+    "implementationUrl": "https://ui.aceternity.com/registry/text-reveal-card.json",
+    "fetchedCodeUrl": "https://ui.aceternity.com/registry/text-reveal-card.json",
+    "httpStatus": 200,
+    "fetchedAt": "2026-10-12T03:52:16.270Z",
+    "sha256": "7b018f2e76e11bb708fb27fa6e010ec65035857d3d78e37c536879a2ae6161f2",
+    "bytes": 5873,
+    "copiedIntoDemo": false
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "entryId": "e6149787eb1b8dbf",
+  "sourceUrl": "https://reactbits.dev/components/chroma-grid",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/ChromaGrid-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/ChromaGrid/ChromaGrid.jsx",
+  "checkedAt": "2026-10-25T07:53:04.120Z",
+  "sha256": "02b46874ebe33f95908f9b0cc17fb23445f01fa335f52035a3a0738d17bbd80c",
+  "files": [
+    {
+      "path": "ChromaGrid.css",
+      "sha256": "ebb2e62a60a660b00f357aea7a5868d9db5a4e35514a52c32cc395e2f22ed9a9",
+      "bytes": 4553
+    },
+    {
+      "path": "ChromaGrid.jsx",
+      "sha256": "3a8fc0f4b9f4bf9559fbd39bc8ab71119e127c98637805d00f015dc7ba36597d",
+      "bytes": 9858
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "entryId": "1e2cba52b91836a8",
+  "sourceUrl": "https://reactbits.dev/backgrounds/ripple-grid",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/RippleGrid-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/RippleGrid/RippleGrid.jsx",
+  "checkedAt": "2026-10-25T07:53:10.731Z",
+  "sha256": "de6f59cae7baa908fcd8c1464775033b482c267f3c87be9ae7fcf690c7e063b5",
+  "files": [
+    {
+      "path": "RippleGrid.css",
+      "sha256": "5df0274ea4f14f73d48916710ad42b7912e7369479492e0e46d4197622debdaf",
+      "bytes": 208
+    },
+    {
+      "path": "RippleGrid.jsx",
+      "sha256": "7564a4d16e644e79f00d1f3c871e669e0feb461528b319e9ead0b289ee7d76fb",
+      "bytes": 16927
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>06-f6 — end card</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Inter";
+          src: url("../../assets/fonts/Inter-latin.woff2") format("woff2");
+          font-weight: 100 900;
+          font-style: normal;
+          font-display: block;
+        }
+        @font-face {
+          font-family: "Space Grotesk";
+          src: url("../../assets/fonts/SpaceGrotesk-latin.woff2") format("woff2");
+          font-weight: 300 700;
+          font-style: normal;
+          font-display: block;
+        }
+        @font-face {
+          font-family: "Microsoft YaHei";
+          src: local("Microsoft YaHei");
+          font-display: block;
+        }
+        @font-face {
+          font-family: "Noto Sans SC";
+          src: local("Noto Sans SC");
+          font-display: block;
+        }
+
+        #stage {
+          position: absolute;
+          inset: 0;
+          width: 1920px;
+          height: 1080px;
+          background: #000000;
+          overflow: hidden;
+          font-family: "Inter", "Space Grotesk", sans-serif;
+        }
+
+        #f6_g1 {
+          position: absolute;
+          inset: 0;
+          opacity: 0;
+          visibility: hidden;
+        }
+
+        /* ---------- wordmark ---------- */
+        /* centred by layout (top 44% minus half the 199.5px line box), never by a
+           percentage transform — GSAP would pin stale pixel offsets if fonts
+           swapped in after the timeline was built */
+        #f6_wm {
+          position: absolute;
+          left: 0;
+          top: 375.45px; /* 44% of 1080 minus half of 210px * 0.95 */
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          filter: drop-shadow(0 0 64px rgba(255, 255, 255, 0.05));
+        }
+
+        #f6_wmInner {
+          position: relative;
+          width: max-content;
+          transform-origin: 50% 50%;
+          will-change: transform;
+        }
+
+        .word {
+          display: block;
+          font-family: "Inter", sans-serif;
+          font-weight: 900;
+          font-size: 210px;
+          line-height: 0.95;
+          letter-spacing: -0.03em;
+          text-transform: uppercase;
+          white-space: nowrap;
+          transform-origin: 50% 50%;
+        }
+
+        #f6_wordBase {
+          background-image: linear-gradient(
+            104deg,
+            #4c4c55 0%,
+            #8f8f9b 14%,
+            #e9e9ef 32%,
+            #ffffff 46%,
+            #f6f6fa 52%,
+            #b9b9c4 68%,
+            #6f6f7a 82%,
+            #d9d9e2 93%,
+            #ffffff 100%
+          );
+          background-size: 100% 100%;
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          color: transparent;
+          will-change: filter, transform, opacity;
+        }
+
+        #f6_wordGlint {
+          position: absolute;
+          inset: 0;
+          background-image: linear-gradient(
+            105deg,
+            rgba(255, 255, 255, 0) 30%,
+            rgba(255, 255, 255, 0.5) 42%,
+            rgba(255, 255, 255, 1) 50%,
+            rgba(255, 255, 255, 0.5) 58%,
+            rgba(255, 255, 255, 0) 70%
+          );
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          background-position: -245px 0;
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          color: transparent;
+          opacity: 0;
+          mix-blend-mode: screen;
+          pointer-events: none;
+          will-change: background-position, opacity;
+        }
+
+        /* soft resting bloom that survives the fade — the last 2% glint */
+        #f6_glintRest {
+          position: absolute;
+          inset: 0;
+          background-image: radial-gradient(
+            ellipse 55% 130% at 50% 42%,
+            rgba(255, 255, 255, 0.9) 0%,
+            rgba(255, 255, 255, 0) 70%
+          );
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          color: transparent;
+          opacity: 0;
+          mix-blend-mode: screen;
+          pointer-events: none;
+        }
+
+        /* ---------- rule + credits ---------- */
+        #f6_meta {
+          position: absolute;
+          left: 0;
+          top: 612px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        #f6_rule {
+          width: 320px;
+          height: 1px;
+          background: #ffffff;
+          opacity: 0;
+          transform-origin: 50% 50%;
+        }
+
+        .line {
+          font-family: "Space Grotesk", sans-serif;
+          text-transform: uppercase;
+          white-space: nowrap;
+          line-height: 1;
+          text-align: center;
+          opacity: 0;
+        }
+
+        #f6_line1 {
+          margin-top: 44px;
+          font-size: 18px;
+          font-weight: 600;
+          letter-spacing: 0.28em;
+          margin-right: -0.28em;
+          color: rgba(255, 255, 255, 0.82);
+        }
+
+        #f6_line2 {
+          margin-top: 22px;
+          font-size: 12px;
+          font-weight: 500;
+          letter-spacing: 0.16em;
+          margin-right: -0.16em;
+          color: rgba(255, 255, 255, 0.55);
+        }
+
+        #f6_line3 {
+          margin-top: 16px;
+          font-size: 12px;
+          font-weight: 500;
+          letter-spacing: 0.12em;
+          margin-right: -0.12em;
+          color: rgba(255, 255, 255, 0.45);
+        }
+
+        #f6_line3 .cjk {
+          font-family: "Microsoft YaHei", "Noto Sans SC", sans-serif;
+        }
+      </style>
+
+      <div data-hf-id="f6_hf-up1e"
+        id="stage"
+        data-composition-id="06-f6"
+        data-width="1920"
+        data-height="1080"
+        data-duration="1.746"
+      >
+        <div data-hf-id="f6_hf-h7r5" id="f6_g1">
+          <div data-hf-id="f6_hf-0bt9" id="f6_wm">
+            <div data-hf-id="f6_hf-jgyr" id="f6_wmInner">
+              <div data-hf-id="f6_hf-a1bh" class="word" id="f6_wordBase">BABY</div>
+              <div data-hf-id="f6_hf-lczt" class="word" id="f6_wordGlint" aria-hidden="true">BABY</div>
+              <div data-hf-id="f6_hf-4i7z" class="word" id="f6_glintRest" aria-hidden="true">BABY</div>
+            </div>
+          </div>
+
+          <div data-hf-id="f6_hf-dgna" id="f6_meta">
+            <div data-hf-id="f6_hf-8e4z" id="f6_rule"></div>
+            <div data-hf-id="f6_hf-4s3a" class="line" id="f6_line1">A FAN-MADE CHORUS STUDY</div>
+            <div data-hf-id="f6_hf-n5tx" class="line" id="f6_line2">MUSIC: JUSTIN BIEBER — “BABY” FT. LUDACRIS</div>
+            <div data-hf-id="f6_hf-dh2r" class="line" id="f6_line3">
+              <span data-hf-id="f6_hf-stwd" class="cjk">非官方粉丝视觉</span> · NO AFFILIATION
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        const tl = gsap.timeline({ paused: true });
+
+        // g1 spans the whole frame (37.454 -> 39.2, local 0 -> 1.746)
+        tl.set("#f6_g1", { autoAlpha: 1 }, 0);
+
+        // ---- blur-resolve entrance: the wordmark settles out of the cut ----
+        tl.fromTo(
+          "#f6_wordBase",
+          { filter: "blur(30px)", scale: 1.06, opacity: 0 },
+          { filter: "blur(0px)", scale: 1, opacity: 1, duration: 0.62, ease: "power2.out" },
+          0,
+        );
+
+        // a slow breath on the lockup, so the hold is not a freeze
+        tl.fromTo(
+          "#f6_wmInner",
+          { scale: 1 },
+          { scale: 1.012, duration: 1.66, ease: "sine.inOut" },
+          0.04,
+        );
+
+        // ---- local 0.789 (track 38.243): rule appears, single chrome glint sweeps ----
+        tl.fromTo(
+          "#f6_rule",
+          { scaleX: 0, opacity: 0 },
+          { scaleX: 1, opacity: 0.85, duration: 0.32, ease: "power2.out" },
+          0.789,
+        );
+
+        tl.set("#f6_wordGlint", { opacity: 0.9 }, 0.789);
+        tl.fromTo(
+          "#f6_wordGlint",
+          { backgroundPosition: "-245px 0" },
+          { backgroundPosition: "460px 0", duration: 0.72, ease: "power1.inOut" },
+          0.789,
+        );
+
+        // ---- credits settle in behind the glint ----
+        tl.fromTo(
+          "#f6_line1",
+          { opacity: 0, y: 10 },
+          { opacity: 0.82, y: 0, duration: 0.34, ease: "power2.out" },
+          0.8,
+        );
+        tl.fromTo(
+          "#f6_line2",
+          { opacity: 0, y: 10 },
+          { opacity: 0.55, y: 0, duration: 0.34, ease: "power2.out" },
+          0.86,
+        );
+        tl.fromTo(
+          "#f6_line3",
+          { opacity: 0, y: 10 },
+          { opacity: 0.45, y: 0, duration: 0.34, ease: "power2.out" },
+          0.92,
+        );
+
+        // ---- fade the card to near-black by local 1.646 (track 39.1):
+        //      everything goes, a last 2% glint stays on the wordmark ----
+        tl.to("#f6_wordBase", { opacity: 0.04, duration: 0.226, ease: "power2.inOut" }, 1.42);
+        tl.to("#f6_wordGlint", { opacity: 0, duration: 0.226, ease: "power2.inOut" }, 1.42);
+        tl.set("#f6_glintRest", { opacity: 0.02 }, 1.646);
+        tl.to("#f6_rule", { opacity: 0, duration: 0.18, ease: "power2.inOut" }, 1.42);
+        tl.to(
+          "#f6_line1",
+          { opacity: 0, y: -4, duration: 0.18, ease: "power2.inOut" },
+          1.42,
+        );
+        tl.to(
+          "#f6_line2",
+          { opacity: 0, y: -4, duration: 0.18, ease: "power2.inOut" },
+          1.42,
+        );
+        tl.to(
+          "#f6_line3",
+          { opacity: 0, y: -4, duration: 0.18, ease: "power2.inOut" },
+          1.42,
+        );
+        tl.to("#f6_meta", { y: -6, duration: 0.226, ease: "power2.inOut" }, 1.42);
+
+        // close the group at the frame's out-point (1.746 is outside the rendered window)
+        tl.set("#f6_g1", { autoAlpha: 0 }, 1.746);
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines["06-f6"] = tl;
+        tl.seek(0);
+      </script>
+    </template>
+  </body>
+</html>

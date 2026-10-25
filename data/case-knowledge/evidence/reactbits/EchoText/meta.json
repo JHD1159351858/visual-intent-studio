@@ -1,0 +1,21 @@
+{
+  "entryId": "ded9624fa8a051df",
+  "sourceUrl": "https://reactbits.dev/text-animations/echo-text",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/EchoText-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/EchoText/EchoText.jsx",
+  "checkedAt": "2026-10-25T07:52:54.564Z",
+  "sha256": "4bbbf1d56fe121a5e04b2abe03a759886d363b6d54852ca0098b9bc95ceafbef",
+  "files": [
+    {
+      "path": "EchoText.css",
+      "sha256": "d6942c46992a711f597e1117233bdd6d4f49e1672ab6b7c60e553e04cde775a9",
+      "bytes": 826
+    },
+    {
+      "path": "EchoText.jsx",
+      "sha256": "b69792540aaa3854477b715f6a8ea08deb557565deed43a5b366192e6fa87cdd",
+      "bytes": 8398
+    }
+  ]
+}

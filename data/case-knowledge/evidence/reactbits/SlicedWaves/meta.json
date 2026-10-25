@@ -1,0 +1,21 @@
+{
+  "entryId": "615e57c8ecce0da5",
+  "sourceUrl": "https://reactbits.dev/backgrounds/sliced-waves",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/SlicedWaves-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/SlicedWaves/SlicedWaves.jsx",
+  "checkedAt": "2026-10-25T07:53:07.364Z",
+  "sha256": "06add496e69b2fff8cf128a814d43676aa5606891b4d10aaec1f0a7e8af29871",
+  "files": [
+    {
+      "path": "SlicedWaves.css",
+      "sha256": "5d0936b4f0ffc618f79aff7ba60d396128110ca755abcd9c107a7ee368c54405",
+      "bytes": 210
+    },
+    {
+      "path": "SlicedWaves.jsx",
+      "sha256": "34cacdc29ea2260aa6bd1c10dd63be8e8240d3949bb4cf4e8c973dd7a4b888c1",
+      "bytes": 22376
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "entryId": "22a88f7578020307",
+  "sourceUrl": "https://reactbits.dev/components/elastic-slider",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/ElasticSlider-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/ElasticSlider/ElasticSlider.jsx",
+  "checkedAt": "2026-10-25T07:53:05.804Z",
+  "sha256": "57fa19a202a6bf3e61ca7f7f3ebbfbefe720a9d568053d4c7315bc396cf244f9",
+  "files": [
+    {
+      "path": "ElasticSlider.css",
+      "sha256": "53db338d32cc8a872e99e7a8d720a7ba708af3164bf212fdcff0c765809c57e2",
+      "bytes": 1139
+    },
+    {
+      "path": "ElasticSlider.jsx",
+      "sha256": "9c089ff4cfc489bc59add96abde905d66a9c29e7495d966c916be0ff82d52819",
+      "bytes": 5457
+    }
+  ]
+}

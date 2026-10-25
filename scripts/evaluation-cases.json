@@ -1,0 +1,22 @@
+[
+  {"stage":"structure","description":"页面想用几块大小不同的方格放功能，像一个便当盒。","expectedId":"aceternity-bento-grid"},
+  {"stage":"structure","description":"功能入口排成不规则的大大小小卡片，重点功能占更大的格子。","expectedId":"aceternity-bento-grid"},
+  {"stage":"structure","description":"我要一个图片网格，点开其中一张能看大图。","expectedId":"aceternity-layout-grid"},
+  {"stage":"structure","description":"项目以照片卡片铺满主要区域，点击卡片展开详情。","expectedId":"aceternity-layout-grid"},
+  {"stage":"structure","description":"左边放导航和历史记录，右边留给工作内容。","expectedId":"aceternity-sidebar"},
+  {"stage":"structure","description":"菜单靠在左侧，不用时可以缩起来。","expectedId":"aceternity-sidebar"},
+  {"stage":"structure","description":"用一条竖线把项目从开始到完成的过程连起来。","expectedId":"aceternity-timeline"},
+  {"stage":"style","description":"想要透明玻璃一样的面板，能模糊地看到背后的颜色。","expectedId":"reactbits-glass-surface"},
+  {"stage":"style","description":"内容放在半透明的磨砂玻璃上，柔和一点。","expectedId":"reactbits-glass-surface"},
+  {"stage":"style","description":"背景上有很多小点，像细细的点阵纸。","expectedId":"reactbits-dot-grid"},
+  {"stage":"style","description":"页面铺一层稀疏的小圆点背景。","expectedId":"reactbits-dot-grid"},
+  {"stage":"style","description":"卡片周围有一圈模糊的彩色渐变光晕。","expectedId":"aceternity-background-gradient"},
+  {"stage":"style","description":"想要一个由很多小方格组成的背景，鼠标经过时方格会亮起来。","expectedId":"aceternity-background-boxes"},
+  {"stage":"effect","description":"鼠标移到卡片上，有一团柔和的光跟着鼠标走。","expectedId":"reactbits-spotlight-card"},
+  {"stage":"effect","description":"卡片像被手电筒照到，光的位置跟着我的光标。","expectedId":"reactbits-spotlight-card"},
+  {"stage":"effect","description":"鼠标向右移，卡片就向右倾斜，有一点立体感。","expectedId":"reactbits-tilted-card"},
+  {"stage":"effect","description":"让卡片随着鼠标位置歪一点，离开后恢复平整。","expectedId":"reactbits-tilted-card"},
+  {"stage":"effect","description":"卡片边缘的亮光随着鼠标的位置移动。","expectedId":"aceternity-glowing-effect"},
+  {"stage":"effect","description":"鼠标经过卡片时只照亮靠近鼠标的那段边框。","expectedId":"aceternity-glowing-effect"},
+  {"stage":"effect","description":"把鼠标划过去，原来的文字慢慢露出另一句话。","expectedId":"aceternity-text-reveal-card"}
+]

@@ -1,0 +1,223 @@
+[
+  {
+    "id": "chat-assistant",
+    "title": "枝语聊天助手",
+    "description": "松柏绿侧栏与宽松会话区，支持连续提问、工作方式切换、停止回复和保留问题重试。独立原生页面，使用本地规则演示。",
+    "aliases": ["聊天", "聊天助手", "对话", "AI助手", "会话"],
+    "purpose": "聊天助手与连续会话",
+    "features": ["本地回复与连续会话", "示例提问", "三种工作方式", "停止与新建对话", "空、加载、结果和可重试错误状态", "390px手机布局与减少动态效果"],
+    "sections": [
+      {"id": "chat-navigation", "title": "会话导航", "purpose": "品牌、当前会话和新建对话入口"},
+      {"id": "chat-introduction", "title": "开始对话", "purpose": "说明任务与本地演示范围"},
+      {"id": "chat-conversation", "title": "会话工作区", "purpose": "消息、加载、错误和输入操作"},
+      {"id": "chat-suggestions", "title": "示例问题", "purpose": "点击后立即运行可理解的任务"},
+      {"id": "chat-status", "title": "演示说明", "purpose": "能力边界和失败状态入口"}
+    ],
+    "tokens": {
+      "colors": {"background": "#edf3ef", "surface": "#ffffff", "text": "#203b32", "muted": "#64786e", "accent": "#246b50", "border": "#d6e3db"},
+      "fonts": {"display": "Georgia, SimSun, serif", "body": "Segoe UI, Microsoft YaHei, sans-serif", "utility": "Segoe UI, Microsoft YaHei, sans-serif"},
+      "spacing": [8, 12, 20, 24, 32, 52],
+      "radius": 20
+    },
+    "interactions": [
+      {"name": "连续提问", "trigger": "输入内容后点击发送或按Enter", "result": "显示用户消息、加载提示和对应工作方式的本地演示回复"},
+      {"name": "停止与重开", "trigger": "加载时点击停止，或点击新建对话", "result": "取消待完成回复，或清空会话回到引导状态"},
+      {"name": "错误恢复", "trigger": "演示失败状态后点击重试回复", "result": "保留原问题并重新完成回复"}
+    ],
+    "componentIds": ["sidebar", "accordion", "step-loader"],
+    "referenceEntryIds": ["aceternity-sidebar", "e3aaeefc863b70e7", "187e7f7bde53d65c", "37d8f3e7fef3f4a4"],
+    "pairingRules": ["使用侧栏与会话输入作为主要结构，手机把侧栏改为顶部导航；显式点击新建，不依赖悬停。", "工作区采用实色浅色表面，松柏绿只用于导航与主要行动；不要叠加霓虹背景或大面积渐变。", "可搭配折叠说明和加载组件；全页最多一个加载脉冲，减少动态效果时静止显示。", "引用案例只提供结构与交互方向，页面为独立原生适配，不宣称集成来源组件源码。"],
+    "htmlPath": "design-library/pages/chat-assistant.html",
+    "posterPath": "design-library/previews/page-chat-assistant.png"
+  },
+  {
+    "id": "knowledge-qa",
+    "title": "知页知识问答",
+    "description": "海军蓝证据阅读台，以资料书架、答案和来源段落构成检索闭环。支持关键词检索、引用弹窗、无结果指引和失败重读。",
+    "aliases": ["知识问答", "知识库", "引用来源", "问答", "检索"],
+    "purpose": "带来源引用的知识检索问答",
+    "features": ["检索3份固定本地资料", "答案与编号引用", "打开来源原文", "资料书架折叠浏览", "空、加载、结果和恢复错误状态", "手机纵向阅读与减少动态效果"],
+    "sections": [
+      {"id": "knowledge-header", "title": "品牌与范围", "purpose": "提示本地知识演示"},
+      {"id": "knowledge-library", "title": "资料书架", "purpose": "查看三份资料的主题与范围"},
+      {"id": "knowledge-introduction", "title": "提问引导", "purpose": "说明具体问题与证据阅读方式"},
+      {"id": "knowledge-answer", "title": "答案与依据", "purpose": "显示检索结果及可打开的原文来源"},
+      {"id": "knowledge-status", "title": "检索状态", "purpose": "本地检索边界与失败恢复入口"}
+    ],
+    "tokens": {
+      "colors": {"background": "#f0f4f8", "surface": "#ffffff", "text": "#18314f", "muted": "#60748b", "accent": "#2c69a2", "border": "#d6e1eb"},
+      "fonts": {"display": "Georgia, SimSun, serif", "body": "Segoe UI, Microsoft YaHei, sans-serif", "utility": "Segoe UI, Microsoft YaHei, sans-serif"},
+      "spacing": [8, 12, 18, 24, 30, 40],
+      "radius": 14
+    },
+    "interactions": [
+      {"name": "带引用检索", "trigger": "输入问题并点击查找答案", "result": "本地资料命中后显示摘要、编号引用与来源按钮；无命中时给出下一步"},
+      {"name": "核查来源", "trigger": "点击引用编号或资料名称", "result": "弹窗显示真实的页面内资料原文和段落标题"},
+      {"name": "重读资料", "trigger": "演示资料读取失败后点击重新读取", "result": "保留问题并重新显示可核查答案"}
+    ],
+    "componentIds": ["accordion", "modal", "step-loader"],
+    "referenceEntryIds": ["187e7f7bde53d65c", "f6b5fb5e2cf9261b", "e3aaeefc863b70e7", "37d8f3e7fef3f4a4"],
+    "pairingRules": ["将资料书架、答案和来源三者置于同一阅读路径；手机把书架放到答案之后。", "可搭配折叠资料和来源弹窗；引用入口必须支持点击与键盘，不能只在悬停时出现。", "保持白色内容表面、深蓝文字和低饱和背景；避免使用动态文字或透明表面降低长文本可读性。", "全页只保留一个加载旋转，减少动态效果时停用；来源弹窗使用原生关闭与Esc操作。", "参考目录提供交互方向，原生检索仅使用页面内演示材料，不代表已连接外部知识库。"],
+    "htmlPath": "design-library/pages/knowledge-qa.html",
+    "posterPath": "design-library/previews/page-knowledge-qa.png"
+  },
+  {
+    "id": "writing-tools",
+    "title": "稿笺写作工具",
+    "description": "淡黄纸张、细行距和编辑红构成双稿对照桌面。支持本地润色、精简、结构整理，保留原文并可采用修改稿或导出。",
+    "aliases": ["写作", "写作工具", "文案", "润色", "改写"],
+    "purpose": "原文与改写稿对照的写作工作台",
+    "features": ["三种本地文字处理方式", "读者语气设置", "原文与修改稿字数", "采用修改稿继续编辑", "导出纯文本", "空、加载、结果和保留原文重试"],
+    "sections": [
+      {"id": "writing-introduction", "title": "修改主张", "purpose": "说明保留原意与对照编辑"},
+      {"id": "writing-controls", "title": "修改设置", "purpose": "切换处理方式与读者语气"},
+      {"id": "writing-original", "title": "原文纸张", "purpose": "输入、字数统计和示例材料"},
+      {"id": "writing-result", "title": "修改稿纸张", "purpose": "查看、采用和导出修改结果"},
+      {"id": "writing-status", "title": "修改说明", "purpose": "本地规则、能力边界和失败入口"}
+    ],
+    "tokens": {
+      "colors": {"background": "#f8f2d9", "surface": "#fffef7", "text": "#33372d", "muted": "#7c7c68", "accent": "#aa4937", "border": "#ddd9bb"},
+      "fonts": {"display": "Georgia, SimSun, serif", "body": "Segoe UI, Microsoft YaHei, sans-serif", "utility": "Segoe UI, Microsoft YaHei, sans-serif"},
+      "spacing": [6, 12, 18, 24, 30, 38],
+      "radius": 12
+    },
+    "interactions": [
+      {"name": "修改草稿", "trigger": "输入原文、选择修改方式后点击开始修改", "result": "本地文字规则生成可读的精简稿、润色稿或结构提纲"},
+      {"name": "继续编辑", "trigger": "点击采用修改稿", "result": "结果回填原文并更新字数，可以继续修改"},
+      {"name": "导出与恢复", "trigger": "点击导出，或失败后重新修改", "result": "下载真实文字文件，或保留原文重新完成处理"}
+    ],
+    "componentIds": ["tabs", "accordion", "step-loader"],
+    "referenceEntryIds": ["375fac205c71b6c9", "187e7f7bde53d65c", "e3aaeefc863b70e7", "a6833a77c4f5b849"],
+    "pairingRules": ["采用两张纸的并排对照；手机纵向排列，原文始终位于修改稿之前。", "标签切换只改变修改方式，不能清空原文；按钮与标签至少保留触屏可点击的内边距。", "编辑红只用于修改标记与主要行动，纸张行线保持低对比；避免玻璃、霓虹边框与粒子文字。", "可搭配标签页、折叠规则和加载组件；最多一个下划线加载动效，减少动态效果时显示静态状态。", "本地规则适合演示流程，引用案例只提供结构方向，不宣称原组件源码或真实AI写作能力。"],
+    "htmlPath": "design-library/pages/writing-tools.html",
+    "posterPath": "design-library/previews/page-writing-tools.png"
+  },
+  {
+    "id": "data-analysis",
+    "title": "数镜数据分析",
+    "description": "浅灰蓝分析台，课程筛选联动人数、完成率、条形图和原始记录。条形可点击查看口径，当前范围可导出CSV。",
+    "aliases": ["数据分析", "仪表盘", "数据看板", "图表", "筛选"],
+    "purpose": "筛选课程演示数据并联动图表的分析仪表盘",
+    "features": ["课程分类与最低完成率筛选", "三项联动指标", "可点击条形图", "原始记录详情", "导出当前范围CSV", "初始空、加载、无结果、结果和重读错误"],
+    "sections": [
+      {"id": "analysis-navigation", "title": "分析导航", "purpose": "工作台与演示数据范围"},
+      {"id": "analysis-filters", "title": "筛选条件", "purpose": "分类、阈值和重置操作"},
+      {"id": "analysis-metrics", "title": "核心指标", "purpose": "当前范围的课程、人数和完成率"},
+      {"id": "analysis-chart", "title": "完成率图表", "purpose": "可点击查看课程原始记录"},
+      {"id": "analysis-insights", "title": "读数笔记", "purpose": "解释当前范围和统计口径"},
+      {"id": "analysis-records", "title": "原始记录", "purpose": "核查表格和导出当前范围"}
+    ],
+    "tokens": {
+      "colors": {"background": "#eaf0f5", "surface": "#ffffff", "text": "#233344", "muted": "#65788b", "accent": "#176ea1", "border": "#d3dfe8"},
+      "fonts": {"display": "Segoe UI, Microsoft YaHei, sans-serif", "body": "Segoe UI, Microsoft YaHei, sans-serif", "utility": "Segoe UI, Microsoft YaHei, sans-serif"},
+      "spacing": [8, 12, 18, 22, 24, 40],
+      "radius": 14
+    },
+    "interactions": [
+      {"name": "联动筛选", "trigger": "选择分类、填写阈值并点击应用筛选", "result": "指标、图表、笔记和表格同步根据6条本地记录重新计算"},
+      {"name": "核查课程", "trigger": "点击图表条形或课程名称", "result": "弹窗显示同一条记录的分类、人数和统计口径"},
+      {"name": "导出与重读", "trigger": "点击导出当前CSV，或失败后重新读取", "result": "下载筛选后的真实CSV，或保留条件恢复结果"}
+    ],
+    "componentIds": ["sidebar", "modal", "step-loader"],
+    "referenceEntryIds": ["aceternity-sidebar", "f6b5fb5e2cf9261b", "f0d39e6511b80f02", "d7999f6a0d76dfe0"],
+    "pairingRules": ["筛选条件置于指标之前；必须共享一份筛选结果，避免图表和表格使用不同统计范围。", "采用稳定的蓝色条形与数字字面值；不把计数动画、3D图表或背景粒子叠加到分析台。", "可搭配窄侧栏、详情弹窗和加载组件；图表点击与表格按钮提供同等触屏入口。", "只有条形宽度过渡与一个加载扫描，减少动态效果时停用；小屏表格在内部滚动，页面不横向溢出。", "参考图表案例只启发查看记录的交互，未复制来源动态图表源码；样本为本地课程演示数据。"],
+    "htmlPath": "design-library/pages/data-analysis.html",
+    "posterPath": "design-library/previews/page-data-analysis.png"
+  },
+  {
+    "id": "report-builder",
+    "title": "报告工坊",
+    "description": "蓝灰分步工作台与纸质草稿预览，先输入材料，再选择章节，最后生成与导出。生成保留事实边界并支持返回修改。",
+    "aliases": ["报告", "报告生成", "分步生成", "工作流", "汇报"],
+    "purpose": "通过分步输入与内容选择生成可导出的报告",
+    "features": ["三步输入与校验", "章节选择", "完整报告预览", "返回修改与重新生成", "Markdown导出", "空、加载、结果与生成失败重试"],
+    "sections": [
+      {"id": "report-introduction", "title": "生成引导", "purpose": "说明从已有材料组织草稿"},
+      {"id": "report-builder", "title": "报告步骤", "purpose": "三步输入、章节选择和生成操作"},
+      {"id": "step-one", "title": "明确内容", "purpose": "报告标题、对象、材料与校验"},
+      {"id": "step-two", "title": "选择章节", "purpose": "按需要选取证据、行动与待确认事项"},
+      {"id": "report-preview", "title": "报告预览", "purpose": "显示可核查的草稿与事实边界"},
+      {"id": "report-status", "title": "生成状态", "purpose": "演示说明与恢复错误入口"}
+    ],
+    "tokens": {
+      "colors": {"background": "#e8edf2", "surface": "#ffffff", "text": "#243e56", "muted": "#708397", "accent": "#3478ac", "border": "#cad8e4"},
+      "fonts": {"display": "Segoe UI, Microsoft YaHei, sans-serif", "body": "Segoe UI, Microsoft YaHei, sans-serif", "document": "SimSun, Georgia, serif"},
+      "spacing": [8, 12, 18, 24, 26, 38],
+      "radius": 16
+    },
+    "interactions": [
+      {"name": "分步组织", "trigger": "填写内容并依次点击下一步", "result": "输入校验后进入章节选择与生成，步骤有当前/已完成状态"},
+      {"name": "生成报告", "trigger": "选择章节后点击生成报告草稿", "result": "本地模板根据输入材料生成完整草稿并提供Markdown导出"},
+      {"name": "修改与恢复", "trigger": "返回上一步，或失败后重新生成", "result": "保留输入和章节设置，可修改后重新生成"}
+    ],
+    "componentIds": ["timeline", "accordion", "step-loader"],
+    "referenceEntryIds": ["aceternity-timeline", "187e7f7bde53d65c", "a6833a77c4f5b849", "d7999f6a0d76dfe0"],
+    "pairingRules": ["步骤编号必须表示真实先后流程；先校验标题和材料，再进入章节选择，保留返回操作。", "生成台与草稿纸采用不同字体角色，草稿保持实色背景；避免边框追光和动态背景干扰审阅。", "可搭配步骤时间线、折叠说明与生成进度；最多一个加载脉冲组，减少动态效果时全部静止。", "手机先操作步骤再阅读预览，所有章节采用显式勾选；流程不依赖拖动或悬停。", "本地模板只组织已有材料，未实现AI事实核验；引用原案例仅提供结构方向，不宣称源码集成。"],
+    "htmlPath": "design-library/pages/report-builder.html",
+    "posterPath": "design-library/previews/page-report-builder.png"
+  },
+  {
+    "id": "agent-portal",
+    "title": "启航智能体门户",
+    "description": "湖蓝搜索入口与不对称工具目录，按关键词和分类寻找助手。每个入口可打开任务弹窗并运行对应的本地流程。",
+    "aliases": ["智能体门户", "门户", "工具导航", "智能体广场", "搜索分类"],
+    "purpose": "按分类和关键词搜索智能体并体验本地任务",
+    "features": ["六个用途明确的工具入口", "关键词与分类组合搜索", "工具任务弹窗", "可执行本地任务", "空、加载、结果和目录读取失败恢复", "触屏搜索与手机卡片列表"],
+    "sections": [
+      {"id": "portal-header", "title": "门户品牌", "purpose": "品牌与任务定位"},
+      {"id": "portal-introduction", "title": "搜索入口", "purpose": "通过任务关键词查找工具"},
+      {"id": "portal-directory", "title": "工具目录", "purpose": "六个智能体用途与体验入口"},
+      {"id": "portal-categories", "title": "分类筛选", "purpose": "按学习、创作、办公和分析筛选"},
+      {"id": "portal-status", "title": "门户状态", "purpose": "本地演示边界与失败重读"}
+    ],
+    "tokens": {
+      "colors": {"background": "#eef6f6", "surface": "#ffffff", "text": "#183f4b", "muted": "#648089", "accent": "#207f8f", "border": "#c8e1e3"},
+      "fonts": {"display": "Georgia, SimSun, serif", "body": "Segoe UI, Microsoft YaHei, sans-serif", "utility": "Segoe UI, Microsoft YaHei, sans-serif"},
+      "spacing": [8, 12, 18, 24, 28, 42],
+      "radius": 18
+    },
+    "interactions": [
+      {"name": "搜索与分类", "trigger": "输入任务关键词并搜索，或点击分类", "result": "目录按两个条件过滤，显示结果数量与无结果恢复入口"},
+      {"name": "体验任务", "trigger": "打开工具并输入任务，再运行本地演示", "result": "对应工具生成文字精简、学习计划、提纲或本地数据读数"},
+      {"name": "恢复目录", "trigger": "演示目录读取失败后点击重新读取", "result": "保留关键词与分类并恢复工具列表"}
+    ],
+    "componentIds": ["bento-grid", "modal", "step-loader"],
+    "referenceEntryIds": ["aceternity-bento-grid", "f6b5fb5e2cf9261b", "acbbbd63d54c2f9b", "e3aaeefc863b70e7", "5e5b3722d2eb3996"],
+    "pairingRules": ["搜索是主要入口，分类是第二层筛选；工具卡片明确用途与运行入口，不展示无依据的用户数或评分。", "可搭配便当网格、任务弹窗与加载组件；不把展开卡片和弹窗同时用于同一工具详情。", "罗盘线图是唯一主视觉，目录保持实色表面；不叠加流动渐变、粒子背景和霓虹边框。", "最多一个加载脉冲，减少动态效果时静止；所有工具按钮始终可见，手机改为单列卡片。", "每个工具使用本地确定性逻辑，引用案例只提供布局方向，不宣称实际智能体服务或源码集成。"],
+    "htmlPath": "design-library/pages/agent-portal.html",
+    "posterPath": "design-library/previews/page-agent-portal.png"
+  },
+  {
+    "id": "knowledge-motion",
+    "title": "知页强动效知识空间",
+    "description": "深海极光与响应点阵中，三本立体课程书持续浮动；轮换标题、磁吸提问和卡片倾斜构成可操作的课程资料探索台。",
+    "aliases": ["强动效知识问答", "课程资料强动效", "动态课程资料台"],
+    "purpose": "带来源引用的强动效课程知识检索问答",
+    "features": ["持续极光与鼠标响应点阵", "立体课程书卡与轮换标题", "磁吸提问与课程卡片倾斜", "3份本地资料问答与原文引用", "提问历史与刷新恢复", "动效暂停与手机布局"],
+    "sections": [
+      {"id": "knowledge-header", "title": "品牌与动效控制", "purpose": "历史入口和暂停动效"},
+      {"id": "knowledge-hero", "title": "提问入口", "purpose": "动态标题与稳定的课程提问表单"},
+      {"id": "motion-book-stage", "title": "课程空间舞台", "purpose": "持续浮动的三本课程书与轨道展示"},
+      {"id": "knowledge-courses", "title": "课程资料入口", "purpose": "课程卡片、章节展开与问题示例"},
+      {"id": "knowledge-answer", "title": "回答与出处", "purpose": "本地资料答案和可核对的原文"}
+    ],
+    "tokens": {
+      "colors": {"background": "#061b2d", "surface": "#0c2c43", "text": "#eaf7ff", "muted": "#8fabbc", "accent": "#67e7f1", "secondary": "#8defc5"},
+      "fonts": {"display": "Arial, Microsoft YaHei, sans-serif", "body": "Segoe UI, Microsoft YaHei, sans-serif", "utility": "Segoe UI, sans-serif"},
+      "spacing": [8, 12, 16, 24, 32, 48, 72],
+      "radius": 22
+    },
+    "interactions": [
+      {"name": "持续主视觉", "trigger": "打开页面", "result": "极光、点阵、三本立体课程书和轮换标题持续运动，提问与正文保持稳定"},
+      {"name": "课程资料问答", "trigger": "选择范围并输入问题，或点击示例及章节", "result": "检索三份页面内演示资料，给出答案、来源引用与未命中引导"},
+      {"name": "核对原文", "trigger": "点击回答中的来源入口", "result": "打开可关闭的来源原文对话框"},
+      {"name": "历史与新问题", "trigger": "打开提问记录并选择历史，或开始新问题", "result": "恢复问题和检索范围，或清空当前输入；真实已查历史在浏览器中保留"},
+      {"name": "暂停与恢复", "trigger": "点击暂停动效或系统减少动态变化", "result": "停止CSS动画与Canvas重绘，保留静态视觉与全部功能"}
+    ],
+    "componentIds": ["moving-border"],
+    "referenceEntryIds": ["1a605e0e28035a21", "reactbits-dot-grid", "reactbits-tilted-card", "4cd98644135d8a31", "477fe70784cb9178", "3d3570a2bfd1cf99"],
+    "pairingRules": ["用于用户明确要求动效特别强的知识问答场景，不作为所有学习页面的默认模板。", "极光与点阵属于page-background，课程书空间运动属于展示content，移动亮边仅属于提问卡border；输入和长篇答案保持稳定。", "首次打开3秒内必须能观察到背景和课程书持续运动；微弱悬停与一次淡入不能替代主视觉。", "标题轮换只应用于宣传标题，课程内容与回答正文不轮换；课程倾斜和磁吸限制在鼠标精细指针。", "暂停、系统减少动态和页面不可见时停止持续动画与Canvas帧；手机保留空间主视觉并降低绘制负担。", "全部为依据真实来源行为写成的本地原生适配，空间书册和轨道是自主组合，不宣称安装原组件源码；数据仅为3份本地课程演示材料。"],
+    "htmlPath": "design-library/pages/knowledge-motion.html",
+    "posterPath": "design-library/previews/page-knowledge-motion.png"
+  }
+]

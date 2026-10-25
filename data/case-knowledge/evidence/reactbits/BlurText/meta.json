@@ -1,0 +1,16 @@
+{
+  "entryId": "9b7cf84ef53c3790",
+  "sourceUrl": "https://reactbits.dev/text-animations/blur-text",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/BlurText-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/BlurText/BlurText.jsx",
+  "checkedAt": "2026-10-25T07:52:55.017Z",
+  "sha256": "80ae33b9511d52afb229b9b5d70043f9843934fb60cb359abde9a8773a14fc8c",
+  "files": [
+    {
+      "path": "BlurText/BlurText.jsx",
+      "sha256": "122b91a204f7b12eaa426083fa05f3b07d837ef61209d8d86487619bff49f007",
+      "bytes": 2891
+    }
+  ]
+}

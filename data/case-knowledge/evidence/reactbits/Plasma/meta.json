@@ -1,0 +1,21 @@
+{
+  "entryId": "9bbc56bb0979e302",
+  "sourceUrl": "https://reactbits.dev/backgrounds/plasma",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Plasma-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Plasma/Plasma.jsx",
+  "checkedAt": "2026-10-25T07:53:09.255Z",
+  "sha256": "b9e1eea9c53292c4779ae6c7e7a3359b15eb5acbb159267944828f5e6986e875",
+  "files": [
+    {
+      "path": "Plasma.css",
+      "sha256": "ae19206135c97b1e60043a1c40a00b8a3eaf9238cdca3db1ce19fe3795cc8a43",
+      "bytes": 198
+    },
+    {
+      "path": "Plasma.jsx",
+      "sha256": "791e499588e03b93359fbbd8807f936ba3c4f462dbd9e41aed638b256189dd8b",
+      "bytes": 17117
+    }
+  ]
+}

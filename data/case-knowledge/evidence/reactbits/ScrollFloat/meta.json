@@ -1,0 +1,21 @@
+{
+  "entryId": "a5ff7281c987363e",
+  "sourceUrl": "https://reactbits.dev/text-animations/scroll-float",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/ScrollFloat-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/ScrollFloat/ScrollFloat.jsx",
+  "checkedAt": "2026-10-25T07:52:55.950Z",
+  "sha256": "efe8970bcb0282b91ecb2312af6c3f9233b4ef12820d52b5ab9bf399c1076494",
+  "files": [
+    {
+      "path": "ScrollFloat.css",
+      "sha256": "5e2ee6e4f242c37292a5062101e6cf1cd823af71dd99cb7dc1b789a6326981a9",
+      "bytes": 225
+    },
+    {
+      "path": "ScrollFloat.jsx",
+      "sha256": "03b86379b7f1d78831d6f54371a52ca639422cf73576c0d4fa4fb2ff31d00d13",
+      "bytes": 1884
+    }
+  ]
+}

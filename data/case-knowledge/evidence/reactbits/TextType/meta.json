@@ -1,0 +1,21 @@
+{
+  "entryId": "c7e4ca3afbfbb4d3",
+  "sourceUrl": "https://reactbits.dev/text-animations/text-type",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/TextType-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/TextType/TextType.jsx",
+  "checkedAt": "2026-10-25T07:52:54.996Z",
+  "sha256": "8a845eb399ddb0639b000e3152e9a91067e5b2f4b453612ea6609b8741d5c276",
+  "files": [
+    {
+      "path": "TextType.css",
+      "sha256": "f4491de7244b3e3fc81cf2de535e806f372379ac25e2960837126eb100e6c653",
+      "bytes": 201
+    },
+    {
+      "path": "TextType.jsx",
+      "sha256": "6b38730bf8574b30a03a7a9f402046e686f2778440115bce44a19e4fa63efd4c",
+      "bytes": 4863
+    }
+  ]
+}

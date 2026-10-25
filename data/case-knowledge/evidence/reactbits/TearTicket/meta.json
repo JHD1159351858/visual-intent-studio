@@ -1,0 +1,21 @@
+{
+  "entryId": "19c7ddbb6be306f8",
+  "sourceUrl": "https://reactbits.dev/micro/tear-ticket",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/TearTicket-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/TearTicket/TearTicket.jsx",
+  "checkedAt": "2026-10-25T07:53:15.274Z",
+  "sha256": "a9588a685c0113de25c0a7e86a35574b72ab01ceb6876a9211fe4ca451f171b8",
+  "files": [
+    {
+      "path": "TearTicket.css",
+      "sha256": "2599cee61597409350e6d93548c9f14cdda6befaee9a4c46cc31f51ca5f6fb6c",
+      "bytes": 4150
+    },
+    {
+      "path": "TearTicket.jsx",
+      "sha256": "1fa31fc5bcd83c7e4911b347a20b43963a3c05fca94f9e7562025133d817a7a2",
+      "bytes": 21210
+    }
+  ]
+}

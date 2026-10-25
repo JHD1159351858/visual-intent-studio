@@ -1,0 +1,21 @@
+{
+  "entryId": "3c6dae64620f79ef",
+  "sourceUrl": "https://reactbits.dev/components/magic-bento",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/MagicBento-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/MagicBento/MagicBento.jsx",
+  "checkedAt": "2026-10-25T07:53:03.238Z",
+  "sha256": "24c1b2c2f38db957695a4be8b44fcade3ae04da39c79b649157306c54a29079a",
+  "files": [
+    {
+      "path": "MagicBento.css",
+      "sha256": "5ccc3d3d1a9eb9899635eef390a524428622a66e190e573e1d212e71fb1d1cb6",
+      "bytes": 23349
+    },
+    {
+      "path": "MagicBento.jsx",
+      "sha256": "e859218916383eedccc6a049b4aadd6efb1e588c5a73c55c2fc50e6f6490e492",
+      "bytes": 39585
+    }
+  ]
+}

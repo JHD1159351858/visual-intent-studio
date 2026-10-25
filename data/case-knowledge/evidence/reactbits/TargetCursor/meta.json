@@ -1,0 +1,21 @@
+{
+  "entryId": "4bac07ae183e6450",
+  "sourceUrl": "https://reactbits.dev/animations/target-cursor",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/TargetCursor-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/TargetCursor/TargetCursor.jsx",
+  "checkedAt": "2026-10-25T07:52:59.504Z",
+  "sha256": "973d76664e5624b3d94fc1d17a80fefcdb55ba3541987d2c1eb195b4db7e0b0a",
+  "files": [
+    {
+      "path": "TargetCursor.css",
+      "sha256": "bdc97cc4fd93867e8c58506e2ca34a2434db2fa54283b60f28d745cdf908ee0c",
+      "bytes": 733
+    },
+    {
+      "path": "TargetCursor.jsx",
+      "sha256": "3cba5638bc02a7357393e01b5531823278d21d101c2998ce806795cf1dc626a9",
+      "bytes": 12623
+    }
+  ]
+}

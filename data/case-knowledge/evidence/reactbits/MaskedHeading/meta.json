@@ -1,0 +1,21 @@
+{
+  "entryId": "f3faa4dafc6c6148",
+  "sourceUrl": "https://reactbits.dev/text-animations/masked-heading",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/MaskedHeading-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/MaskedHeading/MaskedHeading.jsx",
+  "checkedAt": "2026-10-25T07:52:54.035Z",
+  "sha256": "d0c070e901612a6a430ae62e4f43263297779004860116a5473df7e0aa366999",
+  "files": [
+    {
+      "path": "MaskedHeading.css",
+      "sha256": "50fa110a5d7afea828e7b4fa5df49affd8b24c7b012e54fd4d8768ccd0d3ddd1",
+      "bytes": 956
+    },
+    {
+      "path": "MaskedHeading.jsx",
+      "sha256": "c29e99181771d6053797a7e580048ace4927d8b8729a3a4f40e92c03147ddbd9",
+      "bytes": 9164
+    }
+  ]
+}

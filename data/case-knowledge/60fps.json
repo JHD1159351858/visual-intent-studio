@@ -1,0 +1,1314 @@
+[
+  {
+    "entryId": "e9efab30a393690e",
+    "sourceUrl": "https://60fps.design/shots/opal-border-glow-feature-highlight-interaction",
+    "basis": "observed-behavior",
+    "implementation": {
+      "summary": "圆角卡片边缘的霓虹高光循环扫过，内面和邻近列表保持安静。",
+      "steps": [
+        "建立独立的卡面、边框装饰和外晕层",
+        "用圆角路径光点或掏空渐变描边模拟周边扫光",
+        "让外晕随描边同步但不覆盖文字",
+        "暂停时保留静态强调边界"
+      ],
+      "dependencies": [],
+      "parameters": {
+        "项目建议（非原产品参数）": "先按可见状态建立可逆交互与正确数据结果，再为目标页面确定时长、幅度、拖动阈值和弹簧；需设备实测，不声称来源提供原值。"
+      }
+    },
+    "suitableFor": [
+      "项目适配场景：重点功能卡片",
+      "项目适配场景：移动端亮点介绍"
+    ],
+    "avoidFor": [
+      "没有强调层级而所有卡片同时持续发光的列表"
+    ],
+    "layers": [
+      "border",
+      "outer-glow"
+    ],
+    "limitations": [
+      "仅改变边缘，不能把彩色渐变铺满内部；轨迹与周期是网页适配选择而非Opal原代码。",
+      "公开资料为产品视频与行为说明，未提供原App源码；本条步骤属于网页行为适配建议，不证明原产品内部算法或已接入原产品服务。"
+    ],
+    "mobile": "项目建议：触屏无需hover即可看到主要信息与操作；按容器重排并提供足够命中区，状态变化保持可理解。",
+    "reducedMotion": "项目建议：保留真实数据与状态切换，取消非必要位移、旋转、模糊、循环和粒子；需要时立即呈现最终状态，保持返回、关闭与操作反馈。",
+    "performance": "项目建议：用独立过渡层与transform/opacity避免每帧重排，测量布局集中执行；完成、取消和卸载时清理动画与监听。",
+    "evidence": [
+      {
+        "url": "https://60fps.design/shots/opal-border-glow-feature-highlight-interaction",
+        "kind": "video-page",
+        "checkedAt": "2026-10-12T07:14:34.296Z",
+        "sha256": "602e52b0548ec128de96076e9bc983e8ca186a8c1a2f140699d7e5967f8d9e78",
+        "hashScope": "page-response"
+      }
+    ],
+    "notes": "根据已存原站视频页面行为说明整理网页实现方案；依赖空数组表示未宣称原产品技术栈。可按目标工程选择CSS/SVG/Web Animations或已安装Motion，不是官方依赖清单；适用场景和限制是项目建议。"
+  },
+  {
+    "entryId": "acbbbd63d54c2f9b",
+    "sourceUrl": "https://60fps.design/shots/airbnb-tactile-tab-button-interaction",
+    "basis": "observed-behavior",
+    "implementation": {
+      "summary": "分类胶囊按下压缩，活动底板迁移，下方骨架与内容完成连续交接。",
+      "steps": [
+        "为分类和内容建立稳定选中索引",
+        "pointerdown立即缩小目标胶囊，松手恢复",
+        "共享布局过渡活动背景到新标签",
+        "真实加载时显示骨架，内容就绪后交叉淡入"
+      ],
+      "dependencies": [],
+      "parameters": {
+        "项目建议（非原产品参数）": "先按可见状态建立可逆交互与正确数据结果，再为目标页面确定时长、幅度、拖动阈值和弹簧；需设备实测，不声称来源提供原值。"
+      }
+    },
+    "suitableFor": [
+      "项目适配场景：移动端分类导航",
+      "项目适配场景：信息流顶部"
+    ],
+    "avoidFor": [
+      "分类变化不能触发任何内容切换的装饰菜单"
+    ],
+    "layers": [
+      "layout",
+      "surface",
+      "content"
+    ],
+    "limitations": [
+      "骨架必须关联真实加载或明确演示，不应每次点击固定假装等待；活动项与焦点语义保持同步。",
+      "公开资料为产品视频与行为说明，未提供原App源码；本条步骤属于网页行为适配建议，不证明原产品内部算法或已接入原产品服务。"
+    ],
+    "mobile": "项目建议：触屏无需hover即可看到主要信息与操作；按容器重排并提供足够命中区，状态变化保持可理解。",
+    "reducedMotion": "项目建议：保留真实数据与状态切换，取消非必要位移、旋转、模糊、循环和粒子；需要时立即呈现最终状态，保持返回、关闭与操作反馈。",
+    "performance": "项目建议：用独立过渡层与transform/opacity避免每帧重排，测量布局集中执行；完成、取消和卸载时清理动画与监听。",
+    "evidence": [
+      {
+        "url": "https://60fps.design/shots/airbnb-tactile-tab-button-interaction",
+        "kind": "video-page",
+        "checkedAt": "2026-10-12T08:09:49.927Z",
+        "sha256": "8eab7dd68fca0b16e82b145adf392db287fe7b366187a89d89d901b385693e05",
+        "hashScope": "page-response"
+      }
+    ],
+    "notes": "根据已存原站视频页面行为说明整理网页实现方案；依赖空数组表示未宣称原产品技术栈。可按目标工程选择CSS/SVG/Web Animations或已安装Motion，不是官方依赖清单；适用场景和限制是项目建议。"
+  },
+  {
+    "entryId": "a75cbb8f1792076b",
+    "sourceUrl": "https://60fps.design/shots/apple-music-player-controls-collapse-interaction",
+    "basis": "observed-behavior",
+    "implementation": {
+      "summary": "全屏面板下拉时随手势移动，背景恢复缩放与亮度，超阈值松手收起。",
+      "steps": [
+        "建立open、dragging与closing状态并保存拖动起点",
+        "pointer capture跟随向下位移，内部滚动到顶后才接管",
+        "位移比例联动背景缩放和遮罩透明度",
+        "松手按位置与速度选择关闭或回弹，关闭后恢复触发焦点"
+      ],
+      "dependencies": [],
+      "parameters": {
+        "项目建议（非原产品参数）": "先按可见状态建立可逆交互与正确数据结果，再为目标页面确定时长、幅度、拖动阈值和弹簧；需设备实测，不声称来源提供原值。"
+      }
+    },
+    "suitableFor": [
+      "项目适配场景：移动端播放器",
+      "项目适配场景：可下拉关闭的详情面板"
+    ],
+    "avoidFor": [
+      "没有关闭替代按钮或内部滚动会误触退出的详情"
+    ],
+    "layers": [
+      "layout",
+      "content"
+    ],
+    "limitations": [
+      "网页不能直接复刻iOS系统级手势；阈值和弹簧参数须按目标设备实测，内部滚动与面板拖动要分派。",
+      "公开资料为产品视频与行为说明，未提供原App源码；本条步骤属于网页行为适配建议，不证明原产品内部算法或已接入原产品服务。"
+    ],
+    "mobile": "项目建议：使用Pointer Events区分点击、拖动与内部滚动；处理pointercancel、安全区和软键盘变化；始终提供可点击/键盘操作的同等替代。",
+    "reducedMotion": "项目建议：保留真实数据与状态切换，取消非必要位移、旋转、模糊、循环和粒子；需要时立即呈现最终状态，保持返回、关闭与操作反馈。",
+    "performance": "项目建议：用独立过渡层与transform/opacity避免每帧重排，测量布局集中执行；完成、取消和卸载时清理动画与监听。",
+    "evidence": [
+      {
+        "url": "https://60fps.design/shots/apple-music-player-controls-collapse-interaction",
+        "kind": "video-page",
+        "checkedAt": "2026-10-12T08:09:50.126Z",
+        "sha256": "1d05a3dfd190a16483b998f7d86e52fbf1bb8420adf84261bc7a30d164d90632",
+        "hashScope": "page-response"
+      }
+    ],
+    "notes": "根据已存原站视频页面行为说明整理网页实现方案；依赖空数组表示未宣称原产品技术栈。可按目标工程选择CSS/SVG/Web Animations或已安装Motion，不是官方依赖清单；适用场景和限制是项目建议。"
+  },
+  {
+    "entryId": "8bcbfcc3839721fb",
+    "sourceUrl": "https://60fps.design/shots/airbnb-photo-pop-and-slide-animation",
+    "basis": "observed-behavior",
+    "implementation": {
+      "summary": "照片堆顶卡先弹起转动，再退出到队尾，其余照片同步补位。",
+      "steps": [
+        "为照片顺序、当前顶卡和切换阶段建状态",
+        "顶卡先放大并向上旋出",
+        "退出结束后把顶卡移到队尾",
+        "其余卡按新索引过渡位置、缩放与层级"
+      ],
+      "dependencies": [],
+      "parameters": {
+        "项目建议（非原产品参数）": "先按可见状态建立可逆交互与正确数据结果，再为目标页面确定时长、幅度、拖动阈值和弹簧；需设备实测，不声称来源提供原值。"
+      }
+    },
+    "suitableFor": [
+      "项目适配场景：照片画廊",
+      "项目适配场景：目的地介绍",
+      "项目适配场景：作品卡片堆"
+    ],
+    "avoidFor": [
+      "所有照片都必须同时完整可见的对照页面"
+    ],
+    "layers": [
+      "content",
+      "surface"
+    ],
+    "limitations": [
+      "换序必须发生在适当动画阶段避免瞬间跳层；照片说明和手动前后切换需直接可用。",
+      "公开资料为产品视频与行为说明，未提供原App源码；本条步骤属于网页行为适配建议，不证明原产品内部算法或已接入原产品服务。"
+    ],
+    "mobile": "项目建议：触屏无需hover即可看到主要信息与操作；按容器重排并提供足够命中区，状态变化保持可理解。",
+    "reducedMotion": "项目建议：保留真实数据与状态切换，取消非必要位移、旋转、模糊、循环和粒子；需要时立即呈现最终状态，保持返回、关闭与操作反馈。",
+    "performance": "项目建议：用独立过渡层与transform/opacity避免每帧重排，测量布局集中执行；完成、取消和卸载时清理动画与监听。",
+    "evidence": [
+      {
+        "url": "https://60fps.design/shots/airbnb-photo-pop-and-slide-animation",
+        "kind": "video-page",
+        "checkedAt": "2026-10-12T08:09:50.202Z",
+        "sha256": "0f275b335b3fd63534892200fafe71b11599d76b58cee3e8ace168c34b4a1984",
+        "hashScope": "page-response"
+      }
+    ],
+    "notes": "根据已存原站视频页面行为说明整理网页实现方案；依赖空数组表示未宣称原产品技术栈。可按目标工程选择CSS/SVG/Web Animations或已安装Motion，不是官方依赖清单；适用场景和限制是项目建议。"
+  },
+  {
+    "entryId": "d349e6e81ac0f421",
+    "sourceUrl": "https://60fps.design/shots/airbnb-add-guests-in-sheet-interaction",
+    "basis": "observed-behavior",
+    "implementation": {
+      "summary": "人数面板的数值增加与人物队列弹入、横向让位形成因果反馈。",
+      "steps": [
+        "建立人数数值和可见人物队列",
+        "点击加号先更新合法人数并生成入场人物",
+        "队列整体横移保持焦点居中",
+        "减少人数时移除末项并反向补位"
+      ],
+      "dependencies": [],
+      "parameters": {
+        "项目建议（非原产品参数）": "先按可见状态建立可逆交互与正确数据结果，再为目标页面确定时长、幅度、拖动阈值和弹簧；需设备实测，不声称来源提供原值。"
+      }
+    },
+    "suitableFor": [
+      "项目适配场景：预约人数选择",
+      "项目适配场景：多人活动表单"
+    ],
+    "avoidFor": [
+      "人数大范围输入却用无限人物堆叠造成混乱的表单"
+    ],
+    "layers": [
+      "content",
+      "layout"
+    ],
+    "limitations": [
+      "16+羊驼只是原产品彩蛋，不是业务必需；不能让人物队列成为唯一人数读数。",
+      "公开资料为产品视频与行为说明，未提供原App源码；本条步骤属于网页行为适配建议，不证明原产品内部算法或已接入原产品服务。"
+    ],
+    "mobile": "项目建议：使用Pointer Events区分点击、拖动与内部滚动；处理pointercancel、安全区和软键盘变化；始终提供可点击/键盘操作的同等替代。",
+    "reducedMotion": "项目建议：保留真实数据与状态切换，取消非必要位移、旋转、模糊、循环和粒子；需要时立即呈现最终状态，保持返回、关闭与操作反馈。",
+    "performance": "项目建议：用独立过渡层与transform/opacity避免每帧重排，测量布局集中执行；完成、取消和卸载时清理动画与监听。",
+    "evidence": [
+      {
+        "url": "https://60fps.design/shots/airbnb-add-guests-in-sheet-interaction",
+        "kind": "video-page",
+        "checkedAt": "2026-10-12T08:09:50.367Z",
+        "sha256": "ec24043aec389a009a42c69695bf1e5e30499f8a5fa932c6693e91673dd836c9",
+        "hashScope": "page-response"
+      }
+    ],
+    "notes": "根据已存原站视频页面行为说明整理网页实现方案；依赖空数组表示未宣称原产品技术栈。可按目标工程选择CSS/SVG/Web Animations或已安装Motion，不是官方依赖清单；适用场景和限制是项目建议。"
+  },
+  {
+    "entryId": "b49c756b6c31c240",
+    "sourceUrl": "https://60fps.design/shots/linear-issue-actions-popup-interaction",
+    "basis": "observed-behavior",
+    "implementation": {
+      "summary": "输入时选项面板接替键盘占据底部空间，选完后回到原输入上下文。",
+      "steps": [
+        "记录当前输入焦点和选择字段",
+        "点击元数据入口时blur输入并打开网页底部选项层",
+        "选择后保存值并收起面板",
+        "在用户操作允许时恢复输入焦点并保持草稿"
+      ],
+      "dependencies": [],
+      "parameters": {
+        "项目建议（非原产品参数）": "先按可见状态建立可逆交互与正确数据结果，再为目标页面确定时长、幅度、拖动阈值和弹簧；需设备实测，不声称来源提供原值。"
+      }
+    },
+    "suitableFor": [
+      "项目适配场景：移动端任务创建",
+      "项目适配场景：带辅助选项的输入表单"
+    ],
+    "avoidFor": [
+      "必须程序化控制系统键盘每帧运动的网页"
+    ],
+    "layers": [
+      "layout",
+      "content"
+    ],
+    "limitations": [
+      "网页无法精确控制系统键盘动画或高度；需用VisualViewport与实际设备校验，不能承诺无缝接管iOS键盘。",
+      "公开资料为产品视频与行为说明，未提供原App源码；本条步骤属于网页行为适配建议，不证明原产品内部算法或已接入原产品服务。"
+    ],
+    "mobile": "项目建议：使用Pointer Events区分点击、拖动与内部滚动；处理pointercancel、安全区和软键盘变化；始终提供可点击/键盘操作的同等替代。",
+    "reducedMotion": "项目建议：保留真实数据与状态切换，取消非必要位移、旋转、模糊、循环和粒子；需要时立即呈现最终状态，保持返回、关闭与操作反馈。",
+    "performance": "项目建议：用独立过渡层与transform/opacity避免每帧重排，测量布局集中执行；完成、取消和卸载时清理动画与监听。",
+    "evidence": [
+      {
+        "url": "https://60fps.design/shots/linear-issue-actions-popup-interaction",
+        "kind": "video-page",
+        "checkedAt": "2026-10-12T08:09:51.220Z",
+        "sha256": "26f31ca45ae2b87bfdc059b51d2079a506566a688f6fdc7fdd923d230a6c470c",
+        "hashScope": "page-response"
+      }
+    ],
+    "notes": "根据已存原站视频页面行为说明整理网页实现方案；依赖空数组表示未宣称原产品技术栈。可按目标工程选择CSS/SVG/Web Animations或已安装Motion，不是官方依赖清单；适用场景和限制是项目建议。"
+  },
+  {
+    "entryId": "4af56fa95058067f",
+    "sourceUrl": "https://60fps.design/shots/revolut-revpoints-circular-slider-interaction",
+    "basis": "observed-behavior",
+    "implementation": {
+      "summary": "圆环拖动映射数值与弧长，整数吸附给读数反馈，最大值触发中心庆祝。",
+      "steps": [
+        "用圆心和pointer坐标计算归一化角度",
+        "把角度映射到受限数值并绘制SVG弧长",
+        "靠近整数时吸附并短暂强调中央读数",
+        "达到最大值时播放一次中心扩散并保持最终值"
+      ],
+      "dependencies": [],
+      "parameters": {
+        "项目建议（非原产品参数）": "先按可见状态建立可逆交互与正确数据结果，再为目标页面确定时长、幅度、拖动阈值和弹簧；需设备实测，不声称来源提供原值。"
+      }
+    },
+    "suitableFor": [
+      "项目适配场景：数值调节",
+      "项目适配场景：额度或倍率选择"
+    ],
+    "avoidFor": [
+      "要求非常精确连续小数输入却没有数字输入替代的控件"
+    ],
+    "layers": [
+      "content",
+      "surface"
+    ],
+    "limitations": [
+      "角度跨0度边界和拖动方向需处理；颜色/庆祝不应替代实际数值，也不包含真实积分业务。",
+      "公开资料为产品视频与行为说明，未提供原App源码；本条步骤属于网页行为适配建议，不证明原产品内部算法或已接入原产品服务。"
+    ],
+    "mobile": "项目建议：使用Pointer Events区分点击、拖动与内部滚动；处理pointercancel、安全区和软键盘变化；始终提供可点击/键盘操作的同等替代。",
+    "reducedMotion": "项目建议：保留真实数据与状态切换，取消非必要位移、旋转、模糊、循环和粒子；需要时立即呈现最终状态，保持返回、关闭与操作反馈。",
+    "performance": "项目建议：用独立过渡层与transform/opacity避免每帧重排，测量布局集中执行；完成、取消和卸载时清理动画与监听。",
+    "evidence": [
+      {
+        "url": "https://60fps.design/shots/revolut-revpoints-circular-slider-interaction",
+        "kind": "video-page",
+        "checkedAt": "2026-10-12T08:09:51.384Z",
+        "sha256": "afefa1044a3108665fc0b500b2d12093265722a1976780136d308ecbc9c5eb67",
+        "hashScope": "page-response"
+      }
+    ],
+    "notes": "根据已存原站视频页面行为说明整理网页实现方案；依赖空数组表示未宣称原产品技术栈。可按目标工程选择CSS/SVG/Web Animations或已安装Motion，不是官方依赖清单；适用场景和限制是项目建议。"
+  },
+  {
+    "entryId": "fee04c2c29ab4679",
+    "sourceUrl": "https://60fps.design/shots/perplexity-model-selection-sheet-morph-interaction",
+    "basis": "observed-behavior",
+    "implementation": {
+      "summary": "同一底部面板从模式选择伸高为模型列表，选择后收回并更新原字段。",
+      "steps": [
+        "建立closed、mode与model三级视图状态",
+        "打开时锁定背景滚动并显示遮罩",
+        "切到model时在同一容器过渡高度并错相显示列表",
+        "选中后更新实际选项并回到mode，保留关闭入口"
+      ],
+      "dependencies": [],
+      "parameters": {
+        "项目建议（非原产品参数）": "先按可见状态建立可逆交互与正确数据结果，再为目标页面确定时长、幅度、拖动阈值和弹簧；需设备实测，不声称来源提供原值。"
+      }
+    },
+    "suitableFor": [
+      "项目适配场景：模型选择",
+      "项目适配场景：移动端设置",
+      "项目适配场景：多级选项"
+    ],
+    "avoidFor": [
+      "把展示型号清单冒充已获得模型调用权限的产品"
+    ],
+    "layers": [
+      "layout",
+      "content"
+    ],
+    "limitations": [
+      "面板内焦点与返回层级要明确；模型列表是传入数据，不代表已经接入这些模型。",
+      "公开资料为产品视频与行为说明，未提供原App源码；本条步骤属于网页行为适配建议，不证明原产品内部算法或已接入原产品服务。"
+    ],
+    "mobile": "项目建议：使用Pointer Events区分点击、拖动与内部滚动；处理pointercancel、安全区和软键盘变化；始终提供可点击/键盘操作的同等替代。",
+    "reducedMotion": "项目建议：保留真实数据与状态切换，取消非必要位移、旋转、模糊、循环和粒子；需要时立即呈现最终状态，保持返回、关闭与操作反馈。",
+    "performance": "项目建议：用独立过渡层与transform/opacity避免每帧重排，测量布局集中执行；完成、取消和卸载时清理动画与监听。",
+    "evidence": [
+      {
+        "url": "https://60fps.design/shots/perplexity-model-selection-sheet-morph-interaction",
+        "kind": "video-page",
+        "checkedAt": "2026-10-12T08:09:51.481Z",
+        "sha256": "5ef43d70546a27e04125ee7f6cd927b1acef6883bb738a8d6d75b7ca760a5e2d",
+        "hashScope": "page-response"
+      }
+    ],
+    "notes": "根据已存原站视频页面行为说明整理网页实现方案；依赖空数组表示未宣称原产品技术栈。可按目标工程选择CSS/SVG/Web Animations或已安装Motion，不是官方依赖清单；适用场景和限制是项目建议。"
+  },
+  {
+    "entryId": "e336505a427b4e3d",
+    "sourceUrl": "https://60fps.design/shots/google-todo-check-interaction",
+    "basis": "observed-behavior",
+    "implementation": {
+      "summary": "单项处理图标转为勾选，全部完成后出现统一插画、标题与行动按钮。",
+      "steps": [
+        "以真实任务状态保存pending、running、done或error",
+        "每项完成后过渡等待圆环为勾选",
+        "仅全部任务满足成功条件时进入overall-done",
+        "整体收尾插画与行动入口一次入场，失败项允许重试"
+      ],
+      "dependencies": [],
+      "parameters": {
+        "项目建议（非原产品参数）": "先按可见状态建立可逆交互与正确数据结果，再为目标页面确定时长、幅度、拖动阈值和弹簧；需设备实测，不声称来源提供原值。"
+      }
+    },
+    "suitableFor": [
+      "项目适配场景：新手引导",
+      "项目适配场景：设置检查清单",
+      "项目适配场景：准备任务页"
+    ],
+    "avoidFor": [
+      "用完成动画替代真实任务状态的进度流程"
+    ],
+    "layers": [
+      "content",
+      "layout"
+    ],
+    "limitations": [
+      "不能按计时器把真实失败任务自动标为完成；庆祝后仍要显示清单结果与错误。",
+      "公开资料为产品视频与行为说明，未提供原App源码；本条步骤属于网页行为适配建议，不证明原产品内部算法或已接入原产品服务。"
+    ],
+    "mobile": "项目建议：触屏无需hover即可看到主要信息与操作；按容器重排并提供足够命中区，状态变化保持可理解。",
+    "reducedMotion": "项目建议：保留真实数据与状态切换，取消非必要位移、旋转、模糊、循环和粒子；需要时立即呈现最终状态，保持返回、关闭与操作反馈。",
+    "performance": "项目建议：用独立过渡层与transform/opacity避免每帧重排，测量布局集中执行；完成、取消和卸载时清理动画与监听。",
+    "evidence": [
+      {
+        "url": "https://60fps.design/shots/google-todo-check-interaction",
+        "kind": "video-page",
+        "checkedAt": "2026-10-12T08:09:51.657Z",
+        "sha256": "91136e70c30135f87b4db7112cda7db043b700527afbf2e5dc4aad1fd739a245",
+        "hashScope": "page-response"
+      }
+    ],
+    "notes": "根据已存原站视频页面行为说明整理网页实现方案；依赖空数组表示未宣称原产品技术栈。可按目标工程选择CSS/SVG/Web Animations或已安装Motion，不是官方依赖清单；适用场景和限制是项目建议。"
+  },
+  {
+    "entryId": "64c0e568d28654ea",
+    "sourceUrl": "https://60fps.design/shots/google-ai-mode-search-morph-interaction",
+    "basis": "observed-behavior",
+    "implementation": {
+      "summary": "紧凑搜索入口扩展为全屏搜索视图，背景变暗，建议和输入区域接续出现。",
+      "steps": [
+        "保存入口元素的起始矩形和返回焦点",
+        "展开为独立全屏层并共享几何过渡",
+        "显示建议胶囊并聚焦实际输入",
+        "退出时逆向缩回入口并恢复页面滚动位置"
+      ],
+      "dependencies": [],
+      "parameters": {
+        "项目建议（非原产品参数）": "先按可见状态建立可逆交互与正确数据结果，再为目标页面确定时长、幅度、拖动阈值和弹簧；需设备实测，不声称来源提供原值。"
+      }
+    },
+    "suitableFor": [
+      "项目适配场景：移动端搜索",
+      "项目适配场景：AI工具入口"
+    ],
+    "avoidFor": [
+      "缺少可返回入口或把原始草稿覆盖掉的全屏搜索"
+    ],
+    "layers": [
+      "layout",
+      "content"
+    ],
+    "limitations": [
+      "键盘出现受浏览器用户手势限制，不能保证程序化自动弹出；搜索能力需业务接入。",
+      "公开资料为产品视频与行为说明，未提供原App源码；本条步骤属于网页行为适配建议，不证明原产品内部算法或已接入原产品服务。"
+    ],
+    "mobile": "项目建议：触屏无需hover即可看到主要信息与操作；按容器重排并提供足够命中区，状态变化保持可理解。",
+    "reducedMotion": "项目建议：保留真实数据与状态切换，取消非必要位移、旋转、模糊、循环和粒子；需要时立即呈现最终状态，保持返回、关闭与操作反馈。",
+    "performance": "项目建议：用独立过渡层与transform/opacity避免每帧重排，测量布局集中执行；完成、取消和卸载时清理动画与监听。",
+    "evidence": [
+      {
+        "url": "https://60fps.design/shots/google-ai-mode-search-morph-interaction",
+        "kind": "video-page",
+        "checkedAt": "2026-10-12T08:09:52.486Z",
+        "sha256": "41210d70dcafe2500da99147873c52aeacd1faf35346df4f071799c85724aaac",
+        "hashScope": "page-response"
+      }
+    ],
+    "notes": "根据已存原站视频页面行为说明整理网页实现方案；依赖空数组表示未宣称原产品技术栈。可按目标工程选择CSS/SVG/Web Animations或已安装Motion，不是官方依赖清单；适用场景和限制是项目建议。"
+  },
+  {
+    "entryId": "d7999f6a0d76dfe0",
+    "sourceUrl": "https://60fps.design/shots/google-photos-logo-spin-to-backup-loader-animation",
+    "basis": "observed-behavior",
+    "implementation": {
+      "summary": "顶部状态行展开为带进度与说明的卡片，下方内容随着高度变化平滑下移。",
+      "steps": [
+        "将简略状态行与详情卡放在正常文档流中",
+        "点击切换expanded并过渡容器高度",
+        "同步显示任务进度、剩余时间与说明",
+        "完成或收起后恢复简略行，保留当前滚动锚点"
+      ],
+      "dependencies": [],
+      "parameters": {
+        "项目建议（非原产品参数）": "先按可见状态建立可逆交互与正确数据结果，再为目标页面确定时长、幅度、拖动阈值和弹簧；需设备实测，不声称来源提供原值。"
+      }
+    },
+    "suitableFor": [
+      "项目适配场景：上传状态",
+      "项目适配场景：同步进度",
+      "项目适配场景：顶部任务状态"
+    ],
+    "avoidFor": [
+      "必须悬浮覆盖而不推动下方内容的通知提示"
+    ],
+    "layers": [
+      "layout",
+      "content"
+    ],
+    "limitations": [
+      "记录对应展开状态而非根据slug推断Logo旋转；进度与剩余时间须真实或标注模拟。",
+      "公开资料为产品视频与行为说明，未提供原App源码；本条步骤属于网页行为适配建议，不证明原产品内部算法或已接入原产品服务。"
+    ],
+    "mobile": "项目建议：使用Pointer Events区分点击、拖动与内部滚动；处理pointercancel、安全区和软键盘变化；始终提供可点击/键盘操作的同等替代。",
+    "reducedMotion": "项目建议：保留真实数据与状态切换，取消非必要位移、旋转、模糊、循环和粒子；需要时立即呈现最终状态，保持返回、关闭与操作反馈。",
+    "performance": "项目建议：用独立过渡层与transform/opacity避免每帧重排，测量布局集中执行；完成、取消和卸载时清理动画与监听。",
+    "evidence": [
+      {
+        "url": "https://60fps.design/shots/google-photos-logo-spin-to-backup-loader-animation",
+        "kind": "video-page",
+        "checkedAt": "2026-10-12T08:09:52.638Z",
+        "sha256": "77095cc4cb26616997b9ceb7ecc4d074f78c64fe1744157c3aeceb50a22bb28d",
+        "hashScope": "page-response"
+      }
+    ],
+    "notes": "根据已存原站视频页面行为说明整理网页实现方案；依赖空数组表示未宣称原产品技术栈。可按目标工程选择CSS/SVG/Web Animations或已安装Motion，不是官方依赖清单；适用场景和限制是项目建议。"
+  },
+  {
+    "entryId": "5e5b3722d2eb3996",
+    "sourceUrl": "https://60fps.design/shots/notion-ai-sheet-intro-action-trail-transition",
+    "basis": "observed-behavior",
+    "implementation": {
+      "summary": "固定角色旁的能力胶囊持续竖向流动，底部主行动入口保持静止。",
+      "steps": [
+        "在底部介绍面板中分开固定角色和滚动能力列",
+        "复制胶囊序列形成可循环轨道",
+        "线性向上移动并在遮罩边缘淡出",
+        "主行动按钮独立固定，暂停后仍能读到能力说明"
+      ],
+      "dependencies": [],
+      "parameters": {
+        "项目建议（非原产品参数）": "先按可见状态建立可逆交互与正确数据结果，再为目标页面确定时长、幅度、拖动阈值和弹簧；需设备实测，不声称来源提供原值。"
+      }
+    },
+    "suitableFor": [
+      "项目适配场景：工具能力引导",
+      "项目适配场景：移动端入门面板"
+    ],
+    "avoidFor": [
+      "每项文案都需完整精读的合同或教程步骤"
+    ],
+    "layers": [
+      "layout",
+      "content"
+    ],
+    "limitations": [
+      "能力文案只描述实际支持功能；自动流动需可暂停，重复节点不应被读屏重复朗读。",
+      "公开资料为产品视频与行为说明，未提供原App源码；本条步骤属于网页行为适配建议，不证明原产品内部算法或已接入原产品服务。"
+    ],
+    "mobile": "项目建议：触屏无需hover即可看到主要信息与操作；按容器重排并提供足够命中区，状态变化保持可理解。",
+    "reducedMotion": "项目建议：保留真实数据与状态切换，取消非必要位移、旋转、模糊、循环和粒子；需要时立即呈现最终状态，保持返回、关闭与操作反馈。",
+    "performance": "项目建议：用独立过渡层与transform/opacity避免每帧重排，测量布局集中执行；完成、取消和卸载时清理动画与监听。",
+    "evidence": [
+      {
+        "url": "https://60fps.design/shots/notion-ai-sheet-intro-action-trail-transition",
+        "kind": "video-page",
+        "checkedAt": "2026-10-12T08:09:52.777Z",
+        "sha256": "41dcb67c5165e685e721fd01c07952291bfbb8f54a7eddd2a88895dc1338c3c9",
+        "hashScope": "page-response"
+      }
+    ],
+    "notes": "根据已存原站视频页面行为说明整理网页实现方案；依赖空数组表示未宣称原产品技术栈。可按目标工程选择CSS/SVG/Web Animations或已安装Motion，不是官方依赖清单；适用场景和限制是项目建议。"
+  },
+  {
+    "entryId": "7a2ac53756b4c164",
+    "sourceUrl": "https://60fps.design/shots/airbnb-identity-verification-card-flip-scan-interaction",
+    "basis": "observed-behavior",
+    "implementation": {
+      "summary": "认证入口展开为立体卡片，设备倾斜改变卡面角度与全息反光，返回收回原位。",
+      "steps": [
+        "保存徽章与展开卡的共享位置关系",
+        "点击后显示独立卡片层",
+        "经用户授权的设备方向或指针输入映射受限倾角和反光",
+        "关闭时复位并缩回徽章，提供无传感器替代"
+      ],
+      "dependencies": [],
+      "parameters": {
+        "项目建议（非原产品参数）": "先按可见状态建立可逆交互与正确数据结果，再为目标页面确定时长、幅度、拖动阈值和弹簧；需设备实测，不声称来源提供原值。"
+      }
+    },
+    "suitableFor": [
+      "项目适配场景：移动端认证展示",
+      "项目适配场景：数字会员卡"
+    ],
+    "avoidFor": [
+      "把装饰卡片等同真实身份证明或安全认证的业务"
+    ],
+    "layers": [
+      "surface",
+      "content",
+      "outer-glow"
+    ],
+    "limitations": [
+      "设备方向权限仅部分浏览器支持且需用户授权；动画不证明身份已认证，真实身份状态由后端给出。",
+      "公开资料为产品视频与行为说明，未提供原App源码；本条步骤属于网页行为适配建议，不证明原产品内部算法或已接入原产品服务。"
+    ],
+    "mobile": "项目建议：使用Pointer Events区分点击、拖动与内部滚动；处理pointercancel、安全区和软键盘变化；始终提供可点击/键盘操作的同等替代。",
+    "reducedMotion": "项目建议：保留真实数据与状态切换，取消非必要位移、旋转、模糊、循环和粒子；需要时立即呈现最终状态，保持返回、关闭与操作反馈。",
+    "performance": "项目建议：用独立过渡层与transform/opacity避免每帧重排，测量布局集中执行；完成、取消和卸载时清理动画与监听。",
+    "evidence": [
+      {
+        "url": "https://60fps.design/shots/airbnb-identity-verification-card-flip-scan-interaction",
+        "kind": "video-page",
+        "checkedAt": "2026-10-12T08:09:52.921Z",
+        "sha256": "20670d16d6871f274de516c4a1c996551cad8e24cb431027a9fca29d01108831",
+        "hashScope": "page-response"
+      }
+    ],
+    "notes": "根据已存原站视频页面行为说明整理网页实现方案；依赖空数组表示未宣称原产品技术栈。可按目标工程选择CSS/SVG/Web Animations或已安装Motion，不是官方依赖清单；适用场景和限制是项目建议。"
+  },
+  {
+    "entryId": "094ec132bb2affc0",
+    "sourceUrl": "https://60fps.design/shots/github-badges-showcase-interaction",
+    "basis": "observed-behavior",
+    "implementation": {
+      "summary": "徽章横向吸附切换，立体轻旋转与背景换色、说明更新同步发生。",
+      "steps": [
+        "给徽章、背景主题和说明建立同一索引",
+        "横向拖动后计算最近目标并吸附居中",
+        "拖动进度映射当前与相邻徽章旋转",
+        "索引落定后交融背景并更新稳定文本，关闭时退出弹层"
+      ],
+      "dependencies": [],
+      "parameters": {
+        "项目建议（非原产品参数）": "先按可见状态建立可逆交互与正确数据结果，再为目标页面确定时长、幅度、拖动阈值和弹簧；需设备实测，不声称来源提供原值。"
+      }
+    },
+    "suitableFor": [
+      "项目适配场景：成就展示",
+      "项目适配场景：个人档案徽章",
+      "项目适配场景：收藏轮播"
+    ],
+    "avoidFor": [
+      "依赖大量徽章同时比较细节的管理表"
+    ],
+    "layers": [
+      "content",
+      "surface",
+      "layout"
+    ],
+    "limitations": [
+      "徽章成果需真实数据或标注示例；背景变化不能降低说明对比，不应仅用颜色表示选中。",
+      "公开资料为产品视频与行为说明，未提供原App源码；本条步骤属于网页行为适配建议，不证明原产品内部算法或已接入原产品服务。"
+    ],
+    "mobile": "项目建议：触屏无需hover即可看到主要信息与操作；按容器重排并提供足够命中区，状态变化保持可理解。",
+    "reducedMotion": "项目建议：保留真实数据与状态切换，取消非必要位移、旋转、模糊、循环和粒子；需要时立即呈现最终状态，保持返回、关闭与操作反馈。",
+    "performance": "项目建议：用独立过渡层与transform/opacity避免每帧重排，测量布局集中执行；完成、取消和卸载时清理动画与监听。",
+    "evidence": [
+      {
+        "url": "https://60fps.design/shots/github-badges-showcase-interaction",
+        "kind": "video-page",
+        "checkedAt": "2026-10-12T08:09:53.751Z",
+        "sha256": "50a3379e2a087be66d39044082eabf1dd472f58175222fd0d7ac5ca5810b2671",
+        "hashScope": "page-response"
+      }
+    ],
+    "notes": "根据已存原站视频页面行为说明整理网页实现方案；依赖空数组表示未宣称原产品技术栈。可按目标工程选择CSS/SVG/Web Animations或已安装Motion，不是官方依赖清单；适用场景和限制是项目建议。"
+  },
+  {
+    "entryId": "f0d39e6511b80f02",
+    "sourceUrl": "https://60fps.design/shots/revolut-graph-glow-drag-interaction",
+    "basis": "observed-behavior",
+    "implementation": {
+      "summary": "横向拖动沿折线定位指示线和光点，读数与时间更新，换范围时曲线形变。",
+      "steps": [
+        "用同一数据数组生成曲线与坐标映射",
+        "pointer横坐标定位最近数据点",
+        "同步移动竖线、高亮点和可读数值标签",
+        "切换时间范围时对兼容路径插值并说明数据来源"
+      ],
+      "dependencies": [],
+      "parameters": {
+        "项目建议（非原产品参数）": "先按可见状态建立可逆交互与正确数据结果，再为目标页面确定时长、幅度、拖动阈值和弹簧；需设备实测，不声称来源提供原值。"
+      }
+    },
+    "suitableFor": [
+      "项目适配场景：趋势图表",
+      "项目适配场景：数据探索",
+      "项目适配场景：分析面板"
+    ],
+    "avoidFor": [
+      "需要真实投资行情却只提供演示曲线的页面"
+    ],
+    "layers": [
+      "content",
+      "outer-glow"
+    ],
+    "limitations": [
+      "曲线插值不代表插入真实数据；金融数值必须真实或标注模拟，正负不只靠红绿表示。",
+      "公开资料为产品视频与行为说明，未提供原App源码；本条步骤属于网页行为适配建议，不证明原产品内部算法或已接入原产品服务。"
+    ],
+    "mobile": "项目建议：使用Pointer Events区分点击、拖动与内部滚动；处理pointercancel、安全区和软键盘变化；始终提供可点击/键盘操作的同等替代。",
+    "reducedMotion": "项目建议：保留真实数据与状态切换，取消非必要位移、旋转、模糊、循环和粒子；需要时立即呈现最终状态，保持返回、关闭与操作反馈。",
+    "performance": "项目建议：用独立过渡层与transform/opacity避免每帧重排，测量布局集中执行；完成、取消和卸载时清理动画与监听。",
+    "evidence": [
+      {
+        "url": "https://60fps.design/shots/revolut-graph-glow-drag-interaction",
+        "kind": "video-page",
+        "checkedAt": "2026-10-12T08:09:53.998Z",
+        "sha256": "4bb2a3c025cb607af0ad3ae269349f7b1834b011995cc1e4797bb0551f863579",
+        "hashScope": "page-response"
+      }
+    ],
+    "notes": "根据已存原站视频页面行为说明整理网页实现方案；依赖空数组表示未宣称原产品技术栈。可按目标工程选择CSS/SVG/Web Animations或已安装Motion，不是官方依赖清单；适用场景和限制是项目建议。"
+  },
+  {
+    "entryId": "f76c6bca9cb40907",
+    "sourceUrl": "https://60fps.design/shots/revolut-3d-card-rotate-interaction",
+    "basis": "observed-behavior",
+    "implementation": {
+      "summary": "产品卡横向切换保留透视深度，点击翻面，色点控制卡面材质颜色。",
+      "steps": [
+        "维护卡片索引、正反面和色款状态",
+        "横向切换以深度与旋转区分前后层",
+        "点击时围绕纵轴翻面并设置背面可见性",
+        "色点更新材质颜色与稳定名称，保留返回正面入口"
+      ],
+      "dependencies": [],
+      "parameters": {
+        "项目建议（非原产品参数）": "先按可见状态建立可逆交互与正确数据结果，再为目标页面确定时长、幅度、拖动阈值和弹簧；需设备实测，不声称来源提供原值。"
+      }
+    },
+    "suitableFor": [
+      "项目适配场景：产品款式展示",
+      "项目适配场景：数字卡片选择"
+    ],
+    "avoidFor": [
+      "以翻面视觉冒充支付、开卡或实体材质验证"
+    ],
+    "layers": [
+      "surface",
+      "content"
+    ],
+    "limitations": [
+      "卡面金属光泽是网页近似材质；真实卡号或支付操作不应放在仅靠动画隐藏的背面。",
+      "公开资料为产品视频与行为说明，未提供原App源码；本条步骤属于网页行为适配建议，不证明原产品内部算法或已接入原产品服务。"
+    ],
+    "mobile": "项目建议：触屏无需hover即可看到主要信息与操作；按容器重排并提供足够命中区，状态变化保持可理解。",
+    "reducedMotion": "项目建议：保留真实数据与状态切换，取消非必要位移、旋转、模糊、循环和粒子；需要时立即呈现最终状态，保持返回、关闭与操作反馈。",
+    "performance": "项目建议：用独立过渡层与transform/opacity避免每帧重排，测量布局集中执行；完成、取消和卸载时清理动画与监听。",
+    "evidence": [
+      {
+        "url": "https://60fps.design/shots/revolut-3d-card-rotate-interaction",
+        "kind": "video-page",
+        "checkedAt": "2026-10-12T08:09:54.031Z",
+        "sha256": "1b95aa4ba5a7092e8a8813ee66d68b955698ab1c2ba52809b1ad5346c8fc6ed2",
+        "hashScope": "page-response"
+      }
+    ],
+    "notes": "根据已存原站视频页面行为说明整理网页实现方案；依赖空数组表示未宣称原产品技术栈。可按目标工程选择CSS/SVG/Web Animations或已安装Motion，不是官方依赖清单；适用场景和限制是项目建议。"
+  },
+  {
+    "entryId": "40c39712362ae2d0",
+    "sourceUrl": "https://60fps.design/shots/apple-music-emoji-reaction-interaction",
+    "basis": "observed-behavior",
+    "implementation": {
+      "summary": "回应菜单弹出，选择表情后菜单收起并生成一组上浮淡出的同类表情。",
+      "steps": [
+        "建立回应菜单的开闭与活动选择",
+        "弹性入场显示有限表情选项",
+        "选择后先更新回应状态并关闭菜单",
+        "创建短命表情粒子上浮、缩小、淡出后清理"
+      ],
+      "dependencies": [],
+      "parameters": {
+        "项目建议（非原产品参数）": "先按可见状态建立可逆交互与正确数据结果，再为目标页面确定时长、幅度、拖动阈值和弹簧；需设备实测，不声称来源提供原值。"
+      }
+    },
+    "suitableFor": [
+      "项目适配场景：内容回应",
+      "项目适配场景：评论互动",
+      "项目适配场景：播放器回应"
+    ],
+    "avoidFor": [
+      "高频点击造成无限粒子累积或遮挡聊天内容"
+    ],
+    "layers": [
+      "content",
+      "outer-glow"
+    ],
+    "limitations": [
+      "庆祝粒子不能拦截页面点击；实际点赞计数和多人同步需真实服务，不能由动画推断。",
+      "公开资料为产品视频与行为说明，未提供原App源码；本条步骤属于网页行为适配建议，不证明原产品内部算法或已接入原产品服务。"
+    ],
+    "mobile": "项目建议：触屏无需hover即可看到主要信息与操作；按容器重排并提供足够命中区，状态变化保持可理解。",
+    "reducedMotion": "项目建议：保留真实数据与状态切换，取消非必要位移、旋转、模糊、循环和粒子；需要时立即呈现最终状态，保持返回、关闭与操作反馈。",
+    "performance": "项目建议：用独立过渡层与transform/opacity避免每帧重排，测量布局集中执行；完成、取消和卸载时清理动画与监听。",
+    "evidence": [
+      {
+        "url": "https://60fps.design/shots/apple-music-emoji-reaction-interaction",
+        "kind": "video-page",
+        "checkedAt": "2026-10-12T08:09:54.233Z",
+        "sha256": "69bb6f1b3e10385fdff679ca1844129ff55d19cf6773fcba8fddfc1ce3f06235",
+        "hashScope": "page-response"
+      }
+    ],
+    "notes": "根据已存原站视频页面行为说明整理网页实现方案；依赖空数组表示未宣称原产品技术栈。可按目标工程选择CSS/SVG/Web Animations或已安装Motion，不是官方依赖清单；适用场景和限制是项目建议。"
+  },
+  {
+    "entryId": "cb0a91c3b30c7181",
+    "sourceUrl": "https://60fps.design/shots/google-chrome-drag-tab-to-pin-interaction",
+    "basis": "observed-behavior",
+    "implementation": {
+      "summary": "拖入目标区时卡片缩小并高亮接收区域，松手后卡片移到置顶行，原网格补位。",
+      "steps": [
+        "为普通列表和置顶列表分别保存稳定ID",
+        "拖动时计算与接收区的命中并显示预览",
+        "有效松手后从原集合移除并加入置顶集合",
+        "用FLIP或共享布局让卡片飞入置顶行并补齐原位"
+      ],
+      "dependencies": [],
+      "parameters": {
+        "项目建议（非原产品参数）": "先按可见状态建立可逆交互与正确数据结果，再为目标页面确定时长、幅度、拖动阈值和弹簧；需设备实测，不声称来源提供原值。"
+      }
+    },
+    "suitableFor": [
+      "项目适配场景：卡片收藏",
+      "项目适配场景：固定快捷入口",
+      "项目适配场景：标签管理"
+    ],
+    "avoidFor": [
+      "没有可撤销操作或持久化策略的关键任务排序"
+    ],
+    "layers": [
+      "layout",
+      "content"
+    ],
+    "limitations": [
+      "状态变更和视觉过渡需一致；必须提供键盘置顶/取消置顶入口，防止只能拖拽操作。",
+      "公开资料为产品视频与行为说明，未提供原App源码；本条步骤属于网页行为适配建议，不证明原产品内部算法或已接入原产品服务。"
+    ],
+    "mobile": "项目建议：使用Pointer Events区分点击、拖动与内部滚动；处理pointercancel、安全区和软键盘变化；始终提供可点击/键盘操作的同等替代。",
+    "reducedMotion": "项目建议：保留真实数据与状态切换，取消非必要位移、旋转、模糊、循环和粒子；需要时立即呈现最终状态，保持返回、关闭与操作反馈。",
+    "performance": "项目建议：用独立过渡层与transform/opacity避免每帧重排，测量布局集中执行；完成、取消和卸载时清理动画与监听。",
+    "evidence": [
+      {
+        "url": "https://60fps.design/shots/google-chrome-drag-tab-to-pin-interaction",
+        "kind": "video-page",
+        "checkedAt": "2026-10-12T08:09:55.035Z",
+        "sha256": "663177bdf459e06fde22753199887849a2b17bd3354046ade52b4c9f710df3f1",
+        "hashScope": "page-response"
+      }
+    ],
+    "notes": "根据已存原站视频页面行为说明整理网页实现方案；依赖空数组表示未宣称原产品技术栈。可按目标工程选择CSS/SVG/Web Animations或已安装Motion，不是官方依赖清单；适用场景和限制是项目建议。"
+  },
+  {
+    "entryId": "86d81551dba0aa56",
+    "sourceUrl": "https://60fps.design/shots/google-chrome-drag-tabs-to-arrange-interaction",
+    "basis": "observed-behavior",
+    "implementation": {
+      "summary": "长按抬起卡片，拖过网格时其他卡实时让位，松手后吸附到新格位。",
+      "steps": [
+        "长按达到阈值后进入拖动而非立即拦截滚动",
+        "根据指针落点计算目标索引",
+        "拖动中暂排其他卡片并播放布局过渡",
+        "松手提交顺序并把拖动卡吸附到目标格"
+      ],
+      "dependencies": [],
+      "parameters": {
+        "项目建议（非原产品参数）": "先按可见状态建立可逆交互与正确数据结果，再为目标页面确定时长、幅度、拖动阈值和弹簧；需设备实测，不声称来源提供原值。"
+      }
+    },
+    "suitableFor": [
+      "项目适配场景：卡片排序",
+      "项目适配场景：相册管理",
+      "项目适配场景：可定制网格"
+    ],
+    "avoidFor": [
+      "不允许改变顺序或需要精确位置存档却无保存逻辑的清单"
+    ],
+    "layers": [
+      "layout",
+      "content"
+    ],
+    "limitations": [
+      "长按/拖动要与页面滚动分派；需要键盘移动和取消，重排顺序是否持久化由业务决定。",
+      "公开资料为产品视频与行为说明，未提供原App源码；本条步骤属于网页行为适配建议，不证明原产品内部算法或已接入原产品服务。"
+    ],
+    "mobile": "项目建议：使用Pointer Events区分点击、拖动与内部滚动；处理pointercancel、安全区和软键盘变化；始终提供可点击/键盘操作的同等替代。",
+    "reducedMotion": "项目建议：保留真实数据与状态切换，取消非必要位移、旋转、模糊、循环和粒子；需要时立即呈现最终状态，保持返回、关闭与操作反馈。",
+    "performance": "项目建议：用独立过渡层与transform/opacity避免每帧重排，测量布局集中执行；完成、取消和卸载时清理动画与监听。",
+    "evidence": [
+      {
+        "url": "https://60fps.design/shots/google-chrome-drag-tabs-to-arrange-interaction",
+        "kind": "video-page",
+        "checkedAt": "2026-10-12T08:09:55.360Z",
+        "sha256": "97aac7f761a329e595a133a49eb8ba57fff35cb6eff0829d990ed176fabcfd95",
+        "hashScope": "page-response"
+      }
+    ],
+    "notes": "根据已存原站视频页面行为说明整理网页实现方案；依赖空数组表示未宣称原产品技术栈。可按目标工程选择CSS/SVG/Web Animations或已安装Motion，不是官方依赖清单；适用场景和限制是项目建议。"
+  },
+  {
+    "entryId": "7c54471b8ab97c00",
+    "sourceUrl": "https://60fps.design/shots/google-chrome-tabs-switch-scale-interaction",
+    "basis": "observed-behavior",
+    "implementation": {
+      "summary": "整页缩回对应标签胶囊，让用户看到当前页面在多页队列中的位置。",
+      "steps": [
+        "保存当前页面与目标标签卡的边界矩形",
+        "把页面快照或展示层提升为过渡层",
+        "缩放移动到对应卡片同时加深背景",
+        "交接到标签选择视图，返回时逆向恢复原页面状态"
+      ],
+      "dependencies": [],
+      "parameters": {
+        "项目建议（非原产品参数）": "先按可见状态建立可逆交互与正确数据结果，再为目标页面确定时长、幅度、拖动阈值和弹簧；需设备实测，不声称来源提供原值。"
+      }
+    },
+    "suitableFor": [
+      "项目适配场景：多页工作台",
+      "项目适配场景：标签切换",
+      "项目适配场景：移动端页面管理"
+    ],
+    "avoidFor": [
+      "跨域页面无法获得真实快照却承诺完整页面复刻"
+    ],
+    "layers": [
+      "layout",
+      "content"
+    ],
+    "limitations": [
+      "不能把真实表单/iframe随意复制为交互快照；过渡层不接收业务输入，需保持原页面状态和焦点。",
+      "公开资料为产品视频与行为说明，未提供原App源码；本条步骤属于网页行为适配建议，不证明原产品内部算法或已接入原产品服务。"
+    ],
+    "mobile": "项目建议：触屏无需hover即可看到主要信息与操作；按容器重排并提供足够命中区，状态变化保持可理解。",
+    "reducedMotion": "项目建议：保留真实数据与状态切换，取消非必要位移、旋转、模糊、循环和粒子；需要时立即呈现最终状态，保持返回、关闭与操作反馈。",
+    "performance": "项目建议：用独立过渡层与transform/opacity避免每帧重排，测量布局集中执行；完成、取消和卸载时清理动画与监听。",
+    "evidence": [
+      {
+        "url": "https://60fps.design/shots/google-chrome-tabs-switch-scale-interaction",
+        "kind": "video-page",
+        "checkedAt": "2026-10-12T08:09:55.465Z",
+        "sha256": "4751cca9d08ae6dc9c23cc7a26283f5ee525ee9d4b68cb7044b321e9b6f10947",
+        "hashScope": "page-response"
+      }
+    ],
+    "notes": "根据已存原站视频页面行为说明整理网页实现方案；依赖空数组表示未宣称原产品技术栈。可按目标工程选择CSS/SVG/Web Animations或已安装Motion，不是官方依赖清单；适用场景和限制是项目建议。"
+  },
+  {
+    "entryId": "3a865035626f460b",
+    "sourceUrl": "https://60fps.design/shots/google-docs-value-prop-full-screen-color-transition",
+    "basis": "observed-behavior",
+    "implementation": {
+      "summary": "引导步骤切换时整屏底色交融，插画和文案横向滑动并有轻微视差。",
+      "steps": [
+        "以当前步骤关联背景色、插画和文案",
+        "前后两套背景交叉淡化避免突然换色",
+        "插画与文字用不同偏移系数滑入",
+        "步骤落定后聚焦标题并保持下一步/返回入口稳定"
+      ],
+      "dependencies": [],
+      "parameters": {
+        "项目建议（非原产品参数）": "先按可见状态建立可逆交互与正确数据结果，再为目标页面确定时长、幅度、拖动阈值和弹簧；需设备实测，不声称来源提供原值。"
+      }
+    },
+    "suitableFor": [
+      "项目适配场景：新手引导",
+      "项目适配场景：产品价值介绍",
+      "项目适配场景：移动端入门"
+    ],
+    "avoidFor": [
+      "需要固定底色准确比较图像颜色的流程"
+    ],
+    "layers": [
+      "page-background",
+      "content",
+      "layout"
+    ],
+    "limitations": [
+      "换色应保持文字对比与减少动态替代；不能用与实际产品不符的价值文案。",
+      "公开资料为产品视频与行为说明，未提供原App源码；本条步骤属于网页行为适配建议，不证明原产品内部算法或已接入原产品服务。"
+    ],
+    "mobile": "项目建议：使用Pointer Events区分点击、拖动与内部滚动；处理pointercancel、安全区和软键盘变化；始终提供可点击/键盘操作的同等替代。",
+    "reducedMotion": "项目建议：保留真实数据与状态切换，取消非必要位移、旋转、模糊、循环和粒子；需要时立即呈现最终状态，保持返回、关闭与操作反馈。",
+    "performance": "项目建议：用独立过渡层与transform/opacity避免每帧重排，测量布局集中执行；完成、取消和卸载时清理动画与监听。",
+    "evidence": [
+      {
+        "url": "https://60fps.design/shots/google-docs-value-prop-full-screen-color-transition",
+        "kind": "video-page",
+        "checkedAt": "2026-10-12T08:09:55.844Z",
+        "sha256": "8daa44743b9c861fe388ade4d9e5b0b85d7059a7bd005cc6f432f5d0ba40a07e",
+        "hashScope": "page-response"
+      }
+    ],
+    "notes": "根据已存原站视频页面行为说明整理网页实现方案；依赖空数组表示未宣称原产品技术栈。可按目标工程选择CSS/SVG/Web Animations或已安装Motion，不是官方依赖清单；适用场景和限制是项目建议。"
+  },
+  {
+    "entryId": "c3badddd8d1bc80e",
+    "sourceUrl": "https://60fps.design/shots/spotify-podcast-card-preview-sound-wave-animation",
+    "basis": "observed-behavior",
+    "implementation": {
+      "summary": "预览卡向下展开，封面成为背景，圆环声波和字幕与播放时序联动。",
+      "steps": [
+        "点击预览后扩展卡片并保留其他列表上下文",
+        "由真实播放状态控制封面与圆环可见性",
+        "有音频权限和数据时以分析值驱动声波，否则明确演示",
+        "按字幕时间轴更新当前行，暂停时同时冻结声波与字幕"
+      ],
+      "dependencies": [],
+      "parameters": {
+        "项目建议（非原产品参数）": "先按可见状态建立可逆交互与正确数据结果，再为目标页面确定时长、幅度、拖动阈值和弹簧；需设备实测，不声称来源提供原值。"
+      }
+    },
+    "suitableFor": [
+      "项目适配场景：音频内容预览",
+      "项目适配场景：播客列表",
+      "项目适配场景：媒体卡片"
+    ],
+    "avoidFor": [
+      "没有音频或字幕数据却声称真实播放和转录"
+    ],
+    "layers": [
+      "layout",
+      "surface",
+      "content"
+    ],
+    "limitations": [
+      "真实音频需用户手势与可播放资源；无分析数据的脉冲只能叫演示声波，不代表音频识别或实时转录。",
+      "公开资料为产品视频与行为说明，未提供原App源码；本条步骤属于网页行为适配建议，不证明原产品内部算法或已接入原产品服务。"
+    ],
+    "mobile": "项目建议：触屏无需hover即可看到主要信息与操作；按容器重排并提供足够命中区，状态变化保持可理解。",
+    "reducedMotion": "项目建议：保留真实数据与状态切换，取消非必要位移、旋转、模糊、循环和粒子；需要时立即呈现最终状态，保持返回、关闭与操作反馈。",
+    "performance": "项目建议：限制装饰粒子或音频绘制数，离屏暂停，卸载清理帧循环和媒体资源；演示动画不冒充真实音频分析或产品服务。",
+    "evidence": [
+      {
+        "url": "https://60fps.design/shots/spotify-podcast-card-preview-sound-wave-animation",
+        "kind": "video-page",
+        "checkedAt": "2026-10-12T08:09:56.279Z",
+        "sha256": "aa6d86c256f3a26cabf5a5051b6006e2aac17ea95b46e51c4e785b3aba4d2761",
+        "hashScope": "page-response"
+      }
+    ],
+    "notes": "根据已存原站视频页面行为说明整理网页实现方案；依赖空数组表示未宣称原产品技术栈。可按目标工程选择CSS/SVG/Web Animations或已安装Motion，不是官方依赖清单；适用场景和限制是项目建议。"
+  },
+  {
+    "entryId": "67b41b5ea8fa2f24",
+    "sourceUrl": "https://60fps.design/shots/airbnb-price-toggle-interaction",
+    "basis": "observed-behavior",
+    "implementation": {
+      "summary": "开关滑块移动并换底色，落到开启位置后勾选才出现。",
+      "steps": [
+        "使用受控布尔值和switch语义",
+        "点击或键盘切换后滑动拇指并过渡背景",
+        "在开启过渡接近完成时显现内部勾选",
+        "反向切换先撤销勾选并回到关闭位置"
+      ],
+      "dependencies": [],
+      "parameters": {
+        "项目建议（非原产品参数）": "先按可见状态建立可逆交互与正确数据结果，再为目标页面确定时长、幅度、拖动阈值和弹簧；需设备实测，不声称来源提供原值。"
+      }
+    },
+    "suitableFor": [
+      "项目适配场景：设置选项",
+      "项目适配场景：价格筛选",
+      "项目适配场景：偏好表单"
+    ],
+    "avoidFor": [
+      "有真实保存延迟却让动画立即冒充成功的设置"
+    ],
+    "layers": [
+      "surface",
+      "content"
+    ],
+    "limitations": [
+      "勾选只是开关状态，不代表后端保存成功；需禁用、加载和保存失败回退。",
+      "公开资料为产品视频与行为说明，未提供原App源码；本条步骤属于网页行为适配建议，不证明原产品内部算法或已接入原产品服务。"
+    ],
+    "mobile": "项目建议：使用Pointer Events区分点击、拖动与内部滚动；处理pointercancel、安全区和软键盘变化；始终提供可点击/键盘操作的同等替代。",
+    "reducedMotion": "项目建议：保留真实数据与状态切换，取消非必要位移、旋转、模糊、循环和粒子；需要时立即呈现最终状态，保持返回、关闭与操作反馈。",
+    "performance": "项目建议：用独立过渡层与transform/opacity避免每帧重排，测量布局集中执行；完成、取消和卸载时清理动画与监听。",
+    "evidence": [
+      {
+        "url": "https://60fps.design/shots/airbnb-price-toggle-interaction",
+        "kind": "video-page",
+        "checkedAt": "2026-10-12T08:09:56.634Z",
+        "sha256": "377d465307490d353c8fe3b411696012304b78bb785871062e5aa26140c11d4b",
+        "hashScope": "page-response"
+      }
+    ],
+    "notes": "根据已存原站视频页面行为说明整理网页实现方案；依赖空数组表示未宣称原产品技术栈。可按目标工程选择CSS/SVG/Web Animations或已安装Motion，不是官方依赖清单；适用场景和限制是项目建议。"
+  },
+  {
+    "entryId": "341989b5bb432cfe",
+    "sourceUrl": "https://60fps.design/shots/spotify-speed-slider-interaction",
+    "basis": "observed-behavior",
+    "implementation": {
+      "summary": "底部面板中的标尺横移经过固定中心线，中央读数实时更新并支持快捷值。",
+      "steps": [
+        "打开面板并建立当前数值、范围和步长",
+        "水平拖动标尺反向映射中心刻度数值",
+        "在有效步长吸附时同步读数与强调色",
+        "点击快捷值平滑移到对应刻度，并提供数字/键盘替代"
+      ],
+      "dependencies": [],
+      "parameters": {
+        "项目建议（非原产品参数）": "先按可见状态建立可逆交互与正确数据结果，再为目标页面确定时长、幅度、拖动阈值和弹簧；需设备实测，不声称来源提供原值。"
+      }
+    },
+    "suitableFor": [
+      "项目适配场景：播放速度设置",
+      "项目适配场景：精细数值调节",
+      "项目适配场景：移动端设置"
+    ],
+    "avoidFor": [
+      "需要超高精度输入却没有直接数值输入的参数面板"
+    ],
+    "layers": [
+      "content",
+      "layout"
+    ],
+    "limitations": [
+      "标尺单位和范围需由业务定义，拖动不能超限；改变显示速度不等于已经控制实际媒体播放。",
+      "公开资料为产品视频与行为说明，未提供原App源码；本条步骤属于网页行为适配建议，不证明原产品内部算法或已接入原产品服务。"
+    ],
+    "mobile": "项目建议：使用Pointer Events区分点击、拖动与内部滚动；处理pointercancel、安全区和软键盘变化；始终提供可点击/键盘操作的同等替代。",
+    "reducedMotion": "项目建议：保留真实数据与状态切换，取消非必要位移、旋转、模糊、循环和粒子；需要时立即呈现最终状态，保持返回、关闭与操作反馈。",
+    "performance": "项目建议：用独立过渡层与transform/opacity避免每帧重排，测量布局集中执行；完成、取消和卸载时清理动画与监听。",
+    "evidence": [
+      {
+        "url": "https://60fps.design/shots/spotify-speed-slider-interaction",
+        "kind": "video-page",
+        "checkedAt": "2026-10-12T08:09:56.710Z",
+        "sha256": "7df318f229c56c4346a254d32ecbc063a1af943a70838c32b5b9d8ceb5605e4b",
+        "hashScope": "page-response"
+      }
+    ],
+    "notes": "根据已存原站视频页面行为说明整理网页实现方案；依赖空数组表示未宣称原产品技术栈。可按目标工程选择CSS/SVG/Web Animations或已安装Motion，不是官方依赖清单；适用场景和限制是项目建议。"
+  },
+  {
+    "entryId": "036667938bbc4e78",
+    "sourceUrl": "https://60fps.design/shots/netflix-rate-interaction",
+    "basis": "observed-behavior",
+    "implementation": {
+      "summary": "评价入口上方放大淡入浮层，三档图标按顺序弹出，背景弱化。",
+      "steps": [
+        "点击入口建立菜单并定位到触发按钮",
+        "独立遮罩弱化背景且保留关闭行为",
+        "三档选项按短stagger入场",
+        "选择后保存明确评价值并关闭，必要时处理提交失败"
+      ],
+      "dependencies": [],
+      "parameters": {
+        "项目建议（非原产品参数）": "先按可见状态建立可逆交互与正确数据结果，再为目标页面确定时长、幅度、拖动阈值和弹簧；需设备实测，不声称来源提供原值。"
+      }
+    },
+    "suitableFor": [
+      "项目适配场景：内容评价",
+      "项目适配场景：推荐反馈",
+      "项目适配场景：视频详情"
+    ],
+    "avoidFor": [
+      "没有业务定义三档语义却直接复制产品手势图标"
+    ],
+    "layers": [
+      "content",
+      "layout"
+    ],
+    "limitations": [
+      "三档评价需要可访问文本而不是只有图标；选项显现不等于后端已保存偏好。",
+      "公开资料为产品视频与行为说明，未提供原App源码；本条步骤属于网页行为适配建议，不证明原产品内部算法或已接入原产品服务。"
+    ],
+    "mobile": "项目建议：触屏无需hover即可看到主要信息与操作；按容器重排并提供足够命中区，状态变化保持可理解。",
+    "reducedMotion": "项目建议：保留真实数据与状态切换，取消非必要位移、旋转、模糊、循环和粒子；需要时立即呈现最终状态，保持返回、关闭与操作反馈。",
+    "performance": "项目建议：用独立过渡层与transform/opacity避免每帧重排，测量布局集中执行；完成、取消和卸载时清理动画与监听。",
+    "evidence": [
+      {
+        "url": "https://60fps.design/shots/netflix-rate-interaction",
+        "kind": "video-page",
+        "checkedAt": "2026-10-12T08:09:57.076Z",
+        "sha256": "329d631b8cd8549254d03cfaa8a3aaed679ba92f2d76023399984e9564aed95a",
+        "hashScope": "page-response"
+      }
+    ],
+    "notes": "根据已存原站视频页面行为说明整理网页实现方案；依赖空数组表示未宣称原产品技术栈。可按目标工程选择CSS/SVG/Web Animations或已安装Motion，不是官方依赖清单；适用场景和限制是项目建议。"
+  },
+  {
+    "entryId": "904ec593c2876db5",
+    "sourceUrl": "https://60fps.design/shots/apple-music-play-pause-interaction",
+    "basis": "observed-behavior",
+    "implementation": {
+      "summary": "播放时封面放大与阴影扩散，暂停时收回，控制图标同步变换。",
+      "steps": [
+        "维护实际媒体play/pause/error状态",
+        "用户播放成功后扩大封面和阴影",
+        "同步切换按钮图标和可访问名称",
+        "暂停或播放失败时恢复封面并显示真实状态"
+      ],
+      "dependencies": [],
+      "parameters": {
+        "项目建议（非原产品参数）": "先按可见状态建立可逆交互与正确数据结果，再为目标页面确定时长、幅度、拖动阈值和弹簧；需设备实测，不声称来源提供原值。"
+      }
+    },
+    "suitableFor": [
+      "项目适配场景：播放器",
+      "项目适配场景：音频卡片",
+      "项目适配场景：媒体控制区"
+    ],
+    "avoidFor": [
+      "播放未成功却让动画显示正在播放的播放器"
+    ],
+    "layers": [
+      "surface",
+      "content"
+    ],
+    "limitations": [
+      "浏览器可能拒绝自动播放，必须等play成功再显示播放态；演示时需明确没有真实音频。",
+      "公开资料为产品视频与行为说明，未提供原App源码；本条步骤属于网页行为适配建议，不证明原产品内部算法或已接入原产品服务。"
+    ],
+    "mobile": "项目建议：触屏无需hover即可看到主要信息与操作；按容器重排并提供足够命中区，状态变化保持可理解。",
+    "reducedMotion": "项目建议：保留真实数据与状态切换，取消非必要位移、旋转、模糊、循环和粒子；需要时立即呈现最终状态，保持返回、关闭与操作反馈。",
+    "performance": "项目建议：用独立过渡层与transform/opacity避免每帧重排，测量布局集中执行；完成、取消和卸载时清理动画与监听。",
+    "evidence": [
+      {
+        "url": "https://60fps.design/shots/apple-music-play-pause-interaction",
+        "kind": "video-page",
+        "checkedAt": "2026-10-12T08:09:57.568Z",
+        "sha256": "f975895bc57538d83d6a9845b2b9813c49adf0c24dee56ca707ffd77d4e7539a",
+        "hashScope": "page-response"
+      }
+    ],
+    "notes": "根据已存原站视频页面行为说明整理网页实现方案；依赖空数组表示未宣称原产品技术栈。可按目标工程选择CSS/SVG/Web Animations或已安装Motion，不是官方依赖清单；适用场景和限制是项目建议。"
+  },
+  {
+    "entryId": "ab4b60af9afb7bb3",
+    "sourceUrl": "https://60fps.design/shots/apple-music-lyrics-interaction",
+    "basis": "observed-behavior",
+    "implementation": {
+      "summary": "歌词视图展开时封面缩到角落，当前行放大清晰，其他行弱化并随阅读移动。",
+      "steps": [
+        "建立封面模式与歌词模式并共享封面位置",
+        "打开歌词后在独立滚动区渲染完整歌词",
+        "依据时间轴或明确的手动阅读位置确定当前行",
+        "当前行清晰，周边行适度弱化并允许暂停自动跟随"
+      ],
+      "dependencies": [],
+      "parameters": {
+        "项目建议（非原产品参数）": "先按可见状态建立可逆交互与正确数据结果，再为目标页面确定时长、幅度、拖动阈值和弹簧；需设备实测，不声称来源提供原值。"
+      }
+    },
+    "suitableFor": [
+      "项目适配场景：歌词阅读",
+      "项目适配场景：逐行稿件",
+      "项目适配场景：引导式文字阅读"
+    ],
+    "avoidFor": [
+      "学术正文或公式推导必须全段同等清晰的阅读区"
+    ],
+    "layers": [
+      "layout",
+      "text",
+      "content"
+    ],
+    "limitations": [
+      "歌词需合法数据与可访问全文；模糊不能让用户无法阅读其余内容，自动时间同步必须有真实时间轴。",
+      "公开资料为产品视频与行为说明，未提供原App源码；本条步骤属于网页行为适配建议，不证明原产品内部算法或已接入原产品服务。"
+    ],
+    "mobile": "项目建议：触屏无需hover即可看到主要信息与操作；按容器重排并提供足够命中区，状态变化保持可理解。",
+    "reducedMotion": "项目建议：保留真实数据与状态切换，取消非必要位移、旋转、模糊、循环和粒子；需要时立即呈现最终状态，保持返回、关闭与操作反馈。",
+    "performance": "项目建议：用独立过渡层与transform/opacity避免每帧重排，测量布局集中执行；完成、取消和卸载时清理动画与监听。",
+    "evidence": [
+      {
+        "url": "https://60fps.design/shots/apple-music-lyrics-interaction",
+        "kind": "video-page",
+        "checkedAt": "2026-10-12T08:09:57.875Z",
+        "sha256": "ce45094d725f47aefd422f61d5372154c67aeaa0289b27dcfcec7910f1ad13e0",
+        "hashScope": "page-response"
+      }
+    ],
+    "notes": "根据已存原站视频页面行为说明整理网页实现方案；依赖空数组表示未宣称原产品技术栈。可按目标工程选择CSS/SVG/Web Animations或已安装Motion，不是官方依赖清单；适用场景和限制是项目建议。"
+  },
+  {
+    "entryId": "f02bad609a375ec0",
+    "sourceUrl": "https://60fps.design/shots/vercel-preview-feature-interaction",
+    "basis": "observed-behavior",
+    "implementation": {
+      "summary": "多个功能徽章围绕工具条自动轮流聚焦，非活动徽章弱化，当前说明同步更新。",
+      "steps": [
+        "把功能徽章与说明组织为固定序列",
+        "按周期切换活动索引并控制opacity/blur",
+        "活动徽章提高可读性，中心工具条保持静止",
+        "提供暂停和手动选择，离屏停止循环"
+      ],
+      "dependencies": [],
+      "parameters": {
+        "项目建议（非原产品参数）": "先按可见状态建立可逆交互与正确数据结果，再为目标页面确定时长、幅度、拖动阈值和弹簧；需设备实测，不声称来源提供原值。"
+      }
+    },
+    "suitableFor": [
+      "项目适配场景：产品功能展示",
+      "项目适配场景：工具能力介绍",
+      "项目适配场景：首屏演示"
+    ],
+    "avoidFor": [
+      "所有徽章都必须同时可读的任务操作面板"
+    ],
+    "layers": [
+      "content",
+      "surface"
+    ],
+    "limitations": [
+      "它是自动功能演示，不是hover触发；文案应只列实际能力，模糊不应藏住唯一操作。",
+      "公开资料为产品视频与行为说明，未提供原App源码；本条步骤属于网页行为适配建议，不证明原产品内部算法或已接入原产品服务。"
+    ],
+    "mobile": "项目建议：触屏无需hover即可看到主要信息与操作；按容器重排并提供足够命中区，状态变化保持可理解。",
+    "reducedMotion": "项目建议：保留真实数据与状态切换，取消非必要位移、旋转、模糊、循环和粒子；需要时立即呈现最终状态，保持返回、关闭与操作反馈。",
+    "performance": "项目建议：用独立过渡层与transform/opacity避免每帧重排，测量布局集中执行；完成、取消和卸载时清理动画与监听。",
+    "evidence": [
+      {
+        "url": "https://60fps.design/shots/vercel-preview-feature-interaction",
+        "kind": "video-page",
+        "checkedAt": "2026-10-12T08:09:57.997Z",
+        "sha256": "475184dad9c676b1114e70d50dfd16a4f2ac14786fb1fb8be789d0ec852ad514",
+        "hashScope": "page-response"
+      }
+    ],
+    "notes": "根据已存原站视频页面行为说明整理网页实现方案；依赖空数组表示未宣称原产品技术栈。可按目标工程选择CSS/SVG/Web Animations或已安装Motion，不是官方依赖清单；适用场景和限制是项目建议。"
+  }
+]

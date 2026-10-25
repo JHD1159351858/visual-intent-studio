@@ -1,0 +1,21 @@
+{
+  "entryId": "ea992f33a99c04c8",
+  "sourceUrl": "https://reactbits.dev/backgrounds/side-rays",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/SideRays-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/SideRays/SideRays.jsx",
+  "checkedAt": "2026-10-25T07:53:08.509Z",
+  "sha256": "d5d69bbc2571ab9f38dc999009ba5e35e18f6d0c62210991950ed1827880812c",
+  "files": [
+    {
+      "path": "SideRays.css",
+      "sha256": "1e210cbf1b0708d2dcd9a6e0a8dc521cde97d15e6ed213e09bde3ec83f35cf66",
+      "bytes": 136
+    },
+    {
+      "path": "SideRays.jsx",
+      "sha256": "b485132631f188c4da849ad2a1b4cc401c189453f39561e3d8a396c4947c9d42",
+      "bytes": 8259
+    }
+  ]
+}

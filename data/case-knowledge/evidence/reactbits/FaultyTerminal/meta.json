@@ -1,0 +1,21 @@
+{
+  "entryId": "7f70e6e524e90b1c",
+  "sourceUrl": "https://reactbits.dev/backgrounds/faulty-terminal",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/FaultyTerminal-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/FaultyTerminal/FaultyTerminal.jsx",
+  "checkedAt": "2026-10-25T07:53:10.715Z",
+  "sha256": "97076c4ff9427b5a2945b63c9cb2b8173785f0dc5568ac4029c1a0afa9048eaf",
+  "files": [
+    {
+      "path": "FaultyTerminal.css",
+      "sha256": "d769937672090dfd768c6a46912defd9de0eefd64dc22a9d9bf5eb1ce7b3d4b6",
+      "bytes": 104
+    },
+    {
+      "path": "FaultyTerminal.jsx",
+      "sha256": "465e2d735766139514b231ea2188cd6156fc7d94d079c9d844316c3a202e5485",
+      "bytes": 11431
+    }
+  ]
+}

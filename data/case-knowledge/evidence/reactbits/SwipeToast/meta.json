@@ -1,0 +1,21 @@
+{
+  "entryId": "917bbb2e4c0525fc",
+  "sourceUrl": "https://reactbits.dev/micro/swipe-toast",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/SwipeToast-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/SwipeToast/SwipeToast.jsx",
+  "checkedAt": "2026-10-25T07:53:15.192Z",
+  "sha256": "236de0dc2a7f2f9e83c3601fb7181c2be52f20b9d7e530d38172ae6dc7072bff",
+  "files": [
+    {
+      "path": "SwipeToast.css",
+      "sha256": "dcb13f804fa6c3012b48bfa3c2c3c2ca35369209c4fe0687283191b516db22be",
+      "bytes": 5475
+    },
+    {
+      "path": "SwipeToast.jsx",
+      "sha256": "0d111d637b5ba6ec388d68ee3fca6ae9f60ecd632363381c7b20ec56a5300154",
+      "bytes": 10269
+    }
+  ]
+}

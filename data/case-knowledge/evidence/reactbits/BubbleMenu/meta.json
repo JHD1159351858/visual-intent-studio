@@ -1,0 +1,21 @@
+{
+  "entryId": "17ab357eb710296e",
+  "sourceUrl": "https://reactbits.dev/components/bubble-menu",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/BubbleMenu-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/BubbleMenu/BubbleMenu.jsx",
+  "checkedAt": "2026-10-25T07:53:03.163Z",
+  "sha256": "c968d36591b8801b97823d94c02f00fb964cb33f3245498b347b605ec4df4421",
+  "files": [
+    {
+      "path": "BubbleMenu.css",
+      "sha256": "39016371d484fe7ea1588cedaeab2242541c8a4e6b009508de35168a9df5a369",
+      "bytes": 5240
+    },
+    {
+      "path": "BubbleMenu.jsx",
+      "sha256": "dd6f2c5e91acca0d684d6595c98f15f3af7047f8faf86740131688107e90aae2",
+      "bytes": 6200
+    }
+  ]
+}

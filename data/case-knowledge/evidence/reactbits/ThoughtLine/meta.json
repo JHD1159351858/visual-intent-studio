@@ -1,0 +1,21 @@
+{
+  "entryId": "187e7f7bde53d65c",
+  "sourceUrl": "https://reactbits.dev/micro/thought-line",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/ThoughtLine-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/ThoughtLine/ThoughtLine.jsx",
+  "checkedAt": "2026-10-25T07:53:15.494Z",
+  "sha256": "738f91626ddf1d27ab15c78cf8cee3c309d57635f910dd8dccb41017fe954355",
+  "files": [
+    {
+      "path": "ThoughtLine.css",
+      "sha256": "fcf125579ead2806c69ecd109c88f14007eaf5fb54ffe46c867482d03add2ef7",
+      "bytes": 4790
+    },
+    {
+      "path": "ThoughtLine.jsx",
+      "sha256": "d06f30a62cb65fb4fc0bc4868665e6b1f0b4458c092616116fdaf69c7b94532a",
+      "bytes": 9170
+    }
+  ]
+}

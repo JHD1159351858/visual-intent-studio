@@ -1,0 +1,21 @@
+{
+  "entryId": "cef8de298c1faecd",
+  "sourceUrl": "https://reactbits.dev/backgrounds/soft-aurora",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/SoftAurora-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/SoftAurora/SoftAurora.jsx",
+  "checkedAt": "2026-10-25T07:53:09.018Z",
+  "sha256": "4c25b1d690a27f82a7a9ebde7ac848b0625a9c26401610444121d9ff4c673f57",
+  "files": [
+    {
+      "path": "SoftAurora.css",
+      "sha256": "091c4593c231d45c9e90aeb526af6bbb18f820063bb042e8c7d8d0006f97f174",
+      "bytes": 58
+    },
+    {
+      "path": "SoftAurora.jsx",
+      "sha256": "aafd44c9231a478f98a0beeb697b8f1428afe31bcd9c7b2b4c48600ada347b2e",
+      "bytes": 9150
+    }
+  ]
+}

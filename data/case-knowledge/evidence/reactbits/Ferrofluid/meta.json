@@ -1,0 +1,21 @@
+{
+  "entryId": "95ca6e63302df6e0",
+  "sourceUrl": "https://reactbits.dev/backgrounds/ferrofluid",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Ferrofluid-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Ferrofluid/Ferrofluid.jsx",
+  "checkedAt": "2026-10-25T07:53:07.545Z",
+  "sha256": "a69ceb9d333219f9f64c4c2f8465935a34f5bdc493bdc5dc2ac337819d88af51",
+  "files": [
+    {
+      "path": "Ferrofluid.css",
+      "sha256": "c740e3bd51dcf0c774cd8e7e599b05d25a1c0bc71f6f4907ecc8b9a60b97cd39",
+      "bytes": 206
+    },
+    {
+      "path": "Ferrofluid.jsx",
+      "sha256": "b1cb802b48aa29e5b01881ac2646927579c78dce7e91bca027a4845d4bc5963c",
+      "bytes": 31359
+    }
+  ]
+}

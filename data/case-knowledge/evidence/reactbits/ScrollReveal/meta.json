@@ -1,0 +1,21 @@
+{
+  "entryId": "59b6d2fad7438493",
+  "sourceUrl": "https://reactbits.dev/text-animations/scroll-reveal",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/ScrollReveal-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/ScrollReveal/ScrollReveal.jsx",
+  "checkedAt": "2026-10-25T07:52:56.241Z",
+  "sha256": "e57355a122e5c2a810959458090b13d93102a663d8f40aa68787a9d6dd6fe54d",
+  "files": [
+    {
+      "path": "ScrollReveal.css",
+      "sha256": "b16de51475c3214ba7c11dc7a8c42f4ccd8436701b3e5d60c01489a663f05938",
+      "bytes": 177
+    },
+    {
+      "path": "ScrollReveal.jsx",
+      "sha256": "b8b8ae76ca90ee557928432cd92c8a5758c2bd2dd0aacb3ea6c7aad09cdb1c7d",
+      "bytes": 2576
+    }
+  ]
+}

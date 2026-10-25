@@ -1,0 +1,21 @@
+{
+  "entryId": "214963649be25b25",
+  "sourceUrl": "https://reactbits.dev/components/flying-posters",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/FlyingPosters-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/FlyingPosters/FlyingPosters.jsx",
+  "checkedAt": "2026-10-25T07:53:05.308Z",
+  "sha256": "51828f56ca9922c42bc6bebe30653b910d6f3a32ad8c394df241b5264a19df96",
+  "files": [
+    {
+      "path": "FlyingPosters.css",
+      "sha256": "c937b008a9ee4c469ac53226511be17302bd7ab146bf1363c8b6830d9516fd33",
+      "bytes": 277
+    },
+    {
+      "path": "FlyingPosters.jsx",
+      "sha256": "ce1de4892b5473aa9e6c6e05f74775267f54e6e68542667504a0eae4da4d5ba1",
+      "bytes": 21666
+    }
+  ]
+}

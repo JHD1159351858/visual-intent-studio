@@ -1,0 +1,21 @@
+{
+  "entryId": "089dd08cbfc6a845",
+  "sourceUrl": "https://reactbits.dev/backgrounds/magnet-lines",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/MagnetLines-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/MagnetLines/MagnetLines.jsx",
+  "checkedAt": "2026-10-25T07:52:59.723Z",
+  "sha256": "ca13620565cfb3a3b27310e5bdaeea6b1f5b8d6b2853ce3725ff838c80f0f798",
+  "files": [
+    {
+      "path": "MagnetLines.css",
+      "sha256": "ada3ce8593d84e58d8b4208eba3c4adf94ab7ca8ef37b180a4f103f5ecd0b1ad",
+      "bytes": 372
+    },
+    {
+      "path": "MagnetLines.jsx",
+      "sha256": "99235dafa0a03e9f852692a9a78667f208a99899b1bb3b2e4da5072d871c688c",
+      "bytes": 2269
+    }
+  ]
+}

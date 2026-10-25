@@ -1,0 +1,21 @@
+{
+  "entryId": "c39b87bd28208fda",
+  "sourceUrl": "https://reactbits.dev/backgrounds/pixel-blast",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/PixelBlast-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/PixelBlast/PixelBlast.jsx",
+  "checkedAt": "2026-10-25T07:53:08.567Z",
+  "sha256": "4387a1adae061690bcc6252a4511d93eeee711508a2ed455ae659d8c03ad7b3d",
+  "files": [
+    {
+      "path": "PixelBlast.css",
+      "sha256": "a202c86968a0026b627f627f013b9e60328d303b95245a9cae6c3b609beee6aa",
+      "bytes": 100
+    },
+    {
+      "path": "PixelBlast.jsx",
+      "sha256": "741e922c02fd0ec158993e36e111b4e0ce3e7bf54567eee0607574335d531f69",
+      "bytes": 19828
+    }
+  ]
+}

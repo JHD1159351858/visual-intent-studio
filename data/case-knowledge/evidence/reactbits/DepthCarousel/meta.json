@@ -1,0 +1,21 @@
+{
+  "entryId": "39867ab00dbd6820",
+  "sourceUrl": "https://reactbits.dev/components/depth-carousel",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/DepthCarousel-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/DepthCarousel/DepthCarousel.jsx",
+  "checkedAt": "2026-10-25T07:53:02.227Z",
+  "sha256": "65e44ab71d2b23bd06eb3cf758ba8ab3eba6c0a6da8bf36c869f81abb3786d92",
+  "files": [
+    {
+      "path": "DepthCarousel.css",
+      "sha256": "0a514e4fd20dceee49badc9e3c86fa7d040357d2d5eb0958323a1699692b70c0",
+      "bytes": 2717
+    },
+    {
+      "path": "DepthCarousel.jsx",
+      "sha256": "eaab0218615c4097f954ec6e56b7c03fec7f1a973854c3d7bf9e0ddfd31118d6",
+      "bytes": 13135
+    }
+  ]
+}

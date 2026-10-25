@@ -1,0 +1,21 @@
+{
+  "entryId": "84d36ac034de5589",
+  "sourceUrl": "https://reactbits.dev/components/lanyard",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Lanyard-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/Lanyard/Lanyard.jsx",
+  "checkedAt": "2026-10-25T07:53:04.665Z",
+  "sha256": "be3a04d16f87ddfc7a500ebf257bbedec9e963f64d8073de6eb47b5d2f77b278",
+  "files": [
+    {
+      "path": "Lanyard.css",
+      "sha256": "25678081ba329fe4f4c8730351e68b023e028a673eda5a4638199f79eec5b463",
+      "bytes": 156
+    },
+    {
+      "path": "Lanyard.jsx",
+      "sha256": "c5d3750b82111c400c8b1ae564fafee71f43012fbf86e2001aa4ff2d7912ed4c",
+      "bytes": 47940
+    }
+  ]
+}

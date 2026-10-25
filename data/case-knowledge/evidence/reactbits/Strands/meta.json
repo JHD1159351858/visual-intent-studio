@@ -1,0 +1,21 @@
+{
+  "entryId": "bdcfb580266f47aa",
+  "sourceUrl": "https://reactbits.dev/animations/strands",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Strands-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/Strands/Strands.jsx",
+  "checkedAt": "2026-10-25T07:53:00.177Z",
+  "sha256": "c666760cb047e4952b9eec564a8b9953ed7d26ad520c7afec14b125066afb2f3",
+  "files": [
+    {
+      "path": "Strands.css",
+      "sha256": "c97591a8a4b73fc190274eb68305581fdddae87bd15817499991b0101925861c",
+      "bytes": 183
+    },
+    {
+      "path": "Strands.jsx",
+      "sha256": "52901975284c1536114a899f6e03494088ef12085f4f1a8931bbd34f4c8006e9",
+      "bytes": 10178
+    }
+  ]
+}

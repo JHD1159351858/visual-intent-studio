@@ -1,0 +1,1056 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>01-f1 — chrome heart / convergence</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Inter";
+          src: url("../../assets/fonts/Inter-latin.woff2") format("woff2");
+          font-weight: 100 900;
+          font-style: normal;
+          font-display: block;
+        }
+        @font-face {
+          font-family: "Space Grotesk";
+          src: url("../../assets/fonts/SpaceGrotesk-latin.woff2") format("woff2");
+          font-weight: 300 700;
+          font-style: normal;
+          font-display: block;
+        }
+
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        #stage[data-composition-id="01-f1"] {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          background: #000000;
+          color: #ffffff;
+          font-family: "Inter", "Arial Black", system-ui, sans-serif;
+          -webkit-font-smoothing: antialiased;
+        }
+
+        /* ---------------- groups ---------------- */
+        #f1_g1,
+        #f1_g2 {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+        }
+        #f1_g2 {
+          opacity: 0;
+          visibility: hidden;
+        }
+
+        /* ---------------- bed ---------------- */
+        #f1_g1_bedCanvas,
+        #f1_g2_bedCanvas {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 1920px;
+          height: 1080px;
+          transform-origin: 50% 48%;
+          will-change: transform;
+        }
+        #f1_g2_bedCanvas {
+          will-change: transform;
+        }
+
+        /* ---------------- ambient glows ---------------- */
+        .f1_glow {
+          position: absolute;
+          pointer-events: none;
+        }
+        #f1_g1_halo,
+        #f1_g2_halo {
+          left: 50%;
+          top: 48%;
+          width: 1500px;
+          height: 1260px;
+          margin-left: -750px;
+          margin-top: -630px;
+          background: radial-gradient(
+            ellipse at center,
+            rgba(184, 212, 255, 0.14) 0%,
+            rgba(120, 140, 190, 0.055) 36%,
+            rgba(0, 0, 0, 0) 68%
+          );
+        }
+        #f1_g1_halo {
+          opacity: 0.8;
+        }
+        #f1_g2_halo {
+          opacity: 0.82;
+          transform: scale(1.12);
+        }
+        #f1_g1_haloPink,
+        #f1_g1_haloIce {
+          width: 1150px;
+          height: 1150px;
+        }
+        #f1_g1_haloPink {
+          left: -260px;
+          top: 320px;
+          background: radial-gradient(circle, rgba(254, 144, 232, 0.1) 0%, rgba(0, 0, 0, 0) 62%);
+        }
+        #f1_g1_haloIce {
+          right: -280px;
+          top: 60px;
+          background: radial-gradient(circle, rgba(192, 247, 254, 0.085) 0%, rgba(0, 0, 0, 0) 62%);
+        }
+
+        /* ---------------- letterform texture ---------------- */
+        .f1_letter {
+          position: absolute;
+          font-family: "Inter", "Arial Black", system-ui, sans-serif;
+          font-weight: 900;
+          line-height: 1;
+          letter-spacing: -0.05em;
+          user-select: none;
+          pointer-events: none;
+          background: linear-gradient(
+            112deg,
+            #2a2d36 0%,
+            #8f98a8 20%,
+            #ffffff 38%,
+            #c9d2e0 55%,
+            #5c6270 76%,
+            #ffffff 100%
+          );
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          color: transparent;
+          opacity: 0;
+          will-change: transform, opacity;
+        }
+        #f1_g1_letter1 {
+          left: -120px;
+          top: -150px;
+          font-size: 460px;
+        }
+        #f1_g1_letter2 {
+          right: -180px;
+          top: 280px;
+          font-size: 430px;
+        }
+        #f1_g1_letter3 {
+          left: 40px;
+          bottom: -240px;
+          font-size: 470px;
+        }
+        #f1_g1_letter4 {
+          right: 60px;
+          top: -200px;
+          font-size: 400px;
+        }
+
+        /* ---------------- camera + shake ---------------- */
+        #f1_g1_cam,
+        #f1_g2_cam {
+          position: absolute;
+          inset: 0;
+          transform-origin: 50% 48%;
+        }
+        #f1_g2_cam {
+          transform-origin: 50% 48%;
+        }
+        #f1_g1_shake,
+        #f1_g2_shake {
+          position: absolute;
+          inset: 0;
+        }
+
+        /* ---------------- orbit ring ---------------- */
+        #f1_g1_ringRot {
+          position: absolute;
+          left: 0;
+          top: -22px;
+          width: 1920px;
+          height: 1080px;
+          opacity: 0.38;
+          transform-origin: 50% 50%;
+          will-change: transform, opacity;
+        }
+        #f1_g2_ringScale {
+          position: absolute;
+          left: 0;
+          top: -22px;
+          width: 1920px;
+          height: 1080px;
+          opacity: 0.62;
+          transform-origin: 50% 50%;
+          will-change: transform, opacity;
+        }
+        #f1_g2_ringRot {
+          position: absolute;
+          inset: 0;
+          transform: rotate(-14deg);
+          transform-origin: 50% 50%;
+          will-change: transform;
+        }
+        .f1_ringHeart {
+          opacity: 0;
+        }
+        .f1_ringSvg,
+        .f1_ringSvg2 {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 1920px;
+          height: 1080px;
+          overflow: visible;
+        }
+        .f1_ringSvg2 {
+          filter: blur(0px);
+        }
+
+        /* ---------------- hero heart ---------------- */
+        #f1_g1_heartRot,
+        #f1_g2_heartRot {
+          position: absolute;
+          left: 50%;
+          top: 48%;
+          width: 916px;
+          height: 916px;
+          margin-left: -458px;
+          margin-top: -430px;
+          transform-origin: 50% 50%;
+          will-change: transform;
+        }
+        #f1_g1_heartPulse,
+        #f1_g2_heartPulse {
+          width: 100%;
+          height: 100%;
+          transform-origin: 50% 48%;
+          will-change: transform, opacity;
+        }
+        #f1_g1_heartPulse {
+          will-change: transform, opacity;
+        }
+        #f1_g2_heartBlur {
+          width: 100%;
+          height: 100%;
+          filter: blur(0px);
+        }
+        .f1_heartSvg {
+          display: block;
+          width: 100%;
+          height: 100%;
+          overflow: visible;
+        }
+
+        /* ---------------- lens flare ---------------- */
+        #f1_g1_flare,
+        #f1_g2_flare {
+          position: absolute;
+          left: 50%;
+          top: 48%;
+          width: 1560px;
+          height: 4px;
+          margin-left: -780px;
+          margin-top: -2px;
+          background: linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(192, 247, 254, 0.25) 22%,
+            rgba(255, 255, 255, 0.75) 50%,
+            rgba(254, 144, 232, 0.28) 78%,
+            rgba(0, 0, 0, 0) 100%
+          );
+          filter: blur(1.5px);
+          opacity: 0.14;
+        }
+        #f1_g2_flare {
+          opacity: 0.14;
+        }
+
+        /* ---------------- g2 impact ---------------- */
+        #f1_g2_flash {
+          position: absolute;
+          inset: 0;
+          background: radial-gradient(
+            circle at 50% 48%,
+            #ffffff 0%,
+            rgba(255, 255, 255, 0.88) 16%,
+            rgba(255, 255, 255, 0.26) 44%,
+            rgba(255, 255, 255, 0) 70%
+          );
+          opacity: 0;
+          pointer-events: none;
+        }
+        #f1_g2_point {
+          position: absolute;
+          left: 50%;
+          top: 48%;
+          width: 10px;
+          height: 10px;
+          margin-left: -5px;
+          margin-top: -5px;
+          border-radius: 50%;
+          background: #ffffff;
+          box-shadow:
+            0 0 22px 6px rgba(255, 255, 255, 0.9),
+            0 0 72px 26px rgba(192, 247, 254, 0.5);
+          opacity: 0;
+          pointer-events: none;
+        }
+
+        /* ---------------- screen overlays ---------------- */
+        .f1_vig {
+          position: absolute;
+          inset: 0;
+          background: radial-gradient(
+            ellipse 76% 72% at 50% 48%,
+            rgba(0, 0, 0, 0) 38%,
+            rgba(0, 0, 0, 0.42) 72%,
+            rgba(0, 0, 0, 0.92) 100%
+          );
+          pointer-events: none;
+        }
+        .f1_grain {
+          position: absolute;
+          inset: -120px;
+          background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='260' height='260' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+          background-size: 260px 260px;
+          opacity: 0.055;
+          mix-blend-mode: overlay;
+          pointer-events: none;
+        }
+      </style>
+
+      <div data-hf-id="f1_hf-5zws" id="stage" data-composition-id="01-f1" data-width="1920" data-height="1080" data-duration="8.057">
+        <!-- ================================================================
+             GROUP 1 — hold / orbit / accumulate   (0.000 → 6.247)
+             ================================================================ -->
+        <div data-hf-id="f1_hf-4nzp" id="f1_g1">
+          <canvas data-hf-id="f1_hf-tawu" id="f1_g1_bedCanvas" width="1920" height="1080"></canvas>
+
+          <div data-hf-id="f1_hf-jwok" id="f1_g1_haloPink" class="f1_glow"></div>
+          <div data-hf-id="f1_hf-ptzh" id="f1_g1_haloIce" class="f1_glow"></div>
+          <div data-hf-id="f1_hf-oshc" id="f1_g1_halo" class="f1_glow"></div>
+
+          <div data-hf-id="f1_hf-j3kg" id="f1_g1_letter1" class="f1_letter">B</div>
+          <div data-hf-id="f1_hf-of7k" id="f1_g1_letter2" class="f1_letter">A</div>
+          <div data-hf-id="f1_hf-quxa" id="f1_g1_letter3" class="f1_letter">B</div>
+          <div data-hf-id="f1_hf-saey" id="f1_g1_letter4" class="f1_letter">Y</div>
+
+          <div data-hf-id="f1_hf-b3sl" id="f1_g1_cam">
+            <div data-hf-id="f1_hf-1r4q" id="f1_g1_shake">
+              <div data-hf-id="f1_hf-112p" id="f1_g1_ringRot">
+                <svg data-hf-id="f1_hf-39t3" class="f1_ringSvg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+                  <defs data-hf-id="f1_hf-mh0t">
+                    <linearGradient data-hf-id="f1_hf-e92n" id="f1_f1g1_ringChrome" x1="0" y1="0" x2="1" y2="1">
+                      <stop data-hf-id="f1_hf-gi4p" offset="0" stop-color="#111318" />
+                      <stop data-hf-id="f1_hf-6mgl" offset="0.34" stop-color="#3c424d" />
+                      <stop data-hf-id="f1_hf-cee1" offset="0.55" stop-color="#8a93a3" />
+                      <stop data-hf-id="f1_hf-nv0o" offset="0.76" stop-color="#33373f" />
+                      <stop data-hf-id="f1_hf-amtm" offset="1" stop-color="#6d7482" />
+                    </linearGradient>
+                    <path data-hf-id="f1_hf-4kj6"
+                      id="f1_f1g1h_ringPath"
+                      d="M500,880 C500,880 60,610 60,300 C60,140 190,60 310,60 C400,60 470,105 500,175 C530,105 600,60 690,60 C810,60 940,140 940,300 C940,610 500,880 500,880 Z"
+                    />
+                  </defs>
+                  <g data-hf-id="f1_hf-u2wx" class="f1_ringHeart" transform="rotate(0) translate(0,-570)">
+                    <use data-hf-id="f1_hf-umin" href="#f1_f1g1h_ringPath" transform="translate(-40,-37.6) scale(0.08)" fill="url(#f1_f1g1_ringChrome)" />
+                  </g>
+                  <g data-hf-id="f1_hf-nqie" class="f1_ringHeart" transform="rotate(30) translate(0,-570)">
+                    <use data-hf-id="f1_hf-kw3j" href="#f1_f1g1h_ringPath" transform="translate(-40,-37.6) scale(0.08)" fill="url(#f1_f1g1_ringChrome)" />
+                  </g>
+                  <g data-hf-id="f1_hf-bns7" class="f1_ringHeart" transform="rotate(60) translate(0,-570)">
+                    <use data-hf-id="f1_hf-khsi" href="#f1_f1g1h_ringPath" transform="translate(-40,-37.6) scale(0.08)" fill="url(#f1_f1g1_ringChrome)" />
+                  </g>
+                  <g data-hf-id="f1_hf-7brs" class="f1_ringHeart" transform="rotate(90) translate(0,-570)">
+                    <use data-hf-id="f1_hf-k3hh" href="#f1_f1g1h_ringPath" transform="translate(-40,-37.6) scale(0.08)" fill="url(#f1_f1g1_ringChrome)" />
+                  </g>
+                  <g data-hf-id="f1_hf-y00o" class="f1_ringHeart" transform="rotate(120) translate(0,-570)">
+                    <use data-hf-id="f1_hf-mvmo" href="#f1_f1g1h_ringPath" transform="translate(-40,-37.6) scale(0.08)" fill="url(#f1_f1g1_ringChrome)" />
+                  </g>
+                  <g data-hf-id="f1_hf-oo6n" class="f1_ringHeart" transform="rotate(150) translate(0,-570)">
+                    <use data-hf-id="f1_hf-mhbn" href="#f1_f1g1h_ringPath" transform="translate(-40,-37.6) scale(0.08)" fill="url(#f1_f1g1_ringChrome)" />
+                  </g>
+                  <g data-hf-id="f1_hf-q52u" class="f1_ringHeart" transform="rotate(180) translate(0,-570)">
+                    <use data-hf-id="f1_hf-m30m" href="#f1_f1g1h_ringPath" transform="translate(-40,-37.6) scale(0.08)" fill="url(#f1_f1g1_ringChrome)" />
+                  </g>
+                  <g data-hf-id="f1_hf-lequ" class="f1_ringHeart" transform="rotate(210) translate(0,-570)">
+                    <use data-hf-id="f1_hf-lopl" href="#f1_f1g1h_ringPath" transform="translate(-40,-37.6) scale(0.08)" fill="url(#f1_f1g1_ringChrome)" />
+                  </g>
+                  <g data-hf-id="f1_hf-2izb" class="f1_ringHeart" transform="rotate(240) translate(0,-570)">
+                    <use data-hf-id="f1_hf-i3yc" href="#f1_f1g1h_ringPath" transform="translate(-40,-37.6) scale(0.08)" fill="url(#f1_f1g1_ringChrome)" />
+                  </g>
+                  <g data-hf-id="f1_hf-vhx0" class="f1_ringHeart" transform="rotate(270) translate(0,-570)">
+                    <use data-hf-id="f1_hf-hpnb" href="#f1_f1g1h_ringPath" transform="translate(-40,-37.6) scale(0.08)" fill="url(#f1_f1g1_ringChrome)" />
+                  </g>
+                  <g data-hf-id="f1_hf-3p3k" class="f1_ringHeart" transform="rotate(300) translate(0,-570)">
+                    <use data-hf-id="f1_hf-2dzx" href="#f1_f1g1h_ringPath" transform="translate(-40,-37.6) scale(0.08)" fill="url(#f1_f1g1_ringChrome)" />
+                  </g>
+                  <g data-hf-id="f1_hf-conn" class="f1_ringHeart" transform="rotate(330) translate(0,-570)">
+                    <use data-hf-id="f1_hf-2say" href="#f1_f1g1h_ringPath" transform="translate(-40,-37.6) scale(0.08)" fill="url(#f1_f1g1_ringChrome)" />
+                  </g>
+                </svg>
+              </div>
+
+              <div data-hf-id="f1_hf-4wsz" id="f1_g1_heartRot">
+                <div data-hf-id="f1_hf-b5p3" id="f1_g1_heartPulse">
+                  <svg data-hf-id="f1_hf-9kug" class="f1_heartSvg" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                    <defs data-hf-id="f1_hf-vl9d">
+                      <path data-hf-id="f1_hf-a7po"
+                        id="f1_f1g1h_path"
+                        d="M500,880 C500,880 60,610 60,300 C60,140 190,60 310,60 C400,60 470,105 500,175 C530,105 600,60 690,60 C810,60 940,140 940,300 C940,610 500,880 500,880 Z"
+                      />
+                      <linearGradient data-hf-id="f1_hf-ufaj" id="f1_f1g1h_chrome" x1="0.04" y1="0.02" x2="0.96" y2="0.98">
+                        <stop data-hf-id="f1_hf-tlo6" offset="0" stop-color="#2a2d36" />
+                        <stop data-hf-id="f1_hf-6gmn" offset="0.16" stop-color="#8f98a8" />
+                        <stop data-hf-id="f1_hf-kfu4" offset="0.33" stop-color="#ffffff" />
+                        <stop data-hf-id="f1_hf-sg0g" offset="0.5" stop-color="#c9d2e0" />
+                        <stop data-hf-id="f1_hf-homt" offset="0.68" stop-color="#5c6270" />
+                        <stop data-hf-id="f1_hf-ne23" offset="0.87" stop-color="#ffffff" />
+                        <stop data-hf-id="f1_hf-yqcb" offset="1" stop-color="#ffffff" />
+                      </linearGradient>
+                      <radialGradient data-hf-id="f1_hf-l22j" id="f1_f1g1h_spec" cx="0.5" cy="0.5" r="0.5">
+                        <stop data-hf-id="f1_hf-7lm3" offset="0" stop-color="#ffffff" stop-opacity="0.95" />
+                        <stop data-hf-id="f1_hf-rm3d" offset="0.45" stop-color="#ffffff" stop-opacity="0.5" />
+                        <stop data-hf-id="f1_hf-wfhg" offset="1" stop-color="#ffffff" stop-opacity="0" />
+                      </radialGradient>
+                      <linearGradient data-hf-id="f1_hf-3yv1" id="f1_f1g1h_rimL" x1="0" y1="0" x2="0.62" y2="0">
+                        <stop data-hf-id="f1_hf-8bgl" offset="0" stop-color="#FE90E8" stop-opacity="1" />
+                        <stop data-hf-id="f1_hf-3imf" offset="0.35" stop-color="#FE90E8" stop-opacity="0.7" />
+                        <stop data-hf-id="f1_hf-g72t" offset="1" stop-color="#FE90E8" stop-opacity="0" />
+                      </linearGradient>
+                      <linearGradient data-hf-id="f1_hf-iyln" id="f1_f1g1h_rimR" x1="0.38" y1="0" x2="1" y2="0">
+                        <stop data-hf-id="f1_hf-498g" offset="0" stop-color="#C0F7FE" stop-opacity="0" />
+                        <stop data-hf-id="f1_hf-z6js" offset="0.65" stop-color="#C0F7FE" stop-opacity="0.7" />
+                        <stop data-hf-id="f1_hf-5mo8" offset="1" stop-color="#C0F7FE" stop-opacity="1" />
+                      </linearGradient>
+                      <linearGradient data-hf-id="f1_hf-nc9q"
+                        id="f1_f1g1h_band"
+                        gradientUnits="userSpaceOnUse"
+                        x1="-620"
+                        y1="0"
+                        x2="-180"
+                        y2="0"
+                      >
+                        <stop data-hf-id="f1_hf-8srp" offset="0" stop-color="#ffffff" stop-opacity="0" />
+                        <stop data-hf-id="f1_hf-er6t" offset="0.5" stop-color="#ffffff" stop-opacity="0.92" />
+                        <stop data-hf-id="f1_hf-b02k" offset="1" stop-color="#ffffff" stop-opacity="0" />
+                      </linearGradient>
+                      <clipPath data-hf-id="f1_hf-t6gv" id="f1_f1g1h_clip">
+                        <path data-hf-id="f1_hf-iwmv"
+                          d="M500,880 C500,880 60,610 60,300 C60,140 190,60 310,60 C400,60 470,105 500,175 C530,105 600,60 690,60 C810,60 940,140 940,300 C940,610 500,880 500,880 Z"
+                        />
+                      </clipPath>
+                      <filter data-hf-id="f1_hf-fmoq" id="f1_f1g1h_blurS" x="-60%" y="-60%" width="220%" height="220%">
+                        <feGaussianBlur data-hf-id="f1_hf-ah3l" stdDeviation="14" />
+                      </filter>
+                      <filter data-hf-id="f1_hf-gku8" id="f1_f1g1h_blurM" x="-60%" y="-60%" width="220%" height="220%">
+                        <feGaussianBlur data-hf-id="f1_hf-npne" stdDeviation="26" />
+                      </filter>
+                      <filter data-hf-id="f1_hf-m71u" id="f1_f1g1h_blurXS" x="-80%" y="-80%" width="260%" height="260%">
+                        <feGaussianBlur data-hf-id="f1_hf-9nt6" stdDeviation="4" />
+                      </filter>
+                    </defs>
+
+                    <use data-hf-id="f1_hf-utdu" href="#f1_f1g1h_path" fill="url(#f1_f1g1h_chrome)" />
+
+                    <g data-hf-id="f1_hf-h7rj" clip-path="url(#f1_f1g1h_clip)">
+                      <use data-hf-id="f1_hf-mkiv"
+                        href="#f1_f1g1h_path"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-opacity="0.55"
+                        stroke-width="120"
+                        filter="url(#f1_f1g1h_blurM)"
+                      />
+                      <ellipse data-hf-id="f1_hf-0ug9"
+                        cx="330"
+                        cy="290"
+                        rx="185"
+                        ry="122"
+                        fill="url(#f1_f1g1h_spec)"
+                        opacity="0.95"
+                        filter="url(#f1_f1g1h_blurS)"
+                        transform="rotate(-24 330 290)"
+                      />
+                      <ellipse data-hf-id="f1_hf-ch7n"
+                        cx="292"
+                        cy="258"
+                        rx="58"
+                        ry="30"
+                        fill="#ffffff"
+                        opacity="0.8"
+                        filter="url(#f1_f1g1h_blurXS)"
+                        transform="rotate(-24 292 258)"
+                      />
+                      <ellipse data-hf-id="f1_hf-wmi4"
+                        cx="670"
+                        cy="655"
+                        rx="305"
+                        ry="235"
+                        fill="#000000"
+                        opacity="0.22"
+                        filter="url(#f1_f1g1h_blurS)"
+                      />
+                      <rect data-hf-id="f1_hf-h556"
+                        x="-200"
+                        y="-200"
+                        width="1400"
+                        height="1400"
+                        fill="url(#f1_f1g1h_band)"
+                        style="mix-blend-mode: screen"
+                      />
+                    </g>
+
+                    <use data-hf-id="f1_hf-4bmy" href="#f1_f1g1h_path" fill="none" stroke="url(#f1_f1g1h_rimL)" stroke-width="16" opacity="0.35" filter="url(#f1_f1g1h_blurS)" />
+                    <use data-hf-id="f1_hf-k2cc" href="#f1_f1g1h_path" fill="none" stroke="url(#f1_f1g1h_rimR)" stroke-width="16" opacity="0.35" filter="url(#f1_f1g1h_blurS)" />
+                    <use data-hf-id="f1_hf-a3ef" href="#f1_f1g1h_path" fill="none" stroke="url(#f1_f1g1h_rimL)" stroke-width="5" opacity="0.9" />
+                    <use data-hf-id="f1_hf-7q3x" href="#f1_f1g1h_path" fill="none" stroke="url(#f1_f1g1h_rimR)" stroke-width="5" opacity="0.9" />
+                    <use data-hf-id="f1_hf-2luo"
+                      id="f1_f1g1h_rimFlash"
+                      href="#f1_f1g1h_path"
+                      fill="none"
+                      stroke="#ffffff"
+                      stroke-width="1.4"
+                      opacity="0"
+                      style="mix-blend-mode: screen"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div data-hf-id="f1_hf-3vxg" id="f1_g1_flare"></div>
+          </div>
+
+          <div data-hf-id="f1_hf-2jjs" class="f1_vig"></div>
+          <div data-hf-id="f1_hf-zav3" class="f1_grain"></div>
+        </div>
+
+        <!-- ================================================================
+             GROUP 2 — converge / compress / black   (6.247 → 8.057)
+             ================================================================ -->
+        <div data-hf-id="f1_hf-8m3q" id="f1_g2">
+          <canvas data-hf-id="f1_hf-qjgv" id="f1_g2_bedCanvas" width="1920" height="1080"></canvas>
+
+          <div data-hf-id="f1_hf-luih" id="f1_g2_halo" class="f1_glow"></div>
+
+          <div data-hf-id="f1_hf-98v6" id="f1_g2_cam">
+            <div data-hf-id="f1_hf-ec2x" id="f1_g2_shake">
+              <div data-hf-id="f1_hf-ikpj" id="f1_g2_ringScale">
+                <div data-hf-id="f1_hf-a91y" id="f1_g2_ringRot">
+                  <svg data-hf-id="f1_hf-p9wz" id="f1_g2_ringSvg" class="f1_ringSvg2" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+                    <defs data-hf-id="f1_hf-ws6g">
+                      <linearGradient data-hf-id="f1_hf-5vie" id="f1_f1g2_ringChrome" x1="0" y1="0" x2="1" y2="1">
+                        <stop data-hf-id="f1_hf-ofdn" offset="0" stop-color="#15181e" />
+                        <stop data-hf-id="f1_hf-pjro" offset="0.34" stop-color="#424955" />
+                        <stop data-hf-id="f1_hf-4bgu" offset="0.55" stop-color="#98a2b2" />
+                        <stop data-hf-id="f1_hf-xm9m" offset="0.76" stop-color="#363b45" />
+                        <stop data-hf-id="f1_hf-tbu4" offset="1" stop-color="#747c88" />
+                      </linearGradient>
+                      <path data-hf-id="f1_hf-sn9d"
+                        id="f1_f1g2h_ringPath"
+                        d="M500,880 C500,880 60,610 60,300 C60,140 190,60 310,60 C400,60 470,105 500,175 C530,105 600,60 690,60 C810,60 940,140 940,300 C940,610 500,880 500,880 Z"
+                      />
+                    </defs>
+                    <g data-hf-id="f1_hf-kem3" class="f1_ringHeart2" transform="rotate(0) translate(0,-570)">
+                      <use data-hf-id="f1_hf-bd4t" href="#f1_f1g2h_ringPath" transform="translate(-40,-37.6) scale(0.08)" fill="url(#f1_f1g2_ringChrome)" />
+                    </g>
+                    <g data-hf-id="f1_hf-y34o" class="f1_ringHeart2" transform="rotate(30) translate(0,-570)">
+                      <use data-hf-id="f1_hf-bpzl" href="#f1_f1g2h_ringPath" transform="translate(-40,-37.6) scale(0.08)" fill="url(#f1_f1g2_ringChrome)" />
+                    </g>
+                    <g data-hf-id="f1_hf-lgix" class="f1_ringHeart2" transform="rotate(60) translate(0,-570)">
+                      <use data-hf-id="f1_hf-cwwo" href="#f1_f1g2h_ringPath" transform="translate(-40,-37.6) scale(0.08)" fill="url(#f1_f1g2_ringChrome)" />
+                    </g>
+                    <g data-hf-id="f1_hf-afw6" class="f1_ringHeart2" transform="rotate(90) translate(0,-570)">
+                      <use data-hf-id="f1_hf-ciln" href="#f1_f1g2h_ringPath" transform="translate(-40,-37.6) scale(0.08)" fill="url(#f1_f1g2_ringChrome)" />
+                    </g>
+                    <g data-hf-id="f1_hf-mvxq" class="f1_ringHeart2" transform="rotate(120) translate(0,-570)">
+                      <use data-hf-id="f1_hf-aj2i" href="#f1_f1g2h_ringPath" transform="translate(-40,-37.6) scale(0.08)" fill="url(#f1_f1g2_ringChrome)" />
+                    </g>
+                    <g data-hf-id="f1_hf-7lrt" class="f1_ringHeart2" transform="rotate(150) translate(0,-570)">
+                      <use data-hf-id="f1_hf-a4rh" href="#f1_f1g2h_ringPath" transform="translate(-40,-37.6) scale(0.08)" fill="url(#f1_f1g2_ringChrome)" />
+                    </g>
+                    <g data-hf-id="f1_hf-79kw" class="f1_ringHeart2" transform="rotate(180) translate(0,-570)">
+                      <use data-hf-id="f1_hf-bbok" href="#f1_f1g2h_ringPath" transform="translate(-40,-37.6) scale(0.08)" fill="url(#f1_f1g2_ringChrome)" />
+                    </g>
+                    <g data-hf-id="f1_hf-l3m4" class="f1_ringHeart2" transform="rotate(210) translate(0,-570)">
+                      <use data-hf-id="f1_hf-axdj" href="#f1_f1g2h_ringPath" transform="translate(-40,-37.6) scale(0.08)" fill="url(#f1_f1g2_ringChrome)" />
+                    </g>
+                    <g data-hf-id="f1_hf-7qph" class="f1_ringHeart2" transform="rotate(240) translate(0,-570)">
+                      <use data-hf-id="f1_hf-faqu" href="#f1_f1g2h_ringPath" transform="translate(-40,-37.6) scale(0.08)" fill="url(#f1_f1g2_ringChrome)" />
+                    </g>
+                    <g data-hf-id="f1_hf-g2fy" class="f1_ringHeart2" transform="rotate(270) translate(0,-570)">
+                      <use data-hf-id="f1_hf-ewft" href="#f1_f1g2h_ringPath" transform="translate(-40,-37.6) scale(0.08)" fill="url(#f1_f1g2_ringChrome)" />
+                    </g>
+                    <g data-hf-id="f1_hf-quhi" class="f1_ringHeart2" transform="rotate(300) translate(0,-570)">
+                      <use data-hf-id="f1_hf-at9v" href="#f1_f1g2h_ringPath" transform="translate(-40,-37.6) scale(0.08)" fill="url(#f1_f1g2_ringChrome)" />
+                    </g>
+                    <g data-hf-id="f1_hf-9xu5" class="f1_ringHeart2" transform="rotate(330) translate(0,-570)">
+                      <use data-hf-id="f1_hf-b7kw" href="#f1_f1g2h_ringPath" transform="translate(-40,-37.6) scale(0.08)" fill="url(#f1_f1g2_ringChrome)" />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+
+              <div data-hf-id="f1_hf-8day" id="f1_g2_heartRot">
+                <div data-hf-id="f1_hf-x936" id="f1_g2_heartPulse">
+                  <div data-hf-id="f1_hf-9nt4" id="f1_g2_heartBlur">
+                    <svg data-hf-id="f1_hf-kncw" class="f1_heartSvg" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                      <defs data-hf-id="f1_hf-wdvf">
+                        <path data-hf-id="f1_hf-gl3z"
+                          id="f1_f1g2h_path"
+                          d="M500,880 C500,880 60,610 60,300 C60,140 190,60 310,60 C400,60 470,105 500,175 C530,105 600,60 690,60 C810,60 940,140 940,300 C940,610 500,880 500,880 Z"
+                        />
+                        <linearGradient data-hf-id="f1_hf-m00g" id="f1_f1g2h_chrome" x1="0.04" y1="0.02" x2="0.96" y2="0.98">
+                          <stop data-hf-id="f1_hf-rxwa" offset="0" stop-color="#2a2d36" />
+                          <stop data-hf-id="f1_hf-olan" offset="0.16" stop-color="#8f98a8" />
+                          <stop data-hf-id="f1_hf-1olg" offset="0.33" stop-color="#ffffff" />
+                          <stop data-hf-id="f1_hf-rap4" offset="0.5" stop-color="#c9d2e0" />
+                          <stop data-hf-id="f1_hf-5dex" offset="0.68" stop-color="#5c6270" />
+                          <stop data-hf-id="f1_hf-e217" offset="0.87" stop-color="#ffffff" />
+                          <stop data-hf-id="f1_hf-pd7f" offset="1" stop-color="#ffffff" />
+                        </linearGradient>
+                        <radialGradient data-hf-id="f1_hf-rhq0" id="f1_f1g2h_spec" cx="0.5" cy="0.5" r="0.5">
+                          <stop data-hf-id="f1_hf-w2rv" offset="0" stop-color="#ffffff" stop-opacity="0.95" />
+                          <stop data-hf-id="f1_hf-tobx" offset="0.45" stop-color="#ffffff" stop-opacity="0.5" />
+                          <stop data-hf-id="f1_hf-9t5h" offset="1" stop-color="#ffffff" stop-opacity="0" />
+                        </radialGradient>
+                        <linearGradient data-hf-id="f1_hf-1kqs" id="f1_f1g2h_rimL" x1="0" y1="0" x2="0.62" y2="0">
+                          <stop data-hf-id="f1_hf-huu1" offset="0" stop-color="#FE90E8" stop-opacity="1" />
+                          <stop data-hf-id="f1_hf-hkiv" offset="0.35" stop-color="#FE90E8" stop-opacity="0.7" />
+                          <stop data-hf-id="f1_hf-dnnt" offset="1" stop-color="#FE90E8" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient data-hf-id="f1_hf-ewue" id="f1_f1g2h_rimR" x1="0.38" y1="0" x2="1" y2="0">
+                          <stop data-hf-id="f1_hf-b6ig" offset="0" stop-color="#C0F7FE" stop-opacity="0" />
+                          <stop data-hf-id="f1_hf-pwww" offset="0.65" stop-color="#C0F7FE" stop-opacity="0.7" />
+                          <stop data-hf-id="f1_hf-itts" offset="1" stop-color="#C0F7FE" stop-opacity="1" />
+                        </linearGradient>
+                        <linearGradient data-hf-id="f1_hf-8x0d"
+                          id="f1_f1g2h_band"
+                          gradientUnits="userSpaceOnUse"
+                          x1="-620"
+                          y1="0"
+                          x2="-180"
+                          y2="0"
+                        >
+                          <stop data-hf-id="f1_hf-lomx" offset="0" stop-color="#ffffff" stop-opacity="0" />
+                          <stop data-hf-id="f1_hf-fss9" offset="0.5" stop-color="#ffffff" stop-opacity="0.92" />
+                          <stop data-hf-id="f1_hf-a7gi" offset="1" stop-color="#ffffff" stop-opacity="0" />
+                        </linearGradient>
+                        <clipPath data-hf-id="f1_hf-rx6o" id="f1_f1g2h_clip">
+                          <path data-hf-id="f1_hf-pmev"
+                            d="M500,880 C500,880 60,610 60,300 C60,140 190,60 310,60 C400,60 470,105 500,175 C530,105 600,60 690,60 C810,60 940,140 940,300 C940,610 500,880 500,880 Z"
+                          />
+                        </clipPath>
+                        <filter data-hf-id="f1_hf-6rv1" id="f1_f1g2h_blurS" x="-60%" y="-60%" width="220%" height="220%">
+                          <feGaussianBlur data-hf-id="f1_hf-bu6d" stdDeviation="14" />
+                        </filter>
+                        <filter data-hf-id="f1_hf-ogkr" id="f1_f1g2h_blurM" x="-60%" y="-60%" width="220%" height="220%">
+                          <feGaussianBlur data-hf-id="f1_hf-lw3i" stdDeviation="26" />
+                        </filter>
+                        <filter data-hf-id="f1_hf-cpr3" id="f1_f1g2h_blurXS" x="-80%" y="-80%" width="260%" height="260%">
+                          <feGaussianBlur data-hf-id="f1_hf-wfpq" stdDeviation="4" />
+                        </filter>
+                      </defs>
+
+                      <use data-hf-id="f1_hf-uctm" href="#f1_f1g2h_path" fill="url(#f1_f1g2h_chrome)" />
+
+                      <g data-hf-id="f1_hf-oayu" clip-path="url(#f1_f1g2h_clip)">
+                        <use data-hf-id="f1_hf-tr91"
+                          href="#f1_f1g2h_path"
+                          fill="none"
+                          stroke="#000000"
+                          stroke-opacity="0.55"
+                          stroke-width="120"
+                          filter="url(#f1_f1g2h_blurM)"
+                        />
+                        <ellipse data-hf-id="f1_hf-4rt1"
+                          cx="330"
+                          cy="290"
+                          rx="185"
+                          ry="122"
+                          fill="url(#f1_f1g2h_spec)"
+                          opacity="0.95"
+                          filter="url(#f1_f1g2h_blurS)"
+                          transform="rotate(-24 330 290)"
+                        />
+                        <ellipse data-hf-id="f1_hf-bahy"
+                          cx="292"
+                          cy="258"
+                          rx="58"
+                          ry="30"
+                          fill="#ffffff"
+                          opacity="0.8"
+                          filter="url(#f1_f1g2h_blurXS)"
+                          transform="rotate(-24 292 258)"
+                        />
+                        <ellipse data-hf-id="f1_hf-2zo9"
+                          cx="670"
+                          cy="655"
+                          rx="305"
+                          ry="235"
+                          fill="#000000"
+                          opacity="0.22"
+                          filter="url(#f1_f1g2h_blurS)"
+                        />
+                        <rect data-hf-id="f1_hf-qod3"
+                          x="-200"
+                          y="-200"
+                          width="1400"
+                          height="1400"
+                          fill="url(#f1_f1g2h_band)"
+                          style="mix-blend-mode: screen"
+                        />
+                      </g>
+
+                      <use data-hf-id="f1_hf-8879" href="#f1_f1g2h_path" fill="none" stroke="url(#f1_f1g2h_rimL)" stroke-width="16" opacity="0.35" filter="url(#f1_f1g2h_blurS)" />
+                      <use data-hf-id="f1_hf-8vbr" href="#f1_f1g2h_path" fill="none" stroke="url(#f1_f1g2h_rimR)" stroke-width="16" opacity="0.35" filter="url(#f1_f1g2h_blurS)" />
+                      <use data-hf-id="f1_hf-3ygl" href="#f1_f1g2h_path" fill="none" stroke="url(#f1_f1g2h_rimL)" stroke-width="5" opacity="0.9" />
+                      <use data-hf-id="f1_hf-3yvj" href="#f1_f1g2h_path" fill="none" stroke="url(#f1_f1g2h_rimR)" stroke-width="5" opacity="0.9" />
+                      <use data-hf-id="f1_hf-6lfs"
+                        id="f1_f1g2h_rimFlash"
+                        href="#f1_f1g2h_path"
+                        fill="none"
+                        stroke="#ffffff"
+                        stroke-width="1.4"
+                        opacity="0"
+                        style="mix-blend-mode: screen"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div data-hf-id="f1_hf-ev2v" id="f1_g2_flare"></div>
+          </div>
+
+          <div data-hf-id="f1_hf-s80l" id="f1_g2_flash"></div>
+          <div data-hf-id="f1_hf-drs5" id="f1_g2_point"></div>
+
+          <div data-hf-id="f1_hf-m1jk" class="f1_vig"></div>
+          <div data-hf-id="f1_hf-p5tr" class="f1_grain"></div>
+        </div>
+      </div>
+
+      <script>
+        (function () {
+          var tl = gsap.timeline({ paused: true });
+
+          /* ============================================================
+             Deterministic starfield / flow-field bed (seeded, static paint)
+             ============================================================ */
+          function mulberry32(a) {
+            return function () {
+              a |= 0;
+              a = (a + 0x6d2b79f5) | 0;
+              var t = Math.imul(a ^ (a >>> 15), 1 | a);
+              t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+              return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+            };
+          }
+
+          function paintBed(id, seed) {
+            var cv = document.getElementById(id);
+            if (!cv) return;
+            var c = cv.getContext("2d");
+            var R = mulberry32(seed);
+
+            c.clearRect(0, 0, 1920, 1080);
+            c.fillStyle = "#000000";
+            c.fillRect(0, 0, 1920, 1080);
+
+            var g = c.createRadialGradient(960, 500, 0, 960, 500, 880);
+            g.addColorStop(0, "rgba(150,180,230,0.075)");
+            g.addColorStop(0.45, "rgba(70,82,120,0.035)");
+            g.addColorStop(1, "rgba(0,0,0,0)");
+            c.fillStyle = g;
+            c.fillRect(0, 0, 1920, 1080);
+
+            var gp = c.createRadialGradient(280, 940, 0, 280, 940, 760);
+            gp.addColorStop(0, "rgba(254,144,232,0.05)");
+            gp.addColorStop(1, "rgba(0,0,0,0)");
+            c.fillStyle = gp;
+            c.fillRect(0, 0, 1920, 1080);
+
+            var gi = c.createRadialGradient(1660, 180, 0, 1660, 180, 700);
+            gi.addColorStop(0, "rgba(192,247,254,0.045)");
+            gi.addColorStop(1, "rgba(0,0,0,0)");
+            c.fillStyle = gi;
+            c.fillRect(0, 0, 1920, 1080);
+
+            /* faint flow-field strokes */
+            c.save();
+            c.globalCompositeOperation = "screen";
+            c.filter = "blur(10px)";
+            for (var i = 0; i < 26; i++) {
+              var x0 = R() * 1920;
+              var y0 = R() * 1080;
+              var c1x = x0 + (R() - 0.5) * 520;
+              var c1y = y0 + (R() - 0.5) * 360;
+              var c2x = x0 + (R() - 0.5) * 760;
+              var c2y = y0 + (R() - 0.5) * 520;
+              var x1 = x0 + (R() - 0.5) * 980;
+              var y1 = y0 + (R() - 0.5) * 640;
+              c.beginPath();
+              c.moveTo(x0, y0);
+              c.bezierCurveTo(c1x, c1y, c2x, c2y, x1, y1);
+              c.strokeStyle =
+                i % 5 === 0
+                  ? "rgba(254,144,232,0.05)"
+                  : i % 7 === 0
+                    ? "rgba(192,247,254,0.05)"
+                    : "rgba(200,215,245,0.04)";
+              c.lineWidth = 1.2 + R() * 2.2;
+              c.stroke();
+            }
+            c.restore();
+
+            /* starfield */
+            for (var s = 0; s < 300; s++) {
+              var sx = R() * 1920;
+              var sy = R() * 1080;
+              var sr = 0.35 + R() * 1.5;
+              var sa = 0.1 + R() * 0.5;
+              var pick = R();
+              c.beginPath();
+              c.arc(sx, sy, sr, 0, Math.PI * 2);
+              c.fillStyle =
+                pick < 0.07
+                  ? "rgba(254,144,232," + sa + ")"
+                  : pick < 0.2
+                    ? "rgba(192,247,254," + sa + ")"
+                    : "rgba(232,238,250," + sa + ")";
+              c.fill();
+            }
+
+            /* a few brighter stars with soft bloom */
+            for (var b = 0; b < 10; b++) {
+              var bx = R() * 1920;
+              var by = R() * 1080;
+              var br = 1.4 + R() * 1.2;
+              var ba = 0.5 + R() * 0.35;
+              var gr = c.createRadialGradient(bx, by, 0, bx, by, br * 9);
+              gr.addColorStop(0, "rgba(255,255,255," + ba + ")");
+              gr.addColorStop(0.25, "rgba(220,235,255," + ba * 0.35 + ")");
+              gr.addColorStop(1, "rgba(0,0,0,0)");
+              c.fillStyle = gr;
+              c.beginPath();
+              c.arc(bx, by, br * 9, 0, Math.PI * 2);
+              c.fill();
+            }
+          }
+
+          paintBed("f1_g1_bedCanvas", 20241021);
+          paintBed("f1_g2_bedCanvas", 20241021);
+
+          /* ============================================================
+             Group visibility — 0ms autoAlpha swaps at span boundaries
+             ============================================================ */
+          tl.set("#f1_g1", { autoAlpha: 1 }, 0);
+          tl.set("#f1_g1", { autoAlpha: 0 }, 6.247);
+          tl.set("#f1_g2", { autoAlpha: 1 }, 6.247);
+          tl.set("#f1_g2", { autoAlpha: 0 }, 8.057);
+
+          /* ============================================================
+             GROUP 1 — 0.000 → 6.247
+             ============================================================ */
+
+          /* slow orbital camera push */
+          tl.to(
+            "#f1_g1_cam",
+            { scale: 1.07, x: -10, y: 6, rotation: 1.1, duration: 6.247, ease: "sine.inOut" },
+            0,
+          );
+          tl.to(
+            "#f1_g1_bedCanvas",
+            { scale: 1.09, x: 8, y: -6, duration: 6.247, ease: "sine.inOut" },
+            0,
+          );
+          tl.to("#f1_g1_halo", { scale: 1.12, duration: 6.247, ease: "sine.inOut" }, 0);
+
+          /* heart entrance settle + ±8° orbital rotation */
+          tl.fromTo("#f1_g1_heartPulse", { scale: 1.03 }, { scale: 1, duration: 0.55, ease: "power2.out" }, 0);
+          tl.to("#f1_g1_heartRot", { rotation: -8, duration: 2.0, ease: "sine.inOut" }, 0.15);
+          tl.to("#f1_g1_heartRot", { rotation: 8, duration: 2.15, ease: "sine.inOut" }, 2.15);
+          tl.to("#f1_g1_heartRot", { rotation: 0, duration: 1.947, ease: "sine.inOut" }, 4.3);
+
+          /* orbiters: slow counter-rotation + accumulation */
+          tl.to("#f1_g1_ringRot", { rotation: -14, duration: 6.247, ease: "none" }, 0);
+          tl.to("#f1_g1_ringRot", { opacity: 0.62, duration: 6.247, ease: "sine.inOut" }, 0);
+          tl.to(
+            ".f1_ringHeart",
+            { opacity: 1, duration: 0.5, stagger: { each: 0.22, from: 0 }, ease: "power2.out" },
+            0.55,
+          );
+
+          /* letterform texture — drifting at the edges, never all readable */
+          tl.to("#f1_g1_letter1", { x: 46, y: -18, rotation: -6, duration: 6.247, ease: "sine.inOut" }, 0);
+          tl.to("#f1_g1_letter1", { opacity: 0.15, duration: 0.9, ease: "power1.out" }, 0.45);
+          tl.to("#f1_g1_letter1", { opacity: 0.06, duration: 1.2, ease: "sine.inOut" }, 2.2);
+          tl.to("#f1_g1_letter1", { opacity: 0.13, duration: 1.3, ease: "sine.inOut" }, 3.9);
+          tl.to("#f1_g1_letter1", { opacity: 0.05, duration: 0.4, ease: "sine.inOut" }, 5.4);
+
+          tl.to("#f1_g1_letter2", { x: -40, y: 22, rotation: 5, duration: 6.247, ease: "sine.inOut" }, 0);
+          tl.to("#f1_g1_letter2", { opacity: 0.12, duration: 0.8, ease: "power1.out" }, 1.1);
+          tl.to("#f1_g1_letter2", { opacity: 0.05, duration: 1.1, ease: "sine.inOut" }, 2.6);
+          tl.to("#f1_g1_letter2", { opacity: 0.14, duration: 1.3, ease: "sine.inOut" }, 4.2);
+          tl.to("#f1_g1_letter2", { opacity: 0.06, duration: 0.25, ease: "sine.inOut" }, 5.55);
+
+          tl.to("#f1_g1_letter3", { x: -34, y: -26, rotation: 4, duration: 6.247, ease: "sine.inOut" }, 0);
+          tl.to("#f1_g1_letter3", { opacity: 0.11, duration: 0.9, ease: "power1.out" }, 0.9);
+          tl.to("#f1_g1_letter3", { opacity: 0.045, duration: 1.1, ease: "sine.inOut" }, 2.5);
+          tl.to("#f1_g1_letter3", { opacity: 0.12, duration: 1.3, ease: "sine.inOut" }, 4.1);
+          tl.to("#f1_g1_letter3", { opacity: 0.05, duration: 0.25, ease: "sine.inOut" }, 5.5);
+
+          tl.to("#f1_g1_letter4", { x: -26, y: 14, rotation: -5, duration: 6.247, ease: "sine.inOut" }, 0);
+          tl.to("#f1_g1_letter4", { opacity: 0.13, duration: 0.8, ease: "power1.out" }, 0.6);
+          tl.to("#f1_g1_letter4", { opacity: 0.055, duration: 1.1, ease: "sine.inOut" }, 2.0);
+          tl.to("#f1_g1_letter4", { opacity: 0.12, duration: 1.3, ease: "sine.inOut" }, 3.5);
+          tl.to("#f1_g1_letter4", { opacity: 0.045, duration: 0.7, ease: "sine.inOut" }, 5.2);
+
+          /* hits — light, not cuts: 1.02 scale + 1px white rim flash */
+          var hits = [0.673, 2.058, 3.442, 4.319, 4.827, 5.596];
+          var flashAmp = [0.85, 0.78, 0.9, 0.55, 0.85, 0.65];
+          hits.forEach(function (t, i) {
+            tl.to("#f1_g1_heartPulse", { scale: 1.02, duration: 0.06, ease: "power2.out" }, t);
+            tl.to("#f1_g1_heartPulse", { scale: 1, duration: 0.2, ease: "power2.inOut" }, t + 0.06);
+
+            tl.set("#f1_f1g1h_rimFlash", { opacity: 0 }, t - 0.002);
+            tl.to("#f1_f1g1h_rimFlash", { opacity: flashAmp[i], duration: 0.03, ease: "none" }, t);
+            tl.to("#f1_f1g1h_rimFlash", { opacity: 0, duration: 0.17, ease: "power2.out" }, t + 0.03);
+
+            tl.to("#f1_g1_flare", { opacity: 0.32, duration: 0.04, ease: "none" }, t);
+            tl.to("#f1_g1_flare", { opacity: 0.14, duration: 0.3, ease: "power2.out" }, t + 0.04);
+
+            tl.to("#f1_g1_halo", { opacity: 0.98, duration: 0.1, ease: "power2.out" }, t);
+            tl.to("#f1_g1_halo", { opacity: 0.82, duration: 0.5, ease: "sine.out" }, t + 0.1);
+          });
+
+          /* pre-cut tension glint (flash only, no scale jump) */
+          tl.set("#f1_f1g1h_rimFlash", { opacity: 0 }, 6.209);
+          tl.to("#f1_f1g1h_rimFlash", { opacity: 0.95, duration: 0.03, ease: "none" }, 6.211);
+          tl.to("#f1_f1g1h_rimFlash", { opacity: 0.15, duration: 0.034, ease: "none" }, 6.241);
+
+          /* chrome specular sweeps — downbeats (band exits fully to the right) */
+          function sweepG1(t, dur) {
+            tl.fromTo(
+              "#f1_f1g1h_band",
+              { attr: { x1: -620, x2: -180 } },
+              { attr: { x1: 1150, x2: 1590 }, duration: dur, ease: "power2.inOut", immediateRender: false },
+              t,
+            );
+          }
+          sweepG1(0.08, 1.05);
+          [0.673, 2.058, 3.442, 4.827].forEach(function (t) {
+            sweepG1(t, 0.55);
+          });
+          sweepG1(5.82, 0.4);
+
+          /* texture clears before the convergence cut */
+          tl.to("#f1_g1_letter1", { opacity: 0, duration: 0.3, ease: "sine.in" }, 5.86);
+          tl.to("#f1_g1_letter2", { opacity: 0, duration: 0.3, ease: "sine.in" }, 5.9);
+          tl.to("#f1_g1_letter3", { opacity: 0, duration: 0.3, ease: "sine.in" }, 5.94);
+          tl.to("#f1_g1_letter4", { opacity: 0, duration: 0.26, ease: "sine.in" }, 5.94);
+
+          /* camera shakes — 2px max */
+          function shakeAt(sel, t, amp) {
+            tl.to(sel, { x: amp, y: -amp * 0.6, duration: 0.045, ease: "none" }, t);
+            tl.to(sel, { x: -amp * 0.8, y: amp * 0.5, duration: 0.05, ease: "none" }, t + 0.045);
+            tl.to(sel, { x: amp * 0.55, y: -amp * 0.3, duration: 0.05, ease: "none" }, t + 0.095);
+            tl.to(sel, { x: 0, y: 0, duration: 0.09, ease: "power2.out" }, t + 0.145);
+          }
+          shakeAt("#f1_g1_shake", 4.319, 1.9);
+          shakeAt("#f1_g1_shake", 5.596, 1.9);
+
+          /* ============================================================
+             GROUP 2 — 6.247 → 8.057
+             ============================================================ */
+
+          /* camera push 1.07 → 1.88 (42% → ~79% heart width) */
+          tl.fromTo(
+            "#f1_g2_cam",
+            { x: -10, y: 6, scale: 1.07, rotation: 1.1 },
+            { scale: 1.88, duration: 1.349, ease: "power2.in", immediateRender: false },
+            6.247,
+          );
+          tl.fromTo(
+            "#f1_g2_bedCanvas",
+            { x: 8, y: -6, scale: 1.09 },
+            { scale: 1.42, x: -14, y: 10, duration: 1.349, ease: "power2.in", immediateRender: false },
+            6.247,
+          );
+
+          /* orbit ring accelerates + spirals inward + blurs into streaks */
+          tl.to("#f1_g2_ringScale", { scale: 0.2, duration: 1.05, ease: "power3.in" }, 6.55);
+          tl.to("#f1_g2_ringRot", { rotation: -414, duration: 1.349, ease: "power2.in" }, 6.247);
+          tl.to("#f1_g2_ringSvg", { filter: "blur(16px)", duration: 1.1, ease: "power2.in" }, 6.45);
+          tl.to("#f1_g2_ringScale", { opacity: 0, duration: 0.25, ease: "power1.out" }, 7.3);
+
+          /* hero heart spins up and gains motion blur */
+          tl.to("#f1_g2_heartRot", { rotation: -24, duration: 1.349, ease: "power2.in" }, 6.247);
+          tl.to("#f1_g2_heartPulse", { scale: 1.03, duration: 0.07, ease: "power2.out" }, 6.673);
+          tl.to("#f1_g2_heartPulse", { scale: 1, duration: 0.22, ease: "power2.inOut" }, 6.743);
+          tl.to("#f1_g2_heartPulse", { scale: 1.045, duration: 0.07, ease: "power2.out" }, 7.134);
+          tl.to("#f1_g2_heartPulse", { scale: 1, duration: 0.22, ease: "power2.inOut" }, 7.204);
+          tl.to("#f1_g2_heartBlur", { filter: "blur(7px)", duration: 0.36, ease: "power2.in" }, 7.3);
+
+          /* accelerating specular sweeps */
+          function sweepG2(t, dur) {
+            tl.fromTo(
+              "#f1_f1g2h_band",
+              { attr: { x1: -620, x2: -180 } },
+              { attr: { x1: 1150, x2: 1590 }, duration: dur, ease: "power2.inOut", immediateRender: false },
+              t,
+            );
+          }
+          sweepG2(6.247, 0.42);
+          sweepG2(6.673, 0.36);
+          sweepG2(7.134, 0.32);
+          sweepG2(7.44, 0.24);
+
+          /* rim flashes on the build hits */
+          [6.673, 7.134].forEach(function (t) {
+            tl.set("#f1_f1g2h_rimFlash", { opacity: 0 }, t - 0.002);
+            tl.to("#f1_f1g2h_rimFlash", { opacity: 0.9, duration: 0.03, ease: "none" }, t);
+            tl.to("#f1_f1g2h_rimFlash", { opacity: 0, duration: 0.16, ease: "power2.out" }, t + 0.03);
+          });
+
+          /* shakes */
+          shakeAt("#f1_g2_shake", 6.673, 1.6);
+          shakeAt("#f1_g2_shake", 7.134, 2);
+          shakeAt("#f1_g2_shake", 7.5, 2.5);
+
+          /* beam + halo drop away into the compression */
+          tl.to("#f1_g2_bedCanvas", { opacity: 0, duration: 0.22, ease: "power2.in" }, 7.42);
+          tl.to("#f1_g2_flare", { opacity: 0, duration: 0.18, ease: "power2.in" }, 7.45);
+          tl.to("#f1_g2_halo", { opacity: 0, duration: 0.2, ease: "power2.in" }, 7.45);
+
+          /* 7.596 — heart compresses to a white point, then black hold */
+          tl.to("#f1_g2_heartPulse", { scale: 0.012, duration: 0.1, ease: "power4.in" }, 7.596);
+          tl.set("#f1_g2_heartPulse", { opacity: 0 }, 7.7);
+
+          tl.to("#f1_g2_flash", { opacity: 0.9, duration: 0.03, ease: "none" }, 7.596);
+          tl.to("#f1_g2_flash", { opacity: 0, duration: 0.13, ease: "power2.out" }, 7.626);
+
+          tl.fromTo("#f1_g2_point", { opacity: 0, scale: 0.4 }, { opacity: 1, scale: 1, duration: 0.05, ease: "power2.out" }, 7.6);
+          tl.to("#f1_g2_point", { opacity: 0, scale: 0.5, duration: 0.1, ease: "power2.in" }, 7.8);
+
+          window.__timelines = window.__timelines || {};
+          window.__timelines["01-f1"] = tl;
+          tl.seek(0);
+        })();
+      </script>
+    </template>
+  </body>
+</html>

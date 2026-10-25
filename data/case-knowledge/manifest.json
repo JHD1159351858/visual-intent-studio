@@ -1,0 +1,2115 @@
+{
+  "exportedAt": "2026-10-25T08:28:31.941Z",
+  "total": 350,
+  "counts": {
+    "reactbits": 213,
+    "aceternity": 109,
+    "60fps": 28
+  },
+  "sourceCodeCount": 322,
+  "observedBehaviorCount": 28,
+  "sourceComponentsExecuted": false,
+  "cloudUploaded": false,
+  "cases": [
+    {
+      "entryId": "aceternity-bento-grid",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/bento-grid",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "aceternity-layout-grid",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/layout-grid",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "aceternity-sidebar",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/sidebar",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "aceternity-timeline",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/timeline",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "reactbits-glass-surface",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/glass-surface",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "reactbits-dot-grid",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/dot-grid",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "aceternity-background-gradient",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/background-gradient",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "aceternity-background-boxes",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/background-boxes",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "reactbits-spotlight-card",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/spotlight-card",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "reactbits-tilted-card",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/tilted-card",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "aceternity-glowing-effect",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/glowing-effect",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "aceternity-text-reveal-card",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/text-reveal-card",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "eb2b7ba632afff5e",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/grid-and-dot-backgrounds",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "dc50ae9866b7171d",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/registry/moving-line.json",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "9690b06b16d43357",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/sparkles",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "4c7e1b83582015b4",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/spotlight",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "75930d2c4a72f4fe",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/glowing-stars-effect",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "aca0c12575e64a6a",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/animated-tooltip",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "210cfee7c088fdd1",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/following-pointer",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "55988ec0ea1c44b9",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/background-beams",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "793c0b94129c0d0f",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/svg-mask-effect",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "708de7a2bf373eac",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/infinite-moving-cards",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "b92ac47d891f9b28",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/3d-pin",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "1b348af29973d9b4",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/evervault-card",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "e9a78de82ee90a6c",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/parallax-scroll",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "3949bfe57700b184",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/parallax-hero-images",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "d8edfdc391f7a8aa",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/tracing-beam",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "4bd636826aaccb23",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/container-scroll-animation",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "d79091b2c51c9011",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/text-generate-effect",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "6bf9770e8a58b9c1",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/meteors",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "68d69ca0726b91bd",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/card-stack",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "4cd98644135d8a31",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/moving-border",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "0057fc9efa7bc781",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/lamp-effect",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "8cabc3e367eada43",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/sticky-scroll-reveal",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "e1e4b5ef827d0ebd",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/floating-navbar",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "cb2a7a424fbbca60",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/navbar-menu",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "051f7a3ee32ea7e5",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/tailwindcss-buttons",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "c74e90d236824b91",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/card-hover-effect",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "fd9f9afee12833b6",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/google-gemini-effect",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "7d061e0d3c0f51a1",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/gooey-input",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "f4eb279324cbb41d",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/typewriter-effect",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "22fa77bef9456d26",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/3d-card-effect",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "f84784007ac83abf",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/images-slider",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "fcc264ca7f9cd840",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/direction-aware-hover",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "375fac205c71b6c9",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/tabs",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "f09fe0a41ac38e93",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/hero-parallax",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "0dd31983b51355e4",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/wavy-background",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "e23dab4240ad9cd1",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/background-gradient-animation",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "534b411342eec2c2",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/macbook-scroll",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "2e6c910c299ad581",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/signup-form",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "3eb6952087f35f75",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/multi-step-loader",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "80314cdc202c35c9",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/github-globe",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "1a605e0e28035a21",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/aurora-background",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "403a69cb5c5c1591",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/canvas-reveal-effect",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "1308b95cc6b190d9",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/hover-border-gradient",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "2211687be0aa3815",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/hero-highlight",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "8a6b4d63d9ac322e",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/vortex",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "b7207ef1c3bd5309",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/wobble-card",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "4dde8b706a477af2",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/placeholders-and-vanish-input",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "7a032d2b3d2a1208",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/flip-words",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "e5286e718e574d50",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/link-preview",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "58e3f39b1432f6f2",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/glare-card",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "f6b5fb5e2cf9261b",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/animated-modal",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "541e51945da2a57f",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/apple-cards-carousel",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "04caedaf6df871a4",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/shooting-stars-and-stars-background",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "54adf8a98e125842",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/compare",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "d555c8fc1f5972ba",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/card-spotlight",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "d2ddfc7d07175a9a",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/container-cover",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "5c2c6c0babb93485",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/file-upload",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "2aefe0b037d88f85",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/floating-dock",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "be7c56d8a58d84cd",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/focus-cards",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "43049e4f874df1ab",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/background-beams-with-collision",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "95c8781ac1d8208a",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/text-hover-effect",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "3dc3b5173ae88403",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/lens",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "7688c8803696003c",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/background-lines",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "31fd229e3d116626",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/animated-testimonials",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "8e9f8ae3a7a3017a",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/world-map",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "d389ee16f7d41192",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/code-block",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "d6aab57f1b6232f6",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/carousel",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "7a1472e70150756d",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/colourful-text",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "4e3a46aa4bd05bc5",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/squiggly-text",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "ed13ced54c6531b5",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/magnetic-button",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "4f49fe7f98c4e782",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/notch",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "bb04b57807656cf3",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/spotlight-new",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "0863c4270156f37c",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/3d-marquee",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "c0bc7a10ce7ed450",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/container-text-flip",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "57f8444f15a08b99",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/resizable-navbar",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "01d0a95f96ec23a3",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/draggable-card",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "3b15693a4e31fc75",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/sticky-banner",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "0acd88c4e4fe0792",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/pointer-highlight",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "f7150ae29f460757",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/stateful-button",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "7166ef60bacae08a",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/loader",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "a70e30c2d01eaadf",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/image-generation-loader",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "6dc417244de003d0",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/comet-card",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "75d3740bf66f4da9",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/background-ripple-effect",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "19872db15cb8a6f0",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/pixelated-canvas",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "bbaac79ce6eba228",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/canvas-text",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "3197134a784f56f1",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/layout-text-flip",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "2e0db61cd5df7595",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/dotted-glow-background",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "f8728846c8d69b1e",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/tooltip-card",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "c2c892ed4cecd54d",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/encrypted-text",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "3666ebc825b07f02",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/noise-background",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "b0151ee3e1ddd81f",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/dither-shader",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "dced90c1417e5265",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/cloud-shader",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "6f5210d22e041737",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/chromatic-image",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "5cb6d04a83fea066",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/webcam-pixel-grid",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "b2189353529bd8e1",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/images-badge",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "2f1a3e56d193ca79",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/keyboard",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "4157ca4cbe9c7625",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/terminal",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "4a53487d450d2436",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/3d-globe",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "960190b724344298",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/ascii-art",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "93784e76dbd65e27",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/scales",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "859634fae76088d9",
+      "sourceId": "aceternity",
+      "sourceUrl": "https://ui.aceternity.com/components/text-flipping-board",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "e1bb796507083e78",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/tech-text",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "ea7c1c83303f07dc",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/text-loop",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "f3faa4dafc6c6148",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/masked-heading",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "138aae8f8c558f6e",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/particle-text",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "8c4890b14e0585fd",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/split-flap-text",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "877f8a5c20eb8af1",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/warp-text",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "3e443b2f630cfc00",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/stroke-text",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "79251d5621b2156c",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/depth-text",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "b8047600d889bd4c",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/fold-text",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "ded9624fa8a051df",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/echo-text",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "1dd72ecf061a5ad2",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/split-text",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "9b7cf84ef53c3790",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/blur-text",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "c89f5b0c87516639",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/circular-text",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "c7e4ca3afbfbb4d3",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/text-type",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "cf838cdb74b5a398",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/shuffle",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "e4c2a95b44f285ff",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/shiny-text",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "b1968995127d84dc",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/text-pressure",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "991f76c3cda44465",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/curved-loop",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "8877752f1de65291",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/fuzzy-text",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "e70bb8efb1b8783a",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/gradient-text",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "7b222e5c19abc17d",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/falling-text",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "26dc1f839d2d599d",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/text-cursor",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "645105a8d911227c",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/decrypted-text",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "5c78f7cb4f8acf22",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/true-focus",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "a5ff7281c987363e",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/scroll-float",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "59b6d2fad7438493",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/scroll-reveal",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "8b719de8172ed16c",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/ascii-text",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "6aea3542080203f6",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/scrambled-text",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "3d3570a2bfd1cf99",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/rotating-text",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "b4e24f9dbf6d967a",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/glitch-text",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "4fb20de0a363d312",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/scroll-velocity",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "a545bd8c5654e0a5",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/variable-proximity",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "c4f971c297eee7bd",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/text-animations/count-up",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "af3338036daf3477",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/crystalized-ball",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "2214e73dc6d3c3cc",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/electric-logo",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "af4c65556874cdf9",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/dither-veil",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "384faf733c55151d",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/glow-cursor",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "27e5a543159f3bd3",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/scroll-expand",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "de3ea3e464ac7f24",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/ripple-distortion",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "fc6be5850cc64cae",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/elastic-mesh",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "cb85d1a2c7c7e027",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/swarm-cursor",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "f54bdec4f9ca1a8a",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/halftone-reveal",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "39c910c7a3134b14",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/pixel-swap",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "539f2788df728536",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/cursor-grid",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "201094c234630df1",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/animated-content",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "8f4f2945729d17d0",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/fade-content",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "b13e872a0d30fae7",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/electric-border",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "39080d64a7b14c32",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/orbit-images",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "73876a3b0aee0449",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/pixel-transition",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "4db1c0eedc341022",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/glare-hover",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "d93c32ef8d8c64d7",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/antigravity",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "8a276d77a70bc6b8",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/logo-loop",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "4bac07ae183e6450",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/target-cursor",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "b6fc084545ec1f00",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/magic-rings",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "2c9fbcb73a94e2e1",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/laser-flow",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "089dd08cbfc6a845",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/magnet-lines",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "4d654be6bb24c189",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/ghost-cursor",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "77ff66fee5359db4",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/gradual-blur",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "018e0a861f761b4b",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/click-spark",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "477fe70784cb9178",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/magnet",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "bdcfb580266f47aa",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/strands",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "b04188ba3f32dd46",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/sticker-peel",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "503c799a9ff6298c",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/pixel-trail",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "7f70b599aa27a7c6",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/cubes",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "46a94d1d040cd951",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/metallic-paint",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "6de83703db63aa5c",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/noise",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "f071eb932ef995f6",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/shape-blur",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "5a03391fe96ea170",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/crosshair",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "4a95192b93c40245",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/image-trail",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "b6609641f2f0fff1",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/ribbons",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "6a871dcba551b630",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/splash-cursor",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "eceb0c12a98cf64b",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/meta-balls",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "6541ae8dc1d23634",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/blob-cursor",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "ad9c933f8a0f544e",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/animations/star-border",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "2b63dcb0d718c3b9",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/holo-card",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "b3cbe1df967269b6",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/circular-carousel",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "60a03c81df543f6a",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/flex-carousel",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "1e1931c26a201a92",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/infinite-spiral",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "39867ab00dbd6820",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/depth-carousel",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "98308cb464a3d478",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/morph-slider",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "ae8842d7d28e77b0",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/drift-wall",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "d7d0a0a0e895db95",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/accordion-gallery",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "f5516684852f347f",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/specular-button",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "8b55134e125aa1d7",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/option-wheel",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "2b6fe3131110c1f4",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/curved-input",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "df5661b7459c5304",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/line-sidebar",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "d9540a6c5c9d475f",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/animated-list",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "e660f0d8e851f193",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/scroll-stack",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "17ab357eb710296e",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/bubble-menu",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "3c6dae64620f79ef",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/magic-bento",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "3ba0dffea03e31a6",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/circular-gallery",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "e943c9b41e404c28",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/reflective-card",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "7ac3667e90ea8213",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/card-nav",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "4e01d5ff26ed95c8",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/stack",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "328a512818185592",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/fluid-glass",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "3b7d78827eeda39c",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/pill-nav",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "0359369419ce0f38",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/masonry",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "321f1184c636898d",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/dome-gallery",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "e6149787eb1b8dbf",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/chroma-grid",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "7e31e4db25559d5b",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/folder",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "4f7dfed7b95c6a92",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/staggered-menu",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "d6e751bd72c36181",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/model-viewer",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "84d36ac034de5589",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/lanyard",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "356c34ccaf53edf1",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/profile-card",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "b556d3ba6d6e38fd",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/dock",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "2d55f4b3aa59ef07",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/gooey-nav",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "612ce5b16d2f0edf",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/pixel-card",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "44d21281ba24b77f",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/carousel",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "cc2d5e3bcfe1faf6",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/border-glow",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "214963649be25b25",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/flying-posters",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "e5e7c867913b19cb",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/card-swap",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "c9a0ad8ca60e062f",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/glass-icons",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "716b762175b12712",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/decay-card",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "936788dc9b93b361",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/flowing-menu",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "22a88f7578020307",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/elastic-slider",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "e4cd0e1fd6fdccc1",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/counter",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "eb7ca3f10e1f1e40",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/infinite-menu",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "819b61711d943890",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/stepper",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "5f6db6faf42a1a39",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/components/bounce-cards",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "9d1460b1bef8c4e1",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/flux-lines",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "49356f2a830db282",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/pattern-waves",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "72739122a433abd2",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/micro-slats",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "f4f35306c9faad95",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/ghost-fibers",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "04d69f2aeda5c46f",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/crt-warp",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "f86234a5a3effbc3",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/molten-metal",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "107d986a5cba79cf",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/gradient-waves",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "d4968ae364bc4208",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/web-threads",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "e5682fdf7f5c92ef",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/topography",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "50c0b4edfc4cfbe3",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/light-tunnel",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "615e57c8ecce0da5",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/sliced-waves",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "c42ffcedfaa7ae94",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/acid-squares",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "a84c12fe4b367a06",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/scanner",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "95ca6e63302df6e0",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/ferrofluid",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "0339fea6b68d9351",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/lightfall",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "08ea2449be06f172",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/liquid-ether",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "6dcb08d9f60c4ed9",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/prism",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "a84dfef1365dc129",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/dark-veil",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "3260c657755ad6ea",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/light-pillar",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "c9ac7c82a1934228",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/silk",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "86cafd741ca27db9",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/floating-lines",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "ea992f33a99c04c8",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/side-rays",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "2e43890744734192",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/light-rays",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "c39b87bd28208fda",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/pixel-blast",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "8efc173167387304",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/color-bends",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "c3183d21c9a5e468",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/line-waves",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "508abc3c4c64fa23",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/radar",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "cef8de298c1faecd",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/soft-aurora",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "464ab000e19f001a",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/aurora",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "9bbc56bb0979e302",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/plasma",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "c192c5b4ab1389f2",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/plasma-wave",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "f9e52b85f5bfc88a",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/particles",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "ed618ca34f223c93",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/gradient-blinds",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "bececab1c32bb05e",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/grainient",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "49f5a8dc7f011753",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/grid-scan",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "23f7b395fdbca769",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/beams",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "51b783e9ea251dbd",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/pixel-snow",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "904f278b52d12a31",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/lightning",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "7f1ca4f3bc37da46",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/prismatic-burst",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "1f9fac0087195dfe",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/galaxy",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "679505985f285534",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/dither",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "7f70e6e524e90b1c",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/faulty-terminal",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "1e2cba52b91836a8",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/ripple-grid",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "dd8f826257e9fe77",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/dot-field",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "09b8e5c8fc798712",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/threads",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "7a14abb3494424ce",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/hyperspeed",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "17fa4426bd6915c5",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/iridescence",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "81a15c8383335520",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/waves",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "68d80b3867d6cb9f",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/grid-distortion",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "4c946fb9557624f8",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/ballpit",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "6ebabc779110f699",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/orb",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "46bf6b92d95855c3",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/letter-glitch",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "f54537d48d15cbc5",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/grid-motion",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "7db027773c30b3f2",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/shape-grid",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "5f1bca2991ee5a32",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/liquid-chrome",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "801a0fbdfac7af1e",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/backgrounds/balatro",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "e9efab30a393690e",
+      "sourceId": "60fps",
+      "sourceUrl": "https://60fps.design/shots/opal-border-glow-feature-highlight-interaction",
+      "basis": "observed-behavior"
+    },
+    {
+      "entryId": "4dcf995aa23130df",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/bell-toggle",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "8c066244db53ce5a",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/branched-menu",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "37d8f3e7fef3f4a4",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/call-chip",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "76c99acabd7f6c55",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/code-slots",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "c790109d7bf987ba",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/comet-dial",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "6d800efa8749c949",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/dodge-field",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "97891d41cb98ef59",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/flip-card",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "5d28bb2c5ec3cbeb",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/folder-float",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "114eeaec814ff8e6",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/fuse-button",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "47e6f214558b4616",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/glide-select",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "790b295e0d64dc88",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/hold-button",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "5a3616248414fadb",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/jelly-radio",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "d3f3b48b177d5848",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/lattice-loader",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "8e3f1509bf02f915",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/paper-crumple",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "c8505751d8186935",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/peek-rating",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "e3aaeefc863b70e7",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/prompt-bar",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "eb721cb0a78f16ca",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/pulse-heart",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "a6833a77c4f5b849",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/refine-frame",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "b51af7fe12edb082",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/rubber-segment",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "c9c6cd47270734b4",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/scrub-field",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "97a9f5a045f281cc",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/shredder",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "450745deb2ca4e32",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/slide-commit",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "0358d2c8476d3047",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/sling-button",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "55dbdee51563b644",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/slosh-gauge",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "a0e9d2c9b324058e",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/spring-check",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "3ef941163bbaa332",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/squish-switch",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "103e215ede8c0764",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/status-mark",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "3d48bb81a1221c5a",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/swipe-row",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "917bbb2e4c0525fc",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/swipe-toast",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "19c7ddbb6be306f8",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/tear-ticket",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "187e7f7bde53d65c",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/thought-line",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "96f6dfa483d63b00",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/voice-pill",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "0ffadba3589467d7",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/wake-slider",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "01d55334d91cbac4",
+      "sourceId": "reactbits",
+      "sourceUrl": "https://reactbits.dev/micro/warm-tooltip",
+      "basis": "source-code"
+    },
+    {
+      "entryId": "acbbbd63d54c2f9b",
+      "sourceId": "60fps",
+      "sourceUrl": "https://60fps.design/shots/airbnb-tactile-tab-button-interaction",
+      "basis": "observed-behavior"
+    },
+    {
+      "entryId": "a75cbb8f1792076b",
+      "sourceId": "60fps",
+      "sourceUrl": "https://60fps.design/shots/apple-music-player-controls-collapse-interaction",
+      "basis": "observed-behavior"
+    },
+    {
+      "entryId": "8bcbfcc3839721fb",
+      "sourceId": "60fps",
+      "sourceUrl": "https://60fps.design/shots/airbnb-photo-pop-and-slide-animation",
+      "basis": "observed-behavior"
+    },
+    {
+      "entryId": "d349e6e81ac0f421",
+      "sourceId": "60fps",
+      "sourceUrl": "https://60fps.design/shots/airbnb-add-guests-in-sheet-interaction",
+      "basis": "observed-behavior"
+    },
+    {
+      "entryId": "b49c756b6c31c240",
+      "sourceId": "60fps",
+      "sourceUrl": "https://60fps.design/shots/linear-issue-actions-popup-interaction",
+      "basis": "observed-behavior"
+    },
+    {
+      "entryId": "4af56fa95058067f",
+      "sourceId": "60fps",
+      "sourceUrl": "https://60fps.design/shots/revolut-revpoints-circular-slider-interaction",
+      "basis": "observed-behavior"
+    },
+    {
+      "entryId": "fee04c2c29ab4679",
+      "sourceId": "60fps",
+      "sourceUrl": "https://60fps.design/shots/perplexity-model-selection-sheet-morph-interaction",
+      "basis": "observed-behavior"
+    },
+    {
+      "entryId": "e336505a427b4e3d",
+      "sourceId": "60fps",
+      "sourceUrl": "https://60fps.design/shots/google-todo-check-interaction",
+      "basis": "observed-behavior"
+    },
+    {
+      "entryId": "64c0e568d28654ea",
+      "sourceId": "60fps",
+      "sourceUrl": "https://60fps.design/shots/google-ai-mode-search-morph-interaction",
+      "basis": "observed-behavior"
+    },
+    {
+      "entryId": "d7999f6a0d76dfe0",
+      "sourceId": "60fps",
+      "sourceUrl": "https://60fps.design/shots/google-photos-logo-spin-to-backup-loader-animation",
+      "basis": "observed-behavior"
+    },
+    {
+      "entryId": "5e5b3722d2eb3996",
+      "sourceId": "60fps",
+      "sourceUrl": "https://60fps.design/shots/notion-ai-sheet-intro-action-trail-transition",
+      "basis": "observed-behavior"
+    },
+    {
+      "entryId": "7a2ac53756b4c164",
+      "sourceId": "60fps",
+      "sourceUrl": "https://60fps.design/shots/airbnb-identity-verification-card-flip-scan-interaction",
+      "basis": "observed-behavior"
+    },
+    {
+      "entryId": "094ec132bb2affc0",
+      "sourceId": "60fps",
+      "sourceUrl": "https://60fps.design/shots/github-badges-showcase-interaction",
+      "basis": "observed-behavior"
+    },
+    {
+      "entryId": "f0d39e6511b80f02",
+      "sourceId": "60fps",
+      "sourceUrl": "https://60fps.design/shots/revolut-graph-glow-drag-interaction",
+      "basis": "observed-behavior"
+    },
+    {
+      "entryId": "f76c6bca9cb40907",
+      "sourceId": "60fps",
+      "sourceUrl": "https://60fps.design/shots/revolut-3d-card-rotate-interaction",
+      "basis": "observed-behavior"
+    },
+    {
+      "entryId": "40c39712362ae2d0",
+      "sourceId": "60fps",
+      "sourceUrl": "https://60fps.design/shots/apple-music-emoji-reaction-interaction",
+      "basis": "observed-behavior"
+    },
+    {
+      "entryId": "cb0a91c3b30c7181",
+      "sourceId": "60fps",
+      "sourceUrl": "https://60fps.design/shots/google-chrome-drag-tab-to-pin-interaction",
+      "basis": "observed-behavior"
+    },
+    {
+      "entryId": "86d81551dba0aa56",
+      "sourceId": "60fps",
+      "sourceUrl": "https://60fps.design/shots/google-chrome-drag-tabs-to-arrange-interaction",
+      "basis": "observed-behavior"
+    },
+    {
+      "entryId": "7c54471b8ab97c00",
+      "sourceId": "60fps",
+      "sourceUrl": "https://60fps.design/shots/google-chrome-tabs-switch-scale-interaction",
+      "basis": "observed-behavior"
+    },
+    {
+      "entryId": "3a865035626f460b",
+      "sourceId": "60fps",
+      "sourceUrl": "https://60fps.design/shots/google-docs-value-prop-full-screen-color-transition",
+      "basis": "observed-behavior"
+    },
+    {
+      "entryId": "c3badddd8d1bc80e",
+      "sourceId": "60fps",
+      "sourceUrl": "https://60fps.design/shots/spotify-podcast-card-preview-sound-wave-animation",
+      "basis": "observed-behavior"
+    },
+    {
+      "entryId": "67b41b5ea8fa2f24",
+      "sourceId": "60fps",
+      "sourceUrl": "https://60fps.design/shots/airbnb-price-toggle-interaction",
+      "basis": "observed-behavior"
+    },
+    {
+      "entryId": "341989b5bb432cfe",
+      "sourceId": "60fps",
+      "sourceUrl": "https://60fps.design/shots/spotify-speed-slider-interaction",
+      "basis": "observed-behavior"
+    },
+    {
+      "entryId": "036667938bbc4e78",
+      "sourceId": "60fps",
+      "sourceUrl": "https://60fps.design/shots/netflix-rate-interaction",
+      "basis": "observed-behavior"
+    },
+    {
+      "entryId": "904ec593c2876db5",
+      "sourceId": "60fps",
+      "sourceUrl": "https://60fps.design/shots/apple-music-play-pause-interaction",
+      "basis": "observed-behavior"
+    },
+    {
+      "entryId": "ab4b60af9afb7bb3",
+      "sourceId": "60fps",
+      "sourceUrl": "https://60fps.design/shots/apple-music-lyrics-interaction",
+      "basis": "observed-behavior"
+    },
+    {
+      "entryId": "f02bad609a375ec0",
+      "sourceId": "60fps",
+      "sourceUrl": "https://60fps.design/shots/vercel-preview-feature-interaction",
+      "basis": "observed-behavior"
+    }
+  ]
+}

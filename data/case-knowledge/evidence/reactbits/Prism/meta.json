@@ -1,0 +1,21 @@
+{
+  "entryId": "6dcb08d9f60c4ed9",
+  "sourceUrl": "https://reactbits.dev/backgrounds/prism",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Prism-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Prism/Prism.jsx",
+  "checkedAt": "2026-10-25T07:53:08.040Z",
+  "sha256": "2b28c5b07156a4ce5919764e2db1b78efeab67ccd7c42f7db365366b3a00a70c",
+  "files": [
+    {
+      "path": "Prism.css",
+      "sha256": "b27bb62b87f0d5db150d509a64ae8514610aaea7f30dad7d10a33ffacba87e6d",
+      "bytes": 74
+    },
+    {
+      "path": "Prism.jsx",
+      "sha256": "d73b5603968eadf6790aa0e65697370cba99358b3cd93b6ab341fead5527ddd6",
+      "bytes": 12644
+    }
+  ]
+}

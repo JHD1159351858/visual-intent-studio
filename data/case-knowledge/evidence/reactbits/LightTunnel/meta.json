@@ -1,0 +1,21 @@
+{
+  "entryId": "50c0b4edfc4cfbe3",
+  "sourceUrl": "https://reactbits.dev/backgrounds/light-tunnel",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/LightTunnel-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/LightTunnel/LightTunnel.jsx",
+  "checkedAt": "2026-10-25T07:53:07.074Z",
+  "sha256": "1fec9b522fc62e7423864be5b2d6c6308bf74cbe9b0f342ef56080e66a1c9b08",
+  "files": [
+    {
+      "path": "LightTunnel.css",
+      "sha256": "064246dda2a8169ce64ee2acadde98cb90871abbce743c9af7bab9e0645ac860",
+      "bytes": 210
+    },
+    {
+      "path": "LightTunnel.jsx",
+      "sha256": "d364f8a1586472c8af79330a0cd9aad4232e40c50976a29e7030f5bbb9d0aaf1",
+      "bytes": 17917
+    }
+  ]
+}

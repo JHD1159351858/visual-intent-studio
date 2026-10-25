@@ -1,0 +1,21 @@
+{
+  "entryId": "b556d3ba6d6e38fd",
+  "sourceUrl": "https://reactbits.dev/components/dock",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Dock-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/Dock/Dock.jsx",
+  "checkedAt": "2026-10-25T07:53:04.782Z",
+  "sha256": "3898bdc1e453f22f57939853cb299a9970af5aa1f3468ec622f15ce20677fdcc",
+  "files": [
+    {
+      "path": "Dock.css",
+      "sha256": "68914a58df742acacbe82341d930f6ae6d2e0720176e9428f5edcad4353f53e6",
+      "bytes": 9730
+    },
+    {
+      "path": "Dock.jsx",
+      "sha256": "f1eba9b158a023e78ff76242a0b17468ed733475918b1cb473158af19f59ebf9",
+      "bytes": 36302
+    }
+  ]
+}

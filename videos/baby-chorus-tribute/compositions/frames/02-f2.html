@@ -1,0 +1,632 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>02-f2</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Inter";
+          src: url("../../assets/fonts/Inter-latin.woff2") format("woff2");
+          font-weight: 100 900;
+          font-style: normal;
+          font-display: block;
+        }
+        @font-face {
+          font-family: "Space Grotesk";
+          src: url("../../assets/fonts/SpaceGrotesk-latin.woff2") format("woff2");
+          font-weight: 300 700;
+          font-style: normal;
+          font-display: block;
+        }
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        #stage {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          background: #000000;
+          color: #ffffff;
+          font-family: "Inter", "Arial Black", system-ui, sans-serif;
+          --chrome: linear-gradient(
+            170deg,
+            #ffffff 0%,
+            #e9ecf2 10%,
+            #9aa1ae 24%,
+            #4d525d 37%,
+            #f6f8fb 46%,
+            #ffffff 52%,
+            #cfd4dc 60%,
+            #6f7580 72%,
+            #31353d 84%,
+            #b7bdc7 93%,
+            #ffffff 100%
+          );
+        }
+
+        /* ---------- groups ---------- */
+        #f2_g1,
+        #f2_g2 {
+          position: absolute;
+          inset: 0;
+        }
+        #f2_g2 {
+          opacity: 0;
+          visibility: hidden;
+        }
+        #f2_g1_cam,
+        #f2_g2_cam {
+          position: absolute;
+          inset: 0;
+          will-change: transform;
+        }
+
+        /* ---------- group 1 ---------- */
+        #f2_g1_glow {
+          position: absolute;
+          inset: 0;
+          z-index: 0;
+          background: radial-gradient(
+            circle at 50% 45%,
+            rgba(255, 255, 255, 0.14) 0%,
+            rgba(255, 255, 255, 0) 55%
+          );
+          opacity: 0;
+        }
+        #f2_g1_shards {
+          position: absolute;
+          inset: 0;
+          z-index: 1;
+        }
+        .shard {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          will-change: transform;
+        }
+        .sh0 {
+          clip-path: polygon(0% 18%, 100% 0%, 82% 100%, 8% 86%);
+        }
+        .sh1 {
+          clip-path: polygon(12% 0%, 100% 34%, 78% 100%, 0% 72%);
+        }
+        .sh2 {
+          clip-path: polygon(0% 40%, 88% 0%, 100% 70%, 22% 100%);
+        }
+        .kchrome {
+          background-image: linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #c9ced6 18%,
+            #5a606b 36%,
+            #f8fafc 48%,
+            #ffffff 54%,
+            #8f95a1 70%,
+            #3a3e46 86%,
+            #dfe3e9 100%
+          );
+        }
+        .kpink {
+          background: #fe90e8;
+        }
+        .kice {
+          background: #c0f7fe;
+        }
+        #f2_g1_burst {
+          position: absolute;
+          left: 960px;
+          top: 485px;
+          width: 0;
+          height: 0;
+          z-index: 2;
+        }
+        .bline {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 6px;
+          background: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.85) 38%,
+            #ffffff 50%,
+            rgba(255, 255, 255, 0.85) 62%,
+            rgba(255, 255, 255, 0) 100%
+          );
+          will-change: transform, opacity;
+        }
+
+        .stampwrap {
+          position: absolute;
+          inset: 0;
+          z-index: 3;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        #f2_g1_w2 {
+          z-index: 5;
+        }
+        #f2_g1_w3 {
+          z-index: 6;
+        }
+        .word {
+          position: relative;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: -0.035em;
+          line-height: 0.9;
+          white-space: nowrap;
+          font-family: "Inter", "Arial Black", system-ui, sans-serif;
+        }
+        #f2_g1_w1 .word {
+          opacity: 0;
+        }
+        .w560 {
+          font-size: 560px;
+        }
+        .w392 {
+          font-size: 392px;
+        }
+        .chromefill {
+          display: inline-block;
+          background-image: var(--chrome);
+          background-size: 250% 100%;
+          background-position: 50% 0;
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          color: transparent;
+          text-shadow: 4px 4px 0 #000000;
+        }
+        .plate {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          display: inline-block;
+          background: #fe90e8;
+          color: #000000;
+          -webkit-text-fill-color: #000000;
+          border: 4px solid #000000;
+          box-shadow: 8px 8px 0 #000000;
+          padding: 0.015em 0.075em 0.055em;
+          opacity: 0;
+        }
+        .plate.ice {
+          background: #c0f7fe;
+        }
+        .rgb {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          display: inline-block;
+          opacity: 0;
+          pointer-events: none;
+          mix-blend-mode: screen;
+          will-change: transform, opacity;
+        }
+        .g1rgbR {
+          color: #ff2a4a;
+        }
+        .g1rgbC {
+          color: #2afff0;
+        }
+        #f2_g1_flash {
+          position: absolute;
+          inset: 0;
+          z-index: 60;
+          background: #ffffff;
+          opacity: 0;
+          pointer-events: none;
+        }
+
+        /* ---------- group 2 ---------- */
+        #f2_g2_glow {
+          position: absolute;
+          inset: 0;
+          z-index: 0;
+          background: radial-gradient(
+            circle at 50% 54%,
+            rgba(247, 203, 70, 0.16) 0%,
+            rgba(247, 203, 70, 0) 58%
+          );
+          opacity: 0;
+        }
+        #f2_g2_rays {
+          position: absolute;
+          left: 960px;
+          top: 540px;
+          width: 0;
+          height: 0;
+          z-index: 1;
+          opacity: 0;
+        }
+        .ray {
+          position: absolute;
+          left: 0;
+          top: 0;
+          border-radius: 3px;
+          will-change: transform;
+        }
+        #f2_g2_stack {
+          position: absolute;
+          left: 170px;
+          top: 210px;
+          z-index: 3;
+          font-size: 220px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: -0.035em;
+          line-height: 0.86;
+          white-space: nowrap;
+          font-family: "Inter", "Arial Black", system-ui, sans-serif;
+        }
+        .line {
+          display: block;
+          background-size: 250% 100%;
+          background-position: 50% 0;
+        }
+        #f2_g2_ohwrap {
+          position: absolute;
+          inset: 0;
+          z-index: 2;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          opacity: 0;
+        }
+        .ohword {
+          position: relative;
+          font-size: 700px;
+          font-weight: 900;
+          line-height: 0.9;
+          letter-spacing: -0.045em;
+          text-transform: uppercase;
+          white-space: nowrap;
+          font-family: "Inter", "Arial Black", system-ui, sans-serif;
+        }
+        .ohyellow {
+          position: absolute;
+          left: 0;
+          top: 0;
+          transform: translate(18px, 18px);
+          color: #f7cb46;
+          -webkit-text-fill-color: #f7cb46;
+        }
+        .ohblack {
+          position: absolute;
+          left: 0;
+          top: 0;
+          color: #000000;
+          -webkit-text-fill-color: #000000;
+          -webkit-text-stroke: 26px #000000;
+        }
+        .ohfront {
+          position: relative;
+          display: inline-block;
+          color: #fffdf5;
+          -webkit-text-fill-color: #fffdf5;
+        }
+        #f2_g2_flash {
+          position: absolute;
+          inset: 0;
+          z-index: 60;
+          background: #ffffff;
+          opacity: 0;
+          pointer-events: none;
+        }
+      </style>
+
+      <div data-hf-id="f2_hf-us2m"
+        id="stage"
+        data-composition-id="02-f2"
+        data-width="1920"
+        data-height="1080"
+        data-duration="7.384"
+      >
+        <!-- GROUP 1 : the drop -->
+        <div data-hf-id="f2_hf-h7r5" id="f2_g1">
+          <div data-hf-id="f2_hf-wsyp" id="f2_g1_cam">
+            <div data-hf-id="f2_hf-9z2n" id="f2_g1_glow"></div>
+            <div data-hf-id="f2_hf-u9ov" id="f2_g1_shards"></div>
+            <div data-hf-id="f2_hf-5o7a" id="f2_g1_burst"></div>
+
+            <div data-hf-id="f2_hf-o6iy" class="stampwrap" id="f2_g1_w1">
+              <div data-hf-id="f2_hf-uqyq" class="word w560">
+                <span data-hf-id="f2_hf-n3km" class="v chromefill">BABY</span>
+                <span data-hf-id="f2_hf-fokb" class="v plate pink">BABY</span>
+                <span data-hf-id="f2_hf-frv0" class="v plate ice">BABY</span>
+                <span data-hf-id="f2_hf-h75f" class="rgb g1rgbR">BABY</span>
+                <span data-hf-id="f2_hf-s1ua" class="rgb g1rgbC">BABY</span>
+              </div>
+            </div>
+
+            <div data-hf-id="f2_hf-k8ex" class="stampwrap" id="f2_g1_w2">
+              <div data-hf-id="f2_hf-7q5v" class="word w392">
+                <span data-hf-id="f2_hf-b7wa" class="v chromefill">BABY</span>
+                <span data-hf-id="f2_hf-6yjf" class="v plate pink">BABY</span>
+                <span data-hf-id="f2_hf-5e5g" class="v plate ice">BABY</span>
+                <span data-hf-id="f2_hf-obtf" class="rgb g1rgbR">BABY</span>
+                <span data-hf-id="f2_hf-36om" class="rgb g1rgbC">BABY</span>
+              </div>
+            </div>
+
+            <div data-hf-id="f2_hf-jgr4" class="stampwrap" id="f2_g1_w3">
+              <div data-hf-id="f2_hf-lndf" class="word w392">
+                <span data-hf-id="f2_hf-bm7b" class="v chromefill">BABY</span>
+                <span data-hf-id="f2_hf-6k8e" class="v plate pink">BABY</span>
+                <span data-hf-id="f2_hf-478d" class="v plate ice">BABY</span>
+                <span data-hf-id="f2_hf-nxie" class="rgb g1rgbR">BABY</span>
+                <span data-hf-id="f2_hf-3kzn" class="rgb g1rgbC">BABY</span>
+              </div>
+            </div>
+          </div>
+          <div data-hf-id="f2_hf-2pre" id="f2_g1_flash"></div>
+        </div>
+
+        <!-- GROUP 2 : the wall, then OH -->
+        <div data-hf-id="f2_hf-l5v6" id="f2_g2">
+          <div data-hf-id="f2_hf-90oe" id="f2_g2_cam">
+            <div data-hf-id="f2_hf-wtfm" id="f2_g2_glow"></div>
+            <div data-hf-id="f2_hf-8pmm" id="f2_g2_rays"></div>
+            <div data-hf-id="f2_hf-i7rr" id="f2_g2_stack">
+              <div data-hf-id="f2_hf-vlfo" class="line chromefill" id="f2_g2_l1">BABY</div>
+              <div data-hf-id="f2_hf-q0vb" class="line chromefill" id="f2_g2_l2">BABY</div>
+              <div data-hf-id="f2_hf-d41y" class="line chromefill" id="f2_g2_l3">BABY</div>
+            </div>
+            <div data-hf-id="f2_hf-j6yc" id="f2_g2_ohwrap" data-layout-allow-overlap>
+              <div data-hf-id="f2_hf-z515" class="ohword">
+                <span data-hf-id="f2_hf-qegv" class="ohyellow">OH</span>
+                <span data-hf-id="f2_hf-wrhq" class="ohblack">OH</span>
+                <span data-hf-id="f2_hf-nzfm" class="ohfront">OH</span>
+              </div>
+            </div>
+          </div>
+          <div data-hf-id="f2_hf-xoqx" id="f2_g2_flash"></div>
+        </div>
+      </div>
+
+      <script>
+        (function () {
+          window.__timelines = window.__timelines || {};
+          const tl = gsap.timeline({ paused: true });
+
+          /* ---------- initial state ---------- */
+          tl.set("#f2_g1", { autoAlpha: 1 }, 0);
+          tl.set("#f2_g2", { autoAlpha: 0 }, 0);
+          tl.set("#f2_g1_flash", { opacity: 1 }, 0);
+          tl.set("#f2_g2_flash", { opacity: 0 }, 0);
+          tl.set("#f2_g1_glow", { opacity: 0.9 }, 0);
+          tl.set("#f2_g2_glow", { opacity: 0 }, 0);
+          tl.set(".chromefill", { opacity: 1 }, 0);
+          tl.set(".plate", { opacity: 0 }, 0);
+          tl.set(".rgb", { xPercent: -50, yPercent: -50, opacity: 0 }, 0);
+
+          tl.set("#f2_g1_w1", { x: 0, y: -55 }, 0);
+          tl.set("#f2_g1_w2", { x: 1960, y: 355 }, 0);
+          tl.set("#f2_g1_w3", { x: -440, y: 1120 }, 0);
+          tl.set("#f2_g1_w1 .word", { scale: 1.55, opacity: 0 }, 0);
+          tl.set("#f2_g1_w2 .word", { scale: 1.4 }, 0);
+          tl.set("#f2_g1_w3 .word", { scale: 1.32 }, 0);
+
+          tl.set("#f2_g2_stack", { x: 0, y: 0, scale: 1, opacity: 1, filter: "none" }, 0);
+          tl.set("#f2_g2_ohwrap", { opacity: 0 }, 0);
+          tl.set(".ohword", { scale: 2.15 }, 0);
+          tl.set("#f2_g2_rays", { opacity: 0 }, 0);
+
+          /* ---------- 180 shards: seeded heart-shaped detonation ---------- */
+          const SHARDS = 180;
+          const shardHost = document.getElementById("f2_g1_shards");
+          for (let i = 0; i < SHARDS; i++) {
+            const a = (i / SHARDS) * Math.PI * 2;
+            const hx = 16 * Math.pow(Math.sin(a), 3);
+            const hy = -(
+              13 * Math.cos(a) -
+              5 * Math.cos(2 * a) -
+              2 * Math.cos(3 * a) -
+              Math.cos(4 * a)
+            );
+            const inner = 0.34 + (((i * 37) % 100) / 100) * 0.66;
+            const sx = hx * 14 * inner + (((i * 73) % 21) - 10) * 1.7;
+            const sy = hy * 14 * inner + (((i * 41) % 19) - 9) * 1.7;
+            const ang = Math.atan2(sy, sx) + (((i * 53) % 13) - 6) * 0.05;
+            const dist = 860 + (i % 8) * 205 + ((i * 29) % 7) * 32;
+            const ex = sx + Math.cos(ang) * dist;
+            const ey = sy + Math.sin(ang) * dist;
+            const rot = (i % 2 === 0 ? 1 : -1) * (110 + (i % 7) * 95);
+
+            const el = document.createElement("div");
+            const bucket = i % 20;
+            const kind = bucket < 11 ? "kchrome" : bucket < 16 ? "kpink" : "kice";
+            el.className = "shard " + kind + " sh" + (i % 3);
+            el.style.width = 10 + (i % 6) * 5 + (i % 23 === 0 ? 26 : 0) + "px";
+            el.style.height = 6 + (i % 4) * 4 + "px";
+            el.style.zIndex = String(1 + (i % 4));
+            shardHost.appendChild(el);
+
+            tl.set(
+              el,
+              {
+                xPercent: -50,
+                yPercent: -50,
+                x: sx,
+                y: sy,
+                rotation: 0,
+                scale: 0.65 + (i % 4) * 0.2,
+              },
+              0,
+            );
+            tl.to(el, { x: ex, y: ey, rotation: rot, duration: 4.63, ease: "none" }, 0);
+          }
+
+          /* ---------- radial burst under the first stamp ---------- */
+          const BURST = 22;
+          const burstHost = document.getElementById("f2_g1_burst");
+          for (let i = 0; i < BURST; i++) {
+            const el = document.createElement("div");
+            el.className = "bline";
+            el.style.height = 720 + (i % 5) * 110 + "px";
+            el.style.opacity = String(0.9 - (i % 3) * 0.2);
+            burstHost.appendChild(el);
+            tl.set(el, { xPercent: -50, yPercent: -50, rotation: i * (180 / BURST), scaleY: 0 }, 0);
+            tl.to(el, { scaleY: 1, duration: 0.24, ease: "power4.out" }, 0.01 + (i % 4) * 0.012);
+            tl.to(el, { opacity: 0, duration: 0.4, ease: "power2.in" }, 0.3 + (i % 4) * 0.015);
+          }
+
+          /* ---------- drop flash + hero stamp ---------- */
+          tl.to("#f2_g1_flash", { opacity: 0, duration: 0.16, ease: "power3.in" }, 0.03);
+          tl.to("#f2_g1_w1 .word", { scale: 1, opacity: 1, duration: 0.14, ease: "power4.out" }, 0.02);
+          tl.to("#f2_g1_w1 .word", { scale: 1.02, duration: 0.08, ease: "power2.out" }, 0.16);
+          tl.to("#f2_g1_w1 .word", { scale: 1, duration: 0.24, ease: "power2.out" }, 0.24);
+          tl.to("#f2_g1_glow", { opacity: 0, duration: 1.1, ease: "power2.out" }, 0.3);
+
+          /* ---------- chrome sweeps ---------- */
+          function sweep(sel, t, dur) {
+            tl.fromTo(
+              sel,
+              { backgroundPosition: "190% 0" },
+              { backgroundPosition: "-80% 0", duration: dur, ease: "power2.inOut" },
+              t,
+            );
+          }
+          sweep("#f2_g1_w1 .chromefill, #f2_g1_w2 .chromefill, #f2_g1_w3 .chromefill", 0.03, 1.25);
+          sweep("#f2_g1_w1 .chromefill, #f2_g1_w2 .chromefill, #f2_g1_w3 .chromefill", 2.31, 1.1);
+
+          /* ---------- 0 ms fill swaps: chrome / pink / ice ---------- */
+          const fillSwaps = [
+            [0.418, "pink"],
+            [1.385, "ice"],
+            [1.846, "chrome"],
+            [2.77, "pink"],
+            [3.231, "ice"],
+            [3.693, "chrome"],
+            [4.154, "pink"],
+          ];
+          const stampIds = ["#f2_g1_w1", "#f2_g1_w2", "#f2_g1_w3"];
+          fillSwaps.forEach(function (s) {
+            const t = s[0];
+            const kind = s[1];
+            stampIds.forEach(function (id) {
+              tl.set(id + " .chromefill", { opacity: kind === "chrome" ? 1 : 0 }, t);
+              tl.set(id + " .plate.pink", { opacity: kind === "pink" ? 1 : 0 }, t);
+              tl.set(id + " .plate.ice", { opacity: kind === "ice" ? 1 : 0 }, t);
+            });
+          });
+
+          /* ---------- stamps 2 and 3 ---------- */
+          tl.to("#f2_g1_w2", { x: 440, duration: 0.2, ease: "power4.out" }, 0.906);
+          tl.to("#f2_g1_w2 .word", { scale: 1, duration: 0.2, ease: "power4.out" }, 0.906);
+          tl.set("#f2_g1_flash", { opacity: 0.5 }, 0.906);
+          tl.set("#f2_g1_flash", { opacity: 0 }, 0.972);
+
+          tl.to("#f2_g1_w3", { y: 365, duration: 0.24, ease: "power4.out" }, 2.308);
+          tl.to("#f2_g1_w3 .word", { scale: 1, duration: 0.24, ease: "power4.out" }, 2.308);
+          tl.set("#f2_g1_flash", { opacity: 0.45 }, 2.308);
+          tl.set("#f2_g1_flash", { opacity: 0 }, 2.374);
+
+          /* ---------- camera shake (every kick, 2-4 px) ---------- */
+          function shakeAt(target, t, amp, flip, steps) {
+            tl.set(target, { x: amp, y: -amp * 0.8 }, t);
+            tl.set(target, { x: -amp * 0.72, y: amp * 0.5 * flip }, t + 0.033);
+            if (steps > 3) tl.set(target, { x: amp * 0.35, y: -amp * 0.3 * flip }, t + 0.066);
+            tl.set(target, { x: 0, y: 0 }, t + 0.033 * (steps - 1));
+          }
+          shakeAt("#f2_g1_cam", 0.906, 3.2, 1, 4);
+          shakeAt("#f2_g1_cam", 1.092, 2.4, -1, 3);
+          shakeAt("#f2_g1_cam", 1.556, 4.0, 1, 4);
+          shakeAt("#f2_g1_cam", 1.788, 2.6, -1, 3);
+          shakeAt("#f2_g1_cam", 2.16, 3.4, 1, 4);
+
+          /* ---------- 1-frame RGB split on every snare ---------- */
+          function splitAt(t) {
+            tl.set(".g1rgbR", { x: -15, opacity: 0.85 }, t);
+            tl.set(".g1rgbC", { x: 15, opacity: 0.85 }, t);
+            tl.set(".g1rgbR", { opacity: 0 }, t + 0.034);
+            tl.set(".g1rgbC", { opacity: 0 }, t + 0.034);
+          }
+          splitAt(2.926);
+          splitAt(3.623);
+
+          /* ---------- cut to group 2 ---------- */
+          tl.set("#f2_g1", { autoAlpha: 0 }, 4.575);
+          tl.set("#f2_g2", { autoAlpha: 1 }, 4.575);
+
+          tl.set("#f2_g2_flash", { opacity: 0.28 }, 4.575);
+          tl.set("#f2_g2_flash", { opacity: 0 }, 4.641);
+          tl.fromTo(
+            "#f2_g2_stack",
+            { opacity: 0, scale: 1.16 },
+            { opacity: 1, scale: 1, duration: 0.12, ease: "power4.out" },
+            4.575,
+          );
+          sweep("#f2_g2_stack .chromefill", 4.6, 1.1);
+
+          function g2split(t) {
+            tl.set(
+              "#f2_g2_stack",
+              { filter: "drop-shadow(12px 0 0 #ff2a4a) drop-shadow(-12px 0 0 #2afff0)" },
+              t,
+            );
+            tl.set("#f2_g2_stack", { filter: "none" }, t + 0.034);
+          }
+          g2split(4.575);
+          g2split(5.271);
+          g2split(5.457);
+
+          shakeAt("#f2_g2_cam", 4.575, 3.6, 1, 4);
+          shakeAt("#f2_g2_cam", 6.386, 2.8, -1, 3);
+
+          /* ---------- radial speed-lines for OH ---------- */
+          const RAYS = 28;
+          const rayHost = document.getElementById("f2_g2_rays");
+          for (let i = 0; i < RAYS; i++) {
+            const el = document.createElement("div");
+            el.className = "ray";
+            el.style.height = 980 + (i % 6) * 130 + "px";
+            el.style.width = (i % 4 === 0 ? 9 : 5) + "px";
+            el.style.background = i % 3 === 0 ? "#ffffff" : i % 3 === 1 ? "#fffdf5" : "#f7cb46";
+            el.style.opacity = String(0.5 + ((i * 7) % 3) * 0.12);
+            rayHost.appendChild(el);
+            tl.set(el, { xPercent: -50, yPercent: -50, rotation: i * (180 / RAYS), scaleY: 0 }, 0);
+            tl.to(el, { scaleY: 1, duration: 0.18, ease: "power4.out" }, 6.462 + (i % 5) * 0.012);
+          }
+
+          /* ---------- compression to one line + OH slam ---------- */
+          tl.to("#f2_g2_stack", { y: -300, duration: 0.18, ease: "power3.inOut" }, 6.462);
+          tl.to("#f2_g2_l1", { y: 189.2, duration: 0.14, ease: "power4.in" }, 6.462);
+          tl.to("#f2_g2_l3", { y: -189.2, duration: 0.14, ease: "power4.in" }, 6.462);
+          tl.set("#f2_g2_l1", { autoAlpha: 0 }, 6.606);
+          tl.set("#f2_g2_l3", { autoAlpha: 0 }, 6.606);
+
+          tl.set("#f2_g2_rays", { opacity: 1 }, 6.462);
+          tl.set("#f2_g2_glow", { opacity: 1 }, 6.462);
+          tl.set("#f2_g2_ohwrap", { opacity: 1 }, 6.462);
+          tl.fromTo(".ohword", { scale: 2.15 }, { scale: 1, duration: 0.13, ease: "power4.out" }, 6.462);
+          tl.set("#f2_g2_flash", { opacity: 0.45 }, 6.462);
+          tl.set("#f2_g2_flash", { opacity: 0 }, 6.528);
+          shakeAt("#f2_g2_cam", 6.462, 4.0, 1, 4);
+
+          tl.to(".ohword", { scale: 1.035, duration: 0.05, ease: "power2.out" }, 6.827);
+          tl.to(".ohword", { scale: 1, duration: 0.12, ease: "power2.out" }, 6.883);
+          shakeAt("#f2_g2_cam", 6.827, 2.4, -1, 3);
+
+          /* ---------- whiteout for the last 2 frames ---------- */
+          tl.set("#f2_g2_flash", { opacity: 1 }, 7.317);
+          tl.set("#f2_g2_flash", { opacity: 1 }, 7.384);
+          tl.set("#f2_g2", { autoAlpha: 0 }, 7.384);
+
+          window.__timelines["02-f2"] = tl;
+          tl.seek(0);
+        })();
+      </script>
+    </template>
+  </body>
+</html>

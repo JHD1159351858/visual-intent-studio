@@ -1,0 +1,21 @@
+{
+  "entryId": "3b7d78827eeda39c",
+  "sourceUrl": "https://reactbits.dev/components/pill-nav",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/PillNav-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/PillNav/PillNav.jsx",
+  "checkedAt": "2026-10-25T07:53:03.741Z",
+  "sha256": "231ada38dcdbb8ee9c0ef3706a4175af51f29806de236587e0808e3800d8404f",
+  "files": [
+    {
+      "path": "PillNav.css",
+      "sha256": "0ffe3f4516a6823f0edd6fcf85cc3467a6f76eba608134be8048bc1b2bca9c5b",
+      "bytes": 4057
+    },
+    {
+      "path": "PillNav.jsx",
+      "sha256": "d8945db18d87ea3af8cb93943a1cade6a95247d0da750d27d792c1c5bedfe727",
+      "bytes": 10402
+    }
+  ]
+}

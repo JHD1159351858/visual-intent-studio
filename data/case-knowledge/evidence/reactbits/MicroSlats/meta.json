@@ -1,0 +1,21 @@
+{
+  "entryId": "72739122a433abd2",
+  "sourceUrl": "https://reactbits.dev/backgrounds/micro-slats",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/MicroSlats-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/MicroSlats/MicroSlats.jsx",
+  "checkedAt": "2026-10-25T07:53:06.475Z",
+  "sha256": "609b3f9227cf0cf2a5b970014469301b96d7cb67ca73c249cdf22d80008d05b4",
+  "files": [
+    {
+      "path": "MicroSlats.css",
+      "sha256": "1d6bf5a4c189408dfc1b9245ad444d0b30d8627ad818c12f7e828bc4db536887",
+      "bytes": 90
+    },
+    {
+      "path": "MicroSlats.jsx",
+      "sha256": "2e47f517c5f717aad1ca038e1d7ce509fe371b664abc98582dd569173f555f6b",
+      "bytes": 29276
+    }
+  ]
+}

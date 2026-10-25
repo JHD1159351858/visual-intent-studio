@@ -1,0 +1,21 @@
+{
+  "entryId": "d4968ae364bc4208",
+  "sourceUrl": "https://reactbits.dev/backgrounds/web-threads",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/WebThreads-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/WebThreads/WebThreads.jsx",
+  "checkedAt": "2026-10-25T07:53:06.920Z",
+  "sha256": "67c193691b14ee4ea8c136f3d2a1ed8dbd54cd9ae315f19c1a92b52f30f77dbd",
+  "files": [
+    {
+      "path": "WebThreads.css",
+      "sha256": "9785419446ef7e1a1a7e45e2022040035c4fcbd4fdf3844ce5e490a807aed7d7",
+      "bytes": 100
+    },
+    {
+      "path": "WebThreads.jsx",
+      "sha256": "094ac9d99a4a0a1847055690079f9396bcbf0a54516c2e448565be5c8bf83592",
+      "bytes": 11629
+    }
+  ]
+}

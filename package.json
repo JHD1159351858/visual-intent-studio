@@ -1,0 +1,42 @@
+{
+  "name": "visual-intent-studio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n api,web \"tsx watch server/index.ts\" \"vite --host 127.0.0.1\"",
+    "build": "tsc --noEmit && vite build",
+    "start": "tsx server/index.ts",
+    "test": "vitest run",
+    "record:demos": "node scripts/record-demos.mjs",
+    "capture:previews": "node scripts/capture-sources.mjs --concurrency=1",
+    "fill:catalog": "tsx scripts/populate-catalog.ts",
+    "test:e2e": "node scripts/smoke.mjs",
+    "evaluate:model": "tsx scripts/evaluate-model.ts",
+    "export:design-knowledge": "tsx scripts/export-design-knowledge.ts",
+    "export:case-knowledge": "tsx scripts/export-case-knowledge.ts",
+    "verify:design-library": "node scripts/verify-design-library.mjs"
+  },
+  "dependencies": {
+    "cheerio": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@types/express": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@vitejs/plugin-react": "latest",
+    "concurrently": "latest",
+    "playwright": "latest",
+    "tsx": "latest",
+    "typescript": "~5.9.3",
+    "vite": "latest",
+    "vitest": "latest"
+  }
+}

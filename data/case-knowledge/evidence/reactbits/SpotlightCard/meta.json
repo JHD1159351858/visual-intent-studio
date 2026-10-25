@@ -1,0 +1,21 @@
+{
+  "entryId": "reactbits-spotlight-card",
+  "sourceUrl": "https://reactbits.dev/components/spotlight-card",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/SpotlightCard-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/SpotlightCard/SpotlightCard.jsx",
+  "checkedAt": "2026-10-25T07:52:53.577Z",
+  "sha256": "c20166b02fa49e563b2b3d78abcb5e22d07c496fa31cf846697c8fedac1ba3f3",
+  "files": [
+    {
+      "path": "SpotlightCard.css",
+      "sha256": "b646b7da4bb46f0a4d819d0af275804c49a845a5c2dc848700aaf9282db13a92",
+      "bytes": 980
+    },
+    {
+      "path": "SpotlightCard.jsx",
+      "sha256": "e0b91ba07c173c98b87b44ec451d0243fe0a3edc67864e2779ad8507d455af67",
+      "bytes": 10294
+    }
+  ]
+}

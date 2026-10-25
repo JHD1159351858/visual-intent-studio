@@ -1,0 +1,21 @@
+{
+  "entryId": "539f2788df728536",
+  "sourceUrl": "https://reactbits.dev/animations/cursor-grid",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/CursorGrid-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/CursorGrid/CursorGrid.jsx",
+  "checkedAt": "2026-10-25T07:52:58.595Z",
+  "sha256": "4a587ff4a2107bd874af14b15f8dbe31962d5fc5de4f701fc7a3ac24b2f19578",
+  "files": [
+    {
+      "path": "CursorGrid.css",
+      "sha256": "7e95fdfbe584d9db6baf1fe2a098d8c821b0936f67faf24f11ef1de383c0bc59",
+      "bytes": 165
+    },
+    {
+      "path": "CursorGrid.jsx",
+      "sha256": "029fc6afd859b359760eedb6bf6ef10b026896c0bf4e145bf465c7e56f0a248d",
+      "bytes": 8866
+    }
+  ]
+}

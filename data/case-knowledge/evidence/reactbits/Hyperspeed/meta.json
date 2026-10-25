@@ -1,0 +1,21 @@
+{
+  "entryId": "7a14abb3494424ce",
+  "sourceUrl": "https://reactbits.dev/backgrounds/hyperspeed",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Hyperspeed-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Hyperspeed/Hyperspeed.jsx",
+  "checkedAt": "2026-10-25T07:53:11.238Z",
+  "sha256": "6b8e7d5b4b9e0ce5c4ea391df1e0a1b8a44d3db0147dfdcee4c2daa4028c7e86",
+  "files": [
+    {
+      "path": "Hyperspeed.css",
+      "sha256": "c955ff5fed80614c1adda4816c4a0a2febe32cae839728433f501a4fd59859cc",
+      "bytes": 262
+    },
+    {
+      "path": "Hyperspeed.jsx",
+      "sha256": "2fe830d3eb9e3cb9f6ef1b8b9a1106af377a938e14cc9c083ab3a1ab9e5c759d",
+      "bytes": 37825
+    }
+  ]
+}

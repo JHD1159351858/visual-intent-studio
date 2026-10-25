@@ -1,0 +1,128 @@
+import assert from 'node:assert/strict';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import path from 'node:path';
+import { chromium } from 'playwright';
+
+const base = process.env.DESIGN_TEST_URL || 'http://127.0.0.1:5173';
+const output = path.resolve('artifacts/design-library-qa');
+await mkdir(output, { recursive: true });
+const report = { startedAt: new Date().toISOString(), checks: [], errors: [], passed: false };
+const browser = await chromium.launch({ headless: true });
+const context = await browser.newContext({ viewport: { width: 1440, height: 1050 }, acceptDownloads: true });
+try {
+  const library = await (await fetch(`${base}/api/design-library`)).json();
+  const catalog = (await (await fetch(`${base}/api/catalog`)).json()).entries;
+  assert.equal(library.pages.length, 6); assert.equal(library.components.length, 20);
+  const references = new Map(catalog.map(entry => [entry.id, entry]));
+  const componentIds = new Set(library.components.map(item => item.id));
+  const page = await context.newPage();
+  const runtimeErrors = [];
+  page.on('pageerror', error => runtimeErrors.push(error.message));
+  for (const [kind, items] of [['page', library.pages], ['component', library.components]]) {
+    for (const item of items) {
+      if (kind === 'component') {
+        const entry = references.get(item.entryId);
+        assert.ok(entry?.status === 'ready' && entry.preview.verified, item.id);
+        assert.equal(new URL(item.sourceUrl).href.replace(/\/$/, ''), new URL(entry.sourceUrl).href.replace(/\/$/, ''));
+      } else {
+        for (const id of item.referenceEntryIds) assert.equal(references.get(id)?.status, 'ready', `${item.id}: ${id}`);
+        for (const id of item.componentIds) assert.ok(componentIds.has(id), `${item.id}: ${id}`);
+      }
+      const response = await fetch(`${base}/api/design-library/${kind}/${item.id}`);
+      assert.equal(response.status, 200, `${kind}/${item.id}`);
+      const example = await response.json();
+      assert.ok(example.html.includes('Content-Security-Policy'));
+      assert.ok(example.developerPrompt.length > 100);
+      const poster = await fetch(`${base}/${item.posterPath}`);
+      assert.equal(poster.status, 200, item.posterPath);
+      assert.ok(poster.headers.get('content-type')?.startsWith('image/'));
+      const before = runtimeErrors.length;
+      await page.setContent('<iframe title="验收" sandbox="allow-scripts allow-forms allow-downloads" style="width:100%;height:900px;border:0"></iframe>');
+      await page.locator('iframe').evaluate((frame, html) => { frame.srcdoc = html; }, example.html);
+      const frame = page.frameLocator('iframe');
+      await frame.locator('body').waitFor();
+      await frame.locator('h1,h2,button').first().waitFor();
+      if (kind === 'page') for (const section of item.sections) assert.equal(await frame.locator(`[id="${section.id}"]`).count(), 1, `${item.id}: section ${section.id}`);
+      assert.equal(runtimeErrors.length, before, `${item.id}: runtime errors`);
+      report.checks.push({ kind, id: item.id, api: true, cspRuntime: true, poster: true, references: true });
+    }
+  }
+  await page.goto(base);
+  await page.getByRole('button', { name: '参考库', exact: true }).click();
+  await page.getByRole('button', { name: '整页与组件', exact: true }).click();
+  await page.getByRole('button', { name: '整页范例 6', exact: true }).waitFor();
+  assert.equal(await page.locator('.design-example-card').count(), 6);
+  const exampleTitle = library.pages[0].title;
+  await page.getByRole('button', { name: `预览${exampleTitle}`, exact: true }).click();
+  const modal = page.getByRole('dialog', { name: exampleTitle, exact: true });
+  await modal.locator('iframe').waitFor();
+  assert.ok((await modal.boundingBox()).width >= 1000, 'desktop example should have a wide preview');
+  assert.equal(await modal.locator('iframe').getAttribute('sandbox'), 'allow-scripts allow-forms allow-downloads');
+  const htmlDownload = page.waitForEvent('download');
+  await modal.getByRole('button', { name: '下载 HTML', exact: true }).click();
+  const downloadedHtml = await htmlDownload;
+  const apiExample = await (await fetch(`${base}/api/design-library/page/${library.pages[0].id}`)).json();
+  assert.equal(await readFile(await downloadedHtml.path(), 'utf8'), apiExample.html);
+  const promptDownload = page.waitForEvent('download');
+  await modal.getByRole('button', { name: '下载提示词', exact: true }).click();
+  assert.equal(await readFile(await (await promptDownload).path(), 'utf8'), apiExample.developerPrompt);
+  await modal.getByRole('button', { name: '参考这套页面', exact: true }).click();
+  assert.ok((await page.locator('#brief-input').inputValue()).includes(`《${exampleTitle}》`));
+  report.checks.push({ name: 'whole-page preview, matching HTML/prompt download and intent prefill', passed: true });
+  await page.getByRole('button', { name: '参考库', exact: true }).click();
+  const knowledge = library.pages.find(item => item.id === 'knowledge-qa');
+  await page.getByRole('button', { name: `预览${knowledge.title}`, exact: true }).click();
+  const knowledgeDialog = page.getByRole('dialog', { name: knowledge.title, exact: true });
+  const knowledgeFrame = knowledgeDialog.frameLocator('iframe');
+  await knowledgeFrame.locator('#question').fill('如何安排学习计划？');
+  await knowledgeFrame.locator('#ask').click();
+  await knowledgeFrame.locator('#knowledge-workspace[data-state="result"]').waitFor();
+  await knowledgeFrame.getByRole('button', { name: '查看引用 1', exact: true }).click();
+  await knowledgeFrame.locator('#source-dialog[open]').waitFor();
+  assert.ok((await knowledgeFrame.locator('#source-text').innerText()).includes('学习计划'));
+  await knowledgeFrame.locator('#close-source').click();
+  await knowledgeDialog.getByRole('button', { name: '关闭设计范例', exact: true }).click();
+  report.checks.push({ name: 'sandbox permits local form handlers and citation dialog while retaining CSP', passed: true });
+  const analysis = library.pages.find(item => item.id === 'data-analysis');
+  await page.getByRole('button', { name: `预览${analysis.title}`, exact: true }).click();
+  const analysisDialog = page.getByRole('dialog', { name: analysis.title, exact: true });
+  const analysisFrame = analysisDialog.frameLocator('iframe');
+  await analysisFrame.locator('#load-all').click();
+  await analysisFrame.locator('#analysis-results').waitFor();
+  const csvDownload = page.waitForEvent('download');
+  await analysisFrame.locator('#export').click();
+  const csv = await readFile(await (await csvDownload).path(), 'utf8');
+  assert.ok(csv.includes('编程基础'));
+  await analysisDialog.getByRole('button', { name: '关闭设计范例', exact: true }).click();
+  report.checks.push({ name: 'local CSV export functions inside sandbox preview', passed: true });
+  await page.getByRole('button', { name: '组件实现 20', exact: true }).click();
+  assert.equal(await page.locator('.design-example-card').count(), 20);
+  const border = library.components.find(item => item.id === 'gradient-border');
+  const card = page.locator('.design-example-card').filter({ has: page.getByRole('heading', { name: border.title, exact: true }) });
+  await card.getByRole('button', { name: '采用这个实现', exact: true }).click();
+  const confirmation = page.getByRole('dialog', { name: '确认这项选择', exact: true });
+  assert.equal(await confirmation.getByLabel('效果作用部位', { exact: true }).inputValue(), 'border');
+  assert.ok((await confirmation.getByLabel('需要保留哪些内容', { exact: true }).inputValue()).includes('卡片内部表面'));
+  await confirmation.getByLabel('效果作用对象', { exact: true }).fill('功能卡片');
+  await confirmation.getByRole('button', { name: '确认选择', exact: true }).click();
+  const draft = await page.evaluate(() => JSON.parse(localStorage.getItem('jianyi.draft.v1')));
+  assert.ok(draft.selections.some(item => item.entryId === border.entryId && item.layer === 'border' && item.target === '功能卡片'));
+  await page.reload();
+  const restored = await page.evaluate(() => JSON.parse(localStorage.getItem('jianyi.draft.v1')));
+  assert.deepEqual(restored.selections, draft.selections);
+  report.checks.push({ name: 'native border confirmation uses real reference, proper layer and refresh persistence', passed: true });
+  await page.getByRole('button', { name: '参考库', exact: true }).click();
+  await page.getByRole('button', { name: '整页与组件', exact: true }).click();
+  await page.getByRole('button', { name: '整页范例 6', exact: true }).waitFor();
+  await page.screenshot({ path: path.join(output, 'library-desktop.png'), fullPage: true });
+  await page.setViewportSize({ width: 390, height: 844 });
+  assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), 'mobile library overflow');
+  await page.getByRole('button', { name: `预览${exampleTitle}`, exact: true }).click();
+  await page.locator('.design-live-preview').waitFor();
+  await page.screenshot({ path: path.join(output, 'library-mobile-modal.png') });
+  assert.equal(runtimeErrors.length, 0);
+  report.checks.push({ name: 'desktop gallery and mobile modal', passed: true });
+  report.passed = true;
+} catch (error) { report.errors.push(error.message); process.exitCode = 1; }
+finally { report.finishedAt = new Date().toISOString(); await writeFile(path.join(output, 'report.json'), JSON.stringify(report, null, 2)); await browser.close(); }
+console.log(JSON.stringify({ passed: report.passed, checks: report.checks.length, errors: report.errors }));

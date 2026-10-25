@@ -1,0 +1,16 @@
+{
+  "entryId": "018e0a861f761b4b",
+  "sourceUrl": "https://reactbits.dev/animations/click-spark",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/ClickSpark-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/ClickSpark/ClickSpark.jsx",
+  "checkedAt": "2026-10-25T07:53:00.217Z",
+  "sha256": "c0381de329a477d97b98c42468739e649de91ac07aecc0be30bb890b5ef42707",
+  "files": [
+    {
+      "path": "ClickSpark/ClickSpark.jsx",
+      "sha256": "120a32674c51237ab869239d579aaa0c1fcb112f7db14b631068455ef3cb59de",
+      "bytes": 3834
+    }
+  ]
+}

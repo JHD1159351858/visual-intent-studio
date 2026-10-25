@@ -1,0 +1,21 @@
+{
+  "entryId": "b6609641f2f0fff1",
+  "sourceUrl": "https://reactbits.dev/animations/ribbons",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Ribbons-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/Ribbons/Ribbons.jsx",
+  "checkedAt": "2026-10-25T07:53:01.230Z",
+  "sha256": "e7deb9b31a9f724ad9cf6ff842e2d04603a0ef83a9d71c019ebc192002290d9e",
+  "files": [
+    {
+      "path": "Ribbons.css",
+      "sha256": "f0a33029d23a95bb5d1f8269d4fd69f1fc931577ef281715f3bb7b3f682ec55d",
+      "bytes": 160
+    },
+    {
+      "path": "Ribbons.jsx",
+      "sha256": "b2e8428caa1b649b60da07b9bff6b47b767bd4fc64336c62a37dd57a5a3fd2db",
+      "bytes": 16026
+    }
+  ]
+}

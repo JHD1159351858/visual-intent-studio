@@ -1,0 +1,21 @@
+{
+  "entryId": "7f1ca4f3bc37da46",
+  "sourceUrl": "https://reactbits.dev/backgrounds/prismatic-burst",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/PrismaticBurst-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/PrismaticBurst/PrismaticBurst.jsx",
+  "checkedAt": "2026-10-25T07:53:10.277Z",
+  "sha256": "508802fbec9ea59c7e8acfac911a33919f7f26a93e005eeac29ab4323ae6bb20",
+  "files": [
+    {
+      "path": "PrismaticBurst.css",
+      "sha256": "f4f06d108a3c1df27d0482982fbc4f71f43702886b229f1fad3e936d270fcb1f",
+      "bytes": 216
+    },
+    {
+      "path": "PrismaticBurst.jsx",
+      "sha256": "622c64026c480ed50f855646340c96473c4df724af6265d2308f63e5a0278d39",
+      "bytes": 29883
+    }
+  ]
+}

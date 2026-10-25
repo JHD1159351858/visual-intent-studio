@@ -1,0 +1,21 @@
+{
+  "entryId": "a0e9d2c9b324058e",
+  "sourceUrl": "https://reactbits.dev/micro/spring-check",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/SpringCheck-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/SpringCheck/SpringCheck.jsx",
+  "checkedAt": "2026-10-25T07:53:14.736Z",
+  "sha256": "24b126702b5909ab961985ce25a26b1afbf5b44e165f2d819fd2227b935589af",
+  "files": [
+    {
+      "path": "SpringCheck.css",
+      "sha256": "dc29047d805e99f439356880dda04240c1524693380059650e8188ce456c81c6",
+      "bytes": 2580
+    },
+    {
+      "path": "SpringCheck.jsx",
+      "sha256": "6cadf8f9c798010ac481806a0c14d67d19778b555dba34aa1ac3186142d4cec0",
+      "bytes": 5536
+    }
+  ]
+}

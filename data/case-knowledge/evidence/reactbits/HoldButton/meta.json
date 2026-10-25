@@ -1,0 +1,21 @@
+{
+  "entryId": "790b295e0d64dc88",
+  "sourceUrl": "https://reactbits.dev/micro/hold-button",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/HoldButton-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/HoldButton/HoldButton.jsx",
+  "checkedAt": "2026-10-25T07:53:13.299Z",
+  "sha256": "229f70485ce7996798db1e46999ee52f0fc05e59963d65502cf2a51f11fa6e7d",
+  "files": [
+    {
+      "path": "HoldButton.css",
+      "sha256": "f0f9075ad99c2599ef200aa681374c4802faa39bc851e5110f55c56c0a1ab712",
+      "bytes": 7303
+    },
+    {
+      "path": "HoldButton.jsx",
+      "sha256": "fb6f40e7fdb286f60c920d69173ca3e24608cd04f803bef7bf2dce9155cd7673",
+      "bytes": 8037
+    }
+  ]
+}

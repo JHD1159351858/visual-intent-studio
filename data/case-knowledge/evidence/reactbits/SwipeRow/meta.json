@@ -1,0 +1,21 @@
+{
+  "entryId": "3d48bb81a1221c5a",
+  "sourceUrl": "https://reactbits.dev/micro/swipe-row",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/SwipeRow-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/SwipeRow/SwipeRow.jsx",
+  "checkedAt": "2026-10-25T07:53:15.101Z",
+  "sha256": "d71d0f524da1f7e766193f3aea7da3b8903fd8bd542f565d13bfc1d214514f1d",
+  "files": [
+    {
+      "path": "SwipeRow.css",
+      "sha256": "282eb8ad0375aae7ea646f6bf1f41e427003e912716f16f4812e5f4c484aec86",
+      "bytes": 4248
+    },
+    {
+      "path": "SwipeRow.jsx",
+      "sha256": "61cbcde43980104e09a792238b1d45db3210baaab27110f521c2c1d9399b20c6",
+      "bytes": 13299
+    }
+  ]
+}

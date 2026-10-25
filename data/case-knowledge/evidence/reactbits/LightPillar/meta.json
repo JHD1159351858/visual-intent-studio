@@ -1,0 +1,21 @@
+{
+  "entryId": "3260c657755ad6ea",
+  "sourceUrl": "https://reactbits.dev/backgrounds/light-pillar",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/LightPillar-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/LightPillar/LightPillar.jsx",
+  "checkedAt": "2026-10-25T07:53:08.014Z",
+  "sha256": "93ad744c49b171b70fc1cee43920f8585117d04bbdd43a6e15ad89bd603edb64",
+  "files": [
+    {
+      "path": "LightPillar.css",
+      "sha256": "c6f435bd2b9fa553a879310fe27f2dc31dd21ea16f68ea0250ba4db78b7847de",
+      "bytes": 231
+    },
+    {
+      "path": "LightPillar.jsx",
+      "sha256": "238391050ee0b2f16ac1474e0d4020f58ca6622010c6adf059348efa44ae5618",
+      "bytes": 20954
+    }
+  ]
+}

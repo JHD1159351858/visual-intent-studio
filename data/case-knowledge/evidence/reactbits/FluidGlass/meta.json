@@ -1,0 +1,16 @@
+{
+  "entryId": "328a512818185592",
+  "sourceUrl": "https://reactbits.dev/components/fluid-glass",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/FluidGlass-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/FluidGlass/FluidGlass.jsx",
+  "checkedAt": "2026-10-25T07:53:03.715Z",
+  "sha256": "6f3ab260e8d5c8697941b98db70035650b1a456d3211ac85f19e17205b29a661",
+  "files": [
+    {
+      "path": "FluidGlass/FluidGlass.jsx",
+      "sha256": "7ca749332249385156e4a4b16ee85b14a5d61da610c7ed0157a4d61a046d7a58",
+      "bytes": 9502
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "entryId": "4a95192b93c40245",
+  "sourceUrl": "https://reactbits.dev/animations/image-trail",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/ImageTrail-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/ImageTrail/ImageTrail.jsx",
+  "checkedAt": "2026-10-25T07:53:01.132Z",
+  "sha256": "e23a308c2d904772c0036b66bf044b4e6adc53682a607448159265823e5da3f9",
+  "files": [
+    {
+      "path": "ImageTrail.css",
+      "sha256": "389e288d154145d67cbdbc5b14454200439329b5b051157259ebf5e338f5a9c6",
+      "bytes": 561
+    },
+    {
+      "path": "ImageTrail.jsx",
+      "sha256": "c3a2f989bc91c492ec76506eacc4ba57ac7462b684b92f491d303bf06164f142",
+      "bytes": 37165
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "entryId": "81a15c8383335520",
+  "sourceUrl": "https://reactbits.dev/backgrounds/waves",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Waves-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Waves/Waves.jsx",
+  "checkedAt": "2026-10-25T07:53:11.275Z",
+  "sha256": "263fa1578469aed0508b76fb212f821193c0ed25500977874f0d7ffbf1f3fb7d",
+  "files": [
+    {
+      "path": "Waves.css",
+      "sha256": "7341b669eb2fe3c80595255c5aab772da6033a816914975f997a8aa1f7506266",
+      "bytes": 168
+    },
+    {
+      "path": "Waves.jsx",
+      "sha256": "805023a62f5ffcf001cc1b5eb041d4fc389ad753816b1c8691a6b50aa515a0fb",
+      "bytes": 24271
+    }
+  ]
+}

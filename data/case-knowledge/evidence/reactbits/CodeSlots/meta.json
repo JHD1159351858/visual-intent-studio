@@ -1,0 +1,21 @@
+{
+  "entryId": "76c99acabd7f6c55",
+  "sourceUrl": "https://reactbits.dev/micro/code-slots",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/CodeSlots-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/CodeSlots/CodeSlots.jsx",
+  "checkedAt": "2026-10-25T07:53:12.496Z",
+  "sha256": "cccc7126c34d553926b30d040f8aaa934475c8f63f1aa9151245a2081d9153d8",
+  "files": [
+    {
+      "path": "CodeSlots.css",
+      "sha256": "007ee23eac71c9a1157cb98c4855a94607d280123515a8cbd62672f4a42566c4",
+      "bytes": 3499
+    },
+    {
+      "path": "CodeSlots.jsx",
+      "sha256": "bb81bdf7e0d3e411b9a8fb576856b3ed6d2af9e26fd6f45654d8423bfebfecbf",
+      "bytes": 14555
+    }
+  ]
+}

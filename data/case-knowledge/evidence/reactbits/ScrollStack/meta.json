@@ -1,0 +1,21 @@
+{
+  "entryId": "e660f0d8e851f193",
+  "sourceUrl": "https://reactbits.dev/components/scroll-stack",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/ScrollStack-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/ScrollStack/ScrollStack.jsx",
+  "checkedAt": "2026-10-25T07:53:03.192Z",
+  "sha256": "b6c6e69f53bd4cc4f7475b9b5ab9f03351df62e2139a61a57b969d04c409da3c",
+  "files": [
+    {
+      "path": "ScrollStack.css",
+      "sha256": "64b2bf8c66a1958e0405ed6b885086562e635c22f0f1f79950806661d5470013",
+      "bytes": 899
+    },
+    {
+      "path": "ScrollStack.jsx",
+      "sha256": "e73d47bae2967bf5f4051a8600387ff460dc381a2c8c571c76d28f42aa970292",
+      "bytes": 11362
+    }
+  ]
+}

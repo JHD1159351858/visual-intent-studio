@@ -1,0 +1,21 @@
+{
+  "entryId": "450745deb2ca4e32",
+  "sourceUrl": "https://reactbits.dev/micro/slide-commit",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/SlideCommit-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/SlideCommit/SlideCommit.jsx",
+  "checkedAt": "2026-10-25T07:53:14.514Z",
+  "sha256": "9bc4eb1859429d5b46284dbfc6db09e9b65899c91356011ff75233c7891ffed9",
+  "files": [
+    {
+      "path": "SlideCommit.css",
+      "sha256": "344ed44347d8b5531fdc23436918901bbc5e254f71dbb0334a83ee83b55533f3",
+      "bytes": 3871
+    },
+    {
+      "path": "SlideCommit.jsx",
+      "sha256": "385e593f6a9f7c197aae8b5a53dcad682cb5a836d9444f5eee87c36d0cc1be54",
+      "bytes": 12621
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "entryId": "55dbdee51563b644",
+  "sourceUrl": "https://reactbits.dev/micro/slosh-gauge",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/SloshGauge-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/SloshGauge/SloshGauge.jsx",
+  "checkedAt": "2026-10-25T07:53:14.659Z",
+  "sha256": "6f74c9b6a98d6db68055394318319473d4655b8b1ebcafb16ae9883daafe949f",
+  "files": [
+    {
+      "path": "SloshGauge.css",
+      "sha256": "2770955520f32bbd05939e70e63228492b9798a197b66a78d68847d5939cabe0",
+      "bytes": 1893
+    },
+    {
+      "path": "SloshGauge.jsx",
+      "sha256": "23d80ec3e5f2df707c3ef7a5167315828a982bd25a84d5c8af6e1e30508a5e28",
+      "bytes": 8829
+    }
+  ]
+}

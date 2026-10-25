@@ -1,0 +1,21 @@
+{
+  "entryId": "8efc173167387304",
+  "sourceUrl": "https://reactbits.dev/backgrounds/color-bends",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/ColorBends-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/ColorBends/ColorBends.jsx",
+  "checkedAt": "2026-10-25T07:53:08.764Z",
+  "sha256": "e562db3364ac1ccff731caf071b093bb28a34911c2b411b5d69303164ac6a5c8",
+  "files": [
+    {
+      "path": "ColorBends.css",
+      "sha256": "9bb4450f3d254000159033dd229136fa023c796bcce975f1793a3108b9709ca2",
+      "bytes": 100
+    },
+    {
+      "path": "ColorBends.jsx",
+      "sha256": "9672cf3362df1c4e6e5b7b56d06bf350de7b4803279564d130ffd40765f61e78",
+      "bytes": 10575
+    }
+  ]
+}

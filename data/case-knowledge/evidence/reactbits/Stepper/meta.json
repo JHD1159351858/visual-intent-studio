@@ -1,0 +1,21 @@
+{
+  "entryId": "819b61711d943890",
+  "sourceUrl": "https://reactbits.dev/components/stepper",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Stepper-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/Stepper/Stepper.jsx",
+  "checkedAt": "2026-10-25T07:53:06.074Z",
+  "sha256": "2494fd764b356e605081f950e5c394cafe2c870eb42f845169594584ec2c65b7",
+  "files": [
+    {
+      "path": "Stepper.css",
+      "sha256": "417223c9c56157b27bae7d7214e3fb3a3c8da65e69c6935c6a199fc22b151436",
+      "bytes": 8424
+    },
+    {
+      "path": "Stepper.jsx",
+      "sha256": "9df93b5e34b767652dccd0cd56341a66792db742278310958d38bd4700fb4225",
+      "bytes": 19254
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "entryId": "c42ffcedfaa7ae94",
+  "sourceUrl": "https://reactbits.dev/backgrounds/acid-squares",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/AcidSquares-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/AcidSquares/AcidSquares.jsx",
+  "checkedAt": "2026-10-25T07:53:07.374Z",
+  "sha256": "7e0856bddfc97c80ee2e2a35b682d0d357194eb02933b4655dd24372a67f5485",
+  "files": [
+    {
+      "path": "AcidSquares.css",
+      "sha256": "544a393d882faa595f39e7d6eb52f39c58a3c91e334685e0fed692565f0d41fd",
+      "bytes": 210
+    },
+    {
+      "path": "AcidSquares.jsx",
+      "sha256": "eef3f500795c6363cf1198bc6140dac362aa419e00662916b48591d6a707e589",
+      "bytes": 17240
+    }
+  ]
+}

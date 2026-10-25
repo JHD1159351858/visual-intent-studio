@@ -1,0 +1,21 @@
+{
+  "entryId": "0358d2c8476d3047",
+  "sourceUrl": "https://reactbits.dev/micro/sling-button",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/SlingButton-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/SlingButton/SlingButton.jsx",
+  "checkedAt": "2026-10-25T07:53:14.573Z",
+  "sha256": "ce67a803086688738bb1724d7a61a8d67819c25a1b12f5f2ca1e35ae8b184c6c",
+  "files": [
+    {
+      "path": "SlingButton.css",
+      "sha256": "c433b5c3bd08bc3e8490263c2fa885c427eff66fbe3ef22b61245e08c98f59c9",
+      "bytes": 3245
+    },
+    {
+      "path": "SlingButton.jsx",
+      "sha256": "b706e7367606a45fe9796eff570d31d9f9e01caea378aca62c1aecd9dbe81a0c",
+      "bytes": 13335
+    }
+  ]
+}

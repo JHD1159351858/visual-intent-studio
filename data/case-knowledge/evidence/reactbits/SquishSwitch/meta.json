@@ -1,0 +1,21 @@
+{
+  "entryId": "3ef941163bbaa332",
+  "sourceUrl": "https://reactbits.dev/micro/squish-switch",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/SquishSwitch-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/SquishSwitch/SquishSwitch.jsx",
+  "checkedAt": "2026-10-25T07:53:14.942Z",
+  "sha256": "402ed23b6b08261391188cb4bf267535089b853f2f0184ab8dda991a2f777910",
+  "files": [
+    {
+      "path": "SquishSwitch.css",
+      "sha256": "c05d751d50995b2683ea005098c8459694e03a2c2a3d532f4ab545aac5d5dfcb",
+      "bytes": 1723
+    },
+    {
+      "path": "SquishSwitch.jsx",
+      "sha256": "44402b851bbe4f82cabce067cf0b94eded19ad3e925bda3a8f0cb5781982a664",
+      "bytes": 6112
+    }
+  ]
+}

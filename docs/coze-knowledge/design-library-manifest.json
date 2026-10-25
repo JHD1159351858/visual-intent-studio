@@ -1,0 +1,52 @@
+{
+  "exportedAt": "2026-10-15T13:55:19.510Z",
+  "sources": [
+    "data/design-pages.json",
+    "data/design-components.json"
+  ],
+  "pageCount": 7,
+  "componentCount": 20,
+  "separator": "---CASE---",
+  "cloudUploaded": false,
+  "files": [
+    {
+      "name": "05-整页设计范例.txt",
+      "bytes": 29937
+    },
+    {
+      "name": "06-高频组件实现.txt",
+      "bytes": 33334
+    }
+  ],
+  "pageIds": [
+    "chat-assistant",
+    "knowledge-qa",
+    "writing-tools",
+    "data-analysis",
+    "report-builder",
+    "agent-portal",
+    "knowledge-motion"
+  ],
+  "componentIds": [
+    "bento-grid",
+    "sidebar",
+    "tabs",
+    "accordion",
+    "modal",
+    "tooltip",
+    "card-stack",
+    "carousel",
+    "floating-navbar",
+    "step-loader",
+    "file-picker",
+    "scroll-reveal",
+    "text-reveal",
+    "count-up",
+    "spotlight-card",
+    "glass-surface",
+    "gradient-border",
+    "moving-border",
+    "expandable-card",
+    "timeline"
+  ]
+}

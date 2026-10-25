@@ -1,0 +1,21 @@
+{
+  "entryId": "b6fc084545ec1f00",
+  "sourceUrl": "https://reactbits.dev/backgrounds/magic-rings",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/MagicRings-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/MagicRings/MagicRings.jsx",
+  "checkedAt": "2026-10-25T07:52:59.487Z",
+  "sha256": "39bb07000e80b00781f8b05a82e359a75ba59a97e4c16257b20dd62d714551e4",
+  "files": [
+    {
+      "path": "MagicRings.css",
+      "sha256": "bea236547fde0dfa7b517acbe5cf27e4a0b31d232e98b20507f96fc9f0922f28",
+      "bytes": 58
+    },
+    {
+      "path": "MagicRings.jsx",
+      "sha256": "9ceef78a324de99dc6e09d9509918475013ef963f45fb775621ac554d836d733",
+      "bytes": 9609
+    }
+  ]
+}

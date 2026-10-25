@@ -1,0 +1,21 @@
+{
+  "entryId": "ae8842d7d28e77b0",
+  "sourceUrl": "https://reactbits.dev/components/drift-wall",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/DriftWall-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/DriftWall/DriftWall.jsx",
+  "checkedAt": "2026-10-25T07:53:02.277Z",
+  "sha256": "d88e7baedd313668b2997f1ba7b5ee57beb69d4ebcaf63a3d64d822cf74d0828",
+  "files": [
+    {
+      "path": "DriftWall.css",
+      "sha256": "022c15ad24586e42f4fbe1dd1f059eeb0d558fd568972749768654c74e1e957d",
+      "bytes": 3009
+    },
+    {
+      "path": "DriftWall.jsx",
+      "sha256": "d6b186fbff08d8ad555ee705feebdeba2f1ff8882e22eb37b5c548ae821e7254",
+      "bytes": 9597
+    }
+  ]
+}

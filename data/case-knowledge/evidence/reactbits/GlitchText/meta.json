@@ -1,0 +1,21 @@
+{
+  "entryId": "b4e24f9dbf6d967a",
+  "sourceUrl": "https://reactbits.dev/text-animations/glitch-text",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/GlitchText-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/GlitchText/GlitchText.jsx",
+  "checkedAt": "2026-10-25T07:52:56.404Z",
+  "sha256": "58b77f1c472bd6eabf3f60ebb8c65c5dab6eb76c9a881e7fbefb89b30293f75d",
+  "files": [
+    {
+      "path": "GlitchText.css",
+      "sha256": "7c1071040ade0877a64179c35a1fc92dd3cb9a0f1820afb3d935eb307dbf9c6e",
+      "bytes": 2378
+    },
+    {
+      "path": "GlitchText.jsx",
+      "sha256": "e36825c1d0666432234860bfba2fdf4f79e51754f94b27d8b9403fec60e9b63f",
+      "bytes": 629
+    }
+  ]
+}

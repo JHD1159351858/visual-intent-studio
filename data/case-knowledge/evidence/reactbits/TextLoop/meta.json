@@ -1,0 +1,21 @@
+{
+  "entryId": "ea7c1c83303f07dc",
+  "sourceUrl": "https://reactbits.dev/text-animations/text-loop",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/TextLoop-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/TextLoop/TextLoop.jsx",
+  "checkedAt": "2026-10-25T07:52:54.005Z",
+  "sha256": "12bcaf88f611fc077de4edd84a443bc2cac09cd940f07c0ede0873a5107089c4",
+  "files": [
+    {
+      "path": "TextLoop.css",
+      "sha256": "2cf98bbc437cd18d9bf09adfc48ae546d1fc4f72558403c6a958b3c8062134e4",
+      "bytes": 253
+    },
+    {
+      "path": "TextLoop.jsx",
+      "sha256": "41e2c530ecb5e582a53b950896da83065e4c65354351cd5c6823ce1cfd534b1e",
+      "bytes": 6648
+    }
+  ]
+}

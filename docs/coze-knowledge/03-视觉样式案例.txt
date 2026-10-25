@@ -1,0 +1,1977 @@
+案例 ID：reactbits-glass-surface
+中文名称：半透明玻璃表面
+原名称：Glass Surface
+分类：视觉样式（style）
+来源记录的效果说明：以透明度、背景模糊和玻璃边缘形成浮在彩色背景之上的玻璃表面。
+口语别名：毛玻璃、玻璃拟态、液态玻璃、透明模糊
+触发方式：持续显示；背景图形运动使透视与模糊更明显
+适用位置：导航容器、信息卡片
+检索标签：components、Glass Surface、毛玻璃、玻璃拟态、液态玻璃、透明模糊
+来源：reactbits
+来源地址：https://reactbits.dev/components/glass-surface
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/GlassSurface/GlassSurface.jsx
+预览来源性质：参考机制重现，非原站原版录像
+本地预览：/media/reactbits-glass-surface.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：根据来源制作的参考演示，非原站录像；实现时以原站源码为准。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T08:24:07.708Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：reactbits-dot-grid
+中文名称：鼠标响应的点阵背景
+原名称：Dot Grid
+分类：视觉样式（style）
+来源记录的效果说明：规则点阵铺满背景，鼠标经过时附近点亮起并产生位移反馈。
+口语别名：点阵、点点背景、交互粒子、网点
+触发方式：鼠标在背景移动；附近圆点变亮、移动并回弹
+适用位置：首屏背景、活动页面
+检索标签：backgrounds、Dot Grid、点阵、点点背景、交互粒子、网点
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/dot-grid
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/DotGrid/DotGrid.jsx
+预览来源性质：参考机制重现，非原站原版录像
+本地预览：/media/reactbits-dot-grid.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：根据来源制作的参考演示，非原站录像；实现时以原站源码为准。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T08:24:07.711Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：aceternity-background-gradient
+中文名称：流动渐变光晕
+原名称：Background Gradient
+分类：视觉样式（style）
+来源记录的效果说明：为卡片或按钮添加缓慢流动的彩色渐变边缘及背景光晕。
+口语别名：渐变边框、流光渐变、彩色光晕、渐变卡片
+触发方式：自动循环流动；无需点击
+适用位置：产品卡片、行动按钮
+检索标签：gradient、background、card
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/background-gradient
+实现参考：https://ui.aceternity.com/components/background-gradient
+预览来源性质：参考机制重现，非原站原版录像
+本地预览：/media/aceternity-background-gradient.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：根据来源制作的参考演示，非原站录像；实现时以原站源码为准。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T08:24:06.962Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：aceternity-background-boxes
+中文名称：悬停着色的网格背景
+原名称：Background Boxes
+分类：视觉样式（style）
+来源记录的效果说明：全宽方格背景在鼠标经过时高亮，保留网格的空间秩序和轻量互动。
+口语别名：方格背景、网格着色、棋盘、交互网格
+触发方式：鼠标经过背景方格后高亮并逐渐消退
+适用位置：首屏背景、专题页面
+检索标签：grid、background、hover
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/background-boxes
+实现参考：https://ui.aceternity.com/components/background-boxes
+预览来源性质：参考机制重现，非原站原版录像
+本地预览：/media/aceternity-background-boxes.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：根据来源制作的参考演示，非原站录像；实现时以原站源码为准。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T08:24:06.962Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：eb2b7ba632afff5e
+中文名称：网格与圆点底纹
+原名称：Grid
+分类：视觉样式（style）
+来源记录的效果说明：用细线方格或均匀圆点铺成背景，可叠加从中心向外淡出的遮罩；它是背景纹理，不是内容卡片的排版结构。
+口语别名：纸上的方格、小圆点背景、网格底纹
+触发方式：持续显示；原站示例没有点击或鼠标跟随动画
+适用位置：首屏背景、内容区底纹
+检索标签：网格背景、圆点、静态纹理、淡出遮罩
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/grid-and-dot-backgrounds
+实现参考：https://ui.aceternity.com/components/grid-and-dot-backgrounds
+预览来源性质：原站演示实录
+本地预览：/media/sources/eb2b7ba632afff5e.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:22:32.413Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：9690b06b16d43357
+中文名称：缓慢闪烁的星点
+原名称：Sparkles
+分类：视觉样式（style）
+来源记录的效果说明：在标题下方或整个区块铺上细小亮点，不同位置的点以不同速度明暗闪烁，形成轻盈的星尘背景。
+口语别名：星星点点、闪闪的小颗粒、文字旁的星尘
+触发方式：组件显示后自动闪烁；无需点击
+适用位置：首屏标题附近、行动区背景
+检索标签：星点、粒子、自动循环、星尘
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/sparkles
+实现参考：https://ui.aceternity.com/components/sparkles
+预览来源性质：原站演示实录
+本地预览：/media/sources/9690b06b16d43357.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:22:32.416Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：4c7e1b83582015b4
+中文名称：斜照标题的柔和聚光
+原名称：Spotlight
+分类：视觉样式（style）
+来源记录的效果说明：深色背景上出现一束斜向柔光，亮区集中照向标题和正文；进入时光束逐渐显现，随后作为背景保留。
+口语别名：舞台灯照着文字、斜着打来的光、标题旁的灯光
+触发方式：组件加载时淡入；原版不是鼠标追踪灯
+适用位置：首页首屏、宣传标题区
+检索标签：聚光、深色、光束、入场
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/spotlight
+实现参考：https://ui.aceternity.com/components/spotlight
+预览来源性质：原站演示实录
+本地预览：/media/sources/4c7e1b83582015b4.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:22:32.427Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：55988ec0ea1c44b9
+中文名称：沿曲线路径穿梭的光束
+原名称：Background Beams
+分类：视觉样式（style）
+来源记录的效果说明：多条弯曲细线组成大面积背景，亮色线段沿各自路径不断穿过，中央内容保持清晰，不会改变页面排版。
+口语别名：背景里有流动光线、很多弯弯的光束、科技线条背景
+触发方式：显示后各路径自动循环流动
+适用位置：首屏背景、订阅行动区
+检索标签：曲线、光束、自动循环、背景
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/background-beams
+实现参考：https://ui.aceternity.com/components/background-beams
+预览来源性质：原站演示实录
+本地预览：/media/sources/55988ec0ea1c44b9.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:23:02.220Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：6bf9770e8a58b9c1
+中文名称：斜向划过的流星光条
+原名称：Meteor Effect
+分类：视觉样式（style）
+来源记录的效果说明：容器背景中多根短亮线带着渐隐尾迹斜向划过，位置与时长错开，形成流星雨般的持续运动。
+口语别名：斜着划过的小流星、背景有光条往下掉、星空里的尾巴
+触发方式：显示后自动错时循环
+适用位置：宣传卡片背景、评价区背景
+检索标签：流星、光条、自动循环、背景
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/meteors
+实现参考：https://ui.aceternity.com/components/meteors
+预览来源性质：原站演示实录
+本地预览：/media/sources/6bf9770e8a58b9c1.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:23:49.106Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：0057fc9efa7bc781
+中文名称：照亮标题的横向灯带
+原名称：Lamp
+分类：视觉样式（style）
+来源记录的效果说明：深色背景中一条横向青色灯带向下投射柔光，进入视野时灯带变宽、亮度提高，标题随之向上淡入。
+口语别名：标题上面有灯照下来、横着的一条亮灯、像舞台灯的标题
+触发方式：组件进入视口时扩展灯带与标题入场
+适用位置：章节标题、产品首屏
+检索标签：灯带、聚光、入场、深色
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/lamp-effect
+实现参考：https://ui.aceternity.com/components/lamp-effect
+预览来源性质：原站演示实录
+本地预览：/media/sources/0057fc9efa7bc781.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:24:04.362Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：0dd31983b51355e4
+中文名称：缓慢流动的彩色波带
+原名称：Wavy Background
+分类：视觉样式（style）
+来源记录的效果说明：多条半透明彩色波带在背景中弯曲流动，叠加模糊后像柔和的极光或液体，前景文字保持独立。
+口语别名：流动的彩色水波、像丝带一样的背景、柔和的波浪
+触发方式：显示后自动循环绘制波形
+适用位置：首页首屏背景、品牌页面
+检索标签：波浪、彩色丝带、自动循环、背景
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/wavy-background
+实现参考：https://ui.aceternity.com/components/wavy-background
+预览来源性质：原站演示实录
+本地预览：/media/sources/0dd31983b51355e4.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:18:21.591Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：e23dab4240ad9cd1
+中文名称：移动交融的渐变色团
+原名称：Background Gradient Animation
+分类：视觉样式（style）
+来源记录的效果说明：多团大面积模糊渐变在背景中缓慢移动和交融，形成连续变化的色彩空间；可加入响应鼠标位置的互动色团。
+口语别名：颜色慢慢混在一起、会流动的彩色背景、像彩色烟雾
+触发方式：渐变团自动运动；启用互动层时跟随鼠标
+适用位置：首屏背景、登录页背景
+检索标签：渐变、模糊色团、自动循环、鼠标互动
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/background-gradient-animation
+实现参考：https://ui.aceternity.com/components/background-gradient-animation
+预览来源性质：原站演示实录
+本地预览：/media/sources/e23dab4240ad9cd1.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:25:05.921Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：1a605e0e28035a21
+中文名称：柔和漂移的极光底色
+原名称：Aurora Background
+分类：视觉样式（style）
+来源记录的效果说明：大面积半透明渐变亮带缓慢漂移，通过模糊和遮罩形成类似北极光的柔和背景，适合让浅色或深色内容区具有空气感。
+口语别名：北极光一样的背景、轻轻流动的彩色光、淡淡的极光
+触发方式：显示后背景位置自动循环移动
+适用位置：首屏底色、品牌内容区
+检索标签：极光、渐变、柔光、自动循环
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/aurora-background
+实现参考：https://ui.aceternity.com/components/aurora-background
+预览来源性质：原站演示实录
+本地预览：/media/sources/1a605e0e28035a21.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:25:41.709Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：2211687be0aa3815
+中文名称：带荧光笔重点句的点阵首屏
+原名称：Hero Highlight
+分类：视觉样式（style）
+来源记录的效果说明：标题放在浅点阵背景前，悬停时背景点阵改变密度或颜色；重点词句下方铺开彩色渐变高亮，像荧光笔划过。
+口语别名：标题重点句画了一道荧光、点点背景的标题、像用彩色笔标重点
+触发方式：悬停切换背景点阵；高亮组件显示时横向展开
+适用位置：首页首屏标题、重点文案
+检索标签：文字高亮、点阵、渐变、悬停
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/hero-highlight
+实现参考：https://ui.aceternity.com/components/hero-highlight
+预览来源性质：原站演示实录
+本地预览：/media/sources/2211687be0aa3815.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:25:59.476Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：8a6b4d63d9ac322e
+中文名称：汇成旋涡的发光粒子
+原名称：Vortex Background
+分类：视觉样式（style）
+来源记录的效果说明：大量发光粒子沿弯曲轨迹流动，叠成有深度的彩色旋涡，背景持续运动，前景内容不跟着旋转。
+口语别名：背景像个星光旋涡、粒子绕着转、彩色光点流起来
+触发方式：显示后自动绘制粒子轨迹
+适用位置：行动区背景、创意首屏
+检索标签：旋涡、粒子、自动循环、背景
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/vortex
+实现参考：https://ui.aceternity.com/components/vortex
+预览来源性质：原站演示实录
+本地预览：/media/sources/8a6b4d63d9ac322e.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:26:03.291Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：04caedaf6df871a4
+中文名称：疏密可调的闪烁星空
+原名称：Stars Background
+分类：视觉样式（style）
+来源记录的效果说明：深色区域内散布不同大小与亮度的星点，部分星点轻微明暗变化，形成安静的夜空；可和独立流星层组合。
+口语别名：静静闪着的满天星、黑色底上的小星星、夜空背景、一颗星拖着尾巴划过、偶尔有流星的夜空、长尾星星
+触发方式：显示后自动绘制星点；启用闪烁时亮度循环变化
+适用位置：首屏背景、夜空主题页
+检索标签：星空、星点、闪烁、背景
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/shooting-stars-and-stars-background
+实现参考：https://ui.aceternity.com/components/shooting-stars-and-stars-background
+预览来源性质：原站演示实录
+本地预览：/media/sources/04caedaf6df871a4.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:26:49.450Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：43049e4f874df1ab
+中文名称：落到边缘后散开的光束
+原名称：Background Beams With Collision
+分类：视觉样式（style）
+来源记录的效果说明：多根竖向亮条从上方落下，碰到容器底部时短暂炸开成小粒子，再继续出现新的光束。
+口语别名：光条掉下来碰到底会炸开、背景像有小火花、撞到边上的流光
+触发方式：显示后自动下落循环；撞到预设底部区域产生粒子
+适用位置：首屏背景、动态展示区
+检索标签：落光、碰撞、粒子、自动循环
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/background-beams-with-collision
+实现参考：https://ui.aceternity.com/components/background-beams-with-collision
+预览来源性质：原站演示实录
+本地预览：/media/sources/43049e4f874df1ab.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:27:27.302Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：7688c8803696003c
+中文名称：从中间伸展的彩色波形线
+原名称：Background Lines
+分类：视觉样式（style）
+来源记录的效果说明：多条不同颜色的弧线以中部为中心向两侧展开，细线逐段被绘制并循环变化，给标题后方增加有节奏的波形背景。
+口语别名：彩色线条从中间长出来、标题背后的波形、很多细细的彩线
+触发方式：显示后路径长度按错开的时间自动变化
+适用位置：首屏背景、标题区
+检索标签：彩色线条、波形、自动循环、背景
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/background-lines
+实现参考：https://ui.aceternity.com/components/background-lines
+预览来源性质：原站演示实录
+本地预览：/media/sources/7688c8803696003c.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:27:41.800Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：bb04b57807656cf3
+中文名称：左右缓慢扫动的双侧聚光
+原名称：Spotlight New
+分类：视觉样式（style）
+来源记录的效果说明：左右两组柔和长光束照向首屏中央，光束以不同位置和角度缓慢移动，形成左右呼应的舞台光照。
+口语别名：两边打过来的光、背景有左右扫动的灯、双侧聚光首屏
+触发方式：显示后按设定时长自动往复移动
+适用位置：首页首屏、营销标题
+检索标签：聚光、双侧、柔光、自动循环
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/spotlight-new
+实现参考：https://ui.aceternity.com/components/spotlight-new
+预览来源性质：原站演示实录
+本地预览：/media/sources/bb04b57807656cf3.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:28:25.310Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：0863c4270156f37c
+中文名称：立体倾斜的图片跑马墙
+原名称：3D Marquee
+分类：视觉样式（style）
+来源记录的效果说明：多列图片组成倾斜的三维平面，图片列持续上下移动，并有悬停边界反馈，适合作为有层次的大面积视觉背景。
+口语别名：斜着的照片墙不停滚动、像立起来的图片传送带、有深度的图片背景
+触发方式：显示后各列自动往复移动；悬停单图可增强边界反馈
+适用位置：首屏视觉背景、品牌图片墙
+检索标签：图片墙、三维、跑马灯、自动循环
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/3d-marquee
+实现参考：https://ui.aceternity.com/components/3d-marquee
+预览来源性质：原站演示实录
+本地预览：/media/sources/0863c4270156f37c.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:28:31.653Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：75d3740bf66f4da9
+中文名称：点击后扩散的方格波纹
+原名称：Background Ripple Effect
+分类：视觉样式（style）
+来源记录的效果说明：大面积方格背景默认较暗，点击某格后，亮度波从点击位置向周围格子逐层传递，形成规则网格上的涟漪。
+口语别名：点背景就一圈圈亮起来、方格里的水波、从点击处散开的网格
+触发方式：点击背景单元格产生一轮扩散
+适用位置：首屏背景、互动活动页
+检索标签：网格背景、点击、波纹、扩散
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/background-ripple-effect
+实现参考：https://ui.aceternity.com/components/background-ripple-effect
+预览来源性质：原站演示实录
+本地预览：/media/sources/75d3740bf66f4da9.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:29:19.574Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：2e0db61cd5df7595
+中文名称：明暗呼吸的发光点阵
+原名称：Dotted Glow Background
+分类：视觉样式（style）
+来源记录的效果说明：等距小点铺满区域，不同位置的点独立改变亮度和光晕，边缘可通过渐变遮罩淡出，像安静呼吸的电子点阵。
+口语别名：背景小点在呼吸、规则排列的发光点、柔和的点点灯光
+触发方式：显示后按不同延迟自动改变透明度与发光
+适用位置：首屏背景、信息卡片底纹
+检索标签：点阵、发光、呼吸、自动循环
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/dotted-glow-background
+实现参考：https://ui.aceternity.com/components/dotted-glow-background
+预览来源性质：原站演示实录
+本地预览：/media/sources/2e0db61cd5df7595.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:29:42.426Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：3666ebc825b07f02
+中文名称：带细颗粒的流动渐变
+原名称：Noise Background
+分类：视觉样式（style）
+来源记录的效果说明：多团渐变缓慢漂移，表面覆盖细小噪点纹理，让大面积颜色具有胶片般的颗粒感；可调色彩、速度与噪点强度。
+口语别名：渐变上有细细的颗粒、像胶片的彩色背景、磨砂的流动颜色
+触发方式：显示后渐变自动运动，噪点层持续覆盖
+适用位置：首屏背景、品牌视觉区
+检索标签：噪点、颗粒、渐变、自动循环
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/noise-background
+实现参考：https://ui.aceternity.com/components/noise-background
+预览来源性质：原站演示实录
+本地预览：/media/sources/3666ebc825b07f02.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:29:56.839Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：b0151ee3e1ddd81f
+中文名称：复古点阵抖色图片
+原名称：Dither Shader
+分类：视觉样式（style）
+来源记录的效果说明：图片的明暗和色彩被转换为规则点阵或颗粒块，保留整体轮廓但呈现复古低色阶视觉；可实时调整像素尺度和色彩参数。
+口语别名：照片像老电脑点阵、复古颗粒图片、图片变成黑白小点
+触发方式：图像加载后着色器持续渲染；参数变化实时更新
+适用位置：复古作品封面、品牌视觉图
+检索标签：抖色、点阵、复古、图像处理
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/dither-shader
+实现参考：https://ui.aceternity.com/components/dither-shader
+预览来源性质：原站演示实录
+本地预览：/media/sources/b0151ee3e1ddd81f.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:30:06.396Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：dced90c1417e5265
+中文名称：缓慢漂移的柔软云层
+原名称：Cloud Shader
+分类：视觉样式（style）
+来源记录的效果说明：背景实时生成多层柔软云团，随时间横向漂移，云的大小、密度、速度和天空颜色可调整，营造安静的天空空间。
+口语别名：背景像云慢慢飘、柔软的天空云层、淡淡的云海
+触发方式：显示后按时间持续渲染漂移云层
+适用位置：首屏背景、旅行主题页
+检索标签：云层、天空、着色器、自动循环
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/cloud-shader
+实现参考：https://ui.aceternity.com/components/cloud-shader
+预览来源性质：原站演示实录
+本地预览：/media/sources/dced90c1417e5265.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:30:06.490Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：960190b724344298
+中文名称：用字符拼出的图片
+原名称：ASCII Art
+分类：视觉样式（style）
+来源记录的效果说明：根据图片明暗把像素替换为不同密度的字母或符号，形成可辨识的字符画；可选逐步显现动画并调节字符集与颜色。
+口语别名：照片由字母拼成、像终端字符画、用小符号画出来的图
+触发方式：图像加载后转换；启用动画时进入视口可逐步显现
+适用位置：创意头像、技术品牌视觉
+检索标签：字符画、图像转换、复古、入场
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/ascii-art
+实现参考：https://ui.aceternity.com/components/ascii-art
+预览来源性质：原站演示实录
+本地预览：/media/sources/960190b724344298.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:30:59.317Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：93784e76dbd65e27
+中文名称：重复斜线与条纹底纹
+原名称：Scales
+分类：视觉样式（style）
+来源记录的效果说明：细小斜线、横线或竖线按规则重复排列，可放在内容下方并用遮罩淡出，形成轻量的机械刻度或网纹感。
+口语别名：背景是一条条细线、斜着的条纹纸、像刻度的底纹
+触发方式：持续显示；参数控制方向、间距与颜色
+适用位置：内容底纹、图片背景、卡片背景
+检索标签：条纹、刻度、静态纹理、背景
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/scales
+实现参考：https://ui.aceternity.com/components/scales
+预览来源性质：原站演示实录
+本地预览：/media/sources/93784e76dbd65e27.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:31:04.344Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：e70bb8efb1b8783a
+中文名称：流动渐变文字
+原名称：Gradient Text
+分类：视觉样式（style）
+来源记录的效果说明：渐变颜色在字形内部流动，可选线性扫动、网格流动或扇形旋转。
+口语别名：字里面颜色流动、彩色渐变字
+触发方式：持续渐变动画；可配置鼠标响应
+适用位置：首页标题、品牌口号
+检索标签：text-animations、Gradient Text、字里面颜色流动、彩色渐变字
+来源：reactbits
+来源地址：https://reactbits.dev/text-animations/gradient-text
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/GradientText/GradientText.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/e70bb8efb1b8783a.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:33:16.505Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：77ff66fee5359db4
+中文名称：渐进模糊遮罩
+原名称：Gradual Blur
+分类：视觉样式（style）
+来源记录的效果说明：在内容边缘叠加逐级增强的模糊，形成从清晰到模糊的柔和过渡。
+口语别名：边缘越往外越模糊、底部像毛玻璃渐渐糊掉
+触发方式：持续覆盖指定边缘；滚动内容穿过遮罩
+适用位置：滚动容器边缘、固定浮层背景
+检索标签：animations、Gradual Blur、边缘越往外越模糊、底部像毛玻璃渐渐糊掉
+来源：reactbits
+来源地址：https://reactbits.dev/animations/gradual-blur
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/GradualBlur/GradualBlur.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/77ff66fee5359db4.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:37:49.471Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：46a94d1d040cd951
+中文名称：液态金属标志
+原名称：Metallic Paint
+分类：视觉样式（style）
+来源记录的效果说明：为 SVG 或图形施加流动金属反光，使表面像液态金属油漆。
+口语别名：标志像流动的金属、图标上有液态银光
+触发方式：页面展示后持续流动反光
+适用位置：品牌标志、图形展示
+检索标签：animations、Metallic Paint、标志像流动的金属、图标上有液态银光
+来源：reactbits
+来源地址：https://reactbits.dev/animations/metallic-paint
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/MetallicPaint/MetallicPaint.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/46a94d1d040cd951.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:38:47.975Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：6de83703db63aa5c
+中文名称：动态胶片颗粒
+原名称：Noise
+分类：视觉样式（style）
+来源记录的效果说明：在图片、渐变或页面上覆盖动态颗粒，可呈现胶片、纸张或电视杂讯。
+口语别名：画面有细小颗粒、像老电影的噪点
+触发方式：页面展示后持续纹理变化
+适用位置：图片质感、整页纹理
+检索标签：animations、Noise、画面有细小颗粒、像老电影的噪点
+来源：reactbits
+来源地址：https://reactbits.dev/animations/noise
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/Noise/Noise.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/6de83703db63aa5c.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:38:48.809Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：328a512818185592
+中文名称：流体折射玻璃
+原名称：Fluid Glass
+分类：视觉样式（style）
+来源记录的效果说明：玻璃容器产生流动扭曲与折射，使后面的内容像通过液态镜片观看。
+口语别名：流动的玻璃透镜、背景透过玻璃会变形
+触发方式：玻璃持续显示；按配置移动透镜
+适用位置：首屏主视觉、导航容器
+检索标签：components、Fluid Glass、流动的玻璃透镜、背景透过玻璃会变形
+来源：reactbits
+来源地址：https://reactbits.dev/components/fluid-glass
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/FluidGlass/FluidGlass.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/328a512818185592.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:42:48.073Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：c9a0ad8ca60e062f
+中文名称：折射玻璃图标
+原名称：Glass Icons
+分类：视觉样式（style）
+来源记录的效果说明：图标呈液态玻璃质感，折射背后的颜色与光线。
+口语别名：图标像透明玻璃、小按钮有液态玻璃质感
+触发方式：持续显示；鼠标悬停反馈
+适用位置：应用入口、社交链接
+检索标签：components、Glass Icons、图标像透明玻璃、小按钮有液态玻璃质感
+来源：reactbits
+来源地址：https://reactbits.dev/components/glass-icons
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/GlassIcons/GlassIcons.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/c9a0ad8ca60e062f.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:45:08.873Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：9d1460b1bef8c4e1
+中文名称：发光磁流线背景
+原名称：Flux Lines
+分类：视觉样式（style）
+来源记录的效果说明：彩色发光线纹沿指定方向流动，指针产生局部磁力扭曲，点击可激起旋涡。
+口语别名：背景光线被鼠标吸动、点击发光线条出现旋涡
+触发方式：入场揭示；持续流动；鼠标移动与点击
+适用位置：首屏背景、科技内容区
+检索标签：backgrounds、Flux Lines、背景光线被鼠标吸动、点击发光线条出现旋涡
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/flux-lines
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/FluxLines/FluxLines.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/9d1460b1bef8c4e1.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:46:16.564Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：49356f2a830db282
+中文名称：图案波浪背景
+原名称：Pattern Waves
+分类：视觉样式（style）
+来源记录的效果说明：点、线、十字或字形铺成起伏表面，波浪像丝绸展开，鼠标可激起涟漪。
+口语别名：图案像布一样起伏、点阵铺成一片波浪
+触发方式：持续波浪；鼠标移动产生涟漪
+适用位置：首屏背景、图形展示
+检索标签：backgrounds、Pattern Waves、图案像布一样起伏、点阵铺成一片波浪
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/pattern-waves
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/PatternWaves/PatternWaves.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/49356f2a830db282.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:46:18.007Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：72739122a433abd2
+中文名称：微型条片海面
+原名称：Micro Slats
+分类：视觉样式（style）
+来源记录的效果说明：密集细条在透视中起伏成海面，波峰反光，指针可搅动流体。
+口语别名：一排排细条变成波浪、小条片像海水起伏
+触发方式：入场从地平线展开；持续起伏与鼠标搅动
+适用位置：首屏背景、产品主视觉
+检索标签：backgrounds、Micro Slats、一排排细条变成波浪、小条片像海水起伏
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/micro-slats
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/MicroSlats/MicroSlats.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/72739122a433abd2.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:46:19.279Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：f4f35306c9faad95
+中文名称：深蓝发光纤维场
+原名称：Ghost Fibers
+分类：视觉样式（style）
+来源记录的效果说明：深蓝纤维层层递归，发光色带向径向扭转，周围带柔和辉光。
+口语别名：深蓝色光丝在旋转、一层层发光的纤维
+触发方式：页面展示后持续动画
+适用位置：科技背景、品牌首屏
+检索标签：backgrounds、Ghost Fibers、深蓝色光丝在旋转、一层层发光的纤维
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/ghost-fibers
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/GhostFibers/GhostFibers.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/f4f35306c9faad95.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:46:39.142Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：04d69f2aeda5c46f
+中文名称：弯曲老电视光场
+原名称：CRT Warp
+分类：视觉样式（style）
+来源记录的效果说明：画面呈 CRT 曲面扭曲、扫描线与辉光，等离子色彩铺满背景并响应指针。
+口语别名：像老电视的弯曲屏幕、有扫描线的彩色背景
+触发方式：持续光场动画；鼠标移动
+适用位置：复古科技背景、游戏页面
+检索标签：backgrounds、CRT Warp、像老电视的弯曲屏幕、有扫描线的彩色背景
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/crt-warp
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/CRTWarp/CRTWarp.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/04d69f2aeda5c46f.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:46:39.888Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：f86234a5a3effbc3
+中文名称：熔融金属光丝
+原名称：Molten Metal
+分类：视觉样式（style）
+来源记录的效果说明：盘旋的焦散光丝带有白热核心，形成像熔化金属的高亮流动纹理。
+口语别名：发亮的金属在流动、像熔岩一样的银色光丝
+触发方式：页面展示后持续流动
+适用位置：品牌主视觉、质感背景
+检索标签：backgrounds、Molten Metal、发亮的金属在流动、像熔岩一样的银色光丝
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/molten-metal
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/MoltenMetal/MoltenMetal.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/f86234a5a3effbc3.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:46:40.134Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：107d986a5cba79cf
+中文名称：渐变地平线波浪
+原名称：Gradient Waves
+分类：视觉样式（style）
+来源记录的效果说明：渐变正弦波向柔和、雾状地平线滚动，呈现有深度的波浪场。
+口语别名：彩色波浪向远处滚、有雾气地平线的背景
+触发方式：页面展示后持续波浪
+适用位置：首屏背景、活动视觉
+检索标签：backgrounds、Gradient Waves、彩色波浪向远处滚、有雾气地平线的背景
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/gradient-waves
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/GradientWaves/GradientWaves.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/107d986a5cba79cf.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:46:59.758Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：d4968ae364bc4208
+中文名称：汇聚光点的编织光丝
+原名称：Web Threads
+分类：视觉样式（style）
+来源记录的效果说明：发光正弦丝线织向明亮的汇聚点，形成有方向的线束背景。
+口语别名：一束光线织到一个点、发光的丝线汇聚
+触发方式：页面展示后持续线丝运动
+适用位置：科技首屏、数据主题背景
+检索标签：backgrounds、Web Threads、一束光线织到一个点、发光的丝线汇聚
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/web-threads
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/WebThreads/WebThreads.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/d4968ae364bc4208.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:47:00.452Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：e5682fdf7f5c92ef
+中文名称：发光等高线地图
+原名称：Topography
+分类：视觉样式（style）
+来源记录的效果说明：等高线随表面高低变化，线条带辉光与按高度变化的颜色。
+口语别名：像地形图的线条在动、发光等高线背景
+触发方式：页面展示后持续地形变化
+适用位置：数据主题背景、科技首页
+检索标签：backgrounds、Topography、像地形图的线条在动、发光等高线背景
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/topography
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Topography/Topography.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/e5682fdf7f5c92ef.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:47:00.549Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：50c0b4edfc4cfbe3
+中文名称：光纤纵深隧道
+原名称：Light Tunnel
+分类：视觉样式（style）
+来源记录的效果说明：径向光纤形成隧道，光脉冲沿线条快速深入远处。
+口语别名：像钻进发光隧道、光线往屏幕深处跑
+触发方式：页面展示后持续光脉冲
+适用位置：首屏背景、沉浸式开场
+检索标签：backgrounds、Light Tunnel、像钻进发光隧道、光线往屏幕深处跑
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/light-tunnel
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/LightTunnel/LightTunnel.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/50c0b4edfc4cfbe3.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:47:21.309Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：615e57c8ecce0da5
+中文名称：切片彩色光浪
+原名称：Sliced Waves
+分类：视觉样式（style）
+来源记录的效果说明：彩色波浪切成发光条带，在透视空间中起伏，焦点随指针移动。
+口语别名：一条条彩光像海浪、被切成条的彩色波浪
+触发方式：持续起伏；鼠标移动调整焦点
+适用位置：首屏背景、活动视觉
+检索标签：backgrounds、Sliced Waves、一条条彩光像海浪、被切成条的彩色波浪
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/sliced-waves
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/SlicedWaves/SlicedWaves.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/615e57c8ecce0da5.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:47:22.398Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：c42ffcedfaa7ae94
+中文名称：层叠方形光廊
+原名称：Acid Squares
+分类：视觉样式（style）
+来源记录的效果说明：多层方形组成晶体走廊，光圈沿纵深朝观看者移动。
+口语别名：很多方框往眼前飞、发光方形隧道
+触发方式：页面展示后持续推进
+适用位置：首屏背景、音乐活动页
+检索标签：backgrounds、Acid Squares、很多方框往眼前飞、发光方形隧道
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/acid-squares
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/AcidSquares/AcidSquares.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/c42ffcedfaa7ae94.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:47:22.423Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：a84c12fe4b367a06
+中文名称：示波器扫描条纹
+原名称：Scanner
+分类：视觉样式（style）
+来源记录的效果说明：平静的干涉条带持续横扫画面，形成类似示波器的扫描纹理。
+口语别名：背景有扫描条纹、像示波器一样扫过去
+触发方式：页面展示后持续扫描
+适用位置：科技背景、监测主题页
+检索标签：backgrounds、Scanner、背景有扫描条纹、像示波器一样扫过去
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/scanner
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Scanner/Scanner.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/a84c12fe4b367a06.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:47:48.667Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：95ca6e63302df6e0
+中文名称：磁性流体等高线
+原名称：Ferrofluid
+分类：视觉样式（style）
+来源记录的效果说明：磁性流体持续翻涌，发光轮廓勾出液面，指针像磁铁一样牵引流体。
+口语别名：液体被鼠标吸起来、发光线条勾出的磁流体
+触发方式：持续翻涌；鼠标移动牵引
+适用位置：首屏背景、实验视觉
+检索标签：backgrounds、Ferrofluid、液体被鼠标吸起来、发光线条勾出的磁流体
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/ferrofluid
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Ferrofluid/Ferrofluid.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/95ca6e63302df6e0.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:47:49.447Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：0339fea6b68d9351
+中文名称：隧道落下的光雨
+原名称：Lightfall
+分类：视觉样式（style）
+来源记录的效果说明：彩色光条沿发光隧道落下，指针附近增加局部光亮。
+口语别名：彩色光雨落下来、发光隧道里的雨
+触发方式：持续光雨；鼠标移动
+适用位置：首屏背景、活动视觉
+检索标签：backgrounds、Lightfall、彩色光雨落下来、发光隧道里的雨
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/lightfall
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Lightfall/Lightfall.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/0339fea6b68d9351.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:47:49.562Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：08ea2449be06f172
+中文名称：互动彩色液体
+原名称：Liquid Ether
+分类：视觉样式（style）
+来源记录的效果说明：可定制色彩的液体随着流动与指针扰动产生涡流和形变。
+口语别名：鼠标搅动彩色液体、像颜料融合的背景
+触发方式：持续流动；鼠标或触摸扰动
+适用位置：首屏背景、品牌主视觉
+检索标签：backgrounds、Liquid Ether、鼠标搅动彩色液体、像颜料融合的背景
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/liquid-ether
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/LiquidEther/LiquidEther.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/08ea2449be06f172.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:48:17.597Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：6dcb08d9f60c4ed9
+中文名称：旋转发光棱镜
+原名称：Prism
+分类：视觉样式（style）
+来源记录的效果说明：棱镜随时间旋转，光强、尺寸与颜色可调整，形成几何光学主视觉。
+口语别名：一个发光三角棱镜在转、像水晶棱镜的背景
+触发方式：页面展示后持续旋转
+适用位置：首屏视觉、科技背景
+检索标签：backgrounds、Prism、一个发光三角棱镜在转、像水晶棱镜的背景
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/prism
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Prism/Prism.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/6dcb08d9f60c4ed9.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:48:18.805Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：a84dfef1365dc129
+中文名称：深色流动幕布
+原名称：Dark Veil
+分类：视觉样式（style）
+来源记录的效果说明：深色纹理以平滑动画和后期辉光变化，形成低干扰的动态背景。
+口语别名：暗色背景轻轻流动、低调的深色光幕
+触发方式：页面展示后持续动画
+适用位置：深色首页、产品背景
+检索标签：backgrounds、Dark Veil、暗色背景轻轻流动、低调的深色光幕
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/dark-veil
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/DarkVeil/DarkVeil.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/a84dfef1365dc129.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:48:18.907Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：3260c657755ad6ea
+中文名称：发光垂直光柱
+原名称：Light Pillar
+分类：视觉样式（style）
+来源记录的效果说明：垂直光柱带柔和辉光，光线强弱与表面纹理形成动态照明感。
+口语别名：一道竖着的光柱、背景里有发光柱子
+触发方式：页面展示后持续光柱动画
+适用位置：首屏背景、品牌视觉
+检索标签：backgrounds、Light Pillar、一道竖着的光柱、背景里有发光柱子
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/light-pillar
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/LightPillar/LightPillar.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/3260c657755ad6ea.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:48:54.636Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：c9ac7c82a1934228
+中文名称：柔光丝绸背景
+原名称：Silk
+分类：视觉样式（style）
+来源记录的效果说明：柔和灯光照在起伏波面上，呈现丝绸般流动褶皱。
+口语别名：背景像丝绸在动、柔软布料一样的光影
+触发方式：页面展示后持续波动
+适用位置：品牌首页、产品背景
+检索标签：backgrounds、Silk、背景像丝绸在动、柔软布料一样的光影
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/silk
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Silk/Silk.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/c9ac7c82a1934228.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:48:54.852Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：86cafd741ca27db9
+中文名称：漂浮三维线带
+原名称：Floating Lines
+分类：视觉样式（style）
+来源记录的效果说明：多条有纵深的线带悬浮运动，随指针移动改变形态。
+口语别名：线条漂在空中、有前后层次的曲线
+触发方式：持续线带运动；鼠标移动
+适用位置：首屏背景、科技主视觉
+检索标签：backgrounds、Floating Lines、线条漂在空中、有前后层次的曲线
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/floating-lines
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/FloatingLines/FloatingLines.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/86cafd741ca27db9.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:48:54.973Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：ea992f33a99c04c8
+中文名称：侧面射入光线
+原名称：Side Rays
+分类：视觉样式（style）
+来源记录的效果说明：彩色光束从画面侧边射入并动态变化，颜色和速度可调整。
+口语别名：光从旁边照进来、侧边射出的彩色光束
+触发方式：页面展示后持续光线运动
+适用位置：首屏背景、标题衬底
+检索标签：backgrounds、Side Rays、光从旁边照进来、侧边射出的彩色光束
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/side-rays
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/SideRays/SideRays.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/ea992f33a99c04c8.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:49:30.867Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：2e43890744734192
+中文名称：体积光束背景
+原名称：Light Rays
+分类：视觉样式（style）
+来源记录的效果说明：可调方向的光束铺在背景中，形成空气里可见的照明射线。
+口语别名：背景有一束束光、像聚光灯照出光路
+触发方式：页面展示后持续光线变化
+适用位置：首屏背景、重点区块
+检索标签：backgrounds、Light Rays、背景有一束束光、像聚光灯照出光路
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/light-rays
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/LightRays/LightRays.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/2e43890744734192.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:49:31.913Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：c39b87bd28208fda
+中文名称：像素爆发背景
+原名称：Pixel Blast
+分类：视觉样式（style）
+来源记录的效果说明：像素颗粒形成爆发式波动，可配合液体后期形变。
+口语别名：很多小方块一波波炸开、像素粒子爆发
+触发方式：持续像素波动；按配置响应点击与指针
+适用位置：首屏背景、游戏活动页
+检索标签：backgrounds、Pixel Blast、很多小方块一波波炸开、像素粒子爆发
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/pixel-blast
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/PixelBlast/PixelBlast.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/c39b87bd28208fda.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:49:32.007Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：8efc173167387304
+中文名称：弯曲流动色带
+原名称：Color Bends
+分类：视觉样式（style）
+来源记录的效果说明：高饱和色带平滑弯曲与流动，形成层次分明的抽象渐变背景。
+口语别名：彩色色带绕来绕去、弯曲流动的渐变
+触发方式：页面展示后持续流动
+适用位置：首屏背景、品牌页面
+检索标签：backgrounds、Color Bends、彩色色带绕来绕去、弯曲流动的渐变
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/color-bends
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/ColorBends/ColorBends.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/8efc173167387304.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:49:49.170Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：c3183d21c9a5e468
+中文名称：彩色线条波浪
+原名称：Line Waves
+分类：视觉样式（style）
+来源记录的效果说明：线条组成连续波面，在彩色扭曲中动态起伏。
+口语别名：一排彩线像波浪一样动、弯来弯去的彩色线条
+触发方式：页面展示后持续波动
+适用位置：首屏背景、科技视觉
+检索标签：backgrounds、Line Waves、一排彩线像波浪一样动、弯来弯去的彩色线条
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/line-waves
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/LineWaves/LineWaves.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/c3183d21c9a5e468.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:49:49.948Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：508abc3c4c64fa23
+中文名称：余辉雷达扫描
+原名称：Radar
+分类：视觉样式（style）
+来源记录的效果说明：雷达扫线绕圆面转动，留下荧光余辉并捕捉运动目标，可呈平面或透视。
+口语别名：雷达一圈圈扫描、扫描过后还有余光
+触发方式：页面展示后持续扫描与目标运动
+适用位置：科技背景、监测展示
+检索标签：backgrounds、Radar、雷达一圈圈扫描、扫描过后还有余光
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/radar
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Radar/Radar.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/508abc3c4c64fa23.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:49:50.055Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：cef8de298c1faecd
+中文名称：柔和极光背景
+原名称：Soft Aurora
+分类：视觉样式（style）
+来源记录的效果说明：三维噪声与柔和彩色渐变组成缓慢变化的极光幕。
+口语别名：柔柔的极光颜色、轻微流动的彩色云幕
+触发方式：页面展示后持续极光变化
+适用位置：首屏背景、品牌页面
+检索标签：backgrounds、Soft Aurora、柔柔的极光颜色、轻微流动的彩色云幕
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/soft-aurora
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/SoftAurora/SoftAurora.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/cef8de298c1faecd.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:50:08.163Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：464ab000e19f001a
+中文名称：流动极光色幕
+原名称：Aurora
+分类：视觉样式（style）
+来源记录的效果说明：渐变色幕起伏、流动，形成极光般的彩色背景。
+口语别名：像北极光的背景、彩色光幕在飘
+触发方式：页面展示后持续流动
+适用位置：首屏背景、活动页面
+检索标签：backgrounds、Aurora、像北极光的背景、彩色光幕在飘
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/aurora
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Aurora/Aurora.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/464ab000e19f001a.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:50:08.641Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：9bbc56bb0979e302
+中文名称：暗处缎面光褶
+原名称：Plasma
+分类：视觉样式（style）
+来源记录的效果说明：明亮高光穿过暗处的缎面光褶，缓慢扭转并随指针改变方向。
+口语别名：暗背景里绸缎一样的光、发光褶皱缓缓转
+触发方式：持续光褶动画；鼠标移动
+适用位置：首屏背景、品牌主视觉
+检索标签：backgrounds、Plasma、暗背景里绸缎一样的光、发光褶皱缓缓转
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/plasma
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Plasma/Plasma.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/9bbc56bb0979e302.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:50:08.667Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：c192c5b4ab1389f2
+中文名称：交织等离子光带
+原名称：Plasma Wave
+分类：视觉样式（style）
+来源记录的效果说明：两条发光等离子丝带互相卷绕，白热核心周围带柔光，指针可搅动。
+口语别名：两条发光带互相绕、鼠标搅动的光波
+触发方式：持续光带动画；鼠标移动
+适用位置：首屏背景、音乐活动页
+检索标签：backgrounds、Plasma Wave、两条发光带互相绕、鼠标搅动的光波
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/plasma-wave
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/PlasmaWave/PlasmaWave.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/c192c5b4ab1389f2.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:50:32.718Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：f9e52b85f5bfc88a
+中文名称：漂浮粒子背景
+原名称：Particles
+分类：视觉样式（style）
+来源记录的效果说明：粒子在空间中漂浮，数量、尺寸和运动等参数可定制。
+口语别名：背景有很多漂浮小点、星星一样的粒子
+触发方式：页面展示后持续粒子运动
+适用位置：首屏背景、科技页面
+检索标签：backgrounds、Particles、背景有很多漂浮小点、星星一样的粒子
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/particles
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Particles/Particles.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/f9e52b85f5bfc88a.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:50:32.981Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：ed618ca34f223c93
+中文名称：渐变百叶光带
+原名称：Gradient Blinds
+分类：视觉样式（style）
+来源记录的效果说明：渐变分层成百叶状条带，聚光与噪声形变让表面呈现动态光感。
+口语别名：彩色百叶窗背景、一条条渐变光带
+触发方式：持续渐变；鼠标位置控制聚光
+适用位置：首屏背景、活动视觉
+检索标签：backgrounds、Gradient Blinds、彩色百叶窗背景、一条条渐变光带
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/gradient-blinds
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/GradientBlinds/GradientBlinds.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/ed618ca34f223c93.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:50:33.074Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：bececab1c32bb05e
+中文名称：颗粒流动渐变
+原名称：Grainient
+分类：视觉样式（style）
+来源记录的效果说明：带细颗粒的渐变漩涡随柔和波动扭曲，形成有印刷质感的色面。
+口语别名：有颗粒的渐变背景、彩色噪点慢慢流动
+触发方式：页面展示后持续色面运动
+适用位置：品牌背景、海报页面
+检索标签：backgrounds、Grainient、有颗粒的渐变背景、彩色噪点慢慢流动
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/grainient
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Grainient/Grainient.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/bececab1c32bb05e.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:50:53.209Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：49f5a8dc7f011753
+中文名称：三维网格扫描室
+原名称：Grid Scan
+分类：视觉样式（style）
+来源记录的效果说明：网格构成三维房间，扫描光带移动经过格线，产生纵深空间感。
+口语别名：像进入网格房间、立体网格被光扫描
+触发方式：页面展示后持续扫描
+适用位置：科技首屏、沉浸式背景
+检索标签：backgrounds、Grid Scan、像进入网格房间、立体网格被光扫描
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/grid-scan
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/GridScan/GridScan.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/49f5a8dc7f011753.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:50:53.255Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：23f7b395fdbca769
+中文名称：交错发光条带
+原名称：Beams
+分类：视觉样式（style）
+来源记录的效果说明：发光条带交错穿过画面，光照与材质细节形成立体动态背景。
+口语别名：几束光条交叉移动、发光带子从背景穿过
+触发方式：页面展示后持续条带运动
+适用位置：首屏背景、品牌主视觉
+检索标签：backgrounds、Beams、几束光条交叉移动、发光带子从背景穿过
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/beams
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Beams/Beams.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/23f7b395fdbca769.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:50:53.604Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：51b783e9ea251dbd
+中文名称：像素雪花背景
+原名称：Pixel Snow
+分类：视觉样式（style）
+来源记录的效果说明：多层像素雪花带柔光飘落，风影响方向，指针可拨开附近雪花。
+口语别名：像素雪一片片落下、鼠标拨开小方块雪花
+触发方式：持续飘雪；鼠标移动
+适用位置：节日背景、复古页面
+检索标签：backgrounds、Pixel Snow、像素雪一片片落下、鼠标拨开小方块雪花
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/pixel-snow
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/PixelSnow/PixelSnow.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/51b783e9ea251dbd.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:51:15.572Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：904f278b52d12a31
+中文名称：分叉闪电背景
+原名称：Lightning
+分类：视觉样式（style）
+来源记录的效果说明：程序生成的闪电分支带辉光闪烁，呈现电流突然出现的效果。
+口语别名：背景里闪电在闪、分叉的发光雷电
+触发方式：页面展示后持续闪电动画
+适用位置：游戏页面、活动首屏
+检索标签：backgrounds、Lightning、背景里闪电在闪、分叉的发光雷电
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/lightning
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Lightning/Lightning.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/904f278b52d12a31.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:51:15.936Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：7f1ca4f3bc37da46
+中文名称：棱彩射线爆发
+原名称：Prismatic Burst
+分类：视觉样式（style）
+来源记录的效果说明：彩色光线从中心向外爆发，数量、颜色与扭曲可调整。
+口语别名：中心放出很多彩光、彩虹射线向外散开
+触发方式：页面展示后持续光线动画
+适用位置：首屏背景、音乐活动页
+检索标签：backgrounds、Prismatic Burst、中心放出很多彩光、彩虹射线向外散开
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/prismatic-burst
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/PrismaticBurst/PrismaticBurst.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/7f1ca4f3bc37da46.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:51:16.317Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：1f9fac0087195dfe
+中文名称：视差星河背景
+原名称：Galaxy
+分类：视觉样式（style）
+来源记录的效果说明：星点组成有纵深的星河，随指针产生视差移动。
+口语别名：背景是会动的星空、鼠标一动星河跟着偏
+触发方式：持续星点动画；鼠标移动
+适用位置：首屏背景、宇宙主题页
+检索标签：backgrounds、Galaxy、背景是会动的星空、鼠标一动星河跟着偏
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/galaxy
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Galaxy/Galaxy.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/1f9fac0087195dfe.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:51:45.163Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：679505985f285534
+中文名称：复古抖色纹理
+原名称：Dither
+分类：视觉样式（style）
+来源记录的效果说明：噪声与波动转为离散像素抖色，形成老式印刷或低色数画面的质感。
+口语别名：背景像黑白网点、老电脑一样的抖色纹理
+触发方式：页面展示后持续噪声动画
+适用位置：复古背景、实验视觉
+检索标签：backgrounds、Dither、背景像黑白网点、老电脑一样的抖色纹理
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/dither
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Dither/Dither.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/679505985f285534.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:51:45.300Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：7f70e6e524e90b1c
+中文名称：故障终端格纹
+原名称：Faulty Terminal
+分类：视觉样式（style）
+来源记录的效果说明：方格、扫描线、闪烁和噪声组成类似故障 CRT 终端的动态背景。
+口语别名：像坏掉的电脑终端、格子屏幕闪来闪去
+触发方式：页面展示后持续闪烁与噪声
+适用位置：科技背景、游戏页面
+检索标签：backgrounds、Faulty Terminal、像坏掉的电脑终端、格子屏幕闪来闪去
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/faulty-terminal
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/FaultyTerminal/FaultyTerminal.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/7f70e6e524e90b1c.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:51:45.585Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：1e2cba52b91836a8
+中文名称：涟漪网格背景
+原名称：Ripple Grid
+分类：视觉样式（style）
+来源记录的效果说明：规则网格随连续涟漪起伏，线条的形变呈现波纹向外传播。
+口语别名：网格像水面一样波动、格线一圈圈起伏
+触发方式：页面展示后持续涟漪动画
+适用位置：首屏背景、科技页面
+检索标签：backgrounds、Ripple Grid、网格像水面一样波动、格线一圈圈起伏
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/ripple-grid
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/RippleGrid/RippleGrid.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/1e2cba52b91836a8.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:52:33.842Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：dd8f826257e9fe77
+中文名称：互动凸起点阵
+原名称：Dot Field
+分类：视觉样式（style）
+来源记录的效果说明：点阵在指针附近凸起、发光或闪烁，并可形成波浪反馈。
+口语别名：鼠标经过点阵鼓起来、一片小点有波浪
+触发方式：鼠标移动；按配置产生波动
+适用位置：首屏背景、互动区域
+检索标签：backgrounds、Dot Field、鼠标经过点阵鼓起来、一片小点有波浪
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/dot-field
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/DotField/DotField.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/dd8f826257e9fe77.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:52:34.968Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：09b8e5c8fc798712
+中文名称：鼠标拨开丝线
+原名称：Threads
+分类：视觉样式（style）
+来源记录的效果说明：流动细线可呈丝绸或等高线质感，指针靠近时线条散开、让出空间。
+口语别名：鼠标拨开一束细线、光丝会给鼠标让路
+触发方式：持续线丝运动；鼠标移动
+适用位置：首屏背景、品牌主视觉
+检索标签：backgrounds、Threads、鼠标拨开一束细线、光丝会给鼠标让路
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/threads
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Threads/Threads.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/09b8e5c8fc798712.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:52:35.375Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：7a14abb3494424ce
+中文名称：高速公路光轨
+原名称：Hyperspeed
+分类：视觉样式（style）
+来源记录的效果说明：发光车道与车辆尾迹沿弯曲道路前进，按住时进入高速穿梭状态。
+口语别名：像开车冲进时光隧道、按住鼠标光轨加速
+触发方式：持续光轨；按住鼠标或触摸加速
+适用位置：沉浸式开场、游戏首页
+检索标签：backgrounds、Hyperspeed、像开车冲进时光隧道、按住鼠标光轨加速
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/hyperspeed
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Hyperspeed/Hyperspeed.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/7a14abb3494424ce.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:52:55.248Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：17fa4426bd6915c5
+中文名称：虹彩液态表面
+原名称：Iridescence
+分类：视觉样式（style）
+来源记录的效果说明：表面褶皱不断折射虹彩，鼠标移动可搅动流动纹理。
+口语别名：像彩色油膜在流动、鼠标搅动虹彩液体
+触发方式：持续纹理变化；鼠标移动
+适用位置：品牌背景、产品主视觉
+检索标签：backgrounds、Iridescence、像彩色油膜在流动、鼠标搅动虹彩液体
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/iridescence
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Iridescence/Iridescence.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/17fa4426bd6915c5.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:52:55.538Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：81a15c8383335520
+中文名称：分层曲线波浪
+原名称：Waves
+分类：视觉样式（style）
+来源记录的效果说明：分层线条持续组成平滑波浪，并可随指针产生扰动。
+口语别名：很多细线像海浪、线条一层层起伏
+触发方式：持续波浪；按配置响应鼠标
+适用位置：首屏背景、页面装饰
+检索标签：backgrounds、Waves、很多细线像海浪、线条一层层起伏
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/waves
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Waves/Waves.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/81a15c8383335520.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:52:56.110Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：68d80b3867d6cb9f
+中文名称：鼠标扭曲图片网格
+原名称：Grid Distortion
+分类：视觉样式（style）
+来源记录的效果说明：图片在鼠标附近分成位移格块，离开后格块回到原位。
+口语别名：鼠标把图片推成小格子、照片局部像素错位
+触发方式：鼠标在图片区域移动
+适用位置：首屏图片、作品封面
+检索标签：backgrounds、Grid Distortion、鼠标把图片推成小格子、照片局部像素错位
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/grid-distortion
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/GridDistortion/GridDistortion.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/68d80b3867d6cb9f.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:53:19.067Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：4c946fb9557624f8
+中文名称：彩色弹跳球池
+原名称：Ballpit
+分类：视觉样式（style）
+来源记录的效果说明：多枚彩色三维球体以物理方式碰撞、弹跳，形成可以互动的球池。
+口语别名：一堆彩球互相撞、彩色弹力球铺满背景
+触发方式：持续物理模拟；按配置指针推动
+适用位置：互动背景、儿童活动页
+检索标签：backgrounds、Ballpit、一堆彩球互相撞、彩色弹力球铺满背景
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/ballpit
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Ballpit/Ballpit.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/4c946fb9557624f8.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:53:19.106Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：6ebabc779110f699
+中文名称：漂浮能量光球
+原名称：Orb
+分类：视觉样式（style）
+来源记录的效果说明：发光能量球在中心漂浮，悬停时可改变旋转或强度。
+口语别名：一个发光能量球、鼠标碰到光球会变化
+触发方式：持续光球动画；鼠标悬停
+适用位置：首屏视觉、科技页面
+检索标签：backgrounds、Orb、一个发光能量球、鼠标碰到光球会变化
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/orb
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Orb/Orb.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/6ebabc779110f699.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:53:19.198Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：46bf6b92d95855c3
+中文名称：字符故障矩阵
+原名称：Letter Glitch
+分类：视觉样式（style）
+来源记录的效果说明：密集字符不断换字和换色，形成类似矩阵终端的随机跳动背景。
+口语别名：整屏代码字符乱跳、像黑客矩阵的字墙
+触发方式：页面展示后持续字符更新
+适用位置：科技背景、开发者首页
+检索标签：backgrounds、Letter Glitch、整屏代码字符乱跳、像黑客矩阵的字墙
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/letter-glitch
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/LetterGlitch/LetterGlitch.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/46bf6b92d95855c3.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:53:45.901Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：f54537d48d15cbc5
+中文名称：倾斜流动内容墙
+原名称：Grid Motion
+分类：视觉样式（style）
+来源记录的效果说明：照片、文字或内容块组成倾斜墙面，随指针滑动，停留处亮起。
+口语别名：斜着的卡片墙跟着鼠标走、一格格内容缓慢漂移
+触发方式：持续漂移；鼠标移动与停留
+适用位置：作品背景、内容展示墙
+检索标签：backgrounds、Grid Motion、斜着的卡片墙跟着鼠标走、一格格内容缓慢漂移
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/grid-motion
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/GridMotion/GridMotion.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/f54537d48d15cbc5.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:53:46.080Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：7db027773c30b3f2
+中文名称：移动几何网格
+原名称：Shape Grid
+分类：视觉样式（style）
+来源记录的效果说明：正方、六边、圆或三角网格按设定方向连续移动，形成几何铺底。
+口语别名：很多几何格子一直移动、可以换形状的网格背景
+触发方式：页面展示后持续移动
+适用位置：首屏背景、科技页面
+检索标签：backgrounds、Shape Grid、很多几何格子一直移动、可以换形状的网格背景
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/shape-grid
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/ShapeGrid/ShapeGrid.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/7db027773c30b3f2.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:53:46.671Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：5f1bca2991ee5a32
+中文名称：液态铬反光背景
+原名称：Liquid Chrome
+分类：视觉样式（style）
+来源记录的效果说明：金属铬般的表面不断流动，反光与褶皱形成液态质感。
+口语别名：流动的银色金属背景、像液体镜面的纹理
+触发方式：页面展示后持续流动
+适用位置：品牌背景、产品主视觉
+检索标签：backgrounds、Liquid Chrome、流动的银色金属背景、像液体镜面的纹理
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/liquid-chrome
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/LiquidChrome/LiquidChrome.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/5f1bca2991ee5a32.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:54:05.763Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：801a0fbdfac7af1e
+中文名称：旋涡扑克牌风格背景
+原名称：Balatro
+分类：视觉样式（style）
+来源记录的效果说明：红蓝等色彩在圆形漩涡中旋转流动，形成 Balatro 风格的像素化光场。
+口语别名：红蓝漩涡一直转、像扑克牌游戏的旋转背景
+触发方式：持续旋涡动画；按配置响应鼠标
+适用位置：游戏背景、活动主视觉
+检索标签：backgrounds、Balatro、红蓝漩涡一直转、像扑克牌游戏的旋转背景
+来源：reactbits
+来源地址：https://reactbits.dev/backgrounds/balatro
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Balatro/Balatro.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/801a0fbdfac7af1e.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:54:06.862Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：3a865035626f460b
+中文名称：每一步都会交融换底色的引导页
+原名称：Google Docs Value Prop Full Screen Color Transition
+分类：视觉样式（style）
+来源记录的效果说明：分步介绍切换时，整屏背景平滑从一种鲜明色彩交融到另一种，插画和文案横向滑动并带轻微视差，使不同步骤形成一致的视觉节奏。
+口语别名：下一页整个背景换颜色、介绍页一屏一个颜色、插画跟着换页滑动
+触发方式：切换新手引导步骤时同步改变背景色、插画和文案
+适用位置：新手引导、产品价值介绍、移动端入门
+检索标签：全屏色彩、背景过渡、横向滑动、视差、Google Docs
+来源：60fps
+来源地址：https://60fps.design/shots/google-docs-value-prop-full-screen-color-transition
+实现参考：未提供实现源码地址；按视觉行为参考，不声称可直接集成。
+预览来源性质：来源原始视频
+本地预览：/media/sources/3a865035626f460b.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：保存原站公开视频素材并本地转码，保留完整原始帧比例；素材地址、HTTP和摘要见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T08:22:39.394Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。

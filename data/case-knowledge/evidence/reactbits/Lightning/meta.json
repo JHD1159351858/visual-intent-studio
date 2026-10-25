@@ -1,0 +1,21 @@
+{
+  "entryId": "904f278b52d12a31",
+  "sourceUrl": "https://reactbits.dev/backgrounds/lightning",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Lightning-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Lightning/Lightning.jsx",
+  "checkedAt": "2026-10-25T07:53:10.438Z",
+  "sha256": "d2fc98ace24bbb657a76fb8b47a0a159a9183de2122725d208afcfdb05f70a7c",
+  "files": [
+    {
+      "path": "Lightning.css",
+      "sha256": "f2cd99f5a8ce288a1178b7fdf9cd0811e3095c5bcc792ff27b72bb56c54cedab",
+      "bytes": 96
+    },
+    {
+      "path": "Lightning.jsx",
+      "sha256": "c721c821fcc9709452e860278e371e52f3516b53ca2815c3dd6acab8024b7fa7",
+      "bytes": 20434
+    }
+  ]
+}

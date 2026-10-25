@@ -1,0 +1,43 @@
+.modal.requirements-modal{width:min(760px,calc(100% - 30px))}
+.requirements-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px 20px;min-width:0}
+.requirements-form-intro{grid-column:1/-1;font-size:12px;line-height:1.9;color:#8490a4;margin-bottom:2px}
+.requirements-field{display:flex;flex-wrap:wrap;align-content:start;align-items:center;gap:7px;min-width:0;font-size:12px;color:#748094}
+.requirements-field-wide{grid-column:1/-1}
+.requirements-required,.requirements-field-hint{font-size:10px;color:#949fb2;font-weight:400}
+.requirements-required{color:#7b86bf}
+.requirements-field :is(input,textarea,select){display:block;min-width:0;font-size:12px;line-height:1.8}
+.requirements-field textarea{min-height:96px}
+.requirements-field :is(input,textarea)::placeholder{color:#9aa4b6}
+.requirements-actions{grid-column:1/-1;display:flex;justify-content:flex-end;gap:9px;padding-top:5px}
+.requirements-summary{min-width:0;padding-bottom:21px;margin-bottom:21px;border-bottom:1px solid #eef1f5}
+.requirements-summary-heading{display:flex;flex-wrap:wrap;align-items:baseline;gap:5px 10px;margin-bottom:13px}
+.requirements-summary-heading h3{font-size:12px;color:#637084;font-weight:600}
+.requirements-summary-heading>span{font-size:9px;color:#98a2b3}
+.requirements-summary-content{display:flex;flex-direction:column;gap:12px;max-height:240px;overflow:auto;scrollbar-width:thin;scrollbar-color:#d9deed transparent;padding-right:4px}
+.requirements-summary-item{min-width:0}
+.requirements-summary-item h4{margin:0 0 3px;color:#8c97a9;font-size:10px;font-weight:500}
+.requirements-summary-item p,.requirements-summary-item li{font-size:11px;line-height:1.8;color:#667286;overflow-wrap:anywhere;white-space:pre-wrap}
+.requirements-summary-item ul{margin:0;padding-left:17px}
+.requirements-summary-item li+li{margin-top:3px}
+.requirements-summary-item p.requirements-empty{color:#9aa4b3}
+.requirements-edit{width:100%;margin-top:16px;white-space:normal}
+.requirements-suggestion{min-width:0;margin-top:0;margin-bottom:15px;padding:13px;border:1px solid #dce2f4;border-radius:16px;background:#f7f8ff}
+.requirements-suggestion-heading{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px;margin-bottom:8px}
+.requirements-suggestion-heading h4{margin:0;font-size:11px;font-weight:600;color:#626e97}
+.requirements-suggestion-heading>span{padding:3px 7px;border-radius:7px;background:#eceeff;font-size:9px;color:#7c80b2}
+.requirements-suggestion p,.requirements-suggestion li{font-size:11px;line-height:1.8;color:#6d7790;overflow-wrap:anywhere}
+.requirements-suggestion-goal{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;margin:0 0 6px}
+.requirements-suggestion p.requirements-suggestion-features{margin:0 0 9px;color:#8a93a8}
+.requirements-suggestion-details summary{font-size:10px;line-height:1.8;color:#7c85ad;cursor:pointer}
+.requirements-suggestion-content{display:flex;flex-direction:column;gap:8px;max-height:210px;overflow:auto;padding-top:9px;scrollbar-width:thin}
+.requirements-suggestion-content p{margin:0}
+.requirements-suggestion-content strong{display:block;font-size:10px;font-weight:500;color:#8c95ad}
+.requirements-suggestion-content ul{margin:3px 0 0;padding-left:16px}
+.requirements-suggestion p.requirements-suggestion-note{margin:10px 0;color:#969db1;font-size:10px}
+.requirements-suggestion-actions{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:7px}
+.requirements-suggestion-actions .button{min-width:0;padding:8px 10px;font-size:10px}
+.requirements-reference-heading{font-size:11px;font-weight:600;color:#748094;margin-bottom:15px}
+.requirements-linked-references{display:flex;flex-direction:column;gap:5px;margin-bottom:14px;padding:12px 14px;border:1px solid #dde3f5;border-radius:14px;background:#f4f6ff;font-size:11px;color:#697794;line-height:1.7}
+.requirements-linked-references strong{font-weight:600;color:#51658e}
+.export-footer p.requirements-stale{padding:9px 11px;margin-bottom:12px;border:1px solid #e7dbba;border-radius:12px;background:#fffaf0;color:#8a713b;line-height:1.7}
+@media(max-width:600px){.requirements-form{grid-template-columns:minmax(0,1fr);gap:15px}.requirements-actions{flex-wrap:wrap}.modal.requirements-modal{padding:22px}}

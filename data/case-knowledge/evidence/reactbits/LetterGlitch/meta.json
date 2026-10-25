@@ -1,0 +1,21 @@
+{
+  "entryId": "46bf6b92d95855c3",
+  "sourceUrl": "https://reactbits.dev/backgrounds/letter-glitch",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/LetterGlitch-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/LetterGlitch/LetterGlitch.jsx",
+  "checkedAt": "2026-10-25T07:53:11.752Z",
+  "sha256": "686129120810d3cd2ddafdf4c94e2234440f6f1b83cc4ceba98c83d22adeb7d6",
+  "files": [
+    {
+      "path": "LetterGlitch.css",
+      "sha256": "0767ab47da781aff920efee2a7b77af560b8b25a6ba9558bf232d16acf08fd71",
+      "bytes": 202
+    },
+    {
+      "path": "LetterGlitch.jsx",
+      "sha256": "a66384312f55c03b5482e8ffc509cb9e122260f8d80bff6db5bba049fe244c92",
+      "bytes": 32831
+    }
+  ]
+}

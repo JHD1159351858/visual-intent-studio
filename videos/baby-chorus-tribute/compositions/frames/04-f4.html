@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Inter";
+          src: url("../../assets/fonts/Inter-latin.woff2") format("woff2");
+          font-weight: 100 900;
+          font-style: normal;
+          font-display: block;
+        }
+        @font-face {
+          font-family: "Space Grotesk";
+          src: url("../../assets/fonts/SpaceGrotesk-latin.woff2") format("woff2");
+          font-weight: 300 700;
+          font-style: normal;
+          font-display: block;
+        }
+
+        *,
+        *::before,
+        *::after {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        #stage {
+          position: absolute;
+          inset: 0;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          background: #000000;
+          font-family: "Inter", Arial, sans-serif;
+          -webkit-font-smoothing: antialiased;
+        }
+
+        /* group containers — swapped with 0ms tl.set */
+        .g {
+          position: absolute;
+          inset: 0;
+        }
+        #f4_g2 {
+          visibility: hidden;
+          opacity: 0;
+        }
+
+        .cam {
+          position: absolute;
+          inset: 0;
+          will-change: transform;
+        }
+
+        /* ---------- the 4x4 wall ---------- */
+        .grid {
+          position: absolute;
+          left: 65px;
+          top: 45px;
+          width: 1790px;
+          height: 990px;
+          display: grid;
+          grid-template-columns: repeat(4, 440px);
+          grid-template-rows: repeat(4, 240px);
+          gap: 10px;
+          --cs: 0px;
+        }
+        #f4_g1_grid {
+          z-index: 2;
+        }
+        #f4_g2_grid {
+          z-index: 2;
+        }
+
+        /* chromatic-split fringes, driven by the --cs variable on the grid */
+        .face,
+        .w-tile {
+          text-shadow:
+            calc(var(--cs) * -1) 0 0 #fe90e8,
+            var(--cs) 0 0 #c0f7fe;
+        }
+
+        /* group 1 tiles — black slab flipping to a lit treatment */
+        .g1-tile {
+          position: relative;
+          width: 440px;
+          height: 240px;
+          perspective: 900px;
+        }
+        .flip {
+          position: absolute;
+          inset: 0;
+          transform-style: preserve-3d;
+          transform: rotateY(0deg);
+          will-change: transform;
+        }
+        .face {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          font-family: "Inter", Arial, sans-serif;
+          font-weight: 900;
+          font-size: 120px;
+          line-height: 1;
+          letter-spacing: -0.035em;
+          text-transform: uppercase;
+          color: #000000;
+        }
+        .back {
+          background: linear-gradient(180deg, #101014 0%, #050507 100%);
+          box-shadow: inset 0 0 0 1px #4a4a52;
+          color: #3d3d46;
+        }
+        .front {
+          transform: rotateY(180deg);
+        }
+        .tr-chrome {
+          background: linear-gradient(
+            168deg,
+            #ffffff 0%,
+            #dfe6ee 14%,
+            #8d97a4 32%,
+            #f7fafc 48%,
+            #69727e 66%,
+            #e8edf3 82%,
+            #ffffff 100%
+          );
+          color: #000000;
+        }
+        .tr-pink {
+          background: #fe90e8;
+          color: #000000;
+        }
+        .tr-ice {
+          background: #c0f7fe;
+          color: #000000;
+        }
+        .tr-cream {
+          background: #fffdf5;
+          color: #000000;
+        }
+        .tr-scan {
+          background: #000000;
+          color: #fffdf5;
+          box-shadow: inset 0 0 0 1px #4a4a4a;
+        }
+        .tr-scan::after {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: repeating-linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0) 0px,
+            rgba(255, 255, 255, 0) 3px,
+            rgba(255, 255, 255, 0.16) 3px,
+            rgba(255, 255, 255, 0.16) 4px
+          );
+          pointer-events: none;
+        }
+
+        /* group 2 inverted wall — white tiles, black BABY */
+        .w-tile {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 440px;
+          height: 240px;
+          background: #ffffff;
+          box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.16);
+          font-family: "Inter", Arial, sans-serif;
+          font-weight: 900;
+          font-size: 120px;
+          line-height: 1;
+          letter-spacing: -0.035em;
+          text-transform: uppercase;
+          color: #000000;
+          will-change: transform, opacity;
+        }
+
+        /* ---------- chrome heart behind the wall ---------- */
+        .g2-glow {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          width: 1320px;
+          height: 1180px;
+          margin-left: -660px;
+          margin-top: -590px;
+          background: radial-gradient(
+            circle at 50% 50%,
+            rgba(255, 253, 245, 0.1) 0%,
+            rgba(192, 247, 254, 0.05) 38%,
+            rgba(0, 0, 0, 0) 68%
+          );
+          z-index: 0;
+          will-change: transform, opacity;
+        }
+        .heart-wrap {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          width: 840px;
+          height: 756px;
+          margin-left: -420px;
+          margin-top: -378px;
+          z-index: 1;
+        }
+        #f4_g2_heart {
+          display: block;
+          width: 840px;
+          height: 756px;
+          overflow: visible;
+          will-change: transform;
+        }
+
+        /* ---------- burst shards ---------- */
+        .particles {
+          position: absolute;
+          inset: 0;
+          z-index: 3;
+          pointer-events: none;
+        }
+        .pt {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          opacity: 0;
+          will-change: transform, opacity;
+        }
+
+        /* ---------- STILL ---------- */
+        #f4_g2_still {
+          position: absolute;
+          left: 90px;
+          bottom: 82px;
+          z-index: 9;
+          font-family: "Inter", Arial, sans-serif;
+          font-weight: 900;
+          font-size: 140px;
+          line-height: 0.9;
+          letter-spacing: -0.04em;
+          text-transform: uppercase;
+          color: transparent;
+          background: linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #dbe3ec 26%,
+            #79828f 52%,
+            #ffffff 66%,
+            #9aa4b0 84%,
+            #ffffff 100%
+          );
+          -webkit-background-clip: text;
+          background-clip: text;
+          filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, 0.92));
+          visibility: hidden;
+          opacity: 0;
+          will-change: transform, opacity;
+        }
+      </style>
+
+      <div data-hf-id="f4_hf-5p9i"
+        id="stage"
+        data-composition-id="04-f4"
+        data-width="1920"
+        data-height="1080"
+        data-duration="7.384"
+      >
+        <!-- ================= GROUP 1 · wall builds tile by tile ================= -->
+        <div data-hf-id="f4_hf-8e4d" class="g" id="f4_g1">
+          <div data-hf-id="f4_hf-dtgf" class="cam" id="f4_g1_cam">
+            <div data-hf-id="f4_hf-58zl" class="grid" id="f4_g1_grid">
+              <div data-hf-id="f4_hf-9ymm" class="g1-tile" id="f4_g1_t0"><div data-hf-id="f4_hf-xxqk" class="flip" data-layout-allow-overlap id="f4_g1_f0"><div data-hf-id="f4_hf-uji0" class="face back">BABY</div><div data-hf-id="f4_hf-phw3" class="face front tr-chrome">BABY</div></div></div>
+              <div data-hf-id="f4_hf-dwqn" class="g1-tile" id="f4_g1_t1"><div data-hf-id="f4_hf-yped" class="flip" data-layout-allow-overlap id="f4_g1_f1"><div data-hf-id="f4_hf-g0eo" class="face back">BABY</div><div data-hf-id="f4_hf-67ed" class="face front tr-pink">BABY</div></div></div>
+              <div data-hf-id="f4_hf-3190" class="g1-tile" id="f4_g1_t2"><div data-hf-id="f4_hf-2nie" class="flip" data-layout-allow-overlap id="f4_g1_f2"><div data-hf-id="f4_hf-ethl" class="face back">BABY</div><div data-hf-id="f4_hf-gg5i" class="face front tr-ice">BABY</div></div></div>
+              <div data-hf-id="f4_hf-3swt" class="g1-tile" id="f4_g1_t3"><div data-hf-id="f4_hf-6lmf" class="flip" data-layout-allow-overlap id="f4_g1_f3"><div data-hf-id="f4_hf-f7sm" class="face back">BABY</div><div data-hf-id="f4_hf-m71t" class="face front tr-cream">BABY</div></div></div>
+              <div data-hf-id="f4_hf-mkmi" class="g1-tile" id="f4_g1_t4"><div data-hf-id="f4_hf-crc8" class="flip" data-layout-allow-overlap id="f4_g1_f4"><div data-hf-id="f4_hf-e0vj" class="face back">BABY</div><div data-hf-id="f4_hf-xbre" class="face front tr-scan">BABY</div></div></div>
+              <div data-hf-id="f4_hf-qiqj" class="g1-tile" id="f4_g1_t5"><div data-hf-id="f4_hf-dj01" class="flip" data-layout-allow-overlap id="f4_g1_f5"><div data-hf-id="f4_hf-ef6k" class="face back">BABY</div><div data-hf-id="f4_hf-cbw3" class="face front tr-chrome">BABY</div></div></div>
+              <div data-hf-id="f4_hf-huuo" class="g1-tile" id="f4_g1_t6"><div data-hf-id="f4_hf-hh42" class="flip" data-layout-allow-overlap id="f4_g1_f6"><div data-hf-id="f4_hf-d89h" class="face back">BABY</div><div data-hf-id="f4_hf-ex49" class="face front tr-pink">BABY</div></div></div>
+              <div data-hf-id="f4_hf-imih" class="g1-tile" id="f4_g1_t7"><div data-hf-id="f4_hf-lf83" class="flip" data-layout-allow-overlap id="f4_g1_f7"><div data-hf-id="f4_hf-dmki" class="face back">BABY</div><div data-hf-id="f4_hf-jtmy" class="face front tr-ice">BABY</div></div></div>
+              <div data-hf-id="f4_hf-1e86" class="g1-tile" id="f4_g1_t8"><div data-hf-id="f4_hf-6i50" class="flip" data-layout-allow-overlap id="f4_g1_f8"><div data-hf-id="f4_hf-cfnf" class="face back">BABY</div><div data-hf-id="f4_hf-7r51" class="face front tr-cream">BABY</div></div></div>
+              <div data-hf-id="f4_hf-5cc7" class="g1-tile" id="f4_g1_t9"><div data-hf-id="f4_hf-79st" class="flip" data-layout-allow-overlap id="f4_g1_f9"><div data-hf-id="f4_hf-ctyg" class="face back">BABY</div><div data-hf-id="f4_hf-cqku" class="face front tr-scan">BABY</div></div></div>
+              <div data-hf-id="f4_hf-41jp" class="g1-tile" id="f4_g1_t10"><div data-hf-id="f4_hf-41gn" class="flip" data-layout-allow-overlap id="f4_g1_f10"><div data-hf-id="f4_hf-xw0w" class="face back">BABY</div><div data-hf-id="f4_hf-bxl2" class="face front tr-chrome">BABY</div></div></div>
+              <div data-hf-id="f4_hf-12a4" class="g1-tile" id="f4_g1_t11"><div data-hf-id="f4_hf-03cm" class="flip" data-layout-allow-overlap id="f4_g1_f11"><div data-hf-id="f4_hf-xhpv" class="face back">BABY</div><div data-hf-id="f4_hf-k60g" class="face front tr-pink">BABY</div></div></div>
+              <div data-hf-id="f4_hf-bxrr" class="g1-tile" id="f4_g1_t12"><div data-hf-id="f4_hf-txmt" class="flip" data-layout-allow-overlap id="f4_g1_f12"><div data-hf-id="f4_hf-x3eu" class="face back">BABY</div><div data-hf-id="f4_hf-k7xz" class="face front tr-ice">BABY</div></div></div>
+              <div data-hf-id="f4_hf-7znq" class="g1-tile" id="f4_g1_t13"><div data-hf-id="f4_hf-t5z0" class="flip" data-layout-allow-overlap id="f4_g1_f13"><div data-hf-id="f4_hf-wp3t" class="face back">BABY</div><div data-hf-id="f4_hf-8y24" class="face front tr-cream">BABY</div></div></div>
+              <div data-hf-id="f4_hf-gnjl" class="g1-tile" id="f4_g1_t14"><div data-hf-id="f4_hf-gngj" class="flip" data-layout-allow-overlap id="f4_g1_f14"><div data-hf-id="f4_hf-wass" class="face back">BABY</div><div data-hf-id="f4_hf-d4vv" class="face front tr-scan">BABY</div></div></div>
+              <div data-hf-id="f4_hf-fvvs" class="g1-tile" id="f4_g1_t15"><div data-hf-id="f4_hf-cpci" class="flip" data-layout-allow-overlap id="f4_g1_f15"><div data-hf-id="f4_hf-vwhr" class="face back">BABY</div><div data-hf-id="f4_hf-bja1" class="face front tr-chrome">BABY</div></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= GROUP 2 · invert, collapse, chrome heart ================= -->
+        <div data-hf-id="f4_hf-cc8e" class="g" id="f4_g2">
+          <div data-hf-id="f4_hf-tcm8" class="cam" id="f4_g2_cam">
+            <div data-hf-id="f4_hf-ic5m" class="g2-glow" id="f4_g2_glow"></div>
+
+            <div data-hf-id="f4_hf-mrld" class="heart-wrap" id="f4_g2_heartWrap">
+              <svg data-hf-id="f4_hf-2cfc"
+                id="f4_g2_heart"
+                viewBox="0 0 200 180"
+                width="840"
+                height="756"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <defs data-hf-id="f4_hf-mh0t">
+                  <linearGradient data-hf-id="f4_hf-3lad" id="f4_g2_chrome" x1="0" y1="0" x2="0.18" y2="1">
+                    <stop data-hf-id="f4_hf-mzbo" offset="0" stop-color="#FFFFFF" />
+                    <stop data-hf-id="f4_hf-6j6s" offset="0.13" stop-color="#DCE3EB" />
+                    <stop data-hf-id="f4_hf-ic5w" offset="0.28" stop-color="#8A94A1" />
+                    <stop data-hf-id="f4_hf-gqzf" offset="0.4" stop-color="#F5F8FB" />
+                    <stop data-hf-id="f4_hf-c8gi" offset="0.55" stop-color="#6A737F" />
+                    <stop data-hf-id="f4_hf-tirt" offset="0.68" stop-color="#E8EDF3" />
+                    <stop data-hf-id="f4_hf-egnc" offset="0.84" stop-color="#A6B0BC" />
+                    <stop data-hf-id="f4_hf-1srf" offset="1" stop-color="#FFFFFF" />
+                  </linearGradient>
+                  <linearGradient data-hf-id="f4_hf-uw4r" id="f4_g2_shineGrad" x1="0" y1="0" x2="1" y2="0.15">
+                    <stop data-hf-id="f4_hf-r6cl" offset="0" stop-color="#FFFFFF" stop-opacity="0" />
+                    <stop data-hf-id="f4_hf-4i7g" offset="0.5" stop-color="#FFFFFF" stop-opacity="0.8" />
+                    <stop data-hf-id="f4_hf-tvfo" offset="1" stop-color="#FFFFFF" stop-opacity="0" />
+                  </linearGradient>
+                  <clipPath data-hf-id="f4_hf-bbg1" id="f4_g2_heartClip">
+                    <path data-hf-id="f4_hf-y7r0" d="M100 168 C52 132 10 100 10 58 C10 30 32 14 56 14 C74 14 90 24 100 40 C110 24 126 14 144 14 C168 14 190 30 190 58 C190 100 148 132 100 168 Z" />
+                  </clipPath>
+                </defs>
+                <path data-hf-id="f4_hf-iayf"
+                  d="M100 168 C52 132 10 100 10 58 C10 30 32 14 56 14 C74 14 90 24 100 40 C110 24 126 14 144 14 C168 14 190 30 190 58 C190 100 148 132 100 168 Z"
+                  fill="url(#f4_g2_chrome)"
+                />
+                <g data-hf-id="f4_hf-tgrd" clip-path="url(#f4_g2_heartClip)">
+                  <g data-hf-id="f4_hf-vbzf" transform="rotate(18 100 90)">
+                    <rect data-hf-id="f4_hf-cdgr" id="f4_g2_shine" x="-120" y="0" width="70" height="180" fill="url(#f4_g2_shineGrad)" />
+                  </g>
+                </g>
+                <path data-hf-id="f4_hf-atyr"
+                  d="M100 168 C52 132 10 100 10 58 C10 30 32 14 56 14 C74 14 90 24 100 40 C110 24 126 14 144 14 C168 14 190 30 190 58 C190 100 148 132 100 168 Z"
+                  fill="none"
+                  stroke="#0a0a0a"
+                  stroke-opacity="0.55"
+                  stroke-width="1.6"
+                />
+              </svg>
+            </div>
+
+            <div data-hf-id="f4_hf-qdzk" class="grid" id="f4_g2_grid">
+              <div data-hf-id="f4_hf-s3cc" class="w-tile" id="f4_g2_t0">BABY</div>
+              <div data-hf-id="f4_hf-tbed" class="w-tile" id="f4_g2_t1">BABY</div>
+              <div data-hf-id="f4_hf-ghwu" class="w-tile" id="f4_g2_t2">BABY</div>
+              <div data-hf-id="f4_hf-eg0f" class="w-tile" id="f4_g2_t3">BABY</div>
+              <div data-hf-id="f4_hf-mrao" class="w-tile" id="f4_g2_t4">BABY</div>
+              <div data-hf-id="f4_hf-k395" class="w-tile" id="f4_g2_t5">BABY</div>
+              <div data-hf-id="f4_hf-434y" class="w-tile" id="f4_g2_t6">BABY</div>
+              <div data-hf-id="f4_hf-speb" class="w-tile" id="f4_g2_t7">BABY</div>
+              <div data-hf-id="f4_hf-rvtw" class="w-tile" id="f4_g2_t8">BABY</div>
+              <div data-hf-id="f4_hf-wmb1" class="w-tile" id="f4_g2_t9">BABY</div>
+              <div data-hf-id="f4_hf-1jgn" class="w-tile" id="f4_g2_t10">BABY</div>
+              <div data-hf-id="f4_hf-2oti" class="w-tile" id="f4_g2_t11">BABY</div>
+              <div data-hf-id="f4_hf-weul" class="w-tile" id="f4_g2_t12">BABY</div>
+              <div data-hf-id="f4_hf-d5pg" class="w-tile" id="f4_g2_t13">BABY</div>
+              <div data-hf-id="f4_hf-roaz" class="w-tile" id="f4_g2_t14">BABY</div>
+              <div data-hf-id="f4_hf-s596" class="w-tile" id="f4_g2_t15">BABY</div>
+            </div>
+
+            <div data-hf-id="f4_hf-pl44" class="particles" id="f4_g2_particles"></div>
+          </div>
+
+          <div data-hf-id="f4_hf-rgs1" id="f4_g2_still">STILL</div>
+        </div>
+      </div>
+
+      <script>
+        (function () {
+          "use strict";
+
+          var tl = gsap.timeline({ paused: true });
+
+          /* ---------------------------------------------------------------
+             deterministic helpers (no Math.random / Date.now)
+          ---------------------------------------------------------------- */
+          function mulberry32(seed) {
+            return function () {
+              seed |= 0;
+              seed = (seed + 0x6d2b79f5) | 0;
+              var t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+              t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+              return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+            };
+          }
+
+          // 1–2px camera shake on heavy hits (steps(1) impact cadence)
+          function shake(sel, start, amps, step) {
+            step = step || 0.03;
+            amps.forEach(function (a, i) {
+              tl.to(
+                sel,
+                {
+                  x: a,
+                  y: (i % 2 ? -1 : 1) * a * 0.6,
+                  duration: 0.03,
+                  ease: "steps(1)",
+                },
+                start + i * step,
+              );
+            });
+            tl.to(sel, { x: 0, y: 0, duration: 0.08, ease: "power2.out" }, start + amps.length * step);
+          }
+
+          // chromatic-split: offset pink/ice text shadows for N frames, then snap back
+          function split(sel, t, amount, frames) {
+            var dur = (frames || 1) / 30;
+            tl.set(sel, { "--cs": amount + "px" }, t);
+            tl.set(sel, { "--cs": "0px" }, t + dur);
+          }
+
+          /* ---------------------------------------------------------------
+             group visibility — hard 0ms swaps
+          ---------------------------------------------------------------- */
+          tl.set("#f4_g1", { autoAlpha: 1 }, 0);
+          tl.set("#f4_g2", { autoAlpha: 0 }, 0);
+          tl.set("#f4_g1", { autoAlpha: 0 }, 3.669); // track 26.494
+          tl.set("#f4_g2", { autoAlpha: 1 }, 3.669); // invert cut
+          tl.set("#f4_g2", { autoAlpha: 0 }, 7.384); // frame out
+
+          /* ---------------------------------------------------------------
+             GROUP 1 — 4x4 BABY wall, one tile flips per hit, reading order
+             frame-local anchors: 0, .462, .923, 1.385, 1.847, 2.160,
+             2.308, 2.770, 3.231 (track 22.825 … 26.056)
+          ---------------------------------------------------------------- */
+          var FLIP_T = [
+            0.0, 0.462, 0.923, 1.385, 1.847, 2.16, 2.308, 2.424, 2.54, 2.656, 2.77, 2.886, 3.002,
+            3.118, 3.175, 3.231,
+          ];
+
+          for (var i = 0; i < 16; i++) {
+            // 0ms rotateY(180deg): the pre-rotated front face snaps into view
+            tl.set(document.getElementById("f4_g1_f" + i), { rotationY: 180 }, FLIP_T[i]);
+          }
+
+          // heavy hits: 24.985 kick -> local 2.160; 25.937 snare hard-stop -> local 3.112
+          shake("#f4_g1_cam", 2.16, [2, -2, 1, -1], 0.028);
+          shake("#f4_g1_cam", 3.112, [2, -2, 1], 0.028);
+          split("#f4_g1_grid", 0, 4, 1);
+          split("#f4_g1_grid", 2.16, 5, 1);
+          split("#f4_g1_grid", 3.112, 7, 1);
+
+          /* ---------------------------------------------------------------
+             GROUP 2 — invert at 3.669, tiles drop on 16ths, chrome heart
+          ---------------------------------------------------------------- */
+          // invert impact
+          shake("#f4_g2_cam", 3.669, [14, -12, 10, -8, 6, -4, 3, -2], 0.026);
+          split("#f4_g2_grid", 3.669, 10, 2);
+          shake("#f4_g2_cam", 4.155, [3, -2, 1], 0.028);
+          split("#f4_g2_grid", 4.155, 5, 1);
+          shake("#f4_g2_cam", 5.078, [3, -2, 1], 0.028);
+          shake("#f4_g2_cam", 5.54, [5, -4, 3, -2, 1], 0.028);
+          split("#f4_g2_grid", 5.54, 6, 1);
+          shake("#f4_g2_cam", 6.001, [3, -2, 1], 0.028);
+          split("#f4_g2_grid", 6.001, 4, 1);
+          shake("#f4_g2_cam", 6.432, [8, -6, 4, -3, 2, -1], 0.028);
+          split("#f4_g2_grid", 6.432, 8, 2);
+          shake("#f4_g2_cam", 6.925, [2, -1, 1], 0.028);
+
+          // seeded drop order (mulberry32 seed 0x7A11, Fisher–Yates)
+          var rand = mulberry32(0x7a11);
+          var dropOrder = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+          for (var s = 15; s > 0; s--) {
+            var j = Math.floor(rand() * (s + 1));
+            var tmp = dropOrder[s];
+            dropOrder[s] = dropOrder[j];
+            dropOrder[j] = tmp;
+          }
+          var fallers = dropOrder.slice(0, 13); // drop out on 16th notes
+          var blown = dropOrder.slice(13); // last three blow away at 29.257
+
+          // drop-outs on 16th-note subdivisions from 27.441 (local 4.616)
+          var DROP0 = 4.616;
+          var S16 = 0.1161;
+          fallers.forEach(function (id, k) {
+            var t = DROP0 + k * S16;
+            var dir = id % 2 === 0 ? 1 : -1;
+            tl.to(
+              "#f4_g2_t" + id,
+              {
+                y: 150,
+                rotation: dir * (6 + (id % 3) * 3),
+                opacity: 0,
+                duration: 0.17,
+                ease: "power2.in",
+              },
+              t,
+            );
+          });
+
+          // last three tiles blow away from the heart center (staggered-exit)
+          var BLOW_T = [6.146, 6.289, 6.432];
+          blown.forEach(function (id, k) {
+            var col = id % 4;
+            var row = Math.floor(id / 4);
+            var cx = 65 + col * 450 + 220;
+            var cy = 45 + row * 250 + 120;
+            var dx = (cx - 960) * 1.15 + (id % 2 ? 40 : -40);
+            var dy = (cy - 540) * 1.15 + 140;
+            tl.to(
+              "#f4_g2_t" + id,
+              {
+                x: dx,
+                y: dy,
+                rotation: id % 2 ? 55 : -55,
+                scale: 0.55,
+                opacity: 0,
+                duration: 0.24,
+                ease: "power3.in",
+              },
+              BLOW_T[k],
+            );
+          });
+
+          // heart: waits behind the wall, lands center at 29.257, crash-zooms out the frame
+          tl.set("#f4_g2_heart", { scale: 0.94, y: -26 }, 0);
+          tl.to("#f4_g2_heart", { scale: 1, y: 0, duration: 0.3, ease: "elastic.out(1, 0.55)" }, 6.432);
+          tl.to("#f4_g2_shine", { x: 470, duration: 0.62, ease: "power1.inOut" }, 6.62);
+          tl.to(
+            "#f4_g2_heart",
+            { scale: 2.7, duration: 0.44, ease: "expo.in" },
+            6.944, // full-frame by 30.209
+          );
+          tl.to("#f4_g2_glow", { scale: 1.3, opacity: 0.7, duration: 0.44, ease: "expo.in" }, 6.944);
+
+          // burst shards at the blow-away
+          var pRand = mulberry32(0xfe90);
+          var COLORS = ["#FFFFFF", "#FE90E8", "#C0F7FE", "#FFFDF5"];
+          var NP = 26;
+          var pStage = document.getElementById("f4_g2_particles");
+          for (var p = 0; p < NP; p++) {
+            var el = document.createElement("div");
+            el.className = "pt";
+            var sz = 8 + Math.floor(pRand() * 18);
+            el.style.width = sz + "px";
+            el.style.height = Math.round(sz * (0.5 + pRand() * 0.9)) + "px";
+            el.style.marginLeft = -sz / 2 + "px";
+            el.style.marginTop = -sz / 2 + "px";
+            el.style.background = COLORS[p % 4];
+            pStage.appendChild(el);
+
+            var ang = (p / NP) * Math.PI * 2 + pRand() * 0.35;
+            var radius = 420 + pRand() * 640;
+            tl.fromTo(
+              el,
+              { x: 0, y: 0, scale: 1, rotation: 0, opacity: 1 },
+              {
+                x: Math.cos(ang) * radius,
+                y: Math.sin(ang) * radius,
+                rotation: pRand() * 120 - 60,
+                scale: 0.2,
+                opacity: 0,
+                duration: 0.45 + pRand() * 0.35,
+                ease: "expo.out",
+                immediateRender: false,
+              },
+              6.432 + pRand() * 0.06,
+            );
+          }
+
+          // STILL slams in lower-left as the heart lands
+          tl.fromTo(
+            "#f4_g2_still",
+            { autoAlpha: 0, y: 24, scale: 1.04 },
+            { autoAlpha: 1, y: 0, scale: 1, duration: 0.12, ease: "power4.out", immediateRender: false },
+            6.432,
+          );
+
+          window.__timelines = window.__timelines || {};
+          window.__timelines["04-f4"] = tl;
+          tl.seek(0);
+        })();
+      </script>
+    </template>
+  </body>
+</html>

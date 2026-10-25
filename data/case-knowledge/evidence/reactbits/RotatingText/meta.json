@@ -1,0 +1,21 @@
+{
+  "entryId": "3d3570a2bfd1cf99",
+  "sourceUrl": "https://reactbits.dev/text-animations/rotating-text",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/RotatingText-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/RotatingText/RotatingText.jsx",
+  "checkedAt": "2026-10-25T07:52:56.385Z",
+  "sha256": "637b1126c1e85c8ff5f09d192e90d423a379f6196a2811918445fb1684f2f5d0",
+  "files": [
+    {
+      "path": "RotatingText.css",
+      "sha256": "9a6757dfd090eac2991a64d9fa7833dc13c1ef01f174a026730c205185e39f76",
+      "bytes": 513
+    },
+    {
+      "path": "RotatingText.jsx",
+      "sha256": "7d3e9bd8366231aeb5b88e97637df3232a285422598dd8cc8104fb2079ec4316",
+      "bytes": 6037
+    }
+  ]
+}

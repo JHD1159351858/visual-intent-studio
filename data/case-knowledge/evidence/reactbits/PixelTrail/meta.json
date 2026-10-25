@@ -1,0 +1,21 @@
+{
+  "entryId": "503c799a9ff6298c",
+  "sourceUrl": "https://reactbits.dev/animations/pixel-trail",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/PixelTrail-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/PixelTrail/PixelTrail.jsx",
+  "checkedAt": "2026-10-25T07:53:00.586Z",
+  "sha256": "dd761dcc37854392bfe722fcb2a60b8c3bb217b01fc8337e523af2a20541d934",
+  "files": [
+    {
+      "path": "PixelTrail.css",
+      "sha256": "17dc6aee5d947c1f8f34d2a15ff8c50b8dd51b2dbb643f50c6e6106ee38d1cfa",
+      "bytes": 54
+    },
+    {
+      "path": "PixelTrail.jsx",
+      "sha256": "81bb6e8d60a4711fc95167065a0ae68390659a63f296a42f4e5a4222f18402ad",
+      "bytes": 24357
+    }
+  ]
+}

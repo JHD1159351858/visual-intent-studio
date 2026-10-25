@@ -1,0 +1,16 @@
+{
+  "entryId": "8f4f2945729d17d0",
+  "sourceUrl": "https://reactbits.dev/animations/fade-content",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/FadeContent-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/FadeContent/FadeContent.jsx",
+  "checkedAt": "2026-10-25T07:52:58.872Z",
+  "sha256": "d557650bc7a8526ce4d4c7037a5728add864936b634d3504dff89defaa4b969a",
+  "files": [
+    {
+      "path": "FadeContent/FadeContent.jsx",
+      "sha256": "18c43722cf6fe1e305835f60792d378ace77c1271ff0f775880dd3578975f938",
+      "bytes": 2255
+    }
+  ]
+}

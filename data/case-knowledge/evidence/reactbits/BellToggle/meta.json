@@ -1,0 +1,21 @@
+{
+  "entryId": "4dcf995aa23130df",
+  "sourceUrl": "https://reactbits.dev/micro/bell-toggle",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/BellToggle-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/BellToggle/BellToggle.jsx",
+  "checkedAt": "2026-10-25T07:53:12.210Z",
+  "sha256": "fcc242ff73b427f0538e530f5e312a94839bb923e2c3690a417771632c47844e",
+  "files": [
+    {
+      "path": "BellToggle.css",
+      "sha256": "376be7cd67a1c9f3c7d5837ba250367bbce6d8ab99e25cd9305845d5533c42ca",
+      "bytes": 4706
+    },
+    {
+      "path": "BellToggle.jsx",
+      "sha256": "33619b15a6bfdd09162188d74dd5afa5945675a68bb40b42a33482f74fb0a97f",
+      "bytes": 8849
+    }
+  ]
+}

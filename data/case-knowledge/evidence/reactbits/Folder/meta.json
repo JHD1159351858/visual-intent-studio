@@ -1,0 +1,21 @@
+{
+  "entryId": "7e31e4db25559d5b",
+  "sourceUrl": "https://reactbits.dev/components/folder",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Folder-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/Folder/Folder.jsx",
+  "checkedAt": "2026-10-25T07:53:04.304Z",
+  "sha256": "b3491ddcd1aaeb754b3b0a282cb4fec708d556c0b78b19e90a55f08f99a958b9",
+  "files": [
+    {
+      "path": "Folder.css",
+      "sha256": "74a8f213ad51cb946ffa66c48b9c157ad96f9e6e8a8ae78dc9b0056576fc44d6",
+      "bytes": 8326
+    },
+    {
+      "path": "Folder.jsx",
+      "sha256": "f621461e0f8c994fd1879c510586971e8984f7a33943240c538d647aab69ff57",
+      "bytes": 68678
+    }
+  ]
+}

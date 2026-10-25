@@ -1,0 +1,21 @@
+{
+  "entryId": "a545bd8c5654e0a5",
+  "sourceUrl": "https://reactbits.dev/text-animations/variable-proximity",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/VariableProximity-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/VariableProximity/VariableProximity.jsx",
+  "checkedAt": "2026-10-25T07:52:56.809Z",
+  "sha256": "1c79ae5a7da143ba8ca9537d86c656602da60e0aed75ba7d622cca10d46b70a2",
+  "files": [
+    {
+      "path": "VariableProximity.css",
+      "sha256": "52a8317f04f37c18ec9a3652a0c49efa8731d5a2f69b257fecca7e4de641f670",
+      "bytes": 353
+    },
+    {
+      "path": "VariableProximity.jsx",
+      "sha256": "48a14a054cd0e5c35c579f90fcf173dbf7f2276b8615bffabbdbe556fe52b774",
+      "bytes": 5572
+    }
+  ]
+}

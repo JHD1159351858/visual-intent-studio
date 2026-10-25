@@ -1,0 +1,21 @@
+{
+  "entryId": "8b55134e125aa1d7",
+  "sourceUrl": "https://reactbits.dev/components/option-wheel",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/OptionWheel-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/OptionWheel/OptionWheel.jsx",
+  "checkedAt": "2026-10-25T07:53:02.788Z",
+  "sha256": "f875eae265e54a3c33c7e9eabf85395e5b220cd93a3fb20bb7aecd51e6350779",
+  "files": [
+    {
+      "path": "OptionWheel.css",
+      "sha256": "8b93e9fb9983020a64d188d1cac61f2488ef2fc90a82fea90427b1bf87fc4dd6",
+      "bytes": 1098
+    },
+    {
+      "path": "OptionWheel.jsx",
+      "sha256": "4e72165ea904545414192253ebb1abe4d7d8eb154e40ed3133c050bceb0d58ac",
+      "bytes": 9696
+    }
+  ]
+}

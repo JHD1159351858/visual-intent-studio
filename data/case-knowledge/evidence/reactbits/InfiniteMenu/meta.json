@@ -1,0 +1,21 @@
+{
+  "entryId": "eb7ca3f10e1f1e40",
+  "sourceUrl": "https://reactbits.dev/components/infinite-menu",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/InfiniteMenu-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/InfiniteMenu/InfiniteMenu.jsx",
+  "checkedAt": "2026-10-25T07:53:05.985Z",
+  "sha256": "5e981504516e65d5183d4a296c7325e66985e391a69f4d8b1dd34b7d79c40402",
+  "files": [
+    {
+      "path": "InfiniteMenu.css",
+      "sha256": "43b8f2f6cb0b09cf820a5016148b358dd4732bb5a3509a235420fa3f12d4409b",
+      "bytes": 3748
+    },
+    {
+      "path": "InfiniteMenu.jsx",
+      "sha256": "b4c032902de07a9813ff64e629d4ac2765c38593c978f632d5c572d7e43a39a2",
+      "bytes": 31097
+    }
+  ]
+}

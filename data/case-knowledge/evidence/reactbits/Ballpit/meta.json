@@ -1,0 +1,16 @@
+{
+  "entryId": "4c946fb9557624f8",
+  "sourceUrl": "https://reactbits.dev/backgrounds/ballpit",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Ballpit-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Ballpit/Ballpit.jsx",
+  "checkedAt": "2026-10-25T07:53:11.422Z",
+  "sha256": "fa96fede3132549c7bf0e8250566db8bc3dbad6788dc3ee084af87861b60e999",
+  "files": [
+    {
+      "path": "Ballpit/Ballpit.jsx",
+      "sha256": "ff6dcfb9ea6d1eacc13f8f4c8b2953c239ff267a9ff910d88f7fc2f1f1864fae",
+      "bytes": 21559
+    }
+  ]
+}

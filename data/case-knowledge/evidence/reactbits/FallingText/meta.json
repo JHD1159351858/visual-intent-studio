@@ -1,0 +1,21 @@
+{
+  "entryId": "7b222e5c19abc17d",
+  "sourceUrl": "https://reactbits.dev/text-animations/falling-text",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/FallingText-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/FallingText/FallingText.jsx",
+  "checkedAt": "2026-10-25T07:52:55.695Z",
+  "sha256": "cf02f05db0446f88426ff137af48dd5e2a31a8868f31f3c85684961e70692e2e",
+  "files": [
+    {
+      "path": "FallingText.css",
+      "sha256": "b6796c0144f3d4958f7240d8c336189fef5ed349747304904b0680030162950e",
+      "bytes": 1824
+    },
+    {
+      "path": "FallingText.jsx",
+      "sha256": "da4737a8ff547ae40c56e2530413c5baa16fb67b3ffa4191afdd1137897804e1",
+      "bytes": 20366
+    }
+  ]
+}

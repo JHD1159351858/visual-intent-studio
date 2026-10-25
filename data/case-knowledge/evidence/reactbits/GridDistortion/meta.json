@@ -1,0 +1,21 @@
+{
+  "entryId": "68d80b3867d6cb9f",
+  "sourceUrl": "https://reactbits.dev/backgrounds/grid-distortion",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/GridDistortion-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/GridDistortion/GridDistortion.jsx",
+  "checkedAt": "2026-10-25T07:53:11.377Z",
+  "sha256": "e04d734af5da8eb1168ad70dfb2ce26edad1345189fc10dc9c7ee3857aa3eaf2",
+  "files": [
+    {
+      "path": "GridDistortion.css",
+      "sha256": "85c5caa7ea96ffb23f2ae35053accbe8c44e348b0bb5110b736814ce72a3f982",
+      "bytes": 250
+    },
+    {
+      "path": "GridDistortion.jsx",
+      "sha256": "fa1fe06baeec8f74e7a21565088d4c2447c2a62d22efc937aae6c960fa8684a9",
+      "bytes": 16151
+    }
+  ]
+}

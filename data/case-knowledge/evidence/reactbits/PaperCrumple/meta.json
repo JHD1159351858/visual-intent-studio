@@ -1,0 +1,21 @@
+{
+  "entryId": "8e3f1509bf02f915",
+  "sourceUrl": "https://reactbits.dev/micro/paper-crumple",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/PaperCrumple-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/PaperCrumple/PaperCrumple.jsx",
+  "checkedAt": "2026-10-25T07:53:13.612Z",
+  "sha256": "27a9b0ed3f32a6b8736e27389e6b0396b1301df348f1ab4c94e2deb86ec6d5a7",
+  "files": [
+    {
+      "path": "PaperCrumple.css",
+      "sha256": "15eec4e299516a16c0506da7b0fe3689638c2eb05845626240f253108160e2a2",
+      "bytes": 1530
+    },
+    {
+      "path": "PaperCrumple.jsx",
+      "sha256": "179cb493b6d4b4725b4c1a5db592443c2b5710d8d427bc3a83cc0083c76a72bc",
+      "bytes": 42940
+    }
+  ]
+}

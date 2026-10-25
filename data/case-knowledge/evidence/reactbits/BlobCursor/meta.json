@@ -1,0 +1,21 @@
+{
+  "entryId": "6541ae8dc1d23634",
+  "sourceUrl": "https://reactbits.dev/animations/blob-cursor",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/BlobCursor-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/BlobCursor/BlobCursor.jsx",
+  "checkedAt": "2026-10-25T07:53:01.591Z",
+  "sha256": "513ab48b99e107b822cc3b42090a72b2d8725f50914d476df136ea928c021ab3",
+  "files": [
+    {
+      "path": "BlobCursor.css",
+      "sha256": "eca0c343595495dea8b7649c2934c5ca30f9c92eaf0b06757d5638169ff6793a",
+      "bytes": 169
+    },
+    {
+      "path": "BlobCursor.jsx",
+      "sha256": "650d7636662f1e715e36863bc9a5197e93f7a7d3d7b76d11a69f122223a0f594",
+      "bytes": 30994
+    }
+  ]
+}

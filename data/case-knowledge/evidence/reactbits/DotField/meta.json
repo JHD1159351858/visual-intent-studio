@@ -1,0 +1,21 @@
+{
+  "entryId": "dd8f826257e9fe77",
+  "sourceUrl": "https://reactbits.dev/backgrounds/dot-field",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/DotField-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/DotField/DotField.jsx",
+  "checkedAt": "2026-10-25T07:53:10.861Z",
+  "sha256": "af87b311f19f1a11da34e090a46ac9d185243ef378c3fd06f44512d02caf2d11",
+  "files": [
+    {
+      "path": "DotField.css",
+      "sha256": "62563098ba249d15cb1af573e30aade3c440d3fb58b12537714b5de6817d114a",
+      "bytes": 78
+    },
+    {
+      "path": "DotField.jsx",
+      "sha256": "e767089c5061ca39033eebc21dde8efec22a753f8e6cdc7ff48817b06f8dc106",
+      "bytes": 7938
+    }
+  ]
+}

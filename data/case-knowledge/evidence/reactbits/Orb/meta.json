@@ -1,0 +1,21 @@
+{
+  "entryId": "6ebabc779110f699",
+  "sourceUrl": "https://reactbits.dev/backgrounds/orb",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Orb-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Orb/Orb.jsx",
+  "checkedAt": "2026-10-25T07:53:11.704Z",
+  "sha256": "8a7e9ee9375fdaf689bef7d4221e49913c51875426f2d5e3ec546f36c22d9e87",
+  "files": [
+    {
+      "path": "Orb.css",
+      "sha256": "7f1dd853ee98801256aaba5db5bb08bd738593ea76dd42e993d1403f6887816a",
+      "bytes": 206
+    },
+    {
+      "path": "Orb.jsx",
+      "sha256": "b3548d6fd0c47f3c600307de3e4f3bbe2d369aa30086fe2fd191ae8104cf58da",
+      "bytes": 19716
+    }
+  ]
+}

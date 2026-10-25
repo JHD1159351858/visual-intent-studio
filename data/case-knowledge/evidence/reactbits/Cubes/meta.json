@@ -1,0 +1,21 @@
+{
+  "entryId": "7f70b599aa27a7c6",
+  "sourceUrl": "https://reactbits.dev/animations/cubes",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Cubes-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/Cubes/Cubes.jsx",
+  "checkedAt": "2026-10-25T07:53:00.714Z",
+  "sha256": "41554daeac0885131b329c71246d4dc1f582a841222c902de1b208e5de78eca3",
+  "files": [
+    {
+      "path": "Cubes.css",
+      "sha256": "9c820d6fb52f83e8221f7994d985f473f083b3131e357e8413b5beca01ddfb08",
+      "bytes": 219
+    },
+    {
+      "path": "Cubes.jsx",
+      "sha256": "8ed75e9b404ac2949c6b859eda5bced3e4faebd9461d994689f97fb125c971d5",
+      "bytes": 22323
+    }
+  ]
+}

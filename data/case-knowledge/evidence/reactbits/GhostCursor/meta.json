@@ -1,0 +1,21 @@
+{
+  "entryId": "4d654be6bb24c189",
+  "sourceUrl": "https://reactbits.dev/animations/ghost-cursor",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/GhostCursor-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/GhostCursor/GhostCursor.jsx",
+  "checkedAt": "2026-10-25T07:52:59.951Z",
+  "sha256": "5f28094b006bcbe614690ac6f5689984e284eb83f53472c43e878bb3ee9e0555",
+  "files": [
+    {
+      "path": "GhostCursor.css",
+      "sha256": "6aecc835ef3271c2e3b23516b4c408f92d036ab0205f8c51be12120ab1ed0784",
+      "bytes": 180
+    },
+    {
+      "path": "GhostCursor.jsx",
+      "sha256": "e34caeff961284814c8d1096bcc770c53a99a4538d6e79a9bd97c22a78429324",
+      "bytes": 16436
+    }
+  ]
+}

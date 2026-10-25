@@ -1,0 +1,21 @@
+{
+  "entryId": "f54bdec4f9ca1a8a",
+  "sourceUrl": "https://reactbits.dev/animations/halftone-reveal",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/HalftoneReveal-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/HalftoneReveal/HalftoneReveal.jsx",
+  "checkedAt": "2026-10-25T07:52:58.428Z",
+  "sha256": "6e898f900d1b4e71d153507118a629971c60d1c85d937f3a9762506c5148df9b",
+  "files": [
+    {
+      "path": "HalftoneReveal.css",
+      "sha256": "51c09de2dcbaee1810a55a4784ce0f1c328c063cc9bf8c267c9b6cdcfb8392e1",
+      "bytes": 206
+    },
+    {
+      "path": "HalftoneReveal.jsx",
+      "sha256": "867c4094efb29c1311e2c56fcdfb4edfba29cfad1ac7ceabb808626cdbbb02df",
+      "bytes": 28613
+    }
+  ]
+}

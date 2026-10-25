@@ -1,0 +1,21 @@
+{
+  "entryId": "af4c65556874cdf9",
+  "sourceUrl": "https://reactbits.dev/animations/dither-veil",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/DitherVeil-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/DitherVeil/DitherVeil.jsx",
+  "checkedAt": "2026-10-25T07:52:57.222Z",
+  "sha256": "a14f4540ca6ceb42c8ff290db06e7a2e74e2fe85cf78eb45655f0b427fef5b21",
+  "files": [
+    {
+      "path": "DitherVeil.css",
+      "sha256": "e26d3a59edcabc0b117f832abff3b3d99ac5855e1275a842c6d58bf0f585fc76",
+      "bytes": 113
+    },
+    {
+      "path": "DitherVeil.jsx",
+      "sha256": "de0cd4b097c0f7faa2abcaa7d737df944e0123b7a07f197c093bcc14c5ef4451",
+      "bytes": 25343
+    }
+  ]
+}

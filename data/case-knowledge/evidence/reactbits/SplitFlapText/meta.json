@@ -1,0 +1,21 @@
+{
+  "entryId": "8c4890b14e0585fd",
+  "sourceUrl": "https://reactbits.dev/text-animations/split-flap-text",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/SplitFlapText-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/SplitFlapText/SplitFlapText.jsx",
+  "checkedAt": "2026-10-25T07:52:54.128Z",
+  "sha256": "ae1056238a77f1461ca96daae7e60e68cead176ccfc3acea5f25cf63a73026e4",
+  "files": [
+    {
+      "path": "SplitFlapText.css",
+      "sha256": "f376e56f59aa26a3ee3df3947b96fb57eecb04916851ef9c509e879ffb6b1225",
+      "bytes": 3952
+    },
+    {
+      "path": "SplitFlapText.jsx",
+      "sha256": "0b13274d16fe2024854b0f4d7ec5d1bb531b8ef7bcb1031f4601bbc5198a7b54",
+      "bytes": 9457
+    }
+  ]
+}

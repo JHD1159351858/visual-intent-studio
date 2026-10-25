@@ -1,0 +1,21 @@
+{
+  "entryId": "107d986a5cba79cf",
+  "sourceUrl": "https://reactbits.dev/backgrounds/gradient-waves",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/GradientWaves-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/GradientWaves/GradientWaves.jsx",
+  "checkedAt": "2026-10-25T07:53:06.826Z",
+  "sha256": "2bb5d7eab7cf20cb87b4ea002523e8b90c8a270af2a4bea79aab5debfed5b18b",
+  "files": [
+    {
+      "path": "GradientWaves.css",
+      "sha256": "4a3a19cd7977d5ddd128658750a007be8632c6fd9a66fa0c280eec2187927d65",
+      "bytes": 103
+    },
+    {
+      "path": "GradientWaves.jsx",
+      "sha256": "fd87b817e0be60cc486f5e2496aef921c4cf73bed8b94fa6559be97f804e7712",
+      "bytes": 10444
+    }
+  ]
+}

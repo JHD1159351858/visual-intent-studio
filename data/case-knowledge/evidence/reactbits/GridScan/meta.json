@@ -1,0 +1,21 @@
+{
+  "entryId": "49f5a8dc7f011753",
+  "sourceUrl": "https://reactbits.dev/backgrounds/grid-scan",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/GridScan-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/GridScan/GridScan.jsx",
+  "checkedAt": "2026-10-25T07:53:09.813Z",
+  "sha256": "0e032e21532a0fd6330cf8fa232d1e4d8dc338511f651aa322343d1b19c68906",
+  "files": [
+    {
+      "path": "GridScan.css",
+      "sha256": "1f29a2d4b5d63a53d084634092788b32116f7279cf073ce89d874a78092ead37",
+      "bytes": 757
+    },
+    {
+      "path": "GridScan.jsx",
+      "sha256": "0753efb0bbdb832116a38386ad5d2b65c2fb1f2cecb814a1a940fbcb62b172aa",
+      "bytes": 29333
+    }
+  ]
+}

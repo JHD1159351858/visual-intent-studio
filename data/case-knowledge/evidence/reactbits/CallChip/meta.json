@@ -1,0 +1,21 @@
+{
+  "entryId": "37d8f3e7fef3f4a4",
+  "sourceUrl": "https://reactbits.dev/micro/call-chip",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/CallChip-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/CallChip/CallChip.jsx",
+  "checkedAt": "2026-10-25T07:53:12.356Z",
+  "sha256": "657e23df733d1e7698c490fc01499d107fc8342188ef002eb99cf6edee3370b1",
+  "files": [
+    {
+      "path": "CallChip.css",
+      "sha256": "772aea95a1ca3d0c6de2708353b119e59fa437ba2ee08bf37eb5e0eef3f2f676",
+      "bytes": 3891
+    },
+    {
+      "path": "CallChip.jsx",
+      "sha256": "a3a07f356909a9e282c512a4802e5e84f040ce44928658d66dcb3a14f67a0435",
+      "bytes": 7307
+    }
+  ]
+}

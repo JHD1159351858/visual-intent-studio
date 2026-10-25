@@ -1,0 +1,21 @@
+{
+  "entryId": "27e5a543159f3bd3",
+  "sourceUrl": "https://reactbits.dev/animations/scroll-expand",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/ScrollExpand-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/ScrollExpand/ScrollExpand.jsx",
+  "checkedAt": "2026-10-25T07:52:57.993Z",
+  "sha256": "c35b0ffdc0c49d6961cd114a37e362458bdf754582ac0c8fef6897affda7e797",
+  "files": [
+    {
+      "path": "ScrollExpand.css",
+      "sha256": "1904e6e0c498a45b11b16521e64dafb02f9e7e2bd33305bb7134fb0081d39c1e",
+      "bytes": 1930
+    },
+    {
+      "path": "ScrollExpand.jsx",
+      "sha256": "d8c546f1cde67cdaf9a228fc58d98aa1020e3faf594db36769cd9d17d991a0d4",
+      "bytes": 6646
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "entryId": "2b6fe3131110c1f4",
+  "sourceUrl": "https://reactbits.dev/components/curved-input",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/CurvedInput-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/CurvedInput/CurvedInput.jsx",
+  "checkedAt": "2026-10-25T07:53:02.712Z",
+  "sha256": "01abe8cbc83e24b4314d828c92f39921fd16004debd7f281a799b02b8ded1516",
+  "files": [
+    {
+      "path": "CurvedInput.css",
+      "sha256": "42cf7b33fdf3824a00c2fe8cf5314f86d1e15ff083ee5aa0972d92b3f3b202e4",
+      "bytes": 1201
+    },
+    {
+      "path": "CurvedInput.jsx",
+      "sha256": "866ace3841fa599054554185ee3493de0dac387e5fe8577570b31faaebb5c0b3",
+      "bytes": 16523
+    }
+  ]
+}

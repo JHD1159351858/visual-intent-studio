@@ -1,0 +1,21 @@
+{
+  "entryId": "a84c12fe4b367a06",
+  "sourceUrl": "https://reactbits.dev/backgrounds/scanner",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Scanner-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Scanner/Scanner.jsx",
+  "checkedAt": "2026-10-25T07:53:07.412Z",
+  "sha256": "c0095514a5c350233d38ff30f12df366120e4e8cb685f6181cf03c662db8e063",
+  "files": [
+    {
+      "path": "Scanner.css",
+      "sha256": "85e9b79a275771c27ddc91c5a4959dd0bd9a53aba3260aee0f4006f1ec1ad7c6",
+      "bytes": 96
+    },
+    {
+      "path": "Scanner.jsx",
+      "sha256": "3437475e07c4724811d47dede86e410501d44f28a51a5dc8bb5d147de1847d75",
+      "bytes": 11618
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "entryId": "5f1bca2991ee5a32",
+  "sourceUrl": "https://reactbits.dev/backgrounds/liquid-chrome",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/LiquidChrome-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/LiquidChrome/LiquidChrome.jsx",
+  "checkedAt": "2026-10-25T07:53:11.962Z",
+  "sha256": "3de0b888a130aa9841e7b2bac2ea9c494cfa9fdc91c7388a0d863e3df5a51f33",
+  "files": [
+    {
+      "path": "LiquidChrome.css",
+      "sha256": "8b2d26ec1d06b0eb18decb31dfb5bf0f64de92596b87f8c9ae0924250ae48ff6",
+      "bytes": 59
+    },
+    {
+      "path": "LiquidChrome.jsx",
+      "sha256": "5eba225f34cdb3cfe6f30937d70c87875c454ef29a59502717fd5a05341ce252",
+      "bytes": 5208
+    }
+  ]
+}

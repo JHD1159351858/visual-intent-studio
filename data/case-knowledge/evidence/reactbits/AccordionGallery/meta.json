@@ -1,0 +1,21 @@
+{
+  "entryId": "d7d0a0a0e895db95",
+  "sourceUrl": "https://reactbits.dev/components/accordion-gallery",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/AccordionGallery-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/AccordionGallery/AccordionGallery.jsx",
+  "checkedAt": "2026-10-25T07:53:02.647Z",
+  "sha256": "a176e546b9436774e3ac10a49e6c5c2dc3d0035c0dd723185cb9f9765ee19cec",
+  "files": [
+    {
+      "path": "AccordionGallery.css",
+      "sha256": "ed6b800ed83052859f1f617ccc2a846db8389cb9580db440dbb97fc0ab39b5e6",
+      "bytes": 2879
+    },
+    {
+      "path": "AccordionGallery.jsx",
+      "sha256": "2ad0e840ee9c6b658f33d66aa9e28685491d24b79cdb792bd5322ad40aa39577",
+      "bytes": 7055
+    }
+  ]
+}

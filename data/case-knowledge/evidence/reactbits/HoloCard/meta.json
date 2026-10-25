@@ -1,0 +1,21 @@
+{
+  "entryId": "2b63dcb0d718c3b9",
+  "sourceUrl": "https://reactbits.dev/components/holo-card",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/HoloCard-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/HoloCard/HoloCard.jsx",
+  "checkedAt": "2026-10-25T07:53:01.712Z",
+  "sha256": "53615b6f7a462539ab4f98c4f67e1fadb4c622b3cd45f4b7892720b0f10e6ef4",
+  "files": [
+    {
+      "path": "HoloCard.css",
+      "sha256": "d891110bae1e6810d596823104cb67b0c3f982c62cf0f37ae220bb062afcb9dc",
+      "bytes": 1488
+    },
+    {
+      "path": "HoloCard.jsx",
+      "sha256": "40e68659e18761786bc69e5e69cf5b16c04fd092a3dbb8e030c095bab91bb282",
+      "bytes": 24108
+    }
+  ]
+}

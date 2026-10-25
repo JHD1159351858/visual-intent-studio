@@ -1,0 +1,21 @@
+{
+  "entryId": "d9540a6c5c9d475f",
+  "sourceUrl": "https://reactbits.dev/components/animated-list",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/AnimatedList-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/AnimatedList/AnimatedList.jsx",
+  "checkedAt": "2026-10-25T07:53:03.087Z",
+  "sha256": "88ef0c85d7358823fc435c387aa167a2cee9eb2c2492aa16abbb6bce64d4f298",
+  "files": [
+    {
+      "path": "AnimatedList.css",
+      "sha256": "c9b74ad88b92e9836b6ec91ad21170da5d5325cfd0a1a18d1a863e545d8baffc",
+      "bytes": 3864
+    },
+    {
+      "path": "AnimatedList.jsx",
+      "sha256": "bd554c09360298bca5b8d74a79595d22fd1c4c4aeb56ab4548eff412385bd593",
+      "bytes": 20579
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "entryId": "c9c6cd47270734b4",
+  "sourceUrl": "https://reactbits.dev/micro/scrub-field",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/ScrubField-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/ScrubField/ScrubField.jsx",
+  "checkedAt": "2026-10-25T07:53:14.212Z",
+  "sha256": "749a70439427283d549dcd4e88c6c61c930adc2b2c5113398cb0b0fdb98a6f15",
+  "files": [
+    {
+      "path": "ScrubField.css",
+      "sha256": "8fc11c27d2f76bd1bb03de7e28e0dcaff1a8828213cc41bc924624fb69b7fa3b",
+      "bytes": 3587
+    },
+    {
+      "path": "ScrubField.jsx",
+      "sha256": "b66db1de9e4da1dd2fe204099fecf1c915e4ab7d576332ad457769ad8547dedf",
+      "bytes": 11060
+    }
+  ]
+}

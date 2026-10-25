@@ -1,0 +1,21 @@
+{
+  "entryId": "f071eb932ef995f6",
+  "sourceUrl": "https://reactbits.dev/animations/shape-blur",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/ShapeBlur-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/ShapeBlur/ShapeBlur.jsx",
+  "checkedAt": "2026-10-25T07:53:01.118Z",
+  "sha256": "8949c30d35b01f05843dcd8be797f94e346b420d9f32448d201a935a7704f506",
+  "files": [
+    {
+      "path": "ShapeBlur.css",
+      "sha256": "97463e60fff4dacc4e81d58b8b51dbe9551d1109625c6ed5c93d4d5df0d43999",
+      "bytes": 361
+    },
+    {
+      "path": "ShapeBlur.jsx",
+      "sha256": "1e3ae8abb45b00e5aae16fdf2a87299bad1ebd0508bd9078b8cc44eca4019bdb",
+      "bytes": 25984
+    }
+  ]
+}

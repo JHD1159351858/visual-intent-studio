@@ -1,0 +1,21 @@
+{
+  "entryId": "e4c2a95b44f285ff",
+  "sourceUrl": "https://reactbits.dev/text-animations/shiny-text",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/ShinyText-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/ShinyText/ShinyText.jsx",
+  "checkedAt": "2026-10-25T07:52:55.121Z",
+  "sha256": "bbfad744e11b2201a725f7c064b91324aa56c46f00045fb128cd99f0c0077d85",
+  "files": [
+    {
+      "path": "ShinyText.css",
+      "sha256": "6030200a8885aba91536e2e367a0ed316989f10122f9d91a20f09caf1b5f46ab",
+      "bytes": 469
+    },
+    {
+      "path": "ShinyText.jsx",
+      "sha256": "2f7fa6e4e929985b97bd3542383d748749c2ac32e0f498f37d87d7d9b35bb159",
+      "bytes": 11226
+    }
+  ]
+}

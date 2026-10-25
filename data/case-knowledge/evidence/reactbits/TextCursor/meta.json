@@ -1,0 +1,21 @@
+{
+  "entryId": "26dc1f839d2d599d",
+  "sourceUrl": "https://reactbits.dev/text-animations/text-cursor",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/TextCursor-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/TextCursor/TextCursor.jsx",
+  "checkedAt": "2026-10-25T07:52:55.920Z",
+  "sha256": "5f730bcba332c6caaa2d8f00e1ffcf073970e2fc929ccee06246a3427e5f1eb1",
+  "files": [
+    {
+      "path": "TextCursor.css",
+      "sha256": "84f8b73cce1bf7a8d36683b5ec378d2aeef32bc8350d0b0ad95cbb9dbf30a47d",
+      "bytes": 363
+    },
+    {
+      "path": "TextCursor.jsx",
+      "sha256": "22a2f55a0c9f5bec82a1180ef6bcf9ad3d31d0b31245f2d32da2c3df7f3c06ec",
+      "bytes": 12912
+    }
+  ]
+}

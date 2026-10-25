@@ -1,0 +1,21 @@
+{
+  "entryId": "508abc3c4c64fa23",
+  "sourceUrl": "https://reactbits.dev/backgrounds/radar",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Radar-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Radar/Radar.jsx",
+  "checkedAt": "2026-10-25T07:53:09.234Z",
+  "sha256": "3dddf17b23b3163bccee9122757f1dc9cb3462e372df323b34b1ee65377e3639",
+  "files": [
+    {
+      "path": "Radar.css",
+      "sha256": "21808b904f948e0bd26c33c4ce39e4d6bdc80b56fe053feefbb839ea8cfc93a4",
+      "bytes": 196
+    },
+    {
+      "path": "Radar.jsx",
+      "sha256": "e115e1227806603f2a5cf94c56399ab73a7b1767f88ca9d5ee6b3bdac596db25",
+      "bytes": 33720
+    }
+  ]
+}

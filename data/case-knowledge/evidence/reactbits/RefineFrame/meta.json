@@ -1,0 +1,21 @@
+{
+  "entryId": "a6833a77c4f5b849",
+  "sourceUrl": "https://reactbits.dev/micro/refine-frame",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/RefineFrame-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/RefineFrame/RefineFrame.jsx",
+  "checkedAt": "2026-10-25T07:53:13.989Z",
+  "sha256": "6dac61985221d24f7ed427f8a59fc3b551295f769368db00919c114b7762ebda",
+  "files": [
+    {
+      "path": "RefineFrame.css",
+      "sha256": "9b7d1fb24305b448820d43f9393c090edae34fbb3a398fe24b401a2a554da6fe",
+      "bytes": 5108
+    },
+    {
+      "path": "RefineFrame.jsx",
+      "sha256": "c9d219895af4ad0fbcfb0ec4a75073e91811aabcdbae5e1a8e21564ec0117d75",
+      "bytes": 9727
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "entryId": "cb85d1a2c7c7e027",
+  "sourceUrl": "https://reactbits.dev/animations/swarm-cursor",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/SwarmCursor-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/SwarmCursor/SwarmCursor.jsx",
+  "checkedAt": "2026-10-25T07:52:58.147Z",
+  "sha256": "9b2ee32de24f9d4e1836ea8597e334a1991fd963b8a5e47d0688817a7ffd0d87",
+  "files": [
+    {
+      "path": "SwarmCursor.css",
+      "sha256": "91ec32f718118df31046e2aa983794c5da045e757f252dd928707edab4783470",
+      "bytes": 379
+    },
+    {
+      "path": "SwarmCursor.jsx",
+      "sha256": "13fc4d9419d2ac5191ece5b170d312456ebee0816f44642a661e30467c731e6c",
+      "bytes": 17903
+    }
+  ]
+}

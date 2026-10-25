@@ -1,0 +1,21 @@
+{
+  "entryId": "77ff66fee5359db4",
+  "sourceUrl": "https://reactbits.dev/animations/gradual-blur",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/GradualBlur-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/GradualBlur/GradualBlur.jsx",
+  "checkedAt": "2026-10-25T07:53:00.049Z",
+  "sha256": "027dcec920b9871fb5c73efdf0ef9f886925feec4a6f780d20f71d50c3310b1f",
+  "files": [
+    {
+      "path": "GradualBlur.css",
+      "sha256": "13f6d68ac89837835ba68a03efb8c4ce1c56d633bca304fc51dfb8a93069e87b",
+      "bytes": 491
+    },
+    {
+      "path": "GradualBlur.jsx",
+      "sha256": "c265cf4aa69d44abd53f6e3e2471f6606c30341a4e1f78d5de2ac091f67ada30",
+      "bytes": 8550
+    }
+  ]
+}

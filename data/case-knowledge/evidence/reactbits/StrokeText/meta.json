@@ -1,0 +1,21 @@
+{
+  "entryId": "3e443b2f630cfc00",
+  "sourceUrl": "https://reactbits.dev/text-animations/stroke-text",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/StrokeText-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/StrokeText/StrokeText.jsx",
+  "checkedAt": "2026-10-25T07:52:54.549Z",
+  "sha256": "d1deab7d0739bc4df48a2ff8c472f873f67073109a0f20b080bf443cc192198a",
+  "files": [
+    {
+      "path": "StrokeText.css",
+      "sha256": "f4ee13f91343a501ee893d8fbe088bcb231f3da54962eee30112d6ab0e1f6f7f",
+      "bytes": 279
+    },
+    {
+      "path": "StrokeText.jsx",
+      "sha256": "05170211d047fc955d24468df22a20604e2bb5c32b041e77d86953ffd950cb17",
+      "bytes": 7202
+    }
+  ]
+}

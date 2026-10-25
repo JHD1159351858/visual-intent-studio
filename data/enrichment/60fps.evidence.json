@@ -1,0 +1,959 @@
+{
+  "collectedFrom": "https://60fps.design/sitemap.xml",
+  "verifiedAt": "2026-10-12T08:09:58.502Z",
+  "discoveredShots": 2096,
+  "sitemapSha256": "37b68ee4a03bb934abf4ab2bb16d6019a4eb325e032fee48e07c5ee1788886a6",
+  "entries": [
+    {
+      "slug": "airbnb-tactile-tab-button-interaction",
+      "name": "Airbnb Tactile Tab Button Interaction",
+      "sourceUrl": "https://60fps.design/shots/airbnb-tactile-tab-button-interaction",
+      "status": 200,
+      "finalUrl": "https://60fps.design/shots/airbnb-tactile-tab-button-interaction",
+      "verifiedAt": "2026-10-12T08:09:49.927Z",
+      "description": "Pill-style category tabs depress tactilely and switch active states with fluid spring motion and skeleton content transitions. Recorded from Airbnb on iOS.",
+      "visibleSummary": "",
+      "paragraphs": [
+        "Tapping through horizontal category tabs triggers an elastic scale-down depression effect on the selected pill button. The selected highlight shifts smoothly between tabs while placeholder skeleton cards load and crossfade into the corresponding feed content below.",
+        "Airbnb Review Button Morph to Razorpay on Scroll Interaction",
+        "Airbnb Review Button Morph to Razorpay on Scroll Interaction",
+        "Airbnb Review Button Morph to Razorpay on Scroll Interaction"
+      ],
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/6a796336a219b0caeb69c119/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/6a796336a219b0caeb69c119/thumbnail-1-0.png?width=800",
+      "videoObject": {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Airbnb Tactile Tab Button Interaction",
+        "description": "Pill-style category tabs depress tactilely and switch active states with fluid spring motion and skeleton content transitions.",
+        "thumbnailUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/6a796336a219b0caeb69c119/thumbnail-1-0.png?width=800",
+        "contentUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/6a796336a219b0caeb69c119/main.mp4",
+        "uploadDate": "2026-08-10T05:35:50.000Z"
+      },
+      "videoResponse": {
+        "status": 200,
+        "contentType": "video/mp4",
+        "contentLength": "1285999"
+      },
+      "htmlSha256": "8eab7dd68fca0b16e82b145adf392db287fe7b366187a89d89d901b385693e05"
+    },
+    {
+      "slug": "apple-music-player-controls-collapse-interaction",
+      "name": "Apple Music Player Controls Collapse Interaction",
+      "sourceUrl": "https://60fps.design/shots/apple-music-player-controls-collapse-interaction",
+      "status": 200,
+      "finalUrl": "https://60fps.design/shots/apple-music-player-controls-collapse-interaction",
+      "verifiedAt": "2026-10-12T08:09:50.126Z",
+      "description": "A smooth drag-to-dismiss gesture that collapses the full-screen music player queue into the background. Recorded from Music on iOS, broken down frame by frame.",
+      "visibleSummary": "",
+      "paragraphs": [
+        "This interaction demonstrates the fluid dismissal of the full-screen music player queue. The user initiates a downward drag on the player sheet. The entire modal panel slides down smoothly, tracking the gesture with high responsiveness. As the panel moves downward, the background content behind it scales up slightly and loses its dimming overlay, creating a seamless spatial transition. If released past the threshold, the sheet snaps off-screen with a natural spring-loaded deceleration, returning the user to the main library view.",
+        "Apple Music Album Art Illustration Pattern Animation",
+        "Apple Music Album Art Illustration Pattern Animation",
+        "Apple Music Album Art Illustration Pattern Animation",
+        "Apple Playground Scroll Blur Scale Down Interaction",
+        "Apple Playground Scroll Blur Scale Down Interaction"
+      ],
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/69f8cff3c3d879bf57303c5b/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/69f8cff3c3d879bf57303c5b/thumbnail-1-0.png?width=800",
+      "videoObject": {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Apple Music Player Controls Collapse Interaction",
+        "description": "A smooth drag-to-dismiss gesture that collapses the full-screen music player queue into the background.",
+        "thumbnailUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/69f8cff3c3d879bf57303c5b/thumbnail-1-0.png?width=800",
+        "contentUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/69f8cff3c3d879bf57303c5b/main.mp4",
+        "uploadDate": "2026-05-04T16:57:23.000Z"
+      },
+      "videoResponse": {
+        "status": 200,
+        "contentType": "video/mp4",
+        "contentLength": "1037522"
+      },
+      "htmlSha256": "1d05a3dfd190a16483b998f7d86e52fbf1bb8420adf84261bc7a30d164d90632"
+    },
+    {
+      "slug": "airbnb-photo-pop-and-slide-animation",
+      "name": "Airbnb Photo Pop and Slide Animation",
+      "sourceUrl": "https://60fps.design/shots/airbnb-photo-pop-and-slide-animation",
+      "status": 200,
+      "finalUrl": "https://60fps.design/shots/airbnb-photo-pop-and-slide-animation",
+      "verifiedAt": "2026-10-12T08:09:50.202Z",
+      "description": "A playful photo stack animation where the top card pops up, rotates, and slides to the back of the deck. Recorded from Airbnb on iOS.",
+      "visibleSummary": "",
+      "paragraphs": [
+        "Interacting with the photo stack triggers the top image card to scale up, rotate, and slide upward before tucking behind the deck. The remaining cards scale up and shift forward, creating a tactile looping gallery.",
+        "Airbnb Review Button Morph to Razorpay on Scroll Interaction",
+        "Airbnb Review Button Morph to Razorpay on Scroll Interaction",
+        "Airbnb Review Button Morph to Razorpay on Scroll Interaction",
+        "Google Arts & Culture Cards Slide and Pop Animation",
+        "Google Arts & Culture Cards Slide and Pop Animation",
+        "Google Arts & Culture Cards Slide and Pop Animation"
+      ],
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/6980cddd282b61e5db5afe6d/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/6980cddd282b61e5db5afe6d/thumbnail-1-0.png?width=800",
+      "videoObject": {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Airbnb Photo Pop and Slide Animation",
+        "description": "A playful photo stack animation where the top card pops up, rotates, and slides to the back of the deck.",
+        "thumbnailUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/6980cddd282b61e5db5afe6d/thumbnail-1-0.png?width=800",
+        "contentUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/6980cddd282b61e5db5afe6d/main.mp4",
+        "uploadDate": "2026-02-02T16:16:29.000Z"
+      },
+      "videoResponse": {
+        "status": 200,
+        "contentType": "video/mp4",
+        "contentLength": "152359"
+      },
+      "htmlSha256": "0f275b335b3fd63534892200fafe71b11599d76b58cee3e8ace168c34b4a1984"
+    },
+    {
+      "slug": "airbnb-add-guests-in-sheet-interaction",
+      "name": "Airbnb Add Guests in Sheet Interaction",
+      "sourceUrl": "https://60fps.design/shots/airbnb-add-guests-in-sheet-interaction",
+      "status": 200,
+      "finalUrl": "https://60fps.design/shots/airbnb-add-guests-in-sheet-interaction",
+      "verifiedAt": "2026-10-12T08:09:50.367Z",
+      "description": "A playful guest counter in a bottom sheet where illustrated characters spring into view as the count increases, culminating in a llama easter egg at 16+.",
+      "visibleSummary": "",
+      "paragraphs": [
+        "This interaction features a guest selection counter inside an Airbnb bottom sheet. As the user taps the plus button, the counter text updates and new illustrated characters pop into a horizontal lineup. The characters animate in with a bouncy spring physics effect, scaling up from the ground. As the line grows, the existing characters shift left to keep the group centered. When the counter reaches '16+', a surprise llama character springs into the end of the line, creating a delightful easter egg.",
+        "Airbnb Review Button Morph to Razorpay on Scroll Interaction",
+        "Duolingo Friends Streak Celebration Emoji Scale Sheet Animation",
+        "Duolingo Friends Streak Celebration Emoji Scale Sheet Animation",
+        "Duolingo Friends Streak Celebration Emoji Scale Sheet Animation"
+      ],
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/6980cbdb5ff8d4ab5d59e3e9/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/6980cbdb5ff8d4ab5d59e3e9/thumbnail-1-0.png?width=800",
+      "videoObject": {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Airbnb Add Guests in Sheet Interaction",
+        "description": "A playful guest counter in a bottom sheet where illustrated characters spring into view as the count increases, culminating in a llama easter egg at 16+.",
+        "thumbnailUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/6980cbdb5ff8d4ab5d59e3e9/thumbnail-1-0.png?width=800",
+        "contentUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/6980cbdb5ff8d4ab5d59e3e9/main.mp4",
+        "uploadDate": "2026-02-02T16:07:55.000Z"
+      },
+      "videoResponse": {
+        "status": 200,
+        "contentType": "video/mp4",
+        "contentLength": "298467"
+      },
+      "htmlSha256": "ec24043aec389a009a42c69695bf1e5e30499f8a5fa932c6693e91673dd836c9"
+    },
+    {
+      "slug": "linear-issue-actions-popup-interaction",
+      "name": "Linear Issue Actions Popup Interaction",
+      "sourceUrl": "https://60fps.design/shots/linear-issue-actions-popup-interaction",
+      "status": 200,
+      "finalUrl": "https://60fps.design/shots/linear-issue-actions-popup-interaction",
+      "verifiedAt": "2026-10-12T08:09:51.220Z",
+      "description": "A seamless transition between the iOS keyboard and contextual bottom-sheet pickers during issue creation. Recorded from Linear on iOS.",
+      "visibleSummary": "",
+      "paragraphs": [
+        "In the Linear mobile app, tapping on issue metadata buttons (like Priority, Team, or Labels) smoothly transitions the interface from the system keyboard to a custom bottom-sheet picker. The keyboard slides down out of view as the bottom sheet slides up from the bottom edge of the screen. When a selection is made or the sheet is dismissed, the bottom sheet slides down and the keyboard slides back up, maintaining a consistent, fluid rhythm without jarring layout jumps.",
+        "Fold Calendar Filter Year Month Tab Swipe Interaction",
+        "Fold Calendar Filter Year Month Tab Swipe Interaction",
+        "Fold Calendar Filter Year Month Tab Swipe Interaction"
+      ],
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68f09d36befe20b134bc6989/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68f09d36befe20b134bc6989/thumbnail-1-0.png?width=800",
+      "videoObject": {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Linear Issue Actions Popup Interaction",
+        "description": "A seamless transition between the iOS keyboard and contextual bottom-sheet pickers during issue creation.",
+        "thumbnailUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68f09d36befe20b134bc6989/thumbnail-1-0.png?width=800",
+        "contentUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68f09d36befe20b134bc6989/main.mp4",
+        "uploadDate": "2025-10-16T07:22:30.000Z"
+      },
+      "videoResponse": {
+        "status": 200,
+        "contentType": "video/mp4",
+        "contentLength": "1198026"
+      },
+      "htmlSha256": "26f31ca45ae2b87bfdc059b51d2079a506566a688f6fdc7fdd923d230a6c470c"
+    },
+    {
+      "slug": "revolut-revpoints-circular-slider-interaction",
+      "name": "Revolut RevPoints Circular Slider Interaction",
+      "sourceUrl": "https://60fps.design/shots/revolut-revpoints-circular-slider-interaction",
+      "status": 200,
+      "finalUrl": "https://60fps.design/shots/revolut-revpoints-circular-slider-interaction",
+      "verifiedAt": "2026-10-12T08:09:51.384Z",
+      "description": "A playful circular slider for selecting spare change multipliers with springy text scaling and a full-state color fill. Recorded from Revolut on iOS.",
+      "visibleSummary": "",
+      "paragraphs": [
+        "This interaction features a circular slider used to select a spare change multiplier. As the user drags the slider thumb, the progress arc draws dynamically, and the central multiplier text scales up and down with a springy bounce upon snapping to each integer. When reaching the maximum multiplier (x10), the entire inner circle fills with solid blue in a smooth expansion, and a small badge appears at the top. Simultaneously, the breakdown values below update in real-time, and the primary action button transitions between active and inactive states.",
+        "Revolut Coachmark Button Highlight Glow Interaction",
+        "Revolut Coachmark Button Highlight Glow Interaction",
+        "Revolut Coachmark Button Highlight Glow Interaction",
+        "Polaroid Aperture Semi Circular Slider Swipe Interaction"
+      ],
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68e7d71f01fefe1a9ab1766e/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68e7d71f01fefe1a9ab1766e/thumbnail-1-0.png?width=800",
+      "videoObject": {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Revolut RevPoints Circular Slider Interaction",
+        "description": "A playful circular slider for selecting spare change multipliers with springy text scaling and a full-state color fill.",
+        "thumbnailUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68e7d71f01fefe1a9ab1766e/thumbnail-1-0.png?width=800",
+        "contentUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68e7d71f01fefe1a9ab1766e/main.mp4",
+        "uploadDate": "2025-10-09T15:39:11.000Z"
+      },
+      "videoResponse": {
+        "status": 200,
+        "contentType": "video/mp4",
+        "contentLength": "679003"
+      },
+      "htmlSha256": "afefa1044a3108665fc0b500b2d12093265722a1976780136d308ecbc9c5eb67"
+    },
+    {
+      "slug": "perplexity-model-selection-sheet-morph-interaction",
+      "name": "Perplexity Model Selection Sheet Morph Interaction",
+      "sourceUrl": "https://60fps.design/shots/perplexity-model-selection-sheet-morph-interaction",
+      "status": 200,
+      "finalUrl": "https://60fps.design/shots/perplexity-model-selection-sheet-morph-interaction",
+      "verifiedAt": "2026-10-12T08:09:51.481Z",
+      "description": "A seamless bottom sheet morph transition between mode selection and model selection in the Perplexity app. Recorded from Perplexity on iOS.",
+      "visibleSummary": "",
+      "paragraphs": [
+        "The interaction begins with a tap on the mode selector icon, which slides up a 'Choose a mode' bottom sheet while blurring the background. Tapping the model dropdown within this sheet triggers a fluid container transform (morph) where the bottom sheet dynamically expands in height to reveal the 'Models' selection list. The list items fade and stagger in with a subtle spring. Selecting a model morphs the sheet back down to its original height, updating the selected option. Additionally, toggling 'Incognito mode' dismisses the sheet and morphs the input field style with a sliding toast indicator.",
+        "Perplexity Conversation Word Sentence Audio Interaction",
+        "Perplexity Conversation Word Sentence Audio Interaction",
+        "Perplexity Enterprise Max Chat Golden Stroke Animation",
+        "Perplexity Enterprise Max Chat Golden Stroke Animation",
+        "Perplexity Conversation Word Sentence Audio Interaction",
+        "Perplexity Enterprise Max Chat Golden Stroke Animation",
+        "Family Sequence of Sheets Vary in Height Interaction",
+        "Family Sequence of Sheets Vary in Height Interaction",
+        "Family Sequence of Sheets Vary in Height Interaction"
+      ],
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68d129e343b21a129d1531e6/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68d129e343b21a129d1531e6/thumbnail-1-0.png?width=800",
+      "videoObject": {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Perplexity Model Selection Sheet Morph Interaction",
+        "description": "A seamless bottom sheet morph transition between mode selection and model selection in the Perplexity app.",
+        "thumbnailUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68d129e343b21a129d1531e6/thumbnail-1-0.png?width=800",
+        "contentUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68d129e343b21a129d1531e6/main.mp4",
+        "uploadDate": "2025-09-22T10:50:11.000Z"
+      },
+      "videoResponse": {
+        "status": 200,
+        "contentType": "video/mp4",
+        "contentLength": "2114513"
+      },
+      "htmlSha256": "5ef43d70546a27e04125ee7f6cd927b1acef6883bb738a8d6d75b7ca760a5e2d"
+    },
+    {
+      "slug": "google-todo-check-interaction",
+      "name": "Google Todo Check Interaction",
+      "sourceUrl": "https://60fps.design/shots/google-todo-check-interaction",
+      "status": 200,
+      "finalUrl": "https://60fps.design/shots/google-todo-check-interaction",
+      "verifiedAt": "2026-10-12T08:09:51.657Z",
+      "description": "A setup checklist that transitions loading states into completed checkmarks and animates the header upon completion. Recorded from Google on iOS.",
+      "visibleSummary": "",
+      "paragraphs": [
+        "This onboarding flow features a checklist where pending tasks display a circular loading spinner. Once a task is completed, the spinner smoothly morphs into a checked icon with a springy bounce. When all tasks are finished, the header illustration playfully animates, the title updates to 'You're all set', and a primary action button slides up from the bottom.",
+        "Family Contextual Spinner Move to Sheet Morph Interaction",
+        "Family Spinner Move to Bottom Navigation on Confirm Transaction",
+        "Family Contextual Spinner Move to Sheet Morph Interaction",
+        "Family Spinner Move to Bottom Navigation on Confirm Transaction"
+      ],
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68a5f9df0a8c57042d46d10a/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68a5f9df0a8c57042d46d10a/thumbnail-1-0.png?width=800",
+      "videoObject": {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Google Todo Check Interaction",
+        "description": "A setup checklist that transitions loading states into completed checkmarks and animates the header upon completion.",
+        "thumbnailUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68a5f9df0a8c57042d46d10a/thumbnail-1-0.png?width=800",
+        "contentUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68a5f9df0a8c57042d46d10a/main.mp4",
+        "uploadDate": "2025-08-20T16:37:51.000Z"
+      },
+      "videoResponse": {
+        "status": 200,
+        "contentType": "video/mp4",
+        "contentLength": "1332470"
+      },
+      "htmlSha256": "91136e70c30135f87b4db7112cda7db043b700527afbf2e5dc4aad1fd739a245"
+    },
+    {
+      "slug": "google-ai-mode-search-morph-interaction",
+      "name": "Google AI Mode Search Morph Interaction",
+      "sourceUrl": "https://60fps.design/shots/google-ai-mode-search-morph-interaction",
+      "status": 200,
+      "finalUrl": "https://60fps.design/shots/google-ai-mode-search-morph-interaction",
+      "verifiedAt": "2026-10-12T08:09:52.486Z",
+      "description": "A seamless morphing transition expanding a search bar into a full-screen AI search interface. Recorded from Google on iOS, broken down frame by frame.",
+      "visibleSummary": "",
+      "paragraphs": [
+        "Tapping the AI icon morphs the search bar into a full-screen AI Mode interface. The background fades to dark while suggestion chips and the keyboard slide into place. Reversing the action shrinks the interface back into the search bar.",
+        "Monogram Keyboard Icon Morph to Chat Input Interaction",
+        "Monogram Pulse Sweep Chat Response Reveal Interaction",
+        "Monogram Keyboard Icon Morph to Chat Input Interaction",
+        "Monogram Pulse Sweep Chat Response Reveal Interaction",
+        "Monogram Keyboard Icon Morph to Chat Input Interaction"
+      ],
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68a5f9b1cd4a3cfd549a7d4e/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68a5f9b1cd4a3cfd549a7d4e/thumbnail-1-0.png?width=800",
+      "videoObject": {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Google AI Mode Search Morph Interaction",
+        "description": "A seamless morphing transition expanding a search bar into a full-screen AI search interface.",
+        "thumbnailUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68a5f9b1cd4a3cfd549a7d4e/thumbnail-1-0.png?width=800",
+        "contentUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68a5f9b1cd4a3cfd549a7d4e/main.mp4",
+        "uploadDate": "2025-08-20T16:37:05.000Z"
+      },
+      "videoResponse": {
+        "status": 200,
+        "contentType": "video/mp4",
+        "contentLength": "1227750"
+      },
+      "htmlSha256": "41210d70dcafe2500da99147873c52aeacd1faf35346df4f071799c85724aaac"
+    },
+    {
+      "slug": "google-photos-logo-spin-to-backup-loader-animation",
+      "name": "Google Photos Logo Spin to Backup Loader Animation",
+      "sourceUrl": "https://60fps.design/shots/google-photos-logo-spin-to-backup-loader-animation",
+      "status": 200,
+      "finalUrl": "https://60fps.design/shots/google-photos-logo-spin-to-backup-loader-animation",
+      "verifiedAt": "2026-10-12T08:09:52.638Z",
+      "description": "An elegant header expansion in Google Photos that transitions from a simple backup status text to a detailed progress card, pushing content down with spring physics.",
+      "visibleSummary": "",
+      "paragraphs": [
+        "The interaction begins with a subtle backup status indicator appearing in the top-left of the header. Upon tapping, this status line expands downwards into a detailed backup card. The card reveals a circular progress loader, time remaining, and helper text. This expansion smoothly pushes the main content ('Today' section) downwards using a springy, fluid motion, ensuring the layout adjusts naturally without abrupt jumps.",
+        "Google Arts & Culture Cards Slide and Pop Animation",
+        "Google Arts & Culture Cards Slide and Pop Animation"
+      ],
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68749fb114683753e674153e/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68749fb114683753e674153e/thumbnail-1-0.png?width=800",
+      "videoObject": {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Google Photos Logo Spin to Backup Loader Animation",
+        "description": "An elegant header expansion in Google Photos that transitions from a simple backup status text to a detailed progress card, pushing content down with spring physics.",
+        "thumbnailUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68749fb114683753e674153e/thumbnail-1-0.png?width=800",
+        "contentUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/68749fb114683753e674153e/main.mp4",
+        "uploadDate": "2025-07-14T06:12:01.000Z"
+      },
+      "videoResponse": {
+        "status": 200,
+        "contentType": "video/mp4",
+        "contentLength": "281038"
+      },
+      "htmlSha256": "77095cc4cb26616997b9ceb7ecc4d074f78c64fe1744157c3aeceb50a22bb28d"
+    },
+    {
+      "slug": "notion-ai-sheet-intro-action-trail-transition",
+      "name": "Notion AI Sheet Intro Action Trail Transition",
+      "sourceUrl": "https://60fps.design/shots/notion-ai-sheet-intro-action-trail-transition",
+      "status": 200,
+      "finalUrl": "https://60fps.design/shots/notion-ai-sheet-intro-action-trail-transition",
+      "verifiedAt": "2026-10-12T08:09:52.777Z",
+      "description": "An auto-scrolling vertical ticker of AI action pills inside an onboarding bottom sheet. Recorded from Notion on iOS, broken down frame by frame.",
+      "visibleSummary": "",
+      "paragraphs": [
+        "An onboarding bottom sheet introduces Notion AI with a continuous, vertically scrolling list of action pills. The list moves upward at a constant, gentle pace, showcasing various capabilities like 'Find in Google Drive', 'Ask a question', and 'Brainstorm ideas'. On the left, a friendly pencil mascot remains static, while the bottom of the sheet features a prominent 'Try it' call-to-action button.",
+        "Outlook Swipe Right Autocomplete Tooltip Sheet Animation",
+        "Telegram Real Time Translation Feature Sheet Animation",
+        "Outlook Swipe Right Autocomplete Tooltip Sheet Animation",
+        "Outlook Swipe Right Autocomplete Tooltip Sheet Animation"
+      ],
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/682dd23dd7ce6c42e74b495e/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/682dd23dd7ce6c42e74b495e/thumbnail-1-0.png?width=800",
+      "videoObject": {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Notion AI Sheet Intro Action Trail Transition",
+        "description": "An auto-scrolling vertical ticker of AI action pills inside an onboarding bottom sheet.",
+        "thumbnailUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/682dd23dd7ce6c42e74b495e/thumbnail-1-0.png?width=800",
+        "contentUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/682dd23dd7ce6c42e74b495e/main.mp4",
+        "uploadDate": "2025-05-21T13:16:45.000Z"
+      },
+      "videoResponse": {
+        "status": 200,
+        "contentType": "video/mp4",
+        "contentLength": "1639789"
+      },
+      "htmlSha256": "41dcb67c5165e685e721fd01c07952291bfbb8f54a7eddd2a88895dc1338c3c9"
+    },
+    {
+      "slug": "airbnb-identity-verification-card-flip-scan-interaction",
+      "name": "Airbnb Identity Verification Card Flip Scan Interaction",
+      "sourceUrl": "https://60fps.design/shots/airbnb-identity-verification-card-flip-scan-interaction",
+      "status": 200,
+      "finalUrl": "https://60fps.design/shots/airbnb-identity-verification-card-flip-scan-interaction",
+      "verifiedAt": "2026-10-12T08:09:52.921Z",
+      "description": "A 3D holographic card tilt and shimmer effect used for identity verification. Recorded from Airbnb on iOS, broken down frame by frame.",
+      "visibleSummary": "",
+      "paragraphs": [
+        "When a user taps the identity verification badge on a host profile, it opens a detailed view featuring a premium 3D card. The card responds to device tilt (gyroscope) with a realistic 3D rotation and a shimmering holographic overlay that reveals security watermarks and Airbnb logos. Tapping back smoothly transitions the card back into its inline profile state.",
+        "Airbnb Review Button Morph to Razorpay on Scroll Interaction",
+        "Spielwerk Remix Game Sheet 3D Card Shimmer Animation",
+        "Apple Wallet Card Gyro Pattern Color Change Interaction",
+        "Spielwerk Remix Game Sheet 3D Card Shimmer Animation",
+        "Apple Wallet Card Gyro Pattern Color Change Interaction",
+        "Spielwerk Remix Game Sheet 3D Card Shimmer Animation",
+        "Apple Wallet Card Gyro Pattern Color Change Interaction"
+      ],
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/682abfe4482c4f1c2fce56cd/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/682abfe4482c4f1c2fce56cd/thumbnail-1-0.png?width=800",
+      "videoObject": {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Airbnb Identity Verification Card Flip Scan Interaction",
+        "description": "A 3D holographic card tilt and shimmer effect used for identity verification.",
+        "thumbnailUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/682abfe4482c4f1c2fce56cd/thumbnail-1-0.png?width=800",
+        "contentUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/682abfe4482c4f1c2fce56cd/main.mp4",
+        "uploadDate": "2025-05-19T05:21:40.000Z"
+      },
+      "videoResponse": {
+        "status": 200,
+        "contentType": "video/mp4",
+        "contentLength": "1907181"
+      },
+      "htmlSha256": "20670d16d6871f274de516c4a1c996551cad8e24cb431027a9fca29d01108831"
+    },
+    {
+      "slug": "github-badges-showcase-interaction",
+      "name": "GitHub Badges Showcase Interaction",
+      "sourceUrl": "https://60fps.design/shots/github-badges-showcase-interaction",
+      "status": 200,
+      "finalUrl": "https://60fps.design/shots/github-badges-showcase-interaction",
+      "verifiedAt": "2026-10-12T08:09:53.751Z",
+      "description": "A horizontal swipeable carousel showcasing gamified 3D profile badges with dynamic background color transitions and subtle 3D card rotation. From GitHub.",
+      "visibleSummary": "",
+      "paragraphs": [
+        "This interaction showcases GitHub profile badges in a modal carousel. Swiping horizontally transitions between different earned badges, smoothly morphing the modal's background color to match the theme of the active badge. Each badge features a rich 3D illustration that subtly rotates on its Y-axis during the drag gesture, adding physical depth. The transition uses spring physics to snap cards into place, accompanied by a fading text transition for the badge details. Tapping the close button gracefully scales down and fades out the modal to return to the profile screen.",
+        "Cobot Get Started Value Props Carousel Swipe Interaction",
+        "Cobot Get Started Value Props Carousel Swipe Interaction",
+        "Cobot Get Started Value Props Carousel Swipe Interaction"
+      ],
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/67b4cb648f8d12020de77ef8/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/67b4cb648f8d12020de77ef8/thumbnail-1-0.png?width=800",
+      "videoObject": {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "GitHub Badges Showcase Interaction",
+        "description": "A horizontal swipeable carousel showcasing gamified 3D profile badges with dynamic background color transitions and subtle 3D card rotation.",
+        "thumbnailUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/67b4cb648f8d12020de77ef8/thumbnail-1-0.png?width=800",
+        "contentUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/67b4cb648f8d12020de77ef8/main.mp4",
+        "uploadDate": "2025-02-18T18:03:16.000Z"
+      },
+      "videoResponse": {
+        "status": 200,
+        "contentType": "video/mp4",
+        "contentLength": "3268865"
+      },
+      "htmlSha256": "50a3379e2a087be66d39044082eabf1dd472f58175222fd0d7ac5ca5810b2671"
+    },
+    {
+      "slug": "revolut-graph-glow-drag-interaction",
+      "name": "Revolut Graph Glow Drag Interaction",
+      "sourceUrl": "https://60fps.design/shots/revolut-graph-glow-drag-interaction",
+      "status": 200,
+      "finalUrl": "https://60fps.design/shots/revolut-graph-glow-drag-interaction",
+      "verifiedAt": "2026-10-12T08:09:53.998Z",
+      "description": "A highly responsive graph scrubbing interaction featuring a dynamic glowing cursor, color-shifting price states, and an active numeric counter. From Revolut.",
+      "visibleSummary": "",
+      "paragraphs": [
+        "This interaction showcases a premium data-exploration experience on a financial chart. As the user drags their finger across the line graph, a vertical indicator line and a glowing intersection dot track the movement. The dot glides smoothly along the graph's path, casting a soft radial glow. Simultaneously, the main price text acts as a rapid counter, updating instantly alongside the timestamp. The visual theme dynamically shifts: when the selected data point represents a positive gain, the glow and text accent green; when it dips into a loss, they seamlessly transition to red. Switching between timeframes morphs the graph line smoothly with a springy transition.",
+        "Revolut Coachmark Button Highlight Glow Interaction",
+        "Revolut Coachmark Button Highlight Glow Interaction",
+        "Revolut Coachmark Button Highlight Glow Interaction",
+        "Family Scrubbing Graph Arrow Direction Up Down Interaction",
+        "Family Scrubbing Graph Arrow Direction Up Down Interaction",
+        "Family Scrubbing Graph Arrow Direction Up Down Interaction"
+      ],
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/67a97da9cff8b1323a5799f2/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/67a97da9cff8b1323a5799f2/thumbnail-1-0.png?width=800",
+      "videoObject": {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Revolut Graph Glow Drag Interaction",
+        "description": "A highly responsive graph scrubbing interaction featuring a dynamic glowing cursor, color-shifting price states, and an active numeric counter.",
+        "thumbnailUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/67a97da9cff8b1323a5799f2/thumbnail-1-0.png?width=800",
+        "contentUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/67a97da9cff8b1323a5799f2/main.mp4",
+        "uploadDate": "2025-02-10T04:16:41.000Z"
+      },
+      "videoResponse": {
+        "status": 200,
+        "contentType": "video/mp4",
+        "contentLength": "1214349"
+      },
+      "htmlSha256": "4bb2a3c025cb607af0ad3ae269349f7b1834b011995cc1e4797bb0551f863579"
+    },
+    {
+      "slug": "revolut-3d-card-rotate-interaction",
+      "name": "Revolut 3D Card Rotate Interaction",
+      "sourceUrl": "https://60fps.design/shots/revolut-3d-card-rotate-interaction",
+      "status": 200,
+      "finalUrl": "https://60fps.design/shots/revolut-3d-card-rotate-interaction",
+      "verifiedAt": "2026-10-12T08:09:54.031Z",
+      "description": "A premium 3D card showcase carousel featuring interactive 360-degree card flipping, color picking, and dynamic metallic reflections. From Revolut.",
+      "visibleSummary": "",
+      "paragraphs": [
+        "This interaction showcases Revolut's premium card tiers. Users can swipe horizontally to cycle through different card types (Standard, Plus, Premium, Metal, Ultra). Swiping transitions the cards with a smooth 3D perspective shift and depth. Tapping a card triggers a full 3D flip animation to show the card's reverse side. For cards with multiple colorways, a color picker appears below; tapping a color dot smoothly updates the card's texture and color. Dynamic lighting and metallic reflections respond to the card's orientation, creating a highly tactile, skeuomorphic feel.",
+        "Revolut Coachmark Button Highlight Glow Interaction",
+        "Revolut Coachmark Button Highlight Glow Interaction",
+        "Revolut Coachmark Button Highlight Glow Interaction",
+        "Cobot Get Started Value Props Carousel Swipe Interaction"
+      ],
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/67a97da9e5458a0349339588/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/67a97da9e5458a0349339588/thumbnail-1-0.png?width=800",
+      "videoObject": {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Revolut 3D Card Rotate Interaction",
+        "description": "A premium 3D card showcase carousel featuring interactive 360-degree card flipping, color picking, and dynamic metallic reflections.",
+        "thumbnailUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/67a97da9e5458a0349339588/thumbnail-1-0.png?width=800",
+        "contentUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/67a97da9e5458a0349339588/main.mp4",
+        "uploadDate": "2025-02-10T04:16:41.000Z"
+      },
+      "videoResponse": {
+        "status": 200,
+        "contentType": "video/mp4",
+        "contentLength": "1586149"
+      },
+      "htmlSha256": "1b95aa4ba5a7092e8a8813ee66d68b955698ab1c2ba52809b1ad5346c8fc6ed2"
+    },
+    {
+      "slug": "apple-music-emoji-reaction-interaction",
+      "name": "Apple Music Emoji Reaction Interaction",
+      "sourceUrl": "https://60fps.design/shots/apple-music-emoji-reaction-interaction",
+      "status": 200,
+      "finalUrl": "https://60fps.design/shots/apple-music-emoji-reaction-interaction",
+      "verifiedAt": "2026-10-12T08:09:54.233Z",
+      "description": "A springy emoji reaction picker that triggers floating particle animations when selected in a music player. Recorded from Music on iOS.",
+      "visibleSummary": "",
+      "paragraphs": [
+        "In this music player interface, tapping the reaction button reveals a horizontal emoji picker that scales up with a springy bounce. Selecting an emoji immediately dismisses the picker and spawns a stream of floating, drifting emoji particles that rise upwards, scaling down and fading out into the background. The interaction is highly tactile, combining spring physics on the menu with playful particle physics on the reaction itself.",
+        "Apple Music Album Art Illustration Pattern Animation",
+        "Apple Music Album Art Illustration Pattern Animation",
+        "Apple Music Album Art Illustration Pattern Animation",
+        "Apple Messages Send With Effect Bubble Slider Interaction",
+        "Honk Customize Button Emoji Pop on Selection Interaction",
+        "Honk Double Tap Friends Chat Heart Emoji Pop Interaction",
+        "Apple Messages Send With Effect Bubble Slider Interaction",
+        "Honk Customize Button Emoji Pop on Selection Interaction",
+        "Apple Messages Send With Effect Bubble Slider Interaction"
+      ],
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/678e32a4961c534fdba8e981/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/678e32a4961c534fdba8e981/thumbnail-1-0.png?width=800",
+      "videoObject": {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Apple Music Emoji Reaction Interaction",
+        "description": "A springy emoji reaction picker that triggers floating particle animations when selected in a music player.",
+        "thumbnailUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/678e32a4961c534fdba8e981/thumbnail-1-0.png?width=800",
+        "contentUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/678e32a4961c534fdba8e981/main.mp4",
+        "uploadDate": "2025-01-20T11:25:24.000Z"
+      },
+      "videoResponse": {
+        "status": 200,
+        "contentType": "video/mp4",
+        "contentLength": "977023"
+      },
+      "htmlSha256": "69bb6f1b3e10385fdff679ca1844129ff55d19cf6773fcba8fddfc1ce3f06235"
+    },
+    {
+      "slug": "google-chrome-drag-tab-to-pin-interaction",
+      "name": "Google Chrome Drag Tab to Pin Interaction",
+      "sourceUrl": "https://60fps.design/shots/google-chrome-drag-tab-to-pin-interaction",
+      "status": 200,
+      "finalUrl": "https://60fps.design/shots/google-chrome-drag-tab-to-pin-interaction",
+      "verifiedAt": "2026-10-12T08:09:55.035Z",
+      "description": "A drag-and-drop interaction in Google Chrome where dragging a tab card to a bottom target area pins it to the top grid. Recorded from Chrome on iOS.",
+      "visibleSummary": "",
+      "paragraphs": [
+        "In Google Chrome's tab switcher, users can drag any regular tab card down toward a dedicated 'Drag tab here to pin it' target area at the bottom of the screen. As the card is dragged, it scales down. Upon entering the target area, the zone morphs into a blue active state containing the tab preview. When released, the tab smoothly animates and scales up to join the pinned tabs row at the top of the grid, while the remaining regular tabs fluidly slide to rearrange and fill the vacant space.",
+        "Google Chrome IPL Live Score Illustration Animation",
+        "Google Chrome IPL Live Score Illustration Animation",
+        "Google Chrome Customize Homepage Background Interaction",
+        "Google Chrome Customize Homepage Background Interaction",
+        "Google Chrome IPL Live Score Illustration Animation",
+        "Google Chrome Customize Homepage Background Interaction"
+      ],
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/675676b463a84726545b805b/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/675676b463a84726545b805b/thumbnail-1-0.png?width=800",
+      "videoObject": {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Google Chrome Drag Tab to Pin Interaction",
+        "description": "A drag-and-drop interaction in Google Chrome where dragging a tab card to a bottom target area pins it to the top grid.",
+        "thumbnailUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/675676b463a84726545b805b/thumbnail-1-0.png?width=800",
+        "contentUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/675676b463a84726545b805b/main.mp4",
+        "uploadDate": "2024-12-09T04:48:52.000Z"
+      },
+      "videoResponse": {
+        "status": 200,
+        "contentType": "video/mp4",
+        "contentLength": "600680"
+      },
+      "htmlSha256": "663177bdf459e06fde22753199887849a2b17bd3354046ade52b4c9f710df3f1"
+    },
+    {
+      "slug": "google-chrome-drag-tabs-to-arrange-interaction",
+      "name": "Google Chrome Drag Tabs to Arrange Interaction",
+      "sourceUrl": "https://60fps.design/shots/google-chrome-drag-tabs-to-arrange-interaction",
+      "status": 200,
+      "finalUrl": "https://60fps.design/shots/google-chrome-drag-tabs-to-arrange-interaction",
+      "verifiedAt": "2026-10-12T08:09:55.360Z",
+      "description": "A smooth grid-based drag-and-drop interaction for rearranging browser tabs in Google Chrome. Recorded from Chrome on iOS, broken down frame by frame.",
+      "visibleSummary": "",
+      "paragraphs": [
+        "In Google Chrome's tab switcher, users can long-press and drag a tab card to rearrange its position within the grid. Upon holding, the selected tab lifts up with a subtle scale and shadow effect to indicate it is active. As it is dragged across the screen, the surrounding tabs dynamically slide and shift to preview their new positions. When the tab is released, it snaps smoothly into place with a subtle spring-like settling motion.",
+        "Google Chrome IPL Live Score Illustration Animation",
+        "Google Chrome IPL Live Score Illustration Animation",
+        "Google Chrome Customize Homepage Background Interaction",
+        "Google Chrome Customize Homepage Background Interaction",
+        "Google Chrome IPL Live Score Illustration Animation",
+        "Google Chrome Customize Homepage Background Interaction",
+        "Fold Calendar Filter Year Month Tab Swipe Interaction",
+        "Fold Calendar Filter Year Month Tab Swipe Interaction"
+      ],
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/675676b45222d1a7afd8ba8b/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/675676b45222d1a7afd8ba8b/thumbnail-1-0.png?width=800",
+      "videoObject": {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Google Chrome Drag Tabs to Arrange Interaction",
+        "description": "A smooth grid-based drag-and-drop interaction for rearranging browser tabs in Google Chrome.",
+        "thumbnailUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/675676b45222d1a7afd8ba8b/thumbnail-1-0.png?width=800",
+        "contentUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/675676b45222d1a7afd8ba8b/main.mp4",
+        "uploadDate": "2024-12-09T04:48:52.000Z"
+      },
+      "videoResponse": {
+        "status": 200,
+        "contentType": "video/mp4",
+        "contentLength": "1402079"
+      },
+      "htmlSha256": "97aac7f761a329e595a133a49eb8ba57fff35cb6eff0829d990ed176fabcfd95"
+    },
+    {
+      "slug": "google-chrome-tabs-switch-scale-interaction",
+      "name": "Google Chrome Tabs Switch Scale Interaction",
+      "sourceUrl": "https://60fps.design/shots/google-chrome-tabs-switch-scale-interaction",
+      "status": 200,
+      "finalUrl": "https://60fps.design/shots/google-chrome-tabs-switch-scale-interaction",
+      "verifiedAt": "2026-10-12T08:09:55.465Z",
+      "description": "A seamless transition where the active browser page scales down and morphs into a compact tab pill at the bottom of the screen. Recorded from Chrome on iOS.",
+      "visibleSummary": "",
+      "paragraphs": [
+        "When the user taps the tab switcher button, the active web page smoothly shrinks and scales down, morphing directly into its corresponding tab pill in the bottom carousel. The background transitions to a dark grey, and the surrounding tab pills animate into place. This spatial zoom effect maintains context, clearly showing where the page goes and how it relates to the other open tabs.",
+        "Google Chrome IPL Live Score Illustration Animation",
+        "Google Chrome IPL Live Score Illustration Animation",
+        "Google Chrome Customize Homepage Background Interaction",
+        "Google Chrome Customize Homepage Background Interaction",
+        "Google Chrome IPL Live Score Illustration Animation",
+        "Google Chrome Customize Homepage Background Interaction"
+      ],
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/675676b35222d1a7afd8ba80/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/675676b35222d1a7afd8ba80/thumbnail-1-0.png?width=800",
+      "videoObject": {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Google Chrome Tabs Switch Scale Interaction",
+        "description": "A seamless transition where the active browser page scales down and morphs into a compact tab pill at the bottom of the screen.",
+        "thumbnailUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/675676b35222d1a7afd8ba80/thumbnail-1-0.png?width=800",
+        "contentUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/675676b35222d1a7afd8ba80/main.mp4",
+        "uploadDate": "2024-12-09T04:48:51.000Z"
+      },
+      "videoResponse": {
+        "status": 200,
+        "contentType": "video/mp4",
+        "contentLength": "1011432"
+      },
+      "htmlSha256": "4751cca9d08ae6dc9c23cc7a26283f5ee525ee9d4b68cb7044b321e9b6f10947"
+    },
+    {
+      "slug": "google-docs-value-prop-full-screen-color-transition",
+      "name": "Google Docs Value Prop Full Screen Color Transition",
+      "sourceUrl": "https://60fps.design/shots/google-docs-value-prop-full-screen-color-transition",
+      "status": 200,
+      "finalUrl": "https://60fps.design/shots/google-docs-value-prop-full-screen-color-transition",
+      "verifiedAt": "2026-10-12T08:09:55.844Z",
+      "description": "Full-screen background color transitions and sliding illustrations during an onboarding carousel. Recorded from Google Docs on iOS, broken down frame by frame.",
+      "visibleSummary": "",
+      "paragraphs": [
+        "A multi-step onboarding carousel where each slide transition triggers a full-screen background color change. As the user navigates through the value propositions, the vibrant background color smoothly crossfades to a new hue (blue to green, green to teal, teal to orange). Simultaneously, the custom illustrations and descriptive text slide horizontally with a subtle parallax effect, creating a cohesive, immersive, and playful introduction to the app.",
+        "Google Chrome Customize Homepage Background Interaction",
+        "Tide Guide Pricing Sheet Value Prop Slide Interaction",
+        "Google Chrome Customize Homepage Background Interaction",
+        "Tide Guide Pricing Sheet Value Prop Slide Interaction",
+        "Google Chrome Customize Homepage Background Interaction"
+      ],
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/6745f92a080b60408ca18bf7/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/6745f92a080b60408ca18bf7/thumbnail-1-0.png?width=800",
+      "videoObject": {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Google Docs Value Prop Full Screen Color Transition",
+        "description": "Full-screen background color transitions and sliding illustrations during an onboarding carousel.",
+        "thumbnailUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/6745f92a080b60408ca18bf7/thumbnail-1-0.png?width=800",
+        "contentUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/6745f92a080b60408ca18bf7/main.mp4",
+        "uploadDate": "2024-11-26T16:36:58.000Z"
+      },
+      "videoResponse": {
+        "status": 200,
+        "contentType": "video/mp4",
+        "contentLength": "413945"
+      },
+      "htmlSha256": "8daa44743b9c861fe388ade4d9e5b0b85d7059a7bd005cc6f432f5d0ba40a07e"
+    },
+    {
+      "slug": "spotify-podcast-card-preview-sound-wave-animation",
+      "name": "Spotify Podcast Card Preview Sound Wave Animation",
+      "sourceUrl": "https://60fps.design/shots/spotify-podcast-card-preview-sound-wave-animation",
+      "status": 200,
+      "finalUrl": "https://60fps.design/shots/spotify-podcast-card-preview-sound-wave-animation",
+      "verifiedAt": "2026-10-12T08:09:56.279Z",
+      "description": "An interactive podcast preview card that expands to show a pulsing audio visualizer and synchronized text captions. Recorded from Spotify on iOS.",
+      "visibleSummary": "",
+      "paragraphs": [
+        "When the user taps the preview episode button on a podcast card, the card expands vertically. The podcast cover art becomes the background for a dynamic, circular sound wave visualizer that pulses in real-time. Simultaneously, synchronized text captions fade and slide up at the bottom of the card, providing a visual and textual preview of the audio content.",
+        "Spotify BTS ARMY Campaign 3D Intro Play Message Interaction",
+        "Spotify BTS ARMY Campaign 3D Intro Play Message Interaction",
+        "Spotify BTS ARMY Campaign Popover Modal Carousel Interaction",
+        "Spotify BTS ARMY Campaign Popover Modal Carousel Interaction",
+        "Spotify BTS ARMY Campaign 3D Intro Play Message Interaction",
+        "Spotify BTS ARMY Campaign Popover Modal Carousel Interaction",
+        "Apple Music Replay 2025 Summary Background Animation",
+        "Apple Music Replay 2025 Top Album Circular Path Animation",
+        "Apple Music Replay 2025 Summary Background Animation"
+      ],
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/673b2a5f630fc3cfdf99d604/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/673b2a5f630fc3cfdf99d604/thumbnail-1-0.png?width=800",
+      "videoObject": {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Spotify Podcast Card Preview Sound Wave Animation",
+        "description": "An interactive podcast preview card that expands to show a pulsing audio visualizer and synchronized text captions.",
+        "thumbnailUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/673b2a5f630fc3cfdf99d604/thumbnail-1-0.png?width=800",
+        "contentUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/673b2a5f630fc3cfdf99d604/main.mp4",
+        "uploadDate": "2024-11-18T11:51:59.000Z"
+      },
+      "videoResponse": {
+        "status": 200,
+        "contentType": "video/mp4",
+        "contentLength": "1394937"
+      },
+      "htmlSha256": "aa6d86c256f3a26cabf5a5051b6006e2aac17ea95b46e51c4e785b3aba4d2761"
+    },
+    {
+      "slug": "airbnb-price-toggle-interaction",
+      "name": "Airbnb Price Toggle Interaction",
+      "sourceUrl": "https://60fps.design/shots/airbnb-price-toggle-interaction",
+      "status": 200,
+      "finalUrl": "https://60fps.design/shots/airbnb-price-toggle-interaction",
+      "verifiedAt": "2026-10-12T08:09:56.634Z",
+      "description": "A smooth toggle switch interaction that transitions from off to on with a sliding thumb and an appearing checkmark icon. Recorded from Airbnb on iOS.",
+      "visibleSummary": "",
+      "paragraphs": [
+        "This interaction showcases Airbnb's custom toggle switch design. When tapped, the toggle's background smoothly transitions from a light grey to a dark charcoal color, while the circular white thumb slides to the right. As the thumb settles, a subtle checkmark icon fades and scales into view inside it. Tapping it again reverses the animation, sliding the thumb back to the left and fading out the checkmark, returning the background to light grey. The motion uses a responsive spring easing that makes the switch feel tactile and premium.",
+        "Airbnb Review Button Morph to Razorpay on Scroll Interaction",
+        "Exoplan Pricing Free Trial Toggle Text Button Animation",
+        "Exoplan Pricing Free Trial Toggle Text Button Animation",
+        "Exoplan Pricing Free Trial Toggle Text Button Animation"
+      ],
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/672f62acfbe814b25213daac/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/672f62acfbe814b25213daac/thumbnail-1-0.png?width=800",
+      "videoObject": {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Airbnb Price Toggle Interaction",
+        "description": "A smooth toggle switch interaction that transitions from off to on with a sliding thumb and an appearing checkmark icon.",
+        "thumbnailUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/672f62acfbe814b25213daac/thumbnail-1-0.png?width=800",
+        "contentUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/672f62acfbe814b25213daac/main.mp4",
+        "uploadDate": "2024-11-09T13:25:00.000Z"
+      },
+      "videoResponse": {
+        "status": 200,
+        "contentType": "video/mp4",
+        "contentLength": "2611927"
+      },
+      "htmlSha256": "377d465307490d353c8fe3b411696012304b78bb785871062e5aa26140c11d4b"
+    },
+    {
+      "slug": "spotify-speed-slider-interaction",
+      "name": "Spotify Speed Slider Interaction",
+      "sourceUrl": "https://60fps.design/shots/spotify-speed-slider-interaction",
+      "status": 200,
+      "finalUrl": "https://60fps.design/shots/spotify-speed-slider-interaction",
+      "verifiedAt": "2026-10-12T08:09:56.710Z",
+      "description": "A smooth, tactile horizontal speed slider inside a bottom sheet for adjusting podcast playback speed. Recorded from Spotify on iOS, broken down frame by frame.",
+      "visibleSummary": "",
+      "paragraphs": [
+        "When the user taps the playback speed button, a bottom sheet slides up to reveal a custom ruler-style speed slider. Dragging horizontally scrubs through speed increments with the ruler ticks sliding dynamically, while the main speed readout updates in real-time, changing to Spotify's signature green when modified. Quick-select buttons at the bottom allow the user to instantly snap to common speeds, triggering a swift horizontal slide of the ruler to the new position. Dismissing the menu slides the bottom sheet back down.",
+        "Spotify BTS ARMY Campaign 3D Intro Play Message Interaction",
+        "Spotify BTS ARMY Campaign 3D Intro Play Message Interaction",
+        "Spotify BTS ARMY Campaign Popover Modal Carousel Interaction",
+        "Spotify BTS ARMY Campaign Popover Modal Carousel Interaction",
+        "Spotify BTS ARMY Campaign 3D Intro Play Message Interaction",
+        "Spotify BTS ARMY Campaign Popover Modal Carousel Interaction"
+      ],
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/670e554f18e315822e1d8ef8/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/670e554f18e315822e1d8ef8/thumbnail-1-0.png?width=800",
+      "videoObject": {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Spotify Speed Slider Interaction",
+        "description": "A smooth, tactile horizontal speed slider inside a bottom sheet for adjusting podcast playback speed.",
+        "thumbnailUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/670e554f18e315822e1d8ef8/thumbnail-1-0.png?width=800",
+        "contentUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/670e554f18e315822e1d8ef8/main.mp4",
+        "uploadDate": "2024-10-15T11:43:11.000Z"
+      },
+      "videoResponse": {
+        "status": 200,
+        "contentType": "video/mp4",
+        "contentLength": "2659224"
+      },
+      "htmlSha256": "7df318f229c56c4346a254d32ecbc063a1af943a70838c32b5b9d8ceb5605e4b"
+    },
+    {
+      "slug": "netflix-rate-interaction",
+      "name": "Netflix Rate Interaction",
+      "sourceUrl": "https://60fps.design/shots/netflix-rate-interaction",
+      "status": 200,
+      "finalUrl": "https://60fps.design/shots/netflix-rate-interaction",
+      "verifiedAt": "2026-10-12T08:09:57.076Z",
+      "description": "A springy, staggered popover menu for rating content with three distinct thumb-icon options. Recorded from Netflix on iOS, broken down frame by frame.",
+      "visibleSummary": "",
+      "paragraphs": [
+        "When the user taps the 'Recommend' button, a dark popover menu scales up and fades in directly above the trigger. The three rating options ('Not for me', 'I like this', and 'Love this!') animate in with a subtle stagger, scaling up with a springy overshoot. The background behind the popover dims slightly to focus the user's attention on the rating choice.",
+        "Netflix Poster Reflection on Bottom Tabs Interaction",
+        "Netflix Poster Reflection on Bottom Tabs Interaction",
+        "Netflix Poster Reflection on Bottom Tabs Interaction"
+      ],
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/66b4bb3c371d29849d7bcc47/download.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/66b4bb3c371d29849d7bcc47/thumbnail-1-0.png?width=800",
+      "videoObject": {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Netflix Rate Interaction",
+        "description": "A springy, staggered popover menu for rating content with three distinct thumb-icon options.",
+        "thumbnailUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/66b4bb3c371d29849d7bcc47/thumbnail-1-0.png?width=800",
+        "contentUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/66b4bb3c371d29849d7bcc47/download.mp4",
+        "uploadDate": "2024-08-08T12:34:04.000Z"
+      },
+      "videoResponse": {
+        "status": 200,
+        "contentType": "video/mp4",
+        "contentLength": "796313"
+      },
+      "htmlSha256": "329d631b8cd8549254d03cfaa8a3aaed679ba92f2d76023399984e9564aed95a"
+    },
+    {
+      "slug": "apple-music-play-pause-interaction",
+      "name": "Apple Music Play Pause Interaction",
+      "sourceUrl": "https://60fps.design/shots/apple-music-play-pause-interaction",
+      "status": 200,
+      "finalUrl": "https://60fps.design/shots/apple-music-play-pause-interaction",
+      "verifiedAt": "2026-10-12T08:09:57.568Z",
+      "description": "A springy, tactile play/pause transition in Apple Music where the album artwork scales and casts a dynamic shadow while the icon morphs. From Music.",
+      "visibleSummary": "",
+      "paragraphs": [
+        "When the user taps the play/pause button, the interface responds with highly tactile feedback. Pausing the music causes the album artwork to scale down and its shadow to contract, visually grounding the card. Resuming playback scales the artwork up and expands its shadow, making it appear to float. Simultaneously, the play and pause icons transition using a springy, morph-like scale effect that feels elastic and responsive.",
+        "Apple Music Album Art Illustration Pattern Animation",
+        "Apple Music Album Art Illustration Pattern Animation",
+        "Apple Music Album Art Illustration Pattern Animation",
+        "Apple Playground Scroll Blur Scale Down Interaction",
+        "Family Backup Card Scale on Button Click Transition",
+        "Apple Playground Scroll Blur Scale Down Interaction",
+        "Family Backup Card Scale on Button Click Transition",
+        "Apple Playground Scroll Blur Scale Down Interaction",
+        "Family Backup Card Scale on Button Click Transition"
+      ],
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/66b4bced371d29849d7bd85d/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/66b4bced371d29849d7bd85d/thumbnail-1-0.png?width=800",
+      "videoObject": {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Apple Music Play Pause Interaction",
+        "description": "A springy, tactile play/pause transition in Apple Music where the album artwork scales and casts a dynamic shadow while the icon morphs.",
+        "thumbnailUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/66b4bced371d29849d7bd85d/thumbnail-1-0.png?width=800",
+        "contentUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/66b4bced371d29849d7bd85d/main.mp4",
+        "uploadDate": "2024-08-08T12:41:17.000Z"
+      },
+      "videoResponse": {
+        "status": 200,
+        "contentType": "video/mp4",
+        "contentLength": "519998"
+      },
+      "htmlSha256": "f975895bc57538d83d6a9845b2b9813c49adf0c24dee56ca707ffd77d4e7539a"
+    },
+    {
+      "slug": "apple-music-lyrics-interaction",
+      "name": "Apple Music Lyrics Interaction",
+      "sourceUrl": "https://60fps.design/shots/apple-music-lyrics-interaction",
+      "status": 200,
+      "finalUrl": "https://60fps.design/shots/apple-music-lyrics-interaction",
+      "verifiedAt": "2026-10-12T08:09:57.875Z",
+      "description": "An elegant transition from the main player to a dynamic lyrics view with scrolling text that scales and fades based on focus. Recorded from Music on iOS.",
+      "visibleSummary": "",
+      "paragraphs": [
+        "Tapping the lyrics button smoothly transitions the player interface. The album artwork shrinks and slides to the top-left header, while the lyrics fade and slide up into view. When scrolling through the lyrics, the text lines dynamically scale up and brighten to full white when centered (focused), while non-focused lines scale down, dim, and blur. The background features a rich, animated blur derived from the album art.",
+        "Apple Music Album Art Illustration Pattern Animation",
+        "Apple Music Album Art Illustration Pattern Animation",
+        "Apple Music Album Art Illustration Pattern Animation",
+        "Apple Playground Scroll Blur Scale Down Interaction",
+        "Apple Playground Scroll Blur Scale Down Interaction",
+        "Apple Playground Scroll Blur Scale Down Interaction"
+      ],
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/66b4bcec371d29849d7bd83f/main.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/66b4bcec371d29849d7bd83f/thumbnail-1-0.png?width=800",
+      "videoObject": {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Apple Music Lyrics Interaction",
+        "description": "An elegant transition from the main player to a dynamic lyrics view with scrolling text that scales and fades based on focus.",
+        "thumbnailUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/66b4bcec371d29849d7bd83f/thumbnail-1-0.png?width=800",
+        "contentUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/66b4bcec371d29849d7bd83f/main.mp4",
+        "uploadDate": "2024-08-08T12:41:16.000Z"
+      },
+      "videoResponse": {
+        "status": 200,
+        "contentType": "video/mp4",
+        "contentLength": "1996459"
+      },
+      "htmlSha256": "ce45094d725f47aefd422f61d5372154c67aeaa0289b27dcfcec7910f1ad13e0"
+    },
+    {
+      "slug": "vercel-preview-feature-interaction",
+      "name": "Vercel Preview Feature Interaction",
+      "sourceUrl": "https://60fps.design/shots/vercel-preview-feature-interaction",
+      "status": 200,
+      "finalUrl": "https://60fps.design/shots/vercel-preview-feature-interaction",
+      "verifiedAt": "2026-10-12T08:09:57.997Z",
+      "description": "An automated showcase loop that sequentially highlights different feature badges using selective blur and focus.",
+      "visibleSummary": "",
+      "paragraphs": [
+        "This interaction demonstrates a feature showcase where multiple colorful badges (representing Vercel preview features like Comments, CMS Drafts, Accessibility, and Share) surround a central toolbar. The animation cycles through each badge, blurring and dimming the inactive ones while keeping a single badge sharp and fully opaque. This selective focus sequence guides the viewer's eye to each feature individually, creating a clean and premium presentation of a complex UI.",
+        "FocusFlight Animated Text and Video Background Onboarding"
+      ],
+      "videoUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/66b4bb7e61d73e2622b34a32/download.mp4",
+      "poster": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/66b4bb7e61d73e2622b34a32/thumbnail-1-0.png?width=800",
+      "videoObject": {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Vercel Preview Feature Interaction",
+        "description": "An automated showcase loop that sequentially highlights different feature badges using selective blur and focus.",
+        "thumbnailUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/66b4bb7e61d73e2622b34a32/thumbnail-1-0.png?width=800",
+        "contentUrl": "https://video.gumlet.io/66b49d08225b7b88f78b7b44/66b4bb7e61d73e2622b34a32/download.mp4",
+        "uploadDate": "2024-08-08T12:35:10.000Z"
+      },
+      "videoResponse": {
+        "status": 200,
+        "contentType": "video/mp4",
+        "contentLength": "766865"
+      },
+      "htmlSha256": "475184dad9c676b1114e70d50dfd16a4f2ac14786fb1fb8be789d0ec852ad514"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "entryId": "c9ac7c82a1934228",
+  "sourceUrl": "https://reactbits.dev/backgrounds/silk",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Silk-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Silk/Silk.jsx",
+  "checkedAt": "2026-10-25T07:53:08.299Z",
+  "sha256": "824ccc6ac73d34ebbc8e3dd7c5e525efd834cd97959b02f5364c6ce28e8b3d7f",
+  "files": [
+    {
+      "path": "Silk.css",
+      "sha256": "7dcec7af659220ed8a3f631f300ea636e0d9007dd9ed014b8968be6015462791",
+      "bytes": 194
+    },
+    {
+      "path": "Silk.jsx",
+      "sha256": "420b25899f013bd62e6d188610353331d517597986fcf4936a2d68ea24f70a35",
+      "bytes": 19861
+    }
+  ]
+}

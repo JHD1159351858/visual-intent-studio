@@ -1,0 +1,21 @@
+{
+  "entryId": "991f76c3cda44465",
+  "sourceUrl": "https://reactbits.dev/text-animations/curved-loop",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/CurvedLoop-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/CurvedLoop/CurvedLoop.jsx",
+  "checkedAt": "2026-10-25T07:52:55.455Z",
+  "sha256": "a6e7d64af777c2ebf5a2116a71d2fc51b3d8fcab9470f900acc660ed99ce637a",
+  "files": [
+    {
+      "path": "CurvedLoop.css",
+      "sha256": "bc818c36430c1c29d53156c7769042b94cdedfb1c0c6226d744f2a4c5bc05aad",
+      "bytes": 429
+    },
+    {
+      "path": "CurvedLoop.jsx",
+      "sha256": "08206b130b7792b85d34c26a037d5c809836beb142043fc507227c327d22268d",
+      "bytes": 4200
+    }
+  ]
+}

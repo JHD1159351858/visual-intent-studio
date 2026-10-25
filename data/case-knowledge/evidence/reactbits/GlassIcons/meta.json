@@ -1,0 +1,21 @@
+{
+  "entryId": "c9a0ad8ca60e062f",
+  "sourceUrl": "https://reactbits.dev/components/glass-icons",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/GlassIcons-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/GlassIcons/GlassIcons.jsx",
+  "checkedAt": "2026-10-25T07:53:05.525Z",
+  "sha256": "545fd02e41fdcaedb142fa57348ada25261a07229dd177a09fa9ad469de42a7a",
+  "files": [
+    {
+      "path": "GlassIcons.css",
+      "sha256": "c85801f8d4e5cefbccf564c40603ccf1ddb4f6109f65b5ca96e51f85663f16bb",
+      "bytes": 3688
+    },
+    {
+      "path": "GlassIcons.jsx",
+      "sha256": "bb5e28c8b56d4c7e6cc0b420ebb0a633a7883059ef76f79c9b876ad5335b2d1b",
+      "bytes": 35566
+    }
+  ]
+}

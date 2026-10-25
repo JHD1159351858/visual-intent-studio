@@ -1,0 +1,21 @@
+{
+  "entryId": "c89f5b0c87516639",
+  "sourceUrl": "https://reactbits.dev/text-animations/circular-text",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/CircularText-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/CircularText/CircularText.jsx",
+  "checkedAt": "2026-10-25T07:52:54.986Z",
+  "sha256": "ac2255d97c2a2c2b799494504089af7b84e26c7d319a679436f9df564b097d40",
+  "files": [
+    {
+      "path": "CircularText.css",
+      "sha256": "d3e172c6876ede12a028dbccf7798dd1fed7e087d3c13cd031d0b65afaa3968e",
+      "bytes": 463
+    },
+    {
+      "path": "CircularText.jsx",
+      "sha256": "c124ef5de25e55079ada765f77749fdb9cae3aaeb5ba8dab908567af9c1eb5f0",
+      "bytes": 2815
+    }
+  ]
+}

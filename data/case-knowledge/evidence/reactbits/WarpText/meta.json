@@ -1,0 +1,21 @@
+{
+  "entryId": "877f8a5c20eb8af1",
+  "sourceUrl": "https://reactbits.dev/text-animations/warp-text",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/WarpText-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/WarpText/WarpText.jsx",
+  "checkedAt": "2026-10-25T07:52:54.103Z",
+  "sha256": "93b2a1a5bc8b9909dfd1021a7d0541a0956afa42b6dcc1602eca777e7d60d6d8",
+  "files": [
+    {
+      "path": "WarpText.css",
+      "sha256": "72af89bb1da9bc44f3e51d6888429929d04211a3888cadfba65340f6356bed77",
+      "bytes": 265
+    },
+    {
+      "path": "WarpText.jsx",
+      "sha256": "105800382af6d6c694be72d217b9aa8985855e951fc449c3ab7e54055b1941d5",
+      "bytes": 15991
+    }
+  ]
+}

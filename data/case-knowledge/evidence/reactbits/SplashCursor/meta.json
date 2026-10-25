@@ -1,0 +1,16 @@
+{
+  "entryId": "6a871dcba551b630",
+  "sourceUrl": "https://reactbits.dev/animations/splash-cursor",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/SplashCursor-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/SplashCursor/SplashCursor.jsx",
+  "checkedAt": "2026-10-25T07:53:01.229Z",
+  "sha256": "137601db1407a1a6ac4d2be5696b0e44d45334d6669b79e0f3a69c636eb91493",
+  "files": [
+    {
+      "path": "SplashCursor/SplashCursor.jsx",
+      "sha256": "e6c441535cbd602e0358ee8f860c03a5e0ae2c4046d030f6dba0f946909b1d16",
+      "bytes": 35266
+    }
+  ]
+}

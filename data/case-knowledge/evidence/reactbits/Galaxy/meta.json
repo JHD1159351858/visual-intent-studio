@@ -1,0 +1,21 @@
+{
+  "entryId": "1f9fac0087195dfe",
+  "sourceUrl": "https://reactbits.dev/backgrounds/galaxy",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Galaxy-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Galaxy/Galaxy.jsx",
+  "checkedAt": "2026-10-25T07:53:10.351Z",
+  "sha256": "36c0951a2e96a303a092ca35cf31c5ac97e608380040d69f0d851849a4255731",
+  "files": [
+    {
+      "path": "Galaxy.css",
+      "sha256": "cf044acbe4e8ab9a315b972ef4d52dc4b7f2817970d2d90aef709267e3176d69",
+      "bytes": 198
+    },
+    {
+      "path": "Galaxy.jsx",
+      "sha256": "a5b43552317991ec5e9483f4ccdce064035ca5fdeb5d1785d04b00340c171c86",
+      "bytes": 20595
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "entryId": "bececab1c32bb05e",
+  "sourceUrl": "https://reactbits.dev/backgrounds/grainient",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Grainient-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Grainient/Grainient.jsx",
+  "checkedAt": "2026-10-25T07:53:09.754Z",
+  "sha256": "0176f19d2717f21bd6b67995237e5a4c0cb987a2db3aec8ef02ff5cceebb67d6",
+  "files": [
+    {
+      "path": "Grainient.css",
+      "sha256": "b85f1b657c732ef21d3b4277b7bbe4125b79e38669620373320c228db0de032d",
+      "bytes": 98
+    },
+    {
+      "path": "Grainient.jsx",
+      "sha256": "0b820b9bd1b087e3c3bee0aa0f83473f83fcdd122cced64cf9a9f90e6c93b72b",
+      "bytes": 9636
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "entryId": "86cafd741ca27db9",
+  "sourceUrl": "https://reactbits.dev/backgrounds/floating-lines",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/FloatingLines-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/FloatingLines/FloatingLines.jsx",
+  "checkedAt": "2026-10-25T07:53:08.425Z",
+  "sha256": "4cddbc9dfcf17b5c0f5a18cb036296c879a8b1762697fdccd6668d838bb111e5",
+  "files": [
+    {
+      "path": "FloatingLines.css",
+      "sha256": "1d5794b167301153cbad7c6ded6b05f447b4790a810b24428d943d254e224577",
+      "bytes": 214
+    },
+    {
+      "path": "FloatingLines.jsx",
+      "sha256": "12ea1b8792d6c725265a7a2fb808e4e00de4ecc71c34e08cde473152b7432e23",
+      "bytes": 21151
+    }
+  ]
+}

@@ -1,0 +1,867 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>03-f3 — chrome-heart tunnel</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Inter";
+          src: url("../../assets/fonts/Inter-latin.woff2") format("woff2");
+          font-weight: 100 900;
+          font-style: normal;
+          font-display: block;
+        }
+        @font-face {
+          font-family: "Space Grotesk";
+          src: url("../../assets/fonts/SpaceGrotesk-latin.woff2") format("woff2");
+          font-weight: 300 700;
+          font-style: normal;
+          font-display: block;
+        }
+
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        #stage {
+          position: absolute;
+          inset: 0;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          background: #000000;
+          font-family: "Inter", system-ui, sans-serif;
+        }
+
+        /* ---------- groups ---------- */
+        #f3_g1,
+        #f3_g2 {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+          background: #000000;
+        }
+        #f3_g2 {
+          opacity: 0;
+          visibility: hidden;
+        }
+        #f3_g1 {
+          --acc: #fe90e8;
+          --accSoft: rgba(254, 144, 232, 0.42);
+          --accHaze: rgba(254, 144, 232, 0.12);
+          --cdfilter: saturate(1.06);
+        }
+        #f3_g2 {
+          --acc: #c0f7fe;
+          --accSoft: rgba(192, 247, 254, 0.45);
+          --accHaze: rgba(192, 247, 254, 0.12);
+          --cdfilter: hue-rotate(-26deg) saturate(1.15);
+        }
+
+        /* ---------- 3d world ---------- */
+        #f3_g1_world,
+        #f3_g2_world {
+          position: absolute;
+          inset: 0;
+          perspective: 1100px;
+          perspective-origin: 50% 46%;
+        }
+        #f3_g1_rings,
+        #f3_g2_rings {
+          position: absolute;
+          inset: 0;
+          transform-style: preserve-3d;
+        }
+
+        .f03-ring {
+          position: absolute;
+          left: 50%;
+          top: 46%;
+          width: 1500px;
+          height: 1500px;
+          margin: -750px 0 0 -750px;
+          will-change: transform;
+        }
+        .f03-core {
+          position: absolute;
+          inset: 0;
+          border-radius: 50%;
+          border: 2px solid rgba(255, 255, 255, 0.42);
+          box-shadow:
+            0 0 90px var(--accSoft, rgba(254, 144, 232, 0.24)),
+            inset 0 0 120px rgba(255, 255, 255, 0.09);
+        }
+        .f03-core::before {
+          content: "";
+          position: absolute;
+          inset: -2px;
+          border-radius: 50%;
+          background: conic-gradient(
+            from 205deg,
+            rgba(255, 255, 255, 0) 0deg,
+            rgba(255, 255, 255, 0.8) 26deg,
+            rgba(255, 255, 255, 0) 60deg,
+            rgba(247, 203, 70, 0.55) 112deg,
+            rgba(255, 255, 255, 0) 148deg,
+            rgba(192, 247, 254, 0.6) 216deg,
+            rgba(255, 255, 255, 0) 252deg,
+            rgba(254, 144, 232, 0.6) 306deg,
+            rgba(255, 255, 255, 0) 342deg
+          );
+          -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 3px));
+          mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 3px));
+        }
+
+        .f03-orb {
+          position: absolute;
+        }
+        .f03-heart {
+          display: block;
+          width: 100%;
+          height: 100%;
+          filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.35));
+        }
+        .f03-cd {
+          position: absolute;
+          inset: 0;
+          border-radius: 50%;
+          background:
+            radial-gradient(circle at 32% 28%, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0) 34%),
+            conic-gradient(
+              from 20deg,
+              #14141a 0deg,
+              #c0f7fe 40deg,
+              #fe90e8 95deg,
+              #6f5cff 150deg,
+              #fffdf5 200deg,
+              #8fe4ff 250deg,
+              #fe90e8 305deg,
+              #14141a 360deg
+            );
+          box-shadow:
+            0 0 34px rgba(254, 144, 232, 0.5),
+            inset 0 0 20px rgba(255, 255, 255, 0.7);
+          filter: var(--cdfilter, none);
+          will-change: transform;
+        }
+        .f03-cd::after {
+          content: "";
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          width: 27%;
+          height: 27%;
+          transform: translate(-50%, -50%);
+          border-radius: 50%;
+          background: #07070a;
+          border: 2px solid rgba(255, 255, 255, 0.7);
+        }
+
+        /* ---------- vanishing glow / haze ---------- */
+        .f03-glow {
+          position: absolute;
+          left: 50%;
+          top: 46%;
+          width: 920px;
+          height: 920px;
+          margin: -460px 0 0 -460px;
+          border-radius: 50%;
+          pointer-events: none;
+        }
+        #f3_g1_glowPink {
+          background: radial-gradient(circle, rgba(254, 144, 232, 0.55) 0%, rgba(254, 144, 232, 0.16) 38%, rgba(254, 144, 232, 0) 70%);
+        }
+        #f3_g1_glowIce {
+          background: radial-gradient(circle, rgba(192, 247, 254, 0.55) 0%, rgba(192, 247, 254, 0.16) 38%, rgba(192, 247, 254, 0) 70%);
+          opacity: 0;
+          visibility: hidden;
+        }
+        #f3_g2_glowIce {
+          background: radial-gradient(circle, rgba(192, 247, 254, 0.6) 0%, rgba(192, 247, 254, 0.18) 38%, rgba(192, 247, 254, 0) 70%);
+        }
+        .f03-hotcore {
+          position: absolute;
+          left: 50%;
+          top: 46%;
+          width: 220px;
+          height: 220px;
+          margin: -110px 0 0 -110px;
+          border-radius: 50%;
+          background: radial-gradient(circle, rgba(255, 255, 255, 0.98) 0%, rgba(255, 253, 245, 0.5) 40%, rgba(255, 253, 245, 0) 72%);
+          box-shadow: 0 0 90px 24px rgba(192, 247, 254, 0.22);
+          pointer-events: none;
+        }
+        .f03-haze {
+          position: absolute;
+          inset: 0;
+          background:
+            radial-gradient(ellipse at 50% 46%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.62) 82%),
+            radial-gradient(ellipse at 50% 46%, var(--accHaze, rgba(254, 144, 232, 0.12)) 0%, rgba(0, 0, 0, 0) 55%),
+            linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0) 26%, rgba(0, 0, 0, 0) 74%, rgba(0, 0, 0, 0.55) 100%);
+          pointer-events: none;
+        }
+        .f03-flash {
+          position: absolute;
+          inset: 0;
+          background: radial-gradient(ellipse at 50% 46%, rgba(255, 253, 245, 0.85) 0%, rgba(192, 247, 254, 0.35) 40%, rgba(0, 0, 0, 0) 72%);
+          opacity: 0;
+          pointer-events: none;
+        }
+
+        /* ---------- motion streaks ---------- */
+        .f03-streak {
+          position: absolute;
+          left: calc(50% - 1.5px);
+          top: 46%;
+          width: 3px;
+          border-radius: 2px;
+          transform-origin: 50% 0%;
+          opacity: 0;
+          will-change: transform, opacity;
+        }
+
+        /* ---------- BABY on the tunnel wall ---------- */
+        .f03-baby {
+          position: absolute;
+          left: 50%;
+          top: 46%;
+          width: 1200px;
+          height: 560px;
+          margin: -280px 0 0 -600px;
+          text-transform: uppercase;
+          filter: blur(0px);
+          opacity: 0;
+          visibility: hidden;
+        }
+        .f03-glyph {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: "Inter", system-ui, sans-serif;
+          font-weight: 900;
+          font-size: 300px;
+          letter-spacing: -0.05em;
+          line-height: 1;
+          white-space: nowrap;
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
+          -webkit-text-fill-color: transparent;
+          text-shadow: 0 16px 46px rgba(254, 144, 232, 0.4);
+        }
+        .f03-g-chrome {
+          background-image: linear-gradient(112deg, #ffffff 0%, #c7cedb 26%, #737b8c 44%, #f2f6fd 56%, #9aa3b2 72%, #ffffff 92%);
+        }
+        .f03-g-pink {
+          background-image: linear-gradient(112deg, #ffffff 0%, #fe90e8 34%, #ffd9f7 50%, #b04ea2 72%, #fe90e8 96%);
+          opacity: 0;
+          visibility: hidden;
+        }
+        .f03-g-ice {
+          background-image: linear-gradient(112deg, #ffffff 0%, #c0f7fe 34%, #eafdff 50%, #3f8ea6 72%, #c0f7fe 96%);
+          opacity: 0;
+          visibility: hidden;
+        }
+
+        /* ---------- g2 tunnel ---------- */
+        #f3_g2_tunnel {
+          position: absolute;
+          inset: 0;
+          z-index: 1;
+          filter: blur(0px);
+        }
+        #f3_g2_burst {
+          position: absolute;
+          inset: 0;
+          z-index: 2;
+          pointer-events: none;
+        }
+
+        /* ---------- g2 side-on vortex ---------- */
+        #f3_g2_side {
+          position: absolute;
+          inset: 0;
+          z-index: 3;
+          filter: blur(0px);
+          opacity: 0;
+          visibility: hidden;
+          background: radial-gradient(ellipse at 42% 52%, rgba(192, 247, 254, 0.1) 0%, rgba(0, 0, 0, 0) 58%);
+        }
+        #f3_g2_sideInner {
+          position: absolute;
+          inset: 0;
+          perspective: 1300px;
+          perspective-origin: 42% 52%;
+        }
+        .f03-hoop {
+          position: absolute;
+          left: 42%;
+          top: 52%;
+          width: 1560px;
+          height: 520px;
+          margin: -260px 0 0 -780px;
+          border-radius: 50%;
+          border: 3px solid rgba(255, 255, 255, 0.34);
+          box-shadow:
+            0 0 40px rgba(192, 247, 254, 0.3),
+            inset 0 0 44px rgba(254, 144, 232, 0.16);
+        }
+        #f3_g2_sideCore {
+          position: absolute;
+          left: 40%;
+          top: 52%;
+          width: 460px;
+          height: 460px;
+          margin: -230px 0 0 -230px;
+          border-radius: 50%;
+          background: radial-gradient(circle, rgba(255, 255, 255, 0.9) 0%, rgba(192, 247, 254, 0.35) 40%, rgba(0, 0, 0, 0) 70%);
+        }
+
+        /* ---------- g2 BABY flashes ---------- */
+        #f3_g2_baby {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          width: 1720px;
+          height: 640px;
+          margin: -320px 0 0 -860px;
+          z-index: 4;
+          text-transform: uppercase;
+          filter: blur(0px);
+          opacity: 0;
+          visibility: hidden;
+        }
+        #f3_g2_baby .f03-glyph {
+          font-size: 460px;
+        }
+
+        /* ---------- collapse ---------- */
+        #f3_g2_collapse {
+          position: absolute;
+          inset: 0;
+          z-index: 5;
+          opacity: 0;
+          visibility: hidden;
+        }
+        #f3_g2_rimWrap {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          width: 720px;
+          height: 720px;
+          margin: -360px 0 0 -360px;
+          border-radius: 50%;
+          background: #000000;
+          box-shadow:
+            0 0 0 1.5px rgba(255, 255, 255, 0.85),
+            0 0 46px rgba(192, 247, 254, 0.35),
+            0 0 150px rgba(192, 247, 254, 0.12);
+        }
+        #f3_g2_rimWrap::before {
+          content: "";
+          position: absolute;
+          inset: -3px;
+          border-radius: 50%;
+          background: conic-gradient(
+            from 0deg,
+            #ffffff,
+            #9aa3b2 18%,
+            #fffdf5 30%,
+            #c0f7fe 46%,
+            #6b7280 60%,
+            #ffffff 76%,
+            #fe90e8 88%,
+            #ffffff 100%
+          );
+          -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 3px));
+          mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 3px));
+        }
+      </style>
+
+      <svg data-hf-id="f3_hf-p3r6" width="0" height="0" style="position: absolute" aria-hidden="true">
+        <defs data-hf-id="f3_hf-mh0t">
+          <linearGradient data-hf-id="f3_hf-k61p" id="f3_f03_chrome" x1="0" y1="0" x2="1" y2="1">
+            <stop data-hf-id="f3_hf-10d0" offset="0" stop-color="#ffffff" />
+            <stop data-hf-id="f3_hf-vtwp" offset="0.24" stop-color="#d9d3e4" />
+            <stop data-hf-id="f3_hf-22f6" offset="0.46" stop-color="#7d7389" />
+            <stop data-hf-id="f3_hf-z1bg" offset="0.6" stop-color="#f6f1fa" />
+            <stop data-hf-id="f3_hf-vt55" offset="0.8" stop-color="#b7a8c8" />
+            <stop data-hf-id="f3_hf-tn97" offset="1" stop-color="#f2dfee" />
+          </linearGradient>
+          <linearGradient data-hf-id="f3_hf-xyzw" id="f3_f03_ice" x1="0" y1="0" x2="1" y2="1">
+            <stop data-hf-id="f3_hf-es6k" offset="0" stop-color="#ffffff" />
+            <stop data-hf-id="f3_hf-m4lt" offset="0.3" stop-color="#d3eef5" />
+            <stop data-hf-id="f3_hf-n771" offset="0.5" stop-color="#6fb7c8" />
+            <stop data-hf-id="f3_hf-h91z" offset="0.64" stop-color="#f2feff" />
+            <stop data-hf-id="f3_hf-w51t" offset="1" stop-color="#8fc7d6" />
+          </linearGradient>
+        </defs>
+      </svg>
+
+      <div data-hf-id="f3_hf-ygbo" id="stage" data-composition-id="03-f3" data-width="1920" data-height="1080" data-duration="7.384">
+        <!-- ================= GROUP 1 ================= -->
+        <div data-hf-id="f3_hf-h7r5" id="f3_g1">
+          <div data-hf-id="f3_hf-gfud" id="f3_g1_glowPink" class="f03-glow"></div>
+          <div data-hf-id="f3_hf-n0ae" id="f3_g1_glowIce" class="f03-glow"></div>
+          <div data-hf-id="f3_hf-z01i" class="f03-hotcore"></div>
+
+          <div data-hf-id="f3_hf-oysg" id="f3_g1_world">
+            <div data-hf-id="f3_hf-4v1p" id="f3_g1_rings"></div>
+            <div data-hf-id="f3_hf-jzog" class="f03-baby" id="f3_g1_babyA">
+              <span data-hf-id="f3_hf-iu4x" class="f03-glyph f03-g-chrome">BABY</span>
+              <span data-hf-id="f3_hf-c01r" class="f03-glyph f03-g-pink">BABY</span>
+              <span data-hf-id="f3_hf-1z54" class="f03-glyph f03-g-ice">BABY</span>
+            </div>
+            <div data-hf-id="f3_hf-uv63" class="f03-baby" id="f3_g1_babyB">
+              <span data-hf-id="f3_hf-xbid" class="f03-glyph f03-g-chrome">BABY</span>
+              <span data-hf-id="f3_hf-0y7z" class="f03-glyph f03-g-pink">BABY</span>
+              <span data-hf-id="f3_hf-53xc" class="f03-glyph f03-g-ice">BABY</span>
+            </div>
+          </div>
+
+          <div data-hf-id="f3_hf-r605" id="f3_g1_streaks"></div>
+          <div data-hf-id="f3_hf-o2lg" class="f03-haze"></div>
+          <div data-hf-id="f3_hf-73yx" id="f3_g1_flash" class="f03-flash"></div>
+        </div>
+
+        <!-- ================= GROUP 2 ================= -->
+        <div data-hf-id="f3_hf-l5v6" id="f3_g2">
+          <div data-hf-id="f3_hf-crg7" id="f3_g2_tunnel">
+            <div data-hf-id="f3_hf-5rv5" id="f3_g2_glowIce" class="f03-glow"></div>
+            <div data-hf-id="f3_hf-tffe" class="f03-hotcore"></div>
+            <div data-hf-id="f3_hf-vsfn" id="f3_g2_world">
+              <div data-hf-id="f3_hf-nr5q" id="f3_g2_rings"></div>
+            </div>
+            <div data-hf-id="f3_hf-lfd2" id="f3_g2_streaks"></div>
+            <div data-hf-id="f3_hf-vopo" class="f03-haze"></div>
+          </div>
+
+          <div data-hf-id="f3_hf-0yh1" id="f3_g2_burst"></div>
+
+          <div data-hf-id="f3_hf-zp8o" id="f3_g2_side">
+            <div data-hf-id="f3_hf-qvjc" id="f3_g2_sideInner"></div>
+            <div data-hf-id="f3_hf-9e4d" id="f3_g2_sideCore"></div>
+          </div>
+
+          <div data-hf-id="f3_hf-n4mt" id="f3_g2_baby">
+            <span data-hf-id="f3_hf-yifg" class="f03-glyph f03-g-chrome">BABY</span>
+            <span data-hf-id="f3_hf-0jwy" class="f03-glyph f03-g-pink">BABY</span>
+            <span data-hf-id="f3_hf-3x09" class="f03-glyph f03-g-ice">BABY</span>
+          </div>
+
+          <div data-hf-id="f3_hf-pugo" id="f3_g2_collapse">
+            <div data-hf-id="f3_hf-fy17" id="f3_g2_rimWrap"></div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        (() => {
+          const DUR = 7.384;
+          const SVGNS = "http://www.w3.org/2000/svg";
+          const tl = gsap.timeline({ paused: true });
+
+          function shakeGroup(sel, t, amp) {
+            tl.fromTo(sel, { x: 0, y: 0 }, { x: amp, y: -amp * 0.6, duration: 0.05, ease: "none" }, t);
+            tl.to(sel, { x: -amp * 0.8, y: amp * 0.5, duration: 0.05, ease: "none" }, t + 0.05);
+            tl.to(sel, { x: 0, y: 0, duration: 0.08, ease: "power2.out" }, t + 0.1);
+          }
+
+          function makeHeart(fillId) {
+            const svg = document.createElementNS(SVGNS, "svg");
+            svg.setAttribute("viewBox", "0 0 100 100");
+            svg.setAttribute("class", "f03-heart");
+            const p = document.createElementNS(SVGNS, "path");
+            p.setAttribute(
+              "d",
+              "M50 91 C17 65 4 46 4 29 C4 12 20 3 35 9 C43 12 48 19 50 26 C52 19 57 12 65 9 C80 3 96 12 96 29 C96 46 83 65 50 91 Z"
+            );
+            p.setAttribute("fill", "url(#" + fillId + ")");
+            p.setAttribute("stroke", "#FFFDF5");
+            p.setAttribute("stroke-width", "2");
+            const hl = document.createElementNS(SVGNS, "path");
+            hl.setAttribute("d", "M31 21 C22 21 14 28 14 36");
+            hl.setAttribute("fill", "none");
+            hl.setAttribute("stroke", "#FFFFFF");
+            hl.setAttribute("stroke-width", "5");
+            hl.setAttribute("stroke-linecap", "round");
+            hl.setAttribute("opacity", "0.85");
+            svg.appendChild(p);
+            svg.appendChild(hl);
+            return { svg, path: p };
+          }
+
+          function buildTunnel(host, count, fillId, heartSink) {
+            const rings = [];
+            const cds = [];
+            for (let i = 0; i < count; i++) {
+              const ring = document.createElement("div");
+              ring.className = "f03-ring";
+              const core = document.createElement("div");
+              core.className = "f03-core";
+              const n = 8;
+              const R = 710;
+              for (let j = 0; j < n; j++) {
+                const a = (j / n) * Math.PI * 2 + i * 0.42;
+                const size = 96 + ((i * 37 + j * 53) % 52);
+                const orb = document.createElement("div");
+                orb.className = "f03-orb";
+                orb.style.width = size + "px";
+                orb.style.height = size + "px";
+                orb.style.left = 750 + Math.cos(a) * R - size / 2 + "px";
+                orb.style.top = 750 + Math.sin(a) * R - size / 2 + "px";
+                if ((i + j) % 2 === 0) {
+                  const h = makeHeart(fillId);
+                  orb.appendChild(h.svg);
+                  heartSink.push(h.path);
+                } else {
+                  const cd = document.createElement("div");
+                  cd.className = "f03-cd";
+                  orb.appendChild(cd);
+                  cds.push(cd);
+                }
+                core.appendChild(orb);
+              }
+              ring.appendChild(core);
+              host.appendChild(ring);
+              rings.push({ ring, core });
+            }
+            return { rings, cds };
+          }
+
+          function buildStreaks(host, count, seed) {
+            const out = [];
+            for (let i = 0; i < count; i++) {
+              const s = document.createElement("div");
+              s.className = "f03-streak";
+              const deg = (i * 360) / count + (((i * 37) % 11) - 5) * 0.7 + seed;
+              s.style.height = 360 + ((i * 67) % 320) + "px";
+              s.style.transform = "rotate(" + deg + "deg)";
+              s.style.background =
+                i % 9 === 4
+                  ? "linear-gradient(180deg, rgba(247,203,70,0.55), rgba(247,203,70,0) 88%)"
+                  : "linear-gradient(180deg, var(--accSoft), rgba(0,0,0,0) 88%)";
+              host.appendChild(s);
+              out.push(s);
+            }
+            return out;
+          }
+
+          // ---------- build ----------
+          const g1Hearts = [];
+          const g1Build = buildTunnel(document.getElementById("f3_g1_rings"), 8, "f03_chrome", g1Hearts);
+          const g1Rings = g1Build.rings;
+          const g1Cds = g1Build.cds;
+          const g1Streaks = buildStreaks(document.getElementById("f3_g1_streaks"), 30, 0);
+
+          const g2Hearts = [];
+          const g2Build = buildTunnel(document.getElementById("f3_g2_rings"), 12, "f03_ice", g2Hearts);
+          const g2Rings = g2Build.rings;
+          const g2Cds = g2Build.cds;
+          const g2Streaks = buildStreaks(document.getElementById("f3_g2_streaks"), 36, 7);
+          const g2Burst = buildStreaks(document.getElementById("f3_g2_burst"), 26, 11);
+
+          const sideHost = document.getElementById("f3_g2_sideInner");
+          for (let i = 0; i < 9; i++) {
+            const hoop = document.createElement("div");
+            hoop.className = "f03-hoop";
+            hoop.style.opacity = (0.85 - i * 0.06).toFixed(2);
+            hoop.style.transform =
+              "translate3d(" +
+              (-300 + i * 52) +
+              "px," +
+              (150 - i * 40) +
+              "px," +
+              -i * 300 +
+              "px) rotateY(64deg) rotateZ(" +
+              i * 5 +
+              "deg)";
+            sideHost.appendChild(hoop);
+          }
+
+          // ---------- group visibility (0ms cuts) ----------
+          tl.set("#f3_g1", { autoAlpha: 1 }, 0);
+          tl.set("#f3_g2", { autoAlpha: 0 }, 0);
+          tl.set("#f3_g2", { autoAlpha: 1 }, 3.667);
+          tl.set("#f3_g1", { autoAlpha: 0 }, 3.667);
+
+          // ---------- g1: enter the tunnel, rings spawn on the beat ----------
+          const g1Spawns = [0, 0.462, 0.883, 1.385, 1.811, 2.308, 2.72, 3.231];
+          g1Rings.forEach((r) => {
+            tl.set(r.ring, { z: -1800 }, 0);
+            tl.set(r.core, { scale: 0.55, opacity: 0 }, 0);
+          });
+          g1Rings.forEach((r, i) => {
+            const t = g1Spawns[i];
+            tl.fromTo(r.ring, { z: -1800 }, { z: 400, duration: 3.8, ease: "none" }, t);
+            tl.fromTo(
+              r.core,
+              { scale: 0.55, opacity: 0 },
+              { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.2)" },
+              t
+            );
+            tl.fromTo(
+              r.core,
+              { rotation: 0 },
+              { rotation: i % 2 === 0 ? 80 : -80, duration: 4.0, ease: "none" },
+              t
+            );
+            tl.to(r.ring, { opacity: 0, duration: 0.35, ease: "power1.in" }, t + 3.35);
+          });
+
+          g1Cds.forEach((cd, k) => {
+            tl.fromTo(
+              cd,
+              { rotation: 0 },
+              { rotation: k % 2 === 0 ? -210 : 210, duration: 4.2, ease: "none" },
+              0.12 + (k % 6) * 0.04
+            );
+          });
+
+          // continuous camera drift / roll
+          tl.fromTo(
+            "#f3_g1_rings",
+            { rotation: -2, x: -24, y: 12 },
+            { rotation: 2.2, x: 24, y: -16, duration: 3.667, ease: "sine.inOut" },
+            0
+          );
+
+          // radial speed-line pulses
+          const g1Rep = Math.max(0, Math.floor((DUR - 0.66) / 0.46) - 1);
+          g1Streaks.forEach((s, i) => {
+            tl.fromTo(
+              s,
+              { scaleY: 0.18, opacity: 0.55 },
+              { scaleY: 1.6, opacity: 0.05, duration: 0.36, ease: "power2.out", repeat: g1Rep, repeatDelay: 0.1 },
+              (i % 7) * 0.05
+            );
+          });
+
+          // palette flip: black/pink -> black/ice-blue at 16.826 (local 1.385)
+          tl.set(
+            "#f3_g1",
+            {
+              "--acc": "#C0F7FE",
+              "--accSoft": "rgba(192,247,254,0.42)",
+              "--accHaze": "rgba(192,247,254,0.12)",
+              "--cdfilter": "hue-rotate(-26deg) saturate(1.15)",
+            },
+            1.385
+          );
+          tl.set(g1Hearts, { fill: "url(#f3_f03_ice)" }, 1.385);
+          tl.set("#f3_g1_glowPink", { autoAlpha: 0 }, 1.385);
+          tl.set("#f3_g1_glowIce", { autoAlpha: 1 }, 1.385);
+          tl.fromTo("#f3_g1_flash", { opacity: 0.7 }, { opacity: 0, duration: 0.2, ease: "power2.out" }, 1.385);
+
+          // vanishing-point pulses on the beat
+          const g1Beats = [0, 0.462, 0.883, 1.385, 1.811, 2.308, 2.77, 3.231];
+          g1Beats.forEach((t, i) => {
+            const el = i < 3 ? "#f3_g1_glowPink" : "#f3_g1_glowIce";
+            tl.fromTo(el, { scale: 1, opacity: 0.85 }, { scale: 1.4, opacity: 1, duration: 0.1, ease: "power2.out" }, t);
+            tl.to(el, { scale: 1, opacity: 0.85, duration: 0.32, ease: "power2.in" }, t + 0.1);
+          });
+
+          // BABY on the wall — first pass (15.903), whips away
+          tl.set(
+            "#f3_g1_babyA",
+            { x: 660, y: -250, z: -1750, rotationY: -33, rotation: -4, autoAlpha: 1 },
+            0.462
+          );
+          tl.fromTo("#f3_g1_babyA", { opacity: 0 }, { opacity: 1, duration: 0.12, ease: "power1.out" }, 0.462);
+          tl.to("#f3_g1_babyA", { z: -820, duration: 0.62, ease: "power1.in" }, 0.462);
+          tl.set("#f3_g1_babyA .f03-g-pink", { autoAlpha: 1 }, 0.883);
+          tl.set("#f3_g1_babyA .f03-g-chrome", { autoAlpha: 0 }, 0.883);
+          tl.to(
+            "#f3_g1_babyA",
+            { x: 1680, z: -430, rotation: 6, opacity: 0, filter: "blur(26px)", duration: 0.2, ease: "power4.in" },
+            1.15
+          );
+          tl.set("#f3_g1_babyA", { autoAlpha: 0 }, 1.37);
+
+          // BABY — second pass (17.252), ice then pink, whips away
+          tl.set(
+            "#f3_g1_babyB",
+            { x: -660, y: 215, z: -1620, rotationY: 33, rotation: 4, autoAlpha: 1 },
+            1.811
+          );
+          tl.set("#f3_g1_babyB .f03-g-chrome", { autoAlpha: 0 }, 1.811);
+          tl.set("#f3_g1_babyB .f03-g-ice", { autoAlpha: 1 }, 1.811);
+          tl.fromTo("#f3_g1_babyB", { opacity: 0 }, { opacity: 1, duration: 0.12, ease: "power1.out" }, 1.811);
+          tl.to("#f3_g1_babyB", { z: -760, duration: 0.62, ease: "power1.in" }, 1.811);
+          tl.set("#f3_g1_babyB .f03-g-pink", { autoAlpha: 1 }, 2.308);
+          tl.set("#f3_g1_babyB .f03-g-ice", { autoAlpha: 0 }, 2.308);
+          tl.to(
+            "#f3_g1_babyB",
+            { x: -1700, z: -400, rotation: -6, opacity: 0, filter: "blur(26px)", duration: 0.2, ease: "power4.in" },
+            2.5
+          );
+          tl.set("#f3_g1_babyB", { autoAlpha: 0 }, 2.72);
+
+          shakeGroup("#f3_g1", 1.385, 6);
+          shakeGroup("#f3_g1", 3.231, 5);
+
+          // ---------- g2: compress, accelerate, vortex ----------
+          g2Rings.forEach((r) => {
+            tl.set(r.ring, { z: -1200 }, 0);
+            tl.set(r.core, { scale: 0.55, opacity: 0 }, 0);
+          });
+          g2Rings.forEach((r, i) => {
+            const t0 = 3.667 + i * 0.12;
+            tl.fromTo(r.ring, { z: -1200 }, { z: 400, duration: 2.2, ease: "none" }, t0);
+            tl.fromTo(
+              r.core,
+              { scale: 0.55, opacity: 0 },
+              { scale: 1, opacity: 1, duration: 0.26, ease: "back.out(2.4)" },
+              t0
+            );
+            tl.fromTo(
+              r.core,
+              { rotation: 0 },
+              { rotation: i % 2 === 0 ? 160 : -160, duration: 2.4, ease: "none" },
+              t0
+            );
+            tl.to(r.ring, { opacity: 0, duration: 0.3, ease: "power1.in" }, t0 + 1.82);
+            if (i === 5) tl.set(r.ring, { scale: 0.95 }, 3.693);
+            if (i === 6) tl.set(r.ring, { scale: 0.9 }, 4.154);
+          });
+
+          // compression toward the centre
+          tl.to(
+            g2Rings.slice(0, 8).map((r) => r.ring),
+            { scale: 0.62, duration: 1.33, ease: "power2.in" },
+            3.667
+          );
+          tl.to(
+            g2Rings.map((r) => r.ring),
+            { scale: 0.45, duration: 0.42, ease: "power2.in" },
+            5.06
+          );
+
+          g2Cds.forEach((cd, k) => {
+            tl.fromTo(
+              cd,
+              { rotation: 0 },
+              { rotation: k % 2 === 0 ? -260 : 260, duration: 2.4, ease: "none" },
+              3.667 + (k % 6) * 0.03
+            );
+          });
+
+          const g2Rep = Math.max(0, Math.floor((DUR - 3.9) / 0.3) - 1);
+          g2Streaks.forEach((s, i) => {
+            tl.fromTo(
+              s,
+              { scaleY: 0.2, opacity: 0.6 },
+              { scaleY: 1.7, opacity: 0.05, duration: 0.26, ease: "power2.out", repeat: g2Rep, repeatDelay: 0.04 },
+              3.667 + (i % 8) * 0.032
+            );
+          });
+
+          // radial-burst lines on the riser
+          tl.fromTo(
+            g2Burst,
+            { scaleY: 0.5, opacity: 0 },
+            { scaleY: 1.9, opacity: 0.75, duration: 0.14, ease: "power3.out", stagger: 0.008 },
+            5.06
+          );
+          tl.to(g2Burst, { scaleY: 2.6, opacity: 0, duration: 0.32, ease: "power2.in", stagger: 0.006 }, 5.42);
+
+          const g2Beats = [3.693, 4.154, 4.575, 5.078, 6.001, 6.432, 6.924];
+          g2Beats.forEach((t, i) => {
+            const big = i === 3 || i === 4;
+            tl.fromTo(
+              "#f3_g2_glowIce",
+              { scale: 1, opacity: 0.9 },
+              { scale: big ? 1.6 : 1.35, opacity: 1, duration: 0.1, ease: "power2.out" },
+              t
+            );
+            tl.to("#f3_g2_glowIce", { scale: 1, opacity: 0.9, duration: 0.3, ease: "power2.in" }, t + 0.1);
+          });
+
+          // whip-cut to the side-on vortex at 20.921 (local 5.480), back at 6.001
+          tl.to(
+            "#f3_g2_tunnel",
+            { x: -1500, opacity: 0, filter: "blur(26px)", duration: 0.18, ease: "power4.in" },
+            5.48
+          );
+          tl.set("#f3_g2_side", { autoAlpha: 1 }, 5.48);
+          tl.fromTo(
+            "#f3_g2_side",
+            { x: 1350, opacity: 0, filter: "blur(22px)" },
+            { x: 0, opacity: 1, filter: "blur(0px)", duration: 0.22, ease: "power3.out" },
+            5.48
+          );
+          tl.fromTo(
+            "#f3_g2_sideInner",
+            { rotation: -5, scale: 1.12 },
+            { rotation: 2.5, scale: 1, duration: 0.52, ease: "power2.out" },
+            5.48
+          );
+          shakeGroup("#f3_g2", 5.48, 14);
+
+          tl.to(
+            "#f3_g2_side",
+            { x: -1350, opacity: 0, filter: "blur(22px)", duration: 0.16, ease: "power4.in" },
+            6.001
+          );
+          tl.set("#f3_g2_side", { autoAlpha: 0 }, 6.18);
+          tl.set("#f3_g2_tunnel", { autoAlpha: 1 }, 6.001);
+          tl.fromTo(
+            "#f3_g2_tunnel",
+            { x: 1150, opacity: 0, filter: "blur(20px)" },
+            { x: 0, opacity: 1, filter: "blur(0px)", duration: 0.24, ease: "power3.out", immediateRender: false },
+            6.001
+          );
+
+          // BABY flashes on the kicks
+          function babyFlash(t, glyphSel) {
+            tl.set("#f3_g2_baby", { autoAlpha: 1 }, t);
+            tl.set("#f3_g2_baby .f03-glyph", { autoAlpha: 0 }, t);
+            tl.set(glyphSel, { autoAlpha: 1 }, t);
+            tl.fromTo(
+              "#f3_g2_baby",
+              { scale: 1.45, x: -70, rotation: -3, filter: "blur(0px)" },
+              { scale: 1, x: 0, rotation: 0, duration: 0.12, ease: "power3.out" },
+              t
+            );
+            tl.to(
+              "#f3_g2_baby",
+              { autoAlpha: 0, x: 320, filter: "blur(18px)", duration: 0.15, ease: "power3.in" },
+              t + 0.2
+            );
+          }
+          babyFlash(5.48, "#f3_g2_baby .f03-g-pink");
+          babyFlash(6.432, "#f3_g2_baby .f03-g-ice");
+          babyFlash(6.924, "#f3_g2_baby .f03-g-chrome");
+          shakeGroup("#f3_g2", 6.432, 9);
+          shakeGroup("#f3_g2", 6.924, 9);
+
+          // the vortex closes to a black circle with a thin chrome rim
+          tl.set("#f3_g2_collapse", { autoAlpha: 1 }, 6.95);
+          tl.fromTo(
+            "#f3_g2_rimWrap",
+            { scale: 3.0, opacity: 0 },
+            { scale: 1, opacity: 1, duration: 0.4, ease: "power3.inOut" },
+            6.95
+          );
+          tl.to("#f3_g2_tunnel", { opacity: 0, duration: 0.3, ease: "power1.in" }, 6.95);
+          tl.fromTo(
+            g2Burst,
+            { scaleY: 1.5, opacity: 0.65 },
+            { scaleY: 0.08, opacity: 0, duration: 0.3, ease: "power2.in", stagger: 0.004 },
+            6.95
+          );
+
+          window.__timelines["03-f3"] = tl;
+          tl.seek(0);
+        })();
+      </script>
+    </template>
+  </body>
+</html>

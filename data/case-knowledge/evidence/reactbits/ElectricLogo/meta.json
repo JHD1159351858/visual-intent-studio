@@ -1,0 +1,21 @@
+{
+  "entryId": "2214e73dc6d3c3cc",
+  "sourceUrl": "https://reactbits.dev/animations/electric-logo",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/ElectricLogo-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/ElectricLogo/ElectricLogo.jsx",
+  "checkedAt": "2026-10-25T07:52:56.913Z",
+  "sha256": "58b122b7dadefb8e54662950c67645fa665d27a4905a97ceb4220a6e7178570e",
+  "files": [
+    {
+      "path": "ElectricLogo.css",
+      "sha256": "e2f8dc40a2c4924ae3339f4934961efe824da67e25800da48d2389f663f976de",
+      "bytes": 92
+    },
+    {
+      "path": "ElectricLogo.jsx",
+      "sha256": "a7a51996c2d9a7d2fb643e8a6d38849c7706b688fd4eb0458da15a130e6d1d9f",
+      "bytes": 33929
+    }
+  ]
+}

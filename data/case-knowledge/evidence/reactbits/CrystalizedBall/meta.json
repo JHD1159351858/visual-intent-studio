@@ -1,0 +1,21 @@
+{
+  "entryId": "af3338036daf3477",
+  "sourceUrl": "https://reactbits.dev/animations/crystalized-ball",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/CrystalizedBall-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/CrystalizedBall/CrystalizedBall.jsx",
+  "checkedAt": "2026-10-25T07:52:57.734Z",
+  "sha256": "0c5c414cbb7b30b2ba35d1b6f39bf5b58f8117e880ae5276d825870688f1368f",
+  "files": [
+    {
+      "path": "CrystalizedBall.css",
+      "sha256": "563ba3baa1b4e155c3345138ff2f2b80f2ccd2540edc850a9c6977f73fbe6b56",
+      "bytes": 95
+    },
+    {
+      "path": "CrystalizedBall.jsx",
+      "sha256": "d8a7093db8eb2749e6bda01cc745b1e143073d1d4e74cf4adac3c7527370b844",
+      "bytes": 46869
+    }
+  ]
+}

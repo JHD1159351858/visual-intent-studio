@@ -1,0 +1,21 @@
+{
+  "entryId": "96f6dfa483d63b00",
+  "sourceUrl": "https://reactbits.dev/micro/voice-pill",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/VoicePill-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/VoicePill/VoicePill.jsx",
+  "checkedAt": "2026-10-25T07:53:15.562Z",
+  "sha256": "09886aa376b01353a0d4ded4ce130960832414c7fd7a269dd2a0c457152b9a43",
+  "files": [
+    {
+      "path": "VoicePill.css",
+      "sha256": "d3e52c9c3980d890dc66f38c30e615b358654a378631cb55dd9e34873a030346",
+      "bytes": 5105
+    },
+    {
+      "path": "VoicePill.jsx",
+      "sha256": "a42d8dec4783f9f0cf3dce947f7b5e98f732393d862a9bdb35a66268e10ef1ae",
+      "bytes": 12409
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "entryId": "e3aaeefc863b70e7",
+  "sourceUrl": "https://reactbits.dev/micro/prompt-bar",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/PromptBar-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/PromptBar/PromptBar.jsx",
+  "checkedAt": "2026-10-25T07:53:14.040Z",
+  "sha256": "3f063eea844eb75b64f01bb45f02288a81d331df28bc34dd3913921c57cbb3f2",
+  "files": [
+    {
+      "path": "PromptBar.css",
+      "sha256": "dbbc1ed1f1455f4f0bf429b8b3028c0e496debb00a047b609c4d9a02aa48f359",
+      "bytes": 9569
+    },
+    {
+      "path": "PromptBar.jsx",
+      "sha256": "1ce0fd80683bad402c588cd894a3db3f1accde856226d41e14aa5a91cba119c6",
+      "bytes": 24328
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "entryId": "c790109d7bf987ba",
+  "sourceUrl": "https://reactbits.dev/micro/comet-dial",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/CometDial-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/CometDial/CometDial.jsx",
+  "checkedAt": "2026-10-25T07:53:12.662Z",
+  "sha256": "cdc64c2b3026c72fc268369f2903d2992fbcb7baccddfb47bc81643889478933",
+  "files": [
+    {
+      "path": "CometDial.css",
+      "sha256": "428afc3fcf354f50aa21fc422755f88828fa8e0c1bc0f054b443c95630bc7197",
+      "bytes": 1469
+    },
+    {
+      "path": "CometDial.jsx",
+      "sha256": "68681d0452eb00b07e06616f19e02c32f21f6b29466372445cfb93795c4d4e82",
+      "bytes": 11660
+    }
+  ]
+}

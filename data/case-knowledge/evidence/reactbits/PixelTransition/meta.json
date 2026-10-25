@@ -1,0 +1,21 @@
+{
+  "entryId": "73876a3b0aee0449",
+  "sourceUrl": "https://reactbits.dev/animations/pixel-transition",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/PixelTransition-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/PixelTransition/PixelTransition.jsx",
+  "checkedAt": "2026-10-25T07:52:59.050Z",
+  "sha256": "b66d1464a734e5d857a75b26859073784ef82dc91068e988f5fd596470b95fe8",
+  "files": [
+    {
+      "path": "PixelTransition.css",
+      "sha256": "29edb95482f1e3992d0ed2396133677b051bc45e1952528e5442f71425e79280",
+      "bytes": 548
+    },
+    {
+      "path": "PixelTransition.jsx",
+      "sha256": "8a9a6479d528c275fd6f23e3973b8188c4d58691fb735ab7259b584c2fdc2b02",
+      "bytes": 13368
+    }
+  ]
+}

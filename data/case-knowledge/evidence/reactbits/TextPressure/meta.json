@@ -1,0 +1,16 @@
+{
+  "entryId": "b1968995127d84dc",
+  "sourceUrl": "https://reactbits.dev/text-animations/text-pressure",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/TextPressure-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/TextPressure/TextPressure.jsx",
+  "checkedAt": "2026-10-25T07:52:55.451Z",
+  "sha256": "ad23efbbece84bb9af013e157c2218a49badc3a7f95916b3c1d49ccd36b57983",
+  "files": [
+    {
+      "path": "TextPressure/TextPressure.jsx",
+      "sha256": "83801576bacf618005afb55399d1b310b3bb5129a6466a3c1162255f698d1814",
+      "bytes": 6816
+    }
+  ]
+}

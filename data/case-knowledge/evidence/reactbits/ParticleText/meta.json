@@ -1,0 +1,21 @@
+{
+  "entryId": "138aae8f8c558f6e",
+  "sourceUrl": "https://reactbits.dev/text-animations/particle-text",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/ParticleText-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/ParticleText/ParticleText.jsx",
+  "checkedAt": "2026-10-25T07:52:54.059Z",
+  "sha256": "429402ea8d4ef632eac9dcb1a17fb101b96a6bd33b2e1f2295970dc867db80aa",
+  "files": [
+    {
+      "path": "ParticleText.css",
+      "sha256": "fba1cb47e2106193c45cd6ce53e1f52bd4c1043d6d4459182e1b035abb28a8b4",
+      "bytes": 473
+    },
+    {
+      "path": "ParticleText.jsx",
+      "sha256": "17a36eb570822a20328d670eec0a766ad195d037d4337535605321adbdb3465e",
+      "bytes": 13802
+    }
+  ]
+}

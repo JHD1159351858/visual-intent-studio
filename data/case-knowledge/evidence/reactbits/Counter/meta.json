@@ -1,0 +1,21 @@
+{
+  "entryId": "e4cd0e1fd6fdccc1",
+  "sourceUrl": "https://reactbits.dev/components/counter",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Counter-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/Counter/Counter.jsx",
+  "checkedAt": "2026-10-25T07:53:05.782Z",
+  "sha256": "3a5bc8632911d43f005d8386fec4ec14bf6f0772833d816e71c14b7b027b8f17",
+  "files": [
+    {
+      "path": "Counter.css",
+      "sha256": "60fab391d42262f31bc52685686ff6cba19abe3304e4179cbc0e7e5be4db22a0",
+      "bytes": 586
+    },
+    {
+      "path": "Counter.jsx",
+      "sha256": "43cfffe4c7fdde2ac1eaf77177c3ea8ad33e368520d8713584b57025159a8e74",
+      "bytes": 3524
+    }
+  ]
+}

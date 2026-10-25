@@ -1,0 +1,277 @@
+组件适配 ID：bento-grid
+名称：错落功能网格
+实现「错落功能网格」：用大小有别的卡片组织功能，窄屏自然转为单列。。真实来源：https://ui.aceternity.com/components/bento-grid；案例 ID：aceternity-bento-grid。
+仅作用于 layout；参数 {"gap":"CSS gap，建议12–24px","columns":"桌面grid-template-columns，建议2–4列；手机固定1列"}。兼容 glass-surface、gradient-border、spotlight-card、count-up；冲突 无额外声明。
+移动端：容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。。减少动态：系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。。限制：依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；仅提供网格与悬停反馈，不包含来源组件的图像、图标库或React属性。；卡片使用tabindex展示键盘焦点；接入业务时将真正的入口改为链接或按钮。。
+这是本项目整理的原生 HTML/CSS/经典 JavaScript 适配示例，非原组件源码；无外部依赖。结果须标为演示，不声称已调用真实智能体或已完成浏览器验收。
+来源资格：真实目录 ready；当前原生实现仍属于适配
+完整组件代码：design-library/components/bento-grid.html
+结构代码字符：717；样式：2230；交互：0
+本地预览：design-library/previews/component-bento-grid.png
+资料由本地导出，未自动上传或绑定到 Coze。完整代码在项目资产文件中；本地路径云端不能直接访问。原生适配示例非原作者组件源码，预览、浏览器验收与真实服务调用须分别核验。
+
+---CASE---
+
+组件适配 ID：sidebar
+名称：可折叠侧栏
+实现「可折叠侧栏」：展开或收起导航，并保留当前页面的清晰标识。。真实来源：https://ui.aceternity.com/components/sidebar；案例 ID：aceternity-sidebar。
+仅作用于 layout；参数 {"width":"桌面展开侧栏220px，建议180–260px"}。兼容 tabs、bento-grid、timeline；冲突 无额外声明。
+移动端：600px以下改为顶部三项导航，切换导航按钮可收起菜单；不占用侧边宽度。。减少动态：系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。。限制：依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；只改变本地选中状态和示例标题，尚未接入路由、账户或真实页面。。
+这是本项目整理的原生 HTML/CSS/经典 JavaScript 适配示例，非原组件源码；无外部依赖。结果须标为演示，不声称已调用真实智能体或已完成浏览器验收。
+来源资格：真实目录 ready；当前原生实现仍属于适配
+完整组件代码：design-library/components/sidebar.html
+结构代码字符：876；样式：3326；交互：722
+本地预览：design-library/previews/component-sidebar.png
+资料由本地导出，未自动上传或绑定到 Coze。完整代码在项目资产文件中；本地路径云端不能直接访问。原生适配示例非原作者组件源码，预览、浏览器验收与真实服务调用须分别核验。
+
+---CASE---
+
+组件适配 ID：tabs
+名称：可键盘切换的标签页
+实现「可键盘切换的标签页」：点击或使用左右方向键切换内容，选中状态与面板同步。。真实来源：https://ui.aceternity.com/components/tabs；案例 ID：375fac205c71b6c9。
+仅作用于 content；参数 {"initialTab":"默认第一项；JS select索引范围0–标签数量减1"}。兼容 sidebar、glass-surface、gradient-border；冲突 无额外声明。
+移动端：容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。。减少动态：系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。。限制：依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；标签面板为本地静态内容；不包含来源组件的拖拽排序或三维卡片运动。。
+这是本项目整理的原生 HTML/CSS/经典 JavaScript 适配示例，非原组件源码；无外部依赖。结果须标为演示，不声称已调用真实智能体或已完成浏览器验收。
+来源资格：真实目录 ready；当前原生实现仍属于适配
+完整组件代码：design-library/components/tabs.html
+结构代码字符：752；样式：1686；交互：990
+本地预览：design-library/previews/component-tabs.png
+资料由本地导出，未自动上传或绑定到 Coze。完整代码在项目资产文件中；本地路径云端不能直接访问。原生适配示例非原作者组件源码，预览、浏览器验收与真实服务调用须分别核验。
+
+---CASE---
+
+组件适配 ID：accordion
+名称：原生折叠内容
+实现「原生折叠内容」：使用details与summary展示逐项展开的信息，无需JavaScript。。真实来源：https://reactbits.dev/components/accordion-gallery；案例 ID：d7d0a0a0e895db95。
+仅作用于 content；参数 {"open":"在需要默认展开的details元素上设置open属性"}。兼容 sidebar、glass-surface、gradient-border；冲突 无额外声明。
+移动端：容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。。减少动态：系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。。限制：依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；参考Accordion Gallery的逐项展开方向，适配为文字折叠；不复刻原来源的图片画廊动画。；允许同时展开多个条目，不提供单项互斥状态。。
+这是本项目整理的原生 HTML/CSS/经典 JavaScript 适配示例，非原组件源码；无外部依赖。结果须标为演示，不声称已调用真实智能体或已完成浏览器验收。
+来源资格：真实目录 ready；当前原生实现仍属于适配
+完整组件代码：design-library/components/accordion.html
+结构代码字符：390；样式：1832；交互：0
+本地预览：design-library/previews/component-accordion.png
+资料由本地导出，未自动上传或绑定到 Coze。完整代码在项目资产文件中；本地路径云端不能直接访问。原生适配示例非原作者组件源码，预览、浏览器验收与真实服务调用须分别核验。
+
+---CASE---
+
+组件适配 ID：modal
+名称：原生说明弹窗
+实现「原生说明弹窗」：使用dialog实现打开、关闭、Escape退出与焦点返回。。真实来源：https://ui.aceternity.com/components/animated-modal；案例 ID：f6b5fb5e2cf9261b。
+仅作用于 content；参数 {"width":"弹窗最大宽度560px，建议360–720px；手机保留左右18px"}。兼容 sidebar、bento-grid、expandable-card；冲突 无额外声明。
+移动端：容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。。减少动态：系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。。限制：依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；依赖支持HTML dialog的现代浏览器；只有展示与关闭功能，不模拟数据提交。。
+这是本项目整理的原生 HTML/CSS/经典 JavaScript 适配示例，非原组件源码；无外部依赖。结果须标为演示，不声称已调用真实智能体或已完成浏览器验收。
+来源资格：真实目录 ready；当前原生实现仍属于适配
+完整组件代码：design-library/components/modal.html
+结构代码字符：468；样式：2080；交互：578
+本地预览：design-library/previews/component-modal.png
+资料由本地导出，未自动上传或绑定到 Coze。完整代码在项目资产文件中；本地路径云端不能直接访问。原生适配示例非原作者组件源码，预览、浏览器验收与真实服务调用须分别核验。
+
+---CASE---
+
+组件适配 ID：tooltip
+名称：点击与悬停提示
+实现「点击与悬停提示」：鼠标、键盘焦点和触屏点击均可查看一条补充说明。。真实来源：https://ui.aceternity.com/components/animated-tooltip；案例 ID：aca0c12575e64a6a。
+仅作用于 content；参数 {"text":"提示正文建议不超过两行，不放必须操作的内容"}。兼容 tabs、sidebar、file-picker；冲突 无额外声明。
+移动端：触屏点击按钮固定显示提示，再点一次或失去焦点关闭；提示宽度受视口约束。。减少动态：系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。。限制：依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；简化为无头像、无弹簧运动的文本提示；提示内不放链接或表单。。
+这是本项目整理的原生 HTML/CSS/经典 JavaScript 适配示例，非原组件源码；无外部依赖。结果须标为演示，不声称已调用真实智能体或已完成浏览器验收。
+来源资格：真实目录 ready；当前原生实现仍属于适配
+完整组件代码：design-library/components/tooltip.html
+结构代码字符：306；样式：1956；交互：863
+本地预览：design-library/previews/component-tooltip.png
+资料由本地导出，未自动上传或绑定到 Coze。完整代码在项目资产文件中；本地路径云端不能直接访问。原生适配示例非原作者组件源码，预览、浏览器验收与真实服务调用须分别核验。
+
+---CASE---
+
+组件适配 ID：card-stack
+名称：手动切换卡片叠放
+实现「手动切换卡片叠放」：三张内容卡片叠放，点击下一张切换顺序；不自动轮播。。真实来源：https://ui.aceternity.com/components/card-stack；案例 ID：68d69ca0726b91bd。
+仅作用于 content；参数 {"offset":"叠放偏移12px，建议8–16px"}。兼容 glass-surface、gradient-border；冲突 无额外声明。
+移动端：容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。。减少动态：系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。。限制：依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；叠放卡片只承载静态内容，不放会被遮住的输入框或可聚焦链接。；采用手动切换，不包含原来源自动轮播与Framer Motion。。
+这是本项目整理的原生 HTML/CSS/经典 JavaScript 适配示例，非原组件源码；无外部依赖。结果须标为演示，不声称已调用真实智能体或已完成浏览器验收。
+来源资格：真实目录 ready；当前原生实现仍属于适配
+完整组件代码：design-library/components/card-stack.html
+结构代码字符：518；样式：2091；交互：509
+本地预览：design-library/previews/component-card-stack.png
+资料由本地导出，未自动上传或绑定到 Coze。完整代码在项目资产文件中；本地路径云端不能直接访问。原生适配示例非原作者组件源码，预览、浏览器验收与真实服务调用须分别核验。
+
+---CASE---
+
+组件适配 ID：carousel
+名称：触屏滚动轮播
+实现「触屏滚动轮播」：原生横向滚动与吸附，左右按钮和触屏滑动都可切换。。真实来源：https://ui.aceternity.com/components/carousel；案例 ID：d6aab57f1b6232f6。
+仅作用于 content；参数 {"cardWidth":"桌面卡片66%，手机86%；建议60–90%"}。兼容 glass-surface、gradient-border；冲突 无额外声明。
+移动端：使用原生横向滑动和scroll-snap，保留按钮操作；滚动发生在列表内部，页面不横向溢出。。减少动态：系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。。限制：依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；不含原来源的图片资源、循环轮播或卡片放大弹窗。。
+这是本项目整理的原生 HTML/CSS/经典 JavaScript 适配示例，非原组件源码；无外部依赖。结果须标为演示，不声称已调用真实智能体或已完成浏览器验收。
+来源资格：真实目录 ready；当前原生实现仍属于适配
+完整组件代码：design-library/components/carousel.html
+结构代码字符：730；样式：2333；交互：689
+本地预览：design-library/previews/component-carousel.png
+资料由本地导出，未自动上传或绑定到 Coze。完整代码在项目资产文件中；本地路径云端不能直接访问。原生适配示例非原作者组件源码，预览、浏览器验收与真实服务调用须分别核验。
+
+---CASE---
+
+组件适配 ID：floating-navbar
+名称：悬浮样式导航
+实现「悬浮样式导航」：胶囊导航标记当前栏目；选择栏目后更新本地演示标题。。真实来源：https://ui.aceternity.com/components/floating-navbar；案例 ID：e1e4b5ef827d0ebd。
+仅作用于 layout；参数 {"top":"sticky顶部间距12px，建议8–24px"}。兼容 bento-grid、timeline、scroll-reveal；冲突 无额外声明。
+移动端：容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。。减少动态：系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。。限制：依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；仅提供sticky胶囊导航外观与本地选中状态，不包含按滚动方向自动隐藏，也不接入页面路由。；祖先容器设置overflow会影响sticky定位。。
+这是本项目整理的原生 HTML/CSS/经典 JavaScript 适配示例，非原组件源码；无外部依赖。结果须标为演示，不声称已调用真实智能体或已完成浏览器验收。
+来源资格：真实目录 ready；当前原生实现仍属于适配
+完整组件代码：design-library/components/floating-navbar.html
+结构代码字符：342；样式：2315；交互：427
+本地预览：design-library/previews/component-floating-navbar.png
+资料由本地导出，未自动上传或绑定到 Coze。完整代码在项目资产文件中；本地路径云端不能直接访问。原生适配示例非原作者组件源码，预览、浏览器验收与真实服务调用须分别核验。
+
+---CASE---
+
+组件适配 ID：step-loader
+名称：分步进度演示
+实现「分步进度演示」：逐项展示处理进度，明确提示示例不执行真实业务。。真实来源：https://ui.aceternity.com/components/multi-step-loader；案例 ID：3eb6952087f35f75。
+仅作用于 content；参数 {"delay":"每步演示延迟450ms，建议200–1000ms；减少动态模式为0"}。兼容 modal、file-picker、tabs；冲突 无额外声明。
+移动端：容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。。减少动态：关闭CSS运动，并将每个模拟步骤等待设为0；进度直接完成。。限制：依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；进度由本地计时器模拟，不代表上传、AI分析或后台任务的真实进度。。
+这是本项目整理的原生 HTML/CSS/经典 JavaScript 适配示例，非原组件源码；无外部依赖。结果须标为演示，不声称已调用真实智能体或已完成浏览器验收。
+来源资格：真实目录 ready；当前原生实现仍属于适配
+完整组件代码：design-library/components/step-loader.html
+结构代码字符：357；样式：2521；交互：677
+本地预览：design-library/previews/component-step-loader.png
+资料由本地导出，未自动上传或绑定到 Coze。完整代码在项目资产文件中；本地路径云端不能直接访问。原生适配示例非原作者组件源码，预览、浏览器验收与真实服务调用须分别核验。
+
+---CASE---
+
+组件适配 ID：file-picker
+名称：本地文件选择
+实现「本地文件选择」：选择或拖入文件，显示名称与大小；文件始终留在本地。。真实来源：https://ui.aceternity.com/components/file-upload；案例 ID：5c2c6c0babb93485。
+仅作用于 content；参数 {"accept":"按业务需要在input上添加accept；它只提示文件类型，不能代替服务端校验"}。兼容 step-loader、modal、tabs；冲突 无额外声明。
+移动端：触屏点击整个虚线区域调用系统文件选择器；拖放只是桌面的补充操作。。减少动态：系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。。限制：依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；只展示第一个文件的名称和大小；不读取正文、不上传、不持久保存。；拖入文件用于本地展示，若接入上传流程，应在drop处理器中将File传给业务函数。。
+这是本项目整理的原生 HTML/CSS/经典 JavaScript 适配示例，非原组件源码；无外部依赖。结果须标为演示，不声称已调用真实智能体或已完成浏览器验收。
+来源资格：真实目录 ready；当前原生实现仍属于适配
+完整组件代码：design-library/components/file-picker.html
+结构代码字符：314；样式：2247；交互：660
+本地预览：design-library/previews/component-file-picker.png
+资料由本地导出，未自动上传或绑定到 Coze。完整代码在项目资产文件中；本地路径云端不能直接访问。原生适配示例非原作者组件源码，预览、浏览器验收与真实服务调用须分别核验。
+
+---CASE---
+
+组件适配 ID：scroll-reveal
+名称：进入视口显现
+实现「进入视口显现」：内容进入视口时轻移显现，没有脚本时仍保持可读。。真实来源：https://reactbits.dev/text-animations/scroll-reveal；案例 ID：59b6d2fad7438493。
+仅作用于 text；参数 {"threshold":"IntersectionObserver阈值0.15，建议0.05–0.3","distance":"位移24px，建议8–32px"}。兼容 bento-grid、timeline、glass-surface；冲突 无额外声明。
+移动端：容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。。减少动态：系统减少动态模式下立即可见；偏好在运行中变更也会立即显示内容。。限制：依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；适配为整个内容块的一次显现，不复刻原来源按词滚动渐变，也不让内容持续闪烁。。
+这是本项目整理的原生 HTML/CSS/经典 JavaScript 适配示例，非原组件源码；无外部依赖。结果须标为演示，不声称已调用真实智能体或已完成浏览器验收。
+来源资格：真实目录 ready；当前原生实现仍属于适配
+完整组件代码：design-library/components/scroll-reveal.html
+结构代码字符：194；样式：1844；交互：567
+本地预览：design-library/previews/component-scroll-reveal.png
+资料由本地导出，未自动上传或绑定到 Coze。完整代码在项目资产文件中；本地路径云端不能直接访问。原生适配示例非原作者组件源码，预览、浏览器验收与真实服务调用须分别核验。
+
+---CASE---
+
+组件适配 ID：text-reveal
+名称：点击文字显现
+实现「点击文字显现」：点击按钮切换一段完整文字，触屏和键盘不依赖悬停。。真实来源：https://ui.aceternity.com/components/text-reveal-card；案例 ID：aceternity-text-reveal-card。
+仅作用于 text；参数 {"duration":"clip-path过渡650ms，建议300–900ms"}。兼容 glass-surface、gradient-border、bento-grid；冲突 无额外声明。
+移动端：容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。。减少动态：系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。。限制：依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；使用点击控制整段显现，不含来源组件的鼠标跟踪擦除或画布效果。；示例正文长度相近；长正文需要增加显现区域的高度以容纳换行。。
+这是本项目整理的原生 HTML/CSS/经典 JavaScript 适配示例，非原组件源码；无外部依赖。结果须标为演示，不声称已调用真实智能体或已完成浏览器验收。
+来源资格：真实目录 ready；当前原生实现仍属于适配
+完整组件代码：design-library/components/text-reveal.html
+结构代码字符：373；样式：2069；交互：475
+本地预览：design-library/previews/component-text-reveal.png
+资料由本地导出，未自动上传或绑定到 Coze。完整代码在项目资产文件中；本地路径云端不能直接访问。原生适配示例非原作者组件源码，预览、浏览器验收与真实服务调用须分别核验。
+
+---CASE---
+
+组件适配 ID：count-up
+名称：可重播计数
+实现「可重播计数」：数字在短时间内递增到目标值，减少动态模式直接显示最终结果。。真实来源：https://reactbits.dev/text-animations/count-up；案例 ID：c4f971c297eee7bd。
+仅作用于 text；参数 {"target":"JS target为最终值；建议0–999999整数","duration":"JS duration毫秒，建议600–1800ms"}。兼容 bento-grid、glass-surface、gradient-border；冲突 无额外声明。
+移动端：容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。。减少动态：减少动态模式重播时立即显示目标值；运行中变更偏好会取消动画并显示最终值。。限制：依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；只支持非负整数；数字是静态演示参数，不代表真实统计。。
+这是本项目整理的原生 HTML/CSS/经典 JavaScript 适配示例，非原组件源码；无外部依赖。结果须标为演示，不声称已调用真实智能体或已完成浏览器验收。
+来源资格：真实目录 ready；当前原生实现仍属于适配
+完整组件代码：design-library/components/count-up.html
+结构代码字符：318；样式：1723；交互：777
+本地预览：design-library/previews/component-count-up.png
+资料由本地导出，未自动上传或绑定到 Coze。完整代码在项目资产文件中；本地路径云端不能直接访问。原生适配示例非原作者组件源码，预览、浏览器验收与真实服务调用须分别核验。
+
+---CASE---
+
+组件适配 ID：spotlight-card
+名称：局部柔和光斑
+实现「局部柔和光斑」：光斑跟随鼠标；触屏按钮可固定显示居中光斑。。真实来源：https://reactbits.dev/components/spotlight-card；案例 ID：reactbits-spotlight-card。
+仅作用于 surface；参数 {"--vi-spot-size":"光斑半径，建议180–420px","opacity":"光斑颜色透明度建议8%–20%"}。兼容 bento-grid、tabs、count-up；冲突 同一元素不要叠加gradient-border或moving-border：它们也使用::before；可将边框放在外层。。
+移动端：容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。。减少动态：减少动态模式关闭跟随移动与过渡，光斑固定在中心，按钮切换仍有效。。限制：依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；使用单层CSS径向渐变，不含来源React组件的属性系统；光斑位于surface内部。。
+这是本项目整理的原生 HTML/CSS/经典 JavaScript 适配示例，非原组件源码；无外部依赖。结果须标为演示，不声称已调用真实智能体或已完成浏览器验收。
+来源资格：真实目录 ready；当前原生实现仍属于适配
+完整组件代码：design-library/components/spotlight-card.html
+结构代码字符：220；样式：2201；交互：800
+本地预览：design-library/previews/component-spotlight-card.png
+资料由本地导出，未自动上传或绑定到 Coze。完整代码在项目资产文件中；本地路径云端不能直接访问。原生适配示例非原作者组件源码，预览、浏览器验收与真实服务调用须分别核验。
+
+---CASE---
+
+组件适配 ID：glass-surface
+名称：独立玻璃表面
+实现「独立玻璃表面」：半透明内层与背景模糊可单独使用，也可组合外缘渐变。。真实来源：https://reactbits.dev/components/glass-surface；案例 ID：reactbits-glass-surface。
+仅作用于 surface；参数 {"--vi-glass-blur":"背景模糊默认18px，建议8–24px","alpha":"rgba背景透明度0.42，建议0.25–0.65"}。兼容 gradient-border、moving-border、bento-grid、expandable-card；冲突 同一surface不要设置不透明background或整面渐变，否则背景透射效果消失。；不与spotlight-card同时放在同一元素；光斑应放在独立内层。。
+移动端：容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。。减少动态：系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。。限制：依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；采用CSS backdrop-filter基础玻璃，不包含来源组件的SVG折射、位移滤镜或光学真实感。；需要背景内容才能看出模糊；纯色背景的效果较弱。；与gradient-border组合时，在同一节点添加两组类；边框只由掏空伪元素绘制。。
+这是本项目整理的原生 HTML/CSS/经典 JavaScript 适配示例，非原组件源码；无外部依赖。结果须标为演示，不声称已调用真实智能体或已完成浏览器验收。
+来源资格：真实目录 ready；当前原生实现仍属于适配
+完整组件代码：design-library/components/glass-surface.html
+结构代码字符：236；样式：2131；交互：0
+本地预览：design-library/previews/component-glass-surface.png
+资料由本地导出，未自动上传或绑定到 Coze。完整代码在项目资产文件中；本地路径云端不能直接访问。原生适配示例非原作者组件源码，预览、浏览器验收与真实服务调用须分别核验。
+
+---CASE---
+
+组件适配 ID：gradient-border
+名称：独立渐变边框
+实现「独立渐变边框」：用掏空伪元素只绘制边缘，保持内容表面颜色与透明度。。真实来源：https://ui.aceternity.com/components/hover-border-gradient；案例 ID：1308b95cc6b190d9。
+仅作用于 border；参数 {"--vi-border-width":"边框宽度默认2px，建议1–4px","--vi-border-color-a":"渐变起点色，建议与surface保持足够区分","--vi-border-color-b":"渐变终点色，可替换为品牌辅色"}。兼容 glass-surface、bento-grid、expandable-card、count-up、tabs；冲突 同一元素不要与moving-border或spotlight-card共用：它们都占用::before。；不要用整面background-image实现边框，否则会覆盖玻璃surface。。
+移动端：容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。。减少动态：系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。。限制：依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；需要支持CSS mask-composite的现代浏览器；不使用来源组件的旋转追光算法。；片段不设置surface背景，可与glass-surface类直接叠加。。
+这是本项目整理的原生 HTML/CSS/经典 JavaScript 适配示例，非原组件源码；无外部依赖。结果须标为演示，不声称已调用真实智能体或已完成浏览器验收。
+来源资格：真实目录 ready；当前原生实现仍属于适配
+完整组件代码：design-library/components/gradient-border.html
+结构代码字符：197；样式：2409；交互：0
+本地预览：design-library/previews/component-gradient-border.png
+资料由本地导出，未自动上传或绑定到 Coze。完整代码在项目资产文件中；本地路径云端不能直接访问。原生适配示例非原作者组件源码，预览、浏览器验收与真实服务调用须分别核验。
+
+---CASE---
+
+组件适配 ID：moving-border
+名称：边缘移动高光
+实现「边缘移动高光」：高光沿掏空边缘移动，内部表面保持独立。。真实来源：https://ui.aceternity.com/components/moving-border；案例 ID：4cd98644135d8a31。
+仅作用于 border；参数 {"--vi-moving-border-width":"边框宽度2px，建议1–4px","--vi-moving-border-speed":"高光周期4s，建议3–10s"}。兼容 glass-surface、bento-grid、expandable-card；冲突 同一元素不要与gradient-border或spotlight-card共用：它们都占用::before。。
+移动端：容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。。减少动态：系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。。限制：依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；适配为渐变沿边缘平移，不复刻来源组件的SVG路径匀速绕行。；持续动画适合少量重点卡片，不建议每张列表卡都启用。。
+这是本项目整理的原生 HTML/CSS/经典 JavaScript 适配示例，非原组件源码；无外部依赖。结果须标为演示，不声称已调用真实智能体或已完成浏览器验收。
+来源资格：真实目录 ready；当前原生实现仍属于适配
+完整组件代码：design-library/components/moving-border.html
+结构代码字符：194；样式：2473；交互：0
+本地预览：design-library/previews/component-moving-border.png
+资料由本地导出，未自动上传或绑定到 Coze。完整代码在项目资产文件中；本地路径云端不能直接访问。原生适配示例非原作者组件源码，预览、浏览器验收与真实服务调用须分别核验。
+
+---CASE---
+
+组件适配 ID：expandable-card
+名称：就地展开卡片
+实现「就地展开卡片」：在卡片内展开项目说明，保持列表位置和用户上下文。。真实来源：https://ui.aceternity.com/components/layout-grid；案例 ID：aceternity-layout-grid。
+仅作用于 content；参数 {"artWidth":"桌面视觉区域220px，建议160–260px；手机单独一行"}。兼容 glass-surface、gradient-border、moving-border、bento-grid；冲突 无额外声明。
+移动端：容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。。减少动态：系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。。限制：依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；参考Layout Grid的点击聚焦方向，适配为就地展开；不包含全屏网格变形、共享元素过渡或图片查看器。。
+这是本项目整理的原生 HTML/CSS/经典 JavaScript 适配示例，非原组件源码；无外部依赖。结果须标为演示，不声称已调用真实智能体或已完成浏览器验收。
+来源资格：真实目录 ready；当前原生实现仍属于适配
+完整组件代码：design-library/components/expandable-card.html
+结构代码字符：484；样式：2557；交互：477
+本地预览：design-library/previews/component-expandable-card.png
+资料由本地导出，未自动上传或绑定到 Coze。完整代码在项目资产文件中；本地路径云端不能直接访问。原生适配示例非原作者组件源码，预览、浏览器验收与真实服务调用须分别核验。
+
+---CASE---
+
+组件适配 ID：timeline
+名称：简洁步骤时间线
+实现「简洁步骤时间线」：使用有序列表表达真实先后顺序，手机保持清晰的一列。。真实来源：https://ui.aceternity.com/components/timeline；案例 ID：aceternity-timeline。
+仅作用于 content；参数 {"gap":"步骤间距30px，建议24–48px"}。兼容 sidebar、scroll-reveal、glass-surface、bento-grid；冲突 无额外声明。
+移动端：容器宽度随可用空间缩小，正文自动换行；按钮保留44px触控高度。。减少动态：系统启用减少动态效果时关闭CSS过渡与动画，保留全部内容和操作。。限制：依据已收录参考方向独立编写的原生适配；未集成、复制或安装来源组件。；只表达静态先后步骤，不包含来源组件的滚动进度追踪、粘性年份或远程数据。。
+这是本项目整理的原生 HTML/CSS/经典 JavaScript 适配示例，非原组件源码；无外部依赖。结果须标为演示，不声称已调用真实智能体或已完成浏览器验收。
+来源资格：真实目录 ready；当前原生实现仍属于适配
+完整组件代码：design-library/components/timeline.html
+结构代码字符：617；样式：2124；交互：0
+本地预览：design-library/previews/component-timeline.png
+资料由本地导出，未自动上传或绑定到 Coze。完整代码在项目资产文件中；本地路径云端不能直接访问。原生适配示例非原作者组件源码，预览、浏览器验收与真实服务调用须分别核验。

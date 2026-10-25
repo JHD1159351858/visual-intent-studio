@@ -1,0 +1,21 @@
+{
+  "entryId": "464ab000e19f001a",
+  "sourceUrl": "https://reactbits.dev/backgrounds/aurora",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Aurora-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Aurora/Aurora.jsx",
+  "checkedAt": "2026-10-25T07:53:09.119Z",
+  "sha256": "9e60b2be9452c0c0c04d747ab6ccde5d2764eba8711873c39fa865dbe48fee72",
+  "files": [
+    {
+      "path": "Aurora.css",
+      "sha256": "a27157d447e395fed72a20a35149f0afb8addae074e0a20503bea2cc90f3e7fd",
+      "bytes": 198
+    },
+    {
+      "path": "Aurora.jsx",
+      "sha256": "2586a8883696655f944ae9e5535351a7000b194feee1f38a476fb518e4e1a371",
+      "bytes": 16355
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "entryId": "39080d64a7b14c32",
+  "sourceUrl": "https://reactbits.dev/animations/orbit-images",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/OrbitImages-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/OrbitImages/OrbitImages.jsx",
+  "checkedAt": "2026-10-25T07:52:59.050Z",
+  "sha256": "fb85cf1f127ac871ba44a611a0f605045a25984288fcc42c762742bc604f1314",
+  "files": [
+    {
+      "path": "OrbitImages.css",
+      "sha256": "85a80f228529300ddd30fe1e2f0a68be5e5e31d963a5d0191dc95e9a6e2c5669",
+      "bytes": 790
+    },
+    {
+      "path": "OrbitImages.jsx",
+      "sha256": "727db93157621fd1b69c35d2fc17785385a049147c5642de30ef0c89da3d512f",
+      "bytes": 8314
+    }
+  ]
+}

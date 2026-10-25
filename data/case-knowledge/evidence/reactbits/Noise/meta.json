@@ -1,0 +1,21 @@
+{
+  "entryId": "6de83703db63aa5c",
+  "sourceUrl": "https://reactbits.dev/animations/noise",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Noise-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/Noise/Noise.jsx",
+  "checkedAt": "2026-10-25T07:53:00.677Z",
+  "sha256": "58f835c77b1a60b524448afe76205424426589a356729514afe2f5c27314d936",
+  "files": [
+    {
+      "path": "Noise.css",
+      "sha256": "6152752fff23854636b48d893ee74463229b1092f0183b8f3d62b584538fcddc",
+      "bytes": 539
+    },
+    {
+      "path": "Noise.jsx",
+      "sha256": "960f064b059c7dd7ee96c0289008e0f263444015d23a4034407f505b575d9617",
+      "bytes": 9291
+    }
+  ]
+}

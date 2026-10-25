@@ -1,0 +1,21 @@
+{
+  "entryId": "b13e872a0d30fae7",
+  "sourceUrl": "https://reactbits.dev/animations/electric-border",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/ElectricBorder-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/ElectricBorder/ElectricBorder.jsx",
+  "checkedAt": "2026-10-25T07:52:59.002Z",
+  "sha256": "0f11a09711e0721c2c4b720568342e3e685b6776cb8e110567f4c25c26568cfe",
+  "files": [
+    {
+      "path": "ElectricBorder.css",
+      "sha256": "f827d435106963c5db77445e02c2df372f1c85908cb4e8403575e91e5ed5eece",
+      "bytes": 1130
+    },
+    {
+      "path": "ElectricBorder.jsx",
+      "sha256": "e42380c722b4ea6f249cbe056f57be7daed85b9598bc9c578ae09679d791ebd8",
+      "bytes": 8970
+    }
+  ]
+}

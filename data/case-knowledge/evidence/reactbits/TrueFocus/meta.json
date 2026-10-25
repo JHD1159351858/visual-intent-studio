@@ -1,0 +1,21 @@
+{
+  "entryId": "5c78f7cb4f8acf22",
+  "sourceUrl": "https://reactbits.dev/text-animations/true-focus",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/TrueFocus-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/TrueFocus/TrueFocus.jsx",
+  "checkedAt": "2026-10-25T07:52:55.931Z",
+  "sha256": "e1c283bd26d6a2f49f411cbfec6c4f90fdee107d6b0c10a4d1fbbd37ba7dd382",
+  "files": [
+    {
+      "path": "TrueFocus.css",
+      "sha256": "7a2b00b5936f4f69d35b8b347724f34071374d3c85345765dc84bb3a517b6d66",
+      "bytes": 1123
+    },
+    {
+      "path": "TrueFocus.jsx",
+      "sha256": "f8e60a2d9edd2b52c2747e5836fad9f68304fd1756e495fb7b1177b69af95f24",
+      "bytes": 3517
+    }
+  ]
+}

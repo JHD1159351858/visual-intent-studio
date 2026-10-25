@@ -1,0 +1,21 @@
+{
+  "entryId": "23f7b395fdbca769",
+  "sourceUrl": "https://reactbits.dev/backgrounds/beams",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Beams-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Beams/Beams.jsx",
+  "checkedAt": "2026-10-25T07:53:10.189Z",
+  "sha256": "b1d5e46f10d9aa9e356c550d0b18de4239482ba105b0c5b1d66829859700c40d",
+  "files": [
+    {
+      "path": "Beams.css",
+      "sha256": "7dc56f881d28b2970f0e61edae7283d01189b8fc430415d913c0ed5dd95c88be",
+      "bytes": 196
+    },
+    {
+      "path": "Beams.jsx",
+      "sha256": "2079eb95b1e020bced1f287371dc45b3c84062b21d625de1bc80753010f21759",
+      "bytes": 21309
+    }
+  ]
+}

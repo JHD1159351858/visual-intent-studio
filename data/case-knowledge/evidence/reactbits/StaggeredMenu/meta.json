@@ -1,0 +1,21 @@
+{
+  "entryId": "4f7dfed7b95c6a92",
+  "sourceUrl": "https://reactbits.dev/components/staggered-menu",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/StaggeredMenu-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/StaggeredMenu/StaggeredMenu.jsx",
+  "checkedAt": "2026-10-25T07:53:04.211Z",
+  "sha256": "ae759a6eef80f7059194bd226cbc86549832990f355e1f1f107930be847c3540",
+  "files": [
+    {
+      "path": "StaggeredMenu.css",
+      "sha256": "93ac9319434abcdf09176307dac3b7b37338019011e833655722a6ff1f5ac0f5",
+      "bytes": 6023
+    },
+    {
+      "path": "StaggeredMenu.jsx",
+      "sha256": "358ebe761c073a657eff79ab8f3647e98b1285594cc14a425c5ec05721c25464",
+      "bytes": 14547
+    }
+  ]
+}

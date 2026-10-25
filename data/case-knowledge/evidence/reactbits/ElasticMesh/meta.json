@@ -1,0 +1,21 @@
+{
+  "entryId": "fc6be5850cc64cae",
+  "sourceUrl": "https://reactbits.dev/animations/elastic-mesh",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/ElasticMesh-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/ElasticMesh/ElasticMesh.jsx",
+  "checkedAt": "2026-10-25T07:52:58.750Z",
+  "sha256": "fa38cd7e9e6d0b4e0717fdb8b9899a237a1be75a604331a9c8d4d6f13a323c08",
+  "files": [
+    {
+      "path": "ElasticMesh.css",
+      "sha256": "7f54204106f8f7037ba1b1be0e21c849f1df2b0cad70f4928d3fcca299904281",
+      "bytes": 273
+    },
+    {
+      "path": "ElasticMesh.jsx",
+      "sha256": "2e2dd11d86cc04a83d75f9f173a3e2eaf899db3b29ae7b1c669c192a0fad84ac",
+      "bytes": 49675
+    }
+  ]
+}

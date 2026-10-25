@@ -1,0 +1,21 @@
+{
+  "entryId": "b3cbe1df967269b6",
+  "sourceUrl": "https://reactbits.dev/components/circular-carousel",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/CircularCarousel-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/CircularCarousel/CircularCarousel.jsx",
+  "checkedAt": "2026-10-25T07:53:01.777Z",
+  "sha256": "685d07c4abfb523cbe52a8a3850322d012280367a8497e6b4f7c6bba55b18aa7",
+  "files": [
+    {
+      "path": "CircularCarousel.css",
+      "sha256": "9a42f9fae5f9ff4918de24fe52c10c4c3535b52ac270a38cdc7fd9f22a33c304",
+      "bytes": 4474
+    },
+    {
+      "path": "CircularCarousel.jsx",
+      "sha256": "9d723f8bb53024004754574b3e9ed7f8f4c143e291d5ad957cd7819579116a0e",
+      "bytes": 31920
+    }
+  ]
+}

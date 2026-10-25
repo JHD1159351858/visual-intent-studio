@@ -1,0 +1,21 @@
+{
+  "entryId": "3ba0dffea03e31a6",
+  "sourceUrl": "https://reactbits.dev/components/circular-gallery",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/CircularGallery-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/CircularGallery/CircularGallery.jsx",
+  "checkedAt": "2026-10-25T07:53:03.271Z",
+  "sha256": "f197114a223bfdf1292e7dbe1120dd3da9b318f0d310cfb662ac2b275d15e706",
+  "files": [
+    {
+      "path": "CircularGallery.css",
+      "sha256": "8067cecda1f33467716c484ae8210b5288ca4f619444d5ea86e9998cfc33a760",
+      "bytes": 1657
+    },
+    {
+      "path": "CircularGallery.jsx",
+      "sha256": "0fdaec9e596bc8164c0f40dfd2488395980b938a30823b4520d3340261907320",
+      "bytes": 40498
+    }
+  ]
+}

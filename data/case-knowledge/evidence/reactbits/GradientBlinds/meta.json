@@ -1,0 +1,21 @@
+{
+  "entryId": "ed618ca34f223c93",
+  "sourceUrl": "https://reactbits.dev/backgrounds/gradient-blinds",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/GradientBlinds-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/GradientBlinds/GradientBlinds.jsx",
+  "checkedAt": "2026-10-25T07:53:09.640Z",
+  "sha256": "a4099793ac91554593ccf1c5c04cf9c7b54179c3c16b8a37b411733897b1ec6f",
+  "files": [
+    {
+      "path": "GradientBlinds.css",
+      "sha256": "963320754df91d15eeb351a24a6c9e23145890f070f7f169a81573f8e6a69a1e",
+      "bytes": 104
+    },
+    {
+      "path": "GradientBlinds.jsx",
+      "sha256": "aff6d95efb7b04bb86e2d59bcee5131a446ac62edf25c846840cfa421bab6a6c",
+      "bytes": 11291
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "entryId": "49356f2a830db282",
+  "sourceUrl": "https://reactbits.dev/backgrounds/pattern-waves",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/PatternWaves-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/PatternWaves/PatternWaves.jsx",
+  "checkedAt": "2026-10-25T07:53:06.275Z",
+  "sha256": "627ed0e11029c84bebbc614af47245d4996da623d0b11920fc8f788ba5822cb0",
+  "files": [
+    {
+      "path": "PatternWaves.css",
+      "sha256": "c7c446c11ac500c46ca02c44c084135c2eb7bd9597c73745db72f5b0469e7c92",
+      "bytes": 92
+    },
+    {
+      "path": "PatternWaves.jsx",
+      "sha256": "e78df18acac7eb4af99875fc81261c76602896a920dde4ae35367c627e4e9994",
+      "bytes": 28823
+    }
+  ]
+}

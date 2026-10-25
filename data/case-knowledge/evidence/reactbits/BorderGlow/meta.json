@@ -1,0 +1,21 @@
+{
+  "entryId": "cc2d5e3bcfe1faf6",
+  "sourceUrl": "https://reactbits.dev/components/border-glow",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/BorderGlow-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/BorderGlow/BorderGlow.jsx",
+  "checkedAt": "2026-10-25T07:53:05.118Z",
+  "sha256": "db1cc35798973fe1f0cddafa117ddb3c0a17a7f658bc3b61c426eb10fdefb576",
+  "files": [
+    {
+      "path": "BorderGlow.css",
+      "sha256": "c6b645f1ff163046b55246a6a4f98b47d75868f4879ef445f0a83b5636acc6b4",
+      "bytes": 6168
+    },
+    {
+      "path": "BorderGlow.jsx",
+      "sha256": "c3b1eec9099cf4c8ddd8ab9d910922b79c12ea1f243b60fa0666a2efa60caf73",
+      "bytes": 5955
+    }
+  ]
+}

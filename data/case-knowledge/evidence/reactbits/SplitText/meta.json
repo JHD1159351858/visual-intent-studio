@@ -1,0 +1,16 @@
+{
+  "entryId": "1dd72ecf061a5ad2",
+  "sourceUrl": "https://reactbits.dev/text-animations/split-text",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/SplitText-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/SplitText/SplitText.jsx",
+  "checkedAt": "2026-10-25T07:52:54.582Z",
+  "sha256": "6225f5e7a1c7ccefb2b1f1c4e773a2fd2a2c1687c88f42be95101a5540fabfea",
+  "files": [
+    {
+      "path": "SplitText/SplitText.jsx",
+      "sha256": "b772eacd09785760df08b9132414f7819a6aae2aa2a05c9e6c6df83491fd9e4c",
+      "bytes": 4552
+    }
+  ]
+}

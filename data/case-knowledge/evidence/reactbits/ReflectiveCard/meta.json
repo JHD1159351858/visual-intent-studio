@@ -1,0 +1,21 @@
+{
+  "entryId": "e943c9b41e404c28",
+  "sourceUrl": "https://reactbits.dev/components/reflective-card",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/ReflectiveCard-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/ReflectiveCard/ReflectiveCard.jsx",
+  "checkedAt": "2026-10-25T07:53:03.571Z",
+  "sha256": "6a989acfc539343f8ea268e9115e8eea3d4e97d4a518dbbe63c4cbf2dae435bd",
+  "files": [
+    {
+      "path": "ReflectiveCard.css",
+      "sha256": "a9aad65535f27427be56813f6a9df5ded1dc8d88185ae78600ef89f114d54d49",
+      "bytes": 3359
+    },
+    {
+      "path": "ReflectiveCard.jsx",
+      "sha256": "657c4939861eac254f3efab7490fd0d5e7f3e1d9620dcfcd435cfa84d75c42f5",
+      "bytes": 36126
+    }
+  ]
+}

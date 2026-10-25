@@ -1,0 +1,21 @@
+{
+  "entryId": "4db1c0eedc341022",
+  "sourceUrl": "https://reactbits.dev/animations/glare-hover",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/GlareHover-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/GlareHover/GlareHover.jsx",
+  "checkedAt": "2026-10-25T07:52:59.212Z",
+  "sha256": "8bb09c07743680d4da8d22c2b7ed3218421d75a5e4da2f3617efe78102252f04",
+  "files": [
+    {
+      "path": "GlareHover.css",
+      "sha256": "556debf36792dd1a774b27f96c120494b7d2a1ed19c188f2b30faf5df31f2b35",
+      "bytes": 1045
+    },
+    {
+      "path": "GlareHover.jsx",
+      "sha256": "2279e8920957cea3570cec387f184a76f23281ae2e59ccc5299cb5a71bb90fc2",
+      "bytes": 9501
+    }
+  ]
+}

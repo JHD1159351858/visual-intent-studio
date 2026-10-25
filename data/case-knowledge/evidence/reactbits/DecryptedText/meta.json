@@ -1,0 +1,16 @@
+{
+  "entryId": "645105a8d911227c",
+  "sourceUrl": "https://reactbits.dev/text-animations/decrypted-text",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/DecryptedText-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/DecryptedText/DecryptedText.jsx",
+  "checkedAt": "2026-10-25T07:52:55.913Z",
+  "sha256": "2047008b8e4ee9a033d5cdd07c47c95df01a6dd9d8f3f78c65b423c1ae24c314",
+  "files": [
+    {
+      "path": "DecryptedText/DecryptedText.jsx",
+      "sha256": "35edf7819d634933f7011a1d5208aee8de33267bec1dcb239a54113c4d06a896",
+      "bytes": 11305
+    }
+  ]
+}

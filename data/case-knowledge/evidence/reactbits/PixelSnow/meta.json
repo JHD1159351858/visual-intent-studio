@@ -1,0 +1,21 @@
+{
+  "entryId": "51b783e9ea251dbd",
+  "sourceUrl": "https://reactbits.dev/backgrounds/pixel-snow",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/PixelSnow-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/PixelSnow/PixelSnow.jsx",
+  "checkedAt": "2026-10-25T07:53:10.114Z",
+  "sha256": "b2e9bd4b6dc5283cfb2f5ca86e912ab2ef9ddd8c502e91eda81ff53e87aa4fb3",
+  "files": [
+    {
+      "path": "PixelSnow.css",
+      "sha256": "b7860bbbd8a6924e4161f063a9d2abcb1147b86986ca9989e66b95ef3de1fa9e",
+      "bytes": 206
+    },
+    {
+      "path": "PixelSnow.jsx",
+      "sha256": "6820139e7229e8f4188bb17c49a6bca8621f2d3a209228cd27beca30cbfe8a9d",
+      "bytes": 30818
+    }
+  ]
+}

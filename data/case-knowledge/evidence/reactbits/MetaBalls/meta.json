@@ -1,0 +1,21 @@
+{
+  "entryId": "eceb0c12a98cf64b",
+  "sourceUrl": "https://reactbits.dev/animations/meta-balls",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/MetaBalls-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/MetaBalls/MetaBalls.jsx",
+  "checkedAt": "2026-10-25T07:53:01.831Z",
+  "sha256": "40f74b8d98472120b89cb90081556745c035c3a69e0ba03e805421e0b18f3be1",
+  "files": [
+    {
+      "path": "MetaBalls.css",
+      "sha256": "45c91ce22dbb6ff36d666a275f3af315bc806ff16817785bef620470f5660b7e",
+      "bytes": 150
+    },
+    {
+      "path": "MetaBalls.jsx",
+      "sha256": "0c0382b5e9cc16688ed17a6b56729b121ea5ba8d326635dc645eef1d3501ef58",
+      "bytes": 21181
+    }
+  ]
+}

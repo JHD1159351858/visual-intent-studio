@@ -1,0 +1,21 @@
+{
+  "entryId": "936788dc9b93b361",
+  "sourceUrl": "https://reactbits.dev/components/flowing-menu",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/FlowingMenu-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/FlowingMenu/FlowingMenu.jsx",
+  "checkedAt": "2026-10-25T07:53:05.577Z",
+  "sha256": "173bc6387062ed31fde5c4aece8630ddb9fef3efc29fb4e6c3954a6e1eafe74c",
+  "files": [
+    {
+      "path": "FlowingMenu.css",
+      "sha256": "27a22045c6cf207bc26ed8119a6d8ab695084aaed081bf46555ab121d6e6fba9",
+      "bytes": 1487
+    },
+    {
+      "path": "FlowingMenu.jsx",
+      "sha256": "4c28d4d1c7a4278cb20dc7777d3fcf6aa3c1a276bec7817ef0e5d684a9559594",
+      "bytes": 5398
+    }
+  ]
+}

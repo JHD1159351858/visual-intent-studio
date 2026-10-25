@@ -1,0 +1,21 @@
+{
+  "entryId": "801a0fbdfac7af1e",
+  "sourceUrl": "https://reactbits.dev/backgrounds/balatro",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Balatro-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/Balatro/Balatro.jsx",
+  "checkedAt": "2026-10-25T07:53:12.247Z",
+  "sha256": "239402b77a766fc697c2b0b9edc90bb70aff1bea6c90da4aaed8b472d9e72200",
+  "files": [
+    {
+      "path": "Balatro.css",
+      "sha256": "c3898c6efafc3058b4605009a280b32f7ca56389c245a85634afc161cbcc3ab2",
+      "bytes": 54
+    },
+    {
+      "path": "Balatro.jsx",
+      "sha256": "1994f17eaa763f8f3c2beb104f6411915976f0ed51bdcb8374a9cd78ce6c9a4b",
+      "bytes": 6254
+    }
+  ]
+}

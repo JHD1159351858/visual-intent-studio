@@ -1,0 +1,21 @@
+{
+  "entryId": "44d21281ba24b77f",
+  "sourceUrl": "https://reactbits.dev/components/carousel",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Carousel-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/Carousel/Carousel.jsx",
+  "checkedAt": "2026-10-25T07:53:05.055Z",
+  "sha256": "27c19102898d45a51d1b023d486b61e68a742be90b2cc15e7f76d3042c62062b",
+  "files": [
+    {
+      "path": "Carousel.css",
+      "sha256": "507127fe2727b95592f95d448c8d40ba3c5d155f98bb6e86f01ac896290fa9e0",
+      "bytes": 7167
+    },
+    {
+      "path": "Carousel.jsx",
+      "sha256": "8b21f3b9eaba6b69542efe024441e34d61c2cb8517a33bead6bff800e10c46a9",
+      "bytes": 27429
+    }
+  ]
+}

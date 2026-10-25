@@ -1,0 +1,21 @@
+{
+  "entryId": "eb721cb0a78f16ca",
+  "sourceUrl": "https://reactbits.dev/micro/pulse-heart",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/PulseHeart-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/PulseHeart/PulseHeart.jsx",
+  "checkedAt": "2026-10-25T07:53:13.948Z",
+  "sha256": "e3f926497cc3e724b9017b855703e61be200432192a06935d7bd4d6c35d50b5c",
+  "files": [
+    {
+      "path": "PulseHeart.css",
+      "sha256": "55ed35e13d908f16329722fad28ba0e5da3c3976363f8491d64a855dfa282006",
+      "bytes": 3482
+    },
+    {
+      "path": "PulseHeart.jsx",
+      "sha256": "98547dabce6ce60c2a8135b2c05abcabe01c954facb9311116ab9fa18ced04b5",
+      "bytes": 8486
+    }
+  ]
+}

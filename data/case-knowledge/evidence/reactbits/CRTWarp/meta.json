@@ -1,0 +1,21 @@
+{
+  "entryId": "04d69f2aeda5c46f",
+  "sourceUrl": "https://reactbits.dev/backgrounds/crt-warp",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/CRTWarp-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/CRTWarp/CRTWarp.jsx",
+  "checkedAt": "2026-10-25T07:53:06.529Z",
+  "sha256": "d83c0974636baa3669b41adbd44a0bf34a4b8222a4326615310cb04ec5f2ebfe",
+  "files": [
+    {
+      "path": "CRTWarp.css",
+      "sha256": "3cfc8bbff82af5a6456eec4698c479272391f735d62952035e7e06852dc1ca66",
+      "bytes": 178
+    },
+    {
+      "path": "CRTWarp.jsx",
+      "sha256": "9526e46fbb29c651a58ff72ce08c26cd6e47ab27d80783e7ebd469430ff07e90",
+      "bytes": 10978
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "entryId": "b8047600d889bd4c",
+  "sourceUrl": "https://reactbits.dev/text-animations/fold-text",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/FoldText-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/FoldText/FoldText.jsx",
+  "checkedAt": "2026-10-25T07:52:54.528Z",
+  "sha256": "5dda3dfa192336f384a2297c5677deea3cf07d9df961998ad8489eb94e7b3e63",
+  "files": [
+    {
+      "path": "FoldText.css",
+      "sha256": "17da5118cdd7147e428f4cef58d9df014e389dfd0c1743ceaf3ba20f3a4e8124",
+      "bytes": 2110
+    },
+    {
+      "path": "FoldText.jsx",
+      "sha256": "023a35e36cb780a011f0c6e671746141094037edad8e63ec6526b1c0c55e06c7",
+      "bytes": 5760
+    }
+  ]
+}

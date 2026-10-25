@@ -1,0 +1,21 @@
+{
+  "entryId": "4fb20de0a363d312",
+  "sourceUrl": "https://reactbits.dev/text-animations/scroll-velocity",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/ScrollVelocity-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/ScrollVelocity/ScrollVelocity.jsx",
+  "checkedAt": "2026-10-25T07:52:56.764Z",
+  "sha256": "0afd3c8902d3e2bb1ccb47e43976b611be250ce01885057b328a2087189d4fca",
+  "files": [
+    {
+      "path": "ScrollVelocity.css",
+      "sha256": "b7a2cdd063aba43bb90c95ed91ac85e435ecf14bdc09e5fe0b2881aa2cd08304",
+      "bytes": 414
+    },
+    {
+      "path": "ScrollVelocity.jsx",
+      "sha256": "1410ab72aff3dadc94363e2476c0a2b1ba03a3de867a9e132f3316809bacfc66",
+      "bytes": 3678
+    }
+  ]
+}

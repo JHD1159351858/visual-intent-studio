@@ -1,0 +1,21 @@
+{
+  "entryId": "9d1460b1bef8c4e1",
+  "sourceUrl": "https://reactbits.dev/backgrounds/flux-lines",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/FluxLines-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/FluxLines/FluxLines.jsx",
+  "checkedAt": "2026-10-25T07:53:06.239Z",
+  "sha256": "ada9e60e8ae1f404a5c99c515553815ad92872138478b0379c0bbc2095934434",
+  "files": [
+    {
+      "path": "FluxLines.css",
+      "sha256": "fd0d908ca6c047e6bd0f8bba2e13fe037ecca0b6e894b3f0612777c75f68950d",
+      "bytes": 206
+    },
+    {
+      "path": "FluxLines.jsx",
+      "sha256": "f29fdc61ea2a0684432a2d6ccccd2ef4cf7f10857046daab5e523568e5d9ce07",
+      "bytes": 16117
+    }
+  ]
+}

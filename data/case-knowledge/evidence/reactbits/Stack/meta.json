@@ -1,0 +1,21 @@
+{
+  "entryId": "4e01d5ff26ed95c8",
+  "sourceUrl": "https://reactbits.dev/components/stack",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Stack-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/Stack/Stack.jsx",
+  "checkedAt": "2026-10-25T07:53:03.651Z",
+  "sha256": "5371e3eac061f4480f372a3939bb1800db365384a5b5134b906f970cf89366ec",
+  "files": [
+    {
+      "path": "Stack.css",
+      "sha256": "a399d752bfe72accf6cc10a264ef984e98d3109f358bd2a680aa6819e4698338",
+      "bytes": 826
+    },
+    {
+      "path": "Stack.jsx",
+      "sha256": "73e6550721575d44af4008a861b1d59e5c01a9030b703cba999e9480532f6fec",
+      "bytes": 20075
+    }
+  ]
+}

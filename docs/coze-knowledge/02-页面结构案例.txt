@@ -1,0 +1,1449 @@
+案例 ID：aceternity-bento-grid
+中文名称：错落便当卡片网格
+原名称：Bento Grid
+分类：页面结构（structure）
+来源记录的效果说明：大小错落的网格卡片，用标题、说明和顶部视觉呈现功能。
+口语别名：便当布局、大小卡片、错落网格、功能区
+触发方式：页面展示；悬停卡片时内容轻移
+适用位置：首页功能区、项目作品列表
+检索标签：grid、bento、features
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/bento-grid
+实现参考：https://ui.aceternity.com/components/bento-grid
+预览来源性质：参考机制重现，非原站原版录像
+本地预览：/media/aceternity-bento-grid.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：根据来源制作的参考演示，非原站录像；实现时以原站源码为准。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T08:24:06.962Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：aceternity-layout-grid
+中文名称：点击展开的作品网格
+原名称：Layout Grid
+分类：页面结构（structure）
+来源记录的效果说明：点击网格项目后放大展示详情，形成从浏览到聚焦的作品列表。
+口语别名：点击展开、作品墙、大图查看、画廊
+触发方式：点击卡片展开；点击关闭返回网格
+适用位置：作品集、案例展示
+检索标签：grid、gallery、click
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/layout-grid
+实现参考：https://ui.aceternity.com/components/layout-grid
+预览来源性质：参考机制重现，非原站原版录像
+本地预览：/media/aceternity-layout-grid.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：根据来源制作的参考演示，非原站录像；实现时以原站源码为准。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T08:24:06.962Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：aceternity-sidebar
+中文名称：悬停展开的侧边导航
+原名称：Sidebar
+分类：页面结构（structure）
+来源记录的效果说明：侧栏默认保持紧凑，鼠标移入后展开导航标签，适合多页面工作台。
+口语别名：侧边栏、侧栏导航、收起展开、工作台
+触发方式：鼠标移入侧栏展开，移出收起
+适用位置：仪表盘导航、管理后台
+检索标签：sidebar、navigation、dashboard
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/sidebar
+实现参考：https://ui.aceternity.com/components/sidebar
+预览来源性质：参考机制重现，非原站原版录像
+本地预览：/media/aceternity-sidebar.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：根据来源制作的参考演示，非原站录像；实现时以原站源码为准。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T08:24:06.963Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：aceternity-timeline
+中文名称：滚动跟随的时间线
+原名称：Timeline
+分类：页面结构（structure）
+来源记录的效果说明：按时间组织内容，带粘性阶段标题和随滚动延伸的进度光束。
+口语别名：时间轴、历程、发展历史、阶段进度
+触发方式：页面向下滚动，进度线延伸，阶段标题粘性定位
+适用位置：关于页面、项目历程
+检索标签：timeline、scroll、content
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/timeline
+实现参考：https://ui.aceternity.com/components/timeline
+预览来源性质：参考机制重现，非原站原版录像
+本地预览：/media/aceternity-timeline.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：根据来源制作的参考演示，非原站录像；实现时以原站源码为准。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T08:24:06.963Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：708de7a2bf373eac
+中文名称：循环横移的评价卡片
+原名称：Infinite Moving Cards
+分类：页面结构（structure）
+来源记录的效果说明：多张评价卡片排成一行并连续横向移动，末尾无缝接回开头；可以改变移动方向和速度，悬停时暂停便于阅读。
+口语别名：评价卡片一直横着走、不停滚动的好评、跑马灯卡片
+触发方式：显示后自动循环；默认鼠标悬停暂停
+适用位置：用户评价区、合作案例带
+检索标签：评价、跑马灯、卡片列表、悬停暂停
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/infinite-moving-cards
+实现参考：https://ui.aceternity.com/components/infinite-moving-cards
+预览来源性质：原站演示实录
+本地预览：/media/sources/708de7a2bf373eac.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:23:04.538Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：e9a78de82ee90a6c
+中文名称：滚动向两侧散开的图片墙
+原名称：Parallax Scroll 2
+分类：页面结构（structure）
+来源记录的效果说明：三列图片中，中间列保持稳定，左右列在滚动时向上和向外偏移并轻微转动，像图片墙从中心向两边散开。
+口语别名：照片向两边散开、滚一下图片往外飞、中间不动两边动
+触发方式：滚动容器，左右列平移和旋转随进度变化
+适用位置：创意画廊、作品集图片区
+检索标签：图片网格、滚动、向外散开、旋转
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/parallax-scroll
+实现参考：https://ui.aceternity.com/components/parallax-scroll
+预览来源性质：原站演示实录
+本地预览：/media/sources/e9a78de82ee90a6c.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:23:20.037Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：68d69ca0726b91bd
+中文名称：轮流置顶的叠放卡片
+原名称：Card Stack
+分类：页面结构（structure）
+来源记录的效果说明：几张内容卡片错位叠放，前面的卡片按时间间隔换到后面，下一张上移成为焦点，适合展示多条评价或短句。
+口语别名：一叠卡片轮流出来、好评一张张换、像抽牌一样切换
+触发方式：显示后按固定间隔自动轮换
+适用位置：用户评价区、精选引言
+检索标签：堆叠、卡片、轮播、评价
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/card-stack
+实现参考：https://ui.aceternity.com/components/card-stack
+预览来源性质：原站演示实录
+本地预览：/media/sources/68d69ca0726b91bd.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T12:32:59.582Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：8cabc3e367eada43
+中文名称：滚动联动的粘性图文讲解
+原名称：Sticky Scroll Reveal
+分类：页面结构（structure）
+来源记录的效果说明：一侧排列分段说明，另一侧视觉区域固定在可见位置；滚动到不同说明时，展示图和背景色同步切换，突出当前章节。
+口语别名：左边往下读右边图不走、滚动到哪旁边换哪张图、固定图片的介绍区
+触发方式：滚动容器，根据当前段落切换粘性区域内容
+适用位置：产品功能介绍、步骤讲解
+检索标签：粘性布局、图文联动、滚动、章节
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/sticky-scroll-reveal
+实现参考：https://ui.aceternity.com/components/sticky-scroll-reveal
+预览来源性质：原站演示实录
+本地预览：/media/sources/8cabc3e367eada43.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:24:04.953Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：e1e4b5ef827d0ebd
+中文名称：上滑出现的悬浮导航
+原名称：Floating Navbar
+分类：页面结构（structure）
+来源记录的效果说明：紧凑的圆角导航浮在页面顶部附近；向下阅读时隐藏，向上滚动时重新出现，减少导航对内容的遮挡。
+口语别名：往上滚导航就出来、浮着的顶部菜单、阅读时会藏起来的导航
+触发方式：页面滚动方向变化；向下隐藏，向上显示
+适用位置：长页顶部导航、营销页面
+检索标签：导航、悬浮、滚动方向、自动隐藏
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/floating-navbar
+实现参考：https://ui.aceternity.com/components/floating-navbar
+预览来源性质：原站演示实录
+本地预览：/media/sources/e1e4b5ef827d0ebd.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:18:06.013Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：cb2a7a424fbbca60
+中文名称：悬停展开的大导航菜单
+原名称：Navbar Menu
+分类：页面结构（structure）
+来源记录的效果说明：移到导航项时，下方展开较宽的内容面板，可容纳多列链接和带缩略图的项目；切换导航项时面板尺寸平滑过渡。
+口语别名：导航下面展开一大块、鼠标碰菜单出现多列、带图片的下拉导航
+触发方式：鼠标悬停导航项展开；移出导航区域关闭
+适用位置：网站主导航、产品分类入口
+检索标签：导航、大菜单、多列、悬停
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/navbar-menu
+实现参考：https://ui.aceternity.com/components/navbar-menu
+预览来源性质：原站演示实录
+本地预览：/media/sources/cb2a7a424fbbca60.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:24:05.190Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：f84784007ac83abf
+中文名称：铺满区域的图片幻灯片
+原名称：Images Slider
+分类：页面结构（structure）
+来源记录的效果说明：一张图片填满展示区域，前后图片通过遮罩、透明度和缩放过渡切换；可以自动轮换，也能用键盘方向键导航。
+口语别名：整屏大图轮流换、能按左右键翻照片、大图幻灯片
+触发方式：定时自动轮播；键盘左右键或外部控制切换
+适用位置：首屏大图、活动视觉区
+检索标签：图片轮播、全幅、键盘、过渡
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/images-slider
+实现参考：https://ui.aceternity.com/components/images-slider
+预览来源性质：原站演示实录
+本地预览：/media/sources/f84784007ac83abf.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:24:49.958Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：375fac205c71b6c9
+中文名称：切换时叠放展开的标签页
+原名称：Animated Tabs
+分类：页面结构（structure）
+来源记录的效果说明：点击顶部标签切换内容，当前标签获得活动背景；对应内容卡片从后方叠层中升到前面，未选卡片保留层次。
+口语别名：点标签换下面那张卡、叠起来的选项卡、可以切内容的按钮栏
+触发方式：点击标签，活动状态与内容堆叠动画同步变化
+适用位置：功能介绍、产品演示区
+检索标签：标签页、内容切换、堆叠、点击
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/tabs
+实现参考：https://ui.aceternity.com/components/tabs
+预览来源性质：原站演示实录
+本地预览：/media/sources/375fac205c71b6c9.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:24:50.538Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：f09fe0a41ac38e93
+中文名称：滚动倾斜横移的作品首屏
+原名称：Hero Parallax
+分类：页面结构（structure）
+来源记录的效果说明：多排产品截图铺成宽画廊，首屏起初带倾斜透视；向下滚动时整体扶正，不同排向相反水平方向移动并淡入。
+口语别名：滚动时作品墙展开、好多网页截图左右错着走、倾斜的大画廊
+触发方式：页面滚动驱动画廊旋转、平移与透明度
+适用位置：作品展示首屏、产品案例页
+检索标签：作品墙、滚动视差、多排、透视
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/hero-parallax
+实现参考：https://ui.aceternity.com/components/hero-parallax
+预览来源性质：原站演示实录
+本地预览：/media/sources/f09fe0a41ac38e93.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:25:05.757Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：2e6c910c299ad581
+中文名称：输入边缘追光的注册表单
+原名称：Label
+分类：页面结构（structure）
+来源记录的效果说明：圆角注册面板把姓名、邮箱、密码等带标签的字段纵向组织起来，输入框边缘的蓝色局部高光随鼠标移动，底部提供主要提交入口和其他登录方式示例；原站仅展示表单，没有真实登录流程。
+口语别名：带标签的注册表单、输入框上面有字段名字、简洁的注册面板、带发光输入框的注册页、鼠标碰表单边缘会亮、输入框边上跟着一束光、碰到表单边缘会亮、发光输入框、输入框上面的名字、表单的小标题、字段说明文字
+触发方式：鼠标移入、移动与移出驱动输入高光；键盘聚焦显示焦点环；标签关联对应输入控件
+适用位置：注册页面、联系表单、账号入口
+检索标签：注册表单、字段标签、鼠标追光、输入框
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/signup-form
+实现参考：https://ui.aceternity.com/components/signup-form
+预览来源性质：原站演示实录
+本地预览：/media/sources/2e6c910c299ad581.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:25:26.550Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：541e51945da2a57f
+中文名称：点击展开详情的大卡片轮播
+原名称：Apple Cards Carousel
+分类：页面结构（structure）
+来源记录的效果说明：横向排列大尺寸图片卡片，用箭头浏览更多项目；点击某张卡片后展开为覆盖页面的详情层，保留封面与标题。
+口语别名：像苹果网站那种大卡片、左右翻卡片再点开、大图卡片介绍
+触发方式：点击箭头或横向滚动浏览；点击卡片展开；关闭回列表
+适用位置：产品功能区、故事与案例
+检索标签：卡片轮播、详情展开、大图、横向
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/apple-cards-carousel
+实现参考：https://ui.aceternity.com/components/apple-cards-carousel
+预览来源性质：原站演示实录
+本地预览：/media/sources/541e51945da2a57f.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:26:44.219Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：2aefe0b037d88f85
+中文名称：鼠标经过时放大的图标导航
+原名称：Floating Dock
+分类：页面结构（structure）
+来源记录的效果说明：一排图标置于圆角底座中，鼠标靠近时当前位置和邻近图标逐渐放大，并显示对应名称，类似桌面系统的 Dock。
+口语别名：像苹果电脑底部那排图标、鼠标经过图标会变大、悬浮图标菜单
+触发方式：鼠标在图标栏上移动驱动邻近图标大小；悬停提示名称
+适用位置：工具导航、作品集快捷入口
+检索标签：图标导航、放大、悬浮、工具栏
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/floating-dock
+实现参考：https://ui.aceternity.com/components/floating-dock
+预览来源性质：原站演示实录
+本地预览：/media/sources/2aefe0b037d88f85.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:27:16.285Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：31fd229e3d116626
+中文名称：图片与评价联动的轮播
+原名称：Animated Testimonials
+分类：页面结构（structure）
+来源记录的效果说明：评价文字与人物图片并列，图片像一叠略微旋转的照片；切换时新照片升到前方，姓名、职位与引言一起更新。
+口语别名：左边照片右边好评、照片堆轮流切换、人物评价轮播
+触发方式：点击前后按钮切换；启用自动播放后定时轮换
+适用位置：用户评价区、团队故事
+检索标签：评价、人物、轮播、照片堆
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/animated-testimonials
+实现参考：https://ui.aceternity.com/components/animated-testimonials
+预览来源性质：原站演示实录
+本地预览：/media/sources/31fd229e3d116626.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:27:46.991Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：d389ee16f7d41192
+中文名称：带行号与复制按钮的代码展示
+原名称：Code Block
+分类：页面结构（structure）
+来源记录的效果说明：代码按语法高亮，并可显示行号、文件名与语言标签；长代码在容器中滚动，指定行可以高亮，按钮用于复制内容。
+口语别名：像编辑器一样显示代码、代码旁边有行号、能复制的小代码窗
+触发方式：持续展示；点击复制按钮；长内容滚动查看
+适用位置：技术文档、开发工具介绍
+检索标签：代码、语法高亮、复制、行号
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/code-block
+实现参考：https://ui.aceternity.com/components/code-block
+预览来源性质：原站演示实录
+本地预览：/media/sources/d389ee16f7d41192.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:27:56.438Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：d6aab57f1b6232f6
+中文名称：带箭头与指针微动效的轮播
+原名称：Carousel
+分类：页面结构（structure）
+来源记录的效果说明：多个大图卡片横向排列，通过左右箭头或点击邻近卡片切换；活动卡片的图片随鼠标轻微位移，非活动卡片变暗并倾斜。
+口语别名：左右切图片的展示框、能翻页的卡片、图片稍微跟鼠标动
+触发方式：点击前后箭头或卡片切换；鼠标在活动项内移动驱动图片位移
+适用位置：作品展示、功能截图
+检索标签：轮播、箭头、图片、指针反馈
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/carousel
+实现参考：https://ui.aceternity.com/components/carousel
+预览来源性质：原站演示实录
+本地预览：/media/sources/d6aab57f1b6232f6.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:28:02.331Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：4f49fe7f98c4e782
+中文名称：顶端或底端的胶囊导航岛
+原名称：Notch
+分类：页面结构（structure）
+来源记录的效果说明：紧凑圆角导航岛固定在屏幕顶部或底部，多个入口共用同一容器；点击入口展开选项面板并切换活动状态。
+口语别名：像灵动岛那样的菜单、浮在顶部的小胶囊、可展开的导航岛
+触发方式：点击项目打开选项；选择后切换活动项；外部点击或 Escape 收起
+适用位置：快捷导航、页面工具入口
+检索标签：胶囊导航、悬浮、活动状态、点击
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/notch
+实现参考：https://ui.aceternity.com/components/notch
+预览来源性质：原站演示实录
+本地预览：/media/sources/4f49fe7f98c4e782.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:28:18.453Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：57f8444f15a08b99
+中文名称：滚动收窄的响应式导航
+原名称：Resizable Navbar
+分类：页面结构（structure）
+来源记录的效果说明：导航开始时横跨较宽区域，页面向下滚动后缩成居中的圆角浮条并增加背景；小屏时替换成可展开的移动菜单。
+口语别名：滚一下导航缩成小条、宽导航变成悬浮胶囊、顶部菜单随滚动变窄
+触发方式：页面滚动超过阈值改变宽度；点击小屏菜单开关
+适用位置：营销页面主导航、长页导航
+检索标签：导航、滚动、收窄、响应式
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/resizable-navbar
+实现参考：https://ui.aceternity.com/components/resizable-navbar
+预览来源性质：原站演示实录
+本地预览：/media/sources/57f8444f15a08b99.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:28:39.812Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：3b15693a4e31fc75
+中文名称：滚动区域顶部的粘性公告条
+原名称：Sticky Banner
+分类：页面结构（structure）
+来源记录的效果说明：带消息和链接的公告条粘在演示滚动区域顶部，阅读内容时保持可见，点击关闭按钮后收起。原站当前示例未开启滚动隐藏。
+口语别名：顶部跟着阅读的公告、滚动时通知保持在顶部、顶部通知横条
+触发方式：演示区域内滚动时保持粘性定位；点击关闭按钮收起
+适用位置：活动公告、更新通知
+检索标签：公告条、顶部、滚动、关闭
+来源：aceternity
+来源地址：https://ui.aceternity.com/components/sticky-banner
+实现参考：https://ui.aceternity.com/components/sticky-banner
+预览来源性质：原站演示实录
+本地预览：/media/sources/3b15693a4e31fc75.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:28:49.083Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：8a276d77a70bc6b8
+中文名称：循环品牌图标带
+原名称：Logo Loop
+分类：页面结构（structure）
+来源记录的效果说明：品牌或技术图标首尾相接连续滚动，悬停可暂停。
+口语别名：一排品牌标志一直走、合作伙伴标志滚动
+触发方式：持续循环；悬停暂停
+适用位置：合作伙伴、技术栈展示
+检索标签：animations、Logo Loop、一排品牌标志一直走、合作伙伴标志滚动
+来源：reactbits
+来源地址：https://reactbits.dev/animations/logo-loop
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/LogoLoop/LogoLoop.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/8a276d77a70bc6b8.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:37:06.570Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：b3cbe1df967269b6
+中文名称：三维圆环图片轮播
+原名称：Circular Carousel
+分类：页面结构（structure）
+来源记录的效果说明：图片沿三维圆环排布，可惯性拖动、吸附定位并点击聚焦。
+口语别名：图片围成转盘、拖动一圈照片
+触发方式：拖动、滚动或点击图片
+适用位置：作品画廊、产品展示
+检索标签：components、Circular Carousel、图片围成转盘、拖动一圈照片
+来源：reactbits
+来源地址：https://reactbits.dev/components/circular-carousel
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/CircularCarousel/CircularCarousel.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/b3cbe1df967269b6.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:40:30.369Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：60a03c81df543f6a
+中文名称：液态边缘图片带
+原名称：Flex Carousel
+分类：页面结构（structure）
+来源记录的效果说明：无限图片横排穿过两端的液态玻璃区域，可弯曲、加速挤压并点击聚焦。
+口语别名：图片流过玻璃边缘、横向图片带会弯曲
+触发方式：持续流动；拖动或点击图片
+适用位置：作品画廊、横向展示
+检索标签：components、Flex Carousel、图片流过玻璃边缘、横向图片带会弯曲
+来源：reactbits
+来源地址：https://reactbits.dev/components/flex-carousel
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/FlexCarousel/FlexCarousel.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/60a03c81df543f6a.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:40:42.068Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：1e1931c26a201a92
+中文名称：无限螺旋图片墙
+原名称：Infinite Spiral
+分类：页面结构（structure）
+来源记录的效果说明：图片沿三维螺旋轨道首尾循环运动，形成有纵深的图片展示。
+口语别名：照片沿螺旋一直转、无限转下去的图片塔
+触发方式：持续循环；按配置响应交互
+适用位置：作品首页、图片画廊
+检索标签：components、Infinite Spiral、照片沿螺旋一直转、无限转下去的图片塔
+来源：reactbits
+来源地址：https://reactbits.dev/components/infinite-spiral
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/InfiniteSpiral/InfiniteSpiral.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/1e1931c26a201a92.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:40:47.442Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：39867ab00dbd6820
+中文名称：纵深轨道轮播
+原名称：Depth Carousel
+分类：页面结构（structure）
+来源记录的效果说明：卡片沿三维轨道向深处排列，可拖动、键盘切换或自动前进。
+口语别名：卡片排到屏幕深处、有前后层次的轮播
+触发方式：拖动、方向键或自动切换
+适用位置：作品画廊、产品轮播
+检索标签：components、Depth Carousel、卡片排到屏幕深处、有前后层次的轮播
+来源：reactbits
+来源地址：https://reactbits.dev/components/depth-carousel
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/DepthCarousel/DepthCarousel.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/39867ab00dbd6820.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:40:53.183Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：98308cb464a3d478
+中文名称：液体形变图片切换
+原名称：Morph Slider
+分类：页面结构（structure）
+来源记录的效果说明：滑块切换图片时，图像通过位移扭曲像熔化一样过渡到下一张。
+口语别名：图片像融化一样换掉、液体切图
+触发方式：切换滑块图片
+适用位置：产品图片、作品轮播
+检索标签：components、Morph Slider、图片像融化一样换掉、液体切图
+来源：reactbits
+来源地址：https://reactbits.dev/components/morph-slider
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/MorphSlider/MorphSlider.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/98308cb464a3d478.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:41:03.020Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：ae8842d7d28e77b0
+中文名称：漂移透视图片墙
+原名称：Drift Wall
+分类：页面结构（structure）
+来源记录的效果说明：图片块组成无限透视墙并持续飘过，悬停的图片抬起。
+口语别名：一面照片墙飘过、斜着流动的图片墙
+触发方式：持续漂移；鼠标悬停抬起
+适用位置：作品首页、图库展示
+检索标签：components、Drift Wall、一面照片墙飘过、斜着流动的图片墙
+来源：reactbits
+来源地址：https://reactbits.dev/components/drift-wall
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/DriftWall/DriftWall.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/ae8842d7d28e77b0.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:41:11.726Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：d7d0a0a0e895db95
+中文名称：手风琴展开画廊
+原名称：Accordion Gallery
+分类：页面结构（structure）
+来源记录的效果说明：一排图片面板在悬停或聚焦时展开，露出带视差的图像和文字。
+口语别名：一排窄图鼠标上去变宽、手风琴照片展开
+触发方式：鼠标悬停或键盘聚焦
+适用位置：项目展示、服务分类
+检索标签：components、Accordion Gallery、一排窄图鼠标上去变宽、手风琴照片展开
+来源：reactbits
+来源地址：https://reactbits.dev/components/accordion-gallery
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/AccordionGallery/AccordionGallery.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/d7d0a0a0e895db95.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:41:18.976Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：8b55134e125aa1d7
+中文名称：弯曲滚轮选择器
+原名称：Option Wheel
+分类：页面结构（structure）
+来源记录的效果说明：选项沿弯曲轨道排列，滚动、拖动或方向键使其转动，非选中项倾斜淡出。
+口语别名：像滚轮一样选东西、弧形上下转的选项
+触发方式：滚动、拖动或方向键
+适用位置：偏好选择、参数选择
+检索标签：components、Option Wheel、像滚轮一样选东西、弧形上下转的选项
+来源：reactbits
+来源地址：https://reactbits.dev/components/option-wheel
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/OptionWheel/OptionWheel.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/8b55134e125aa1d7.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:41:35.380Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：2b6fe3131110c1f4
+中文名称：弧形输入栏
+原名称：Curved Input
+分类：页面结构（structure）
+来源记录的效果说明：输入框、文字光标与提交按钮沿同一弧线弯曲排列。
+口语别名：弯弯的输入框、文字沿弧线输入
+触发方式：输入文字与提交
+适用位置：创意搜索、聊天输入
+检索标签：components、Curved Input、弯弯的输入框、文字沿弧线输入
+来源：reactbits
+来源地址：https://reactbits.dev/components/curved-input
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/CurvedInput/CurvedInput.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/2b6fe3131110c1f4.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:41:41.536Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：df5661b7459c5304
+中文名称：鼠标邻近偏移侧栏
+原名称：Line Sidebar
+分类：页面结构（structure）
+来源记录的效果说明：静态侧栏链接在指针接近时偏移并突出附近项目。
+口语别名：鼠标附近的菜单会挪动、侧栏跟着鼠标起伏
+触发方式：鼠标在侧栏移动
+适用位置：侧边导航、作品目录
+检索标签：components、Line Sidebar、鼠标附近的菜单会挪动、侧栏跟着鼠标起伏
+来源：reactbits
+来源地址：https://reactbits.dev/components/line-sidebar
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/LineSidebar/LineSidebar.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/df5661b7459c5304.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:41:45.918Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：d9540a6c5c9d475f
+中文名称：错峰出现的列表
+原名称：Animated List
+分类：页面结构（structure）
+来源记录的效果说明：列表项目按顺序以时间差进入画面，形成连贯的列表揭示。
+口语别名：列表一条一条出现、顺着冒出来的选项
+触发方式：列表入场；选择项目
+适用位置：消息列表、菜单列表
+检索标签：components、Animated List、列表一条一条出现、顺着冒出来的选项
+来源：reactbits
+来源地址：https://reactbits.dev/components/animated-list
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/AnimatedList/AnimatedList.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/d9540a6c5c9d475f.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:41:52.092Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：e660f0d8e851f193
+中文名称：滚动层叠卡片
+原名称：Scroll Stack
+分类：页面结构（structure）
+来源记录的效果说明：卡片随页面滚动逐张重叠到前方，形成有纵深的堆叠。
+口语别名：往下滚卡片一张压一张、滚动时卡片叠起来
+触发方式：页面滚动经过卡片区
+适用位置：功能介绍、过程展示
+检索标签：components、Scroll Stack、往下滚卡片一张压一张、滚动时卡片叠起来
+来源：reactbits
+来源地址：https://reactbits.dev/components/scroll-stack
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/ScrollStack/ScrollStack.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/e660f0d8e851f193.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:42:00.043Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：17ab357eb710296e
+中文名称：气泡展开菜单
+原名称：Bubble Menu
+分类：页面结构（structure）
+来源记录的效果说明：圆形浮动菜单展开后，菜单项按顺序出现。
+口语别名：点开一堆圆圆的菜单、气泡导航
+触发方式：点击菜单按钮展开或收起
+适用位置：主导航、移动菜单
+检索标签：components、Bubble Menu、点开一堆圆圆的菜单、气泡导航
+来源：reactbits
+来源地址：https://reactbits.dev/components/bubble-menu
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/BubbleMenu/BubbleMenu.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/17ab357eb710296e.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:42:02.798Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：3c6dae64620f79ef
+中文名称：互动便当网格
+原名称：Magic Bento
+分类：页面结构（structure）
+来源记录的效果说明：大小不一的功能卡片组成网格，配合可配置的悬停、粒子与聚光反馈。
+口语别名：一格一格的互动卡片、大小不一的功能块
+触发方式：展示网格；鼠标悬停与点击
+适用位置：首页功能区、产品能力展示
+检索标签：components、Magic Bento、一格一格的互动卡片、大小不一的功能块
+来源：reactbits
+来源地址：https://reactbits.dev/components/magic-bento
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/MagicBento/MagicBento.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/3c6dae64620f79ef.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:42:15.377Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：3ba0dffea03e31a6
+中文名称：弧形循环画廊
+原名称：Circular Gallery
+分类：页面结构（structure）
+来源记录的效果说明：图片沿弧形轨道移动，形成可循环浏览的环形画廊。
+口语别名：照片排成弯弯一圈、弧线上的图片画廊
+触发方式：拖动或滚动画廊
+适用位置：作品集、摄影展示
+检索标签：components、Circular Gallery、照片排成弯弯一圈、弧线上的图片画廊
+来源：reactbits
+来源地址：https://reactbits.dev/components/circular-gallery
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/CircularGallery/CircularGallery.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/3ba0dffea03e31a6.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:42:22.418Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：7ac3667e90ea8213
+中文名称：卡片式展开导航
+原名称：Card Nav
+分类：页面结构（structure）
+来源记录的效果说明：导航栏展开成多个卡片面板，每个面板包含一组相关链接。
+口语别名：导航点开是一排卡片、菜单按块展开
+触发方式：点击导航按钮展开或收起
+适用位置：网站主导航、分类菜单
+检索标签：components、Card Nav、导航点开是一排卡片、菜单按块展开
+来源：reactbits
+来源地址：https://reactbits.dev/components/card-nav
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/CardNav/CardNav.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/7ac3667e90ea8213.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:42:40.316Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：4e01d5ff26ed95c8
+中文名称：可拖拽卡片堆
+原名称：Stack
+分类：页面结构（structure）
+来源记录的效果说明：卡片层叠成一堆，可拖、甩或点击切换，移出的卡片收回到堆底。
+口语别名：一叠卡片可以扔开、像翻照片一样翻卡片
+触发方式：拖动、甩动或点击
+适用位置：作品预览、评价卡片
+检索标签：components、Stack、一叠卡片可以扔开、像翻照片一样翻卡片
+来源：reactbits
+来源地址：https://reactbits.dev/components/stack
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/Stack/Stack.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/4e01d5ff26ed95c8.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:42:47.858Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：3b7d78827eeda39c
+中文名称：胶囊导航
+原名称：Pill Nav
+分类：页面结构（structure）
+来源记录的效果说明：导航项置于胶囊形容器，活动高亮在不同项目间平滑滑动。
+口语别名：圆角胶囊菜单、选中底色滑过去
+触发方式：选择导航项目或悬停
+适用位置：顶部导航、分组切换
+检索标签：components、Pill Nav、圆角胶囊菜单、选中底色滑过去
+来源：reactbits
+来源地址：https://reactbits.dev/components/pill-nav
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/PillNav/PillNav.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/3b7d78827eeda39c.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:43:01.174Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：0359369419ce0f38
+中文名称：瀑布流图片布局
+原名称：Masonry
+分类：页面结构（structure）
+来源记录的效果说明：不同高度的图片以紧密瀑布流排列，窗口变化时动画重排以优化空隙。
+口语别名：长短照片排得满满的、不规则瀑布流图片墙
+触发方式：页面展示；容器尺寸变化重排
+适用位置：作品集、图片资源库
+检索标签：components、Masonry、长短照片排得满满的、不规则瀑布流图片墙
+来源：reactbits
+来源地址：https://reactbits.dev/components/masonry
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/Masonry/Masonry.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/0359369419ce0f38.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:43:08.812Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：321f1184c636898d
+中文名称：三维穹顶图片展厅
+原名称：Dome Gallery
+分类：页面结构（structure）
+来源记录的效果说明：图片映射到半球表面，拖动视角可以浏览沉浸式穹顶画廊。
+口语别名：照片贴在一个大球里、穹顶里的图片墙
+触发方式：拖动视角；选择图片
+适用位置：沉浸式画廊、创意作品集
+检索标签：components、Dome Gallery、照片贴在一个大球里、穹顶里的图片墙
+来源：reactbits
+来源地址：https://reactbits.dev/components/dome-gallery
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/DomeGallery/DomeGallery.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/321f1184c636898d.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:43:10.766Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：e6149787eb1b8dbf
+中文名称：局部显色网格
+原名称：Chroma Grid
+分类：页面结构（structure）
+来源记录的效果说明：网格图片先呈灰度，鼠标附近恢复色彩，形成局部彩色窗口。
+口语别名：黑白照片鼠标上去变彩色、照片墙局部显色
+触发方式：鼠标在图片网格移动
+适用位置：团队卡片、作品列表
+检索标签：components、Chroma Grid、黑白照片鼠标上去变彩色、照片墙局部显色
+来源：reactbits
+来源地址：https://reactbits.dev/components/chroma-grid
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/ChromaGrid/ChromaGrid.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/e6149787eb1b8dbf.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:43:22.938Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：7e31e4db25559d5b
+中文名称：展开文件夹卡片
+原名称：Folder
+分类：页面结构（structure）
+来源记录的效果说明：文件夹悬停或交互时打开，内部内容以平滑运动显露出来。
+口语别名：点开文件夹露出内容、会打开的资料夹
+触发方式：鼠标悬停或操作文件夹
+适用位置：资料入口、项目分类
+检索标签：components、Folder、点开文件夹露出内容、会打开的资料夹
+来源：reactbits
+来源地址：https://reactbits.dev/components/folder
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/Folder/Folder.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/7e31e4db25559d5b.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:43:30.181Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：4f7dfed7b95c6a92
+中文名称：错峰滑入大菜单
+原名称：Staggered Menu
+分类：页面结构（structure）
+来源记录的效果说明：菜单展开和关闭时，背景面板与菜单文字分批错峰运动。
+口语别名：一层层滑开的菜单、菜单文字依次飞入
+触发方式：点击菜单开关
+适用位置：主导航、移动导航
+检索标签：components、Staggered Menu、一层层滑开的菜单、菜单文字依次飞入
+来源：reactbits
+来源地址：https://reactbits.dev/components/staggered-menu
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/StaggeredMenu/StaggeredMenu.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/4f7dfed7b95c6a92.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:43:36.027Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：d6e751bd72c36181
+中文名称：可旋转三维模型
+原名称：Model Viewer
+分类：页面结构（structure）
+来源记录的效果说明：展示三维模型，提供环绕查看与可调灯光预设。
+口语别名：可以转着看的3D模型、拖动查看产品的立体图
+触发方式：拖动旋转、缩放；切换灯光
+适用位置：产品展示、三维作品页
+检索标签：components、Model Viewer、可以转着看的3D模型、拖动查看产品的立体图
+来源：reactbits
+来源地址：https://reactbits.dev/components/model-viewer
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/ModelViewer/ModelViewer.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/d6e751bd72c36181.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:43:45.571Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：b556d3ba6d6e38fd
+中文名称：放大式底部图标栏
+原名称：Dock
+分类：页面结构（structure）
+来源记录的效果说明：一排应用图标像桌面 Dock 一样在鼠标靠近时放大，可带启动弹跳和角标。
+口语别名：像苹果底部那排图标、鼠标靠近图标变大
+触发方式：鼠标悬停与点击；按配置弹出菜单
+适用位置：快捷导航、工具栏
+检索标签：components、Dock、像苹果底部那排图标、鼠标靠近图标变大
+来源：reactbits
+来源地址：https://reactbits.dev/components/dock
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/Dock/Dock.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/b556d3ba6d6e38fd.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:44:17.201Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：2d55f4b3aa59ef07
+中文名称：粘液高亮导航
+原名称：Gooey Nav
+分类：页面结构（structure）
+来源记录的效果说明：活动导航指示器以融化、拉伸的液态形变在项目之间移动。
+口语别名：导航底色像粘液滑过去、会融化的菜单高亮
+触发方式：点击导航项目
+适用位置：顶部导航、标签切换
+检索标签：components、Gooey Nav、导航底色像粘液滑过去、会融化的菜单高亮
+来源：reactbits
+来源地址：https://reactbits.dev/components/gooey-nav
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/GooeyNav/GooeyNav.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/2d55f4b3aa59ef07.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:44:22.384Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：44d21281ba24b77f
+中文名称：可滑动功能轮播
+原名称：Carousel
+分类：页面结构（structure）
+来源记录的效果说明：卡片可滑动浏览，可选多种过渡与自动播放计时。
+口语别名：左右滑动看卡片、一张张切换的功能介绍
+触发方式：拖动、切换按钮或自动播放
+适用位置：功能介绍、故事卡片
+检索标签：components、Carousel、左右滑动看卡片、一张张切换的功能介绍
+来源：reactbits
+来源地址：https://reactbits.dev/components/carousel
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/Carousel/Carousel.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/44d21281ba24b77f.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:44:42.856Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：214963649be25b25
+中文名称：滚动飞行海报
+原名称：Flying Posters
+分类：页面结构（structure）
+来源记录的效果说明：海报在无限纵向画廊中随滚动或拖动产生三维扭转与翻转。
+口语别名：海报像飞过去一样、滚动时照片扭来扭去
+触发方式：滚动或拖动画廊
+适用位置：作品集、海报展示
+检索标签：components、Flying Posters、海报像飞过去一样、滚动时照片扭来扭去
+来源：reactbits
+来源地址：https://reactbits.dev/components/flying-posters
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/FlyingPosters/FlyingPosters.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/214963649be25b25.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:44:50.916Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：e5e7c867913b19cb
+中文名称：轮流换位的卡片
+原名称：Card Swap
+分类：页面结构（structure）
+来源记录的效果说明：一叠卡片通过平滑的位移和层级切换交换前后位置。
+口语别名：卡片一张张轮到前面、一叠卡片自动换位
+触发方式：自动按间隔换位
+适用位置：功能展示、内容预览
+检索标签：components、Card Swap、卡片一张张轮到前面、一叠卡片自动换位
+来源：reactbits
+来源地址：https://reactbits.dev/components/card-swap
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/CardSwap/CardSwap.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/e5e7c867913b19cb.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:45:07.662Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：936788dc9b93b361
+中文名称：流动预览菜单
+原名称：Flowing Menu
+分类：页面结构（structure）
+来源记录的效果说明：悬停菜单项时出现横向流动的文字与图片带，形成动态预览。
+口语别名：鼠标上去菜单里图片一直走、菜单展开流动的图片带
+触发方式：鼠标进入与离开菜单项
+适用位置：作品导航、案例目录
+检索标签：components、Flowing Menu、鼠标上去菜单里图片一直走、菜单展开流动的图片带
+来源：reactbits
+来源地址：https://reactbits.dev/components/flowing-menu
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/FlowingMenu/FlowingMenu.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/936788dc9b93b361.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:45:29.609Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：eb7ca3f10e1f1e40
+中文名称：球面无限图片菜单
+原名称：Infinite Menu
+分类：页面结构（structure）
+来源记录的效果说明：图片块覆盖可拖动球体，最近的项目吸附到前方并显示名称、说明与链接。
+口语别名：拖动一个贴满照片的球、球面照片菜单
+触发方式：拖动球面；项目吸附到前方
+适用位置：作品导航、产品菜单
+检索标签：components、Infinite Menu、拖动一个贴满照片的球、球面照片菜单
+来源：reactbits
+来源地址：https://reactbits.dev/components/infinite-menu
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/InfiniteMenu/InfiniteMenu.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/eb7ca3f10e1f1e40.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:45:53.062Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：819b61711d943890
+中文名称：分步流程面板
+原名称：Stepper
+分类：页面结构（structure）
+来源记录的效果说明：用步骤指示器和动画状态切换组织多步内容，并显示当前进度。
+口语别名：一步一步填的页面、带进度的分步表单
+触发方式：点击下一步、上一步或步骤
+适用位置：引导流程、多步表单
+检索标签：components、Stepper、一步一步填的页面、带进度的分步表单
+来源：reactbits
+来源地址：https://reactbits.dev/components/stepper
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/Stepper/Stepper.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/819b61711d943890.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:45:53.134Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：5f6db6faf42a1a39
+中文名称：弹入扇形照片卡
+原名称：Bounce Cards
+分类：页面结构（structure）
+来源记录的效果说明：照片卡片呈扇形弹入，悬停时周围卡片散开，当前卡片扶正。
+口语别名：照片像扇子弹出来、鼠标选中一张照片其他让开
+触发方式：入场弹跳；鼠标悬停
+适用位置：作品预览、个人首页
+检索标签：components、Bounce Cards、照片像扇子弹出来、鼠标选中一张照片其他让开
+来源：reactbits
+来源地址：https://reactbits.dev/components/bounce-cards
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/BounceCards/BounceCards.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/5f6db6faf42a1a39.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:45:54.944Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：8c066244db53ce5a
+中文名称：树枝展开菜单
+原名称：Branched Menu
+分类：页面结构（structure）
+来源记录的效果说明：分组菜单展开成树干与弯曲枝线，强调线沿分支移动到选中项目。
+口语别名：像树枝分叉的菜单、选中路径沿线跑过去
+触发方式：展开分组；点击子项
+适用位置：侧边目录、分组导航
+检索标签：micro、Branched Menu、像树枝分叉的菜单、选中路径沿线跑过去
+来源：reactbits
+来源地址：https://reactbits.dev/micro/branched-menu
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/BranchedMenu/BranchedMenu.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/8c066244db53ce5a.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:54:33.207Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：5d28bb2c5ec3cbeb
+中文名称：浮出笔记的文件夹
+原名称：Folder Float
+分类：页面结构（structure）
+来源记录的效果说明：悬停或按下文件夹后盖板前倾，笔记从背后弹成可选择的浮动云，关闭时收回。
+口语别名：文件夹打开笔记飞出来、纸片从文件夹里漂起来
+触发方式：鼠标悬停或按下；选择笔记
+适用位置：笔记入口、资源分类
+检索标签：micro、Folder Float、文件夹打开笔记飞出来、纸片从文件夹里漂起来
+来源：reactbits
+来源地址：https://reactbits.dev/micro/folder-float
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/FolderFloat/FolderFloat.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/5d28bb2c5ec3cbeb.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:55:21.076Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：47e6f214558b4616
+中文名称：滑动高亮下拉菜单
+原名称：Glide Select
+分类：页面结构（structure）
+来源记录的效果说明：选择菜单从芯片角部展开，统一高亮在行之间滑动，再进入时从上次位置续接。
+口语别名：下拉选项的底色会滑动、菜单从按钮角上弹出来
+触发方式：展开菜单；悬停与选择项目
+适用位置：筛选器、偏好选择
+检索标签：micro、Glide Select、下拉选项的底色会滑动、菜单从按钮角上弹出来
+来源：reactbits
+来源地址：https://reactbits.dev/micro/glide-select
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/GlideSelect/GlideSelect.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/47e6f214558b4616.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:55:22.399Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：e3aaeefc863b70e7
+中文名称：多入口智能体输入栏
+原名称：Prompt Bar
+分类：页面结构（structure）
+来源记录的效果说明：输入栏可显示来源、命令和模型选择菜单，以及附件与语音入口；发送图标在忙碌时变成停止。
+口语别名：带模型选择的聊天输入框、发送按钮会变成停止
+触发方式：输入文字；打开菜单；发送或停止
+适用位置：智能体对话、搜索助手
+检索标签：micro、Prompt Bar、带模型选择的聊天输入框、发送按钮会变成停止
+来源：reactbits
+来源地址：https://reactbits.dev/micro/prompt-bar
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/PromptBar/PromptBar.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/e3aaeefc863b70e7.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:56:10.270Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：187e7f7bde53d65c
+中文名称：思考过程折叠标题
+原名称：Thought Line
+分类：页面结构（structure）
+来源记录的效果说明：思考时图标与标题呼吸，计时与步骤展开，结束后淡变为耗时并收拢过程。
+口语别名：智能体思考完把过程收起来、思考标题显示用时
+触发方式：思考开始、步骤更新与完成
+适用位置：智能体推理过程、任务详情
+检索标签：micro、Thought Line、智能体思考完把过程收起来、思考标题显示用时
+来源：reactbits
+来源地址：https://reactbits.dev/micro/thought-line
+实现参考：https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/ThoughtLine/ThoughtLine.jsx
+预览来源性质：原站演示实录
+本地预览：/media/sources/187e7f7bde53d65c.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：在来源网站真实组件演示区域录制；画面裁切和交互操作见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T09:58:23.966Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：acbbbd63d54c2f9b
+中文名称：按下有弹性的分类胶囊
+原名称：Airbnb Tactile Tab Button Interaction
+分类：页面结构（structure）
+来源记录的效果说明：横向分类胶囊在点击时轻微压缩，选中底色平滑移到新项目；下方先显示内容骨架，再交叉淡入对应列表，分类与内容切换形成一个连续动作。
+口语别名：分类按钮像真的按下去、点标签下面的内容跟着换、软软的胶囊菜单
+触发方式：点击分类标签，先显示按压反馈，再切换选中状态和下方内容
+适用位置：移动端分类导航、信息流顶部
+检索标签：分类标签、弹性按压、内容切换、骨架屏、Airbnb
+来源：60fps
+来源地址：https://60fps.design/shots/airbnb-tactile-tab-button-interaction
+实现参考：未提供实现源码地址；按视觉行为参考，不声称可直接集成。
+预览来源性质：来源原始视频
+本地预览：/media/sources/acbbbd63d54c2f9b.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：保存原站公开视频素材并本地转码，保留完整原始帧比例；素材地址、HTTP和摘要见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T08:20:22.185Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：8bcbfcc3839721fb
+中文名称：弹起后退到队尾的照片堆
+原名称：Airbnb Photo Pop and Slide Animation
+分类：页面结构（structure）
+来源记录的效果说明：操作照片堆时，最上面的照片先放大、旋转并向上滑出，再退到叠层后方；余下照片向前补位，形成可以循环浏览的有厚度相册。
+口语别名：照片像抽牌一样翻到后面、一叠照片轮流出来、会弹起来的照片堆
+触发方式：操作照片堆触发顶部卡片换位，其余卡片同步前移
+适用位置：照片画廊、目的地介绍、作品卡片堆
+检索标签：照片堆、叠层、旋转、循环浏览、Airbnb
+来源：60fps
+来源地址：https://60fps.design/shots/airbnb-photo-pop-and-slide-animation
+实现参考：未提供实现源码地址；按视觉行为参考，不声称可直接集成。
+预览来源性质：来源原始视频
+本地预览：/media/sources/8bcbfcc3839721fb.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：保存原站公开视频素材并本地转码，保留完整原始帧比例；素材地址、HTTP和摘要见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T08:20:41.114Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：e336505a427b4e3d
+中文名称：完成后统一庆祝的任务清单
+原名称：Google Todo Check Interaction
+分类：页面结构（structure）
+来源记录的效果说明：任务清单中的未完成项显示转圈，完成时圆形等待图标弹性变为勾选；所有项结束后，顶部插画活动起来，标题更新，主要行动按钮从底部滑入。
+口语别名：清单一项项打勾、全部做好后出现继续按钮、完成后标题也跟着变
+触发方式：任务状态从处理中变为完成；全部完成触发整体收尾反馈
+适用位置：新手引导、设置检查清单、准备任务页
+检索标签：任务清单、状态切换、勾选、完成反馈、Google
+来源：60fps
+来源地址：https://60fps.design/shots/google-todo-check-interaction
+实现参考：未提供实现源码地址；按视觉行为参考，不声称可直接集成。
+预览来源性质：来源原始视频
+本地预览：/media/sources/e336505a427b4e3d.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：保存原站公开视频素材并本地转码，保留完整原始帧比例；素材地址、HTTP和摘要见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T08:21:03.112Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：5e5b3722d2eb3996
+中文名称：竖向流动的能力介绍清单
+原名称：Notion AI Sheet Intro Action Trail Transition
+分类：页面结构（structure）
+来源记录的效果说明：引导底部面板中多条能力胶囊持续向上滚动，左侧角色插画保持固定，底部行动按钮始终可见；用流动清单展示工具能完成的不同任务。
+口语别名：功能一条条往上走、滚动展示它能做什么、小胶囊列表像字幕一样动
+触发方式：打开引导面板后能力胶囊自动持续向上移动
+适用位置：工具能力引导、移动端入门面板
+检索标签：能力列表、竖向跑马灯、引导、固定行动按钮、Notion
+来源：60fps
+来源地址：https://60fps.design/shots/notion-ai-sheet-intro-action-trail-transition
+实现参考：未提供实现源码地址；按视觉行为参考，不声称可直接集成。
+预览来源性质：来源原始视频
+本地预览：/media/sources/5e5b3722d2eb3996.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：保存原站公开视频素材并本地转码，保留完整原始帧比例；素材地址、HTTP和摘要见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T08:21:26.942Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。
+
+---CASE---
+
+案例 ID：094ec132bb2affc0
+中文名称：背景跟随徽章换色的展示轮播
+原名称：GitHub Badges Showcase Interaction
+分类：页面结构（structure）
+来源记录的效果说明：徽章在弹层中横向轮播，滑动时立体图形轻微绕竖轴旋转并吸附到中央；背景颜色跟随当前徽章交融变化，文字淡入更新，关闭时弹层缩小退出。
+口语别名：徽章左右滑还能换背景、成就像立体卡片一样展示、每张卡配自己的底色
+触发方式：横向滑动切换徽章；点击关闭缩小退出
+适用位置：成就展示、个人档案徽章、收藏轮播
+检索标签：徽章、轮播、背景变色、三维、GitHub
+来源：60fps
+来源地址：https://60fps.design/shots/github-badges-showcase-interaction
+实现参考：未提供实现源码地址；按视觉行为参考，不声称可直接集成。
+预览来源性质：来源原始视频
+本地预览：/media/sources/094ec132bb2affc0.webm（云端不能直接访问，不作为模型已观看视频的证据）
+预览状态：已验证可播放；未证明组件源码已集成、手机性能或所有组合已测试。
+预览说明：保存原站公开视频素材并本地转码，保留完整原始帧比例；素材地址、HTTP和摘要见采集证据。
+用户补充（待分析资料）："无"
+资料更新时间：2026-10-12T08:21:48.192Z
+应用规则：先确定具体对象和作用层，保留用户未要求改变的功能、材质与布局。候选资格以本轮 availableCatalog 为准。

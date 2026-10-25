@@ -1,0 +1,21 @@
+{
+  "entryId": "cf838cdb74b5a398",
+  "sourceUrl": "https://reactbits.dev/text-animations/shuffle",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/Shuffle-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/TextAnimations/Shuffle/Shuffle.jsx",
+  "checkedAt": "2026-10-25T07:52:55.023Z",
+  "sha256": "babab6e023efb370aa8edc7f085eff321fc4d285557a8882e48dbbe4e1bcb36b",
+  "files": [
+    {
+      "path": "Shuffle.css",
+      "sha256": "97ca133d095b1b63b0f05f2ae3178fb9da133c4079e5b865ce4d36f124f7208b",
+      "bytes": 595
+    },
+    {
+      "path": "Shuffle.jsx",
+      "sha256": "c627b7320c7fe7c5e0c2cd9e0b907b0fb2e0b007011f3d3c562b7d10e2c143dd",
+      "bytes": 15156
+    }
+  ]
+}

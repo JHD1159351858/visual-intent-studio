@@ -1,0 +1,21 @@
+{
+  "entryId": "98308cb464a3d478",
+  "sourceUrl": "https://reactbits.dev/components/morph-slider",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/MorphSlider-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/MorphSlider/MorphSlider.jsx",
+  "checkedAt": "2026-10-25T07:53:02.256Z",
+  "sha256": "c0256421992c29604f17652e2ae328f74151435acc4bbfb09502b2722a50f021",
+  "files": [
+    {
+      "path": "MorphSlider.css",
+      "sha256": "213e79d63ec5003698f60c8e81d2b616bf3bb2548327682f02a40c11cd2e9d92",
+      "bytes": 3278
+    },
+    {
+      "path": "MorphSlider.jsx",
+      "sha256": "7949fc0e1b0e11009f9f30f690bf07308275f6719ad5b26bf86d9f86d281e622",
+      "bytes": 19676
+    }
+  ]
+}

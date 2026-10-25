@@ -1,0 +1,21 @@
+{
+  "entryId": "b04188ba3f32dd46",
+  "sourceUrl": "https://reactbits.dev/animations/sticker-peel",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/StickerPeel-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/StickerPeel/StickerPeel.jsx",
+  "checkedAt": "2026-10-25T07:53:00.428Z",
+  "sha256": "8e183944b47dc558db1dcc8b365afeadffd94aa6375bc83cbb406cd999c7c5f8",
+  "files": [
+    {
+      "path": "StickerPeel.css",
+      "sha256": "04d6be5b25e6a2bc4d49ddf2cfdf19174b15a4cb5a845b6562ee3512399b8edc",
+      "bytes": 451
+    },
+    {
+      "path": "StickerPeel.jsx",
+      "sha256": "59b0f36dc665f3f772c9e44e05f3452c6c44a0465a045522b29bb34f1ea7c69e",
+      "bytes": 37764
+    }
+  ]
+}

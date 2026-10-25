@@ -1,0 +1,21 @@
+{
+  "entryId": "reactbits-dot-grid",
+  "sourceUrl": "https://reactbits.dev/backgrounds/dot-grid",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/DotGrid-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Backgrounds/DotGrid/DotGrid.jsx",
+  "checkedAt": "2026-10-25T07:52:53.599Z",
+  "sha256": "c246dcd52a779f03ec95bdb4c1e0ee21f5776dc4dfe64f9bb85fa83459db9d7b",
+  "files": [
+    {
+      "path": "DotGrid.css",
+      "sha256": "41da475e62d101909c5f958569214c38cf20441223059d07a3e56b4e9a176a51",
+      "bytes": 197
+    },
+    {
+      "path": "DotGrid.jsx",
+      "sha256": "66f50ebc070bb3d02eb46b8b1b58334c3ce513da160d97e6a8a96fbf9ad3909f",
+      "bytes": 21999
+    }
+  ]
+}

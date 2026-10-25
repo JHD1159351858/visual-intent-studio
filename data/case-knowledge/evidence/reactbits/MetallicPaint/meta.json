@@ -1,0 +1,21 @@
+{
+  "entryId": "46a94d1d040cd951",
+  "sourceUrl": "https://reactbits.dev/animations/metallic-paint",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/MetallicPaint-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Animations/MetallicPaint/MetallicPaint.jsx",
+  "checkedAt": "2026-10-25T07:53:00.752Z",
+  "sha256": "a64a0f9c15623a8fb58ca7eb2251480346f0d2cfb969b01446cde0c89f436044",
+  "files": [
+    {
+      "path": "MetallicPaint.css",
+      "sha256": "b559add72731f181c5eddb8999a35e601155db0c8704ee96beb1c423cf6556be",
+      "bytes": 150
+    },
+    {
+      "path": "MetallicPaint.jsx",
+      "sha256": "40f9cb4a835d4fae631b1687ad85d20107644c8f972851c8dd6e5055c0d9ac35",
+      "bytes": 26904
+    }
+  ]
+}

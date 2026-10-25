@@ -1,0 +1,10 @@
+# 视觉资产记录
+
+- 方式：内置 image_gen；全新生成。
+- 用途：轻康概念产品主视觉，项目图片而非整页截图。
+- 项目路径：public/assets/qingkang-hero.png。
+- 原始输出：C:/Users/Administrator/.codex/generated_images/01a143cc-3ace-7593-b3a7-5f4d2709f6f3/exec-01285da9-85cc-43ce-920f-7d7cdebb8d6c.png。
+
+生成提示词：
+
+Create one premium product design portfolio case-study cover image, horizontal 4:3 aspect ratio, high-resolution. Subject: a fictional wellness habit tracking mobile app named QINGKANG / 轻康. This is an artwork image to be placed as the LARGE hero project visual in a designer's portfolio, NOT a full portfolio webpage. Art direction: meticulously crafted realistic industrial product mockup, three slim titanium smartphones suspended with shallow perspective in a cool midnight navy studio. One large central phone front facing almost upright shows an impeccably clean mint-white health app interface: a cyan/turquoise progress ring, a friendly daily plan, understated small line chart, soft pill controls, typography in clean English such as 'Good morning', 'Your balance', 'Daily routine', 'Move', 'Rest', 'Hydrate'. Left slightly behind phone shows a clean weekly chart on mint white. Right slightly behind phone shows habit cards and a turquoise abstract leaf. Phones occupy about 80% of image height and 75% of width, all complete objects in frame with breathing room. Frame balance is editorial and deliberate, central phone tall and dominant, side phones lower and tilted only 8 degrees. Faint broad cold side light from upper right, premium materials, soft matte reflections, diffused contact shadows, subtle navy floor plane. Background solid/very subtle gradient from #162740 to #0F172A, NO purple and NO star field, NO lasers, NO neon glow rings, NO decoration floating objects, NO large marketing slogan, NO extra text outside phones, NO watermark, NO fake award or download/achievement badges. Device UI should look like a plausible refined health habit app and be clearly readable at large scale. Color palette titanium silver, warm-white screens, cool mint, cyan, midnight navy. Product photography quality, physically plausible lighting, very crisp smartphone edges, restrained cinematic depth.

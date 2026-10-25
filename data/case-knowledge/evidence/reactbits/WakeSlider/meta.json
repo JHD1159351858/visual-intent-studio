@@ -1,0 +1,21 @@
+{
+  "entryId": "0ffadba3589467d7",
+  "sourceUrl": "https://reactbits.dev/micro/wake-slider",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/WakeSlider-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/WakeSlider/WakeSlider.jsx",
+  "checkedAt": "2026-10-25T07:53:15.626Z",
+  "sha256": "db8b340f6494e99daf13d8342c10e0d3a71743f3b59287c95598baa1673d3a01",
+  "files": [
+    {
+      "path": "WakeSlider.css",
+      "sha256": "2b8153f1bc069ef6974e0ba6cd5bba6e88641097562f28f0e21317d1c31106e4",
+      "bytes": 1853
+    },
+    {
+      "path": "WakeSlider.jsx",
+      "sha256": "f0184a8248b78ef359e088ae24a6565faf09e867bdacb96761d48f02b3badc32",
+      "bytes": 7307
+    }
+  ]
+}

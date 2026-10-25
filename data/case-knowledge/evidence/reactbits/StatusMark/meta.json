@@ -1,0 +1,21 @@
+{
+  "entryId": "103e215ede8c0764",
+  "sourceUrl": "https://reactbits.dev/micro/status-mark",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/StatusMark-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/StatusMark/StatusMark.jsx",
+  "checkedAt": "2026-10-25T07:53:15.033Z",
+  "sha256": "702ecb289c082431602f240173cd048c6e6b5e43c3835d776d094e5db5461075",
+  "files": [
+    {
+      "path": "StatusMark.css",
+      "sha256": "9c46c47df3729a4e1d258d7a77521faa08fc445fd1ea8b8c4ade8bdb8c2e45c9",
+      "bytes": 3912
+    },
+    {
+      "path": "StatusMark.jsx",
+      "sha256": "113fa90cd02db3186d984967e76c9ede53f71b71d569e1a410bd78af2a20ecb0",
+      "bytes": 5087
+    }
+  ]
+}

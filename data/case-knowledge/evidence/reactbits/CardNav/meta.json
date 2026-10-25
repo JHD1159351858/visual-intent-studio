@@ -1,0 +1,21 @@
+{
+  "entryId": "7ac3667e90ea8213",
+  "sourceUrl": "https://reactbits.dev/components/card-nav",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/CardNav-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/CardNav/CardNav.jsx",
+  "checkedAt": "2026-10-25T07:53:03.623Z",
+  "sha256": "10ee876f9b5c9bd03699acfbc57c555c667d82a50ef07eb6a0748765cf9a8b37",
+  "files": [
+    {
+      "path": "CardNav.css",
+      "sha256": "e43b4f62606740686844334748da3fbbe368f0b1a14b4330348f38c60846705d",
+      "bytes": 3419
+    },
+    {
+      "path": "CardNav.jsx",
+      "sha256": "21f8d3af1c346cdb21fc37777341de5659df7eac37d7e590c023a1dc06b7ff72",
+      "bytes": 5738
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "entryId": "c8505751d8186935",
+  "sourceUrl": "https://reactbits.dev/micro/peek-rating",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/PeekRating-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Micro/PeekRating/PeekRating.jsx",
+  "checkedAt": "2026-10-25T07:53:13.755Z",
+  "sha256": "3a3689cb6958ba9fffb354a9f9724938a1a66511870dd8ed5d8f38361a5438d3",
+  "files": [
+    {
+      "path": "PeekRating.css",
+      "sha256": "06d483e01535b4390474695903ab61aa5f81fdcc2cc2fc7d6bee3037ab291b7b",
+      "bytes": 2747
+    },
+    {
+      "path": "PeekRating.jsx",
+      "sha256": "5b5b2633b022b4a198be4e7de9f01f01c72052ef75c5e794df5936aedb4efe50",
+      "bytes": 9818
+    }
+  ]
+}

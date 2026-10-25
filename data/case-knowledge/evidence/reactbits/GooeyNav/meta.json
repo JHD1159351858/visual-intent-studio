@@ -1,0 +1,21 @@
+{
+  "entryId": "2d55f4b3aa59ef07",
+  "sourceUrl": "https://reactbits.dev/components/gooey-nav",
+  "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/e2eb04d89d5be5a633dba7b2d4adfd274e053767/public/r/GooeyNav-JS-CSS.json",
+  "commit": "e2eb04d89d5be5a633dba7b2d4adfd274e053767",
+  "implementationUrl": "https://github.com/DavidHDev/react-bits/blob/e2eb04d89d5be5a633dba7b2d4adfd274e053767/src/content/Components/GooeyNav/GooeyNav.jsx",
+  "checkedAt": "2026-10-25T07:53:04.770Z",
+  "sha256": "29559c6f4a822c24e453264e27a79dc6604af58d3978a4ab110f6a9515e16b16",
+  "files": [
+    {
+      "path": "GooeyNav.css",
+      "sha256": "3aa16f51e5131789c283b5795d35284bcabdd88c9e0fdc60be61e725520ba2de",
+      "bytes": 2366
+    },
+    {
+      "path": "GooeyNav.jsx",
+      "sha256": "54fb7456882be8d2f39ae5089db26d6bf90a205af02e4e0393c904e95977aee8",
+      "bytes": 27225
+    }
+  ]
+}
