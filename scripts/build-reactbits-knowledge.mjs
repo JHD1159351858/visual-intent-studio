@@ -50,6 +50,7 @@ async function fetchRegistry(entry) {
 
 // Read prop defaults through the JavaScript AST, never execute the collected components.
 function sourceFacts(registry) {
+  const componentName = registry.name.replace(/-JS-CSS$/, '');
   const jsx = registry.files.filter(file => /\.jsx$/.test(file.path));
   const source = registry.files.map(file => file.content).join('\n');
   const defaults = {};
@@ -63,7 +64,13 @@ function sourceFacts(registry) {
       if ((ts.isFunctionDeclaration(node) || ts.isArrowFunction(node) || ts.isFunctionExpression(node)) && node.parameters?.[0] && ts.isObjectBindingPattern(node.parameters[0].name)) {
         const parameter = node.parameters[0];
         const props = parameter.name.elements.map(item => ({ name: item.propertyName?.getText(ast) || item.name.getText(ast), value: item.initializer?.getText(ast) })).filter(item => !item.name.startsWith('...'));
-        if (props.length >= 2) signatures.push({ props, length: props.length });
+        let primary = node.name?.getText(ast) === componentName;
+        for (let parent = node.parent; parent && !ts.isBlock(parent) && !ts.isSourceFile(parent); parent = parent.parent) if (ts.isVariableDeclaration(parent) && parent.name.getText(ast) === componentName) primary = true;
+        if (props.length >= 2) signatures.push({ props, length: props.length + (primary ? 10000 : 0) });
+      }
+      if (ts.isVariableDeclaration(node) && ts.isObjectBindingPattern(node.name) && node.initializer?.getText(ast) === 'props') {
+        const props = node.name.elements.map(item => ({ name: item.propertyName?.getText(ast) || item.name.getText(ast), value: item.initializer?.getText(ast) })).filter(item => !item.name.startsWith('...'));
+        signatures.push({ props, length: props.length + 10000 });
       }
       ts.forEachChild(node, inspect);
     };

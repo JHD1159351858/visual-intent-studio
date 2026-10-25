@@ -3,7 +3,7 @@ import { mkdir, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { tmpdir } from 'node:os';
 import { generateDesignPrompt } from '../server/design-prompt';
-import type { CatalogEntry, DesignPromptRequest } from '../shared/types';
+import type { CatalogEntry, DesignPromptRequest, DesignPromptResult } from '../shared/types';
 import type { CaseKnowledge } from '../shared/case-knowledge';
 import type { ComponentImplementation } from '../shared/design-library';
 
@@ -22,11 +22,11 @@ async function fixture() {
   await writeFile(path.join(root, 'data/design-components.json'), JSON.stringify([native]));
   return root;
 }
-function capture() {
+function capture(overrides: Partial<DesignPromptResult> = {}) {
   let context: any; let instruction = '';
   const fetch = vi.fn(async (_url, init: RequestInit) => {
     const sent = JSON.parse(String(init.body)); instruction = sent.messages[0].content; context = JSON.parse(sent.messages[1].content);
-    const value = { developerPrompt: '请在目标工程实际实现知识查询页面，保留输入、答案与来源展示。按用户的强动效要求组织背景与主体，阅读内容保持稳定；用独立绘制层隔离视觉效果，并明确手机操作、暂停和减少动态处理，采用真实案例提供实现说明与验收。', message: '已完成', referenceEntryIds: entries.map(item => item.id), assumptions: [] };
+    const value = { developerPrompt: '请在目标工程实际实现知识查询页面，保留输入、答案与来源展示。按用户的强动效要求组织背景与主体，阅读内容保持稳定；用独立绘制层隔离视觉效果，并明确手机操作、暂停和减少动态处理，采用真实案例提供实现说明与验收。', message: '已完成', referenceEntryIds: entries.map(item => item.id), assumptions: [], ...overrides };
     return new Response(JSON.stringify({ choices: [{ message: { content: JSON.stringify(value) } }] }), { headers: { 'Content-Type': 'application/json' } });
   });
   vi.stubGlobal('fetch', fetch);
@@ -44,6 +44,7 @@ it('gives every candidate equally structured implementation knowledge, including
     expect(item.implementationKnowledge.limits.length).toBeGreaterThan(0);
   }
   expect(captured.context.visualEffectOptions).toEqual([]);
+  expect(captured.instruction).not.toContain('正文逐项写明真实ID与来源');
   expect(JSON.stringify(captured.context)).not.toContain('privateNativeSourceMarker');
 });
 
@@ -82,4 +83,33 @@ it('includes knowledge for all 350 release cases in the production request witho
   expect(context.availableCatalog.every((item: any) => item.implementationKnowledge?.method && item.implementationKnowledge?.scenes.length && item.implementationKnowledge?.limits.length)).toBe(true);
   expect(context.visualEffectOptions).toEqual([]);
   expect(JSON.stringify(context).length).toBeLessThan(800000);
+});
+
+it('resolves request-scoped short references to real case IDs and appends canonical source addresses locally', async () => {
+  const root = await fixture();
+  const captured = capture({ referenceEntryIds: ['ref_001', 'ref_002'], mainVisuals: [{ role: 'hero', family: 'other', entryIds: ['ref_002'], description: '作为主体的独立路径动画' }] });
+  const implementationUrl = 'https://github.com/example/library/blob/pinned/components/native-border.tsx';
+  const result = await generateDesignPrompt(model, request, [{ ...entries[0], implementationUrl }, entries[1]], root);
+  expect(captured.context.availableCatalog.map((item: any) => item.refKey)).toEqual(['ref_001', 'ref_002']);
+  expect(result.referenceEntryIds).toEqual(entries.map(item => item.id));
+  expect(result.mainVisuals?.[0].entryIds).toEqual([entries[1].id]);
+  expect(result.developerPrompt).toContain(entries[0].sourceUrl);
+  expect(result.developerPrompt).toContain(entries[1].sourceUrl);
+  expect(result.developerPrompt).toContain(implementationUrl);
+  expect(result.developerPrompt).not.toContain('ref_001');
+});
+
+it.each(['ref_999', '9d1460b1bef8c4e9'])('still rejects an unknown reference rather than guessing its identity: %s', async id => {
+  const root = await fixture(); capture({ referenceEntryIds: [id] });
+  await expect(generateDesignPrompt(model, request, entries, root)).rejects.toMatchObject({ code: 'MODEL_INVALID_ID' });
+});
+
+it('keeps source-address validation when a short reference is valid but model-written links disagree', async () => {
+  const root = await fixture(); capture({ referenceEntryIds: ['ref_001'], developerPrompt: '请在目标工程实现完整知识页面，保留核心输入、资料查看、错误与加载状态，手机正常使用并保持文字稳定可读。接入时分开背景装饰和内容面，提供暂停和减少动态模式；错误的参考链接：' + entries[1].sourceUrl });
+  await expect(generateDesignPrompt(model, request, entries, root)).rejects.toMatchObject({ code: 'MODEL_INVALID_SOURCE' });
+});
+
+it.each(['ref_999', 'ref_002'])('rejects unknown or unadopted short references in main-visual metadata: %s', async reference => {
+  const root = await fixture(); capture({ referenceEntryIds: ['ref_001'], mainVisuals: [{ role: 'hero', family: 'other', entryIds: [reference], description: '用于主体的路径运动' }] });
+  await expect(generateDesignPrompt(model, request, entries, root)).rejects.toMatchObject({ code: 'MODEL_INVALID_ID' });
 });

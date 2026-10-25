@@ -9012,14 +9012,25 @@ Motion的进入退出状态按活动索引切换短句，按字或词错峰呈�
 
 1. 在React客户端引入锁定registry的RotatingText.css、RotatingText.jsx，按dependencies安装实际外部依赖，容器尺寸与资源地址由页面工程提供。
 2. 维护currentText与next、previous等控制，逐段拆分并用AnimatePresence处理旧段退出和新段进入。
-3. 以源码实际接口和受控状态配置；触发依据：自动轮换或外部控制切换。业务数据、额外按钮或新触发方式均须标为接入适配。
+3. 使用源码已提供的transition、initial、animate、exit、animatePresenceMode、animatePresenceInitial等属性配置；触发依据：自动轮换或外部控制切换。业务数据、额外按钮或新触发方式均须标为接入适配。
 4. 项目接入建议：限制在text层，保留原有正文、输入与布局；卸载时清理本实例时间线、定时器与事件；保留语义和真实业务状态。
 
 依赖：motion@^12.23.12
 
 参数：
 
-未提取原始默认值，不自行补造。
+- transition：锁定源码默认：{ type: 'spring', damping: 25, stiffness: 300 }
+- initial：锁定源码默认：{ y: '100%', opacity: 0 }
+- animate：锁定源码默认：{ y: 0, opacity: 1 }
+- exit：锁定源码默认：{ y: '-120%', opacity: 0 }
+- animatePresenceMode：锁定源码默认：'wait'
+- animatePresenceInitial：锁定源码默认：false
+- rotationInterval：锁定源码默认：2000
+- staggerDuration：锁定源码默认：0
+- staggerFrom：锁定源码默认：'first'
+- loop：锁定源码默认：true
+- auto：锁定源码默认：true
+- splitBy：锁定源码默认：'characters'
 
 ### 适用场景
 
@@ -9198,14 +9209,15 @@ Motion读取滚动速度并经弹簧平滑，将速度映射为重复文字带�
 
 1. 在React客户端引入锁定registry的VariableProximity.css、VariableProximity.jsx，按dependencies安装实际外部依赖，容器尺寸与资源地址由页面工程提供。
 2. 解析字体轴配置，按radius与falloff逐字符插值font-variation-settings，触摸坐标与鼠标坐标使用同一局部参考。
-3. 以源码实际接口和受控状态配置；触发依据：鼠标接近文字。业务数据、额外按钮或新触发方式均须标为接入适配。
+3. 使用源码已提供的radius、falloff等属性配置；触发依据：鼠标接近文字。业务数据、额外按钮或新触发方式均须标为接入适配。
 4. 项目接入建议：限制在text层，保留原有正文、输入与布局；卸载时清理本实例requestAnimationFrame、定时器和事件监听，避免后台空转。
 
 依赖：motion@^12.23.12
 
 参数：
 
-未提取原始默认值，不自行补造。
+- radius：锁定源码默认：50
+- falloff：锁定源码默认：'linear'
 
 ### 适用场景
 
@@ -13781,17 +13793,19 @@ React Three Fiber场景将背后内容渲染到离屏缓冲，再用Drei透射�
 
 1. 在React客户端引入锁定registry的FluidGlass/FluidGlass.jsx，按dependencies安装实际外部依赖，容器尺寸与资源地址由页面工程提供。
 2. 建立离屏场景缓冲与玻璃网格，按modeProps调整透射材质，followPointer决定镜片是否跟随指针。
-3. 使用源码已提供的lockToBottom、followPointer、modeProps、backgroundColor等属性配置；触发依据：玻璃持续显示；按配置移动透镜。业务数据、额外按钮或新触发方式均须标为接入适配。
+3. 使用源码已提供的mode、lensProps、barProps、cubeProps、backgroundColor、textColor等属性配置；触发依据：玻璃持续显示；按配置移动透镜。业务数据、额外按钮或新触发方式均须标为接入适配。
 4. 项目接入建议：限制在surface层，保留原有正文、输入与布局；卸载时清理本实例requestAnimationFrame、定时器和事件监听，避免后台空转。
 
 依赖：three@^0.180.0、@react-three/fiber@^9.3.0、@react-three/drei@^10.7.4、maath@^0.10.8
 
 参数：
 
-- lockToBottom：锁定源码默认：false
-- followPointer：锁定源码默认：true
-- modeProps：锁定源码默认：{}
+- mode：锁定源码默认：'lens'
+- lensProps：锁定源码默认：{}
+- barProps：锁定源码默认：{}
+- cubeProps：锁定源码默认：{}
 - backgroundColor：锁定源码默认：'#120F17'
+- textColor：锁定源码默认：'#ffffff'
 
 ### 适用场景
 
@@ -15176,14 +15190,20 @@ WebGL将图像纹理坐标按指针速度与局部噪声位移，形成撕扯和
 
 1. 在React客户端引入锁定registry的FlowingMenu.css、FlowingMenu.jsx，按dependencies安装实际外部依赖，容器尺寸与资源地址由页面工程提供。
 2. 计算指针进入边缘并重建足够的marquee副本，先揭示整条预览带，再线性移动内部轨道。
-3. 以源码实际接口和受控状态配置；触发依据：鼠标进入与离开菜单项。业务数据、额外按钮或新触发方式均须标为接入适配。
+3. 使用源码已提供的items、speed、textColor、bgColor、marqueeBgColor、marqueeTextColor等属性配置；触发依据：鼠标进入与离开菜单项。业务数据、额外按钮或新触发方式均须标为接入适配。
 4. 项目接入建议：限制在layout、content层，保留原有正文、输入与布局；卸载时清理本实例时间线、定时器与事件；保留语义和真实业务状态。
 
 依赖：gsap@^3.13.0
 
 参数：
 
-未提取原始默认值，不自行补造。
+- items：锁定源码默认：[]
+- speed：锁定源码默认：15
+- textColor：锁定源码默认：'#fff'
+- bgColor：锁定源码默认：'#120F17'
+- marqueeBgColor：锁定源码默认：'#fff'
+- marqueeTextColor：锁定源码默认：'#120F17'
+- borderColor：锁定源码默认：'#fff'
 
 ### 适用场景
 
@@ -22495,14 +22515,26 @@ Portal与Motion把同组提示的延迟共享，首次悬停等待、连续项�
 
 1. 在React客户端引入锁定registry的WarmTooltip.css、WarmTooltip.jsx，按dependencies安装实际外部依赖，容器尺寸与资源地址由页面工程提供。
 2. 在分组状态中维护warm窗口，进入目标时决定延迟并定位浮层，移出或Escape关闭，目标切换时复用过渡。
-3. 以源码实际接口和受控状态配置；触发依据：首次悬停延迟；同组相邻悬停即时提示。业务数据、额外按钮或新触发方式均须标为接入适配。
+3. 使用源码已提供的side、surfaceColor、inkColor、size、radius、gap等属性配置；触发依据：首次悬停延迟；同组相邻悬停即时提示。业务数据、额外按钮或新触发方式均须标为接入适配。
 4. 项目接入建议：限制在content层，保留原有正文、输入与布局；卸载时清理本实例requestAnimationFrame、定时器和事件监听，避免后台空转。
 
 依赖：react-dom@^19.0.0、motion@^12.23.12
 
 参数：
 
-未提取原始默认值，不自行补造。
+- side：锁定源码默认：'top'
+- surfaceColor：锁定源码默认：'#f5f5f5'
+- inkColor：锁定源码默认：'#18181b'
+- size：锁定源码默认：'md'
+- radius：锁定源码默认：8
+- gap：锁定源码默认：8
+- arrow：锁定源码默认：true
+- popDuration：锁定源码默认：160
+- popScale：锁定源码默认：0.94
+- popBlur：锁定源码默认：4
+- showFuse：锁定源码默认：false
+- longPress：锁定源码默认：500
+- disabled：锁定源码默认：false
 
 ### 适用场景
 
