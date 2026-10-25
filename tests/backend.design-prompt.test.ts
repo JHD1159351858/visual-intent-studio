@@ -36,6 +36,16 @@ async function start(model: ModelConfig | null = config, catalog: CatalogEntry[]
   const dir = await mkdtemp(path.join(tmpdir(), 'visual-prompt-'));
   await mkdir(path.join(dir, 'data'));
   await writeFile(path.join(dir, 'data/catalog.seed.json'), JSON.stringify(catalog));
+  if (model?.provider === 'deepseek') {
+    await mkdir(path.join(dir, 'data/case-knowledge'));
+    for (const source of ['reactbits', 'aceternity']) await writeFile(path.join(dir, 'data/case-knowledge', source + '.json'), JSON.stringify(catalog.filter(entry => entry.sourceId === source).map(entry => ({
+      entryId: entry.id, sourceUrl: entry.sourceUrl, basis: 'source-code',
+      implementation: { summary: entry.description, steps: ['准备独立作用层', '更新局部视觉状态', '卸载并清理实例'], dependencies: [], parameters: {} },
+      suitableFor: ['重点卡片', '首屏'], avoidFor: ['覆盖正文'], layers: ['surface', 'border'], limitations: ['不遮挡文字', '不阻塞输入'],
+      mobile: '触屏保持可用', reducedMotion: '减少动态时保留静态特色', performance: '离屏暂停并清理实例',
+      evidence: [{ url: entry.sourceUrl, kind: 'registry', checkedAt: '2026-10-25T00:00:00.000Z' }], notes: '测试夹具',
+    }))));
+  }
   const server = createApp({ rootDir: dir, model }).listen(0, '127.0.0.1');
   await new Promise<void>(resolve => server.once('listening', resolve)); cleanup.push({ server, dir });
   const address = server.address(); if (!address || typeof address === 'string') throw Error('No server address');
@@ -127,7 +137,7 @@ describe('professional design prompt stream', () => {
     expect(context.confirmedSelections.map((item: any) => [item.target, item.layer])).toEqual([['答案卡片', 'surface'], ['答案卡片', 'border']]);
     expect(context.designBasis.selectedRecipe).toMatchObject({ id: 'knowledge-qa', tokens: page.tokens }); expect(context.designBasis.selectedRecipe).not.toHaveProperty('html');
     expect(context.designBasis.nativeImplementations.map((item: any) => item.parameters)).toEqual(components.map(item => item.parameters)); expect(context.designBasis.nativeImplementations[0]).not.toHaveProperty('code');
-    expect(context.designRules).toContain('正文'); expect(context.availableCatalog[0].sourceUrl).toBe(entries[0].sourceUrl); expect(sent).not.toContain('server-only-secret');
+    expect(context).not.toHaveProperty('designRules'); expect(sent).toContain('正文、公式、答案及输入稳定可读'); expect(context.availableCatalog[0].sourceUrl).toBe(entries[0].sourceUrl); expect(sent).not.toContain('server-only-secret');
     expect(output.at(-1).result.developerPrompt).toContain(entries[0].sourceUrl); expect(output.at(-1).result.developerPrompt).toContain('border'); expect(output.at(-1).result.developerPrompt).toContain('玻璃内部');
   });
   it('reports missing configuration without fabricating a prompt', async () => {
@@ -336,7 +346,8 @@ describe('professional design prompt stream', () => {
     }));
     const output = frames(await (await (await start({ provider: 'deepseek', baseUrl: 'https://api.deepseek.com', name: 'deepseek-flash', apiKey: 'server-only-secret' }))()).text());
     expect(output.at(-1)).toMatchObject({ type: 'result', result: { referenceEntryIds: ['glass', 'gradient'] } });
-    expect(sent).toMatchObject({ model: 'deepseek-flash', stream: true, thinking: { type: 'enabled' }, reasoning_effort: 'high', response_format: { type: 'json_object' } });
+    expect(sent).toMatchObject({ model: 'deepseek-flash', stream: true, thinking: { type: 'enabled' }, reasoning_effort: 'high' });
+    expect(sent.tools.map((tool: any) => tool.function.name)).toEqual(['search_reference_library', 'get_reference_details']);
     const instruction = sent.messages.find((message: any) => message.role === 'system').content;
     expect(instruction).toContain('执行任务与范围');
     expect(instruction).toContain('视觉必做清单');
