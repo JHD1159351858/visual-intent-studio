@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { mkdir, writeFile } from 'node:fs/promises';
 
-const base = process.env.APP_URL || 'http://127.0.0.1:3001';
+const base = process.env.APP_URL || 'http://127.0.0.1:5174';
 async function call(path, body, method = 'POST') {
   const response = await fetch(base + path, body === undefined ? undefined : {
     method, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body)

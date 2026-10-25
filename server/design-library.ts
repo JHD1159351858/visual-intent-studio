@@ -30,8 +30,9 @@ const componentSchema = z.object({
 const invalid = () => new ApiError('本地设计库资料或资产路径无效。', 500, 'DESIGN_LIBRARY_INVALID');
 function inside(root: string, file: string): boolean { const relative = path.relative(root, file); return relative !== '' && relative !== '..' && !relative.startsWith(`..${path.sep}`) && !path.isAbsolute(relative); }
 async function readLocal(rootDir: string, relative: string): Promise<string> {
-  const root = await realpath(rootDir);
-  const file = await realpath(path.resolve(rootDir, relative));
+  // Runtime assets are copied explicitly; tracing this trusted root would include unrelated files.
+  const root = await realpath(/* turbopackIgnore: true */ rootDir);
+  const file = await realpath(/* turbopackIgnore: true */ path.resolve(rootDir, relative));
   const directory = relative.startsWith('data/') ? 'data' : relative.split('/').slice(0, 2).join('/');
   if (!inside(root, file) || !inside(path.join(root, directory), file)) throw invalid();
   return readFile(file, 'utf8');

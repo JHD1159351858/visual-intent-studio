@@ -3,7 +3,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { chromium } from 'playwright';
 
-const base = process.env.DESIGN_TEST_URL || 'http://127.0.0.1:5173';
+const base = process.env.DESIGN_TEST_URL || 'http://127.0.0.1:5174';
 const output = path.resolve('artifacts/design-library-qa');
 await mkdir(output, { recursive: true });
 const report = { startedAt: new Date().toISOString(), checks: [], errors: [], passed: false };

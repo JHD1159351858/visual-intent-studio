@@ -1,5 +1,4 @@
 import { readFile } from 'node:fs/promises';
-import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import type { CatalogEntry, Stage } from '../shared/types';
 import { normalizeUrl } from './core';
@@ -21,9 +20,7 @@ export interface EntryCuration {
   issue?: string;
 }
 export interface CurationBundle { verifiedAt: string; entries: Record<string, EntryCuration> }
-const root = fileURLToPath(new URL('../', import.meta.url));
-
-export async function loadCurations(rootDir = root): Promise<Map<string, EntryCuration & { reviewedAt: string }>> {
+export async function loadCurations(rootDir = process.cwd()): Promise<Map<string, EntryCuration & { reviewedAt: string }>> {
   const rows = new Map<string, EntryCuration & { reviewedAt: string }>();
   for (const name of ['reactbits.zh.json', 'aceternity.zh.json', '60fps.zh.json']) {
     let bundle: CurationBundle;

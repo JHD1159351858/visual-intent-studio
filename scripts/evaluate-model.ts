@@ -2,7 +2,7 @@ import { readFile, mkdir, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import type { AppStatus, CatalogEntry, RecommendationResponse, Stage } from '../shared/types';
 
-const base = process.env.APP_URL || 'http://127.0.0.1:3001';
+const base = process.env.APP_URL || 'http://127.0.0.1:5174';
 async function request<T>(path: string, body?: unknown): Promise<T> {
   const response = await fetch(`${base}${path}`, body === undefined ? undefined : {
     method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body)

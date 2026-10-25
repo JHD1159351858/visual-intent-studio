@@ -1,17 +1,17 @@
 # 见意 · 视觉需求工作台
 
-把日常语言中的页面想法，通过真实设计案例和视频参考，生成可交互 HTML Demo 与对应的专业开发提示词。
+基于 Next.js App Router 的全栈视觉需求工作台，把日常语言中的页面想法，通过350条设计案例和视频参考，生成专业页面开发提示词，也可单独生成交互Demo。
 
 ## 在 Windows 上启动
 
 需要 Node.js 22.12 或更高版本。双击项目根目录的 `启动.cmd`，或在 PowerShell 中运行：
 
 ```powershell
-npm.cmd install
+npm.cmd ci
 npm.cmd run dev
 ```
 
-打开 http://127.0.0.1:5173 。前端使用 5173 端口，接口使用 3001 端口，均仅绑定本机。
+打开 http://127.0.0.1:5174 。页面、API和视频由同一个Next.js进程提供，开发模式仅绑定本机；不再单独启动Express或配置Vite代理。端口取 `DEPLOY_RUN_PORT`、`PORT`，都未设置时为5174。
 
 也可以运行构建后的页面：
 
@@ -20,7 +20,21 @@ npm.cmd run build
 npm.cmd start
 ```
 
-打开 http://127.0.0.1:3001 。
+打开 http://127.0.0.1:5174 。构建会生成包含数据、视频和前端资源的 `.next/standalone`；生产启动默认监听所有网络接口，平台通过环境变量注入模型配置。本地 `npm.cmd start` 会读取根目录 `.env`，密钥只传入服务端进程。
+
+## 平台部署
+
+选择Next.js/Node服务类型，安装命令 `npm ci`，构建命令 `npm run build`，启动命令 `npm start`。也可仅发布 `.next/standalone` 目录并在其中执行 `npm start` 或 `node start.mjs`，不需要另外启动API进程。平台仅提供 `DEPLOY_RUN_PORT` 时启动脚本会映射为Next使用的 `PORT`。产物应在目标平台重新构建，不能把本机Windows依赖视为Linux发布包。
+
+350条视频、案例知识和设计范例会随产物提供；媒体Route Handler支持GET、HEAD与视频Range分段读取，原 `/media/`、`/demos/`、`/design-library/previews/` 地址不变。源目录位置也不变，采集和视频验证仍可使用。打包会清除Next自动复制的 `.env*` 与本地运行记录，平台在运行时注入密钥；个人选材历史、来源同步状态和编辑后的目录不随Git发布，新部署从seed开始。
+
+这是常驻Node单实例方案。运行目录中的 `data/` 需要可写；要保留编辑、同步和近期选材记录，应在运行时将该目录挂载到持久卷，构建在独立环境完成。内存或临时容器磁盘不能保证重启后保留这些记录。浏览器对话继续保存于原localStorage，同一站点地址可恢复，换域名或端口不会自动迁移浏览器存储。
+
+平台反向代理必须支持SSE并关闭流缓冲，允许模型思考/生成的长连接；提示词可能包含一次相似组合重选，应用自身单次生成最长10分钟。框架迁移不保证平台的包大小、连接时限或持久化限制已经满足，本文没有声称已完成特定平台的实际发布。API映射与部署验收见 [迁移计划](docs/superpowers/plans/2026-10-25-next-fullstack.md)。
+
+## 验证
+
+`npm.cmd test`运行单元与HTTP回归，`npm.cmd run build`检查TypeScript并构建standalone；构建后 `npm.cmd run test:e2e` 用临时本地模型和隔离standalone进程验证真实Next路由、视频和流式取消，不调用付费模型。旧HTTP集成测试使用 `server/app.ts` 的轻量Node适配器，与Next生产路由共用 `server/http-api.ts`；生产不运行该适配器。
 
 ## 使用流程
 
@@ -69,7 +83,7 @@ MODEL_PROVIDER=deepseek
 MODEL_BASE_URL=https://api.deepseek.com
 MODEL_NAME=deepseek-flash
 MODEL_API_KEY=你的DeepSeek密钥
-PORT=3001
+PORT=5174
 ```
 
 重启服务后可使用智能推荐和流式提示词生成。也支持已有的 `DEEPSEEK_API_KEY` 环境变量；`MODEL_API_KEY` 优先。显式选择 DeepSeek 后，即使保留 Coze 密钥也不会调用 Coze；没有 DeepSeek 密钥时显示手动模式，不静默回退其他服务。密钥由后端读取，不写入页面和浏览器存储，`.env` 已从 Git 中排除。

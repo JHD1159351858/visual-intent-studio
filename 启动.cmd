@@ -14,6 +14,6 @@ if not exist node_modules (
     exit /b 1
   )
 )
-echo 启动后打开 http://127.0.0.1:5173
+echo 启动后打开 http://127.0.0.1:5174
 call npm.cmd run dev
 pause

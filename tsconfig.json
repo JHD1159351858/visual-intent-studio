@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "jsx": "react-jsx",
@@ -11,7 +15,36 @@
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "noEmit": true,
-    "types": ["node", "vite/client"]
+    "types": [
+      "node"
+    ],
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "incremental": true,
+    "allowJs": true,
+    "isolatedModules": true
   },
-  "include": ["src", "server", "shared", "scripts/**/*.ts", "vite.config.ts", "tests"]
+  "include": [
+    "next-env.d.ts",
+    "app/**/*.ts",
+    "app/**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "src",
+    "server",
+    "shared",
+    "scripts/**/*.ts",
+    "next.config.ts",
+    "vitest.config.ts",
+    "tests"
+  ],
+  "exclude": [
+    "node_modules",
+    "demos",
+    "videos",
+    "artifacts"
+  ]
 }

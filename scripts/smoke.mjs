@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { chromium } from 'playwright';
 
-const base = process.env.APP_URL || 'http://127.0.0.1:5173';
+const base = process.env.APP_URL || 'http://127.0.0.1:5174';
 const report = [];
 const record = message => { report.push(message); console.log(`PASS ${message}`); };
 const response = await fetch(`${base}/api/catalog`);
