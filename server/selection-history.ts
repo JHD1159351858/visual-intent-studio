@@ -1,4 +1,4 @@
-import { mkdir, readFile, rename, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, rename, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { randomUUID } from 'node:crypto';
 import { z } from 'zod';
@@ -57,17 +57,25 @@ export class SelectionHistoryStore {
     return this.read();
   }
 
-  record(record: Omit<SelectionHistoryRecord, 'id' | 'createdAt'>): Promise<void> {
+  record(record: Omit<SelectionHistoryRecord, 'id' | 'createdAt'>, options: { signal?: AbortSignal } = {}): Promise<void> {
     // Parsing projects the input onto the summary fields and excludes prompts or credentials.
     const summary = recordSchema.omit({ id: true, createdAt: true }).parse(record);
     const next = (queues.get(this.queueKey) || Promise.resolve()).then(async () => {
+      options.signal?.throwIfAborted();
       const previous = await this.read();
+      options.signal?.throwIfAborted();
       const records: SelectionHistoryRecord[] = [{ ...summary, id: randomUUID(), createdAt: new Date().toISOString() },
         ...previous.filter(item => item.pageKey !== summary.pageKey)].slice(0, 30);
       await mkdir(path.dirname(this.file), { recursive: true });
+      options.signal?.throwIfAborted();
       const temporary = this.file + '.' + randomUUID() + '.tmp';
-      await writeFile(temporary, JSON.stringify(records, null, 2) + '\n', 'utf8');
-      await rename(temporary, this.file);
+      try {
+        await writeFile(temporary, JSON.stringify(records, null, 2) + '\n', { encoding: 'utf8', signal: options.signal });
+        options.signal?.throwIfAborted();
+        await rename(temporary, this.file);
+      } finally {
+        await rm(temporary, { force: true });
+      }
     });
     queues.set(this.queueKey, next.then(() => undefined, () => undefined));
     return next;

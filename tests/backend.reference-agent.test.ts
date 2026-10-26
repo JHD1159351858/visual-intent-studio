@@ -7,6 +7,7 @@ import type { CatalogEntry, DesignPromptRequest } from '../shared/types';
 import type { CaseKnowledge } from '../shared/case-knowledge';
 import { SelectionHistoryStore } from '../server/selection-history';
 import { createApp } from '../server/app';
+import { withPassingDesignWorkflow } from './fixtures/design-workflow';
 
 const roots: string[] = [];
 afterEach(async () => { vi.unstubAllGlobals(); for (const root of roots.splice(0)) await rm(root, { recursive: true, force: true }); });
@@ -28,14 +29,14 @@ const lastResult = (body: any) => JSON.parse([...body.messages].reverse().find((
 
 it('lets DeepSeek actually search, read, change its query, read again and synthesize without bulk injection', async () => {
   const root = await fixture(); const requests: any[] = []; let round = 0; const refs: string[] = []; const onMessage = vi.fn();
-  vi.stubGlobal('fetch', vi.fn(async (_url, init: RequestInit) => {
+  vi.stubGlobal('fetch', vi.fn(withPassingDesignWorkflow(async (_url, init: RequestInit) => {
     const body = JSON.parse(String(init.body)); requests.push(body); round++;
     if (round === 1) return completion(null, [call('s1', 'search_reference_library', { query: '流体背景', limit: 1 })]);
     if (round === 2) { refs.push(lastResult(body).candidates[0].refKey); return completion(null, [call('d1', 'get_reference_details', { refKeys: [refs[0]] })]); }
     if (round === 3) { expect(lastResult(body).availableCatalog[0].implementationKnowledge.implementation.parameters.marker).toBe('DETAIL_ONLY_fluid'); return completion(null, [call('s2', 'search_reference_library', { query: '扫描网格', limit: 1, excludeRefKeys: refs })]); }
     if (round === 4) { refs.push(lastResult(body).candidates[0].refKey); return completion(null, [call('d2', 'get_reference_details', { refKeys: [refs[1]] })]); }
     return completion(JSON.stringify(answer(refs)));
-  }));
+  })));
   const result = await generateDesignPrompt(config, request, entries, root, { onMessage });
   const initial = JSON.parse(requests[0].messages[1].content);
   expect(initial.availableCatalog).toEqual([]);
@@ -44,6 +45,7 @@ it('lets DeepSeek actually search, read, change its query, read again and synthe
   expect(JSON.stringify(requests[0])).not.toContain('DETAIL_ONLY_');
   expect(result.referenceEntryIds).toEqual(['fluid', 'grid']);
   expect(requests).toHaveLength(5);
+  expect(fetch).toHaveBeenCalledTimes(7);
   expect(JSON.stringify(onMessage.mock.calls)).not.toContain('DO_NOT_SHOW_THINKING');
   expect(await new SelectionHistoryStore(root).list()).toHaveLength(1);
 });
@@ -51,12 +53,12 @@ it('lets DeepSeek actually search, read, change its query, read again and synthe
 it('delivers real tool progress and the validated final result through the local streaming API', async () => {
   const root = await fixture(); const clientFetch = globalThis.fetch; let round = 0;
   await writeFile(path.join(root, 'data/catalog.seed.json'), JSON.stringify(entries));
-  vi.stubGlobal('fetch', vi.fn(async (_url, init: RequestInit) => {
+  vi.stubGlobal('fetch', vi.fn(withPassingDesignWorkflow(async (_url, init: RequestInit) => {
     const body = JSON.parse(String(init.body)); round++;
     if (round === 1) return completion(null, [call('s', 'search_reference_library', { query: '流体背景', limit: 1 })]);
     if (round === 2) return completion(null, [call('d', 'get_reference_details', { refKeys: [lastResult(body).candidates[0].refKey] })]);
     return completion(JSON.stringify(answer([lastResult(body).availableCatalog[0].refKey])));
-  }));
+  })));
   const server = createApp({ rootDir: root, model: config }).listen(0, '127.0.0.1');
   try {
     await new Promise<void>(resolve => server.once('listening', resolve));
@@ -76,14 +78,14 @@ it('delivers real tool progress and the validated final result through the local
 
 it('rejects a real but unread case instead of accepting a guessed case ID', async () => {
   const root = await fixture();
-  vi.stubGlobal('fetch', vi.fn(async () => completion(JSON.stringify(answer(['fluid'])))));
+  vi.stubGlobal('fetch', vi.fn(withPassingDesignWorkflow(async () => completion(JSON.stringify(answer(['fluid']))))));
   await expect(generateDesignPrompt(config, request, entries, root)).rejects.toMatchObject({ code: 'MODEL_REFERENCE_NOT_READ' });
   expect(await new SelectionHistoryStore(root).list()).toEqual([]);
 });
 
 it('keeps confirmed references and their scopes available even when only already-confirmed material is needed', async () => {
   const root = await fixture(); let initial: any;
-  vi.stubGlobal('fetch', vi.fn(async (_url, init: RequestInit) => { initial = JSON.parse(JSON.parse(String(init.body)).messages[1].content); return completion(JSON.stringify(answer(['fluid']))); }));
+  vi.stubGlobal('fetch', vi.fn(withPassingDesignWorkflow(async (_url, init: RequestInit) => { initial = JSON.parse(JSON.parse(String(init.body)).messages[1].content); return completion(JSON.stringify(answer(['fluid']))); })));
   const selections = [{ entryId: 'fluid', stage: 'style' as const, placement: '首屏背景', target: '首屏背景', layer: 'page-background' as const, adjustments: '保持用途', preserve: ['输入和正文'] }];
   const result = await generateDesignPrompt(config, { ...request, selections }, entries, root);
   expect(initial.availableCatalog.map((item: any) => item.id)).toEqual(['fluid']);
@@ -94,13 +96,13 @@ it('keeps confirmed references and their scopes available even when only already
 
 it('does not consider search hits read until the model asks for their details', async () => {
   const root = await fixture(); let round = 0;
-  vi.stubGlobal('fetch', vi.fn(async () => ++round === 1 ? completion(null, [call('s', 'search_reference_library', { query: '流体背景', limit: 1 })]) : completion(JSON.stringify(answer(['fluid'])))));
+  vi.stubGlobal('fetch', vi.fn(withPassingDesignWorkflow(async () => ++round === 1 ? completion(null, [call('s', 'search_reference_library', { query: '流体背景', limit: 1 })]) : completion(JSON.stringify(answer(['fluid']))))));
   await expect(generateDesignPrompt(config, request, entries, root)).rejects.toMatchObject({ code: 'MODEL_REFERENCE_NOT_READ' });
 });
 
 it('preloads positive user names but not rejected names or old assistant suggestions', async () => {
   const root = await fixture(); let initial: any;
-  vi.stubGlobal('fetch', vi.fn(async (_url, init: RequestInit) => { initial = JSON.parse(JSON.parse(String(init.body)).messages[1].content); return completion(JSON.stringify(answer(['fluid']))); }));
+  vi.stubGlobal('fetch', vi.fn(withPassingDesignWorkflow(async (_url, init: RequestInit) => { initial = JSON.parse(JSON.parse(String(init.body)).messages[1].content); return completion(JSON.stringify(answer(['fluid']))); })));
   await generateDesignPrompt(config, { ...request, brief: '使用流体背景，不要用扫描网格', messages: [{ role: 'assistant', content: '建议使用立体卡片' }] }, entries, root);
   expect(initial.availableCatalog.map((item: any) => item.id)).toEqual(['fluid']);
   expect(initial.referenceLibrary.catalogCount).toBe(3);
@@ -108,14 +110,14 @@ it('preloads positive user names but not rejected names or old assistant suggest
 
 it('rejects unread main-visual references even if the adopted reference list is valid', async () => {
   const root = await fixture();
-  vi.stubGlobal('fetch', vi.fn(async () => completion(JSON.stringify({ ...answer(['fluid']), mainVisuals: [{ role: 'hero', family: 'pointer-tilt', entryIds: ['tilt'], description: '指针改变卡片倾斜' }] }))));
+  vi.stubGlobal('fetch', vi.fn(withPassingDesignWorkflow(async () => completion(JSON.stringify({ ...answer(['fluid']), mainVisuals: [{ role: 'hero', family: 'pointer-tilt', entryIds: ['tilt'], description: '指针改变卡片倾斜' }] })))));
   await expect(generateDesignPrompt(config, { ...request, brief: '使用流体背景' }, entries, root)).rejects.toMatchObject({ code: 'MODEL_REFERENCE_NOT_READ' });
   expect(await new SelectionHistoryStore(root).list()).toEqual([]);
 });
 
 it('allows a deliberate independent design without forcing unsuitable references', async () => {
   const root = await fixture();
-  vi.stubGlobal('fetch', vi.fn(async () => completion(JSON.stringify(answer([])))));
+  vi.stubGlobal('fetch', vi.fn(withPassingDesignWorkflow(async () => completion(JSON.stringify(answer([]))))));
   const result = await generateDesignPrompt(config, { ...request, brief: '本次只改文案，不新增参考效果，采用自主设计' }, entries, root);
   expect(result.referenceEntryIds).toEqual([]);
   expect(result.developerPrompt).not.toContain('参考来源：');
@@ -123,7 +125,7 @@ it('allows a deliberate independent design without forcing unsuitable references
 
 it('rejects read real-ID main visuals omitted from the final adopted references', async () => {
   const root = await fixture();
-  vi.stubGlobal('fetch', vi.fn(async () => completion(JSON.stringify({ ...answer(['fluid']), mainVisuals: [{ role: 'background', family: 'grid-scan', entryIds: ['grid'], description: '扫描网格持续运动' }] }))));
+  vi.stubGlobal('fetch', vi.fn(withPassingDesignWorkflow(async () => completion(JSON.stringify({ ...answer(['fluid']), mainVisuals: [{ role: 'background', family: 'grid-scan', entryIds: ['grid'], description: '扫描网格持续运动' }] })))));
   await expect(generateDesignPrompt(config, { ...request, brief: '使用流体背景和扫描网格' }, entries, root)).rejects.toMatchObject({ code: 'MODEL_INVALID_ID' });
   expect(await new SelectionHistoryStore(root).list()).toEqual([]);
 });
@@ -136,7 +138,7 @@ it('allows a similar combination to search the entire catalog again without losi
   await new SelectionHistoryStore(root).record({ pageKey: 'previous', purpose: '音乐页面', referenceEntryIds: ['fluid', 'tilt'], mainVisuals: primary });
   await new SelectionHistoryStore(root).record({ pageKey: 'another', purpose: '运动页面', referenceEntryIds: ['fluid', 'tilt'], mainVisuals: primary });
   const contexts: any[] = []; let round = 0;
-  vi.stubGlobal('fetch', vi.fn(async (_url, init: RequestInit) => {
+  vi.stubGlobal('fetch', vi.fn(withPassingDesignWorkflow(async (_url, init: RequestInit) => {
     const body = JSON.parse(String(init.body)); const context = JSON.parse(body.messages[1].content); contexts.push(context); round++;
     if (round === 1) return completion(null, [call('s1', 'search_reference_library', { query: '流体背景', limit: 1 })]);
     if (round === 2) return completion(null, [call('d1', 'get_reference_details', { refKeys: [lastResult(body).candidates[0].refKey] })]);
@@ -148,7 +150,7 @@ it('allows a similar combination to search the entire catalog again without losi
     }
     if (round === 5) return completion(null, [call('d2', 'get_reference_details', { refKeys: [lastResult(body).candidates[0].refKey] })]);
     return completion(JSON.stringify({ ...answer(['grid', 'tilt']), mainVisuals: [{ ...primary[0], family: 'grid-scan', entryIds: ['grid'], description: '背景扫描线持续推进' }, primary[1]] }));
-  }));
+  })));
   const result = await generateDesignPrompt(config, { ...request, selections: [{ entryId: 'tilt', stage: 'style', placement: '主题卡片', target: '主题卡片', layer: 'surface', adjustments: '', preserve: ['正文'] }] }, entries, root);
   expect(contexts.every(context => context.referenceLibrary.catalogCount === 3)).toBe(true);
   expect(result.referenceEntryIds).toEqual(['grid', 'tilt']);
@@ -159,10 +161,10 @@ it('allows a similar combination to search the entire catalog again without losi
 
 it('cancels the whole tool workflow without saving a partial design', async () => {
   const root = await fixture(); const controller = new AbortController(); let round = 0;
-  vi.stubGlobal('fetch', vi.fn(async () => {
+  vi.stubGlobal('fetch', vi.fn(withPassingDesignWorkflow(async () => {
     if (++round === 1) return completion(null, [call('s', 'search_reference_library', { query: '流体背景', limit: 1 })]);
     controller.abort(); throw new DOMException('Aborted', 'AbortError');
-  }));
+  })));
   await expect(generateDesignPrompt(config, request, entries, root, { signal: controller.signal })).rejects.toThrow();
   expect(await new SelectionHistoryStore(root).list()).toEqual([]);
 });
@@ -170,7 +172,7 @@ it('cancels the whole tool workflow without saving a partial design', async () =
 it('keeps the initial production request small while the complete catalog remains searchable', async () => {
   const entries: CatalogEntry[] = JSON.parse(await readFile(path.join(process.cwd(), 'data/catalog.json'), 'utf8'));
   let initial: any; let body: any;
-  vi.stubGlobal('fetch', vi.fn(async (_url, init: RequestInit) => { body = JSON.parse(String(init.body)); initial = JSON.parse(body.messages[1].content); throw Error('INSPECT_ONLY'); }));
+  vi.stubGlobal('fetch', vi.fn(withPassingDesignWorkflow(async (_url, init: RequestInit) => { body = JSON.parse(String(init.body)); initial = JSON.parse(body.messages[1].content); throw Error('INSPECT_ONLY'); })));
   await expect(generateDesignPrompt(config, request, entries, process.cwd())).rejects.toThrow();
   expect(initial.referenceLibrary.catalogCount).toBe(350);
   expect(initial.availableCatalog).toEqual([]);

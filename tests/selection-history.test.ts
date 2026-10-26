@@ -1,8 +1,13 @@
-import { afterEach, describe, expect, it } from 'vitest';
-import { mkdtemp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
+import { afterEach, describe, expect, it, vi } from 'vitest';
+import { mkdtemp, mkdir, readFile, readdir, rename, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import os from 'node:os';
 import { SelectionHistoryStore } from '../server/selection-history';
+
+vi.mock('node:fs/promises', async importOriginal => {
+  const actual = await importOriginal<typeof import('node:fs/promises')>();
+  return { ...actual, writeFile: vi.fn(actual.writeFile), rename: vi.fn(actual.rename) };
+});
 
 const roots: string[] = [];
 async function temporaryRoot() {
@@ -62,6 +67,61 @@ describe('recent selection history persistence', () => {
     expect(records).toHaveLength(25);
     expect(new Set(records.map(record => record.pageKey)).size).toBe(25);
     expect(JSON.parse(await readFile(path.join(root, 'data/selection-history.json'), 'utf8'))).toEqual(records);
+  });
+
+  it('rejects an already-cancelled record without creating history', async () => {
+    const root = await temporaryRoot();
+    const store = new SelectionHistoryStore(root);
+    const controller = new AbortController(); controller.abort();
+    await expect(store.record(sample(), { signal: controller.signal })).rejects.toMatchObject({ name: 'AbortError' });
+    expect(await store.list()).toEqual([]);
+    await expect(readFile(path.join(root, 'data/selection-history.json'), 'utf8')).rejects.toMatchObject({ code: 'ENOENT' });
+  });
+
+  it('skips a cancelled queued record and preserves the preceding commit', async () => {
+    const root = await temporaryRoot();
+    const store = new SelectionHistoryStore(root);
+    const actual = await vi.importActual<typeof import('node:fs/promises')>('node:fs/promises');
+    let release!: () => void; let started!: () => void;
+    const waiting = new Promise<void>(resolve => { release = resolve; });
+    const writing = new Promise<void>(resolve => { started = resolve; });
+    vi.mocked(writeFile).mockImplementationOnce(async (...args) => { started(); await waiting; return actual.writeFile(...args); });
+    const first = store.record(sample('committed'));
+    await writing;
+    const controller = new AbortController();
+    const cancelled = new SelectionHistoryStore(root).record(sample('cancelled'), { signal: controller.signal });
+    controller.abort(); release();
+    await first;
+    await expect(cancelled).rejects.toMatchObject({ name: 'AbortError' });
+    expect((await store.list()).map(record => record.pageKey)).toEqual(['committed']);
+  });
+
+  it('removes its temporary file when cancelled after writing and lets the next writer commit', async () => {
+    const root = await temporaryRoot();
+    const store = new SelectionHistoryStore(root);
+    await store.record(sample('previous'));
+    const actual = await vi.importActual<typeof import('node:fs/promises')>('node:fs/promises');
+    const controller = new AbortController();
+    vi.mocked(writeFile).mockImplementationOnce(async (...args) => { await actual.writeFile(...args); controller.abort(); });
+    const cancelled = store.record(sample('cancelled'), { signal: controller.signal });
+    const next = new SelectionHistoryStore(root).record(sample('next'));
+    await expect(cancelled).rejects.toMatchObject({ name: 'AbortError' });
+    await next;
+    expect((await store.list()).map(record => record.pageKey)).toEqual(['next', 'previous']);
+    expect(await readdir(path.join(root, 'data'))).toEqual(['selection-history.json']);
+  });
+
+  it('keeps a committed record when cancellation arrives after rename', async () => {
+    const root = await temporaryRoot();
+    const store = new SelectionHistoryStore(root);
+    const actual = await vi.importActual<typeof import('node:fs/promises')>('node:fs/promises');
+    const controller = new AbortController();
+    vi.mocked(rename).mockImplementationOnce(async (...args) => { await actual.rename(...args); controller.abort(); });
+    const committed = store.record(sample('committed'), { signal: controller.signal });
+    const next = new SelectionHistoryStore(root).record(sample('next'));
+    await expect(committed).resolves.toBeUndefined();
+    await next;
+    expect((await store.list()).map(record => record.pageKey)).toEqual(['next', 'committed']);
   });
 
   it.each(['{broken', '{}', '[{"pageKey":"missing-fields"}]'])('reports damaged data without overwriting it: %s', async damaged => {

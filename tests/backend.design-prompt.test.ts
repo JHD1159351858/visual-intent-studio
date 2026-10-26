@@ -9,6 +9,7 @@ import type { CozeConfig } from '../server/coze';
 import type { ModelConfig } from '../server/model';
 import type { CatalogEntry } from '../shared/types';
 import type { ComponentImplementation, PageRecipe } from '../shared/design-library';
+import { withPassingDesignWorkflow } from './fixtures/design-workflow';
 
 const config: CozeConfig = { provider: 'coze', baseUrl: 'https://api.coze.cn', name: 'Coze', apiKey: 'server-only-secret', botId: '123' };
 const entries: CatalogEntry[] = [
@@ -79,6 +80,7 @@ describe('professional design prompt stream', () => {
     expect(instruction).toContain('仅整理用户明确提出的需求');
     expect(instruction).toContain('未明确的文本字段留空');
     expect(instruction).toContain('不能把草稿当作用户已确认');
+    expect(instruction).not.toContain('新增未确认参考最多3个');
   });
   it('keeps old four-field results compatible and permits unknown requirement fields to remain empty', async () => {
     const call = await start();
@@ -219,7 +221,17 @@ describe('professional design prompt stream', () => {
     expect(new Set(context.visualEffectOptions.map((item: any) => item.entryId)).size).toBe(6);
     expect(context.availableCatalog.map((item: any) => item.id)).toEqual(expect.arrayContaining(sources.map(source => source.id)));
     expect(instruction).not.toContain('本版新增未确认参考最多3个');
-    expect(instruction).toContain('4–6');
+    expect(instruction).not.toContain('4–6');
+    expect(instruction).not.toContain('占首屏约三分之一');
+    expect(instruction).toContain('应用结构与导航');
+    expect(instruction.indexOf('应用结构与导航')).toBeLessThan(instruction.indexOf('视觉主张与首屏构图'));
+    expect(instruction).toContain('不能用锚点滚动冒充功能切换');
+    expect(instruction).toContain('独立路由');
+    expect(instruction).toContain('共享状态');
+    expect(instruction).toContain('多功能不等于多路由');
+    expect(instruction).toContain('允许丰富多层动效');
+    expect(instruction).toContain('关键素材');
+    expect(context.visualIntent.objective).not.toContain('配合动态标题/入场及明显交互');
     expect(instruction).toContain('不得把低对比柔焦背景12秒移动20px');
     expect(instruction).toContain('功能控件不计入主视觉效果');
     expect(instruction).toContain('手机保持主视觉');
@@ -338,12 +350,12 @@ describe('professional design prompt stream', () => {
   });
   it('sends local knowledge directly to DeepSeek and streams the prompt while hiding reasoning', async () => {
     const value = ready(); let sent: any;
-    vi.stubGlobal('fetch', vi.fn(async (url: string, init: RequestInit) => {
+    vi.stubGlobal('fetch', vi.fn(withPassingDesignWorkflow(async (url: string, init: RequestInit) => {
       expect(url).toBe('https://api.deepseek.com/chat/completions');
       sent = JSON.parse(String(init.body));
       const json = JSON.stringify(value);
       return stream(`data: ${JSON.stringify({ choices: [{ delta: { reasoning_content: 'private-thought' } }] })}\n\n` + [...json].map(char => `data: ${JSON.stringify({ choices: [{ delta: { content: char } }] })}\n\n`).join('') + `data: ${JSON.stringify({ choices: [{ delta: {}, finish_reason: 'stop' }] })}\n\ndata: [DONE]\n\n`);
-    }));
+    })));
     const output = frames(await (await (await start({ provider: 'deepseek', baseUrl: 'https://api.deepseek.com', name: 'deepseek-flash', apiKey: 'server-only-secret' }))()).text());
     expect(output.at(-1)).toMatchObject({ type: 'result', result: { referenceEntryIds: ['glass', 'gradient'] } });
     expect(sent).toMatchObject({ model: 'deepseek-flash', stream: true, thinking: { type: 'enabled' }, reasoning_effort: 'high' });
@@ -363,7 +375,7 @@ describe('professional design prompt stream', () => {
     expect(context.availableCatalog.map((entry: any) => entry.id)).toEqual(expect.arrayContaining(['glass', 'gradient']));
     expect(context.confirmedSelections.map((selection: any) => selection.layer)).toEqual(['surface', 'border']);
     expect(output.filter(event => event.type === 'message').length).toBeGreaterThan(1);
-    expect(JSON.stringify(output)).not.toMatch(/private-thought|server-only-secret/);
+    expect(JSON.stringify(output)).not.toMatch(/private-thought|DO_NOT_SHOW_THINKING|server-only-secret/);
     expect(sent).not.toHaveProperty('bot_id');
   });
   it('cancels the upstream reader after the prompt request disconnects', async () => {

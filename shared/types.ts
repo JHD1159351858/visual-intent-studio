@@ -99,6 +99,7 @@ export interface DesignPromptResult {
   requirementDraft?: RequirementDraft;
   mainVisuals?: MainVisual[];
   selectionDiversity?: { recentPageCount: number; reselected: boolean; keptOriginal: boolean; historySaved: boolean };
+  designProcess?: { planned: true; reviewed: true; repaired: boolean; renderedPageVerified: false };
 }
 
 export interface MainVisual {

@@ -12,38 +12,66 @@ const output = path.join(root, 'artifacts/next-migration-20261025');
 const base = 'http://127.0.0.1:5185';
 const reasoning = 'PRIVATE_REASONING_FIXTURE_DO_NOT_EXPOSE';
 const steps = []; const modelCalls = []; let child; let browser; let fake;
-let ready = []; let cancelledUpstream = false; let finalSent = false; let failure;
+let ready = []; let cancelUpstreamStarted = false; let cancelledUpstream = false; let writerFinalSent = false; let finalSent = false; let failure;
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 const record = (name, details = {}) => { steps.push({ name, ...details }); console.log('PASS ' + name); };
 const frame = (delta, finish = null) => `data: ${JSON.stringify({ choices: [{ index: 0, delta, finish_reason: finish }] })}\n\n`;
-function complete(response, content, tool) {
+function complete(response, content, tool, task) {
   response.writeHead(200, { 'Content-Type': 'text/event-stream' });
   response.write(frame({ role: 'assistant', reasoning_content: reasoning, ...(tool ? { tool_calls: [{ index: 0, id: 'call_' + modelCalls.length, type: 'function', function: { name: tool.name, arguments: JSON.stringify(tool.args) } }] } : {}) }));
   if (tool) { response.end(frame({}, 'tool_calls') + 'data: [DONE]\n\n'); return; }
   response.write(frame({ content: content.slice(0, 100) }));
-  setTimeout(() => { finalSent = true; response.end(frame({ content: content.slice(100) }) + frame({}, 'stop') + 'data: [DONE]\n\n'); }, 200);
+  setTimeout(() => {
+    if (task === 'generate_prompt') writerFinalSent = true;
+    if (task === 'review_design_prompt') finalSent = true;
+    response.end(frame({ content: content.slice(100) }) + frame({}, 'stop') + 'data: [DONE]\n\n');
+  }, 200);
 }
 async function fakeModel(request, response) {
   try {
     assert.equal(request.url, '/v1/chat/completions');
     let text = ''; for await (const chunk of request) text += chunk;
     const sent = JSON.parse(text); const context = JSON.parse(sent.messages[1].content);
-    if (context.brief.includes('__CANCEL_FIXTURE__')) {
+    const brief = context.task === 'review_design_prompt' ? context.request.brief : context.brief;
+    if (brief.includes('__CANCEL_FIXTURE__')) {
+      response.once('close', () => { if (!response.writableEnded) cancelledUpstream = true; });
       response.writeHead(200, { 'Content-Type': 'text/event-stream' });
       response.write(frame({ role: 'assistant', reasoning_content: reasoning, content: '{"developerPrompt":"正在验证取消请求' }));
-      response.once('close', () => { if (!response.writableEnded) cancelledUpstream = true; });
+      cancelUpstreamStarted = true;
       return;
     }
     for (const message of sent.messages.filter(item => item.role === 'assistant')) assert.equal(message.reasoning_content, reasoning);
     const results = sent.messages.filter(item => item.role === 'tool').map(item => JSON.parse(item.content));
-    modelCalls.push({ round: modelCalls.length + 1, toolResults: results.length, catalogCount: context.referenceLibrary.catalogCount, preloadedCount: context.availableCatalog.length });
+    modelCalls.push({ round: modelCalls.length + 1, task: context.task, toolResults: results.length, ...(context.task === 'generate_prompt' ? { catalogCount: context.referenceLibrary.catalogCount, preloadedCount: context.availableCatalog.length } : {}) });
+    if (context.task === 'plan_design') {
+      assert.equal(sent.tools, undefined);
+      return complete(response, JSON.stringify({
+        subject: '资料学习工作台', userTask: '学生输入问题、检索课程资料并查看答案来源。',
+        concept: '资料主题图形连接输入与答案区域，保持操作入口清楚。',
+        composition: '问题输入与资料主题主视觉并列，下方展示答案和可展开的出处。',
+        primaryVisual: { subject: '课程资料与来源关系图形', visibleScale: '首屏中可辨识的主要图形', material: '边缘清楚、层次分明的资料形态', motion: '资料关系缓慢变化，输入与正文保持稳定，支持暂停。' },
+        navigation: '提问、资料与历史记录均有明确可操作入口。', readingArea: '答案和资料出处放在独立稳定阅读面。',
+        style: { palette: ['浅色阅读背景', '深色正文', '主题强调色'], typography: '使用系统字体，标题、正文与来源层级清楚。' },
+        assets: [{ name: '资料主题图形', acquisition: '按需求独立绘制或获取合适素材', quality: '主体轮廓清楚，适配首屏尺寸', fallback: '使用静态资料关系图形' }],
+        searches: [{ query: '资料图形空间分层', purpose: '查找适合独立装饰层的参考机制', layer: 'page-background' }],
+        acceptance: ['问题输入和资料入口可实际操作。', '答案与出处可阅读且不随装饰层位移。', '手机可操作，暂停与减少动态模式有效。'],
+      }));
+    }
+    if (context.task === 'review_design_prompt') {
+      assert.equal(sent.tools, undefined);
+      assert.ok(context.plan.primaryVisual.subject && context.draft.developerPrompt);
+      assert.equal(context.referenceDetails.length, 1);
+      return complete(response, JSON.stringify({ verdict: 'pass', summary: '文字审查通过；未渲染页面。', issues: [] }), undefined, context.task);
+    }
+    assert.equal(context.task, 'generate_prompt');
+    assert.ok(context.designPlan.primaryVisual.subject);
     if (!results.length) return complete(response, null, { name: 'search_reference_library', args: { query: ready.find(entry => entry.stage === 'effect').name, limit: 1 } });
     const last = results.at(-1);
     if (last.candidates) return complete(response, null, { name: 'get_reference_details', args: { refKeys: [last.candidates[0].refKey] } });
     const entry = last.availableCatalog[0];
     assert.ok(entry.implementationKnowledge.implementation.steps.length);
     const developerPrompt = `请在目标工程实际实现资料学习工作台，交付源代码与可运行页面。首屏展示清晰的用途标题、问题输入和资料入口，答案包含来源，具备加载、空状态和错误反馈。参考${entry.title}的真实行为，将视觉效果限制在独立装饰层，正文和输入保持稳定；手机可操作，提供暂停与减少动态处理。演示资料明确标注，实施后核对桌面、触屏和错误恢复，报告真实改动与未验证项目。`;
-    complete(response, JSON.stringify({ developerPrompt, requirementDraft: { goal: '资料学习工作台', audience: '学生', features: ['问题输入', '查看资料来源'], visualStyle: '清晰布局', motion: context.visualIntent.intensity, constraints: '' }, mainVisuals: [], message: '已生成测试提示词', referenceEntryIds: [entry.refKey], assumptions: ['本次为本地模拟模型验收。'] }));
+    complete(response, JSON.stringify({ developerPrompt, requirementDraft: { goal: '资料学习工作台', audience: '学生', features: ['问题输入', '查看资料来源'], visualStyle: '清晰布局', motion: context.visualIntent.intensity, constraints: '' }, mainVisuals: [], message: '已生成测试提示词', referenceEntryIds: [entry.refKey], assumptions: ['本次为本地模拟模型验收。'] }), undefined, context.task);
   } catch {
     response.writeHead(500, { 'Content-Type': 'application/json' }); response.end(JSON.stringify({ error: 'Fixture protocol failure' }));
   }
@@ -104,15 +132,25 @@ try {
 
   const response = await jsonRequest('/api/design-prompt/stream', { brief: '制作资料学习工作台，输入问题并查看资料，动效适量', selections: [], conversationId: 'next-standalone-fixture' });
   assert.equal(response.status, 200); assert.match(response.headers.get('content-type'), /text\/event-stream/);
-  const reader = response.body.getReader(); const firstChunk = await reader.read(); assert.equal(firstChunk.done, false); assert.equal(finalSent, false, '须在假模型最终完成前收到正文帧');
-  let streamed = new TextDecoder().decode(firstChunk.value); for (;;) { const chunk = await reader.read(); if (chunk.done) break; streamed += new TextDecoder().decode(chunk.value); }
+  const reader = response.body.getReader(); const firstChunk = await reader.read(); assert.equal(firstChunk.done, false); assert.equal(finalSent, false, '须在假模型审查完成前收到流式帧');
+  const decoder = new TextDecoder(); let streamed = decoder.decode(firstChunk.value, { stream: true }); let draftBeforeWriterCompleted = false;
+  for (;;) {
+    if (!writerFinalSent && streamed.includes('开发提示词草稿（待审查）')) draftBeforeWriterCompleted = true;
+    const chunk = await reader.read(); if (chunk.done) break; streamed += decoder.decode(chunk.value, { stream: true });
+  }
   const events = streamed.trim().split(/\r?\n\r?\n/).map(value => JSON.parse(value.replace(/^data:\s*/, '')));
   assert.ok(events.some(event => event.type === 'message'));
   assert.equal(events.at(-1).type, 'result'); assert.equal(events.at(-1).result.referenceEntryIds.length, 1); assert.ok(!streamed.includes(reasoning));
-  assert.equal(modelCalls.length, 3); assert.equal(modelCalls[0].preloadedCount, 0);
-  record('真实Next SSE经本地假模型搜索→读详情→合成，思考字段未进入UI', { providerRequests: modelCalls.length, model: '本地模拟DeepSeek协议，无付费外调' });
+  assert.deepEqual(events.at(-1).result.designProcess, { planned: true, reviewed: true, repaired: false, renderedPageVerified: false });
+  for (const key of ['plan', 'designPlan', 'review', 'designReview', 'rawJSON', 'rawResponse', 'reasoning_content']) assert.equal(Object.hasOwn(events.at(-1).result, key), false);
+  assert.ok(draftBeforeWriterCompleted, '须在假模型作者完成前收到待审查草稿正文帧'); assert.equal(finalSent, true);
+  assert.deepEqual(modelCalls.map(call => call.task), ['plan_design', 'generate_prompt', 'generate_prompt', 'generate_prompt', 'review_design_prompt']);
+  const authorCalls = modelCalls.filter(call => call.task === 'generate_prompt');
+  assert.equal(modelCalls.length, 5); assert.equal(authorCalls.length, 3); assert.equal(authorCalls[0].preloadedCount, 0); assert.deepEqual(authorCalls.map(call => call.toolResults), [0, 1, 2]);
+  record('真实Next SSE经本地假模型规划→搜索→读详情→合成→文字审查，思考字段未进入UI', { providerRequests: modelCalls.length, authorRequests: authorCalls.length, model: '本地模拟DeepSeek协议，无付费外调' });
   const cancelResponse = await jsonRequest('/api/design-prompt/stream', { brief: '__CANCEL_FIXTURE__ 验证停止流式生成', selections: [], conversationId: 'next-standalone-cancel' });
   const cancelReader = cancelResponse.body.getReader(); const early = await cancelReader.read(); assert.equal(early.done, false);
+  await waitFor(() => cancelUpstreamStarted, 10000);
   await cancelReader.cancel(); await waitFor(() => cancelledUpstream, 10000);
   record('客户端取消后，Next关闭假模型上游连接');
 
