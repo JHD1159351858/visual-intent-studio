@@ -12,7 +12,8 @@ const context = await browser.newContext({ viewport: { width: 1440, height: 1050
 try {
   const library = await (await fetch(`${base}/api/design-library`)).json();
   const catalog = (await (await fetch(`${base}/api/catalog`)).json()).entries;
-  assert.equal(library.pages.length, 6); assert.equal(library.components.length, 20);
+  const pageMetadata = JSON.parse(await readFile('data/design-pages.json', 'utf8'));
+  assert.deepEqual(library.pages.map(item => item.id).sort(), pageMetadata.map(item => item.id).sort()); assert.equal(library.components.length, 20);
   const references = new Map(catalog.map(entry => [entry.id, entry]));
   const componentIds = new Set(library.components.map(item => item.id));
   const page = await context.newPage();
@@ -50,8 +51,8 @@ try {
   await page.goto(base);
   await page.getByRole('button', { name: '参考库', exact: true }).click();
   await page.getByRole('button', { name: '整页与组件', exact: true }).click();
-  await page.getByRole('button', { name: '整页范例 6', exact: true }).waitFor();
-  assert.equal(await page.locator('.design-example-card').count(), 6);
+  await page.getByRole('button', { name: `整页范例 ${library.pages.length}`, exact: true }).waitFor();
+  assert.equal(await page.locator('.design-example-card').count(), library.pages.length);
   const exampleTitle = library.pages[0].title;
   await page.getByRole('button', { name: `预览${exampleTitle}`, exact: true }).click();
   const modal = page.getByRole('dialog', { name: exampleTitle, exact: true });
@@ -113,7 +114,7 @@ try {
   report.checks.push({ name: 'native border confirmation uses real reference, proper layer and refresh persistence', passed: true });
   await page.getByRole('button', { name: '参考库', exact: true }).click();
   await page.getByRole('button', { name: '整页与组件', exact: true }).click();
-  await page.getByRole('button', { name: '整页范例 6', exact: true }).waitFor();
+  await page.getByRole('button', { name: `整页范例 ${library.pages.length}`, exact: true }).waitFor();
   await page.screenshot({ path: path.join(output, 'library-desktop.png'), fullPage: true });
   await page.setViewportSize({ width: 390, height: 844 });
   assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), 'mobile library overflow');

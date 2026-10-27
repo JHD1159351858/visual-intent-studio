@@ -14,6 +14,7 @@ const strings = z.record(z.string(), z.string());
 const assetPath = (directory: string, extension: RegExp) => text.refine(value => value.startsWith(`design-library/${directory}/`) && !value.includes('\\') && !value.split('/').some(part => !part || part === '.' || part === '..') && extension.test(value), '非法资产路径');
 const pageSchema = z.object({
   id, title: text, description: text, aliases: texts, purpose: text, features: texts,
+  designMethod: z.literal('frontend-design').optional(),
   sections: z.array(z.object({ id, title: text, purpose: text })),
   tokens: z.object({ colors: strings, fonts: strings, spacing: z.array(z.number().nonnegative()), radius: z.number().nonnegative() }),
   interactions: z.array(z.object({ name: text, trigger: text, result: text })),
@@ -56,6 +57,7 @@ export function designDeveloperPrompt(item: PageRecipe | ComponentImplementation
   const boundary = '这是本项目整理的原生 HTML/CSS/经典 JavaScript 适配示例，非原组件源码；无外部依赖。结果须标为演示，不声称已调用真实智能体或已完成浏览器验收。';
   if ('purpose' in item) return [
     `实现「${item.title}」，用途：${item.purpose}。${item.description}`,
+    ...(item.designMethod ? [`设计方法：${item.designMethod}。这是本项目使用该 Skill 制作的独立案例，并非 Skill 官方附带模板；借鉴视觉与交互机制，不复制不相关的学科功能。`] : []),
     `功能：${item.features.join('、')}。分区：${item.sections.map(section => `${section.id}：${section.title}，${section.purpose}`).join('；')}。`,
     `设计参数：颜色 ${JSON.stringify(item.tokens.colors)}；字体 ${JSON.stringify(item.tokens.fonts)}；间距 ${item.tokens.spacing.join('/')}px；圆角 ${item.tokens.radius}px。`,
     `实际交互：${item.interactions.map(interaction => `${interaction.name}：${interaction.trigger} → ${interaction.result}`).join('；')}。`,

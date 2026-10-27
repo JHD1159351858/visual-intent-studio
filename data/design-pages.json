@@ -219,5 +219,387 @@
     "pairingRules": ["用于用户明确要求动效特别强的知识问答场景，不作为所有学习页面的默认模板。", "极光与点阵属于page-background，课程书空间运动属于展示content，移动亮边仅属于提问卡border；输入和长篇答案保持稳定。", "首次打开3秒内必须能观察到背景和课程书持续运动；微弱悬停与一次淡入不能替代主视觉。", "标题轮换只应用于宣传标题，课程内容与回答正文不轮换；课程倾斜和磁吸限制在鼠标精细指针。", "暂停、系统减少动态和页面不可见时停止持续动画与Canvas帧；手机保留空间主视觉并降低绘制负担。", "全部为依据真实来源行为写成的本地原生适配，空间书册和轨道是自主组合，不宣称安装原组件源码；数据仅为3份本地课程演示材料。"],
     "htmlPath": "design-library/pages/knowledge-motion.html",
     "posterPath": "design-library/previews/page-knowledge-motion.png"
+  },
+  {
+    "id": "physics-phase-lab",
+    "title": "相位 · 波动与光学交互学习",
+    "description": "深紫实验台与暖橙波形构成的大学物理学习页面，通过相位、共同频率和波源开关理解同频同向简谐波叠加，并配有知识解释与两道随堂练习。",
+    "aliases": [
+      "相位",
+      "PHASE LAB",
+      "大学物理",
+      "波动与光学",
+      "波的叠加",
+      "干涉",
+      "物理实验教学",
+      "大学物理智能体",
+      "frontend-design",
+      "Skill产出"
+    ],
+    "purpose": "大学物理知识学习与波动干涉交互实验",
+    "features": [
+      "Canvas 双波与合成波实时绘制",
+      "相位与共同频率滑杆",
+      "双波源独立开关",
+      "同相增强与反相抵消预设",
+      "全局暂停及减少动态效果适配",
+      "稳定知识解释",
+      "两题练习与提交反馈",
+      "移动端自适应"
+    ],
+    "sections": [
+      {
+        "id": "introduction",
+        "title": "波的叠加导语",
+        "purpose": "明确大学物理波动主题与理想模型的适用条件。"
+      },
+      {
+        "id": "experiment",
+        "title": "交互实验台",
+        "purpose": "调节相位、频率和波源，观察合成波与计算振幅。"
+      },
+      {
+        "id": "knowledge",
+        "title": "理解叠加",
+        "purpose": "解释同相增强、反相抵消与频率和振幅的区别。"
+      },
+      {
+        "id": "practice",
+        "title": "随堂练习",
+        "purpose": "通过两道选择题及显式提交反馈验证理解。"
+      },
+      {
+        "id": "footer",
+        "title": "课程归属",
+        "purpose": "标明大学物理波动与光学学习示意。"
+      }
+    ],
+    "tokens": {
+      "colors": {
+        "ink": "#241b2c",
+        "deep": "#1d1524",
+        "panel": "#302438",
+        "orange": "#ffa467",
+        "lavender": "#c8acd8",
+        "blue": "#8da4d0",
+        "paper": "#f0eaf1",
+        "white": "#fff7f0"
+      },
+      "fonts": {
+        "display": "STSong, SimSun, serif",
+        "body": "Microsoft YaHei, PingFang SC, sans-serif",
+        "utility": "Consolas, Courier New, monospace"
+      },
+      "spacing": [
+        6,
+        10,
+        14,
+        18,
+        24,
+        32,
+        44,
+        48
+      ],
+      "radius": 15
+    },
+    "interactions": [
+      {
+        "name": "相位调节",
+        "trigger": "拖动 #phase（0–360°）",
+        "result": "同步改变第二列波的相位、合成波形、相位读数和合成振幅。"
+      },
+      {
+        "name": "共同频率调节",
+        "trigger": "拖动 #frequency（0.25–1.25 Hz）",
+        "result": "改变两列波的共同时间频率；固定波长的示意中传播速度同步改变，合成振幅保持不变。"
+      },
+      {
+        "name": "独立波源",
+        "trigger": "点击 #sourceA 或 #sourceB",
+        "result": "开启或关闭对应波源并重算合成波与振幅。"
+      },
+      {
+        "name": "典型相位预设",
+        "trigger": "点击 #presetConstructive 或 #presetDestructive",
+        "result": "开启两路等振幅波源，相位分别设为 0° 或 180°，保留共同频率。"
+      },
+      {
+        "name": "全局运动控制",
+        "trigger": "点击 #motionButton，或切换页面可见性",
+        "result": "暂停或继续唯一持续运动的 Canvas 波形；隐藏时停止帧循环，减少动态效果偏好默认暂停且允许手动继续。"
+      },
+      {
+        "name": "练习提交",
+        "trigger": "选择 q1、q2 并提交 #practiceForm",
+        "result": "逐题给出正确性与物理解释，缺选时提示补答，并显示当前答对题数。"
+      },
+      {
+        "name": "章节导航",
+        "trigger": "点击顶部交互实验、理解叠加、随堂练习链接",
+        "result": "定位到对应稳定内容区；减少动态效果时使用即时滚动。"
+      }
+    ],
+    "componentIds": [],
+    "referenceEntryIds": [],
+    "pairingRules": [
+      "本页是依据 frontend-design Skill 为本地设计库制作的原生 HTML/CSS/JavaScript 实际案例，不是该 Skill 的官方内置模板。",
+      "保留深紫实验仪器界面、暖橙合成波与紫蓝分波的语义颜色。",
+      "公式、控件与知识文本保持静止，持续动画集中在波形示意；保留全局暂停和减少动态效果支持。",
+      "物理模型限于一维同频同向简谐波叠加；知识区等振幅公式要求两路波源均开启。",
+      "原生 Canvas、内联 SVG、CSS 与 JavaScript，无网络、外部素材、持久化或真实实验仪器连接。"
+    ],
+    "htmlPath": "design-library/pages/physics-phase-lab.html",
+    "posterPath": "design-library/previews/page-physics-phase-lab.png",
+    "designMethod": "frontend-design"
+  },
+  {
+    "id": "chemistry-molecule-studio",
+    "title": "构物 · 分子实验桌",
+    "description": "矿物灰实验桌与钴蓝大标题围绕可旋转球棍模型展开，观察水、二氧化碳与甲烷的结构、原子与分子极性。",
+    "aliases": [
+      "大学化学",
+      "分子结构",
+      "分子实验室",
+      "构物",
+      "球棍模型",
+      "MOLECULE STUDIO",
+      "大学化学智能体",
+      "frontend-design",
+      "Skill产出"
+    ],
+    "purpose": "大学化学知识学习与分子结构问答",
+    "features": [
+      "三种分子的可旋转球棍投影",
+      "准确的原子数量、单键与双键示意",
+      "原子点选与元素信息",
+      "水平视角滑杆与化学键显示开关",
+      "全局运动暂停与减少动态效果支持",
+      "随分子切换的静态结构笔记",
+      "三个预设主题的本地化学知识问答"
+    ],
+    "sections": [
+      {
+        "id": "molecule-desk",
+        "title": "微观观察入口",
+        "purpose": "以钴蓝中文标题引入微观结构学习"
+      },
+      {
+        "id": "model-workbench",
+        "title": "分子实验台",
+        "purpose": "切换、旋转和点选三种分子的球棍模型"
+      },
+      {
+        "id": "structure-notes",
+        "title": "结构笔记",
+        "purpose": "解释所选分子的电子域、空间构型与极性"
+      },
+      {
+        "id": "chemistry-questions",
+        "title": "本地知识问答",
+        "purpose": "提供三种固定结构解释并对未知问题给出查阅方向"
+      }
+    ],
+    "tokens": {
+      "colors": {
+        "paper": "#f0f3f2",
+        "ink": "#192a37",
+        "cobalt": "#234fe8",
+        "coral": "#f56857",
+        "ice": "#e5ecee",
+        "muted": "#61716f"
+      },
+      "fonts": {
+        "display": "Microsoft YaHei, PingFang SC, sans-serif",
+        "body": "Segoe UI, Microsoft YaHei, sans-serif",
+        "utility": "Consolas, Courier New, monospace"
+      },
+      "spacing": [
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        32,
+        40,
+        52,
+        62,
+        72
+      ],
+      "radius": 28
+    },
+    "interactions": [
+      {
+        "name": "分子切换",
+        "trigger": "点击 H₂O、CO₂ 或 CH₄ 按钮",
+        "result": "重建对应的原子与单双键，重置视角并同步构型、参考键角、极性和结构说明"
+      },
+      {
+        "name": "暂停全部运动",
+        "trigger": "点击暂停旋转或继续旋转",
+        "result": "停止或启动页面唯一的持续运动；减少动态效果偏好默认暂停，页面隐藏时停止帧循环"
+      },
+      {
+        "name": "调整观察方向",
+        "trigger": "拖动水平视角滑杆，或用键盘调整",
+        "result": "改变模型的水平旋转方向，暂停时仍可手动观察"
+      },
+      {
+        "name": "显示化学键",
+        "trigger": "点击隐藏化学键或显示化学键",
+        "result": "在保留原子与原子选择的同时隐藏或显示球棍模型的单键与双键"
+      },
+      {
+        "name": "原子检查",
+        "trigger": "点击模型原子，或聚焦原子后按回车或空格",
+        "result": "突出选中原子并展示元素名、符号、原子序数和成键信息"
+      },
+      {
+        "name": "本地知识卡",
+        "trigger": "点击预设问题，或输入对应分子的预设结构主题并提问",
+        "result": "显示固定知识解释；不支持的主题明确提示查阅教材，不调用真实模型、不编造答案"
+      },
+      {
+        "name": "页内导览",
+        "trigger": "点击实验台、结构笔记、问一问或开始观察链接",
+        "result": "定位至对应的实际页面区段"
+      }
+    ],
+    "componentIds": [],
+    "referenceEntryIds": [],
+    "pairingRules": [
+      "本项目按 frontend-design 制作的原生演示，并非官方附带模板。",
+      "适用于大学化学分子结构观察与概念教学；球棍图是三维坐标的非比例投影，参考键角不等于屏幕投影角度。",
+      "问答仅含三个本地预设主题，未接入真实大模型、课程数据库或外部知识服务。",
+      "模型仅表达基础空间构型；球棍图省略孤电子对，不作为定量测量或真实分子模拟。"
+    ],
+    "htmlPath": "design-library/pages/chemistry-molecule-studio.html",
+    "posterPath": "design-library/previews/page-chemistry-molecule-studio.png",
+    "designMethod": "frontend-design"
+  },
+  {
+    "id": "poetry-reading-room",
+    "title": "字间 · 诗意阅读室",
+    "description": "以纵向宋体诗行、单字留白与随诗变换的原生山水画，呈现三首唐诗的阅读、逐句注解、赏析和练习。",
+    "aliases": [
+      "古诗词",
+      "诗词阅读",
+      "古诗赏析",
+      "诗意阅读室",
+      "唐诗",
+      "字间",
+      "古诗词学习智能体",
+      "frontend-design",
+      "Skill产出"
+    ],
+    "purpose": "古诗词知识学习、逐句赏析与练习",
+    "features": [
+      "三首完整唐诗与作者",
+      "宋体竖排诗行及移动端横排",
+      "随诗切换的三组原生 SVG 山水",
+      "逐句注解",
+      "原文、赏析、练习独立视图",
+      "每首两题的显式提交判分与解析",
+      "全局山水暂停与减少动态偏好"
+    ],
+    "sections": [
+      {
+        "id": "reading-intro",
+        "title": "阅读引言",
+        "purpose": "以中文编辑式标题建立安静阅读语境。"
+      },
+      {
+        "id": "reading-room",
+        "title": "诗意阅读室",
+        "purpose": "选择诗作并切换原文、赏析、练习。"
+      },
+      {
+        "id": "view-original",
+        "title": "原文",
+        "purpose": "展示完整诗文，点击诗句查看对应注解。"
+      },
+      {
+        "id": "view-analysis",
+        "title": "赏析",
+        "purpose": "阅读当前诗作的独立赏析与思考提示。"
+      },
+      {
+        "id": "view-practice",
+        "title": "练习",
+        "purpose": "完成当前诗作的两题选择练习，提交后查看答案和解析。"
+      },
+      {
+        "id": "poem-notes",
+        "title": "诗中风景与注解",
+        "purpose": "呈现随诗变换的山水插画和所选诗句的解释。"
+      },
+      {
+        "id": "reading-footer",
+        "title": "阅读收尾",
+        "purpose": "以简短诗意文案结束阅读。"
+      }
+    ],
+    "tokens": {
+      "colors": {
+        "paper": "#f7f6f1",
+        "ink": "#202822",
+        "muted": "#69766a",
+        "cinnabar": "#ac3d2e",
+        "wash": "#e2e7dc",
+        "line": "#d9ddd3"
+      },
+      "fonts": {
+        "display": "Songti SC, STSong, SimSun, serif",
+        "body": "Microsoft YaHei, PingFang SC, sans-serif"
+      },
+      "spacing": [
+        4,
+        8,
+        12,
+        20,
+        28,
+        34,
+        48
+      ],
+      "radius": 2
+    },
+    "interactions": [
+      {
+        "name": "选择唐诗",
+        "trigger": "点击 .poem-select",
+        "result": "同步更新完整诗文、作者、体裁、山水场景、逐句注解、赏析和两道题目，并回到原文视图。"
+      },
+      {
+        "name": "逐句读解",
+        "trigger": "点击 .poem-line",
+        "result": "选中诗句并更新 #annotation-line、#annotation-copy 和行次。"
+      },
+      {
+        "name": "切换阅读方式",
+        "trigger": "点击 .tab，或在标签上使用左右方向键、Home、End",
+        "result": "在原文、赏析和练习的独立面板之间切换，并同步标签的选中状态。"
+      },
+      {
+        "name": "两题练习",
+        "trigger": "在 #quiz-form 选择答案并提交",
+        "result": "未答齐时提示完成两题；答齐后显示得分、每题正确答案与解释。"
+      },
+      {
+        "name": "暂停山水",
+        "trigger": "点击 #motion-toggle",
+        "result": "暂停或继续所有持续的山水氛围动画；减少动态偏好下初始暂停，用户可手动继续。"
+      }
+    ],
+    "componentIds": [],
+    "referenceEntryIds": [],
+    "pairingRules": [
+      "依照 frontend-design Skill 创作的原生 HTML 完整页面，不是官方模板或第三方组件示例。",
+      "视觉重点在中文诗行、留白与山水主题；诗文和核心控件保持静止。",
+      "仅使用原生 SVG、CSS、JavaScript 与系统字体，无外部字体、素材、CDN、网络请求或存储。",
+      "三首古诗和教学注解均随诗切换；练习在本页即时判分，不代表云端学习记录或 AI 生成服务。"
+    ],
+    "htmlPath": "design-library/pages/poetry-reading-room.html",
+    "posterPath": "design-library/previews/page-poetry-reading-room.png",
+    "designMethod": "frontend-design"
   }
 ]

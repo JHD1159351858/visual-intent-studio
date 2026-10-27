@@ -2,6 +2,7 @@ import type { VisualLayer } from './types';
 
 export interface PageRecipe {
   id: string;
+  designMethod?: 'frontend-design';
   title: string;
   description: string;
   aliases: string[];
